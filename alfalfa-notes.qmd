@@ -255,20 +255,52 @@ They are very careful to define their goal and scope. Is it per ton of hay (at w
 
 They use the Ecoinvent database.
 
+# Alfalfa and carbon
+
+## [Gamble et al. 2021](https://www.sciencedirect.com/science/article/abs/pii/S0168192321001210)
+
+![](images/image-958116090.png)
+
+![](images/image-701451389.png)
+
 # My project
 
-**Email from Cameron to Dan**
+## **Email from Cameron to Dan**
 
-Under the Healthy Soils program, CDFA has worked with expert modelers at Colorado State to adapt a widely used cropping system model (DAYCENT) for the California context. The GHG benefits for eligible healthy soils practices are estimated using this online calculator (<http://comet-planner-cdfahsp.com/>). You enter in a county and management practice, and you can see how much GHG mitigation is predicted (both changes in soil carbon and reduction in N2O or CH4 emissions) as well as the payment to the grower.
+*Under the Healthy Soils program, CDFA has worked with expert modelers at Colorado State to adapt a widely used cropping system model (DAYCENT) for the California context. The GHG benefits for eligible healthy soils practices are estimated using this online calculator (<http://comet-planner-cdfahsp.com/>). You enter in a county and management practice, and you can see how much GHG mitigation is predicted (both changes in soil carbon and reduction in N2O or CH4 emissions) as well as the payment to the grower.*
 
- 
+*I'm attaching the example for alfalfa for Yolo county. I think it is 'safer' to use this number in our LCA instead of soil sampling. The modeling methodology is already documented and applied in the real world. This calculator shows the benefit of perennial forages (CPS 512) for soil carbon is quite significant (estimated to be about 2 or 2.5 times higher than what the literature and COMET farm estimate for cover crops, and also double the benefit of no-till estimated by COMET farm).*
 
-I\'m attaching the example for alfalfa for Yolo county. I think it is \'safer\' to use this number in our LCA instead of soil sampling. The modeling methodology is already documented and applied in the real world. This calculator shows the benefit of perennial forages for soil carbon is quite significant (estimated to be about 2 or 2.5 times higher than what the literature and COMET farm estimate for cover crops, and also double the benefit of no-till estimated by COMET farm). 
+![](images/image-716355406.png)
 
- 
+*Under this program, conversion of annual cropland to perennial forages would also generate a payment of around \$130/acre for the three year cycle. But as we discussed, a grower could only apply for land that hasn't been in alfalfa. And the payment actually goes up quite a bit for the different options to cover costs -- for example, the highest input option "Pasture and Hay Planting (CPS 512) - Conversion of Annual Cropland to Irrigated Grass/Legume Forage/Biomass Crops-Nonnative High Seeding Rate with Lime" would generate a payment for \$475/acre. Importantly, for the different scenarios, the GHG benefits stay the same.*
 
-Under this program, conversion of annual cropland to perennial forages would also generate a payment of around \$130/acre for the three year cycle. But as we discussed, a grower could only apply for land that hasn\'t been in alfalfa. And the payment actually goes up quite a bit for the different options to cover costs -- for example, the highest input option \"Pasture and Hay Planting (CPS 512) - Conversion of Annual Cropland to Irrigated Grass/Legume Forage/Biomass Crops-Nonnative High Seeding Rate with Lime\" would generate a payment for \$475/acre. Importantly, for the different scenarios, the GHG benefits stay the same.
+*By including this number for soil carbon storage and the savings for N fertilizer on the subsequent crop, I'm guessing this would offset a big chunk of GHG emissions associated with alfalfa production.*
 
- 
+![](images/image-1921258935.png)
 
-By including this number for soil carbon storage and the savings for N fertilizer on the subsequent crop, I\'m guessing this would offset a big chunk of GHG emissions associated with alfalfa production.
+I went to the [online calculator](http://comet-planner-cdfahsp.com/) and manually got values for given practices in Yolo county.
+
+The values seem fairly reasonable.
+
+-   Adding a perennial to row-crop systems sequesters \~ **0.5 Mg CO2/ha/yr**, or \~ **0.2 Mg C/ha/yr**
+
+I need to read the citations Cameron provides to get some context.
+
+![]()
+
+## ![](images/comet-yolo.png)
+
+[COMET-Planner Report](http://bfuels.nrel.colostate.edu/health/COMET-Planner_Report_Final.pdf)
+
+Spatial units are 'county-rectified Major Land Resource Areas', of which there are 227 in the conterminous US:
+
+![](images/image-780049222.png){width="433"}
+
+They sampled 100 points per 'broad use category' (what do they mean by that?). For each point, land use was determined using Cropland Data Layers. If a point was on cropland, the rotation history starting in 2009 was repeated backwards until 2000. Average fertilizer rates for each crop came from USDA-ERS 2014 data. "Typical" practices were applied.
+
+N2O emissions follow the US National Greenhouse Gas Inventory (EPA 2019) protocol. Direct emissions were calculated using DayCent. Leached and volatilized N also came from DayCent, then used emission factors to convert to indirect N2O emissions (*do these vary by region?)*
+
+They calculated the difference between the baseline model run and the conservation model run, then averaged them over the 'broad use category' (*the same as Major Land Resource Area?*). This was translated into an emission reduction coefficient. It also gives minimum and maximum values "showing how emission estimates vary over a range of soil, weather, and agricultural management conditions". *How did they get those? Is it just the minimum and maximum of their 100 samples?*
+
+"The values should be interpreted as a average annual value over a 10 year duration"
