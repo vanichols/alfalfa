@@ -1,0 +1,274 @@
+---
+title: "Alfalfa ramblings"
+author: "Gina"
+format: html
+editor: visual
+---
+
+# Notes
+
+Comparison of soil C studies in irrigated vs rainfed systems?
+
+N2O emission methodology - need a good summary?
+
+-   Account for only N from synthetic fertilizer (what about manure?) - Hoben et al. 2011
+
+-   Legumes do not emit N2O - Van Groenigen et al. 2010
+
+-   Fertilizer and crop residue N - Camargo et al. 20xx
+
+-   Fertilizer, crop residue N, root N, root turnover N - Little et al. 2017
+
+    # Factoids
+
+Ruminants = 1/3 of worldwide meet production, 99% of milk
+
+In the US, 16% of milk sales are plant-based
+
+1/5 global methane emissions are from ruminants
+
+[An article in The Guardian](https://www.theguardian.com/environment/2022/sep/12/colorado-drought-water-alfalfa-farmers-conservation) says alfalfa uses 5 feet/acre (cites a [Pacific Institute study](https://pacinst.org/wp-content/uploads/2015/04/CA-Ag-Water-Use.pdf)), and uses 80% of Colorado River water.
+
+As a comparison of water users in California:
+
+1.  Alfalfa 5 feet/acre
+
+2.  Almonds 3.8 ft/ac
+
+3.  Pasture 3.1 ft/ac
+
+4.  Corn 2.2 ft/ac (in NE it uses 1 ft/ac)
+
+## 
+
+In California, agriculture uses more than 10x the amount of urban water.
+
+![](images/image-298510801.png)
+
+In the Imperial Valley, 1/3 of ag land is in alfalfa.
+
+![](images/image-621938974.png)
+
+Alfalfa sells for \$160-300/ton (premium). That is a large range in prices.
+
+Camargo says it takes \~50 MJ to make 1 kg of N fertilizer (?)
+
+A MJ is **approximately the kinetic energy of a one megagram (tonne) vehicle moving at 161 km/h (100 mph)**.
+
+# Lit notes
+
+## [Guyader et al. 2016 (Canadians)](https://academic.oup.com/jas/article-abstract/94/8/3147/4791516)
+
+Forage based diets versus 'concentrate-based', meaning grain
+
+Concentrate = low-fiber, high energy *(mostly a milk cow term?)*
+
+"Forage-fed ruminants are a sig source of methane" *(compared to what?)*
+
+As % of forage in diet increases, so does methane (cite Ellis et al. 2007)
+
+Harvesting forage is an optimization problem: harvest when least mature means more digestible, yummier, higher crude protein, but lower yield
+
+Beauchemin et al. 2011 apparently demonstrated this, but found harvesting 'hay' (?) ealier decreased yields by 10%, but everything else was better, and the CO2eq/kg beef decrease 5%
+
+-   *Why would N2O emissions from manure decrease when you harvest earlier?*
+
+-   *Does this account for the fact you would probably make more passes if you harvest earlier?*
+
+High quality alfalfa goes to dairy cows. Low quality to beef.
+
+Total feed consumed by beef cattle (by weight? by volume?) in North America is 80% (cites Beauchemin et al. 2010)
+
+Using grain reduces methane emissions directly via gut stuff, and indirectly via killing the cow earlier.
+
+If we feed cows corn, it requires less land. Better to have 10 acres of grain and 10 acres of wildlife, versus 5 acres of grain, 15 acres of forage
+
+Thinking about a piece of land, the fuel CO2, N2O, and CH4 are fairly constant, while the amount of CO2 sequestered depends on how much C is already in the soil
+
+"Keeping land IN forages is less valuable compared to converting crop land TO forages"
+
+## [Alfalfa Wildlife and the Environment](https://www.alfalfa.org/pdf/alfalfaenvironment2.pdf)
+
+Authors include Nicole Tautges and Mitch Hunter. It is not very scientific, but has references listed in the back I need to go through.
+
+Lists nitrogen credits in Wisconsin as being 40-190 lbs/ac, depending on soil texture and alfalfa stand quality.
+
+Shows weed seed predation doubles in alfalfa compared to corn (so many questions...)
+
+"More abundant and protein-rich earthworms" in alfalfa fields.
+
+Going through the citations:
+
+## [Farming for birds](https://alfalfa.ucdavis.edu/+symposium/proceedings/2010/10-61.pdf): Alfalfa and forages as wildlife habitat
+
+Has awesome citations for actually demonstrating value of alfalfa to birds.
+
+Of note, [Bray and Klebenow 1988](https://www.jstor.org/stable/1521166?origin=crossref) for white faced ibis. Super cool.
+
+Lists three main bird species that utilize alfalfa in the San Joaquin Valley of California (because they drained all the wetlands)
+
+-   White faced ibis. Really likes flooded alfalfa. Prefers it over other croplands.
+
+-   Long billed curlew. Also closely linked to flood irrigated crops. Audubon did surveys and proved it!
+
+-   Swainson's Hawk. They love ag land, but not orchards, vineyards, and urban areas. They breed in Western US and over winter in Argentina! Need trees to nest, so although San Joaquin Valley has lots of alfalfa/ag land, not many hawks because of lack of trees (should be easy to fix!)
+
+[Franco et al. 2021](https://www.mdpi.com/2073-4395/11/12/2580) is mentioned in the [alfalfa presentation by Valentin Picasso's student](https://alfalfa.org/events/World_Alfalfa_Congress_Agenda.php). Need to read
+
+## [Eshel et al. 2014](https://www.pnas.org/doi/10.1073/pnas.1402183111) (PNAS) LCAs on animal products
+
+A very good paper.
+
+Good to cite for the LCAs of regions differing
+
+Multi-regional values, or range in values is important to establish
+
+They included land use, irrigation water, GHG, and reactive N requirements (didn't include social impacts, True Cost Accounting?)
+
+Beef is so terrible:
+
+![](images/image-1838449073.png)
+
+This is because of the feed conversion, mostly. Beef are 4x less efficient.
+
+14% of corn land is irrigated, 8% of soy
+
+## [Veltman et al. 2018](https://www.sciencedirect.com/science/article/abs/pii/S0308521X21001232) Dairy LCA in Great Lakes Region
+
+Ranking of potential levers are manure management \> diet \> field management
+
+Field management only made the values wiggle by 3%
+
+## [Little et al. 2017](https://www.mdpi.com/2225-1154/5/4/87) Corn silage vs alfalfa (Canada)
+
+Compared two dairy feed situations. They included C sequestration, which is rare.
+
+GHG/kg milk did not differ significantly. Their assumptions were as follows:
+
+![](images/image-377622264.png)A couple of notes on this - no herbicide use in alfalfa. No lime application (all assigned to corn?). Zero percent moisture (for silage?).
+
+They used emission factors from the Holos model (Little, S.M.; Lindeman, J.; Maclean, K.; Janzen, H.H. Holos---A Tool to Estimate and Reduce GHGs from Farms; Methodology and Algorithms for Version 2.0; Agriculture and Agri-Food Canada: Ottawa, ON, Canada, 2013.)
+
+They used the total N input into the system to get N2O. So N from roots was included, assuming a root turnover rate.
+
+Alfalfa makes cows poop more, and for that manure to have a higher N content (?).
+
+Alfalfa had higher N2O emissions because of the assumption that all N inputs are the same, and alfalfa has a large root N contribution. Does the source of N impact N2O emissions?
+
+Breakdown of GHG, not super informative but shows % that can be affected by management:
+
+![](images/image-1385988121.png)
+
+Both systems are emitting around 40,000 kg CO2eq/ha (per year?). This includes the dairy production part, so I'm not sure how comparable this is to just the alfalfa/corn production piece - based on the above figure I'd guess the crop portion is \~15,000 CO2eq/ha.
+
+The carbon sequestration is around 3,000 kg CO2eq/ha per year.
+
+The carbon you sequester in 5 (crop) or 10 (dairy) years is offset by one year of emissions.
+
+"After a period of 30 years, the model predicted a gain of 87,449 kg soil carbon under the alfalfa system and a loss of 6384 kg carbon under the corn system (Figure 4). If over 30 years the dairy system completed five cycles, producing approximately 11,000,000 kg CO2e, the potential carbon gain from alfalfa and the potential carbon loss from corn represents less than 1% of emissions, implying little impact on soil carbon of switching from hay to an alfalfa silage or corn silage system."
+
+## [Camargo et al. 2013](https://academic.oup.com/bioscience/article/63/4/263/253267) Farm Energy Analysis Tool (FEAT), link doesn't work, sloppy IMO
+
+Advocate for using public datasets
+
+Website referenced in paper does not work, google takes me to sites that violate my privacy...
+
+Compare three different management types for corn
+
+Nice comparison of tools:
+
+![](images/image-1766649875.png)
+
+FEAT actually used fairly complicated N2O calcs, and they weren't cited - seemed arbitrary. I'm not sure where they got these values (from literature?), and what they mean by 'nitrogen' (urea, ammonium nitrate, ammonia, etc.)
+
+*Need to compare these to FTM values*
+
+![](images/image-433973708.png)
+
+The FEAT database default value for irrigation is 0.014 MJ per cubic meter of water per meter depth of water pumped from a well (Batty and Keller 1980)
+
+Their values are a magnitude lower than Little et al. 2017. They get 1,500 kg CO2eq/ha/year, compared to Little et al.'s 15,000 kg CO2eq/ha/yr. They had essentially 0 N2O emissions from alfalfa.
+
+"The legume crops did not emit N2O in Van Groenigen and colleagues (2010) and Hoben and colleagues (2011), because their methodology accounts for N from only fertilizer applications and excludes emissions from crop residues."
+
+## [2019 IPCC N2O factors](https://www.ipcc-nggip.iges.or.jp/public/2019rf/vol4.html)
+
+NOTE: the new version accounts for below-ground N residues, whereas the 2006 version only included above-ground residues. This change was made specifically to account for alfalfa, where essentially all the above-ground residue is harvested. They provide generic values fro Alfalfa for N content of above and below ground N content, and a ratio and turnover estimates, etc.
+
+They allow for three separate emission factors:
+
+1.  Amount of N2O emitted from various synthetic and organic N applications
+
+2.  Amount emitted from 'drained managed organic soils' (?)
+
+3.  Amount from urine and dung deposition from grazing animals
+
+For #1 - they use a default of 1%, but also provide value disaggregated by climate zone and fertilizer type. For example in wet climates, the value is 0.6% of organic N inputs and 1.6% of synthetic N inputs. In dry climates, it is 0.5% for all N inputs.
+
+![](images/image-879996553.png)
+
+Conversion of N2O-N emissions to N2O emissions:
+
+$$
+N2O = (N2O-N) \cdot \frac {44}{28}
+$$
+
+"Natural N2O emissions on managed land are assumed to be equal to emissions on unmanaged land. These latter emissions are very low. Therefore, nearly all emissions on managed land are considered anthropogenic. Estimates using the IPCC methodology are of the same magnitude as total measured emissions from managed land." (p.11)
+
+## [Kim et al. 2014](https://link.springer.com/article/10.1007/s12155-013-9399-z) - Meta review of corn LCAs, funded by National Corn Growers
+
+Says EcoInvent values are from Europe.
+
+USDA reports on 'fuels purchased'
+
+Gives tables with ranges in assumptions by study
+
+## [Costa et al. 2020](https://link.springer.com/article/10.1007/s11367-020-01812-x) Meta review of crop rotations in LCAs
+
+XXXx I'm tired
+
+# Other alfalfa LCAs
+
+## [Wang et al. 2021 (Regional comparison of alfalfa in China)](https://www.sciencedirect.com/science/article/abs/pii/S0959652621012440)
+
+Used a model, showed there's really no good situation, it's always a trade-off, higher yields require more environmental damage
+
+## [Ghaderpour et al. 2018 (Iran)](https://www.sciencedirect.com/science/article/abs/pii/S2213138817302102)
+
+Used surveys. Didn't read, bad paper
+
+## [Bacenetti et al. 2018 (Italy)](https://pubmed.ncbi.nlm.nih.gov/29679827/)
+
+Very good paper. Lists ISO standards I4040/44
+
+They use three categories of 'cultivation':
+
+Soil tillage and sowing (seeding rates)
+
+Crop management (herbicides, fertilizer)
+
+Harvest and transport
+
+I would include irrigation managment, and cropping system impacts (reduced N requirements of following crop)
+
+They are very careful to define their goal and scope. Is it per ton of hay (at what moisture, they use 14%) or per acre?
+
+They use the Ecoinvent database.
+
+# My project
+
+**Email from Cameron to Dan**
+
+Under the Healthy Soils program, CDFA has worked with expert modelers at Colorado State to adapt a widely used cropping system model (DAYCENT) for the California context. The GHG benefits for eligible healthy soils practices are estimated using this online calculator (<http://comet-planner-cdfahsp.com/>). You enter in a county and management practice, and you can see how much GHG mitigation is predicted (both changes in soil carbon and reduction in N2O or CH4 emissions) as well as the payment to the grower.
+
+ 
+
+I\'m attaching the example for alfalfa for Yolo county. I think it is \'safer\' to use this number in our LCA instead of soil sampling. The modeling methodology is already documented and applied in the real world. This calculator shows the benefit of perennial forages for soil carbon is quite significant (estimated to be about 2 or 2.5 times higher than what the literature and COMET farm estimate for cover crops, and also double the benefit of no-till estimated by COMET farm). 
+
+ 
+
+Under this program, conversion of annual cropland to perennial forages would also generate a payment of around \$130/acre for the three year cycle. But as we discussed, a grower could only apply for land that hasn\'t been in alfalfa. And the payment actually goes up quite a bit for the different options to cover costs -- for example, the highest input option \"Pasture and Hay Planting (CPS 512) - Conversion of Annual Cropland to Irrigated Grass/Legume Forage/Biomass Crops-Nonnative High Seeding Rate with Lime\" would generate a payment for \$475/acre. Importantly, for the different scenarios, the GHG benefits stay the same.
+
+ 
+
+By including this number for soil carbon storage and the savings for N fertilizer on the subsequent crop, I\'m guessing this would offset a big chunk of GHG emissions associated with alfalfa production.
