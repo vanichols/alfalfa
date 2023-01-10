@@ -169,6 +169,10 @@ The carbon you sequester in 5 (crop) or 10 (dairy) years is offset by one year o
 
 ## [Camargo et al. 2013](https://academic.oup.com/bioscience/article/63/4/263/253267) Farm Energy Analysis Tool (FEAT), link doesn't work, sloppy IMO
 
+They get \~**1,500 kg CO2eq/ha/year for alfalfa** (the other is red clover)**:**
+
+![](images/image-824619687.png)
+
 Advocate for using public datasets
 
 Website referenced in paper does not work, google takes me to sites that violate my privacy...
@@ -187,7 +191,7 @@ FEAT actually used fairly complicated N2O calcs, and they weren't cited - seemed
 
 The FEAT database default value for irrigation is 0.014 MJ per cubic meter of water per meter depth of water pumped from a well (Batty and Keller 1980)
 
-Their values are a magnitude lower than Little et al. 2017. They get 1,500 kg CO2eq/ha/year, compared to Little et al.'s 15,000 kg CO2eq/ha/yr. They had essentially 0 N2O emissions from alfalfa.
+Their values are a magnitude lower than Little et al. 2017. They get **1,500 kg CO2eq/ha/year for a perennial legume**, compared to Little et al.'s 15,000 kg CO2eq/ha/yr. They had essentially 0 N2O emissions from alfalfa, which isn't correct given the new IPCC report (which says you need to include all N, including that from above and below ground residues).
 
 "The legume crops did not emit N2O in Van Groenigen and colleagues (2010) and Hoben and colleagues (2011), because their methodology accounts for N from only fertilizer applications and excludes emissions from crop residues."
 
@@ -225,7 +229,7 @@ Gives tables with ranges in assumptions by study
 
 ## [Costa et al. 2020](https://link.springer.com/article/10.1007/s11367-020-01812-x) Meta review of crop rotations in LCAs
 
-XXXx I'm tired
+"However, changes to rotation sequences, nutrient cycling and yields of crops within rotations mean that **simple attributional LCA of the individual legume crops introduced into rotations does not adequately represent consequences** for the environmental efficiency of rotations and related food systems, nor of individual crops within modified rotations."
 
 # Other alfalfa LCAs
 
@@ -255,7 +259,13 @@ They are very careful to define their goal and scope. Is it per ton of hay (at w
 
 They use the Ecoinvent database.
 
-# Alfalfa and carbon
+# LCAs
+
+Attributional versus consequential LCAs (see Costa et al. for more).
+
+## 
+
+# Carbon
 
 ## [Gamble et al. 2021](https://www.sciencedirect.com/science/article/abs/pii/S0168192321001210)
 
