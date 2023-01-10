@@ -115,7 +115,7 @@ Lists three main bird species that utilize alfalfa in the San Joaquin Valley of 
 
 [Franco et al. 2021](https://www.mdpi.com/2073-4395/11/12/2580) is mentioned in the [alfalfa presentation by Valentin Picasso's student](https://alfalfa.org/events/World_Alfalfa_Congress_Agenda.php). Need to read
 
-## [Eshel et al. 2014](https://www.pnas.org/doi/10.1073/pnas.1402183111) (PNAS) LCAs on animal products
+## [Eshel 2014](https://www.pnas.org/doi/10.1073/pnas.1402183111) (PNAS) LCAs on animal products
 
 A very good paper.
 
@@ -133,13 +133,13 @@ This is because of the feed conversion, mostly. Beef are 4x less efficient.
 
 14% of corn land is irrigated, 8% of soy
 
-## [Veltman et al. 2018](https://www.sciencedirect.com/science/article/abs/pii/S0308521X21001232) Dairy LCA in Great Lakes Region
+## [Veltman 2018](https://www.sciencedirect.com/science/article/abs/pii/S0308521X21001232) Dairy LCA in Great Lakes Region
 
 Ranking of potential levers are manure management \> diet \> field management
 
 Field management only made the values wiggle by 3%
 
-## [Little et al. 2017](https://www.mdpi.com/2225-1154/5/4/87) Corn silage vs alfalfa (Canada)
+## [Little 2017](https://www.mdpi.com/2225-1154/5/4/87) Corn silage vs alfalfa (Canada)
 
 Compared two dairy feed situations. They included C sequestration, which is rare.
 
@@ -167,7 +167,7 @@ The carbon you sequester in 5 (crop) or 10 (dairy) years is offset by one year o
 
 "After a period of 30 years, the model predicted a gain of 87,449 kg soil carbon under the alfalfa system and a loss of 6384 kg carbon under the corn system (Figure 4). If over 30 years the dairy system completed five cycles, producing approximately 11,000,000 kg CO2e, the potential carbon gain from alfalfa and the potential carbon loss from corn represents less than 1% of emissions, implying little impact on soil carbon of switching from hay to an alfalfa silage or corn silage system."
 
-## [Camargo et al. 2013](https://academic.oup.com/bioscience/article/63/4/263/253267) Farm Energy Analysis Tool (FEAT), link doesn't work, sloppy IMO
+## [Camargo 2013](https://academic.oup.com/bioscience/article/63/4/263/253267) Farm Energy Analysis Tool (FEAT), link doesn't work, sloppy IMO
 
 They get \~**1,500 kg CO2eq/ha/year for alfalfa** (the other is red clover)**:**
 
@@ -219,7 +219,7 @@ $$
 
 "Natural N2O emissions on managed land are assumed to be equal to emissions on unmanaged land. These latter emissions are very low. Therefore, nearly all emissions on managed land are considered anthropogenic. Estimates using the IPCC methodology are of the same magnitude as total measured emissions from managed land." (p.11)
 
-## [Kim et al. 2014](https://link.springer.com/article/10.1007/s12155-013-9399-z) - Meta review of corn LCAs, funded by National Corn Growers
+## [Kim 2014](https://link.springer.com/article/10.1007/s12155-013-9399-z) - Meta review of corn LCAs, funded by National Corn Growers
 
 Says EcoInvent values are from Europe.
 
@@ -227,21 +227,38 @@ USDA reports on 'fuels purchased'
 
 Gives tables with ranges in assumptions by study
 
-## [Costa et al. 2020](https://link.springer.com/article/10.1007/s11367-020-01812-x) Meta review of crop rotations in LCAs
+## [Costa 2020](https://link.springer.com/article/10.1007/s11367-020-01812-x) Meta review of crop rotations in LCAs
 
 "However, changes to rotation sequences, nutrient cycling and yields of crops within rotations mean that **simple attributional LCA of the individual legume crops introduced into rotations does not adequately represent consequences** for the environmental efficiency of rotations and related food systems, nor of individual crops within modified rotations."
 
 # Other alfalfa LCAs
 
-## [Wang et al. 2021 (Regional comparison of alfalfa in China)](https://www.sciencedirect.com/science/article/abs/pii/S0959652621012440)
+## [Wang 2021 (Regional comparison of alfalfa in China)](https://www.sciencedirect.com/science/article/abs/pii/S0959652621012440)
 
-Used a model, showed there's really no good situation, it's always a trade-off, higher yields require more environmental damage
+**0.3 - 7.8 Mg CO2eq/ha**
 
-## [Ghaderpour et al. 2018 (Iran)](https://www.sciencedirect.com/science/article/abs/pii/S2213138817302102)
+Used a model and surveys. Good paper. Showed there's really no good situation, it's always a trade-off, higher yields require more environmental damage.
+
+They did things on a per unit dry matter basis. I want to see on a per hectare basis.
+
+```{r message=F}
+
+library(tidyverse)
+
+d <- tibble(yield_Mgha = c(6.7, 9.1, 11.9, 12.4),
+            gCO2eq_kgDM = c(42, 119, 150, 626))
+
+d %>% 
+  mutate(MgCO2_MgDM = gCO2eq_kgDM/1000,
+         MgCO2_ha = MgCO2_MgDM * yield_Mgha,
+         MgCO2_ha = round(MgCO2_ha, 2))
+```
+
+## [Ghaderpour 2018 (Iran)](https://www.sciencedirect.com/science/article/abs/pii/S2213138817302102)
 
 Used surveys. Didn't read, bad paper
 
-## [Bacenetti et al. 2018 (Italy)](https://pubmed.ncbi.nlm.nih.gov/29679827/)
+## [Bacenetti 2018 (Italy)](https://pubmed.ncbi.nlm.nih.gov/29679827/)
 
 Very good paper. Lists ISO standards I4040/44
 
@@ -259,6 +276,14 @@ They are very careful to define their goal and scope. Is it per ton of hay (at w
 
 They use the Ecoinvent database.
 
+## [Goglio 2018](https://www.sciencedirect.com/science/article/pii/S0959652617305772)
+
+Compares results when using models/Tier estimates.
+
+![](images/image-178864675.png)
+
+# ![](images/image-870060884.png)
+
 # LCAs
 
 Attributional versus consequential LCAs (see Costa et al. for more).
@@ -267,7 +292,7 @@ Attributional versus consequential LCAs (see Costa et al. for more).
 
 # Carbon
 
-## [Gamble et al. 2021](https://www.sciencedirect.com/science/article/abs/pii/S0168192321001210)
+## [Gamble 2021](https://www.sciencedirect.com/science/article/abs/pii/S0168192321001210)
 
 ![](images/image-958116090.png)
 
