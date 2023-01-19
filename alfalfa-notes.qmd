@@ -55,6 +55,20 @@ Camargo says it takes \~50 MJ to make 1 kg of N fertilizer (?)
 
 A MJ is **approximately the kinetic energy of a one megagram (tonne) vehicle moving at 161 km/h (100 mph)**.
 
+Back of the envelope values:
+
+-   Alfalfa emits \~1.5 Mg CO2eq/ha/year, corn \~3 Mg CO2eq/ha/yr.
+
+-   Around half a fertilized crop's GHGs come from N fertilizer.
+
+    -   25% is from the N2O emissions from applying it
+
+    -   25% is from the manufacturing of it.
+
+-   The world emits \~50 Gt CO2 each year
+
+    -   Optimistically, we can sequester 150 Gt CO2 in the soil. Total.
+
 # Lit notes
 
 ## [Guyader et al. 2016 (Canadians)](https://academic.oup.com/jas/article-abstract/94/8/3147/4791516)
@@ -231,6 +245,12 @@ Gives tables with ranges in assumptions by study
 
 "However, changes to rotation sequences, nutrient cycling and yields of crops within rotations mean that **simple attributional LCA of the individual legume crops introduced into rotations does not adequately represent consequences** for the environmental efficiency of rotations and related food systems, nor of individual crops within modified rotations."
 
+## [Liu 2016](https://link.springer.com/article/10.1007/s13593-016-0404-8)
+
+Cameron cites this to say 'reduced tillage and deep rooting systems can provide high carbon inputs throughout the year, increasing soil carbon stocks'. It's not a great paper.
+
+They claim N2O emissions from summer fallow is a significant contributor to CO2 emissions from field crop production.
+
 # Other alfalfa LCAs
 
 ## [Wang 2021 (Regional comparison of alfalfa in China)](https://www.sciencedirect.com/science/article/abs/pii/S0959652621012440)
@@ -262,13 +282,17 @@ Used surveys. Didn't read, bad paper
 
 Very good paper. Lists ISO standards I4040/44
 
+Found that increased energy needed for irrigation was offset by higher yields.
+
+85 kg Co2(eq?)/t of hay w/o irrigation, 80 with irrigation.
+
 They use three categories of 'cultivation':
 
-Soil tillage and sowing (seeding rates)
+-   Soil tillage and sowing (seeding rates)
 
-Crop management (herbicides, fertilizer)
+-   Crop management (herbicides, fertilizer)
 
-Harvest and transport
+-   Harvest and transport
 
 I would include irrigation managment, and cropping system impacts (reduced N requirements of following crop)
 
@@ -297,6 +321,10 @@ Attributional versus consequential LCAs (see Costa et al. for more).
 ![](images/image-958116090.png)
 
 ![](images/image-701451389.png)
+
+[Moinet 2023](https://pubmed.ncbi.nlm.nih.gov/36644803/)
+
+The amount of C that can be sequestered globally in soils is equivalent to about 3 years of our current CO2 emissions (40 Gt CO2 per year).
 
 # My project
 
