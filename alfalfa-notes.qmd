@@ -312,7 +312,29 @@ Compares results when using models/Tier estimates.
 
 Attributional versus consequential LCAs (see Costa et al. for more).
 
-## 
+## Notaricola 2017
+
+Life cycle thinking is the umbrella term that includes life cycle analysis, life cycle costing, social life cycle assessment, etc.
+
+Criticism might be LCA is yet another field-based metric, when sustainabiltiy demands a consideration of landscape impacts.
+
+Problem: if alfalfa is not grown, where will it be grown? Or will it just not be grown? Hard question.
+
+"Yet, current data available in food LCA databases and life cycle impact assessment (LCIA) models, are mostly non-spatially and temporally resolved (Hauschild et al., 2012)."
+
+Food production in particular can require very specific spatial/temporal resolution. The source of energy production is a good example. In some areas it's mostly electric, in others it's mostly coal.
+
+## [Hauschild 2012](https://link.springer.com/article/10.1007/s11367-012-0489-5)
+
+Characterization factors - convert flow to impact
+
+Ex is 'ozone depletion potential' or 'global warming potential'
+
+USEtox is a characterization model for determining human/eco toxicity.
+
+Climate change is just one indicator that can be assessed using life cycle analysis.
+
+![](images/image-1353806009.png)
 
 # Carbon
 

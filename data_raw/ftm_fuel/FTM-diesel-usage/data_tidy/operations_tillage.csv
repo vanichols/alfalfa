@@ -1,0 +1,119 @@
+id,cat,subcat,subsubcat,name,diesel_Lha,diesel_galac
+22953,tillage,cultivator,disk,continuous disturbance and smoothing,19.64324,2.1493861472808837
+22957,tillage,cultivator,disk,"cultivator, field 6-12 in shovels c",6.921904,0.757402779297516
+22958,tillage,cultivator,disk,"cultivator, field 6-12 in sweeps, coil tine har",8.979767,0.9825765401028558
+22959,tillage,cultivator,disk,"cultivator, field 6-12 in sweeps",6.921904,0.757402779297516
+22960,tillage,cultivator,disk,"cultivator, field, spike points, coil tine har",8.979767,0.9825765401028558
+22961,tillage,cultivator,disk,"cultivator, field, spike points",6.921904,0.757402779297516
+22962,tillage,cultivator,disk,"disk, inter row strips",4.2092657000000004,0.46058274428274426
+22963,tillage,cultivator,disk,"disk, offset, heavy 12 in depth",10.289317,1.1258690228690227
+22964,tillage,cultivator,disk,"disk, offset, heavy 15 in depth",12.160101,1.3305723820986977
+22965,tillage,cultivator,disk,"disk, offset, heavy, roller, corr packer",10.757012,1.1770447532552792
+22966,tillage,cultivator,disk,"disk, offset, heavy, roller, smooth",9.353924,1.0235172338330232
+22967,tillage,cultivator,disk,"disk, offset, heavy",8.418531,0.9211654447970236
+22970,tillage,cultivator,disk,"disk, single gang",3.554491,0.3889365357260094
+22971,tillage,cultivator,disk,"disk, tandem heavy primary, roller, smooth",8.231453,0.900695152642521
+22972,tillage,cultivator,disk,"disk, tandem heavy primary",7.0154433,0.767637958201116
+22973,tillage,cultivator,disk,"disk, tandem light finishing",3.7415698,0.4094069154174417
+22974,tillage,cultivator,disk,"disk, tandem secondary and rolling basket",6.828365,0.7471676332202647
+22975,tillage,cultivator,disk,"disk, tandem secondary",4.4898834,0.4912882591093117
+22976,tillage,cultivator,disk,"disk, tandem, shallow, no kill crop",3.7415698,0.4094069154174417
+22977,tillage,cultivator,disk,sweep plow 20-40 in wide,6.921904,0.757402779297516
+22978,tillage,cultivator,disk,"sweep plow wider than 40 inch, mulch treader",8.418531,0.9211654447970236
+22979,tillage,cultivator,disk,"sweep plow, under bed",6.921904,0.757402779297516
+22980,tillage,cultivator,disk,"sweep plow, wider than 40 in",7.4831395,0.8188138198927671
+22981,tillage,cultivator,disk,"sweep, single under row, regrow perennial",5.986511,0.6550509902615166
+22982,tillage,cultivator,disk,"sweep, single under row",6.921904,0.757402779297516
+22983,tillage,cultivator,row,"cultivator, flame",9.353924,1.0235172338330232
+22984,tillage,cultivator,row,"cultivator, row, 1 inch ridge",5.799433,0.6345806981070138
+22985,tillage,cultivator,row,"cultivator, row, 1st pass ridge till",5.799433,0.6345806981070138
+22986,tillage,cultivator,row,"cultivator, row, 2nd pass ridge till",6.921904,0.757402779297516
+22987,tillage,cultivator,row,"cultivator, row, 3 inch ridge",5.799433,0.6345806981070138
+22988,tillage,cultivator,row,"cultivator, row, between beds",5.799433,0.6345806981070138
+22989,tillage,cultivator,row,"cultivator, row, finger weeder",3.2738733,0.3582310208994419
+22990,tillage,cultivator,row,"cultivator, row, hipper, disk hiller, on beds",4.0221877,0.4401124521282415
+22993,tillage,cultivator,row,"cultivator, row, off bar, disk hiller, on beds",4.0221877,0.4401124521282415
+22994,tillage,cultivator,row,"cultivator, row, rotary on beds",5.0511193,0.5526993434730275
+22995,tillage,cultivator,row,"cultivator, row, rotary",5.0511193,0.5526993434730275
+22996,tillage,cultivator,row,furrow diker,3.2738733,0.3582310208994419
+22997,tillage,cultivator,row,"furrow shaper, torpedo",3.2738733,0.3582310208994419
+22998,tillage,cultivator,row,"ripper, intra row, furrow diker",23.384811,2.55879319400372
+22999,tillage,cultivator,row,"ripper, intra row",19.64324,2.1493861472808837
+23000,tillage,cultivator,row,"rototiller, row cultivator",19.64324,2.1493861472808837
+23043,tillage,subsoil,chisel,"chisel plow, coulter, st. pts., cover disks, rlng basket",16.837063,1.8423309990152095
+23044,tillage,subsoil,chisel,"chisel plow, coulter, st. pts., cover disks",13.095493,1.432924061713535
+23045,tillage,subsoil,chisel,"chisel plow, coulter, st. pts.",11.2247095,1.2282207571944412
+23046,tillage,subsoil,chisel,"chisel plow, coulter, sweeps",12.160101,1.3305723820986977
+23047,tillage,subsoil,chisel,"chisel plow, coulter, twst. pts., cover disks",14.030887,1.5352759601706967
+23048,tillage,subsoil,chisel,"chisel plow, coulter, twst. pts.",12.160101,1.3305723820986977
+23049,tillage,subsoil,chisel,"chisel plow, disk, st. pts., cover disks",14.030887,1.5352759601706967
+23050,tillage,subsoil,chisel,"chisel plow, disk, st. pts.",14.030887,1.5352759601706967
+23051,tillage,subsoil,chisel,"chisel plow, disk, twst. pts., cover disks",17.491838,1.913977240398293
+23052,tillage,subsoil,chisel,"chisel plow, disk, twst. pts.",16.369368,1.791155268628953
+23053,tillage,subsoil,chisel,"chisel, 12-16 in. low crown sweep 3 to 4 in. depth",6.921904,0.757402779297516
+23054,tillage,subsoil,chisel,"chisel, st. pt. 12 in deep",10.289317,1.1258690228690227
+23055,tillage,subsoil,chisel,"chisel, st. pt. 15 in deep",12.160101,1.3305723820986977
+23056,tillage,subsoil,chisel,"chisel, st. pt. 5 in deep, coil tine har",8.979767,0.9825765401028558
+23057,tillage,subsoil,chisel,"chisel, st. pt. 5 in deep",6.921904,0.757402779297516
+23058,tillage,subsoil,chisel,"chisel, st. pt., coil tine har",11.2247095,1.2282207571944412
+23059,tillage,subsoil,chisel,"chisel, st. pt",9.353924,1.0235172338330232
+23060,tillage,subsoil,chisel,"chisel, sweep shovel 5 in. depth, coil tine har",9.353924,1.0235172338330232
+23061,tillage,subsoil,chisel,"chisel, sweep shovel 5 in. depth",7.4831395,0.8188138198927671
+23062,tillage,subsoil,chisel,"chisel, sweep shovel, coil tine har",12.160101,1.3305723820986977
+23063,tillage,subsoil,chisel,"chisel, sweep shovel",10.289317,1.1258690228690227
+23064,tillage,subsoil,chisel,"chisel, twisted shovel, coil tine har",12.160101,1.3305723820986977
+23065,tillage,subsoil,chisel,"chisel, twisted shovel",10.289317,1.1258690228690227
+23066,tillage,subsoil,chisel,"chisel, winged with furrow diker",9.353924,1.0235172338330232
+23067,tillage,subsoil,chisel,para-plow or para-till,14.592121,1.596686836634205
+23068,tillage,subsoil,chisel,"plow, disk",12.160101,1.3305723820986977
+23069,tillage,subsoil,chisel,"plow, moldboard, 24 to 36 inch deep",33.674126,3.684661998030419
+23070,tillage,subsoil,chisel,"plow, moldboard, 6 to 12 inch deep",17.491838,1.913977240398293
+23076,tillage,subsoil,chisel,"plow, reversable",17.491838,1.913977240398293
+23077,tillage,subsoil,chisel,"plow, slip plow, 48 to 60 inch deep",23.384811,2.55879319400372
+23078,tillage,subsoil,chisel,"subsoil disk ripper, coulter smooth, rlng bskt",25.255596,2.763496662654557
+23079,tillage,subsoil,chisel,"subsoil disk ripper, roller smooth",26.190987,2.8658482328482324
+23080,tillage,subsoil,chisel,subsoil disk ripper,23.384811,2.55879319400372
+23081,tillage,subsoil,chisel,subsoiler bedder (ripper hipper),19.64324,2.1493861472808837
+23082,tillage,subsoil,chisel,subsoiler leveler,21.04633,2.3029138855454643
+23083,tillage,subsoil,chisel,"subsoiler ripper, 24 to 40 in. deep",23.384811,2.55879319400372
+23084,tillage,subsoil,chisel,"subsoiler, 12 foot spacing",17.772455,1.9446826786300468
+23085,tillage,subsoil,chisel,"subsoiler, in row",19.64324,2.1493861472808837
+23086,tillage,subsoil,chisel,"subsoiler, inline heavy shanks with coulter caddy",26.190987,2.8658482328482324
+23087,tillage,subsoil,chisel,"subsoiler, inline with coulter caddy",21.514025,2.354089615931721
+23088,tillage,subsoil,chisel,"subsoiler, rlng stlk chpr, roller, mulch treader",26.190987,2.8658482328482324
+23089,tillage,subsoil,chisel,"subsoiler, stalk chopper, rolling",22.917114,2.5076172447751395
+23090,tillage,subsoil,chisel,"subsoiler, wide spacing",19.64324,2.1493861472808837
+23091,tillage,subsoil,chisel,subsoiler,19.64324,2.1493861472808837
+23098,tillage,surface,shallow,"coulter caddy, double gang, fluted coulters",3.2738733,0.3582310208994419
+23099,tillage,surface,shallow,"coulter caddy, fluted coulters",3.2738733,0.3582310208994419
+23100,tillage,surface,shallow,"coulter caddy, smooth coulters",3.2738733,0.3582310208994419
+23101,tillage,surface,shallow,"coulter tiller, 10 degree, coiled tine har, rlng bskt",7.9508357,0.8699896815844183
+23102,tillage,surface,shallow,"coulter tiller, spike harrow",7.9508357,0.8699896815844183
+23103,tillage,surface,shallow,"harrow, coiled tine weeder",4.1157265,0.4503475763212605
+23104,tillage,surface,shallow,"harrow, coiled tine",4.1157265,0.4503475763212605
+23105,tillage,surface,shallow,"harrow, disk chain",3.7415698,0.4094069154174417
+23106,tillage,surface,shallow,"harrow, heavy on heavy residue",3.2738733,0.3582310208994419
+23107,tillage,surface,shallow,"harrow, heavy",4.1157265,0.4503475763212605
+23108,tillage,surface,shallow,"harrow, rolling",5.3317366,0.5834048145311302
+23109,tillage,surface,shallow,"harrow, rotary paddle wheel and spike gangs",6.828365,0.7471676332202647
+23110,tillage,surface,shallow,"harrow, rotary, light, fluff fragile residue",4.1157265,0.4503475763212605
+23111,tillage,surface,shallow,"harrow, rotary, light, fluff residue",4.1157265,0.4503475763212605
+23112,tillage,surface,shallow,"harrow, rotary",4.1157265,0.4503475763212605
+23113,tillage,surface,shallow,"harrow, spike tooth, cover seed",3.1803343,0.3479958748221906
+23114,tillage,surface,shallow,"harrow, spike tooth",3.1803343,0.3479958748221906
+23115,tillage,surface,shallow,"harrow, tine, on beds",2.0578632,0.22517378268957214
+23116,tillage,surface,shallow,land plane,8.418531,0.9211654447970236
+23117,tillage,surface,shallow,laser land leveler,8.418531,0.9211654447970236
+23118,tillage,surface,shallow,mulch treader,3.2738733,0.3582310208994419
+23119,tillage,surface,shallow,pasture renovator,4.4898834,0.4912882591093117
+23120,tillage,surface,shallow,"residue conditioner, coil tine har, rlng bskt",7.0154433,0.767637958201116
+23121,tillage,surface,shallow,"rodweeder, harrow, spike tooth",5.892972,0.6448158441842652
+23122,tillage,surface,shallow,rodweeder,4.3028054,0.47081796695480893
+23123,tillage,surface,shallow,roller harrow,5.6123548,0.6141103840682788
+23124,tillage,surface,shallow,"roller, corrugated packer 6 by 16",2.338481,0.2558793084582558
+23125,tillage,surface,shallow,"roller, corrugated packer",2.338481,0.2558793084582558
+23126,tillage,surface,shallow,"roller, smooth",2.338481,0.2558793084582558
+23127,tillage,surface,shallow,rolling basket incorporator,2.338481,0.2558793084582558
+23128,tillage,surface,shallow,rotary hoe,2.338481,0.2558793084582558
+23129,tillage,surface,shallow,"rototiller, field",19.64324,2.1493861472808837
+23130,tillage,surface,shallow,spader,14.030887,1.5352759601706967

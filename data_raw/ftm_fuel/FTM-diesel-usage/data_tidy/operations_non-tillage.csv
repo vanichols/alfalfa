@@ -1,0 +1,7 @@
+id,cat,subcat,subsubcat,name,diesel_Lha,diesel_galac
+22870,residue,manage,NA,"shredder, residue, flail or rotary",6.828365,0.7471676332202647
+22784,harvest,biomass,residue,"harvest, hay/silage grass or legume",14.7109,1.6096837728416673
+22799,harvest,biomass,residue,"remove residue, forage chopper",6.828365,0.7471676332202647
+22717,application,agchem,nutrient,sprayer,1.2160101,0.13305723820986978
+22917,seeding,planter,NA,"planter, double disk opnr, 15 inch row spacing",5.986511,0.6550509902615166
+23132,application,agchem,nutrient,"fert. applic. strip-till, fluted coulter, shank, closing disks, rolling basket, 30 inch spacing",14.034,1.5356165882481672
