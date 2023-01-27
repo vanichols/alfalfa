@@ -1,3 +1,5 @@
+#--explore
+
 
 library(tidyverse)
 library(readxl)
@@ -5,18 +7,16 @@ library(ggridges)
 
 rm(list = ls())
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 theme_set(theme_bw())
 
 # data --------------------------------------------------------------------
 
 d_till <- 
-  read_csv("data_tidy/operations_tillage.csv")
+  read_csv("R/data_tidy/operations_tillage.csv")
 
 
 d_other <- 
-  read_csv("data_tidy/operations_non-tillage.csv")
+  read_csv("R/data_tidy/operations_non-tillage.csv")
 
 
 # figs --------------------------------------------------------------------
@@ -29,5 +29,5 @@ d_till %>%
   labs(x = NULL,
        y = "Diesel use (gal/ac)")
 
-ggsave("figs/ftm_tillage.png")
+ggsave("R/figs/ftm_tillage.png")
 

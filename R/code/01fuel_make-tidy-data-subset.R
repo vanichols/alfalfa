@@ -1,14 +1,16 @@
+# look at FTM's fuel use by operation, from NRCS
 
 library(tidyverse)
 library(readxl)
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+rm(list = ls())
 
 # 3.7 L in a gallon
 # 2.47 acres in a ha
 
 dat <- 
-  read_excel("data_raw/operation-3.9-weps.xlsx") %>% 
+  read_excel("ftm_raw/operation-3.9-weps.xlsx") %>% 
   janitor::clean_names() %>% 
   #--note oenergyarea is L diesel/ha
   select(id, op_group1, name, oenergyarea) %>% 
@@ -87,7 +89,7 @@ d5 <-
   filter(id != 23131)
 
 d5 %>% 
-  write_csv("data_tidy/operations_non-tillage.csv")
+  write_csv("R/data_tidy/operations_non-tillage.csv")
 
 
 # tillage -----------------------------------------------------------------
@@ -97,4 +99,4 @@ d6 <-
   filter(cat == "tillage")
 
 d6 %>% 
-  write_csv("data_tidy/operations_tillage.csv")
+  write_csv("R/data_tidy/operations_tillage.csv")
