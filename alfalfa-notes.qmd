@@ -221,7 +221,7 @@ They allow for three separate emission factors:
 
 3.  Amount from urine and dung deposition from grazing animals
 
-For #1 - they use a default of 1%, but also provide value disaggregated by climate zone and fertilizer type. For example in wet climates, the value is 0.6% of organic N inputs and 1.6% of synthetic N inputs. In dry climates, it is 0.5% for all N inputs.
+For #1 - they use a default of 1%, but also provide value disaggregated by climate zone and fertilizer type. For example in wet climates, the value is 0.6% of organic N inputs and 1.6% of synthetic N inputs. In dry climates, it is 0.5% for all N inputs. Note this is for direct emissions only.
 
 ![](images/image-879996553.png)
 
@@ -338,6 +338,48 @@ Climate change is just one indicator that can be assessed using life cycle analy
 
 ![](images/image-1353806009.png)
 
+Visualizing contributions to the GHG footprint of alfalfa. Sankey/Alluvial diagrams, with the color of the flow based on the uncertainty (or maybe in my case the variability; [Paoli 2017](https://www.sciencedirect.com/science/article/pii/S1876610217359106)):
+
+![](images/image-1956153384.png)
+
+## Fuel emission factors
+
+Super confused. [EPA emission factors](https://www.epa.gov/climateleadership/ghg-emission-factors-hub) (which is what FTM uses) have a table that says 'mobile combustion CO2':
+
+![](images/image-1102276560.png)
+
+I do not understand if this is the CO2 released simply from combustion, or if it includes the manufacturing of the fuel as well.
+
+To answer this I tried to calculate things on a molar basis.
+
+The chemical formula for diesel is C~12~H~23~ and the molecular weight of C is 12, H is 1.
+
+```{r}
+#Total molecular weight of diesel
+tot <- (12*12 + 23 * 1)
+# fraction of diesel molecule that is carbon
+frac_c <- (12 * 12)/ tot
+
+round(frac_c, 2)
+
+```
+
+This means 1 kg of diesel has 0.86 kg of carbon.
+
+Using the same logic, CO2 is 27% carbon by weight. So 1 kg of diesel, with it's 0.86 kg of carbon would release:
+
+```{r}
+round(0.86 / 0.27, 2)
+```
+
+kg of CO2 per kg diesel. A gallon of diesel weighs 3.23 kg. Therefore the kg of CO2 released per gallon of diesel is:
+
+```{r}
+round(3.19 * 3.22, 2)
+```
+
+This is exactly the value reported in the table. So those values do NOT include the manufacturing energy/GHG used to make the fuel.
+
 # Carbon
 
 ## [Gamble 2021](https://www.sciencedirect.com/science/article/abs/pii/S0168192321001210)
@@ -391,3 +433,25 @@ N2O emissions follow the US National Greenhouse Gas Inventory (EPA 2019) protoco
 They calculated the difference between the baseline model run and the conservation model run, then averaged them over the 'broad use category' (*the same as Major Land Resource Area?*). This was translated into an emission reduction coefficient. It also gives minimum and maximum values "showing how emission estimates vary over a range of soil, weather, and agricultural management conditions". *How did they get those? Is it just the minimum and maximum of their 100 samples?*
 
 "The values should be interpreted as a average annual value over a 10 year duration"
+
+## Credit for reduced N fert in next crop
+
+From 2019 IPCC section:
+
+There is 0.005 (0-0.011) kg N2O-N emitted per kg N applied. Also from that section, to get kg N2O from kg N2O-N you multiply by 44/28. Then, 1 kg of N2O is equivalent to 298 kg CO2.
+
+```{r}
+#--in kg of CO2
+round(0.005 * (44/28) * 298, 2)
+#--in Mg of CO2
+round(0.005 * (44/28) * 298, 2)/1000
+```
+
+So each kg of N you avoid gives you a credit of 2.34 kg of CO2. Or 0.002 Mg CO2eq.
+
+The range presented from the IPCC values goes from 0-0.011. So best case offsets are:
+
+```{r}
+#--in kg of CO2
+round(0.011 * (44/28) * 298, 2)/1000
+```
