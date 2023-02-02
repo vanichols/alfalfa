@@ -455,3 +455,19 @@ The range presented from the IPCC values goes from 0-0.011. So best case offsets
 #--in kg of CO2
 round(0.011 * (44/28) * 298, 2)/1000
 ```
+
+## Irrigation pump energy
+
+Martindill et al. 2021 estimated how much ground water is being pumped in California by using the amount of energy being used. They present a equation:
+
+![](images/image-1952351631.png)
+
+In our case we know the water amount, we can get the 'overall pumping plant efficiency' from somewhere, and we can get H from somewhere.
+
+Burt 2011 published regional averages of pump test report results.
+
+![](images/image-281248307.png)
+
+It doesn't have the exact
+
+Measured groundwater depths are now available statewide from the California Statewide Groundwater Elevation Monitoring program (CASGEM), established in 2009, and from groundwater contour maps available on DWR's Groundwater Information Center Interactive Map Application (GICIMA), established in 2016
