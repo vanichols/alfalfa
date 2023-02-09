@@ -134,3 +134,27 @@ fert2 <-
 fert2 %>% 
   write_csv("R/data_tidy/lca_fertility.csv")
 
+
+
+# irrigation --------------------------------------------------------------
+
+
+irrig <- read_excel("R/data_raw/lca-sheets/enterprise-flows-all-areas.xlsx",
+                   sheet = "irrigation", 
+                   skip = 5)
+
+irrig1 <- 
+  fun_preproc(data = irrig)
+
+irrig2 <- 
+  irrig1 %>% 
+  #-change from ac-in to ha-m? or liters?
+  mutate(value_ha_m = value * ha_per_ac * m_per_in,
+         value_l = value_ha_m * m2_per_ha * l_water_per_m3) %>% 
+  group_by(system, flow_type, flow_cat, flow_desc, name) %>% 
+  summarise(value = sum(value_l)) %>% 
+  mutate(units = "l")
+
+irrig2 %>% 
+  write_csv("R/data_tidy/lca_irrigation.csv")
+

@@ -120,8 +120,8 @@ pests2 <-
 # deal with units all together --------------------------------------------
 
 
+pests3 <- 
   pests2 %>% 
-  filter(units_ai != "lb AI/gal") %>% 
   #--deal with applied units
   mutate(
     value_gal_ha = case_when(
@@ -131,95 +131,21 @@ pests2 <-
       units == "fl oz/ac" ~ value * gal_per_oz * ac_per_ha,
       TRUE ~ 999)
   ) %>% 
+  #--deal with ai units
   mutate(
     value_kgai_ha = case_when(
       units_ai == "lb AI/gal" ~ value_gal_ha * value_ai * kg_per_lb,
       units_ai == "g/g" ~ value_gal_ha * g_per_gal_water * value_ai * (1/1000),
       TRUE ~ 999)
-  )
-
-
-# glyphosate --------------------------------------------------------------
-
-pests2_gly <- 
-  pests2 %>% 
-  filter(ai == "glyphosate") %>% 
-  #--change pints per ac to gal per ha
-  mutate(
-    value_gal_ha = case_when(
-      units == "pints/ac" ~ value * gal_per_pint * ac_per_ha,
-      units == "oz/ac" ~ value * gal_per_oz * ac_per_ha,
-      TRUE ~ 999)
   ) %>% 
-  mutate(
-    value_kgai_ha = case_when(
-      units_ai == "lb AI/gal" ~ value_gal_ha * value_ai * kg_per_lb
-      TRUE ~ 999)
-  )
-  
-    value_kgai_ha = value_gal_ha * value_ai * kg_per_lb) %>% 
-  group_by(system, flow_type, flow_cat, flow_desc, name, ai) %>% 
-  summarise(value = sum(value_kgai_ha)) %>% 
+  select(system, flow_type, flow_cat, ai, name, value_kgai_ha) %>% 
   mutate(units = "kg") %>% 
-  ungroup()
-  
-# flumioxazin --------------------------------------------------------------
+  rename("value" = value_kgai_ha)
 
 
-pests2_flum <- 
-  pests2 %>% 
-  filter(ai == "flumioxazin") %>% 
-  #--change pints per ac to gal per ha
-  mutate(
-    value_gal_ha = value * gal_per_oz * ac_per_ha,
-    value_kgai_ha = value_gal_ha * value_ai * kg_per_lb) %>% 
-  group_by(system, flow_type, flow_cat, flow_desc, name, ai) %>% 
-  summarise(value = sum(value_kgai_ha)) %>% 
-  mutate(units = "kg") %>% 
-  ungroup()
-
-# paraquat --------------------------------------------------------------
+# write? ------------------------------------------------------------------
 
 
-pests2_para <- 
-  pests2 %>% 
-  filter(ai == "paraquat") %>% 
-  #--change pints per ac to gal per ha
-  mutate(
-    value_gal_ha = value * gal_per_pint * ac_per_ha,
-    value_kgai_ha = value_gal_ha * value_ai * kg_per_lb) %>% 
-  group_by(system, flow_type, flow_cat, flow_desc, name, ai) %>% 
-  summarise(value = sum(value_kgai_ha)) %>% 
-  mutate(units = "kg") %>% 
-  ungroup()
+pests3 %>% 
+  write_csv("R/data_tidy/lca_pesticides.csv")
 
-
-# chlorantraniliprole --------------------------------------------------------------
-
-
-pests2_chlor <- 
-  pests2 %>% 
-  filter(ai == "chlorantraniliprole") %>% 
-  #--change pints per ac to gal per ha
-  mutate(
-    value_gal_ha = value * gal_per_oz * ac_per_ha,
-    value_kgai_ha = value_gal_ha * value_ai * kg_per_lb) %>% 
-  group_by(system, flow_type, flow_cat, flow_desc, name, ai) %>% 
-  summarise(value = sum(value_kgai_ha)) %>% 
-  mutate(units = "kg") %>% 
-  ungroup()
-
-# pendimethalin --------------------------------------------------------------
-
-
-pests2_pendi <- 
-  pests2 %>% 
-  filter(ai == "pendimethalin") %>% 
-  #--change pints per ac to gal per ha
-  mutate(
-    value_gal_ha = value * ac_per_ha,
-    value_kgai_ha = value_gal_ha * value_ai * kg_per_lb) %>% 
-  group_by(system, flow_type, flow_cat, flow_desc, name, ai) %>% 
-  summarise(value = sum(value_kgai_ha)) %>% 
-  mutate(units = "kg") %>% 
-  ungroup()
