@@ -1,19 +1,22 @@
 system,flow_type,flow_cat,ai,name,value,units
-tulare county,input,pesticide,flumioxazin,best,0.3630502550368909,kg
-tulare county,input,pesticide,flumioxazin,mid,0.3630502550368909,kg
-tulare county,input,pesticide,flumioxazin,worst,0.3630502550368909,kg
-tulare county,input,pesticide,chlorantraniliprole,best,0.15354787137922649,kg
-tulare county,input,pesticide,chlorantraniliprole,mid,0.15354787137922649,kg
-tulare county,input,pesticide,chlorantraniliprole,worst,0.15354787137922649,kg
-tulare county,input,pesticide,paraquat,best,1.7413826001687198,kg
-tulare county,input,pesticide,paraquat,mid,1.7413826001687198,kg
-tulare county,input,pesticide,paraquat,worst,1.7413826001687198,kg
-tulare county,input,pesticide,pendimethalin,best,12.777704814175495,kg
-tulare county,input,pesticide,pendimethalin,mid,12.777704814175495,kg
-tulare county,input,pesticide,pendimethalin,worst,12.777704814175495,kg
-tulare county,input,pesticide,glyphosate,best,6.590605640995783,kg
-tulare county,input,pesticide,glyphosate,mid,6.590605640995783,kg
-tulare county,input,pesticide,glyphosate,worst,6.590605640995783,kg
-tulare county,input,pesticide,lambda-cyhalothrin,best,0.08196225127513888,kg
-tulare county,input,pesticide,lambda-cyhalothrin,mid,0.08196225127513888,kg
-tulare county,input,pesticide,lambda-cyhalothrin,worst,0.08196225127513888,kg
+central_valley_organic,input,pesticide,XXXXX,best,999,kg
+central_valley_organic,input,pesticide,XXXXX,mid,999,kg
+central_valley_organic,input,pesticide,XXXXX,worst,999,kg
+tulare_county,input,pesticide,flumioxazin,best,0.3630502550368909,kg
+tulare_county,input,pesticide,flumioxazin,mid,0.3630502550368909,kg
+tulare_county,input,pesticide,flumioxazin,worst,0.3630502550368909,kg
+tulare_county,input,pesticide,chlorantraniliprole,best,0.15354787137922649,kg
+tulare_county,input,pesticide,chlorantraniliprole,mid,0.15354787137922649,kg
+tulare_county,input,pesticide,chlorantraniliprole,worst,0.15354787137922649,kg
+tulare_county,input,pesticide,paraquat,best,1.7413826001687198,kg
+tulare_county,input,pesticide,paraquat,mid,1.7413826001687198,kg
+tulare_county,input,pesticide,paraquat,worst,1.7413826001687198,kg
+tulare_county,input,pesticide,pendimethalin,best,12.777704814175495,kg
+tulare_county,input,pesticide,pendimethalin,mid,12.777704814175495,kg
+tulare_county,input,pesticide,pendimethalin,worst,12.777704814175495,kg
+tulare_county,input,pesticide,glyphosate,best,6.590605640995783,kg
+tulare_county,input,pesticide,glyphosate,mid,6.590605640995783,kg
+tulare_county,input,pesticide,glyphosate,worst,6.590605640995783,kg
+tulare_county,input,pesticide,lambda-cyhalothrin,best,0.08196225127513888,kg
+tulare_county,input,pesticide,lambda-cyhalothrin,mid,0.08196225127513888,kg
+tulare_county,input,pesticide,lambda-cyhalothrin,worst,0.08196225127513888,kg

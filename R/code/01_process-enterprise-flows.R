@@ -1,4 +1,9 @@
-#--think about processing lca sheet
+#--processing lca sheet
+#--pesticide flows are done separately bc they are complicated
+#--I don't like Joel's wide format, use long format
+#--2/14 - added field ops
+
+rm(list = ls())
 
 library(tidyverse)
 library(readxl)
@@ -24,6 +29,23 @@ fun_preproc <- function(data = d.dum) {
   }
 
 
+# field ops -----------------------------------------------------
+
+fops <- read_excel("R/data_raw/lca-sheets/enterprise-flows-all-areas.xlsx",
+                   sheet = "field_ops", 
+                   skip = 5)
+
+fops1 <- 
+  fun_preproc(data = fops)
+
+fops2 <- 
+  fops1 %>% 
+  group_by(system, flow_type, flow_cat, flow_desc, units, name) %>% 
+  summarise(value = sum(value, na.rm = T))
+
+fops2 %>% 
+  write_csv("R/data_tidy/lca_fieldops.csv")
+
 
 # yields ------------------------------------------------------------------
 
@@ -44,7 +66,7 @@ ylds2 <-
     units == "ton/ac/yr at 30% moisture" ~ (value * (1 - 0.3)),
     TRUE ~ 0)
   ) %>% 
-  group_by(system, flow_type, flow_cat, name) %>% 
+  group_by(system, flow_type, flow_cat, stand_life_yrs, name) %>% 
   summarise(value_ton_per_ac_per_yr = sum(value2)) %>% 
   #--change to kg per ha
   mutate(value_kg_per_ha_per_year = 
@@ -53,10 +75,8 @@ ylds2 <-
            kg_per_lb * 
            ac_per_ha,
           units = "kg",
-         value = value_kg_per_ha_per_year * 3) %>% 
-  select(system, flow_type, flow_cat, name, units, value) %>% 
-  pivot_wider(names_from = system, values_from = value) %>% 
-  janitor::clean_names()
+         value = value_kg_per_ha_per_year * stand_life_yrs) %>% 
+  select(system, flow_type, flow_cat, name, stand_life_yrs, units, value)
 
 ylds2 %>% 
   write_csv("R/data_tidy/lca_yields.csv")    
@@ -79,10 +99,7 @@ seeds2 <-
     value_kg_per_ha = value_lbs_per_ac * kg_per_lb * ac_per_ha,
     units = "kg"
     ) %>% 
-  select(system, flow_type, flow_cat, flow_desc, name, units, value_kg_per_ha) %>% 
-  pivot_wider(names_from = system, 
-              values_from = value_kg_per_ha) %>% 
-  janitor::clean_names()
+  select(system, flow_type, flow_cat, flow_desc, name, units, value_kg_per_ha) 
 
 seeds2 %>% 
   write_csv("R/data_tidy/lca_seeds.csv")
@@ -127,9 +144,7 @@ fert2_map <-
 
 fert2 <- 
   fert2_map %>% 
-  bind_rows(fert2_pou) %>% 
-  pivot_wider(names_from = system, values_from = value) %>% 
-  janitor::clean_names()
+  bind_rows(fert2_pou)
 
 fert2 %>% 
   write_csv("R/data_tidy/lca_fertility.csv")
@@ -157,4 +172,6 @@ irrig2 <-
 
 irrig2 %>% 
   write_csv("R/data_tidy/lca_irrigation.csv")
+
+
 

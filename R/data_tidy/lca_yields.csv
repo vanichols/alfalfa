@@ -1,4 +1,7 @@
-flow_type,flow_cat,name,units,organic_central_valley,tulare_county
-output,yield,best,kg,60525.97017241025,86753.89058045468
-output,yield,mid,kg,42368.17912068717,74648.69654597263
-output,yield,worst,kg,24210.3880689641,62543.50251149059
+system,flow_type,flow_cat,name,stand_life_yrs,units,value
+central_valley_organic,output,yield,best,4,kg,80701.29356321367
+central_valley_organic,output,yield,mid,4,kg,56490.905494249564
+central_valley_organic,output,yield,worst,4,kg,32280.517425285467
+tulare_county,output,yield,best,3,kg,86753.89058045468
+tulare_county,output,yield,mid,3,kg,74648.69654597263
+tulare_county,output,yield,worst,3,kg,62543.50251149059

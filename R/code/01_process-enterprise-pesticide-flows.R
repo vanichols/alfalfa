@@ -1,5 +1,8 @@
-#--think about processing lca sheet
+#--process pesticide inputs into weight of active ingredients applied
+#--feb 14 2023
 
+
+rm(list = ls())
 library(tidyverse)
 library(readxl)
 library(measurements)

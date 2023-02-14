@@ -1,10 +1,10 @@
 system,flow_type,flow_cat,flow_desc,name,value,units
-tualre county,input,irrigation,"flood irrigation, gravity",best,19735709.40076032,l
-tualre county,input,irrigation,"flood irrigation, gravity",mid,9867854.70038016,l
-tualre county,input,irrigation,"flood irrigation, gravity",worst,0,l
-tualre county,input,irrigation,"flood irrigation, ground",best,0,l
-tualre county,input,irrigation,"flood irrigation, ground",mid,9867854.70038016,l
-tualre county,input,irrigation,"flood irrigation, ground",worst,19735709.40076032,l
-tualre county,input,irrigation,"sprinker, est",best,822321.22503168,l
-tualre county,input,irrigation,"sprinker, est",mid,822321.22503168,l
-tualre county,input,irrigation,"sprinker, est",worst,1644642.45006336,l
+tualre_county,input,irrigation,"flood irrigation, gravity",best,19735709.40076032,l
+tualre_county,input,irrigation,"flood irrigation, gravity",mid,9867854.70038016,l
+tualre_county,input,irrigation,"flood irrigation, gravity",worst,0,l
+tualre_county,input,irrigation,"flood irrigation, ground",best,0,l
+tualre_county,input,irrigation,"flood irrigation, ground",mid,9867854.70038016,l
+tualre_county,input,irrigation,"flood irrigation, ground",worst,19735709.40076032,l
+tualre_county,input,irrigation,"sprinker, est",best,822321.22503168,l
+tualre_county,input,irrigation,"sprinker, est",mid,822321.22503168,l
+tualre_county,input,irrigation,"sprinker, est",worst,1644642.45006336,l
