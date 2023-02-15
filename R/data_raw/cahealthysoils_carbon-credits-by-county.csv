@@ -1,0 +1,12 @@
+Manually creating a list of co2 impacts from CA Healthy Soils,,,,
+Emailed to get database,,,,
+,,,,
+,,,,
+,,,,
+county,practice,units,co2,n2o
+tehama,Conservation Crop Rotation (CPS 328) - basic rotation,Mg co2e/ac/year,0.21,0.01
+tehama,Pasture and Hay Planting (CPS 512),,0.86,0.22
+tulare,Conservation Crop Rotation (CPS 328) - basic rotation,,0.26,0
+tulare,Pasture and Hay Planting (CPS 512),,0.86,0.22
+yolo,Conservation Crop Rotation (CPS 328) - basic rotation,,0.26,0
+yolo,Pasture and Hay Planting (CPS 512),,0.86,0.22

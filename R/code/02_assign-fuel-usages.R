@@ -3,6 +3,8 @@
 
 rm(list = ls())
 library(tidyverse)
+library(readxl)
+
 source("R/code/00_conversions.R")
 
 
@@ -28,19 +30,13 @@ read_csv("R/data_tidy/lca_fieldops.csv") %>%
   select(flow_desc) %>% 
   distinct()
 
-#--find a good value for each
-
+#--what does the nrcs have?
 fuel %>% 
   select(subcat) %>% 
   distinct()
 
 # chisel ------------------------------------------------------------------
 
-#-lots of spread
-fuel %>% 
-  filter(grepl("chisel", subsubcat)) %>% 
-  ggplot(aes(subsubcat, diesel_Lha)) + 
-  geom_jitter()
 
 #--move to only include ones w/chisel in the name
 fuel %>% 
@@ -50,6 +46,68 @@ fuel %>%
   geom_point() +
   coord_flip()
 
+
+
+# disc --------------------------------------------------------------------
+
+fuel %>% 
+  filter(grepl("disk", subsubcat)) %>% 
+  ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
+  geom_point() +
+  coord_flip()
+
+
+
+# disc border ridges ------------------------------------------------------
+
+
+# laser level ---------------------------------------------------------------
+
+fuel %>% 
+  filter(grepl("surface", subcat)) %>% 
+  mutate(clr = ifelse(name == "laser land leveler", "Y", "N")) %>% 
+  ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
+  geom_point(aes(color = clr), show.legend = F, size = 2) +
+  scale_color_manual(values = c("black", "red")) +
+  coord_flip()
+
+
+# plant -------------------------------------------------------------------
+fuel %>% 
+  filter(grepl("drill", subcat)) %>% 
+  ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
+  geom_point() +
+  coord_flip()
+
+  
+fuel %>% 
+  filter(grepl("planter", subcat))  %>% 
+  ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
+  geom_point() +
+  coord_flip()
+
+# roll --------------------------------------------------------------------
+
+fuel %>% 
+  filter(grepl("surface", subcat)) %>% 
+  mutate(clr = ifelse(name == "roller, smooth", "Y", "N")) %>% 
+  ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
+  geom_point(aes(color = clr), show.legend = F, size = 2) +
+  scale_color_manual(values = c("black", "red")) +
+  coord_flip()
+
+
+
+# stand termination -------------------------------------------------------
+
+
+
+
+#--find a good value for each
+
+fuel %>% 
+  select(subcat) %>% 
+  distinct()
 
 
 # disk --------------------------------------------------------------------

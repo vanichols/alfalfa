@@ -1,4 +1,7 @@
-#--think about processing lca sheet
+#--calculate n2o emissions
+#--use fertilizer n and plant n inputs
+#--direct + indirect
+#--2/15 - need to do indirect
 
 library(tidyverse)
 library(readxl)
@@ -29,12 +32,12 @@ fun_preproc <- function(data = d.dum) {
 
 
 
-# n2o ---------------------------------------------------------------------
+# direct n2o ---------------------------------------------------------------------
 
 
 
 n2o <- read_excel("R/data_raw/lca-sheets/enterprise-flows-all-areas.xlsx",
-                   sheet = "soil_emissions", 
+                   sheet = "soil_n2o", 
                    skip = 5)
 
 n2o1 <- 
