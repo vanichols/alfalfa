@@ -1,5 +1,5 @@
 # assign fuel usage for types of passes
-# created 2/14/2023 - definitely needs help
+# created 2/14/2023
 
 rm(list = ls())
 library(tidyverse)

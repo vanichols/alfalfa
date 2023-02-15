@@ -1,0 +1,22 @@
+system,flow_type,flow_cat,flow_desc,units,name,value
+tulare_county,input,harvest ops,bale hay,pass/ha/year,best,21
+tulare_county,input,harvest ops,bale hay,pass/ha/year,mid,21
+tulare_county,input,harvest ops,bale hay,pass/ha/year,worst,21
+tulare_county,input,harvest ops,chop haylage,pass/ha/year,best,6
+tulare_county,input,harvest ops,chop haylage,pass/ha/year,mid,6
+tulare_county,input,harvest ops,chop haylage,pass/ha/year,worst,6
+tulare_county,input,harvest ops,cut haylage,pass/ha/year,best,6
+tulare_county,input,harvest ops,cut haylage,pass/ha/year,mid,6
+tulare_county,input,harvest ops,cut haylage,pass/ha/year,worst,6
+tulare_county,input,harvest ops,something else done to haylage?,pass/ha/year,best,6
+tulare_county,input,harvest ops,something else done to haylage?,pass/ha/year,mid,6
+tulare_county,input,harvest ops,something else done to haylage?,pass/ha/year,worst,6
+tulare_county,input,harvest ops,stack hay,pass/ha/year,best,21
+tulare_county,input,harvest ops,stack hay,pass/ha/year,mid,21
+tulare_county,input,harvest ops,stack hay,pass/ha/year,worst,21
+tulare_county,input,harvest ops,swath hay,pass/ha/year,best,21
+tulare_county,input,harvest ops,swath hay,pass/ha/year,mid,21
+tulare_county,input,harvest ops,swath hay,pass/ha/year,worst,21
+tulare_county,input,harvest ops,windrow hay,pass/ha/year,best,21
+tulare_county,input,harvest ops,windrow hay,pass/ha/year,mid,21
+tulare_county,input,harvest ops,windrow hay,pass/ha/year,worst,21

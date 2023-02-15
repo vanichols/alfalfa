@@ -2,12 +2,12 @@ system,flow_type,flow_cat,flow_desc,units,name,value
 tulare_county,input,field ops,chisel,pass/stand life,best,1
 tulare_county,input,field ops,chisel,pass/stand life,mid,1
 tulare_county,input,field ops,chisel,pass/stand life,worst,1
-tulare_county,input,field ops,disc,pass/stand life,best,2
-tulare_county,input,field ops,disc,pass/stand life,mid,2
-tulare_county,input,field ops,disc,pass/stand life,worst,2
-tulare_county,input,field ops,disc border ridges,pass/stand life,best,1
-tulare_county,input,field ops,disc border ridges,pass/stand life,mid,1
-tulare_county,input,field ops,disc border ridges,pass/stand life,worst,1
+tulare_county,input,field ops,disk,pass/stand life,best,2
+tulare_county,input,field ops,disk,pass/stand life,mid,2
+tulare_county,input,field ops,disk,pass/stand life,worst,2
+tulare_county,input,field ops,disk border ridges,pass/stand life,best,1
+tulare_county,input,field ops,disk border ridges,pass/stand life,mid,1
+tulare_county,input,field ops,disk border ridges,pass/stand life,worst,1
 tulare_county,input,field ops,fertilize,pass/stand life,best,3
 tulare_county,input,field ops,fertilize,pass/stand life,mid,3
 tulare_county,input,field ops,fertilize,pass/stand life,worst,3

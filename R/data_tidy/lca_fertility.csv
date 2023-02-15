@@ -1,7 +1,2 @@
-system,flow_type,flow_cat,flow_desc,units,name,value
-tulare_county,input,fertility,11-52-0-MAP,kg,mid,224.17025989781573
-tulare_county,input,fertility,11-52-0-MAP,kg,best,224.17025989781573
-tulare_county,input,fertility,11-52-0-MAP,kg,worst,224.17025989781573
-central_valley_organic,input,fertility,composted poultry litter,kg,mid,8070.129356321367
-central_valley_organic,input,fertility,composted poultry litter,kg,best,8070.129356321367
-central_valley_organic,input,fertility,composted poultry litter,kg,worst,8070.129356321367
+scenario_id,cat,desc,unit,value
+cv_01,fertility,11-52-0 map,kg / stand,448.34051979563145

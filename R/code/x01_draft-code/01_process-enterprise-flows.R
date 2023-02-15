@@ -29,6 +29,14 @@ fun_preproc <- function(data = d.dum) {
   }
 
 
+
+# stand life ---------------------------------------------------------------
+
+
+sl <- read_excel("R/data_raw/lca-sheets/enterprise-flows-all-areas.xlsx",
+                 sheet = "stand_life",
+                 skip = 5)
+
 # field ops -----------------------------------------------------
 
 fops <- read_excel("R/data_raw/lca-sheets/enterprise-flows-all-areas.xlsx",
@@ -47,6 +55,28 @@ fops2 %>%
   write_csv("R/data_tidy/lca_fieldops.csv")
 
 
+
+# harvest ops -----------------------------------------------------
+
+hops <- read_excel("R/data_raw/lca-sheets/enterprise-flows-all-areas.xlsx",
+                   sheet = "harvest_ops", 
+                   skip = 5)
+
+hops1 <- 
+  fun_preproc(data = hops) %>% 
+  fill(units)
+
+hops2 <- 
+  hops1 %>%
+  left_join(sl) %>% 
+  mutate(value = value * stand_life_yrs) %>% 
+  group_by(system, flow_type, flow_cat, flow_desc, units, name) %>% 
+  summarise(value = sum(value, na.rm = T))
+
+hops2 %>% 
+  write_csv("R/data_tidy/lca_harvestops.csv")
+
+
 # yields ------------------------------------------------------------------
 
 
@@ -60,6 +90,7 @@ ylds1 <-
 
 ylds2 <- 
   ylds1 %>% 
+  left_join(sl) %>% 
   #-convert units
   mutate(value2 = case_when(
     units == "ton/ac/yr at 10% moisture" ~ (value * (1 - 0.1)),

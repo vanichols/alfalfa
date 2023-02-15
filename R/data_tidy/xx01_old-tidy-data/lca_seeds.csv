@@ -1,0 +1,7 @@
+system,flow_type,flow_cat,flow_desc,name,units,value_kg_per_ha
+tulare_county,input,seed,round-up ready seed,mid,kg,28.021282487226966
+tulare_county,input,seed,round-up ready seed,best,kg,13.450215593868943
+tulare_county,input,seed,round-up ready seed,worst,kg,28.021282487226966
+central_valley_organic,input,seed,seed,mid,kg,28.021282487226966
+central_valley_organic,input,seed,seed,best,kg,28.021282487226966
+central_valley_organic,input,seed,seed,worst,kg,28.021282487226966
