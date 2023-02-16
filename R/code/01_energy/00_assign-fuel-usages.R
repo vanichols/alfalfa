@@ -1,9 +1,9 @@
 # assign fuel usage for types of passes
-# created 2/14/2023 - definitely needs help
+#--these are 'first stab' values that are put into the assumptions sheet
+# created 2/14/2023
 
 rm(list = ls())
 library(tidyverse)
-library(readxl)
 
 source("R/code/00_conversions.R")
 
@@ -26,9 +26,23 @@ fuel <-
 
 #--what are general cats of operations?
 
-read_csv("R/data_tidy/lca_fieldops.csv") %>% 
-  select(flow_desc) %>% 
+fops <- 
+  read_csv("R/data_tidy/prod_fieldops.csv") %>% 
+  select(desc) %>% 
   distinct()
+
+
+hops <- 
+  read_csv("R/data_tidy/prod_harvestops.csv") %>% 
+  select(desc) %>% 
+  distinct()
+
+
+ops <- 
+  fops %>% 
+  bind_rows(hops)
+
+ops
 
 #--what does the nrcs have?
 fuel %>% 
@@ -36,7 +50,6 @@ fuel %>%
   distinct()
 
 # chisel ------------------------------------------------------------------
-
 
 #--move to only include ones w/chisel in the name
 fuel %>% 
@@ -46,22 +59,43 @@ fuel %>%
   geom_point() +
   coord_flip()
 
-
+chisel <- 
+  fuel %>% 
+  filter(grepl("chisel", subsubcat)) %>% 
+  filter(grepl("chisel", name)) %>%
+  group_by(subsubcat) %>% 
+  summarise(diesel_Lha = median(diesel_Lha, na.rm = T)) %>% 
+  rename(desc = subsubcat)
+  
 
 # disc --------------------------------------------------------------------
 
 fuel %>% 
   filter(grepl("disk", subsubcat)) %>% 
+  filter(grepl("disk", name)) %>% 
   ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
   geom_point() +
   coord_flip()
 
 
+disk <- 
+  fuel %>% 
+  filter(grepl("disk", subsubcat)) %>% 
+  filter(grepl("disk", name)) %>% 
+  group_by(subsubcat) %>% 
+  summarise(diesel_Lha = median(diesel_Lha, na.rm = T)) %>% 
+  rename(desc = subsubcat)
+
 
 # disc border ridges ------------------------------------------------------
 
+disk_border <- 
+  disk %>% 
+  mutate(desc = "disk border ridges")
 
 # laser level ---------------------------------------------------------------
+ops
+
 
 fuel %>% 
   filter(grepl("surface", subcat)) %>% 
@@ -72,7 +106,17 @@ fuel %>%
   coord_flip()
 
 
+laser <- 
+  fuel %>% 
+  filter(grepl("surface", subcat)) %>% 
+  filter(name == "laser land leveler") %>% 
+  mutate(desc = "laser level") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = median(diesel_Lha, na.rm = T)) 
+
+  
 # plant -------------------------------------------------------------------
+
 fuel %>% 
   filter(grepl("drill", subcat)) %>% 
   ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
@@ -81,47 +125,51 @@ fuel %>%
 
   
 fuel %>% 
-  filter(grepl("planter", subcat))  %>% 
+  filter(grepl("planter|drill", subcat))  %>% 
   ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
   geom_point() +
   coord_flip()
 
+plant <- 
+  fuel %>% 
+  filter(grepl("planter|drill", subcat))  %>% 
+  mutate(desc = "plant") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = median(diesel_Lha, na.rm = T)) 
+
+
 # roll --------------------------------------------------------------------
+ops
 
 fuel %>% 
   filter(grepl("surface", subcat)) %>% 
+  filter(grepl("roll", name)) %>% 
   mutate(clr = ifelse(name == "roller, smooth", "Y", "N")) %>% 
   ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
   geom_point(aes(color = clr), show.legend = F, size = 2) +
   scale_color_manual(values = c("black", "red")) +
   coord_flip()
 
+roll <- 
+  fuel %>% 
+  filter(grepl("surface", subcat)) %>% 
+  filter(grepl("roll", name)) %>% 
+  mutate(desc = "roll") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = mean(diesel_Lha, na.rm = T)) 
+
 
 
 # stand termination -------------------------------------------------------
 
+# weed control -------------------------------------------------------
 
 
+# haylage, cut -------------------------------------------------------
 
-#--find a good value for each
+# haylage, chop -------------------------------------------------------
 
-fuel %>% 
-  select(subcat) %>% 
-  distinct()
-
-
-# disk --------------------------------------------------------------------
-
-
-library(plotly)
-
-fuel %>% 
-  filter(grepl("disk", subsubcat)) %>% 
-  ggplot(aes(subsubcat, diesel_Lha)) + 
-  geom_jitter(aes(color = name), show.legend = F)
-
-ggplotly()
-  
-tmp <- 
-  fuel %>% 
-  filter(grepl("cultivator", subcat))
+# hay, swath -------------------------------------------------------
+# hay, rake -------------------------------------------------------
+# hay, bale -------------------------------------------------------
+# hay, stack -------------------------------------------------------

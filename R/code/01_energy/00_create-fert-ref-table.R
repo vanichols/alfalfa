@@ -1,18 +1,18 @@
 # try to create reference tables (still unsure of good format)
 #created 2/7/2023
+#--modified 2/16
 
 rm(list = ls())
 library(tidyverse)
 source("R/code/00_conversions.R")
-
 
 # amount of N in fertilizer (for N2O emissions) ---------------------------
 
 #--get unique types of fertilizers
 
 fert_types <- 
-  read_csv("R/data_tidy/lca_fertility.csv") %>% 
-  select(flow_desc) %>% 
+  read_csv("R/data_tidy/prod_fertility.csv") %>% 
+  select(desc) %>% 
   pull() %>% 
   unique()
 
@@ -24,63 +24,19 @@ fert_types <-
 
 fert_n <- 
   tibble(fert_type = fert_types) %>% 
-  mutate(fert_units = c("kg", "kg"),
-         fert_n = case_when(
-           fert_type == "11-52-0-MAP" ~ 0.11,
-           fert_type == "composted poultry litter" ~ 0.03,
+  mutate(value = case_when(
+           fert_type == "11-52-0 map" ~ 0.11,
+           #fert_type == "composted poultry litter" ~ 0.03,
            TRUE ~ 999
          ),
-         fert_n_units = "kg"
+         unit = "kg n / kg fertilizer"
          )
 
 fert_n %>% 
   write_csv("R/data_tidy/ref_fert-n.csv")
 
 
-# fuel use for a field op -------------------------------------------------
-
-fuel <- 
-  read_excel("ftm_raw/operation-3.9-weps.xlsx") %>% 
-  janitor::clean_names() %>% 
-  #--note oenergyarea is L diesel/ha
-  select(id, op_group1, name, oenergyarea) %>% 
-  janitor::remove_empty() %>% 
-  mutate(diesel_Lha = as.numeric(oenergyarea),
-         diesel_galac = diesel_Lha / 3.7 / 2.47) %>% 
-  separate(op_group1, into = c("cat", "subcat", "subsubcat"), sep = ",") %>% 
-  mutate_if(is.character, str_to_lower) %>% 
-  mutate_if(is.character, str_trim) %>% 
-  filter(diesel_Lha > 0.01) %>% 
-  select(-oenergyarea)
-
-#--what are general cats of operations?
-
-read_csv("R/data_tidy/lca_fieldops.csv") %>% 
-  select(flow_desc) %>% 
-  distinct()
-
-#--find a good value for each
-
-# chisel ------------------------------------------------------------------
-
-
-
-#-lots of spread
-fuel %>% 
-  filter(grepl("chisel", subsubcat)) %>% 
-  ggplot(aes(subsubcat, diesel_Lha)) + 
-  geom_jitter()
-
-#--move to only include ones w/chisel in the name
-fuel %>% 
-  filter(grepl("chisel", subsubcat)) %>% 
-  filter(grepl("chisel", name)) %>% 
-  ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
-  geom_point() +
-  coord_flip()
-
-
-
+############ stopped editing ##############
 # fertilizer energy --------------------------------------------------------------
 
 # the greet table

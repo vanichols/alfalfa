@@ -1,3 +1,2 @@
-fert_type,fert_units,fert_n,fert_n_units
-11-52-0-MAP,kg,0.11,kg
-composted poultry litter,kg,0.03,kg
+fert_type,value,unit
+11-52-0 map,0.11,kg n / kg fertilizer

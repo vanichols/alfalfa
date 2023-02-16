@@ -1,0 +1,13 @@
+baseline assumptions,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+scenario_id,cat,desc,unit,value,notes
+cv_001,carbon credit,county,,tulare,
+,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
+,n2o,fraction of dm not harvested,,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
+,,kg of n per kg dm,,0.027,
+,,kg roots per kg dm harvested,,0.4,
+,,kg n per kg root dm,,0.019,
+,fuel,,l diesel/ha,,taken from estimates garnered from FTM docs

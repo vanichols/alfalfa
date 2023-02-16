@@ -1,4 +1,0 @@
-scenario_id,cat,desc,unit,value
-cv_01,irrigation,"sprinker, est",l / stand,822321.22503168
-cv_01,irrigation,"flood irrigation, gravity",l / stand,9867854.70038016
-cv_01,irrigation,"flood irrigation, ground",l / stand,9867854.70038016

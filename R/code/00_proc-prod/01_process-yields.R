@@ -1,23 +1,27 @@
-#--processing yield components of scenario sheet
-#--created 2/15
+#--processing irrigation component of scenario sheet
+#--created 2/15, updated 2/16
+
 
 rm(list = ls())
 
 library(tidyverse)
 library(readxl)
 
-
 source("R/code/00_conversions.R")
+source("R/code/00_funs.R")
 
 
-# use clean up function -------------------------------------------------------
 
-d_raw <- read_excel("R/data_raw/lca-sheets/enterprise-flows-scenario-format.xlsx",
-                sheet = "production",
-                skip = 5)
+# data --------------------------------------------------------------------
+
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+                  skip = 5) %>% 
+  janitor::remove_empty()
 
 
 d <- fun_preproc(d_raw)
+
+
 
 
 # stand life ---------------------------------------------------------------
@@ -66,6 +70,6 @@ d3 <-
 d3
 
 d3 %>%
-  write_csv("R/data_tidy/lca_yields.csv")    
+  write_csv("R/data_tidy/prod_yields.csv")    
 
 

@@ -1,7 +1,0 @@
-scenario_id,cat,desc,value,unit
-cv_01,pesticide,flumioxazin,0.3630502550368909,kg / stand
-cv_01,pesticide,chlorantraniliprole,0.15354787137922649,kg / stand
-cv_01,pesticide,paraquat,1.7413826001687198,kg / stand
-cv_01,pesticide,pendimethalin,12.777704814175495,kg / stand
-cv_01,pesticide,glyphosate,6.590605640995783,kg / stand
-cv_01,pesticide,lambda-cyhalothrin,0.08196225127513888,kg / stand

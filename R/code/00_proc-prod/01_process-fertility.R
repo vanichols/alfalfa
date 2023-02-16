@@ -1,5 +1,6 @@
 #--processing fertility component of scenario sheet
 #--created 2/15
+#--updatd 2/16, new file configs
 
 rm(list = ls())
 
@@ -7,13 +8,14 @@ library(tidyverse)
 library(readxl)
 
 source("R/code/00_conversions.R")
+source("R/code/00_funs.R")
 
 
-# clean up function -------------------------------------------------------
+# data --------------------------------------------------------------------
 
-d_raw <- read_excel("R/data_raw/lca-sheets/enterprise-flows-scenario-format.xlsx",
-                    sheet = "scenarios",
-                    skip = 5)
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+                    skip = 5) %>% 
+  janitor::remove_empty()
 
 
 d <- fun_preproc(d_raw)
@@ -30,6 +32,8 @@ f_passes <-
   group_by(scenario_id, cat, desc) %>% 
   summarise(value = sum(value))
 
+
+#--separate passes by fertilizer type
 f_pass_map <- 
   f_passes %>% 
   filter(grepl("map", desc)) %>% 
@@ -57,9 +61,15 @@ f2_map <-
 
 f2_map
 
-f2_map %>% 
-  write_csv("R/data_tidy/lca_fertility.csv")
 
+# combine all ferts -------------------------------------------------------
+
+
+f2_map %>% 
+  write_csv("R/data_tidy/prod_fertility.csv")
+
+
+#--old from poultry
 # fert1_pou <- 
 #   fert1 %>% 
 #   filter(grepl("poultry", flow_desc)) %>% 

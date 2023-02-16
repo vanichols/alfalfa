@@ -1,0 +1,11 @@
+scenario_id,cat,desc,unit,value
+cv_001,field ops,chisel,pass/stand life,1
+cv_001,field ops,disk,pass/stand life,2
+cv_001,field ops,disk border ridges,pass/stand life,1
+cv_001,field ops,fertilize map,pass/stand life,2
+cv_001,field ops,insect control,pass/stand life,6
+cv_001,field ops,laser level,pass/stand life,1
+cv_001,field ops,plant,pass/stand life,1
+cv_001,field ops,roll,pass/stand life,3
+cv_001,field ops,stand termination,pass/stand life,1
+cv_001,field ops,weed control,pass/stand life,10
