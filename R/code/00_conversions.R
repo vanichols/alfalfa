@@ -15,6 +15,9 @@ lbs_per_ton <- 2000
 in_per_m <- conv_unit(1, "m", "inch")
 m_per_in <- 1 / in_per_m
 
+m_per_ft <- conv_unit(1, "feet", "m")
+ft_per_m <- 1/m_per_ft
+
 ac_per_ha <- conv_unit(1, "hectare", "acre")
 ha_per_ac <- 1/ac_per_ha
 m2_per_ha <- 10000
@@ -34,3 +37,7 @@ gal_per_oz <- 1/oz_per_gal
 
 g_per_gal_water <- 3785.41
 l_water_per_m3 <- 1000
+
+
+psi_per_mhead <- 1.42 #--psi per 1 meter of head
+mhead_per_psi <- 1/psi_per_mhead

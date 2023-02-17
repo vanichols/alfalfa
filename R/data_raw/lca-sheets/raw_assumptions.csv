@@ -6,8 +6,37 @@ baseline assumptions,,,,,
 scenario_id,cat,desc,unit,value,notes
 cv_001,carbon credit,county,,tulare,
 ,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
-,n2o,fraction of dm not harvested,,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
-,,kg of n per kg dm,,0.027,
-,,kg roots per kg dm harvested,,0.4,
-,,kg n per kg root dm,,0.019,
-,fuel,,l diesel/ha,,taken from estimates garnered from FTM docs
+,irrigation,fraction from surface source,frac,0.5,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
+,,depth of well,feet,150,
+,,pump pressure,psi,25,
+,,pump energy source,,diesel,this is something that should be played with
+,n2o,fraction of dm not harvested,frac,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
+,,kg of n per kg dm,frac,0.027,
+,,kg roots per kg dm harvested,frac,0.4,
+,,kg n per kg root dm,frac,0.019,
+,fuel,chisel,l diesel/ha,11.69240525,"taken from estimates garnered from FTM docs, numbers creaeted in code>01_energy>00_create-fuel-ref-table' and stored in data_refs>ref_ops-fuel-usage"
+,,disk,l diesel/ha,7.0154433,
+,,disk border ridges,l diesel/ha,7.0154433,
+,,laser level,l diesel/ha,8.418531,
+,,plant,l diesel/ha,5.0511193,
+,,roll,l diesel/ha,3.383002567,
+,,stand termination,l diesel/ha,7.0154433,
+,,weed control,l diesel/ha,1.2160101,
+,,insect control,l diesel/ha,1.2160101,
+,,"fertilize, map",l diesel/ha,1.2160101,
+,,"haylage, cut",l diesel/ha,3.2738733,
+,,"haylage, chop",l diesel/ha,6.828365,
+,,"hay, swath",l diesel/ha,6.828365,
+,,"hay, rake",l diesel/ha,3.2738733,
+,,"hay, bale",l diesel/ha,3.554491,
+,,"hay, stack",l diesel/ha,6.828365,
+,pesticide manufacture,flumioxazin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
+,,chlorantraniliprole,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
+,,paraquat,MJ/kg ai,459.4,listed in table 2
+,,pendimethalin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
+,,glyphosate,MJ/kg ai,454,listed in table 2
+,,lambda-cyhalothrin,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
+,fertilizer manufacture,11-52-0 map,MJ/kg,20,"taken from estimates garnered from GREET docs, numbers creaeted in code>01_energy>00_create-fert-ref-table' and stored in data_refs>ref_fert-energy, seems low"
+,fuel manufacture,diesel,btu/gal,138490,taken from Table 1 of FTM energy document
+,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
+,,energy for seed production?,MJ/ac,??,"Whether this should be estimated more exactly is a question…. Seed production also produces an alfalfa cutting, so the energy should be split somehow. The number of passes will be lower for seed production bc there is only one hay harvest - other passes will be similar (weed, pests, fert), and standlife is similar to hay fields"

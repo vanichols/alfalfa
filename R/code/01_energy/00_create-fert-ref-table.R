@@ -33,10 +33,10 @@ fert_n <-
          )
 
 fert_n %>% 
-  write_csv("R/data_tidy/ref_fert-n.csv")
+  write_csv("R/data_refs/ref_fert-n.csv")
 
 
-############ stopped editing ##############
+
 # fertilizer energy --------------------------------------------------------------
 
 # the greet table
@@ -65,9 +65,10 @@ greet1 <-
 greet1
 
 # MAP contains 11% nitrogen, 52% phosphorous. How to convert?!?
-# FTM comes up with 6521 btu/lb of product
+# FTM comes up with 6521 btu/lb of product...
 
 ftm_btus_per_kg_product <- 6521 * lb_per_kg
+
 
 # 1 kg of 
 
@@ -75,7 +76,7 @@ ftm_btus_per_kg_product <- 6521 * lb_per_kg
 # so 1 kg of map has .11 kg N, .52 kg p2o5
 # https://fertilizerbrokerage.com/map-11-52-0.html
 
-
+#--I have no idea what FTM is doing. 
 greet1 %>% 
   mutate(MAP_1kg = c(
     0.11, # nitrogen
@@ -86,3 +87,21 @@ greet1 %>%
   summarise(energy_used_btu_per_kg_product = sum(energy_used_btu)) %>% 
   mutate(ftm = ftm_btus_per_kg_product)
 
+
+greet2 <- 
+  greet1 %>% 
+  mutate(MAP_1kg = c(
+    0.11, # nitrogen
+    0.52,
+    0,
+    0)) %>% 
+  mutate(energy_used_btu = energy_used_btu_per_kg * MAP_1kg) %>% 
+  summarise(energy_used_btu_per_kg_product = sum(energy_used_btu)) %>% 
+  mutate(energy_mj_per_kg_product = energy_used_btu_per_kg_product * mj_per_btu) %>% 
+  mutate(desc = "11-52-0 map", unit = "MJ/kg", value = energy_mj_per_kg_product) %>% 
+  select(desc, unit, value)
+
+greet2
+
+greet2 %>% 
+  write_csv("R/data_refs/ref_fert-energy.csv")

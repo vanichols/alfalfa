@@ -9,6 +9,8 @@ cv_001,yield,stand life,years,3,
 ,,"haylage, harvests",harvest/year,2,taken from enterprise budget
 ,,hay production,ton/ac/yr at 10% moisture,10,
 ,,haylage production,ton/ac/yr at 30% moisture,3,
+,irrigation,"sprinker, est",ac-in/stand life,8,could require two sprinklings
+,,flood irrigation,ac-in/year,192,
 ,seed,"round-up ready seed, non-dormant",lb/ac,25,non-dormant seed is produced in different areas
 ,fertility,11-52-0 MAP,lb/ac/pass,200,actual application based on soil tests
 ,pesticide,roundup powermaxx,pint/ac,2,"year 1, establishment"
@@ -30,15 +32,12 @@ cv_001,yield,stand life,years,3,
 ,,chateau,oz/ac,4,year 3
 ,,prowl h2o,gal/ac,1,year 3
 ,,gramoxone,pint/ac,1.5,year 3
-,irrigation,"sprinker, est",ac-in/stand life,8,could require two sprinklings
-,,"flood irrigation, gravity",ac-in/year,96,"assuming half gravity, half ground"
-,,"flood irrigation, ground",ac-in/year,96,"assuming half gravity, half ground"
 ,field ops,disk,pass/stand life,1,establishment
 ,,roll,pass/stand life,2,establishment
 ,,chisel,pass/stand life,1,establishment
 ,,laser level,pass/stand life,1,establishment
 ,,disk border ridges,pass/stand life,1,establishment
-,,fertilize map,pass/stand life,1,establishment
+,,"fertilize, map",pass/stand life,1,establishment
 ,,disk,pass/stand life,1,establishment
 ,,roll,pass/stand life,1,establishment
 ,,plant,pass/stand life,1,establishment
@@ -46,7 +45,7 @@ cv_001,yield,stand life,years,3,
 ,,weed control,pass/stand life,3,
 ,,insect control,pass/stand life,3,
 ,,insect control,pass/stand life,3,
-,,fertilize map,pass/stand life,1,assume one additional MAP application over stand life
+,,"fertilize, map",pass/stand life,1,assume one additional MAP application over stand life
 ,,weed control,pass/stand life,3,
 ,,weed control,pass/stand life,3,
 ,,stand termination,pass/stand life,1,

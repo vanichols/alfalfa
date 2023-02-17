@@ -4,6 +4,7 @@
 
 rm(list = ls())
 library(tidyverse)
+library(readxl)
 
 source("R/code/00_conversions.R")
 
@@ -49,7 +50,7 @@ fuel %>%
   select(subcat) %>% 
   distinct()
 
-# chisel ------------------------------------------------------------------
+# 1. chisel ------------------------------------------------------------------
 
 #--move to only include ones w/chisel in the name
 fuel %>% 
@@ -59,7 +60,7 @@ fuel %>%
   geom_point() +
   coord_flip()
 
-chisel <- 
+f1 <- 
   fuel %>% 
   filter(grepl("chisel", subsubcat)) %>% 
   filter(grepl("chisel", name)) %>%
@@ -68,7 +69,7 @@ chisel <-
   rename(desc = subsubcat)
   
 
-# disc --------------------------------------------------------------------
+# 2. disc --------------------------------------------------------------------
 
 fuel %>% 
   filter(grepl("disk", subsubcat)) %>% 
@@ -78,7 +79,7 @@ fuel %>%
   coord_flip()
 
 
-disk <- 
+f2 <- 
   fuel %>% 
   filter(grepl("disk", subsubcat)) %>% 
   filter(grepl("disk", name)) %>% 
@@ -87,15 +88,13 @@ disk <-
   rename(desc = subsubcat)
 
 
-# disc border ridges ------------------------------------------------------
+# 3. disc border ridges ------------------------------------------------------
 
-disk_border <- 
-  disk %>% 
+f3 <- 
+  f2 %>% 
   mutate(desc = "disk border ridges")
 
-# laser level ---------------------------------------------------------------
-ops
-
+# 4. laser level ---------------------------------------------------------------
 
 fuel %>% 
   filter(grepl("surface", subcat)) %>% 
@@ -106,7 +105,7 @@ fuel %>%
   coord_flip()
 
 
-laser <- 
+f4 <- 
   fuel %>% 
   filter(grepl("surface", subcat)) %>% 
   filter(name == "laser land leveler") %>% 
@@ -115,7 +114,7 @@ laser <-
   summarise(diesel_Lha = median(diesel_Lha, na.rm = T)) 
 
   
-# plant -------------------------------------------------------------------
+# 5. plant -------------------------------------------------------------------
 
 fuel %>% 
   filter(grepl("drill", subcat)) %>% 
@@ -123,14 +122,14 @@ fuel %>%
   geom_point() +
   coord_flip()
 
-  
+
 fuel %>% 
   filter(grepl("planter|drill", subcat))  %>% 
   ggplot(aes(reorder(name, diesel_Lha), diesel_Lha)) + 
   geom_point() +
   coord_flip()
 
-plant <- 
+f5 <- 
   fuel %>% 
   filter(grepl("planter|drill", subcat))  %>% 
   mutate(desc = "plant") %>% 
@@ -138,8 +137,7 @@ plant <-
   summarise(diesel_Lha = median(diesel_Lha, na.rm = T)) 
 
 
-# roll --------------------------------------------------------------------
-ops
+# 6. roll --------------------------------------------------------------------
 
 fuel %>% 
   filter(grepl("surface", subcat)) %>% 
@@ -150,7 +148,7 @@ fuel %>%
   scale_color_manual(values = c("black", "red")) +
   coord_flip()
 
-roll <- 
+f6 <- 
   fuel %>% 
   filter(grepl("surface", subcat)) %>% 
   filter(grepl("roll", name)) %>% 
@@ -160,16 +158,112 @@ roll <-
 
 
 
-# stand termination -------------------------------------------------------
+# 7. stand termination -------------------------------------------------------
 
-# weed control -------------------------------------------------------
+#--assume a disking?
+f7 <- 
+  f2 %>% 
+  mutate(desc = "stand termination")
+
+# 8. weed control -------------------------------------------------------
+
+f8 <- 
+  fuel %>% 
+  filter(grepl("sprayer", name)) %>% 
+  mutate(desc = "weed control") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = mean(diesel_Lha, na.rm = T)) 
 
 
-# haylage, cut -------------------------------------------------------
+# 9. insect control ----------------------------------------------------------
 
-# haylage, chop -------------------------------------------------------
+f9 <- 
+  f8 %>% 
+  mutate(desc = "insect control")
 
-# hay, swath -------------------------------------------------------
-# hay, rake -------------------------------------------------------
-# hay, bale -------------------------------------------------------
-# hay, stack -------------------------------------------------------
+# 10. fertilize map -----------------------------------------------------------
+
+#--assume map fertilizer is sprayed on
+f10 <- 
+  f8 %>% 
+  mutate(desc = "fertilize, map")
+
+
+#--surface broadcast might be good for manure
+fuel %>% 
+  filter(grepl("fert applic.", name))
+
+# 11. haylage, cut -------------------------------------------------------
+
+f11 <- 
+  fuel %>% 
+  filter(grepl("mow", name)) %>% 
+  filter(subcat == "manage") %>% 
+  mutate(desc = "haylage, cut") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = mean(diesel_Lha, na.rm = T)) 
+
+
+# 12. haylage, chop -------------------------------------------------------
+
+f12 <- 
+  fuel %>% 
+  filter(grepl("forage chopper", name)) %>% 
+  mutate(desc = "haylage, chop") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = mean(diesel_Lha, na.rm = T)) 
+
+# 13. hay, swath -------------------------------------------------------
+
+f13 <- 
+  f12 %>% 
+  mutate(desc = "hay, swath")
+
+# 14. hay, rake -------------------------------------------------------
+
+f14 <- 
+  f11 %>% 
+  mutate(desc = "hay, rake")
+
+# 15. hay, bale -------------------------------------------------------
+
+f15 <- 
+  fuel %>% 
+  filter(grepl("bale", name)) %>% 
+  mutate(desc = "hay, bale") %>% 
+  group_by(desc) %>% 
+  summarise(diesel_Lha = mean(diesel_Lha, na.rm = T)) 
+
+# 16. hay, stack -------------------------------------------------------
+
+#--the 'total' for harvesting is 14.7 in the fuel list
+#--so far we have 10.09
+#--assume a remove residue pass
+
+f16 <- 
+  f12 %>% 
+  mutate(desc = "hay, stack")
+
+# put together ------------------------------------------------------------
+
+fuel_list <- NULL
+
+
+#--change this number if you add more operations
+for (i in 1:16){
+  fuel_list <- c(fuel_list, paste0("f", i))
+  }
+
+fuel_list
+
+
+dat <- NULL
+
+for (i in 1:length(fuel_list)){
+
+    tmp <- get(fuel_list[i])
+    dat <- bind_rows(dat, tmp)  
+}
+
+dat %>% 
+  write_csv("R/data_refs/ref_ops-fuel-usage.csv")
