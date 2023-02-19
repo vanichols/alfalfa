@@ -15,6 +15,9 @@ lbs_per_ton <- 2000
 in_per_m <- conv_unit(1, "m", "inch")
 m_per_in <- 1 / in_per_m
 
+mm_per_m <- conv_unit(1, "m", "mm")
+mm_per_in <- m_per_in * mm_per_m
+
 m_per_ft <- conv_unit(1, "feet", "m")
 ft_per_m <- 1/m_per_ft
 

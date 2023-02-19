@@ -1,3 +1,5 @@
 scenario_id,cat,desc,unit,value
 cv_001,irrigation,"sprinker, est",l / stand,822321.22503168
 cv_001,irrigation,flood irrigation,l / stand,19735709.40076032
+cv_001,irrigation,"sprinker, est",ac-in/stand life,8
+cv_001,irrigation,flood irrigation,ac-in/stand,192

@@ -10,6 +10,11 @@ cv_001,carbon credit,county,,tulare,
 ,,depth of well,feet,150,
 ,,pump pressure,psi,25,
 ,,pump energy source,,diesel,this is something that should be played with
+,,pump conversion,,0.0979,from FTM
+,,pump efficiency,,0.75,from FTM
+,,irrigation efficiency,,1,from FTM
+,,gearhead efficiency,,0.95,from FTM
+,,power unit efficiency,,1,from FTM
 ,n2o,fraction of dm not harvested,frac,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
 ,,kg of n per kg dm,frac,0.027,
 ,,kg roots per kg dm harvested,frac,0.4,
@@ -37,6 +42,6 @@ cv_001,carbon credit,county,,tulare,
 ,,glyphosate,MJ/kg ai,454,listed in table 2
 ,,lambda-cyhalothrin,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
 ,fertilizer manufacture,11-52-0 map,MJ/kg,20,"taken from estimates garnered from GREET docs, numbers creaeted in code>01_energy>00_create-fert-ref-table' and stored in data_refs>ref_fert-energy, seems low"
-,fuel manufacture,diesel,btu/gal,138490,taken from Table 1 of FTM energy document
+,fuel energy,diesel,btu/gal,138490,taken from Table 1 of FTM energy document
 ,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
-,,energy for seed production?,MJ/ac,??,"Whether this should be estimated more exactly is a question…. Seed production also produces an alfalfa cutting, so the energy should be split somehow. The number of passes will be lower for seed production bc there is only one hay harvest - other passes will be similar (weed, pests, fert), and standlife is similar to hay fields"
+,,energy for seed production?,MJ/ac,,"Whether this should be estimated more exactly is a question…. Seed production also produces an alfalfa cutting, so the energy should be split somehow. The number of passes will be lower for seed production bc there is only one hay harvest - other passes will be similar (weed, pests, fert), and standlife is similar to hay fields"

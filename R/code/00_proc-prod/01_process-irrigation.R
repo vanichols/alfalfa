@@ -1,5 +1,6 @@
 #--processing irrigation component of scenario sheet
 #--created 2/15, updated 2/16
+#--ftm energy eqn uses stupid units, keep those
 
 
 rm(list = ls())
@@ -51,14 +52,18 @@ i_est1 <-
   
 
 
-#--irrigation used annually
-i_ann <- 
+#--irrigation used for production
+i_prod <- 
   d %>% 
   filter(cat == "irrigation") %>%
-  filter(!grepl("est", desc))
+  filter(!grepl("est", desc)) %>% 
+  left_join(sl) %>% 
+  mutate(value = value * stand_life_yrs,
+         unit = "ac-in/stand") %>% 
+  select(-stand_life_yrs)
 
-i_ann1 <- 
-  i_ann %>% 
+i_prod1 <- 
+  i_prod %>% 
   #-change from ac-in to ha-m...or liters?
   mutate(value_ha_m = value * ha_per_ac * m_per_in,
          value_l = value_ha_m * m2_per_ha * l_water_per_m3) %>% 
@@ -69,7 +74,9 @@ i_ann1 <-
 
 i2 <- 
   i_est1 %>% 
-  bind_rows(i_ann1)
+  bind_rows(i_prod1) %>%
+  bind_rows(i_est) %>% 
+  bind_rows(i_prod)
 
 i2
 
