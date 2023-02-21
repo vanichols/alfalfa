@@ -1,0 +1,130 @@
+---
+title: "compare"
+author: "Gina"
+format: 
+  html: default
+  gfm: default
+editor: visual
+---
+
+```{r, echo = F, messages = F}
+rm(list = ls())
+suppressPackageStartupMessages(
+  library(tidyverse)
+)
+source("00_conversions.R")
+
+```
+
+# Introduction to irrigation energy
+
+There may be two sources of water:
+
+1.  surface
+
+2.  ground
+
+Ground water will have a 'head' associated with the depth of the well. Both will have 'head' associated with the pump pressure.  
+
+The main components defining the irrigation energy use are:
+
+1.  The pump pressure and, if ground water, the well depth
+
+2.  The energy source for the pumping/moving of water (diesel, electricity, solar, etc.)
+
+3.  The amount of irrigation water applied
+
+# Scenario
+
+-   A flood irrigated field
+
+-   Diesel powered pump
+
+-   150 foot well
+
+-   25 PSI pump
+
+-   \$1 energy unit (to make back-calculating the amount of fuel easy)
+
+-   Alfalfa
+
+-   64 ac-in applied per acre each year
+
+-   3 year stand
+
+-   Get BTU/acre (which is what FTM reports results in)
+
+-   According to Table 1 of FTM, 1 gallon of diesel contains 138,490 BTUs.
+
+    ```{r}
+    well_depth_ft <- 150
+    pump_press_psi <- 25
+    water_applied_in_ac <- 64
+    btu_per_gal_dies <- 138490
+    ```
+
+# NRCS tool
+
+The NRCS has a tool that will estimate the energy used for irrigation: <https://ipat.sc.egov.usda.gov/Default.aspx>
+
+Saved output in We can calculate the number of BTUs we used per acre:
+
+```{r}
+
+nrcs_gal_dies_ac <- 134
+nrcs_btu_per_ac <- nrcs_gal_dies_ac * btu_per_gal_dies
+
+prettyNum(round(nrcs_btu_per_ac, 0), big.mark = ",", scientific = F)
+```
+
+# FTM equations (these eqns are fucked)
+
+```{r}
+ftm_btu_per_ac <- 6742083
+```
+
+# UCANR eqns
+
+Calculate how many pounds of water you are lifting?
+
+```{r}
+gal_applied <- water_applied_in_ac * ft_per_in * gal_per_acft 
+(lb_water_lifted <- gal_applied * lb_per_gal_water)
+```
+
+Multiply by how far you are lifting it in feet - this is foot pounds of energy. Change to BTUs
+
+```{r}
+(btu_used_to_lift <- lb_water_lifted * well_depth_ft * btu_per_ftlb)
+```
+
+1 psi of pressure is creating 2.31 feet of water head.
+
+```{r}
+(psi_depth_ft <- 25 * 2.31)
+btu_used_to_pump <- lb_water_lifted * psi_depth_ft * btu_per_ftlb
+```
+
+Total energy used on this acre:
+
+```{r}
+(ucanr_btu_per_ac <- btu_used_to_lift + btu_used_to_pump)
+```
+
+\
+Use this to compare to 01_energy calcs:
+
+```{r}
+res <- tibble(calc = c("nrcs 64 ground", 
+                "ftm 64 ground",
+                "ucanrs 64 ground",
+                "ucanrs 64 ground low eff"),
+       btu_per_ha = c(nrcs_btu_per_ac,
+                      ftm_btu_per_ac,
+                      ucanr_btu_per_ac,
+                      ucanr_btu_per_ac/(0.75*0.95))) %>% 
+  mutate_if(is.numeric, round, 0)
+res
+```
+
+# 

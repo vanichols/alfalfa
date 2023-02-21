@@ -6,15 +6,11 @@ baseline assumptions,,,,,
 scenario_id,cat,desc,unit,value,notes
 cv_001,carbon credit,county,,tulare,
 ,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
-,irrigation,fraction from surface source,frac,0.5,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
+,irrigation,fraction from surface source,frac,0,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
 ,,depth of well,feet,150,
 ,,pump pressure,psi,25,
 ,,pump energy source,,diesel,this is something that should be played with
-,,pump conversion,,0.0979,from FTM
-,,pump efficiency,,0.75,from FTM
-,,irrigation efficiency,,1,from FTM
-,,gearhead efficiency,,0.95,from FTM
-,,power unit efficiency,,1,from FTM
+,,pumping plant efficiency,frac,0.4,from UCANRS
 ,n2o,fraction of dm not harvested,frac,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
 ,,kg of n per kg dm,frac,0.027,
 ,,kg roots per kg dm harvested,frac,0.4,

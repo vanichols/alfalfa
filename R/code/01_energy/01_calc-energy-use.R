@@ -109,6 +109,7 @@ o2 <-
 
 
 # i. irrigation --------------------------------------------------------------
+
 #--I don't know if sprinkler vs flood should be treated differently
 #--for now assume sprinkler is surface 
 
@@ -120,91 +121,121 @@ i_sprink <-
   filter(grepl("sprink", desc),
          grepl("ac-in", unit))
 
-
 i_flood <- 
   i %>% 
   filter(grepl("flood", desc),
          grepl("ac-in", unit))
 
 #--assumptions
-a_pct <- 
-  a %>% 
+a_pct <-
+  a %>%
   filter(cat_ass == "irrigation",
-         desc == "fraction from surface source") %>% 
+         desc == "fraction from surface source") %>%
   mutate(value_ass = as.numeric(value_ass))
 
-a_welldepth <- 
-  a %>% 
+#-----use canrs eqn instead of ftm
+
+a_welldepth <-
+  a %>%
   filter(cat_ass == "irrigation",
-         desc == "depth of well") %>%  
-  mutate(value_ass = as.numeric(value_ass)) %>% 
-  mutate(value_ass = value_ass * m_per_ft,
-         unit_ass = "m")
-
-
-a_pumppres <- 
-  a %>% 
+         desc == "depth of well") %>%
+  mutate(value_ass = as.numeric(value_ass))
+ 
+ 
+a_pumppres <-
+  a %>%
   filter(cat_ass == "irrigation",
-         desc == "pump pressure") %>%  
-  mutate(value_ass = as.numeric(value_ass)) %>% 
-  mutate(value_ass = value_ass * mhead_per_psi,
-         unit_ass = "m")
-
-a_other <- 
-  a %>% 
+         desc == "pump pressure") %>%
+  mutate(value_ass = as.numeric(value_ass))
+ 
+a_eff <- 
+  a %>%
   filter(cat_ass == "irrigation",
-         is.na(unit_ass),
-         value_ass != "diesel") %>%  
-  mutate(value_ass = as.numeric(value_ass)) %>%
-  select(-cat_ass, -unit_ass) %>% 
-  pivot_wider(names_from = desc, 
-              values_from = value_ass) %>% 
-  janitor::clean_names()
+         desc == "pumping plant efficiency") %>%
+  mutate(value_ass = as.numeric(value_ass)) 
+ 
 
 
-#--calculate things based on FTM eqns 
-# note that ftm eqns suck wrt documentation and don't match nrcs estimates (are much lower)
-
-i <- 
+i <-
   i_flood %>%
   mutate(surface = value * a_pct %>% pull(value_ass),
-         ground = value - surface) %>% 
-  select(-value) %>% 
+         ground = value - surface) %>%
+  select(-value) %>%
   pivot_longer(surface:ground) %>%
   #--assume sprinkler water is surface
-  bind_rows(i_sprink %>% 
-              mutate(name = "surface")) %>% 
-  mutate(pump_press_m = a_pumppres %>% pull(value_ass),
-         welldepth_m = ifelse(name == "ground", 
+  bind_rows(i_sprink %>%
+              mutate(name = "surface")) %>%
+  mutate(pump_press_psi = a_pumppres %>% pull(value_ass),
+         welldepth_ft = ifelse(name == "ground",
                               a_welldepth %>% pull(value_ass),
-                              0),
-         head_m = pump_press_m + welldepth_m) %>% 
-  left_join(a_other)
+                              0))
 
 
-#--see the 'compare-ftm-nrcs' qmd, ftm estimates are soooo much lower (?)
-i1 <- 
-  i %>% 
-  mutate( numer = 
-            head_m *
-            pump_conversion *
-            value *
-            mm_per_in * 
-            ha_per_ac,
-          denom = 
-           pump_efficiency * 
-           irrigation_efficiency * 
-           gearhead_efficiency * 
-           power_unit_efficiency
-          ) %>% 
-  mutate(value = numer/denom,
-         unit = "MJ/stand") %>% 
-  group_by(scenario_id, cat, unit, name) %>% 
-  summarise(value = sum(value)) %>% 
-  rename(desc = name)
+#--do some goofy conversions
+i1 <-
+  i %>%
+  mutate(
+    eff = a_eff %>% pull(value_ass),
+    pump_press_ft = pump_press_psi * fthead_per_psi,
+    #--change ac-in to gallons, then pounds of water
+    value_water_acin = value,
+    value_water_galac = value_water_acin * ft_per_in * gal_per_acft,
+    value_water_lbsac = value_water_galac * lb_per_gal_water,
+    #--btus used per foot pound
+    value_ftlb_per_ac = value_water_lbsac * (pump_press_ft + welldepth_ft),
+    value_btu_per_ac = value_ftlb_per_ac * btu_per_ftlb,
+    #--take into account eff
+    value_mj_per_ha = value_btu_per_ac * ha_per_ac * mj_per_btu / eff
+  ) 
+  
 
+i2 <- 
+  i1 %>% 
+  unite(desc, name, col = "desc", sep = ", ") %>% 
+  select(scenario_id, cat, desc, value_mj_per_ha) %>% 
+  rename(value =  value_mj_per_ha) %>% 
+  mutate(unit = "mj/stand")
 
+i3 <- 
+  i2 %>% 
+  group_by(scenario_id, cat, desc, unit) %>% 
+  summarise(value = sum(value))
 
+i4 <- 
+  i3 %>% 
+  group_by(scenario_id, cat, unit) %>% 
+  summarise(value = sum(value))
+
+# #--calculate things based on FTM eqns 
+# # note that ftm eqns suck wrt documentation and don't match nrcs estimates (are much lower)
+# 
+# 
+# 
+# #--see the 'compare-ftm-nrcs' qmd, ftm estimates are soooo much lower (?)
+# i1 <- 
+#   i %>% 
+#   mutate( numer = 
+#             head_m *
+#             pump_conversion *
+#             value *
+#             mm_per_in * 
+#             ha_per_ac,
+#           denom = 
+#            pump_efficiency * 
+#            irrigation_efficiency * 
+#            gearhead_efficiency * 
+#            power_unit_efficiency
+#           ) %>% 
+#   mutate(value = numer/denom,
+#          unit = "MJ/stand") %>% 
+#   group_by(scenario_id, cat, unit, name) %>% 
+#   summarise(value = sum(value)) %>% 
+#   rename(desc = name) %>% 
+#   #--just for trouble shooting
+#   mutate(value_per_year = value / 3)
+# 
+# 
+# i1
 
 # use all energy to calculate seed ----------------------------------------------
 
@@ -251,12 +282,32 @@ all <-
   f2 %>% 
   bind_rows(p2) %>% 
   bind_rows(o2) %>% 
-  bind_rows(i1) %>% 
+  bind_rows(i4) %>% #--note: using canrs eqn
   bind_rows(s2) %>% 
   mutate(unit = str_to_lower(unit), 
          unit = str_remove_all(unit, " "))
 
-all %>% 
+all1 <- 
+  all %>% 
   group_by(scenario_id, cat, unit) %>% 
   summarise(value = sum(value)) %>% 
   arrange(-value)
+
+
+# add to be on a per yield basis ------------------------------------------
+
+sl <- 
+  read_csv("R/data_tidy/prod_standlife.csv")
+
+y <- 
+  read_csv("R/data_tidy/prod_yields.csv") %>% 
+  group_by(scenario_id) %>% 
+  summarise(yield_kgstand = sum(value))
+
+
+all1 %>% 
+  left_join(y) %>% 
+  left_join(sl) %>% 
+  mutate(mj_ha_staand = value, 
+         mj_ha_year = value/stand_life_yrs,
+         mj_Mgyield = value/yield_kgstand*1000)

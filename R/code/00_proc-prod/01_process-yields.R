@@ -32,6 +32,9 @@ sl <-
   rename("stand_life_yrs" = value) %>% 
   select(scenario_id, stand_life_yrs)
 
+sl %>% 
+  write_csv("R/data_tidy/prod_standlife.csv")
+
 
 #--get tons dry matter per acre per year
 d1 <- 
