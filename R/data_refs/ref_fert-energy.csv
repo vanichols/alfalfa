@@ -1,2 +1,11 @@
-desc,unit,value
-11-52-0 map,MJ/kg,22.022969833220362
+"taken from table 19.1, Hoffman book",,
+,,
+,,
+,,
+,,
+fuel_type,energy_content,energy_content_unit
+diesel,39.02,MJ/L
+propane,26.34,MJ/L
+natural gas,34.46,MJ/m3
+gasoline,34.56,MJ/L
+electricity,3.6,MJ/kWh

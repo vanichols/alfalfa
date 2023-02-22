@@ -1,0 +1,3 @@
+scenario_id,desc,unit,value,cat
+cv_001,field ops,mj/stand,3291.0255311409996,fuel use
+cv_001,harvest,mj/stand,18944.609312294117,fuel use

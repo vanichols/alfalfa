@@ -35,7 +35,15 @@ ca <- read_excel("R/data_refs/refbyhand_california-healthy-soils.xlsx",
 
 # assumed county and program ----------------------------------------------
 
-
+a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
+              skip = 5) %>% 
+  fill(scenario_id, cat) %>% 
+  select(-notes) %>% 
+  rename(
+    cat_ass = cat,
+    unit_ass = unit,
+    value_ass = value) %>% 
+  filter(cat_ass == "carbon credit")
 
 #--I need the stand lenth, which comes from yields
 

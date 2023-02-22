@@ -35,7 +35,7 @@ sl <-
 
 # irrigation --------------------------------------------------------------
 
-#--irrigation used for establishment
+#--irrigation used for establishment, only once during stand life
 i_est <- 
   d %>% 
   filter(cat == "irrigation") %>%
@@ -56,7 +56,7 @@ i_est1 <-
 i_prod <- 
   d %>% 
   filter(cat == "irrigation") %>%
-  filter(!grepl("est", desc)) %>% 
+  filter(grepl("prod", desc)) %>% 
   left_join(sl) %>% 
   mutate(value = value * stand_life_yrs,
          unit = "ac-in/stand") %>% 

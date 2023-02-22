@@ -50,6 +50,8 @@ btu_per_ftlb <- 0.00128507
 # volume ------------------------------------------------------------------
 
 cm3_per_m3 <- conv_unit(1, "m3", "cm3")
+cuft_per_m3 <- conv_unit(1, "m3", "ft3")
+m3_per_cuft <- 1/cuft_per_m3
 
 pints_per_gal <- conv_unit(1, "us_gal", "us_pint")
 l_per_gal <- conv_unit(1, "us_gal", "l")
@@ -78,5 +80,5 @@ psi_per_fthead <- 1/fthead_per_psi
 
 # pressure ----------------------------------------------------------------
 
-psi_per_kp <- conv_unit(1, "kPa", "psi")
-kp_per_psi <- 1/psi_per_kp
+psi_per_kpa <- conv_unit(1, "kPa", "psi")
+kpa_per_psi <- 1/psi_per_kpa

@@ -10,7 +10,9 @@ cv_001,carbon credit,county,,tulare,
 ,,depth of well,feet,150,
 ,,pump pressure,psi,25,
 ,,pump energy source,,diesel,this is something that should be played with
-,,pumping plant efficiency,frac,0.4,from UCANRS
+,,surface irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
+,,sprinkler irr eff,frac,0.8,
+,,drip irr eff,frac,0.9,
 ,n2o,fraction of dm not harvested,frac,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
 ,,kg of n per kg dm,frac,0.027,
 ,,kg roots per kg dm harvested,frac,0.4,

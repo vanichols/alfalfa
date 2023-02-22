@@ -9,8 +9,8 @@ cv_001,yield,stand life,years,3,
 ,,"haylage, harvests",harvest/year,2,
 ,,hay production,ton/ac/yr at 10% moisture,10,
 ,,haylage production,ton/ac/yr at 30% moisture,3,
-,irrigation,"sprinker, est",ac-in/stand life,8,"could require two sprinklings, only one included"
-,,flood irrigation,ac-in/year,64,came from enterprise budget
+,irrigation,"sprinkler, est",ac-in/stand life,8,"for establishment, could require two of these"
+,,"surface, prod",ac-in/year,64,"flood irrigation, could change as part of sensitivity analysis"
 ,seed,"round-up ready seed, non-dormant",lb/ac,25,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things"
 ,fertility,11-52-0 MAP,lb/ac/pass,200,actual application based on soil tests
 ,pesticide,roundup powermaxx,pint/ac,2,"year 1, establishment"

@@ -77,10 +77,48 @@ nrcs_btu_per_ac <- nrcs_gal_dies_ac * btu_per_gal_dies
 prettyNum(round(nrcs_btu_per_ac, 0), big.mark = ",", scientific = F)
 ```
 
-# FTM equations (these eqns are fucked)
+# FTM equations (these eqn units are f\*cked up)
+
+Convert ac-in to mm-ha, and psi to kPa
 
 ```{r}
-ftm_btu_per_ac <- 6742083
+water_applied_mm_ha <- water_applied_in_ac * mm_per_in * ha_per_ac
+pump_press_kpa <- pump_press_psi * kpa_per_psi
+```
+
+Use the constants assigned by the book and FTM:
+
+```{r}
+# constants
+c_units <- 0.0979 #--no idea of units, book does not say
+# working backwards, I think this is the gravity constant.
+# But I don't get the same value they do. 
+c_units2 <- 97.9 #--no idea of units, book does not say
+#--some of these could change based on sprinkler/furrow etc. 
+e_pump <- 0.75
+e_irr <- 1
+e_gear <- 0.95
+e_power <- 1
+```
+
+Calculate the FTM values by hand:
+
+NOTE: The book equation says it produces a value in 'MJ'. But there MUST be an area assumption built into it. They don't list the units of the constant.
+
+```{r}
+#--this is the eqn in the book
+head_m <- 0.102 * pump_press_kpa + well_depth_ft * m_per_ft
+num1 <- (c_units * water_applied_mm_ha * head_m)
+den1 <- e_pump * e_irr * e_gear * e_power
+manftm_mj_per_ha <- num1/den1
+manftm_btu_per_ac <- manftm_mj_per_ha * btu_per_mj #* ha_per_ac
+prettyNum(round(manftm_btu_per_ac, 0), big.mark = ",", scientific = F)
+```
+
+Fieldprint calculator value:
+
+```{r}
+ftm_btu_per_ac <- 5436395
 ```
 
 # UCANR eqns
@@ -111,15 +149,19 @@ Total energy used on this acre:
 (ucanr_btu_per_ac <- btu_used_to_lift + btu_used_to_pump)
 ```
 
-\
+# Summary
+
 Use this to compare to 01_energy calcs:
 
 ```{r}
-res <- tibble(calc = c("nrcs 64 ground", 
+res <- tibble(calc = c(
+                "nrcs 64 ground", 
+                "ftm-manual 64 ground",
                 "ftm 64 ground",
                 "ucanrs 64 ground",
                 "ucanrs 64 ground low eff"),
-       btu_per_ha = c(nrcs_btu_per_ac,
+       btu_per_ac = c(nrcs_btu_per_ac,
+                      manftm_btu_per_ac,
                       ftm_btu_per_ac,
                       ucanr_btu_per_ac,
                       ucanr_btu_per_ac/(0.75*0.95))) %>% 
