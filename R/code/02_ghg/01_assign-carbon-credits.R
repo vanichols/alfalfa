@@ -45,66 +45,38 @@ a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
     value_ass = value) %>% 
   filter(cat_ass == "carbon credit")
 
-#--I need the stand lenth, which comes from yields
-
-stnd <- 
-  read_csv("R/data_tidy/lca_yields.csv") %>% 
-  select(system, stand_life_yrs) %>% 
-  distinct()
-
-cc2 <- 
-  cc1 %>% 
-  left_join(stnd)
-
-# ca healthy soils values -------------------------------------------------
-
-d <- read_csv("R/data_raw/cahealthysoils_carbon-credits-by-county.csv",
-              skip = 5)
-
-#--change units
-d1 <- 
-  d %>% 
-  fill(units) %>% 
-  pivot_longer(co2:n2o) %>% 
-  mutate(co2e_kg_ha_yr = value * ac_per_ha * 1000)
-
-#--getting mid, best, worst
-#--units are kg co2e per ha per year
-d2 <- 
-  d1 %>% 
-  select(county, practice, name, co2e_kg_ha_yr) %>%
-    group_by(county, name) %>% 
-    summarise(mid = min(co2e_kg_ha_yr),
-              worst = mid,
-              best = max(co2e_kg_ha_yr)) %>% 
-  rename("flow_desc" = name) %>% 
-  pivot_longer(mid:best)
-
-  
+a_scen <- 
+  a %>% 
+  select(scenario_id, desc, value_ass) %>% 
+  pivot_wider(names_from = desc, values_from = value_ass)
 
 
-# assign system to a county ----------------------------------------------
+# get carbon credit -------------------------------------------------------
 
-cc3 <- 
-  cc2 %>%
-  select(-units, -value) %>%
+c1 <- 
+  a_scen %>% 
+  left_join(ca) %>% 
+  pivot_longer(co2:n2o)
+
+#--change units, do total years
+c2 <- 
+  c1 %>% 
+  left_join(sl) %>% 
+  mutate(co2e_kghayr = 
+          value * ac_per_ha * 1000,
+         co2e_kghastand = co2e_kghayr * stand_life_yrs) 
+
+c3 <- 
+  c2 %>% 
+  #--make consistent with other formats
   mutate(
-    county = case_when(
-      system == "tulare_county" ~ "tulare",
-      system == "central_valley_organic" ~ "yolo", #--no idea what to pick
-      TRUE ~ "XXXX"
-    )
-  ) %>% 
-  left_join(d2) %>% 
-  #--account for stand life
-  mutate(value = value * stand_life_yrs) 
+    cat = "carbon credit",
+    desc = name,
+    value = co2e_kghastand,
+    unit = "kg co2e/stand") %>% 
+  select(scenario_id, cat, desc, unit, value)
 
 
+c3 %>% 
+  write_csv("R/data_tidy/ghg_carboncredit.csv")
 
-cc3 %>% 
-  select(-stand_life_yrs, - county) %>% 
-  mutate(units = "kg") %>% 
-  write_csv("R/data_tidy/lca_carboncredits.csv")
-
-    
-    

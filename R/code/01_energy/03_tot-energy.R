@@ -53,6 +53,15 @@ n_clrs <-
            pull(desc) %>%
            unique())
 
+tot %>% 
+  group_by(scenario_id) %>% 
+  summarise(value = sum(value)/3)
+
+
+tot %>% 
+  group_by(scenario_id) %>% 
+  summarise(value = sum(value))
+
 
 tot %>% 
   mutate(desc = paste(cat_short, desc, sep = "_")) %>% 
@@ -65,7 +74,10 @@ tot %>%
   scale_fill_manual(values = kelly(n = n_clrs)) +
   coord_flip() + 
   labs(x = NULL,
-       y = "MJ/ha alfalfa stand (3 years)")
+       y = "MJ/ha of a 3-year alfalfa stand",
+       title = "Tulare County",
+       fill = "Component")
 
+ggsave("R/figs/tulare-energy.png")
 
 
