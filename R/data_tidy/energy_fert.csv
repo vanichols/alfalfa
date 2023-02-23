@@ -1,2 +1,3 @@
 scenario_id,cat,desc,unit,value
-cv_001,fertilizer manufacture,11-52-0 map,mj/stand,8966.81039591263
+cv_001,fertilizer manufacture,"11-52-0 map, nitrogen",mj/stand,2862.380609007025
+cv_001,fertilizer manufacture,"11-52-0 map, p2o5",mj/stand,7011.409133462503

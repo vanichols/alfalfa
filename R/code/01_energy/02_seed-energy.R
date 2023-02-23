@@ -6,6 +6,8 @@ library(tidyverse)
 source("R/code/00_conversions.R")
 
 
+#--this needs fixed to not include all of the harvest passes
+
 # assumptions -------------------------------------------------------------
 
 a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
@@ -24,7 +26,7 @@ a
 
 f <- read_csv("R/data_tidy/energy_fert.csv")
 p <- read_csv("R/data_tidy/energy_pest.csv")
-fu <- read_csv("R/data_tidy/energy_fuel.csv")
+fu <- read_csv("R/data_tidy/energy_fuel.csv") %>% filter(desc == "field ops")
 i <- read_csv("R/data_tidy/energy_irrig.csv")
 
 

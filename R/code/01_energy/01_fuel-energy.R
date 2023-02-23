@@ -1,5 +1,7 @@
 # calculate energy use
 #created 2/16
+#--2/23 added option to change fuel source for field and harvest ops
+#--- in assumptions file, but did not incorporate into code yet
 
 rm(list = ls())
 library(tidyverse)
@@ -8,18 +10,17 @@ source("R/code/00_conversions.R")
 
 # assumptions -------------------------------------------------------------
 
-a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
+a <- 
+  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
               skip = 5) %>% 
   fill(scenario_id, cat) %>% 
   select(-notes) %>% 
   rename(
     cat_ass = cat,
     unit_ass = unit,
-    value_ass = value)
-
-a
-
-
+    value_ass = value) %>% 
+  filter(grepl("fuel energy", cat_ass)) %>%
+  
 
 # o. fuel usage energy -------------------------------------------------------------
 
@@ -42,7 +43,6 @@ o1 <-
 
 e_diesel <- 
   a %>% 
-  filter(grepl("fuel energy", cat_ass)) %>%
   mutate(
     value_ass = as.numeric(value_ass),
     value_MJ_per_Ldiesel = value_ass * mj_per_btu * 1/l_per_gal) %>% 

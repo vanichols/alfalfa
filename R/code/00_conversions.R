@@ -82,3 +82,9 @@ psi_per_fthead <- 1/fthead_per_psi
 
 psi_per_kpa <- conv_unit(1, "kPa", "psi")
 kpa_per_psi <- 1/psi_per_kpa
+
+
+# ghg ---------------------------------------------------------------------
+
+n_to_n2o <- 44/28
+n2o_to_co2e <- 298

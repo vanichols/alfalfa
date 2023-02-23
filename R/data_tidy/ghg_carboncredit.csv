@@ -1,3 +1,3 @@
 scenario_id,cat,desc,unit,value
-cv_001,carbon credit,co2,kg co2e/stand,1927.4219754438898
-cv_001,carbon credit,n2o,kg co2e/stand,0
+cv_001,carbon credit,co2,kg co2e/stand,-1927.4219754438898
+cv_001,carbon credit,n2o,kg co2e/stand,-0

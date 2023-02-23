@@ -66,13 +66,15 @@ c2 <-
           value * ac_per_ha * 1000,
          co2e_kghastand = co2e_kghayr * stand_life_yrs) 
 
+
+#--make values negative because it is a sequestering
 c3 <- 
   c2 %>% 
   #--make consistent with other formats
   mutate(
     cat = "carbon credit",
     desc = name,
-    value = co2e_kghastand,
+    value = -co2e_kghastand,
     unit = "kg co2e/stand") %>% 
   select(scenario_id, cat, desc, unit, value)
 

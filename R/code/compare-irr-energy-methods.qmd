@@ -169,4 +169,16 @@ res <- tibble(calc = c(
 res
 ```
 
-# 
+```{r}
+res2 <- 
+  res %>% 
+  mutate(methodology = case_when(
+    grepl("nrcs", calc) ~ "NRCS Energy Tool",
+    grepl("ftm", calc) ~ "Field to Market Online Tool",
+    grepl("ucanrs", calc) ~ "Univ Cal ANRS Equations"
+  )) %>% 
+  filter(calc %in% c("nrcs 64 ground", "ftm 64 ground", "ucanrs 64 ground low eff")) %>% 
+  select(methodology, btu_per_ac)
+
+res2 %>% write_csv("compare-irr-energy-methods-summary.csv")
+```

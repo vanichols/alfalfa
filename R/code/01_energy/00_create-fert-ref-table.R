@@ -4,6 +4,7 @@
 
 rm(list = ls())
 library(tidyverse)
+library(readxl)
 source("R/code/00_conversions.R")
 
 # amount of N in fertilizer (for N2O emissions) ---------------------------
@@ -62,7 +63,8 @@ greet1 <-
   mutate(energy_used_btu_per_kg = parse_number(energy_used_btu_per_gram)*1000) %>% 
   select(-2)
 
-greet1
+greet1 %>% 
+  write_csv("greet_raw/tidy_greet-fertilizer.csv")
 
 # MAP contains 11% nitrogen, 52% phosphorous. How to convert?!?
 # FTM comes up with 6521 btu/lb of product...
@@ -88,18 +90,38 @@ greet1 %>%
   mutate(ftm = ftm_btus_per_kg_product)
 
 
+#######-- this needs to be fixed to handle other fertilizer types --###########
+
+#--pull out the unique nutrients
+f_nuts <- greet1 %>% pull(nutrient) %>% unique()
+
+#--create data frame for each fertilizer type
+f_map <-
+  tibble(nutrient = f_nuts) %>%
+  mutate(fert_type = "map",
+         kg_per_kgprod = c(
+           0.11, #--nitrogen
+           0.52, #--p2o5
+           0, #--k2o
+           0 #--caco3
+           )
+         )
+                           
+
 greet2 <- 
   greet1 %>% 
-  mutate(MAP_1kg = c(
-    0.11, # nitrogen
-    0.52,
-    0,
-    0)) %>% 
-  mutate(energy_used_btu = energy_used_btu_per_kg * MAP_1kg) %>% 
-  summarise(energy_used_btu_per_kg_product = sum(energy_used_btu)) %>% 
-  mutate(energy_mj_per_kg_product = energy_used_btu_per_kg_product * mj_per_btu) %>% 
-  mutate(desc = "11-52-0 map", unit = "MJ/kg", value = energy_mj_per_kg_product) %>% 
-  select(desc, unit, value)
+  left_join(f_map) %>% 
+    #--energy to manuf each component of 1 kg of product
+  mutate(e_btu_per_kg_product = energy_used_btu_per_kg * kg_per_kgprod, 
+    #--change to mj per kg
+         e_mj_per_kg_product = e_btu_per_kg_product * mj_per_btu,
+    #--make cats consistent with others
+    cat = "11-52-0 map", 
+    desc = nutrient, 
+    unit = "MJ/kg prod", 
+    value = e_mj_per_kg_product) %>% 
+  select(cat, desc, unit, value) %>% 
+  filter(value > 0)
 
 greet2
 
