@@ -1,5 +1,6 @@
 # calculate energy use
 #created 2/16
+#--2/23 eliminated harvest ops energy use
 
 rm(list = ls())
 library(tidyverse)

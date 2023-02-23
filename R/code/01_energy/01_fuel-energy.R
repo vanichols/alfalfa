@@ -19,10 +19,10 @@ a <-
     cat_ass = cat,
     unit_ass = unit,
     value_ass = value) %>% 
-  filter(grepl("fuel energy", cat_ass)) %>%
+  filter(grepl("fuel energy", cat_ass))
   
 
-# o. fuel usage energy -------------------------------------------------------------
+# fuel usage energy -------------------------------------------------------------
 
 
 fo <- read_csv("R/data_tidy/prod_fieldops.csv")
@@ -66,6 +66,12 @@ o3 <-
   group_by(scenario_id, desc, unit) %>% 
   summarise(value = sum(value, na.rm = T)) %>% 
   mutate(cat = "fuel use")
+
+
+# fuel manufacturing energy -----------------------------------------------
+
+#----ohhhhhhh how to do this
+
 
 o3 %>% 
   write_csv("R/data_tidy/energy_fuel.csv")

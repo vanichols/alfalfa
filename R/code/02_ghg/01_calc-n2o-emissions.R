@@ -3,6 +3,7 @@
 #--direct + indirect
 #--2/15 - need to do indirect
 #--2/22 cleaned up, still lacks indirect
+#--2/23 added indirect
 
 library(tidyverse)
 library(readxl)
@@ -195,7 +196,6 @@ ghg_dir1 <-
 
 #--have to know if fert was synthetic or organic, if synthetic then what type of synthetic
 
-
 a_indir <- 
   a %>% 
   filter(cat_ass == "n2o indirect") %>% 
@@ -216,53 +216,58 @@ a_indir_f <-
   
 #--assign the fertilizer to the correct category
 # (urea, ammonium, nitrate, ammonium-nitrate)
+
+f_cat_ref <- 
+  read_csv("R/data_refs/refbyhand_fert-category.csv", skip = 5) %>% 
+  select(-notes)
+
 f_cat <- 
-  f %>% 
-  select(desc) %>% 
-  distinct() %>% 
-  #--type of n source (ammonium, etc.) for synthetic fert
-  #--note here if it is organic
-  mutate(fert_cat = case_when(
-    desc == "11-52-0 map" ~ "ammonium" #https://www.cropnutrition.com/resource-library/monoammonium-phosphate-map
-  )) %>% 
-  rename("desc2" = desc) %>% 
+  f_cat_ref %>% 
+  rename("desc2" = fert_type) %>% 
   left_join(a_indir_f %>% 
               select(fert_cat, value_ass)) %>% 
   rename("kg_n_volatized_per_kg_applied_n" = value_ass)
 
+
+
+
 #--get all the constants lined up
+#--note if you apply many types of fertilizer, each should be in a row here
+
 ghg_ind <- 
   all_n %>% 
   #--get the type of fertilizer it is
   left_join(f %>% 
               select(scenario_id, desc) %>% 
-              rename("desc2" = desc)) %>% 
+              rename("desc2" = desc) %>% 
+              mutate(desc = "fert n")) %>% 
     #--add the category and assumed %N volatilization
   left_join(f_cat) %>% 
-  pivot_wider(names_from = desc, values_from = value) %>% 
-  janitor::clean_names() %>%
   left_join(a_indir) 
 
-#--do the calcs for volatization
+#--do the calcs for volatization - plant n is not included here
 ghg_vol <- 
   ghg_ind %>% 
-  #--note if you apply many types of fertilizer, each should be in a row here
-  mutate(value = 
-           fert_n * kg_n_volatized_per_kg_applied_n * kg_n_n2o_per_kg_n_volatalized,
+  filter(desc != "plant n") %>% 
+  mutate(value2 = 
+           value * kg_n_volatized_per_kg_applied_n * kg_n_n2o_per_kg_n_volatalized,
          unit = "kg n2o-n vol/stand", 
          desc = "indirect, volatilize") %>% 
-  select(scenario_id, unit, desc, value)
+  group_by(scenario_id, unit, desc) %>% 
+  #--sum together in case there are multiple fertilizers
+  summarise(value = sum(value2))
   
 #--do the calcs for leaching
 ghg_leach <- 
   ghg_ind %>% 
-  #--note if you apply many types of fertilizer, each should be in a row here
-  mutate(value = 
-           fert_n * kg_n_leached_per_kg_n * kg_n_n2o_per_kg_n_leached,
+  mutate(value2 = 
+           value * kg_n_leached_per_kg_n * kg_n_n2o_per_kg_n_leached,
          unit = "kg n2o-n leach/stand",
+         #--change desc from plant n/fert n to just indirect, leach
          desc = "indirect, leach") %>% 
-  select(scenario_id, unit, desc, value)
-
+  group_by(scenario_id, unit, desc) %>% 
+  #--sum them together (plant + all fertilizers)
+  summarise(value = sum(value2))
   
 #--comnbine volat and leach values, change to co2e
 ghg_ind1 <- 

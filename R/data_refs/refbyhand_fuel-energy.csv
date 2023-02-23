@@ -1,10 +1,10 @@
-"energy content taken from table 19.1, Hoffman book, close to FTM numbers from 'https://www.afdc.energy.gov/fuels/fuel_comparison_chart.pdf'",,,,
-co2e - electricity taken from epa: https://www.epa.gov/egrid/summary-data,,,,
-co2e - fuel values come from 2020 EPA report:https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf,,,,
-,,,,
-,,,,
-fuel_type,energy_content,energy_content_unit,co2e,co2e_unit
-diesel,39.02,MJ/L,10.21,kg/gal
-natural gas,34.46,MJ/m3,0.05444,kg/scf
-gasoline,34.56,MJ/L,8.78,kg/gal
-electricity,3.6,MJ/kWh,0.5336,lb/kWh
+"energy content taken from table 19.1, Hoffman book, close to FTM numbers from 'https://www.afdc.energy.gov/fuels/fuel_comparison_chart.pdf'",,,,,
+co2e - electricity taken from epa: https://www.epa.gov/egrid/summary-data,,,,,
+co2e - fuel values come from 2020 EPA report:https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf,,,,,
+"how much energy, and therefore co2 emissions, are there associated with fuel manufacturing?",,,,,
+,,,,,
+energy_type,fuel_type,energy_content,energy_content_unit,co2e,co2e_unit
+combustion,diesel,39.02,MJ/L,10.21,kg/gal
+combustion,natural gas,34.46,MJ/m3,0.05444,kg/scf
+combustion,gasoline,34.56,MJ/L,8.78,kg/gal
+generation,"electricity, CA",3.6,MJ/kWh,480,lb/MWh

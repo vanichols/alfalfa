@@ -45,7 +45,8 @@ m2_per_ha <- 10000
 btu_per_mj <- conv_unit(1, "J", "BTU") * 1000 * 1000
 mj_per_btu <- 1 / btu_per_mj
 btu_per_ftlb <- 0.00128507
-
+kwh_per_mwh <- 1000
+mwh_per_kwh <- 1/1000
 
 # volume ------------------------------------------------------------------
 
@@ -55,6 +56,7 @@ m3_per_cuft <- 1/cuft_per_m3
 
 pints_per_gal <- conv_unit(1, "us_gal", "us_pint")
 l_per_gal <- conv_unit(1, "us_gal", "l")
+gal_per_l <- 1/l_per_gal
 gal_per_pint <- 1/pints_per_gal
 
 oz_per_gal <- conv_unit(1, "us_gal", "us_oz")
@@ -88,3 +90,4 @@ kpa_per_psi <- 1/psi_per_kpa
 
 n_to_n2o <- 44/28
 n2o_to_co2e <- 298
+

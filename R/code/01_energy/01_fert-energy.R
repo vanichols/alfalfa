@@ -17,7 +17,7 @@ a_fe <-
 
 a_fe
 
-# f. fertilizer manu energy -------------------------------------------------------
+# how much fertilizer did we apply?
 
 f <- read_csv("R/data_tidy/prod_fertility.csv")
 
@@ -40,3 +40,4 @@ f2 <-
 
 f2 %>% 
   write_csv("R/data_tidy/energy_fert.csv")
+

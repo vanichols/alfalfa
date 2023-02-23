@@ -9,7 +9,7 @@ cv_001,carbon credit,county,,tulare,
 ,irrigation,fraction from surface source,frac,0,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
 ,,depth of well,feet,150,
 ,,pump pressure,psi,25,
-,,pump energy source,,diesel,this is something that should be played with
+,,,,,
 ,,surface irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,
@@ -26,10 +26,9 @@ cv_001,carbon credit,county,,tulare,
 ,,kg n-n2o per kg n volatalized,frac,0.005,
 ,,kg n leached per kg n,frac,0.24,
 ,,kg n-n2o per kg n leached,frac,0.011,is California an area where leaching occurs?
-,n2o savings,corn,,,
-,,wheat fertilizer savings,lb N/ac,80,"Ranged from 70-130 in this study, cites 40-80 from other studies From https://www.cdfa.ca.gov/is/ffldrs/frep/pdfs/completedprojects/12-0385-SA_Putnam.pdf"
-,,tomato,lb N/ac,170,Taken from https://www.alfalfa.org/pdf/USAFRI/Final%20Reports/2018/18Putnam.pdf
-,,cotton,,,
+,fertilizer avoidance,type of fertilizer avoided,,uan-32,to calculate volatilization avoided
+,,"avoided fertilizer, wheat",lb N/ac,80,"Ranged from 70-130 in this study, cites 40-80 from other studies From https://www.cdfa.ca.gov/is/ffldrs/frep/pdfs/completedprojects/12-0385-SA_Putnam.pdf"
+,,"avoided fertilizer, tomatoes",lb N/ac,170,Taken from https://www.alfalfa.org/pdf/USAFRI/Final%20Reports/2018/18Putnam.pdf
 ,fuel,chisel,l diesel/ha,11.69240525,"taken from estimates garnered from FTM docs, numbers creaeted in code>01_energy>00_create-fuel-ref-table' and stored in data_refs>ref_ops-fuel-usage"
 ,,disk,l diesel/ha,7.0154433,
 ,,disk border ridges,l diesel/ha,7.0154433,
@@ -46,8 +45,6 @@ cv_001,carbon credit,county,,tulare,
 ,,"hay, rake",l diesel/ha,3.2738733,
 ,,"hay, bale",l diesel/ha,3.554491,
 ,,"hay, stack",l diesel/ha,6.828365,
-,,field ops energy source,,diesel,
-,,harvest energy source,,diesel,
 ,pesticide manufacture,flumioxazin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
 ,,chlorantraniliprole,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
 ,,paraquat,MJ/kg ai,459.4,listed in table 2
@@ -57,3 +54,8 @@ cv_001,carbon credit,county,,tulare,
 ,fuel energy,diesel,btu/gal,138490,taken from Table 1 of FTM energy document
 ,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
 ,,energy for seed production?,MJ/ac,,"Whether this should be estimated more exactly is a question…. Seed production also produces an alfalfa cutting, so the energy should be split somehow. The number of passes will be lower for seed production bc there is only one hay harvest - other passes will be similar (weed, pests, fert), and standlife is similar to hay fields"
+,energy source,irrigation,,electricity,
+,,"fuel, field ops",,diesel,
+,,"fuel, harvest",,diesel,
+,,fertilizer manufacture,,diesel,
+,,pesticide manufacture,,diesel,

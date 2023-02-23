@@ -1,8 +1,10 @@
-#--calculate n2o emissions
-#--use fertilizer n and plant n inputs
+#--calculate n2o emissions avoided from avoided fertilizer
+#--use fertilizer n only (assume plant n is not impacted)
 #--direct + indirect
-#--2/15 - need to do indirect
-#--2/22 cleaned up, still lacks indirect
+#--have to assume a type of fertilizer that is avoided
+#--have to assume a crop - let's do tomatoes
+
+
 
 library(tidyverse)
 library(readxl)
@@ -13,171 +15,148 @@ rm(list = ls())
 source("R/code/00_conversions.R")
 source("R/code/00_funs.R")
 
-# data for stand life --------------------------------------------------------------------
-
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
-                  skip = 5) %>% 
-  janitor::remove_empty()
-
-d <- fun_preproc(d_raw)
-
-sl <- 
-  d %>% 
-  filter(desc == "stand life") %>% 
-  rename("stand_life_yrs" = value) %>% 
-  select(scenario_id, stand_life_yrs)
-
-# ipcc --------------------------------------------------------------------
-
-
-
-# use paper to check calcs ------------------------------------------------
-
-# https://link.springer.com/article/10.1007/s10705-016-9808-8
-# The current IPCC Tier 1 emission factor estimates N2O emissions as one percent 
-# of N inputs, which are accounted for as above- and belowground residues 
-# during forage crop renewal (plowing under of an existing forage crop). 
-# To calculate annual N inputs in perennial legume systems, 
-# the residue N during crop renewal is divided by the number of years 
-# of continuous cultivation (IPCC 2006). 
-
-# A1 = DM produced annually (kg DM/ha)
-# A2 = N content of aboveground biomass (kg N/ kgDM)
-# A3 = fraction of aboveground biomass not harvested (defaults to 0.1)
-A3 <- 0.1
-# B1 = default factor estimating root dry matter as a function of annual 
-#  aboveground biomass; 0.4
-B1 <- 0.4
-# B2 = default N fraction of alfalfa roots (kg/kg DM); 0.019
-B2 <- 0.019
-
-# C1 = renewal rate per year (1/stand life), I don't quite get this. It's assuming the n2o is releaesd upon termination?
-C1 <- 1/4
-
-# inorganic N mineralized (kg N/ha) = [A1*A2*A3 + A1*B1*B2]*C1
-# Nfert must also be added
-# numbers from paper as example:
-Nfert <- 18
-
-
-# 2nd year stand = 58 kg N/ha
-A1_2yr <- 14100
-A2_2yr <- 525/A1_2yr # they measured this - 525 kg of N per ha
-Ninputs_2yr <- (A1_2yr * A2_2yr * A3 + A1_2yr * B1 * B2) * C1 + Nfert
-ipcc_2yr <- 0.01 * Ninputs_2yr #kg N2O-N / ha / yr
-
-# 5th year stand = 53 kg N/ha
-A1_5yr <- 12100
-A2_5yr <- 473/A1_5yr
-Ninputs_5yr <- (A1_5yr * A2_5yr * A3 + A1_5yr * B1 * B2) * C1 + Nfert
-ipcc_5yr <- 0.01 * Ninputs_5yr #kg N2O-N / ha / yr
-
-
-
-
 # assumptions -------------------------------------------------------------
 
-a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-                skip = 5) %>% 
+a <- 
+  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
+           skip = 5) %>% 
+  fill(scenario_id, cat) %>% 
+  select(-notes) %>% 
+  rename(
+    cat_ass = cat,
+    unit_ass = unit,
+    value_ass = value)
+
+#-ipcc assumptions
+a_ipcc <- 
+  a %>% 
+  filter(cat_ass %in% c("n2o direct", "n2o indirect")) %>% 
+  mutate(value_ass = as.numeric(value_ass)) 
+
+
+# get N from fert ---------------------------------------------------------
+# Use assumptions from IPCC 2019 refinement, Table 11.1A (direct), and Table 11.3 (indirect)
+a_dir <- 
+  a_ipcc %>% 
+  filter(cat_ass == "n2o direct") %>%
+  pivot_wider(names_from = desc, values_from = value_ass) %>% 
+  janitor::clean_names() %>% 
+  select(-cat_ass, -unit_ass)
+
+
+a_avoid <- 
+  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
+           skip = 5) %>% 
   fill(scenario_id, cat) %>% 
   select(-notes) %>% 
   rename(
     cat_ass = cat,
     unit_ass = unit,
     value_ass = value) %>% 
-  filter(cat_ass == "n2o")
+  filter(cat_ass %in% c("fertilizer avoidance")) 
 
-# Use assumptions from IPCC 2019 refinement, Table 11.1A
-a1 <- 
-  a %>% 
+
+#--assume tomatoes, add assumed fert type
+
+fert_cat_ref <- read_csv("R/data_refs/refbyhand_fert-category.csv", skip = 5) %>% select(-notes)
+
+f_n <- 
+  a_avoid %>% 
+  filter(grepl("tomatoes", desc)) %>% 
   mutate(value_ass = as.numeric(value_ass)) %>% 
+  left_join(
+    a_avoid %>% 
+      filter(grepl("type of fertilizer avoided", desc)) %>%
+      rename("fert_type" = value_ass) %>% 
+      select(scenario_id, fert_type)
+  ) %>% 
+  left_join(fert_cat_ref) %>% 
+  mutate(value = value_ass * kg_per_lb * ac_per_ha,
+         unit = "kg n",
+         desc = "fert n") %>% 
+  select(scenario_id, desc, unit, value, fert_cat)
+
+
+# direct n2o emissions----------------------------------------------------------
+
+ghg_dir <- 
+  f_n %>%  
+  left_join(a_dir) %>% 
+  mutate(n2oN_kg = kg_n_n2o_emitted_per_kg_applied_residue_n * value,
+         value2 = n2oN_kg * n_to_n2o * n2o_to_co2e,
+         unit = "kg co2e") %>% 
+  mutate(desc = "direct",
+         cat = "n2o avoidance") %>% 
+  select(scenario_id, cat, desc, unit, value2)
+
+
+# indirect n2o emissions --------------------------------------------------
+
+a_indir <- 
+  a_ipcc %>% 
+  filter(cat_ass == "n2o indirect") %>% 
+  #--get rid of fertilizer types assum, deal with separately
+  filter(!grepl("synthetic n,|organic n,", desc)) %>% 
   pivot_wider(names_from = desc, values_from = value_ass) %>% 
   janitor::clean_names() %>% 
   select(-cat_ass, -unit_ass)
 
-
-# note it is assumed all the n2o is released when the stand is terminated
-# therefore the total is amortized over the standlife. Longer standlife = less n2o
-# from IPCC 2019 refinement: the nitrogen residue from forages is only accounted for during pasture renewal
-
-
-# get N from fert ---------------------------------------------------------
-
-#--calculate kg of N applied per ha via fertilizers
-
-#--get n per unit fertilizer, clean up for merg
-f_nref <- 
-  read_csv("R/data_refs/ref_fert-n.csv") %>% 
-  rename(desc = fert_type) %>% 
-  mutate(kgn_kgfert = value) %>% 
-  select(desc, kgn_kgfert)
-
-f <- read_csv("R/data_tidy/prod_fertility.csv")
+#--the different volat constants for each fertilizer type
+a_indir_f <- 
+  a %>% 
+  filter(cat_ass == "n2o indirect") %>% 
+  filter(grepl("synthetic n,|organic n,", desc)) %>% 
+  separate(desc, into = c("x", "fert_cat"), sep = ",") %>% 
+  select(-x) %>% 
+  mutate_if(is.character, str_trim) %>% 
+  mutate(value_ass = as.numeric(value_ass))
 
 
-f_n <- 
-  f %>% 
-  left_join(f_nref) %>% 
-  mutate(f_ntot = value * kgn_kgfert) %>% 
-  group_by(scenario_id) %>% 
-  summarise(value = sum(f_ntot, na.rm = T),
-            unit = "kg n/stand",
-            desc = "fert n")
+f_n2 <- 
+  f_n %>% 
+  left_join(a_indir_f) %>% 
+  rename("kg_n_volatized_per_kg_applied_n" = value_ass)
+
+#--get all the constants lined up
+ghg_ind <- 
+  f_n2 %>% 
+  left_join(a_indir) 
+
+#--do the calcs for volatization
+ghg_vol <- 
+  ghg_ind %>% 
+  mutate(value2 = 
+           value * kg_n_volatized_per_kg_applied_n * kg_n_n2o_per_kg_n_volatalized,
+         unit = "kg n2o-n vol", 
+         desc = "indirect, volatilize") %>% 
+  select(scenario_id, unit, desc, value2)
+
+#--do the calcs for leaching
+ghg_leach <- 
+  ghg_ind %>% 
+  mutate(value2 = 
+           value * kg_n_leached_per_kg_n * kg_n_n2o_per_kg_n_leached,
+         unit = "kg n2o-n leach",
+         desc = "indirect, leach") %>% 
+  select(scenario_id, unit, desc, value2)
 
 
-# get N from plants --------------------------------------------------------
+#--comnbine volat and leach values, change to co2e
+ghg_ind1 <- 
+  ghg_vol %>% 
+  bind_rows(ghg_leach) %>% 
+  mutate(value2 = value2 * n_to_n2o * n2o_to_co2e,
+         unit = "kg co2e") 
 
-h_dm <- 
-  read_csv("R/data_tidy/prod_yields.csv") %>%
-  group_by(scenario_id) %>% 
-  summarise(value = sum(value)) %>% 
-  left_join(sl) %>% 
-  mutate(kgdm_per_year = value/stand_life_yrs) %>%
-  select(scenario_id, stand_life_yrs, kgdm_per_year) 
+# add together ------------------------------------------------------------
 
-  
-p_n <- 
-  h_dm %>% 
-  left_join(a1) %>% 
-  mutate(
-    dm_n = kgdm_per_year * fraction_of_dm_not_harvested * kg_of_n_per_kg_dm,
-    root_n = kgdm_per_year * kg_roots_per_kg_dm_harvested * kg_n_per_kg_root_dm,
-    plant_n_kg = (dm_n + root_n)/stand_life_yrs 
-  )
-    
-p_n1 <- 
-  p_n %>% 
-  mutate(value = plant_n_kg,
-         unit = "kg n/stand",
-         desc = "plant n") %>% 
-  select(scenario_id, desc, value, unit)
-    
-# convert to n2o ----------------------------------------------------------
-
-# assume 0.5% of n inputs to account for direct n2o emissions (all inputs in dry climates, Table 11.1) 
-
-ghg <- 
-  p_n1 %>% 
-  bind_rows(f_n) %>%  
-  mutate(n2oN_kg = 0.005 * value,
-         n2o_kg = n2oN_kg * 44/28) %>% 
-  select(-value, -n2oN_kg) 
-
-#---just look at it
-ghg %>% 
-  mutate(co2_eq_kg = n2o_kg * 298) %>% 
-  ggplot(aes(desc, co2_eq_kg)) + 
-  geom_col(aes(fill = desc), color = "black") + 
-  labs(y = "kg co2-eq per ha",
-       x = NULL,
-       title = "N2O emissions, IPCC method") 
+ghg_n2o <- 
+  ghg_dir %>% 
+  bind_rows(ghg_ind1) %>% 
+  fill(cat) %>% 
+  mutate(value = -value2) %>% #--negative bc it is avoided
+  select(-value2)
 
 
-ghg1 <- 
-  ghg %>% 
-  mutate(value = n2o_kg * 298,
-         unit = "kg co2e/stand") %>% 
-  select(-n2o_kg)
-
-ghg1 %>% 
-  write_csv("R/data_tidy/ghg_n2o.csv")
+ghg_n2o %>% 
+  write_csv("R/data_tidy/ghg_avoided-n2o.csv")

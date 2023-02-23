@@ -2,4 +2,4 @@ scenario_id,desc,unit,value,cat
 cv_001,"direct, plant n",kg co2e/stand,200.0312540444677,n2o
 cv_001,"direct, fert n",kg co2e/stand,115.47330330564914,n2o
 cv_001,"indirect, volatilize",kg co2e/stand,9.23786426445193,n2o
-cv_001,"indirect, leach",kg co2e/stand,60.96990414538273,n2o
+cv_001,"indirect, leach",kg co2e/stand,166.58640628086164,n2o

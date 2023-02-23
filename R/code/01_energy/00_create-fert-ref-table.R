@@ -1,15 +1,19 @@
 # try to create reference tables (still unsure of good format)
 #created 2/7/2023
 #--modified 2/16
+#--2/23 added uan-32
+
 
 rm(list = ls())
 library(tidyverse)
 library(readxl)
 source("R/code/00_conversions.R")
 
+
+
 # amount of N in fertilizer (for N2O emissions) ---------------------------
 
-#--get unique types of fertilizers
+#--get unique types of fertilizers in enterprise budgets
 
 fert_types <- 
   read_csv("R/data_tidy/prod_fertility.csv") %>% 
@@ -17,21 +21,30 @@ fert_types <-
   pull() %>% 
   unique()
 
+#--add uan-32, as that is what is used in tomatoes
+fert_types <- c(fert_types, "uan-32")
+
+
 # MAP is 11% by weight N
 # https://www.etoolsage.com/calculator/NPK_Fertilizer_Calculator.asp
 
 # assumed poultry litter is 3% N (for now)
 # https://frankiafertilizers.com/product/composted-chicken-manure/
 
+# uan-32 is 32% nitrogen (25% nitrate, 25% ammonium nitrogen, 50% urea)
+
 fert_n <- 
   tibble(fert_type = fert_types) %>% 
   mutate(value = case_when(
            fert_type == "11-52-0 map" ~ 0.11,
+           fert_type == "uan-32" ~ 0.32,
            #fert_type == "composted poultry litter" ~ 0.03,
            TRUE ~ 999
          ),
          unit = "kg n / kg fertilizer"
          )
+
+fert_n
 
 fert_n %>% 
   write_csv("R/data_refs/ref_fert-n.csv")
@@ -63,6 +76,7 @@ greet1 <-
   mutate(energy_used_btu_per_kg = parse_number(energy_used_btu_per_gram)*1000) %>% 
   select(-2)
 
+#--write it so I can look at it easily (the actual greet workbooks are a beast)
 greet1 %>% 
   write_csv("greet_raw/tidy_greet-fertilizer.csv")
 
@@ -73,7 +87,6 @@ ftm_btus_per_kg_product <- 6521 * lb_per_kg
 
 
 # 1 kg of 
-
 # map is 11-52-0, meaning it is 11% nitrogen and 52% phosphate
 # so 1 kg of map has .11 kg N, .52 kg p2o5
 # https://fertilizerbrokerage.com/map-11-52-0.html
@@ -90,15 +103,15 @@ greet1 %>%
   mutate(ftm = ftm_btus_per_kg_product)
 
 
-#######-- this needs to be fixed to handle other fertilizer types --###########
-
 #--pull out the unique nutrients
 f_nuts <- greet1 %>% pull(nutrient) %>% unique()
 
 #--create data frame for each fertilizer type
+
+#--11-52-0 map
 f_map <-
   tibble(nutrient = f_nuts) %>%
-  mutate(fert_type = "map",
+  mutate(fert_type = "11-52-0 map",
          kg_per_kgprod = c(
            0.11, #--nitrogen
            0.52, #--p2o5
@@ -106,18 +119,31 @@ f_map <-
            0 #--caco3
            )
          )
-                           
+              
+#--uan-32             
+f_uan32 <-
+  tibble(nutrient = f_nuts) %>%
+  mutate(fert_type = "uan-32",
+         kg_per_kgprod = c(
+           0.32, #--nitrogen
+           0, #--p2o5
+           0, #--k2o
+           0 #--caco3
+         )
+  )
 
-greet2 <- 
-  greet1 %>% 
-  left_join(f_map) %>% 
+
+greet2 <-
+  f_map %>% 
+  bind_rows(f_uan32) %>% 
+  left_join(greet1) %>% 
     #--energy to manuf each component of 1 kg of product
   mutate(e_btu_per_kg_product = energy_used_btu_per_kg * kg_per_kgprod, 
     #--change to mj per kg
          e_mj_per_kg_product = e_btu_per_kg_product * mj_per_btu,
     #--make cats consistent with others
-    cat = "11-52-0 map", 
-    desc = nutrient, 
+    cat = fert_type,
+   desc = nutrient, 
     unit = "MJ/kg prod", 
     value = e_mj_per_kg_product) %>% 
   select(cat, desc, unit, value) %>% 

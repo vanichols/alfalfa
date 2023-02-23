@@ -21,16 +21,19 @@ a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
 a
 
 
-# seeds -------------------------------------------------------------------
+
+# all energy --------------------------------------------------------------
 
 f <- read_csv("R/data_tidy/energy_fert.csv")
+f_avoid <- read_csv("R/data_tidy/energy_fert-avoided.csv")
 p <- read_csv("R/data_tidy/energy_pest.csv")
 fu <- read_csv("R/data_tidy/energy_fuel.csv")
 i <- read_csv("R/data_tidy/energy_irrig.csv")
-s <- read_csv("R/data_tidy/energy_seed.csv")
+s <- read_csv("R/data_tidy/energy_seed.csv") #--doesn't include harvest ops
 
 tot <- 
   f %>% 
+  bind_rows(f_avoid) %>% 
   bind_rows(p) %>% 
   bind_rows(fu) %>% 
   bind_rows(i) %>% 
@@ -38,12 +41,13 @@ tot <-
   mutate(cat_short = case_when(
     cat == "fuel use" ~ "fuel",
     cat == "fertilizer manufacture" ~ "fert",
+    cat == "fertilizer avoidance" ~ "avoided fert",
     cat == "pesticide manufacture" ~ "pest",
     cat == "irrigation" ~ "irrig",
     cat == "seed" ~ "seed",
     TRUE ~ "XXX"
   )) %>% 
-  filter(value > 0) 
+  filter(value != 0) 
 
 
 

@@ -1,0 +1,8 @@
+This table was created by hand to assign a fertilizer type to a category for IPCC volatilization calc,,
+"Possible categories include urea, ammonium, nitrate, ammonium-nitrate, and organic",,
+"For UAN which is both urea and ammonium nitrate, I have no idea what to do. ",,
+"uan-32 is 32% nitrogen (25% nitrate, 25% ammonium nitrogen, 50% urea), so assign it as urea",,
+,,
+fert_type,fert_cat,notes
+11-52-0 map,ammonium,https://www.cropnutrition.com/resource-library/monoammonium-phosphate-map
+uan-32,urea,
