@@ -13,7 +13,7 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                     skip = 5) %>% 
   janitor::remove_empty()
 
@@ -29,7 +29,7 @@ f_passes <-
   d %>% 
   filter(cat == "field ops") %>% 
   filter(grepl("fertilize", desc)) %>% 
-  group_by(scenario_id, cat, desc) %>% 
+  group_by(production_id, cat, desc) %>% 
   summarise(value = sum(value))
 
 

@@ -1,5 +1,7 @@
 # calculate energy use saved from less n requirement for next crop
 #created 2/16
+#--updated 2/24, assumptions have assumption id, production has prod_id
+
 
 rm(list = ls())
 library(tidyverse)

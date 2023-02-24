@@ -1,7 +1,6 @@
-# calculate energy use
-#created 2/16
-#--2/23 added option to change fuel source for field and harvest ops
-#--- in assumptions file, but did not incorporate into code yet
+# calculate energy required in 01_field-pass-energy
+#--we have to assume a fuel used, and it's thermal efficiency (or conversion efficiency)
+#--in progress, 2/24
 
 rm(list = ls())
 library(tidyverse)

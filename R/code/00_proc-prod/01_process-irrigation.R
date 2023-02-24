@@ -15,7 +15,7 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
@@ -29,7 +29,7 @@ sl <-
   d %>% 
   filter(desc == "stand life") %>% 
   rename("stand_life_yrs" = value) %>% 
-  select(scenario_id, stand_life_yrs)
+  select(production_id, stand_life_yrs)
 
 
 
@@ -48,7 +48,7 @@ i_est1 <-
          value_l = value_ha_m * m2_per_ha * l_water_per_m3) %>% 
   mutate(unit = "l / stand", 
          value = value_l) %>%
-  select(scenario_id, cat, desc, unit, value)
+  select(production_id, cat, desc, unit, value)
   
 
 
@@ -69,7 +69,7 @@ i_prod1 <-
          value_l = value_ha_m * m2_per_ha * l_water_per_m3) %>% 
   mutate(unit = "l / stand", 
          value = value_l) %>%
-  select(scenario_id, cat, desc, unit, value)
+  select(production_id, cat, desc, unit, value)
 
 
 i2 <- 

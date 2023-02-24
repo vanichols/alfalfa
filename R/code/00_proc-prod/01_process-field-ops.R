@@ -13,7 +13,7 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
@@ -30,7 +30,7 @@ f1 <-
   
 f2 <- 
   f1 %>% 
-  group_by(scenario_id, cat, desc, unit) %>% 
+  group_by(production_id, cat, desc, unit) %>% 
   summarise(value = sum(value, na.rm = T))
 
 f2

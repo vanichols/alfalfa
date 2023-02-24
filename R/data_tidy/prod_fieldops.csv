@@ -1,4 +1,4 @@
-scenario_id,cat,desc,unit,value
+production_id,cat,desc,unit,value
 cv_001,field ops,chisel,pass/stand life,1
 cv_001,field ops,disk,pass/stand life,2
 cv_001,field ops,disk border ridges,pass/stand life,1

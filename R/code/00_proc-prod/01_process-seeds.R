@@ -14,7 +14,7 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
@@ -38,7 +38,7 @@ s2 <-
     value_kg_per_ha = value_lbs_per_ac * kg_per_lb * ac_per_ha,
     unit = "kg / stand"
   ) %>% 
-  select(scenario_id, cat, desc, unit, value_kg_per_ha) %>% 
+  select(production_id, cat, desc, unit, value_kg_per_ha) %>% 
   rename(value = value_kg_per_ha)
 
 s2

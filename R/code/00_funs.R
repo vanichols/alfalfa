@@ -7,7 +7,7 @@ library(tidyverse)
 fun_preproc <- function(data = d.dum) {
   tmp <- 
     data %>% 
-    fill(scenario_id, .direction = c("down")) %>% 
+    fill(production_id, .direction = c("down")) %>% 
     fill(cat, .direction = c("down")) %>% 
     fill(desc, .direction = c("down")) %>% 
     select(-notes) %>% 

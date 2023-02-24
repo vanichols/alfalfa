@@ -1,4 +1,4 @@
-scenario_id,cat,desc,unit,value
+production_id,cat,desc,unit,value
 cv_001,harvest ops,"haylage, cut",pass / stand life,6
 cv_001,harvest ops,"haylage, chop",pass / stand life,6
 cv_001,harvest ops,"hay, swath",pass / stand life,21

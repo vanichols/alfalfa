@@ -47,6 +47,8 @@ mj_per_btu <- 1 / btu_per_mj
 btu_per_ftlb <- 0.00128507
 kwh_per_mwh <- 1000
 mwh_per_kwh <- 1/1000
+btu_per_kwh <- 3412.14
+kwh_per_btu <- 1/btu_per_kwh
 
 # volume ------------------------------------------------------------------
 

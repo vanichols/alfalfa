@@ -14,7 +14,7 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
@@ -29,7 +29,7 @@ d <- fun_preproc(d_raw)
 p1 <- 
   d %>% 
   filter(cat == "pesticide") %>% 
-  group_by(scenario_id, cat, desc, unit) %>% 
+  group_by(production_id, cat, desc, unit) %>% 
   summarise(value = sum(value)) %>% 
   ungroup()
 
@@ -109,7 +109,7 @@ p2 <-
   p1 %>% 
   left_join(ai_res) %>% 
   #--rearrange so it's easier to see
-  select(scenario_id, cat, desc, value, unit, ai, value_ai, unit_ai, everything()) 
+  select(production_id, cat, desc, value, unit, ai, value_ai, unit_ai, everything()) 
 
 
 # deal with units all at once --------------------------------------------
@@ -149,7 +149,7 @@ p4 %>%
 #--clean up
 p5 <- 
   p4 %>% 
-  select(scenario_id, cat, ai, value_kgai_ha) %>% 
+  select(production_id, cat, ai, value_kgai_ha) %>% 
   mutate(unit = "kg / stand") %>% 
   rename(
     "desc" = ai,

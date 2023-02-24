@@ -3,13 +3,12 @@ baseline assumptions,,,,,
 ,,,,,
 ,,,,,
 ,,,,,
-scenario_id,cat,desc,unit,value,notes
-cv_001,carbon credit,county,,tulare,
+assumption_id,cat,desc,unit,value,notes
+a_001,carbon credit,county,,tulare,
 ,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
 ,irrigation,fraction from surface source,frac,0,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
 ,,depth of well,feet,150,
 ,,pump pressure,psi,25,
-,,,,,
 ,,surface irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,
@@ -51,7 +50,6 @@ cv_001,carbon credit,county,,tulare,
 ,,pendimethalin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
 ,,glyphosate,MJ/kg ai,454,listed in table 2
 ,,lambda-cyhalothrin,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
-,fuel energy,diesel,btu/gal,138490,taken from Table 1 of FTM energy document
 ,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
 ,,energy for seed production?,MJ/ac,,"Whether this should be estimated more exactly is a question…. Seed production also produces an alfalfa cutting, so the energy should be split somehow. The number of passes will be lower for seed production bc there is only one hay harvest - other passes will be similar (weed, pests, fert), and standlife is similar to hay fields"
 ,energy source,irrigation,,electricity,

@@ -1,3 +1,3 @@
-scenario_id,cat,desc,unit,value
+production_id,cat,desc,unit,value
 cv_001,yield,hay production,kg / stand,60525.97017241025
 cv_001,yield,haylage production,kg / stand,14122.726373562387

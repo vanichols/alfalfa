@@ -67,6 +67,10 @@ The main components defining the irrigation energy use are:
 
 The NRCS has a tool that will estimate the energy used for irrigation: <https://ipat.sc.egov.usda.gov/Default.aspx>
 
+```{r}
+11.81 * btu_per_mj * l_per_gal
+```
+
 Saved output in We can calculate the number of BTUs we used per acre:
 
 ```{r}

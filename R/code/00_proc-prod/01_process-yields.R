@@ -14,7 +14,7 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
@@ -30,7 +30,7 @@ sl <-
   d %>% 
   filter(desc == "stand life") %>% 
   rename("stand_life_yrs" = value) %>% 
-  select(scenario_id, stand_life_yrs)
+  select(production_id, stand_life_yrs)
 
 sl %>% 
   write_csv("R/data_tidy/prod_standlife.csv")
