@@ -9,7 +9,22 @@ library(tidyverse)
 source("R/code/00_conversions.R")
 
 
+
+# thermal effic of each fuel ----------------------------------------------
+
+
+#--fuel energies and efficiencies
+te <- 
+  read_csv("R/data_refs/refbyhand_fuel-energy.csv", skip = 5) %>% 
+  filter(desc %in% c("energy content", "thermal efficiency")) |> 
+  filter(desc == "thermal efficiency") %>% 
+  mutate(therm_eff = value) %>% 
+  select(fuel_type, therm_eff)
+
+
+
 # assumptions -------------------------------------------------------------
+
 
 a <- 
   read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
@@ -19,15 +34,22 @@ a <-
   rename(
     cat_ass = cat,
     unit_ass = unit,
-    value_ass = value) |> 
-  filter(cat_ass == "irrigation") |> 
-  filter(value_ass != "diesel") |> 
-  mutate(value_ass = as.numeric(value_ass))
+    value_ass = value) 
 
-a
+
+a_fuel <- 
+  a |> 
+  filter(grepl("energy source", cat_ass),
+         grepl("irrigation", desc)) %>% 
+  mutate(fuel_type = value_ass,
+         cat = "irrigation") |> 
+  select(assumption_id, fuel_type, cat)
+
 
 a_effs <- 
   a |> 
+  filter(cat_ass == "irrigation") |> 
+  mutate(value_ass = as.numeric(value_ass)) |> 
   filter(grepl("eff", desc)) |> 
   separate(desc, into = c("type", "x", "xx")) |> 
   mutate(eff_frac = value_ass) |> 
@@ -35,18 +57,24 @@ a_effs <-
 
 
 a_pct_surf <- 
-  a |> 
+  a |>
+  filter(cat_ass == "irrigation") |> 
+  mutate(value_ass = as.numeric(value_ass)) |> 
   filter(desc == "fraction from surface source") |> 
   pull(value_ass)
 
 a_welldepth_ft <-
   a |>
+  filter(cat_ass == "irrigation") |> 
+  mutate(value_ass = as.numeric(value_ass)) |> 
   filter(desc == "depth of well") |>
   pull(value_ass)
 
 
 a_pump_pres_psi <-
-  a |>
+  a |> 
+  filter(cat_ass == "irrigation") |> 
+  mutate(value_ass = as.numeric(value_ass)) |> 
   filter(desc == "pump pressure") |>
   pull(value_ass)
 
@@ -102,5 +130,24 @@ i4 <-
   mutate(unit = "mj/stand")
 
 
-i4 |> 
+
+i4
+
+
+# take into account type of fuel used -------------------------------------
+
+i5 <- 
+  i4 |> 
+  left_join(a_fuel) |> 
+  left_join(te)
+
+i6 <- 
+  i5 |> 
+  mutate(value = value/(therm_eff/100)) |> 
+  select(-therm_eff)
+
+# save it -----------------------------------------------------------------
+
+
+i6 |> 
   write_csv("R/data_tidy/energy_irrig.csv")

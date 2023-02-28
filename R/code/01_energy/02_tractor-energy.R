@@ -1,6 +1,7 @@
 # calculate energy required in 01_field-pass-energy
 #--we have to assume a fuel used, and it's thermal efficiency (or conversion efficiency)
 #--in progress, 2/24
+#--change to 'tractor' rather than 'fuel use'
 
 rm(list = ls())
 library(tidyverse)
@@ -56,17 +57,17 @@ e2 <-
   e1 %>% 
   #--calculate amoutn of energy we need to generate based on fuel effiency
   mutate(energy_needed = value / (therm_eff/100)) %>%
-  unite(desc, fuel_type, col = "desc", sep = ", ") %>% 
   select(production_id, 
          assumption_id,
+         fuel_type,
          desc, 
          unit, 
          energy_needed) |> 
   rename(value = energy_needed) |> 
-  mutate(cat = "fuel use")
+  mutate(cat = "tractor")
 
 e2
 
 
 e2 %>% 
-  write_csv("R/data_tidy/energy_fuel-use.csv")
+  write_csv("R/data_tidy/energy_tractor.csv")

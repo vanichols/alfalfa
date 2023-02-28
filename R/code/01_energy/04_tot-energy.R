@@ -6,27 +6,12 @@ library(tidyverse)
 library(pals)
 source("R/code/00_conversions.R")
 
-
-# assumptions -------------------------------------------------------------
-
-a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-              skip = 5) |> 
-  fill(assumption_id, cat) |> 
-  select(-notes) |> 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value)
-
-a
-
-
-
 # all energy --------------------------------------------------------------
 
 #--fuel
-fu <- read_csv("R/data_tidy/energy_fuel-use.csv")
-fm <- read_csv("R/data_tidy/energy_fuel-manu.csv") #--I'm not sure this should be included
+tr <- read_csv("R/data_tidy/energy_tractor.csv")
+ir <- read_csv("R/data_tidy/energy_irrig.csv")
+ma <- read_csv("R/data_tidy/energy_fuel-manu.csv")
 
 #--fert
 f <- read_csv("R/data_tidy/energy_fert.csv")
@@ -35,44 +20,41 @@ f_avoid <- read_csv("R/data_tidy/energy_fert-avoided.csv")
 #--pest
 p <- read_csv("R/data_tidy/energy_pest.csv")
 
-#--irr
-i <- read_csv("R/data_tidy/energy_irrig.csv")
-
 #--seed
-s <- read_csv("R/data_tidy/energy_seed.csv") #--doesn't include harvest ops
+#--doesn't include harvest ops, but probably shouldn't include so much irrig
+s <- read_csv("R/data_tidy/energy_seed.csv") 
 
 
 tot <- 
-  #--fuel use has to go first bc it has both production_id and assumption_id
-  fu |> 
-  bind_rows(fm) |> #--not sure whether to include
+  tr |> 
+  bind_rows(ir) |> 
+  bind_rows(ma) |> 
+  bind_rows(f) |> 
   bind_rows(f_avoid) |> 
   bind_rows(p) |> 
-  bind_rows(f) |> 
-  bind_rows(i) |> 
   bind_rows(s) |> 
-  mutate(cat_short = case_when(
-    cat == "fuel use" ~ "fuel use",
-    cat == "fuel manufacture" ~ "fuel manu",
-    cat == "fertilizer manufacture" ~ "fert",
-    cat == "fertilizer avoidance" ~ "avoided fert",
-    cat == "pesticide manufacture" ~ "pest",
-    cat == "irrigation" ~ "irrig",
-    cat == "seed" ~ "seed",
-    TRUE ~ "XXX"
-  )) |> 
   filter(value != 0) |> 
-  fill(production_id, assumption_id, .direction = "downup")
+  fill(production_id, assumption_id, .direction = "downup") |> 
+  #--make short category labels for figs
+  mutate(cat_short = case_when(
+    cat == "irrigation" ~ "irrig",
+    cat == "fuel manufacture" ~ "fuel manu",
+    cat == "fertilizer manufacture" ~ "fert manu",
+    cat == "pesticide manufacture" ~ "pest manu",
+    TRUE ~ cat
+  ))
+  
 
+tot
 
+#--write it
 tot |> 
-  select(production_id, assumption_id, cat, cat_short, 
-         desc, unit, value) |> 
+  select(production_id, assumption_id, cat,
+         desc, fuel_type, unit, value) |> 
   write_csv("R/data_tidy/energy_tot.csv")
 
-tot |> 
-  fill(production_id, assumption_id)
 
+# figure ------------------------------------------------------------------
 
 tot |> 
   group_by(production_id) |> 
@@ -85,11 +67,12 @@ tot |>
 
 tot1 <- 
   tot |> 
+  select(-fuel_type) |> 
   group_by(production_id, assumption_id) |> 
   mutate(unit = "mj/stand",
          value = sum(value),
          cat = "total",
-         cat_short = "total", 
+         cat_short = "total",
          desc = "total") |> 
   distinct() |> 
   bind_rows(tot) |> 

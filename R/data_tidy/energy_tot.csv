@@ -1,17 +1,19 @@
-production_id,assumption_id,cat,cat_short,desc,unit,value
-cv_001,a_001,fuel use,fuel use,"field ops, diesel",mj/stand,3326.8849321540197
-cv_001,a_001,fuel use,fuel use,"harvest, diesel",mj/stand,19151.032002102
-cv_001,a_001,fuel manufacture,fuel manu,"field ops, diesel",mj/stand,790.8803936113821
-cv_001,a_001,fuel manufacture,fuel manu,"harvest, diesel",mj/stand,4552.659931667696
-cv_001,a_001,fertilizer avoidance,avoided fert,avoided uan-32,mj,-3538.943298408685
-cv_001,a_001,pesticide manufacture,pest,flumioxazin,mj/stand,96.02679245725766
-cv_001,a_001,pesticide manufacture,pest,chlorantraniliprole,mj/stand,32.85924447515447
-cv_001,a_001,pesticide manufacture,pest,paraquat,mj/stand,799.9911665175099
-cv_001,a_001,pesticide manufacture,pest,pendimethalin,mj/stand,3379.702923349419
-cv_001,a_001,pesticide manufacture,pest,glyphosate,mj/stand,2992.1349610120856
-cv_001,a_001,pesticide manufacture,pest,lambda-cyhalothrin,mj/stand,17.539921772879723
-cv_001,a_001,fertilizer manufacture,fert,"11-52-0 map, nitrogen",mj/stand,2862.380609007025
-cv_001,a_001,fertilizer manufacture,fert,"11-52-0 map, p2o5",mj/stand,7011.409133462503
-cv_001,a_001,irrigation,irrig,"sprinkler, ground",mj/stand,256.90761026615235
-cv_001,a_001,irrigation,irrig,"surface, ground",mj/stand,7046.608738728751
-cv_001,a_001,seed,seed,"round-up ready seed, non-dormant",mj/stand,1430.666321340707
+production_id,assumption_id,cat,desc,fuel_type,unit,value
+cv_001,a_001,tractor,field ops,diesel,mj/stand,3326.8849321540197
+cv_001,a_001,tractor,harvest,diesel,mj/stand,19151.032002102
+cv_001,a_001,irrigation,"sprinkler, ground",diesel,mj/stand,847.8799018684896
+cv_001,a_001,irrigation,"surface, ground",diesel,mj/stand,23256.134451250004
+cv_001,a_001,fuel manufacture,field ops,diesel,mj/stand,790.8803936113821
+cv_001,a_001,fuel manufacture,harvest,diesel,mj/stand,4552.659931667696
+cv_001,a_001,fuel manufacture,"sprinkler, ground",diesel,mj/stand,201.5614017917848
+cv_001,a_001,fuel manufacture,"surface, ground",diesel,mj/stand,5528.541306288956
+cv_001,a_001,fertilizer manufacture,"11-52-0 map, nitrogen",NA,mj/stand,2862.380609007025
+cv_001,a_001,fertilizer manufacture,"11-52-0 map, p2o5",NA,mj/stand,7011.409133462503
+cv_001,a_001,fertilizer avoidance,avoided uan-32,NA,mj,-3538.943298408685
+cv_001,a_001,pesticide manufacture,flumioxazin,NA,mj/stand,96.02679245725766
+cv_001,a_001,pesticide manufacture,chlorantraniliprole,NA,mj/stand,32.85924447515447
+cv_001,a_001,pesticide manufacture,paraquat,NA,mj/stand,799.9911665175099
+cv_001,a_001,pesticide manufacture,pendimethalin,NA,mj/stand,3379.702923349419
+cv_001,a_001,pesticide manufacture,glyphosate,NA,mj/stand,2992.1349610120856
+cv_001,a_001,pesticide manufacture,lambda-cyhalothrin,NA,mj/stand,17.539921772879723
+cv_001,a_001,seed,"round-up ready seed, non-dormant",NA,mj/stand,2557.196356950924

@@ -8,13 +8,15 @@
 library(measurements)
 
 
-# eight -------------------------------------------------------------------
+# weight -------------------------------------------------------------------
 
 kg_per_lb <- conv_unit(1, "lbs", "kg")
 lb_per_kg <- 1 / kg_per_lb
 
 lbs_per_ton <- 2000
 
+g_per_kg <- 1000
+kg_per_g <- 1/g_per_kg
 
 # length -------------------------------------------------------------------
 
@@ -49,6 +51,8 @@ kwh_per_mwh <- 1000
 mwh_per_kwh <- 1/1000
 btu_per_kwh <- 3412.14
 kwh_per_btu <- 1/btu_per_kwh
+btu_per_mmbtu <- 1000000
+mmbtu_per_btu <- 1/btu_per_mmbtu
 
 # volume ------------------------------------------------------------------
 

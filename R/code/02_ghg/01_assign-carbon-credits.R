@@ -1,4 +1,6 @@
 #--using california healthy soils reference and assumptions, assign carbon credits
+#--2/28
+
 
 library(tidyverse)
 library(readxl)
@@ -13,7 +15,7 @@ source("R/code/00_funs.R")
 
 # data for stand life --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
@@ -23,7 +25,7 @@ sl <-
   d %>% 
   filter(desc == "stand life") %>% 
   rename("stand_life_yrs" = value) %>% 
-  select(scenario_id, stand_life_yrs)
+  select(production_id, stand_life_yrs)
 
 
 
@@ -37,7 +39,7 @@ ca <- read_excel("R/data_refs/refbyhand_california-healthy-soils.xlsx",
 
 a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
               skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
+  fill(assumption_id, cat) %>% 
   select(-notes) %>% 
   rename(
     cat_ass = cat,
@@ -47,7 +49,7 @@ a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
 
 a_scen <- 
   a %>% 
-  select(scenario_id, desc, value_ass) %>% 
+  select(assumption_id, desc, value_ass) %>% 
   pivot_wider(names_from = desc, values_from = value_ass)
 
 
@@ -61,7 +63,7 @@ c1 <-
 #--change units, do total years
 c2 <- 
   c1 %>% 
-  left_join(sl) %>% 
+  bind_cols(sl) %>% 
   mutate(co2e_kghayr = 
           value * ac_per_ha * 1000,
          co2e_kghastand = co2e_kghayr * stand_life_yrs) 
@@ -76,7 +78,7 @@ c3 <-
     desc = name,
     value = -co2e_kghastand,
     unit = "kg co2e/stand") %>% 
-  select(scenario_id, cat, desc, unit, value)
+  select(production_id, assumption_id, cat, desc, unit, value)
 
 
 c3 %>% 

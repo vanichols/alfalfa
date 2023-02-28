@@ -2,6 +2,7 @@
 #created 2/16
 #--2/23 eliminated harvest ops energy use from seed calcs
 #--2/28 - updated to production_id/assumption_id
+#--not including fuel manufacturing right now
 
 rm(list = ls())
 library(tidyverse)
@@ -26,27 +27,32 @@ a
 
 # seeds -------------------------------------------------------------------
 
+#--fuel
+tr <- read_csv("R/data_tidy/energy_tractor.csv") |> filter(desc != "harvest")
+ir <- read_csv("R/data_tidy/energy_irrig.csv")
+ma <- read_csv("R/data_tidy/energy_fuel-manu.csv") |>  filter(desc != "harvest")
+
+#--fert
 f <- read_csv("R/data_tidy/energy_fert.csv")
+f_avoid <- read_csv("R/data_tidy/energy_fert-avoided.csv")
+
+#--pest
 p <- read_csv("R/data_tidy/energy_pest.csv")
-fu <- read_csv("R/data_tidy/energy_fuel-use.csv") |> filter(grepl("field ops", desc))
-#--not sure whether to include this or not
-fm <- read_csv("R/data_tidy/energy_fuel-manu.csv") |> filter(grepl("field ops", desc))
-i <- read_csv("R/data_tidy/energy_irrig.csv")
 
 
 tot <- 
-  f |> 
+  tr |> 
+  bind_rows(ir) |> 
+  bind_rows(ma) |> 
+  bind_rows(f) |> 
   bind_rows(p) |> 
-  bind_rows(fu) |> 
-  bind_rows(fm) |> #--should I include this?! Mmmm not sure. 
-  bind_rows(i) |> 
   fill(production_id, assumption_id, .direction = "downup") |> 
   group_by(production_id, assumption_id, unit) |> 
   summarise(value = sum(value))
 
+tot
 
 # calc energy per unit seed produced --------------------------------------
-
 
 a_seed_yld <- 
   a |>
