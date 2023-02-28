@@ -1,5 +1,5 @@
-scenario_id,cat,desc,value,unit
-cv_001,irrigation,"sprinkler, surface",0,mj/stand
-cv_001,irrigation,"sprinkler, ground",256.90761026615235,mj/stand
-cv_001,irrigation,"surface, surface",0,mj/stand
-cv_001,irrigation,"surface, ground",7046.608738728751,mj/stand
+production_id,assumption_id,cat,desc,value,unit
+cv_001,a_001,irrigation,"sprinkler, surface",0,mj/stand
+cv_001,a_001,irrigation,"sprinkler, ground",256.90761026615235,mj/stand
+cv_001,a_001,irrigation,"surface, surface",0,mj/stand
+cv_001,a_001,irrigation,"surface, ground",7046.608738728751,mj/stand

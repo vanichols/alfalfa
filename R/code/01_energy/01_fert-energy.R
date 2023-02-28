@@ -35,7 +35,7 @@ f2 <-
          unit = "mj/stand") %>%
   unite(cat, desc, col = "desc", sep = ", ") %>% 
   mutate(cat = "fertilizer manufacture") %>% 
-  select(scenario_id, cat, desc, unit, value2) %>% 
+  select(production_id, cat, desc, unit, value2) %>% 
   rename(value = value2)
 
 f2 %>% 

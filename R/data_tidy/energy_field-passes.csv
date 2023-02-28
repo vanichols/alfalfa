@@ -1,0 +1,3 @@
+production_id,assumption_id,desc,unit,cat,value
+cv_001,a_001,field ops,mj/stand,field passes,1008.0461344426681
+cv_001,a_001,harvest,mj/stand,field passes,5802.762696636906

@@ -1,2 +1,2 @@
-scenario_id,cat,desc,unit,value
-cv_001,seed,"round-up ready seed, non-dormant",mj/stand,1389.3293316094869
+production_id,assumption_id,cat,desc,unit,value
+cv_001,a_001,seed,"round-up ready seed, non-dormant",mj/stand,1430.666321340707

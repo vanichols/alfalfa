@@ -11,18 +11,19 @@ source("R/code/00_conversions.R")
 # assumptions -------------------------------------------------------------
 
 #--energy content of diesel
-e_diesel <- 
+e_diesel_mj_l <- 
   read_csv("R/data_refs/refbyhand_fuel-energy.csv", skip = 5) %>% 
-  filter(fuel_type == "diesel") %>% 
-  mutate(value_MJ_perLdiesel = energy_content) %>% 
-  select(fuel_type, value_MJ_perLdiesel)
+  filter(
+    desc == "energy content",
+    fuel_type == "diesel") %>%  
+  pull(value)
   
 
 #--assumed diesel fuel consumption for each type of operation
 a <- 
   read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
            skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
+  fill(assumption_id, cat) %>% 
   select(-notes) %>% 
   rename(
     cat_ass = cat,
@@ -32,6 +33,8 @@ a <-
   mutate(value_ass = as.numeric(value_ass))
 
 
+
+
 # fuel usage -------------------------------------------------------------
 
 fo <- read_csv("R/data_tidy/prod_fieldops.csv")
@@ -39,33 +42,47 @@ ho <- read_csv("R/data_tidy/prod_harvestops.csv")
 
 o <- bind_rows(fo, ho)
 
-o %>% 
-  left_join(a, by = c("desc", "scenario_id")) %>% 
+#--get total l used for each operation per stand life
+o1 <- 
+  o %>% 
+  left_join(a, by = c("desc")) %>% 
   #--#of passes times L used per pass
-  mutate(value = value * value_ass) %>% 
-  select(scenario_id, desc, value, unit_ass)
+  mutate(value = value * value_ass,
+         unit = "l diesel/stand") %>% 
+  select(production_id, assumption_id, desc, value, unit)
 
-
-
-%>% 
-  left_join(e_diesel) %>% 
+o2 <- 
+  o1 %>% 
   #--L used times energy per L is MJ per stand
-  mutate(value = value * value_MJ_per_Ldiesel,
+  mutate(value = value * e_diesel_mj_l,
          unit = "mj/stand") 
 
-
+#--separate operations into harvest and field ops
 o3 <- 
   o2 %>% 
   mutate(desc = ifelse(grepl("hay", desc), "harvest", "field ops")) %>% 
-  group_by(scenario_id, desc, unit) %>% 
-  summarise(value = sum(value, na.rm = T)) %>% 
-  mutate(cat = "fuel use")
+  group_by(production_id, assumption_id, desc, unit) %>% 
+  summarise(diesel_energy = sum(value, na.rm = T)) %>% 
+  mutate(cat = "field passes")
+
+# the actual energy used will depend on the actual fuel used --------------
+#--since we assume diesel, we will use that conversion factor to back-calculate the energy req'd
+e_diesel_eff <- 
+  read_csv("R/data_refs/refbyhand_fuel-energy.csv", skip = 5) %>% 
+  filter(
+    desc == "thermal efficiency",
+    fuel_type == "diesel") %>%  
+  pull(value)
 
 
-# fuel manufacturing energy -----------------------------------------------
+# (thermal efficiency diesel) x (energy req'd) = (diesel energy req'd)
+o4 <- 
+  o3 %>% 
+  mutate(eff = e_diesel_eff/100,
+         value = diesel_energy * eff) %>% 
+  select(-diesel_energy, -eff)
+  
+  
 
-#----ohhhhhhh how to do this
-
-
-o3 %>% 
-  write_csv("R/data_tidy/energy_fuel.csv")
+o4 %>% 
+  write_csv("R/data_tidy/energy_field-passes.csv")

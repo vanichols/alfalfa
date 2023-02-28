@@ -52,8 +52,6 @@ a_001,carbon credit,county,,tulare,
 ,,lambda-cyhalothrin,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
 ,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
 ,,energy for seed production?,MJ/ac,,"Whether this should be estimated more exactly is a question…. Seed production also produces an alfalfa cutting, so the energy should be split somehow. The number of passes will be lower for seed production bc there is only one hay harvest - other passes will be similar (weed, pests, fert), and standlife is similar to hay fields"
-,energy source,irrigation,,electricity,
+,energy source,irrigation,,diesel,
 ,,"fuel, field ops",,diesel,
 ,,"fuel, harvest",,diesel,
-,,fertilizer manufacture,,diesel,
-,,pesticide manufacture,,diesel,

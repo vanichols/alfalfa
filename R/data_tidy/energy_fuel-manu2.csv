@@ -1,0 +1,3 @@
+production_id,assumption_id,cat,desc,unit,value
+cv_001,a_001,fuel manufacture,"field ops, CA electricity",mj/stand,2305.8243102773226
+cv_001,a_001,fuel manufacture,"harvest, CA electricity",mj/stand,13273.352117037217

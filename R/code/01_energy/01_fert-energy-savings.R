@@ -16,10 +16,11 @@ fe <-
 
 # get amount of fertilizer avoided ----------------------------------------
 
+#--assume tomato crop is following
 f <- 
   read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
            skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
+  fill(assumption_id, cat) %>% 
   select(-notes) %>% 
   rename(
     cat_ass = cat,
@@ -29,12 +30,13 @@ f <-
   filter(grepl("tomatoes", desc)) %>% 
   mutate(value_ass = as.numeric(value_ass),
          kgn_ha = value_ass * kg_per_lb * ac_per_ha) %>% 
-  select(scenario_id, kgn_ha)
+  select(assumption_id, kgn_ha)
 
+#--type of fert avoided, matters for N volatilization calcs
 f_type <- 
   read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
            skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
+  fill(assumption_id, cat) %>% 
   select(-notes) %>% 
   rename(
     cat_ass = cat,
@@ -50,7 +52,7 @@ f2 <-
   f %>% 
   left_join(f_type %>% 
               mutate(cat = value_ass) %>% 
-              select(scenario_id, cat)) %>% 
+              select(assumption_id, cat)) %>% 
   left_join(fe, by = c("cat")) 
 
 
@@ -60,7 +62,7 @@ f3 <-
          unit = "mj") %>%
   mutate(cat = "fertilizer avoidance",
          desc = "avoided uan-32") %>% 
-  select(scenario_id, cat, desc, unit, value2) %>% 
+  select(assumption_id, cat, desc, unit, value2) %>% 
   rename(value = value2)
 
 f3 %>% 

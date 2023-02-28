@@ -1,0 +1,3 @@
+production_id,assumption_id,cat,desc,unit,value
+cv_001,a_001,fuel manufacture,"field ops, diesel",mj/stand,790.8803936113821
+cv_001,a_001,fuel manufacture,"harvest, diesel",mj/stand,4552.659931667696

@@ -1,10 +1,26 @@
-"energy content and thermal efficiency taken from table 19.1, Hoffman book, close to FTM numbers from 'https://www.afdc.energy.gov/fuels/fuel_comparison_chart.pdf'",,,,,,
-co2e - electricity taken from epa: https://www.epa.gov/egrid/summary-data,,,,,,
-co2e - fuel values come from 2020 EPA report:https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf,,,,,,
-"how much energy, and therefore co2 emissions, are there associated with fuel manufacturing?",,,,,,
-,,,,,,
-energy_type,fuel_type,energy_content,energy_content_unit,thermal_efficiency,co2e,co2e_unit
-combustion,diesel,39.02,MJ/L,30.3,10.21,kg/gal
-combustion,natural gas,34.46,MJ/m3,22.6,0.05444,kg/scf
-combustion,gasoline,34.56,MJ/L,23.6,8.78,kg/gal
-generation,"electricity, CA",3.6,MJ/kWh,90.6,480,lb/MWh
+"energy content and thermal efficiency taken from table 19.1, Hoffman book, close to FTM numbers from 'https://www.afdc.energy.gov/fuels/fuel_comparison_chart.pdf'",,,
+co2e from use - electricity taken from epa: https://www.epa.gov/egrid/summary-data,,,
+co2e from use - fuel values come from 2020 EPA report:https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf,,,
+energy manufacturing from greet tables; line 263 from 'petroleum' tab (feedstock + fuel) and 204 from 'electric' tab,,,
+,,,
+fuel_type,desc,unit,value
+diesel,energy content,MJ/L,39.02
+natural gas,energy content,MJ/m3,34.46
+gasoline,energy content,MJ/L,34.56
+CA electricity,energy content,MJ/kWh,3.6
+diesel,thermal efficiency,percent,30.3
+natural gas,thermal efficiency,percent,22.6
+gasoline,thermal efficiency,percent,23.6
+CA electricity,thermal efficiency,percent,90.6
+diesel,co2e released from use,kg/gal,10.21
+natural gas,co2e released from use,kg/scf,0.05444
+gasoline,co2e released from use,kg/gal,8.78
+CA electricity,co2e released from use,lb/MWh,480
+diesel,energy required to manufacture,btu/mmbtu,237724
+natural gas,energy required to manufacture,btu/mmbtu,187734
+gasoline,energy required to manufacture,btu/mmbtu,219472
+CA electricity,energy required to manufacture,btu/mmbtu,2072402
+diesel,co2e released from manufacturing,g/mmbtu,14745
+natural gas,co2e released from manufacturing,g/mmbtu,11880
+gasoline,co2e released from manufacturing,g/mmbtu,15190
+CA electricity,co2e released from manufacturing,g/mmbtu,122421
