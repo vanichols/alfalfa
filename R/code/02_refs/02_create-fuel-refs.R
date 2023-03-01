@@ -12,6 +12,7 @@ source("R/code/00_conversions.R")
 # read in manual reference sheet ------------------------------------------
 
 e <- read_excel("R/data_refs/refbyhand_fuel.xlsx", skip = 5, sheet = "energy")
+c <- read_excel("R/data_refs/refbyhand_fuel.xlsx", skip = 5, sheet = "conversion-eff")
 ghg <- read_excel("R/data_refs/refbyhand_fuel.xlsx", skip = 5, sheet = "combustion-co2")
 
 
@@ -22,6 +23,7 @@ ghg <- read_excel("R/data_refs/refbyhand_fuel.xlsx", skip = 5, sheet = "combusti
 
 e1 <- 
   e |>
+  mutate_if(is.character, str_to_lower) |> 
   filter(fuel_type != "electricity") |>
   #--change all liquid values to mj/l
   mutate(
@@ -39,3 +41,16 @@ e1 <-
 
 e1 |> 
   write_csv("R/data_refs/ref_fuel-energy.csv")
+
+
+# conversion factors -------------------------------------------------------
+
+#--only one source right now...
+c1 <- 
+  c |>
+  mutate_if(is.character, str_to_lower) |> 
+  select(-desc)
+  
+
+c1 |> 
+  write_csv("R/data_refs/ref_fuel-conv-eff.csv")
