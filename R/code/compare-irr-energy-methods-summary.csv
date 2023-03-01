@@ -1,4 +1,4 @@
-methodology,btu_per_ac
-NRCS Energy Tool,18557660
-Field to Market Online Tool,5436395
-Univ Cal ANRS Equations,5404790
+methodology,btu_per_ac_diesel,btu_per_ac_electricity
+NRCS Energy Tool,18557660,6483066
+Field to Market Online Tool,5436395,5436395
+Univ Cal ANRS Equations,5404790,5404790

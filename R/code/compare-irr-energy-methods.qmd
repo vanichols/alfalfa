@@ -34,7 +34,9 @@ The main components defining the irrigation energy use are:
 
 3.  The amount of irrigation water applied
 
-# Scenario
+The physics command a certain amount of energy. However, the energy source (fuel, electricity) is not converted 100% to work energy. The physics equations, and therefore FTM/UCANR equations, do not take this into account. However, the NRCS tool does. This exercise is to see how much that matters.
+
+# Scenario 1
 
 -   A flood irrigated field
 
@@ -50,8 +52,6 @@ The main components defining the irrigation energy use are:
 
 -   64 ac-in applied per acre each year
 
--   3 year stand
-
 -   Get BTU/acre (which is what FTM reports results in)
 
 -   According to Table 1 of FTM, 1 gallon of diesel contains 138,490 BTUs.
@@ -60,10 +60,18 @@ The main components defining the irrigation energy use are:
     well_depth_ft <- 150
     pump_press_psi <- 25
     water_applied_in_ac <- 64
-    btu_per_gal_dies <- 138490
     ```
 
-# NRCS tool
+I used the FTM source for energy contained in a unit of diesel, and the BTUs per kwh is a conversion:
+
+```{r}
+
+btu_per_gal_dies <- 138490
+btu_per_kwh
+
+```
+
+## NRCS tool
 
 The NRCS has a tool that will estimate the energy used for irrigation: <https://ipat.sc.egov.usda.gov/Default.aspx>
 
@@ -71,7 +79,7 @@ The NRCS has a tool that will estimate the energy used for irrigation: <https://
 11.81 * btu_per_mj * l_per_gal
 ```
 
-Saved output in We can calculate the number of BTUs we used per acre:
+We can calculate the number of BTUs we used per acre:
 
 ```{r}
 
@@ -81,7 +89,7 @@ nrcs_btu_per_ac <- nrcs_gal_dies_ac * btu_per_gal_dies
 prettyNum(round(nrcs_btu_per_ac, 0), big.mark = ",", scientific = F)
 ```
 
-# FTM equations (these eqn units are f\*cked up)
+## FTM equations (these eqn units are f\*cked up)
 
 Convert ac-in to mm-ha, and psi to kPa
 
@@ -125,7 +133,7 @@ Fieldprint calculator value:
 ftm_btu_per_ac <- 5436395
 ```
 
-# UCANR eqns
+## UCANR eqns
 
 Calculate how many pounds of water you are lifting?
 
@@ -153,6 +161,42 @@ Total energy used on this acre:
 (ucanr_btu_per_ac <- btu_used_to_lift + btu_used_to_pump)
 ```
 
+# Scenario 2
+
+-   Electric pump
+
+-   \$0.10 per kwh
+
+## NRCS tool
+
+```{r}
+nrcs_cost_elec <- 190
+nrcs_kwh_ac <- nrcs_cost_elec / 0.10
+nrcs_btu_per_ac2 <- nrcs_kwh_ac * btu_per_kwh
+
+prettyNum(round(nrcs_btu_per_ac2, 0), big.mark = ",", scientific = F)
+```
+
+## FTM equations (these eqn units are f\*cked up)
+
+The equations in FTM don't change based on the energy source, so calculating it by hand wouldn't change anything. This is confirmed in that the value doesn't change when I change the source.
+
+Fieldprint calculator value:
+
+```{r}
+ftm_btu_per_ac2 <- 5436395
+```
+
+## UCANR eqns
+
+These calculations won't change:
+
+```{r}
+(ucanr_btu_per_ac2 <- ucanr_btu_per_ac)
+```
+
+# 
+
 # Summary
 
 Use this to compare to 01_energy calcs:
@@ -164,7 +208,12 @@ res <- tibble(calc = c(
                 "ftm 64 ground",
                 "ucanrs 64 ground",
                 "ucanrs 64 ground low eff"),
-       btu_per_ac = c(nrcs_btu_per_ac,
+       btu_per_ac_diesel = c(nrcs_btu_per_ac,
+                      manftm_btu_per_ac,
+                      ftm_btu_per_ac,
+                      ucanr_btu_per_ac,
+                      ucanr_btu_per_ac/(0.75*0.95)),
+       btu_per_ac_electricity = c(nrcs_btu_per_ac2,
                       manftm_btu_per_ac,
                       ftm_btu_per_ac,
                       ucanr_btu_per_ac,
@@ -172,6 +221,8 @@ res <- tibble(calc = c(
   mutate_if(is.numeric, round, 0)
 res
 ```
+
+Simplify the results to write.
 
 ```{r}
 res2 <- 
@@ -182,7 +233,7 @@ res2 <-
     grepl("ucanrs", calc) ~ "Univ Cal ANRS Equations"
   )) %>% 
   filter(calc %in% c("nrcs 64 ground", "ftm 64 ground", "ucanrs 64 ground low eff")) %>% 
-  select(methodology, btu_per_ac)
+  select(methodology, btu_per_ac_diesel, btu_per_ac_electricity)
 
 res2 %>% write_csv("compare-irr-energy-methods-summary.csv")
 ```
