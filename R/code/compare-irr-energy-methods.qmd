@@ -222,7 +222,7 @@ res <- tibble(calc = c(
 res
 ```
 
-Simplify the results to write.
+Simplify the results to write, add co2 (messy format but whatever):
 
 ```{r}
 res2 <- 
@@ -234,6 +234,7 @@ res2 <-
   )) %>% 
   filter(calc %in% c("nrcs 64 ground", "ftm 64 ground", "ucanrs 64 ground low eff")) %>% 
   select(methodology, btu_per_ac_diesel, btu_per_ac_electricity)
+
 
 res2 %>% write_csv("compare-irr-energy-methods-summary.csv")
 ```

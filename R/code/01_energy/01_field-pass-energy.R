@@ -32,6 +32,18 @@ a <-
   filter(grepl("fuel", cat_ass)) %>% 
   mutate(value_ass = as.numeric(value_ass))
 
+#--assumed fuel energy content data source
+a <- 
+  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
+           skip = 5) %>% 
+  fill(assumption_id, cat) %>% 
+  select(-notes) %>% 
+  rename(
+    cat_ass = cat,
+    unit_ass = unit,
+    value_ass = value) %>% 
+  filter(grepl("fuel", cat_ass)) %>% 
+  mutate(value_ass = as.numeric(value_ass))
 
 
 

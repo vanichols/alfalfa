@@ -1,0 +1,11 @@
+From the EPA GHG inventory guidance - direct emissions from mobile combustion souces,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+fuel_type,source,unit,value,notes
+diesel,EPA,kg co2/gal,10.21,https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf; Table A-1
+compressed natural gas,EPA,kg co2/scf,0.05444,https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf
+gasoline,EPA,kg co2/gal,8.78,https://www.epa.gov/sites/default/files/2020-12/documents/mobileemissions.pdf; motor gasoline Table A-1
+ca electricity,EPA,lb co2/MWh,480, https://www.epa.gov/egrid/summary-data
+,Grassini and Cassman,,,

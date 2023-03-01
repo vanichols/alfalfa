@@ -1,0 +1,36 @@
+---
+title: "compare"
+author: "Gina"
+format: 
+  html: default
+  gfm: default
+editor: visual
+---
+
+```{r, echo = F, messages = F}
+rm(list = ls())
+suppressPackageStartupMessages(
+  library(tidyverse)
+)
+source("00_conversions.R")
+
+```
+
+# Irrigation GHG emissions
+
+The GHG emissions should be based on the amount of energy used, and the fuel source for that energy. Energy was calculated using several methods:
+
+```{r, messages = F, echo = F}
+d_e <- read_csv("compare-irr-energy-methods-summary.csv")
+d_e
+```
+
+## FTM tool
+
+```{r}
+#--in lbs-co2e/ac
+ftm_co2_diesel <- 891.1
+ftm_co2_electric <- 908.2
+```
+
+## FTM equations

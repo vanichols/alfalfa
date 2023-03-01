@@ -1,0 +1,5 @@
+fuel_type,source,unit,value
+diesel,EPA,mj/l,38.46284525159602
+gasoline,EPA,mj/l,34.8395337423877
+diesel,Grassini and Cassman 2012,mj/l,43
+gasoline,Grassini and Cassman 2012,mj/l,39.6
