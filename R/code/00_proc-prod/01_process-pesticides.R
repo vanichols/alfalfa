@@ -1,6 +1,6 @@
 #--processing irrigation component of scenario sheet
 #--created 2/15, updated 2/16
-
+#--3/1 file format update
 
 rm(list = ls())
 
@@ -14,12 +14,12 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
+d_raw <- read_csv("R/data_inputs/datin_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
 
-d <- fun_preproc(d_raw)
+d <- fun_preproc_prod(d_raw)
 
 
 
@@ -150,7 +150,7 @@ p4 %>%
 p5 <- 
   p4 %>% 
   select(production_id, cat, ai, value_kgai_ha) %>% 
-  mutate(unit = "kg / stand") %>% 
+  mutate(unit = "kg/stand") %>% 
   rename(
     "desc" = ai,
     "value" = value_kgai_ha

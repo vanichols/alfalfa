@@ -1,5 +1,5 @@
 production_id,cat,desc,unit,value
 cv_001,irrigation,"sprinkler, est",l / stand,822321.22503168
-cv_001,irrigation,"surface, prod",l / stand,19735709.40076032
+cv_001,irrigation,"surface, prod",l/stand,19735709.40076032
 cv_001,irrigation,"sprinkler, est",ac-in/stand life,8
 cv_001,irrigation,"surface, prod",ac-in/stand,192

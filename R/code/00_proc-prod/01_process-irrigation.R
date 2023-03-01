@@ -1,7 +1,7 @@
 #--processing irrigation component of scenario sheet
 #--created 2/15, updated 2/16
 #--ftm energy eqn uses stupid units, keep those
-
+#--3/1 file format update
 
 rm(list = ls())
 
@@ -15,13 +15,12 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
+d_raw <- read_csv("R/data_inputs/datin_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
 
-d <- fun_preproc(d_raw)
-
+d <- fun_preproc_prod(d_raw)
 
 # stand life ---------------------------------------------------------------
 
@@ -67,7 +66,7 @@ i_prod1 <-
   #-change from ac-in to ha-m...or liters?
   mutate(value_ha_m = value * ha_per_ac * m_per_in,
          value_l = value_ha_m * m2_per_ha * l_water_per_m3) %>% 
-  mutate(unit = "l / stand", 
+  mutate(unit = "l/stand", 
          value = value_l) %>%
   select(production_id, cat, desc, unit, value)
 
