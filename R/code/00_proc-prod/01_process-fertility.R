@@ -1,6 +1,7 @@
-#--processing fertility component of scenario sheet
+#--processing fertility component of scenario sheet to stsandard units (kg/stand)
 #--created 2/15
 #--updatd 2/16, new file configs
+#--3/1 new file configs again
 
 rm(list = ls())
 
@@ -13,12 +14,12 @@ source("R/code/00_funs.R")
 
 # data --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
+d_raw <- read_csv("R/data_inputs/datin_production.csv",
                     skip = 5) %>% 
   janitor::remove_empty()
 
 
-d <- fun_preproc(d_raw)
+d <- fun_preproc_prod(d_raw)
 
 
 # fertility ---------------------------------------------------------------
@@ -56,7 +57,7 @@ f2_map <-
   f1_map %>% 
   mutate(
     value = value * f_pass_map * kg_per_lb * ac_per_ha,
-    unit = "kg / stand"
+    unit = "kg/stand"
     )
 
 f2_map
