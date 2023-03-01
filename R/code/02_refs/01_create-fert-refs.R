@@ -1,4 +1,4 @@
-# try to create reference tables (still unsure of good format)
+# write how much n is in each fertilizer type (for n2o emsisions) and energy to manufacture each fertilizer
 #created 2/7/2023
 #--modified 2/16
 #--2/23 added uan-32
@@ -41,7 +41,7 @@ fert_n <-
            #fert_type == "composted poultry litter" ~ 0.03,
            TRUE ~ 999
          ),
-         unit = "kg n / kg fertilizer"
+         unit = "kg n/kg fertilizer"
          )
 
 fert_n
@@ -75,6 +75,7 @@ greet1 <-
          "nutrient" = name) %>% 
   mutate(energy_used_btu_per_kg = parse_number(energy_used_btu_per_gram)*1000) %>% 
   select(-2)
+
 
 #--write it so I can look at it easily (the actual greet workbooks are a beast)
 greet1 %>% 
@@ -144,7 +145,7 @@ greet2 <-
     #--make cats consistent with others
     cat = fert_type,
    desc = nutrient, 
-    unit = "MJ/kg prod", 
+    unit = "mj/kg prod", 
     value = e_mj_per_kg_product) %>% 
   select(cat, desc, unit, value) %>% 
   filter(value > 0)

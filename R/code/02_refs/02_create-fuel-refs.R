@@ -1,6 +1,6 @@
 # purpose: compare fuel energy contents and co2 emissions from diff sources
 #--sources use different units which makes it hard
-#--3/1
+#--3/1 - still in progress for co2
 
 rm(list = ls())
 library(tidyverse)

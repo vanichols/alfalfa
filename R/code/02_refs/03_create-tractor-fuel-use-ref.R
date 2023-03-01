@@ -1,6 +1,8 @@
 # assign fuel usage for types of passes
 #--these are 'first stab' values that are put into the assumptions sheet
 # created 2/14/2023
+#--3/1 updated names to be more intuitive. These values get copy-pasted into the baseline assumptions file
+
 
 rm(list = ls())
 library(tidyverse)
