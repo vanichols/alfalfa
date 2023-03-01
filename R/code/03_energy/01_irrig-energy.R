@@ -1,85 +1,92 @@
 # calculate energy use
 #created 2/16
 #--2/28 - updated to production_id/assumption_id
+#--3/1 update and check/clean
 
 #--note: using ucanr equations, they match ftm roughly
 
-rm(list = ls())
+#rm(list = ls())
 library(tidyverse)
 source("R/code/00_conversions.R")
-
-
-
-# thermal effic of each fuel ----------------------------------------------
-
-
-#--fuel energies and efficiencies
-te <- 
-  read_csv("R/data_refs/refbyhand_fuel-energy.csv", skip = 5) %>% 
-  filter(desc %in% c("energy content", "thermal efficiency")) |> 
-  filter(desc == "thermal efficiency") %>% 
-  mutate(therm_eff = value) %>% 
-  select(fuel_type, therm_eff)
+source("R/code/00_funs.R")
 
 
 
 # assumptions -------------------------------------------------------------
 
+a <- read_csv("R/data_inputs/datin_assumptions.csv", skip = 5) 
+a1 <- fun_preproc_assum(a)
 
-a <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-              skip = 5) |> 
-  fill(assumption_id, cat) |> 
-  select(-notes) |> 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value) 
+#--which energy content source to use
+a_ds <- 
+  a1 |> 
+  filter(assump_cat == "data source") |> 
+  pull(assump_value)
 
+#--which fuel used for irrigation
+a_fu <- 
+  a1 |> 
+  filter(assump_cat == "energy source",
+         assump_desc == "irrigation") |> 
+  rename(fuel_type = assump_value) |> 
+  select(assump_id, fuel_type)
 
-a_fuel <- 
-  a |> 
-  filter(grepl("energy source", cat_ass),
-         grepl("irrigation", desc)) %>% 
-  mutate(fuel_type = value_ass,
-         cat = "irrigation") |> 
-  select(assumption_id, fuel_type, cat)
-
-
+#--the efficienvies of irrigation
 a_effs <- 
-  a |> 
-  filter(cat_ass == "irrigation") |> 
-  mutate(value_ass = as.numeric(value_ass)) |> 
-  filter(grepl("eff", desc)) |> 
-  separate(desc, into = c("type", "x", "xx")) |> 
-  mutate(eff_frac = value_ass) |> 
-  select(assumption_id, type, eff_frac)
+  a1 |> 
+  filter(assump_cat == "irrigation") |> 
+  mutate(assump_value = as.numeric(assump_value)) |> 
+  filter(grepl("eff", assump_desc)) |> 
+  #--get just the type (sprinkler, surface, drip)
+  separate(assump_desc, into = c("type", "x", "xx")) |> 
+  mutate(eff_frac = assump_value) |> 
+  select(assump_id, type, eff_frac)
 
-
+#--assumed percentage of water needs satisfied with surface water
 a_pct_surf <- 
-  a |>
-  filter(cat_ass == "irrigation") |> 
-  mutate(value_ass = as.numeric(value_ass)) |> 
-  filter(desc == "fraction from surface source") |> 
-  pull(value_ass)
+  a1 |>
+  filter(assump_cat == "irrigation") |> 
+  mutate(assump_value = as.numeric(assump_value)) |> 
+  filter(assump_desc == "fraction from surface source") |> 
+  pull(assump_value)
 
 a_welldepth_ft <-
-  a |>
-  filter(cat_ass == "irrigation") |> 
-  mutate(value_ass = as.numeric(value_ass)) |> 
-  filter(desc == "depth of well") |>
-  pull(value_ass)
+  a1 |>
+  filter(assump_cat == "irrigation") |> 
+  mutate(assump_value = as.numeric(assump_value)) |> 
+  filter(assump_desc == "depth of well") |>
+  pull(assump_value)
 
 
 a_pump_pres_psi <-
-  a |> 
-  filter(cat_ass == "irrigation") |> 
-  mutate(value_ass = as.numeric(value_ass)) |> 
-  filter(desc == "pump pressure") |>
-  pull(value_ass)
+  a1 |> 
+  filter(assump_cat == "irrigation") |> 
+  mutate(assump_value = as.numeric(assump_value)) |> 
+  filter(assump_desc == "pump pressure") |>
+  pull(assump_value)
 
 
+# refs --------------------------------------------------------------------
 
+#--get thermal efficiency of assumed fuel
+f_eff <- 
+  a_fu |> 
+  left_join(
+  read_csv("R/data_refs/ref_fuel-conv-eff.csv") 
+  ) |> 
+  mutate(therm_eff = value/100) |> 
+  select(-value, -unit)
+
+
+#--energy content of fuels using assumed data source
+f_en <- 
+  a_fu |> 
+  left_join(
+  read_csv("R/data_refs/ref_fuel-energy.csv")) |> 
+  filter(source == a_ds) |> 
+  mutate(energy_cont = value) |> 
+  select(assump_id, fuel_type, energy_cont)
+  
 # i. irrigation --------------------------------------------------------------
 
 i <- read_csv("R/data_tidy/prod_irrigation.csv")
@@ -125,7 +132,7 @@ i3 <-
 i4 <- 
   i3 |> 
   unite(type, name, col = "desc", sep = ", ") |> 
-  select(production_id, assumption_id, cat, desc, mj_per_ha) |> 
+  select(production_id, assump_id, cat, desc, mj_per_ha) |> 
   rename(value =  mj_per_ha) |> 
   mutate(unit = "mj/stand")
 
@@ -138,16 +145,20 @@ i4
 
 i5 <- 
   i4 |> 
-  left_join(a_fuel) |> 
-  left_join(te)
+  left_join(a_fu) |> 
+  left_join(f_eff)
 
 i6 <- 
   i5 |> 
-  mutate(value = value/(therm_eff/100)) |> 
-  select(-therm_eff)
+  mutate(energy_reqd = value/(therm_eff)) |> 
+  select(production_id,
+         assump_id,
+         cat,
+         desc,
+         unit, energy_reqd) |> 
+  rename(value = energy_reqd)
 
 # save it -----------------------------------------------------------------
-
 
 i6 |> 
   write_csv("R/data_tidy/energy_irrig.csv")

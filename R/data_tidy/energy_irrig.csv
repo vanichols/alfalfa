@@ -1,5 +1,5 @@
-production_id,assumption_id,cat,desc,value,unit,fuel_type
-cv_001,a_001,irrigation,"sprinkler, surface",0,mj/stand,diesel
-cv_001,a_001,irrigation,"sprinkler, ground",847.8799018684896,mj/stand,diesel
-cv_001,a_001,irrigation,"surface, surface",0,mj/stand,diesel
-cv_001,a_001,irrigation,"surface, ground",23256.134451250004,mj/stand,diesel
+production_id,assump_id,cat,desc,unit,value
+cv_001,a_001,irrigation,"sprinkler, surface",mj/stand,0
+cv_001,a_001,irrigation,"sprinkler, ground",mj/stand,847.8799018684896
+cv_001,a_001,irrigation,"surface, surface",mj/stand,0
+cv_001,a_001,irrigation,"surface, ground",mj/stand,23256.134451250004
