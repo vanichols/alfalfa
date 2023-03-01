@@ -21,7 +21,6 @@ fun_preproc_assum <- function(data = d.dum) {
     data %>% 
     fill(assump_id, .direction = c("down")) %>% 
     fill(assump_cat, .direction = c("down")) %>% 
-    fill(assump_desc, .direction = c("down")) %>% 
     select(-notes) %>% 
     mutate_if(is.character, str_to_lower)
   return(tmp)

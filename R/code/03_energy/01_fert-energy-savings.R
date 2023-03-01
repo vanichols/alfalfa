@@ -6,64 +6,62 @@
 rm(list = ls())
 library(tidyverse)
 source("R/code/00_conversions.R")
+source("R/code/00_funs.R")
+
+
+
+# references --------------------------------------------------------------
+
+#--fertilizer manufacturing energy, from greet tables
+fe <- read_csv("R/data_refs/ref_fert-energy.csv") 
+
 
 
 # assumptions -------------------------------------------------------------
 
-#--assumed fertilizer manufacturing energy, from greet tables
-fe <- 
-  read_csv("R/data_refs/ref_fert-energy.csv")
-
-# get amount of fertilizer avoided ----------------------------------------
+a <- read_csv("R/data_inputs/datin_assumptions.csv", skip = 5) 
+a1 <- fun_preproc_assum(a)
 
 #--assume tomato crop is following
+#--get assumed amoutn of n application avoided
 f <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-           skip = 5) %>% 
-  fill(assumption_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value) %>% 
-  #--get assumed fert savings
-  filter(grepl("tomatoes", desc)) %>% 
-  mutate(value_ass = as.numeric(value_ass),
-         kgn_ha = value_ass * kg_per_lb * ac_per_ha) %>% 
-  select(assumption_id, kgn_ha)
+  a1 %>% 
+  filter(grepl("tomatoes", assump_desc)) %>% 
+  mutate(
+    assump_value = as.numeric(assump_value),
+    #--units are currently lb n/ac
+         kgn_ha_avoided = assump_value * kg_per_lb * ac_per_ha) %>% 
+  select(assump_id, kgn_ha_avoided)
 
 #--type of fert avoided, matters for N volatilization calcs
 f_type <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-           skip = 5) %>% 
-  fill(assumption_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value) %>% 
-  #--get assumed type of fert
-  filter(desc == "type of fertilizer avoided") 
+  a1 |> 
+  filter(assump_desc == "type of fertilizer avoided") |> 
+  mutate(fert_avoided = assump_value) |> 
+  select(assump_id, fert_avoided)
 
 
 # energy to manu the fertilizer we avoided --------------------------------------------------
 
+
+#--note if this were a different fertilizer, we would need to account for all the product, not just the n manufact. avoided
 f2 <- 
   f %>% 
-  left_join(f_type %>% 
-              mutate(cat = value_ass) %>% 
-              select(assumption_id, cat)) %>% 
-  left_join(fe, by = c("cat")) 
+  left_join(f_type) |> 
+  left_join(fe, by = c("fert_avoided" = "cat")) |> 
+  mutate(
+    mj_avoided = -(value * kgn_ha_avoided) #--negative bc we avoided it
+  )
 
-
+#--clean up
 f3 <- 
-  f2 %>% 
-  mutate(value2 = -(value * kgn_ha), #--negative bc we avoided it
-         unit = "mj") %>%
-  mutate(cat = "fertilizer avoidance",
-         desc = "avoided uan-32") %>% 
-  select(assumption_id, cat, desc, unit, value2) %>% 
-  rename(value = value2)
+  f2 |> 
+  select(assump_id, mj_avoided) |> 
+  rename(value = mj_avoided) |> 
+  mutate(
+    unit = "mj",
+    cat = "fertilizer avoidance",
+    desc = "avoided uan-32 manu energy")
 
 f3 %>% 
   write_csv("R/data_tidy/energy_fert-avoided.csv")
