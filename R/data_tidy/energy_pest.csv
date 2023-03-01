@@ -1,4 +1,4 @@
-assumption_id,cat,desc,unit,value
+assump_id,cat,desc,unit,value
 a_001,pesticide manufacture,flumioxazin,mj/stand,96.02679245725766
 a_001,pesticide manufacture,chlorantraniliprole,mj/stand,32.85924447515447
 a_001,pesticide manufacture,paraquat,mj/stand,799.9911665175099

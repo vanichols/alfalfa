@@ -1,27 +1,24 @@
 # calculate energy use
 #created 2/16
 #--2/28 update to production_id and assumption_id (not scenario_id)
+#--3/1 clean up
 
 rm(list = ls())
 library(tidyverse)
 source("R/code/00_conversions.R")
+source("R/code/00_funs.R")
 
 
 # assumptions -------------------------------------------------------------
 
-a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-              skip = 5) %>% 
-  fill(assumption_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value)
+a <- read_csv("R/data_inputs/datin_assumptions.csv", skip = 5) 
+a1 <- fun_preproc_assum(a)
 
 a_p <- 
-  a |> 
-  filter(cat_ass == "pesticide manufacture") |>
-  mutate(value_ass = as.numeric(value_ass)) 
+  a1 |> 
+  filter(assump_cat == "pesticide manufacture") |>
+  mutate(assump_value = as.numeric(assump_value)) |> 
+  rename(desc = assump_desc)
 
 
 
@@ -37,10 +34,10 @@ p1 <-
 
 p2 <- 
   p1 %>%
-  mutate(value = value * value_ass,
+  mutate(value = value * assump_value,
          unit = "mj/stand",
-         cat = cat_ass) %>% 
-  select(assumption_id, cat, desc, unit, value)
+         cat = assump_cat) %>% 
+  select(assump_id, cat, desc, unit, value)
 
 
 p2 %>% 
