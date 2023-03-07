@@ -155,6 +155,7 @@ i6 <-
          assump_id,
          cat,
          desc,
+         fuel_type,
          unit, energy_reqd) |> 
   rename(value = energy_reqd)
 

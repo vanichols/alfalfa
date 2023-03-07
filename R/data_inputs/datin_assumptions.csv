@@ -57,3 +57,4 @@ a_001,carbon credit,county,,tulare,
 ,,"fuel, harvest",,diesel,
 ,data source,fuel energy content,,EPA,see data_refs/ref_fuel-energy.csv for options
 ,,conversion factor,,,
+,gwp,timespan,years,100,defines how much forcing is assigned to ch4 and n2o relative to co2

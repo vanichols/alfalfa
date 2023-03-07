@@ -1,0 +1,4 @@
+fuel_type,source,unit,value
+diesel,greet,btu used/btu produced,0.237724
+gasoline,greet,btu used/btu produced,0.219472
+electricity,greet,btu used/btu produced,1.7515584793751164

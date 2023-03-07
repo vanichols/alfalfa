@@ -3,57 +3,69 @@
 #--this is confusing. Electricity has a higher manufacturing energy than fossil fuels by 10x
 #--I'm not sure if I should include this or not
 #--it applies to the tractor fuel use, and the irrigation fuel use
+# 3/2--going through and simplifying/cleaning to fit new file format
 
 rm(list = ls())
 library(tidyverse)
 source("R/code/00_conversions.R")
 
-#--relies on 02_fuel-use-energy calcs
 
 # ref data ----------------------------------------------------------------
 
-#--fuel energies and efficiencies
-fe <- 
-  read_csv("R/data_refs/refbyhand_fuel-energy.csv", skip = 5) 
+#--fuel manufacture
+m <- 
+  read_csv("R/data_refs/ref_fuel-manu.csv") 
 
+m1 <- 
+  m |> 
+  rename("fuel_manu" = value,
+         "unit_fuelmanu" = unit) |> 
+  select(-source)
 
 # energy required from fuel -----------------------------------------------
 
+ #--fuel used for tractor
 tr <- read_csv("R/data_tidy/energy_tractor.csv")
+
+#--fuel used for irrigation
 ir <- read_csv("R/data_tidy/energy_irrig.csv")
 
 
 d <- 
   tr |> 
   bind_rows(ir) |> 
-  group_by(production_id, assumption_id, desc, fuel_type, unit) |> 
+  group_by(production_id, assump_id, desc, fuel_type, unit) |> 
   summarise(value = sum(value)) |> 
   filter(value != 0)
 
+#--change to btu/stand
+d1 <- 
+  d |> 
+  mutate(value = value * btu_per_mj,
+         unit = "btu/stand")
+
+d1
 
 # energy reqd to manu fuel ------------------------------------------------
 
-me <- 
-  fe |> 
-  filter(grepl("manufacture", desc)) |> 
-  mutate_if(is.character, str_to_lower) |> 
-  mutate(manuenergy_per_prodenergy = value * mmbtu_per_btu) |> 
-  select(fuel_type, manuenergy_per_prodenergy)
+d2 <- 
+  d1 |> 
+  left_join(m1) |> 
+  mutate(manu_btu = value * fuel_manu,
+         manu_mj = manu_btu * mj_per_btu)
 
 
-m1 <- 
-  d |> 
-  rename(energy_needed_mj_stand = value) |> 
-  mutate_if(is.character, str_trim) |> 
-  left_join(me) |> 
-  mutate(
-    value = energy_needed_mj_stand * manuenergy_per_prodenergy,
-         unit = "mj/stand",
+# clean it up -------------------------------------------------------------
+
+d3 <- 
+  d2 |> 
+  mutate(unit = "mj/stand",
+         value = manu_mj, 
          cat = "fuel manufacture") |> 
-  select(production_id, assumption_id, fuel_type, cat, desc, unit, value)
+  select(production_id, assump_id, fuel_type, cat, desc, unit, value)
 
 
-m1 |> 
+d3 |> 
   write_csv("R/data_tidy/energy_fuel-manu.csv")
 
 
