@@ -2,6 +2,7 @@
 #created 2/7/2023
 #--modified 2/16
 #--2/23 added uan-32
+#--3/8 added raw nutrient energies from greet
 
 
 rm(list = ls())
@@ -47,7 +48,7 @@ fert_n <-
 fert_n
 
 fert_n %>% 
-  write_csv("R/data_refs/ref_fert-n.csv")
+  write_csv("R/data_refs/ref_fert-n-contents.csv")
 
 
 
@@ -73,13 +74,18 @@ greet1 <-
   pivot_longer(1:ncol(.)) %>% 
   rename("energy_used_btu_per_gram" = value,
          "nutrient" = name) %>% 
-  mutate(energy_used_btu_per_kg = parse_number(energy_used_btu_per_gram)*1000) %>% 
+  mutate(energy_used_btu_per_kg = parse_number(energy_used_btu_per_gram)*1000,
+         energy_used_mj_per_kg = energy_used_btu_per_kg * mj_per_btu) %>% 
   select(-2)
 
+greet1
+
+#--note this is close to the value assumed by Matt Ryan's study of 39 MJ/kg for ammonia N
 
 #--write it so I can look at it easily (the actual greet workbooks are a beast)
 greet1 %>% 
   write_csv("greet_raw/tidy_greet-fertilizer.csv")
+
 
 # MAP contains 11% nitrogen, 52% phosphorous. How to convert?!?
 # FTM comes up with 6521 btu/lb of product...
@@ -150,7 +156,21 @@ greet2 <-
   select(cat, desc, unit, value) %>% 
   filter(value > 0)
 
-greet2
 
-greet2 %>% 
+
+
+# combine with greet raw nutrient values ----------------------------------
+
+greet3 <- 
+  greet1 |> 
+  mutate(cat = "raw nutrient",
+         desc = nutrient,
+         value = energy_used_mj_per_kg,
+         unit = "mj/kg nutrient") |> 
+  select(cat, desc, value, unit) |> 
+  bind_rows(greet2)
+
+  
+
+greet3 %>% 
   write_csv("R/data_refs/ref_fert-energy.csv")

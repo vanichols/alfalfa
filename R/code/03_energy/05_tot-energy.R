@@ -1,5 +1,6 @@
 # calculate energy use
 #created 2/16
+#--3/8 updated with new fuel manu values
 
 rm(list = ls())
 library(tidyverse)
@@ -34,7 +35,7 @@ tot <-
   bind_rows(p) |> 
   bind_rows(s) |> 
   filter(value != 0) |> 
-  fill(production_id, assumption_id, .direction = "downup") |> 
+  fill(production_id, assump_id, .direction = "downup") |> 
   #--make short category labels for figs
   mutate(cat_short = case_when(
     cat == "irrigation" ~ "irrig",
@@ -49,7 +50,7 @@ tot
 
 #--write it
 tot |> 
-  select(production_id, assumption_id, cat,
+  select(production_id, assump_id, cat,
          desc, fuel_type, unit, value) |> 
   write_csv("R/data_tidy/energy_tot.csv")
 
@@ -68,7 +69,7 @@ tot |>
 tot1 <- 
   tot |> 
   select(-fuel_type) |> 
-  group_by(production_id, assumption_id) |> 
+  group_by(production_id, assump_id) |> 
   mutate(unit = "mj/stand",
          value = sum(value),
          cat = "total",
@@ -77,7 +78,7 @@ tot1 <-
   distinct() |> 
   bind_rows(tot) |> 
   mutate(desc = paste(cat_short, desc, sep = "_")) |> 
-  group_by(production_id, assumption_id, cat) |> 
+  group_by(production_id, assump_id, cat) |> 
   mutate(cat_tot = sum(value)) |> 
   ungroup() 
 
@@ -99,7 +100,8 @@ tot1 |>
   labs(x = NULL,
        y = "GJ/ha per year",
        title = "Tulare County",
-       fill = "Component")
+       fill = NULL) + 
+  theme(legend.position = "bottom")
 
 ggsave("R/figs/tulare-energy.png")
 

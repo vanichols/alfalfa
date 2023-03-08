@@ -31,14 +31,9 @@ f <-
     assump_value = as.numeric(assump_value),
     #--units are currently lb n/ac
          kgn_ha_avoided = assump_value * kg_per_lb * ac_per_ha) %>% 
-  select(assump_id, kgn_ha_avoided)
+  select(assump_id, kgn_ha_avoided) |> 
+  mutate(desc = "nitrogen")
 
-#--type of fert avoided, matters for N volatilization calcs
-f_type <- 
-  a1 |> 
-  filter(assump_desc == "type of fertilizer avoided") |> 
-  mutate(fert_avoided = assump_value) |> 
-  select(assump_id, fert_avoided)
 
 
 # energy to manu the fertilizer we avoided --------------------------------------------------
@@ -47,8 +42,9 @@ f_type <-
 #--note if this were a different fertilizer, we would need to account for all the product, not just the n manufact. avoided
 f2 <- 
   f %>% 
-  left_join(f_type) |> 
-  left_join(fe, by = c("fert_avoided" = "cat")) |> 
+  left_join(fe |> 
+              filter(cat == "raw nutrient"),
+            by = c("desc")) |> 
   mutate(
     mj_avoided = -(value * kgn_ha_avoided) #--negative bc we avoided it
   )

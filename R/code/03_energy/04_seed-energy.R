@@ -2,27 +2,21 @@
 #created 2/16
 #--2/23 eliminated harvest ops energy use from seed calcs
 #--2/28 - updated to production_id/assumption_id
-#--not including fuel manufacturing right now
+#--3/8 updating to new file formats
 
 rm(list = ls())
 library(tidyverse)
 source("R/code/00_conversions.R")
+source("R/code/00_funs.R")
 
 
-#--this needs fixed to not include all of the harvest passes
 
 # assumptions -------------------------------------------------------------
 
-a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-              skip = 5) |> 
-  fill(assumption_id, cat) |> 
-  select(-notes) |> 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value)
+a <- read_csv("R/data_inputs/datin_assumptions.csv", skip = 5) 
+a1 <- fun_preproc_assum(a)
 
-a
+
 
 
 # seeds -------------------------------------------------------------------
@@ -34,7 +28,6 @@ ma <- read_csv("R/data_tidy/energy_fuel-manu.csv") |>  filter(desc != "harvest")
 
 #--fert
 f <- read_csv("R/data_tidy/energy_fert.csv")
-f_avoid <- read_csv("R/data_tidy/energy_fert-avoided.csv")
 
 #--pest
 p <- read_csv("R/data_tidy/energy_pest.csv")
@@ -46,8 +39,8 @@ tot <-
   bind_rows(ma) |> 
   bind_rows(f) |> 
   bind_rows(p) |> 
-  fill(production_id, assumption_id, .direction = "downup") |> 
-  group_by(production_id, assumption_id, unit) |> 
+  fill(production_id, assump_id, .direction = "downup") |> 
+  group_by(production_id, assump_id, unit) |> 
   summarise(value = sum(value))
 
 tot
@@ -55,13 +48,13 @@ tot
 # calc energy per unit seed produced --------------------------------------
 
 a_seed_yld <- 
-  a |>
-  filter(cat_ass == "seed manufacture",
-         desc == "seed yield") |>
+  a1 |>
+  filter(assump_cat == "seed manufacture",
+         assump_desc == "seed yield") |>
   mutate(
-    seed_yld_kg_ha = as.numeric(value_ass) * kg_per_lb * ac_per_ha
+    seed_yld_kg_ha = as.numeric(assump_value) * kg_per_lb * ac_per_ha
   ) |> 
-  select(assumption_id, seed_yld_kg_ha)
+  select(assump_id, seed_yld_kg_ha)
 
 
 a_seed_energy <- 
@@ -70,14 +63,17 @@ a_seed_energy <-
   left_join(a_seed_yld) |> 
   #--get mj/kg seed produced
   mutate(mj_kgseed = value/seed_yld_kg_ha) |>
-  select(production_id, assumption_id, mj_kgseed) 
+  select(production_id, assump_id, mj_kgseed) 
 
 #--ftm has a much lower value. But whatever. 
+#--they don't include fuel manufacturing, irrigatigation fuel ineffic.
 a_seed_energy |> 
   mutate(btu_lbseed = mj_kgseed * kg_per_lb * btu_per_mj) |> 
   mutate(ftm_value = 1973)
 
-#--get seeding rate
+
+# seeding rate ------------------------------------------------------------
+
 s <- read_csv("R/data_tidy/prod_seeds.csv")
 
 
@@ -87,7 +83,7 @@ s1 <-
   #--multiply by amount of seed used to plant
   mutate(value = value * mj_kgseed,
          unit = "mj/stand") |> 
-  group_by(production_id, assumption_id, cat, desc, unit) |> 
+  group_by(production_id, assump_id, cat, desc, unit) |> 
   summarise(value = sum(value))
 
 
