@@ -1,6 +1,7 @@
 #--using california healthy soils reference and assumptions, assign carbon credits
 #--2/28
-
+#--3/8 updating w/new file structures
+#--note they already converted to co2e using their own conversions...
 
 library(tidyverse)
 library(readxl)
@@ -12,14 +13,27 @@ source("R/code/00_conversions.R")
 source("R/code/00_funs.R")
 
 
+# assumptions -------------------------------------------------------------
+
+a <- read_csv("R/data_inputs/datin_assumptions.csv", skip = 5) 
+a1 <- fun_preproc_assum(a)
+
+
+#--get assumed county and practice scenario
+a_scen <- 
+  a1 %>% 
+  filter(assump_cat == "carbon credit") |> 
+  select(assump_id, assump_desc, assump_value) %>% 
+  pivot_wider(names_from = assump_desc, values_from = assump_value)
+
 
 # data for stand life --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_production.csv",
+d_raw <- read_csv("R/data_inputs/datin_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
-d <- fun_preproc(d_raw)
+d <- fun_preproc_prod(d_raw)
 
 sl <- 
   d %>% 
@@ -28,36 +42,20 @@ sl <-
   select(production_id, stand_life_yrs)
 
 
-
 # reference table ---------------------------------------------------------
 
 ca <- read_excel("R/data_refs/refbyhand_california-healthy-soils.xlsx",
                  skip = 5) %>% 
-  fill(unit)
+  fill(unit) |> 
+  mutate_if(is.character, str_to_lower)
 
-# assumed county and program ----------------------------------------------
-
-a <- read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-              skip = 5) %>% 
-  fill(assumption_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value) %>% 
-  filter(cat_ass == "carbon credit")
-
-a_scen <- 
-  a %>% 
-  select(assumption_id, desc, value_ass) %>% 
-  pivot_wider(names_from = desc, values_from = value_ass)
 
 
 # get carbon credit -------------------------------------------------------
 
 c1 <- 
   a_scen %>% 
-  left_join(ca) %>% 
+  left_join(ca, by = c("county", "practice")) %>% 
   pivot_longer(co2:n2o)
 
 #--change units, do total years
@@ -78,8 +76,10 @@ c3 <-
     desc = name,
     value = -co2e_kghastand,
     unit = "kg co2e/stand") %>% 
-  select(production_id, assumption_id, cat, desc, unit, value)
+  select(production_id, assump_id, cat, desc, unit, value)
 
+
+c3
 
 c3 %>% 
   write_csv("R/data_tidy/ghg_carboncredit.csv")

@@ -2,6 +2,7 @@
 #--requires assumptions about source of energy
 #--those are listed under the 'energy sources' category of the assumptions file
 #--2/28
+#--3/8 clean up, assume a time frame
 
 
 library(tidyverse)
@@ -13,76 +14,109 @@ rm(list = ls())
 source("R/code/00_conversions.R")
 source("R/code/00_funs.R")
 
+
 # assumptions -------------------------------------------------------------
 
-a <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-           skip = 5) %>% 
-  fill(assumption_id, cat) %>% 
-  select(-notes) 
+a <- read_csv("R/data_inputs/datin_assumptions.csv", skip = 5) 
+a1 <- fun_preproc_assum(a)
 
-a_source <- 
-  a %>% 
-  filter(grepl("energy source", cat))
+#--what timespan for gwp
+a_gwp <- 
+  a1 |> 
+  filter(assump_cat == "gwp") |> 
+  pull(assump_value)
 
 
-# energy ------------------------------------------------------------------
+#--what source to use for ghg emissions? 
+a_src <- 
+  a1 |> 
+  filter(assump_cat == "data source",
+         assump_desc == "ghg from fuel") |> 
+  pull(assump_value)
+
+#--what source to use for fuel energy contents?
+a_src2 <- 
+  a1 |> 
+  filter(assump_cat == "data source",
+         assump_desc == "fuel energy content") |> 
+  pull(assump_value)
+
+
+# get ghg per mj ----------------------------------------------------------
+
+c <- 
+  read_csv("R/data_refs/ref_fuel_ghg.csv") |> 
+  mutate_if(is.character, str_to_lower) |> 
+  filter(grepl(a_src, source)) |> 
+  filter(time_horizon == a_gwp)
+
+
+#--use energy contents
+ec <- read_csv("R/data_refs/ref_fuel-energy.csv") |> 
+  filter(source == a_src2) |> 
+  mutate(energy_mj_per_l = value) |> 
+  select(fuel_type, energy_mj_per_l)
+
+c3 <- 
+  c |> 
+  left_join(ec) |> 
+  mutate(value2 = case_when(
+    unit == "kg/l" ~ value * 1/energy_mj_per_l,
+    unit == "kg/kwh" ~ value * kwh_per_btu * btu_per_mj),
+    unit2 = "kg co2e/mj") |> 
+  select(fuel_type, unit2, value2)
+
+c3
+
+# energy used------------------------------------------------------------------
 
 tot <- read_csv("R/data_tidy/energy_tot.csv")
 
 
-# ghg emissions for each fuel type ----------------------------------------
+# deal with the ones where we know the fuel type --------------------------
 
-ghg <- 
-  read_csv("R/data_refs/refbyhand_fuel-energy.csv", skip = 5) |> 
-  mutate_if(is.character, str_to_lower)
-
-ghg_use <- 
-  ghg %>% 
-  filter(desc == "co2e released from use") |> 
-  full_join(
-    ghg %>% 
-      filter(desc == "energy content"),
-    by = "fuel_type") |> 
-  mutate(unit = "kg co2e/mj",
-         value = case_when(
-           grepl("kg/gal", unit.x) ~ value.x * gal_per_l * 1/value.y,
-           grepl("lb/mwh", unit.x) ~ value.x * kg_per_lb * mwh_per_kwh * 1/value.y,
-           grepl("kg/scf", unit.x) ~ value.x * cuft_per_m3 * 1/value.y,
-           TRUE ~ 999
-         ),
-         cat = "fuel use") |> 
-  select(fuel_type, cat, unit, value) 
-ghg_use
-
-ghg_man <- 
-  ghg %>% 
-  filter(desc == "co2e released from manufacturing") |> 
-  mutate(unit = "kg co2e/mj",
-         value = value * mmbtu_per_btu * btu_per_mj * kg_per_g,
-         cat = "fuel manufacture") |> 
-  select(-desc)
-
-ghg_use
+tot2 <- 
+  tot |> 
+  filter(!is.na(fuel_type)) |> 
+  left_join(c3) |> 
+  mutate(value4 = value * value2,
+         unit4 = "kg co2e/stand") |> 
+  select(production_id, 
+         assump_id, 
+         cat, 
+         desc, 
+         fuel_type, 
+         unit4,
+         value4)
+tot2  
 
 
-ghg_tot <- 
-  ghg_man |> 
-  bind_rows(ghg_use) |> 
-  group_by(fuel_type, unit) |> 
-  summarise(value = sum(value),
-            cat = "fuel use + manufacture")
+# how about where we don't ------------------------------------------------
 
-# combine -----------------------------------------------------------------
+#--the values really aren't that different, just assume diesel
+c3
 
-#---how does FTM do this???
 
-#--irrigation; fuel, field ops; fuel, harvest all have assumptions
-a_source
+tot3 <- 
+  tot |> 
+  filter(is.na(fuel_type)) |> 
+  mutate(fuel_type = "diesel") |> 
+  left_join(c3) |> 
+  mutate(value4 = value * value2,
+         unit4 = "kg co2e/stand") |> 
+  select(production_id, 
+         assump_id, 
+         cat, 
+         desc, 
+         fuel_type, 
+         unit4,
+         value4)
 
-#--assign a fuel type to things without an assumption
-tot |> 
-  mutate(a_merge = case_when(
-    cat == "irrigation" ~ "irrigation",
-    (cat == "fuel use") & (desc == "field ops")
-    
+tot4 <-
+  tot2 |> 
+  bind_rows(tot3)
+
+tot4
+
+tot4 |> 
+  write_csv("R/data_tidy/ghg_energy-co2e.csv")

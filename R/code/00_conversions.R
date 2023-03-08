@@ -58,6 +58,9 @@ kwh_per_btu <- 1/btu_per_kwh
 btu_per_mmbtu <- 1000000
 mmbtu_per_btu <- 1/btu_per_mmbtu
 
+mj_per_tj <- 1000000
+tj_per_mj <- 1/mj_per_tj
+
 # volume ------------------------------------------------------------------
 
 cm3_per_m3 <- conv_unit(1, "m3", "cm3")
@@ -72,6 +75,8 @@ gal_per_pint <- 1/pints_per_gal
 oz_per_gal <- conv_unit(1, "us_gal", "us_oz")
 gal_per_oz <- 1/oz_per_gal
 
+l_per_ml <- conv_unit(1, "ml", "l")
+ml_per_l <- 1/l_per_ml
 
 # water -------------------------------------------------------------------
 
@@ -99,5 +104,11 @@ kpa_per_psi <- 1/psi_per_kpa
 # ghg ---------------------------------------------------------------------
 
 n_to_n2o <- 44/28
-n2o_to_co2e <- 298
+
+
+# density -----------------------------------------------------------------
+
+dies_dens_g_per_ml <- 0.8375
+gas_dens_g_per_ml <- 0.7429
+
 
