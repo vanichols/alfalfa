@@ -108,3 +108,4 @@ tot1 |>
        fill = NULL) + 
   theme(legend.position = "bottom")
   
+ggsave("R/figs/tulare-ghg.png")
