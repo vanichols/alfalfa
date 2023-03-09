@@ -1,19 +1,14 @@
-production_id,assump_id,cat,desc,fuel_type,unit4,value4
-cv_001,a_001,tractor,field ops,diesel,kg co2e/stand,233.41229112512278
-cv_001,a_001,tractor,harvest,diesel,kg co2e/stand,1343.6251473016769
-cv_001,a_001,irrigation,"sprinkler, ground",diesel,kg co2e/stand,60.348452745461664
-cv_001,a_001,irrigation,"surface, ground",diesel,kg co2e/stand,1655.271846732663
+production_id,assump_id,cat,desc,fuel_type,unit,value
+cv_001,a_001,fertility,"11-52-0 map, nitrogen",diesel,kg co2e/stand,203.73196786657542
+cv_001,a_001,fertility,"11-52-0 map, p2o5",diesel,kg co2e/stand,499.0420127159582
+cv_001,a_001,fertilizer avoidance,avoided uan-32 manu energy,diesel,kg co2e/stand,-787.1462394844957
 cv_001,a_001,fuel manufacture,field ops,diesel,kg co2e/stand,55.4877034954287
 cv_001,a_001,fuel manufacture,harvest,diesel,kg co2e/stand,319.4119445171439
 cv_001,a_001,fuel manufacture,"sprinkler, ground",diesel,kg co2e/stand,14.34627558046213
 cv_001,a_001,fuel manufacture,"surface, ground",diesel,kg co2e/stand,393.4978444926756
-cv_001,a_001,fertility,"11-52-0 map, nitrogen",diesel,kg co2e/stand,203.73196786657542
-cv_001,a_001,fertility,"11-52-0 map, p2o5",diesel,kg co2e/stand,499.0420127159582
-cv_001,a_001,fertilizer avoidance,avoided uan-32 manu energy,diesel,kg co2e/stand,-787.1462394844957
-cv_001,a_001,pesticide manufacture,flumioxazin,diesel,kg co2e/stand,6.834774988927515
-cv_001,a_001,pesticide manufacture,chlorantraniliprole,diesel,kg co2e/stand,2.3387800065674935
-cv_001,a_001,pesticide manufacture,paraquat,diesel,kg co2e/stand,56.939938077287856
-cv_001,a_001,pesticide manufacture,pendimethalin,diesel,kg co2e/stand,240.55275011706345
-cv_001,a_001,pesticide manufacture,glyphosate,diesel,kg co2e/stand,212.96732580257463
-cv_001,a_001,pesticide manufacture,lambda-cyhalothrin,diesel,kg co2e/stand,1.248416359365369
+cv_001,a_001,irrigation,"sprinkler, ground",diesel,kg co2e/stand,60.348452745461664
+cv_001,a_001,irrigation,"surface, ground",diesel,kg co2e/stand,1655.271846732663
+cv_001,a_001,pesticide manufacture,pesticide,diesel,kg co2e/stand,520.8819853517863
 cv_001,a_001,seed,"round-up ready seed, non-dormant",diesel,kg co2e/stand,181.80101900530673
+cv_001,a_001,tractor,field ops,diesel,kg co2e/stand,233.41229112512278
+cv_001,a_001,tractor,harvest,diesel,kg co2e/stand,1343.6251473016769

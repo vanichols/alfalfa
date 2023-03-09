@@ -114,9 +114,21 @@ tot3 <-
 
 tot4 <-
   tot2 |> 
-  bind_rows(tot3)
+  bind_rows(tot3) |> 
+  rename(unit = unit4,
+         value = value4)
 
-tot4
+#--simplify pesticides into one cat
+tot5 <- 
+  tot4 |> 
+  mutate(desc = case_when(
+    cat == "pesticide manufacture" ~ "pesticide",
+    TRUE ~ desc)
+  ) |> 
+  group_by(production_id, assump_id, cat, desc, fuel_type, unit) |> 
+  summarise(value = sum(value))
 
-tot4 |> 
+
+
+tot5 |> 
   write_csv("R/data_tidy/ghg_energy-co2e.csv")

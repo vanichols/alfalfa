@@ -1,0 +1,4 @@
+production_id,assump_id,desc,value,unit,fert_cat,cat
+cv_001,a_001,plant n,85.43128604705758,kg n/stand,NA,emissions
+cv_001,a_001,fert n,49.31745717751946,kg n/stand,ammonium,emissions
+cv_001,a_001,fert n,190.54472091314335,kg n/stand,urea,avoided emissions
