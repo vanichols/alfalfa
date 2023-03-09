@@ -3,6 +3,7 @@
 #--direct + indirect
 #--have to assume a type of fertilizer that is avoided
 #--have to assume a crop - let's do tomatoes
+#--3/9 clean up
 
 
 
@@ -17,105 +18,103 @@ source("R/code/00_funs.R")
 
 # assumptions -------------------------------------------------------------
 
-a <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-           skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value)
+a0 <- 
+  read_csv("R/data_inputs/datin_assumptions.csv",
+           skip = 5) 
+
+a <- fun_preproc_assum(a0)
+
+#--what timespan for gwp
+a_gwp <- 
+  a |> 
+  filter(assump_cat == "gwp") |> 
+  pull(assump_value)
+
+#--assumed crop
+a_crop <- "tomatoes"
+
+#--assumed type and amount of fertilizer avoided
+a_amount <- 
+  a |> 
+  filter(assump_cat %in% c("fertilizer avoidance")) |> 
+  filter(grepl(a_crop, assump_desc)) |> 
+  mutate(avoided_lbnac = as.numeric(assump_value)) |> 
+  select(assump_id, avoided_lbnac)
+
+a_type <- 
+  a |> 
+  filter(assump_cat %in% c("fertilizer avoidance")) |> 
+  filter(assump_desc == "type of fertilizer avoided") |> 
+  mutate(fert_type = assump_value) |> 
+  select(assump_id, fert_type)
+
+a_avoid <- 
+  a_amount |> 
+  left_join(a_type)
 
 #-ipcc assumptions
 a_ipcc <- 
   a %>% 
-  filter(cat_ass %in% c("n2o direct", "n2o indirect")) %>% 
-  mutate(value_ass = as.numeric(value_ass)) 
+  filter(assump_cat %in% c("n2o direct", "n2o indirect")) %>% 
+  mutate(assump_value = as.numeric(assump_value)) 
 
-
-# get N from fert ---------------------------------------------------------
-# Use assumptions from IPCC 2019 refinement, Table 11.1A (direct), and Table 11.3 (indirect)
+#--direct emissions assumps
 a_dir <- 
   a_ipcc %>% 
-  filter(cat_ass == "n2o direct") %>%
-  pivot_wider(names_from = desc, values_from = value_ass) %>% 
+  filter(assump_cat == "n2o direct") %>%
+  pivot_wider(names_from = assump_desc, values_from = assump_value) %>% 
   janitor::clean_names() %>% 
-  select(-cat_ass, -unit_ass)
+  select(-assump_cat, -assump_unit)
 
+#--the different volat constants for each fertilizer type
+a_indir <- 
+  a_ipcc %>% 
+  filter(assump_cat == "n2o indirect") %>% 
+  filter(grepl("synthetic n,|organic n,", assump_desc)) %>% 
+  separate(assump_desc, into = c("x", "fert_cat"), sep = ",") %>% 
+  select(-x) %>% 
+  mutate_if(is.character, str_trim) %>% 
+  mutate(assump_value = as.numeric(assump_value))
 
-a_avoid <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-           skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value) %>% 
-  filter(cat_ass %in% c("fertilizer avoidance")) 
+# gwp ---------------------------------------------------------------------
 
+gwp_n2o <- 
+  read_excel("R/data_refs/refbyhand_gwp.xlsx", skip = 5) |> 
+  filter(time_horizon == a_gwp) |> 
+  filter(molecule == "n2o") |> 
+  pull(global_warming_potential)
 
-#--assume tomatoes, add assumed fert type
+# fertilizer --------------------------------------------------------------
 
 fert_cat_ref <- read_csv("R/data_refs/refbyhand_fert-category.csv", skip = 5) %>% select(-notes)
 
-f_n <- 
-  a_avoid %>% 
-  filter(grepl("tomatoes", desc)) %>% 
-  mutate(value_ass = as.numeric(value_ass)) %>% 
-  left_join(
-    a_avoid %>% 
-      filter(grepl("type of fertilizer avoided", desc)) %>%
-      rename("fert_type" = value_ass) %>% 
-      select(scenario_id, fert_type)
-  ) %>% 
-  left_join(fert_cat_ref) %>% 
-  mutate(value = value_ass * kg_per_lb * ac_per_ha,
+f1 <- 
+  a_avoid |> 
+  left_join(fert_cat_ref) |> 
+  mutate(value = avoided_lbnac * kg_per_lb * ac_per_ha,
          unit = "kg n",
          desc = "fert n") %>% 
-  select(scenario_id, desc, unit, value, fert_cat)
+  select(assump_id, desc, unit, value, fert_cat)
 
 
 # direct n2o emissions----------------------------------------------------------
 
 ghg_dir <- 
-  f_n %>%  
+  f1 %>%  
   left_join(a_dir) %>% 
   mutate(n2oN_kg = kg_n_n2o_emitted_per_kg_applied_residue_n * value,
-         value2 = n2oN_kg * n_to_n2o * n2o_to_co2e,
+         value2 = n2oN_kg * n_to_n2o * gwp_n2o,
          unit = "kg co2e") %>% 
   mutate(desc = "direct",
          cat = "n2o avoidance") %>% 
-  select(scenario_id, cat, desc, unit, value2)
+  select(assump_id, cat, desc, unit, value2)
 
-
-# indirect n2o emissions --------------------------------------------------
-
-a_indir <- 
-  a_ipcc %>% 
-  filter(cat_ass == "n2o indirect") %>% 
-  #--get rid of fertilizer types assum, deal with separately
-  filter(!grepl("synthetic n,|organic n,", desc)) %>% 
-  pivot_wider(names_from = desc, values_from = value_ass) %>% 
-  janitor::clean_names() %>% 
-  select(-cat_ass, -unit_ass)
-
-#--the different volat constants for each fertilizer type
-a_indir_f <- 
-  a %>% 
-  filter(cat_ass == "n2o indirect") %>% 
-  filter(grepl("synthetic n,|organic n,", desc)) %>% 
-  separate(desc, into = c("x", "fert_cat"), sep = ",") %>% 
-  select(-x) %>% 
-  mutate_if(is.character, str_trim) %>% 
-  mutate(value_ass = as.numeric(value_ass))
-
-
-f_n2 <- 
-  f_n %>% 
-  left_join(a_indir_f) %>% 
-  rename("kg_n_volatized_per_kg_applied_n" = value_ass)
+########################----not sure what I did......
+#--indirect
+ghg_ind <- 
+  f1 %>% 
+  left_join(a_indir) %>% 
+  rename("kg_n_volatized_per_kg_applied_n" = assump_value)
 
 #--get all the constants lined up
 ghg_ind <- 
@@ -128,8 +127,8 @@ ghg_vol <-
   mutate(value2 = 
            value * kg_n_volatized_per_kg_applied_n * kg_n_n2o_per_kg_n_volatalized,
          unit = "kg n2o-n vol", 
-         desc = "indirect, volatilize") %>% 
-  select(scenario_id, unit, desc, value2)
+         assump_desc = "indirect, volatilize") %>% 
+  select(scenario_id, unit, assump_desc, value2)
 
 #--do the calcs for leaching
 ghg_leach <- 
@@ -137,8 +136,8 @@ ghg_leach <-
   mutate(value2 = 
            value * kg_n_leached_per_kg_n * kg_n_n2o_per_kg_n_leached,
          unit = "kg n2o-n leach",
-         desc = "indirect, leach") %>% 
-  select(scenario_id, unit, desc, value2)
+         assump_desc = "indirect, leach") %>% 
+  select(scenario_id, unit, assump_desc, value2)
 
 
 #--comnbine volat and leach values, change to co2e

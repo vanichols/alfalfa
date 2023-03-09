@@ -112,5 +112,11 @@ f_all3 <-
   f_all2 |> 
   rename("value" = value3)
 
+#--grassini is so bad?!
+f_all3 |> 
+  ggplot(aes(time_horizon, value)) + 
+  geom_point(aes(color = source), size = 4) + 
+  facet_grid(.~ fuel_type)
+
 f_all3 |> 
  write_csv("R/data_refs/ref_fuel_ghg.csv") 

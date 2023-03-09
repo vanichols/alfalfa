@@ -4,6 +4,7 @@
 #--2/15 - need to do indirect
 #--2/22 cleaned up, still lacks indirect
 #--2/23 added indirect
+#--3/9 checking
 
 library(tidyverse)
 library(readxl)
@@ -16,21 +17,19 @@ source("R/code/00_funs.R")
 
 # data for stand life --------------------------------------------------------------------
 
-d_raw <- read_csv("R/data_raw/lca-sheets/raw_cv_001.csv",
+d_raw <- read_csv("R/data_inputs/datin_production.csv",
                   skip = 5) %>% 
   janitor::remove_empty()
 
-d <- fun_preproc(d_raw)
+d <- fun_preproc_prod(d_raw)
 
 sl <- 
   d %>% 
   filter(desc == "stand life") %>% 
   rename("stand_life_yrs" = value) %>% 
-  select(scenario_id, stand_life_yrs)
+  select(production_id, stand_life_yrs)
 
 # ipcc --------------------------------------------------------------------
-
-
 
 # use paper to check calcs ------------------------------------------------
 
@@ -77,27 +76,67 @@ ipcc_5yr <- 0.01 * Ninputs_5yr #kg N2O-N / ha / yr
 
 # assumptions -------------------------------------------------------------
 
+a0 <- 
+  read_csv("R/data_inputs/datin_assumptions.csv",
+                skip = 5) 
+
 a <- 
-  read_csv("R/data_raw/lca-sheets/raw_assumptions.csv",
-                skip = 5) %>% 
-  fill(scenario_id, cat) %>% 
-  select(-notes) %>% 
-  rename(
-    cat_ass = cat,
-    unit_ass = unit,
-    value_ass = value) %>% 
-  filter(cat_ass %in% c("n2o direct", "n2o indirect")) %>% 
-  mutate(value_ass = as.numeric(value_ass)) 
+  fun_preproc_assum(a0) 
+
+#--what timespan for gwp
+a_gwp <- 
+  a |> 
+  filter(assump_cat == "gwp") |> 
+  pull(assump_value)
+
+
+a1 <- 
+  a |> 
+  filter(assump_cat %in% c("n2o direct", "n2o indirect")) %>% 
+  mutate(assump_value = as.numeric(assump_value)) 
 
 # Use assumptions from IPCC 2019 refinement, Table 11.1A (direct), and Table 11.3 (indirect)
 a_dir <- 
-  a %>% 
-  filter(cat_ass == "n2o direct") %>% 
-  pivot_wider(names_from = desc, values_from = value_ass) %>% 
+  a1 %>% 
+  filter(assump_cat == "n2o direct") %>% 
+  pivot_wider(names_from = assump_desc, values_from = assump_value) %>% 
   janitor::clean_names() %>% 
-  select(-cat_ass, -unit_ass)
+  select(-assump_cat, -assump_unit)
+
+#--indir asssumps, amount volatilized/leached etc.
+a_indir <- 
+  a1 %>% 
+  filter(assump_cat == "n2o indirect") %>% 
+  #--get rid of fertilizer types assum, deal with separately
+  filter(!grepl("synthetic n,|organic n,", assump_desc)) %>% 
+  pivot_wider(names_from = assump_desc, values_from = assump_value) %>% 
+  janitor::clean_names() %>% 
+  select(-assump_cat, -assump_unit)
+
+#--frac emitted for each type of fertilizer
+a_indir_f <- 
+  a1 %>% 
+  filter(assump_cat == "n2o indirect") %>% 
+  filter(grepl("synthetic n,|organic n,", assump_desc)) %>% 
+  separate(assump_desc, into = c("x", "fert_cat"), sep = ",") %>% 
+  select(-x) %>% 
+  mutate_if(is.character, str_trim)
 
 
+#--this is a hack
+a_id <- 
+  a1 |> 
+  pull(assump_id) |> 
+  unique()
+
+
+# gwp ---------------------------------------------------------------------
+
+gwp_n2o <- 
+  read_excel("R/data_refs/refbyhand_gwp.xlsx", skip = 5) |> 
+  filter(time_horizon == a_gwp) |> 
+  filter(molecule == "n2o") |> 
+  pull(global_warming_potential)
 
 # note it is assumed all the n2o is released when the stand is terminated
 # therefore the total is amortized over the standlife. Longer standlife = less n2o
@@ -110,7 +149,7 @@ a_dir <-
 
 #--get n per unit fertilizer, clean up for merg
 f_nref <- 
-  read_csv("R/data_refs/ref_fert-n.csv") %>% 
+  read_csv("R/data_refs/ref_fert-n-contents.csv") %>% 
   rename(desc = fert_type) %>% 
   mutate(kgn_kgfert = value) %>% 
   select(desc, kgn_kgfert)
@@ -123,7 +162,7 @@ f_n <-
   f %>% 
   left_join(f_nref) %>% 
   mutate(f_ntot = value * kgn_kgfert) %>% 
-  group_by(scenario_id) %>% 
+  group_by(production_id) %>% 
   summarise(value = sum(f_ntot, na.rm = T),
             unit = "kg n/stand",
             desc = "fert n")
@@ -134,17 +173,19 @@ f_n <-
 #--amount of harvested dry matter each year
 h_dm <- 
   read_csv("R/data_tidy/prod_yields.csv") %>%
-  group_by(scenario_id) %>% 
+  group_by(production_id) %>% 
   summarise(value = sum(value)) %>% 
   left_join(sl) %>% 
   mutate(kgdm_per_year = value/stand_life_yrs) %>%
-  select(scenario_id, stand_life_yrs, kgdm_per_year) 
+  select(production_id, stand_life_yrs, kgdm_per_year) 
 
   
 #---use IPCC assumptions to get root N and residue N
+#--note this is a hack - need to think about combining them more cleanly
 p_n <- 
-  h_dm %>% 
-  left_join(a_dir) %>% 
+  h_dm |> 
+  mutate(assump_id = a_id) |>#--they don't have a common column 
+  left_join(a_dir)  |>  
   mutate(
     dm_n = kgdm_per_year * fraction_of_dm_not_harvested * kg_of_n_per_kg_dm,
     root_n = kgdm_per_year * kg_roots_per_kg_dm_harvested * kg_n_per_kg_root_dm,
@@ -157,12 +198,13 @@ p_n1 <-
   mutate(value = plant_n_kg,
          unit = "kg n/stand",
          desc = "plant n") %>% 
-  select(scenario_id, desc, value, unit)
+  select(production_id, assump_id, desc, value, unit)
 
 #--fert n and plant n    
 all_n <- 
   p_n1 %>% 
-  bind_rows(f_n)
+  bind_rows(f_n) |> 
+  fill(assump_id)
 
 
 # direct n2o emissions----------------------------------------------------------
@@ -176,7 +218,7 @@ ghg_dir <-
 
 #---just look at it
 ghg_dir %>% 
-  mutate(co2_eq_kg = n2o_kg * n2o_to_co2e) %>% 
+  mutate(co2_eq_kg = n2o_kg * gwp_n2o) %>% 
   ggplot(aes(desc, co2_eq_kg)) + 
   geom_col(aes(fill = desc), color = "black") + 
   labs(y = "kg co2-eq per ha",
@@ -186,34 +228,14 @@ ghg_dir %>%
 
 ghg_dir1 <- 
   ghg_dir %>% 
-  mutate(value = n2o_kg * n2o_to_co2e,
+  mutate(value = n2o_kg * gwp_n2o,
          unit = "kg co2e/stand") %>% 
   mutate(desc = paste0("direct, ", desc)) %>% 
-  select(scenario_id, desc, unit, value)
+  select(production_id, assump_id, desc, unit, value)
 
 
 # indirect n2o emissions --------------------------------------------------
 
-#--have to know if fert was synthetic or organic, if synthetic then what type of synthetic
-
-a_indir <- 
-  a %>% 
-  filter(cat_ass == "n2o indirect") %>% 
-  #--get rid of fertilizer types assum, deal with separately
-  filter(!grepl("synthetic n,|organic n,", desc)) %>% 
-  pivot_wider(names_from = desc, values_from = value_ass) %>% 
-  janitor::clean_names() %>% 
-  select(-cat_ass, -unit_ass)
-
-a_indir_f <- 
-  a %>% 
-  filter(cat_ass == "n2o indirect") %>% 
-  filter(grepl("synthetic n,|organic n,", desc)) %>% 
-  separate(desc, into = c("x", "fert_cat"), sep = ",") %>% 
-  select(-x) %>% 
-  mutate_if(is.character, str_trim)
-
-  
 #--assign the fertilizer to the correct category
 # (urea, ammonium, nitrate, ammonium-nitrate)
 
@@ -225,10 +247,8 @@ f_cat <-
   f_cat_ref %>% 
   rename("desc2" = fert_type) %>% 
   left_join(a_indir_f %>% 
-              select(fert_cat, value_ass)) %>% 
-  rename("kg_n_volatized_per_kg_applied_n" = value_ass)
-
-
+              select(fert_cat, assump_value)) %>% 
+  rename("kg_n_volatized_per_kg_applied_n" = assump_value)
 
 
 #--get all the constants lined up
@@ -238,7 +258,7 @@ ghg_ind <-
   all_n %>% 
   #--get the type of fertilizer it is
   left_join(f %>% 
-              select(scenario_id, desc) %>% 
+              select(production_id, desc) %>% 
               rename("desc2" = desc) %>% 
               mutate(desc = "fert n")) %>% 
     #--add the category and assumed %N volatilization
@@ -253,7 +273,7 @@ ghg_vol <-
            value * kg_n_volatized_per_kg_applied_n * kg_n_n2o_per_kg_n_volatalized,
          unit = "kg n2o-n vol/stand", 
          desc = "indirect, volatilize") %>% 
-  group_by(scenario_id, unit, desc) %>% 
+  group_by(production_id, unit, desc) %>% 
   #--sum together in case there are multiple fertilizers
   summarise(value = sum(value2))
   
@@ -265,7 +285,7 @@ ghg_leach <-
          unit = "kg n2o-n leach/stand",
          #--change desc from plant n/fert n to just indirect, leach
          desc = "indirect, leach") %>% 
-  group_by(scenario_id, unit, desc) %>% 
+  group_by(production_id, unit, desc) %>% 
   #--sum them together (plant + all fertilizers)
   summarise(value = sum(value2))
   
@@ -273,7 +293,7 @@ ghg_leach <-
 ghg_ind1 <- 
   ghg_vol %>% 
   bind_rows(ghg_leach) %>% 
-  mutate(value = value * n_to_n2o * n2o_to_co2e,
+  mutate(value = value * n_to_n2o * gwp_n2o,
          unit = "kg co2e/stand") 
 
 # add together ------------------------------------------------------------
@@ -281,7 +301,8 @@ ghg_ind1 <-
 ghg_n2o <- 
   ghg_dir1 %>% 
   bind_rows(ghg_ind1) %>% 
-  mutate(cat = "n2o")
+  mutate(cat = "n2o") |> 
+  fill(assump_id)
 
 ghg_n2o %>% 
   write_csv("R/data_tidy/ghg_n2o.csv")
