@@ -1,0 +1,18 @@
+scenario,production_id,assump_id,cat,desc,yield_kg_stand,standlife_years,unit,value
+tulare_001,cv_001,a_001,fertilizer avoidance,avoided uan-32 manu energy,74648.69654597263,3,mj/stand,-11059.19780752714
+tulare_001,cv_001,a_001,fertility,"11-52-0 map, nitrogen",74648.69654597263,3,mj/stand,2862.380609007025
+tulare_001,cv_001,a_001,fertility,"11-52-0 map, p2o5",74648.69654597263,3,mj/stand,7011.409133462503
+tulare_001,cv_001,a_001,field passes,field ops,74648.69654597263,3,mj/stand,3279.3813509817173
+tulare_001,cv_001,a_001,field passes,harvest,74648.69654597263,3,mj/stand,18877.580223096167
+tulare_001,cv_001,a_001,irrigation,"sprinkler, ground",74648.69654597263,3,mj/stand,847.8799018684896
+tulare_001,cv_001,a_001,irrigation,"surface, ground",74648.69654597263,3,mj/stand,23256.134451250004
+tulare_001,cv_001,a_001,fuel manufacture,field ops,74648.69654597263,3,mj/stand,779.5876522807779
+tulare_001,cv_001,a_001,fuel manufacture,harvest,74648.69654597263,3,mj/stand,4487.653880955314
+tulare_001,cv_001,a_001,fuel manufacture,"sprinkler, ground",74648.69654597263,3,mj/stand,201.56140179178485
+tulare_001,cv_001,a_001,fuel manufacture,"surface, ground",74648.69654597263,3,mj/stand,5528.541306288956
+tulare_001,cv_001,a_001,pesticide manufacture,flumioxazin,74648.69654597263,3,mj/stand,96.02679245725766
+tulare_001,cv_001,a_001,pesticide manufacture,chlorantraniliprole,74648.69654597263,3,mj/stand,32.85924447515447
+tulare_001,cv_001,a_001,pesticide manufacture,paraquat,74648.69654597263,3,mj/stand,799.9911665175099
+tulare_001,cv_001,a_001,pesticide manufacture,pendimethalin,74648.69654597263,3,mj/stand,3379.702923349419
+tulare_001,cv_001,a_001,pesticide manufacture,glyphosate,74648.69654597263,3,mj/stand,2992.1349610120856
+tulare_001,cv_001,a_001,pesticide manufacture,lambda-cyhalothrin,74648.69654597263,3,mj/stand,17.539921772879723
