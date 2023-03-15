@@ -1,0 +1,52 @@
+production_id,cat,desc,unit,value
+p0003,yield,stand life,years,3
+p0003,yield,"hay, harvests",harvest/year,5
+p0003,yield,"haylage, harvests",harvest/year,2
+p0003,yield,hay production,ton/ac/yr at 10% moisture,10
+p0003,yield,haylage production,ton/ac/yr at 30% moisture,3
+p0003,irrigation,"sprinkler, est",ac-in/stand life,8
+p0003,irrigation,"surface, prod",ac-in/year,64
+p0003,seed,"round-up ready seed, non-dormant",lb/ac,25
+p0003,fertility,11-52-0 map,lb/ac/pass,200
+p0003,pesticide,roundup powermaxx,pint/ac,2
+p0003,pesticide,roundup powermaxx,pint/ac,2
+p0003,pesticide,warrior ii,fl oz/ac,1.5
+p0003,pesticide,coragen,fl oz/ac,3.5
+p0003,pesticide,chateau,oz/ac,4
+p0003,pesticide,prowl h2o,gal/ac,1
+p0003,pesticide,gramoxone,pint/ac,1.5
+p0003,pesticide,roundup powermaxx,pint/ac,2
+p0003,pesticide,warrior ii,fl oz/ac,1.5
+p0003,pesticide,coragen,fl oz/ac,3.5
+p0003,pesticide,chateau,oz/ac,4
+p0003,pesticide,prowl h2o,gal/ac,1
+p0003,pesticide,gramoxone,pint/ac,1.5
+p0003,pesticide,roundup powermaxx,pint/ac,2
+p0003,pesticide,warrior ii,fl oz/ac,1.5
+p0003,pesticide,coragen,fl oz/ac,3.5
+p0003,pesticide,chateau,oz/ac,4
+p0003,pesticide,prowl h2o,gal/ac,1
+p0003,pesticide,gramoxone,pint/ac,1.5
+p0003,field ops,disk,pass/stand life,1
+p0003,field ops,roll,pass/stand life,2
+p0003,field ops,chisel,pass/stand life,1
+p0003,field ops,laser level,pass/stand life,1
+p0003,field ops,disk border ridges,pass/stand life,1
+p0003,field ops,"fertilize, map",pass/stand life,1
+p0003,field ops,disk,pass/stand life,1
+p0003,field ops,roll,pass/stand life,1
+p0003,field ops,plant,pass/stand life,1
+p0003,field ops,weed control,pass/stand life,1
+p0003,field ops,weed control,pass/stand life,3
+p0003,field ops,insect control,pass/stand life,3
+p0003,field ops,insect control,pass/stand life,3
+p0003,field ops,"fertilize, map",pass/stand life,1
+p0003,field ops,weed control,pass/stand life,3
+p0003,field ops,weed control,pass/stand life,3
+p0003,field ops,stand termination,pass/stand life,1
+p0003,harvest ops,"haylage, cut",pass/harvest,1
+p0003,harvest ops,"haylage, chop",pass/harvest,1
+p0003,harvest ops,"hay, swath",pass/harvest,1
+p0003,harvest ops,"hay, rake",pass/harvest,1
+p0003,harvest ops,"hay, bale",pass/harvest,1
+p0003,harvest ops,"hay, stack",pass/harvest,1

@@ -1,0 +1,9 @@
+﻿keep track of what changes between variants,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+scenario,location,data_change,cat,desc,unit,value
+v_0001,tulare,base,,,,
+v_0002,tulare,a0002,irrigation,fraction from surface source,frac,1
+v_0003,tulare,p0002,yield,"hay, harvests",harvest/year,5
