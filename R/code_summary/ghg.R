@@ -1,48 +1,18 @@
-#--add together all ghg/credits
-
-library(tidyverse)
-library(readxl)
-library(pals)
-
+#--visualize/summarise results
+#--created 3/15, work in progress
 
 rm(list = ls())
-
-source("R/code/00_conversions.R")
-source("R/code/00_funs.R")
-
-# data for stand life --------------------------------------------------------------------
-
-d_raw <- read_csv("R/data_inputs/datin_production.csv",
-                  skip = 5) |> 
-  janitor::remove_empty()
-
-d <- fun_preproc_prod(d_raw)
-
-sl <- 
-  d |> 
-  filter(desc == "stand life") |> 
-  rename("stand_life_yrs" = value) |> 
-  select(production_id, stand_life_yrs)
-
+library(tidyverse)
+library(pals)
 
 
 # data --------------------------------------------------------------------
 
-#--carbon credits
-c <- read_csv("R/data_tidy/ghg_carboncredit.csv")
+e <- read_csv("R/code_auto/02_energy/tulare_001-energy.csv")
+g <- read_csv("R/code_auto/03_ghg/tulare_001-ghg.csv")
 
-#--ghg from energy consump
-e <- read_csv("R/data_tidy/ghg_energy-co2e.csv")
-
-#--n2o
-n <- read_csv("R/data_tidy/ghg_n2o.csv")
-
-
-tot <- 
-  c |> 
-  bind_rows(e) |> 
-  bind_rows(n) |> 
-  filter(value != 0) |> 
+g1 <- 
+  g |> 
   #--make short category labels for figs
   mutate(cat_short = case_when(
     cat == "irrigation" ~ "irrig",
@@ -54,21 +24,11 @@ tot <-
 
 
 
-# look at it --------------------------------------------------------------
-
-
-tot |> 
-  group_by(production_id) |> 
-  summarise(value = sum(value)/3)
-
-
-tot |> 
-  group_by(production_id) |> 
-  summarise(value = sum(value))
-
-tot1 <- 
-  tot |> 
+###################### stopped
+g2 <- 
+  g1 |> 
   select(-fuel_type) |> 
+  mutate(value = kgco2e_hayr) |> 
   group_by(production_id, assump_id) |> 
   mutate(unit = "kg co2e/stand",
          value = sum(value),
@@ -76,24 +36,24 @@ tot1 <-
          cat_short = "total",
          desc = "total") |> 
   distinct() |> 
-  bind_rows(tot) |> 
+  bind_rows(g1) |> 
   mutate(desc = paste(cat_short, desc, sep = "_")) |> 
   group_by(production_id, assump_id, cat) |> 
   mutate(cat_tot = sum(value)) |> 
   ungroup() 
 
-tot1
+t1
 
 
 n_clrs <-
-  length(tot1 |>
+  length(t1 |>
            unite(desc, cat, col = "cat_desc") |> 
            pull(cat_desc) |>
            unique())
 
 
 #--need to check if the carbon credit is per year (would multiply by 3?)
-tot1 |> 
+t1 |> 
   mutate(value = value/3 / 1000) |> 
   arrange(-cat_tot, -value) |> 
   mutate(desc = fct_inorder(desc),
@@ -107,5 +67,6 @@ tot1 |>
        title = "Tulare County",
        fill = NULL) + 
   theme(legend.position = "bottom")
-  
+
 ggsave("R/figs/tulare-ghg.png")
+

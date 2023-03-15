@@ -526,7 +526,17 @@ e9 <-
 e10 <- 
   e8 |> 
   left_join(e9) |> 
-  select(scenario, production_id, assump_id, cat, desc, yield_kg_stand, standlife_years, unit, value)
+  select(scenario, production_id, assump_id, cat, desc, fuel_type, yield_kg_stand, standlife_years, unit, value)
 
-e10 |> 
+#--calculate on per ha / yr, and per mg basis
+e11 <- 
+  e10 |> 
+  mutate(
+    mj_stand = value,
+    mj_hayr = value / standlife_years,
+    mj_mg = value / (yield_kg_stand/1000)) |> 
+  select(-yield_kg_stand, -standlife_years, -unit, -value)
+
+
+e11 |> 
   write_csv(paste0("R/code_auto/02_energy/", my_scenario, "-energy.csv"))
