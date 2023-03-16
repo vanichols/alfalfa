@@ -3,8 +3,8 @@ see raw_scenario-dictionary for scenario descriptions,,,,,
 "unless otherwise noted, values are taken from enterprise budget",,,,,
 ,,,,,
 ,,,,,
-production_id,cat,desc,unit,value,notes
-p0001,yield,stand life,years,3,
+scenario_id,cat,desc,unit,value,notes
+scen_0001,yield,stand life,years,3,
 ,,"hay, harvests",harvest/year,7,
 ,,"haylage, harvests",harvest/year,2,
 ,,hay production,ton/ac/yr at 10% moisture,10,
