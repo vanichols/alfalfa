@@ -7,7 +7,7 @@ library(tidyverse)
 library(readxl)
 
 
-ProcProdData <- function(f_scenario_id = "0001"){
+ProcProdData <- function(f_scenario_id = "0003"){
   
   
   source("R/code_autofxns2/00_funs/fxn_conversions.R")
@@ -18,8 +18,8 @@ ProcProdData <- function(f_scenario_id = "0001"){
      # data --------------------------------------------------------------------
   
   d <- 
-    read_csv(paste0("R/code_autofxns2/datain/scen_", f_scenario_id, ".csv"), skip = 5) %>% 
-    janitor::remove_empty() |> 
+    read_csv(paste0("R/code_autofxns2/datain/scen_", f_scenario_id, ".csv")) %>% 
+    select(-change_ind) |> 
     ProcDataIn()
   
     #--stand life

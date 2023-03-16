@@ -1,0 +1,151 @@
+scenario_id,cat,desc,fuel_type,unit,value
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,-11.05919780752714
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,-3.6863992691757135
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,-0.19576952627627647
+scen_0004,fertility,"11-52-0 map, nitrogen",NA,GJ_stand,5.72476121801405
+scen_0004,fertility,"11-52-0 map, nitrogen",NA,GJ_hayr,1.9082537393380168
+scen_0004,fertility,"11-52-0 map, nitrogen",NA,MJ_kgyield,0.1013395194841902
+scen_0004,fertility,"11-52-0 map, p2o5",NA,GJ_stand,14.022818266925006
+scen_0004,fertility,"11-52-0 map, p2o5",NA,GJ_hayr,4.6742727556416686
+scen_0004,fertility,"11-52-0 map, p2o5",NA,MJ_kgyield,0.24823143024946637
+scen_0004,field passes,field ops,diesel,GJ_stand,5.986714799106786
+scen_0004,field passes,field ops,diesel,GJ_hayr,1.9955715997022618
+scen_0004,field passes,field ops,diesel,MJ_kgyield,0.10597661246049947
+scen_0004,field passes,harvest,diesel,GJ_stand,14.150090150944653
+scen_0004,field passes,harvest,diesel,GJ_hayr,4.71669671698155
+scen_0004,field passes,harvest,diesel,MJ_kgyield,0.25048439261404737
+scen_0004,irrigation,"sprinkler, surface",diesel,GJ_stand,0.1178461235448984
+scen_0004,irrigation,"sprinkler, surface",diesel,GJ_hayr,0.039282041181632796
+scen_0004,irrigation,"sprinkler, surface",diesel,MJ_kgyield,0.0020861078878775356
+scen_0004,irrigation,"sprinkler, ground",diesel,GJ_stand,0.4239399509342448
+scen_0004,irrigation,"sprinkler, ground",diesel,GJ_hayr,0.14131331697808158
+scen_0004,irrigation,"sprinkler, ground",diesel,MJ_kgyield,0.007504569934312691
+scen_0004,irrigation,"surface, surface",diesel,GJ_stand,2.5757795574813507
+scen_0004,irrigation,"surface, surface",diesel,GJ_hayr,0.858593185827117
+scen_0004,irrigation,"surface, surface",diesel,MJ_kgyield,0.04559635812075184
+scen_0004,irrigation,"surface, ground",diesel,GJ_stand,9.266116070419923
+scen_0004,irrigation,"surface, ground",diesel,GJ_hayr,3.0887053568066407
+scen_0004,irrigation,"surface, ground",diesel,MJ_kgyield,0.16402845713569167
+scen_0004,fuel manufacture,field ops,diesel,GJ_stand,1.4231857889028616
+scen_0004,fuel manufacture,field ops,diesel,GJ_hayr,0.4743952629676205
+scen_0004,fuel manufacture,field ops,diesel,MJ_kgyield,0.025193184220559776
+scen_0004,fuel manufacture,harvest,diesel,GJ_stand,3.3638160310431666
+scen_0004,fuel manufacture,harvest,diesel,GJ_hayr,1.1212720103477223
+scen_0004,fuel manufacture,harvest,diesel,MJ_kgyield,0.059546151749781805
+scen_0004,fuel manufacture,"sprinkler, surface",diesel,GJ_stand,0.02801485187358743
+scen_0004,fuel manufacture,"sprinkler, surface",diesel,GJ_hayr,0.009338283957862476
+scen_0004,fuel manufacture,"sprinkler, surface",diesel,MJ_kgyield,4.959179115377993e-4
+scen_0004,fuel manufacture,"sprinkler, ground",diesel,GJ_stand,0.10078070089589242
+scen_0004,fuel manufacture,"sprinkler, ground",diesel,GJ_hayr,0.03359356696529748
+scen_0004,fuel manufacture,"sprinkler, ground",diesel,MJ_kgyield,0.0017840163830645502
+scen_0004,fuel manufacture,"surface, surface",diesel,GJ_stand,0.6123246195226966
+scen_0004,fuel manufacture,"surface, surface",diesel,GJ_hayr,0.20410820650756553
+scen_0004,fuel manufacture,"surface, surface",diesel,MJ_kgyield,0.01083934863789761
+scen_0004,fuel manufacture,"surface, ground",diesel,GJ_stand,2.2027781767245056
+scen_0004,fuel manufacture,"surface, ground",diesel,GJ_hayr,0.7342593922415018
+scen_0004,fuel manufacture,"surface, ground",diesel,MJ_kgyield,0.03899350094412517
+scen_0004,pesticide,flumioxazin,NA,GJ_stand,0.0011862493891411636
+scen_0004,pesticide,flumioxazin,NA,GJ_hayr,3.954164630470545e-4
+scen_0004,pesticide,flumioxazin,NA,MJ_kgyield,2.0998944498454126e-5
+scen_0004,pesticide,chlorantraniliprole,NA,GJ_stand,2.1219253924582344e-4
+scen_0004,pesticide,chlorantraniliprole,NA,GJ_hayr,7.073084641527448e-5
+scen_0004,pesticide,chlorantraniliprole,NA,MJ_kgyield,3.756224783251587e-6
+scen_0004,pesticide,paraquat,NA,GJ_stand,0.027291720241533344
+scen_0004,pesticide,paraquat,NA,GJ_hayr,0.009097240080511115
+scen_0004,pesticide,paraquat,NA,MJ_kgyield,4.8311706110484425e-4
+scen_0004,pesticide,pendimethalin,NA,GJ_stand,1.4694276628638328
+scen_0004,pesticide,pendimethalin,NA,GJ_hayr,0.4898092209546109
+scen_0004,pesticide,pendimethalin,NA,MJ_kgyield,0.02601175622885726
+scen_0004,pesticide,glyphosate,NA,GJ_stand,0.6949773234420069
+scen_0004,pesticide,glyphosate,NA,GJ_hayr,0.23165910781400229
+scen_0004,pesticide,glyphosate,NA,MJ_kgyield,0.012302463863192128
+scen_0004,pesticide,lambda-cyhalothrin,NA,GJ_stand,6.046029570680103e-5
+scen_0004,pesticide,lambda-cyhalothrin,NA,GJ_hayr,2.015343190226701e-5
+scen_0004,pesticide,lambda-cyhalothrin,NA,MJ_kgyield,1.0702660043740234e-6
+scen_0004,carbon credit,co2,NA,kgco2e_stand,-1927.4219754438898
+scen_0004,carbon credit,co2,NA,kgco2e_hayr,-642.4739918146299
+scen_0004,carbon credit,co2,NA,kgco2e_Mgyield,-34.119155261904766
+scen_0004,fertility,"11-52-0 map, nitrogen",diesel,kgco2e_stand,407.46393573315083
+scen_0004,fertility,"11-52-0 map, nitrogen",diesel,kgco2e_hayr,135.8213119110503
+scen_0004,fertility,"11-52-0 map, nitrogen",diesel,kgco2e_Mgyield,7.212912099180783
+scen_0004,fertility,"11-52-0 map, p2o5",diesel,kgco2e_stand,998.0840254319164
+scen_0004,fertility,"11-52-0 map, p2o5",diesel,kgco2e_hayr,332.6946751439721
+scen_0004,fertility,"11-52-0 map, p2o5",diesel,kgco2e_Mgyield,17.66804792204146
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_stand,-787.1462394844957
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_hayr,-262.3820798281652
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_Mgyield,-13.934034737053782
+scen_0004,field passes,field ops,diesel,kgco2e_stand,426.10866746372017
+scen_0004,field passes,field ops,diesel,kgco2e_hayr,142.0362224879067
+scen_0004,field passes,field ops,diesel,kgco2e_Mgyield,7.542960477188589
+scen_0004,field passes,harvest,diesel,kgco2e_stand,1007.1426919502045
+scen_0004,field passes,harvest,diesel,kgco2e_hayr,335.71423065006815
+scen_0004,field passes,harvest,diesel,kgco2e_Mgyield,17.828404114583112
+scen_0004,fuel manufacture,field ops,diesel,kgco2e_stand,101.2962568641454
+scen_0004,fuel manufacture,field ops,diesel,kgco2e_hayr,33.76541895471514
+scen_0004,fuel manufacture,field ops,diesel,kgco2e_Mgyield,1.79314273647918
+scen_0004,fuel manufacture,harvest,diesel,kgco2e_stand,239.42198930117044
+scen_0004,fuel manufacture,harvest,diesel,kgco2e_hayr,79.80732976705681
+scen_0004,fuel manufacture,harvest,diesel,kgco2e_Mgyield,4.238239539735156
+scen_0004,fuel manufacture,"sprinkler, ground",diesel,kgco2e_stand,7.173137790231065
+scen_0004,fuel manufacture,"sprinkler, ground",diesel,kgco2e_hayr,2.3910459300770217
+scen_0004,fuel manufacture,"sprinkler, ground",diesel,kgco2e_Mgyield,0.12697863005508467
+scen_0004,fuel manufacture,"sprinkler, surface",diesel,kgco2e_stand,1.9939769308584554
+scen_0004,fuel manufacture,"sprinkler, surface",diesel,kgco2e_hayr,0.6646589769528185
+scen_0004,fuel manufacture,"sprinkler, surface",diesel,kgco2e_Mgyield,0.03529730871567337
+scen_0004,fuel manufacture,"surface, ground",diesel,kgco2e_stand,156.78429741505042
+scen_0004,fuel manufacture,"surface, ground",diesel,kgco2e_hayr,52.26143247168347
+scen_0004,fuel manufacture,"surface, ground",diesel,kgco2e_Mgyield,2.7753900569182792
+scen_0004,fuel manufacture,"surface, surface",diesel,kgco2e_stand,43.58263863162052
+scen_0004,fuel manufacture,"surface, surface",diesel,kgco2e_hayr,14.527546210540173
+scen_0004,fuel manufacture,"surface, surface",diesel,kgco2e_Mgyield,0.7714983190711463
+scen_0004,irrigation,"sprinkler, ground",diesel,kgco2e_stand,30.174226372730832
+scen_0004,irrigation,"sprinkler, ground",diesel,kgco2e_hayr,10.058075457576944
+scen_0004,irrigation,"sprinkler, ground",diesel,kgco2e_Mgyield,0.5341430821250048
+scen_0004,irrigation,"sprinkler, surface",diesel,kgco2e_stand,8.38778133826814
+scen_0004,irrigation,"sprinkler, surface",diesel,kgco2e_hayr,2.7959271127560466
+scen_0004,irrigation,"sprinkler, surface",diesel,kgco2e_Mgyield,0.14848020694449598
+scen_0004,irrigation,"surface, ground",diesel,kgco2e_stand,659.5223764325455
+scen_0004,irrigation,"surface, ground",diesel,kgco2e_hayr,219.84079214418182
+scen_0004,irrigation,"surface, ground",diesel,kgco2e_Mgyield,11.674841652160824
+scen_0004,irrigation,"surface, surface",diesel,kgco2e_stand,183.33293496500363
+scen_0004,irrigation,"surface, surface",diesel,kgco2e_hayr,61.11097832166788
+scen_0004,irrigation,"surface, surface",diesel,kgco2e_Mgyield,3.2453530946439835
+scen_0004,pesticide,chlorantraniliprole,diesel,kgco2e_stand,0.015102954321002754
+scen_0004,pesticide,chlorantraniliprole,diesel,kgco2e_hayr,0.005034318107000918
+scen_0004,pesticide,chlorantraniliprole,diesel,kgco2e_Mgyield,2.673519602644738e-4
+scen_0004,pesticide,flumioxazin,diesel,kgco2e_stand,0.08443214073969403
+scen_0004,pesticide,flumioxazin,diesel,kgco2e_hayr,0.028144046913231344
+scen_0004,pesticide,flumioxazin,diesel,kgco2e_Mgyield,0.001494614752604536
+scen_0004,pesticide,glyphosate,diesel,kgco2e_stand,49.46550339320652
+scen_0004,pesticide,glyphosate,diesel,kgco2e_hayr,16.48850113106884
+scen_0004,pesticide,glyphosate,diesel,kgco2e_Mgyield,0.8756365818608062
+scen_0004,pesticide,lambda-cyhalothrin,diesel,kgco2e_stand,0.0043033043835546065
+scen_0004,pesticide,lambda-cyhalothrin,diesel,kgco2e_hayr,0.0014344347945182022
+scen_0004,pesticide,lambda-cyhalothrin,diesel,kgco2e_Mgyield,7.617694115369875e-5
+scen_0004,pesticide,paraquat,diesel,kgco2e_stand,1.942507524602222
+scen_0004,pesticide,paraquat,diesel,kgco2e_hayr,0.6475025082007407
+scen_0004,pesticide,paraquat,diesel,kgco2e_Mgyield,0.034386199116598654
+scen_0004,pesticide,pendimethalin,diesel,kgco2e_stand,104.58755500607035
+scen_0004,pesticide,pendimethalin,diesel,kgco2e_hayr,34.86251833535678
+scen_0004,pesticide,pendimethalin,diesel,kgco2e_Mgyield,1.8514051791348387
+scen_0004,n2o,"direct, fert n",NA,kgco2e_stand,230.94660661129828
+scen_0004,n2o,"direct, fert n",NA,kgco2e_hayr,76.9822022037661
+scen_0004,n2o,"direct, fert n",NA,kgco2e_Mgyield,4.0882086167800455
+scen_0004,n2o,"direct, plant n",NA,kgco2e_stand,151.37500306067824
+scen_0004,n2o,"direct, plant n",NA,kgco2e_hayr,50.458334353559415
+scen_0004,n2o,"direct, plant n",NA,kgco2e_Mgyield,2.679634920634921
+scen_0004,avoided n2o,"direct, fert n",NA,kgco2e_stand,-446.1468536809171
+scen_0004,avoided n2o,"direct, fert n",NA,kgco2e_hayr,-148.71561789363903
+scen_0004,avoided n2o,"direct, fert n",NA,kgco2e_Mgyield,-7.897675736961451
+scen_0004,avoided n2o,"indirect, volatilize",NA,kgco2e_stand,-66.92202805213756
+scen_0004,avoided n2o,"indirect, volatilize",NA,kgco2e_hayr,-22.307342684045853
+scen_0004,avoided n2o,"indirect, volatilize",NA,kgco2e_Mgyield,-1.1846513605442177
+scen_0004,n2o,"indirect, volatilize",NA,kgco2e_stand,18.47572852890386
+scen_0004,n2o,"indirect, volatilize",NA,kgco2e_hayr,6.158576176301287
+scen_0004,n2o,"indirect, volatilize",NA,kgco2e_Mgyield,0.3270566893424036
+scen_0004,avoided n2o,"indirect, leach",NA,kgco2e_stand,-235.56553874352417
+scen_0004,avoided n2o,"indirect, leach",NA,kgco2e_hayr,-78.5218462478414
+scen_0004,avoided n2o,"indirect, leach",NA,kgco2e_Mgyield,-4.169972789115645
+scen_0004,n2o,"indirect, leach",NA,kgco2e_stand,201.86580990680358
+scen_0004,n2o,"indirect, leach",NA,kgco2e_hayr,67.28860330226786
+scen_0004,n2o,"indirect, leach",NA,kgco2e_Mgyield,3.573421387755102

@@ -1,0 +1,12 @@
+﻿keep track of what changes between variants,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+scenario_id,scen_desc,location,cat,desc,unit,value,notes
+scen_0001,mix ground/surface irr,tulare,irrigation,fraction from surface source,frac,0.5,Water is 50/50 ground and surface
+scen_0002,all ground irr,tulare,irrigation,fraction from surface source,frac,0,100% of water is from 150 foot depth well
+scen_0003,all surface irr,tulare,irrigation,fraction from surface source,frac,1,100% of water is from surface sources
+scen_0004,defecit irr,tulare,yield,"hay, harvests",harvest/year,5,"deficit irrigation scenario, no July/Aug hay harvests"
+scen_0004,,tulare,yield,hay production,ton/ac/yr at 10% moisture,7,lower yields due to no harvesting
+scen_0004,,tulare,irrigation,"surface, prod",ac-in/year,51,less water used

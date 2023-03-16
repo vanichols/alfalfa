@@ -45,7 +45,7 @@ r_fertn <-
 # non production data (other) ---------------------------------------------
 
 d_o <- 
-  read_csv(paste0("R/code_autofxns2/datain/scen_", f_scenario_id, ".csv"), skip = 5)  |> 
+  read_csv(paste0("R/code_autofxns2/datain/scen_", f_scenario_id, ".csv"))  |> 
   ProcDataIn()
   
 #--what timespan for gwp
@@ -64,11 +64,11 @@ o_gwpn2o <-
 
 # production and energy data --------------------------------------------------------------------
 
-d_p <- my_prod_data
+d_p <- f_prod_data
 
 #--keep only MJ/stand
 d_e <- 
-  my_energy_data |> 
+  f_energy_data |> 
   filter(unit == "GJ_stand") |> 
   mutate(value = value * 1000,
          unit = "MJ_stand")

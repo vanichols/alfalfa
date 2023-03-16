@@ -39,7 +39,7 @@ CalcEnergyUse <- function(f_scenario_id = "0001", f_prod_data = my_prod_data){
 # non production data (other) -----------------------------------------------------
 
   d_o <- 
-    read_csv(paste0("R/code_autofxns2/datain/scen_", f_scenario_id, ".csv"), skip = 5)  |> 
+    read_csv(paste0("R/code_autofxns2/datain/scen_", f_scenario_id, ".csv"))  |> 
     ProcDataIn()
   
   #--which data source to use for energy content (used in u, i, and ?)
@@ -528,13 +528,13 @@ CalcEnergyUse <- function(f_scenario_id = "0001", f_prod_data = my_prod_data){
     mutate(
       GJ_stand = value / 1000,
       GJ_hayr = (value / standlife_years) / 1000,
-      MJ_kg = value / yield_kg_stand) |> 
+      MJ_kgyield = value / yield_kg_stand) |> 
     select(-yield_kg_stand, -standlife_years, -unit, -value)
   
   #--pivot to long
   e12 <- 
     e11 |> 
-    pivot_longer(GJ_stand:MJ_kg) |> 
+    pivot_longer(GJ_stand:MJ_kgyield) |> 
     rename(unit = name)
   
   
