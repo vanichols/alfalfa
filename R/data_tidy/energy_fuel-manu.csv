@@ -1,5 +1,0 @@
-production_id,assump_id,fuel_type,cat,desc,unit,value
-cv_001,a_001,diesel,fuel manufacture,field ops,mj/stand,779.587652280778
-cv_001,a_001,diesel,fuel manufacture,harvest,mj/stand,4487.653880955314
-cv_001,a_001,diesel,fuel manufacture,"sprinkler, ground",mj/stand,201.56140179178485
-cv_001,a_001,diesel,fuel manufacture,"surface, ground",mj/stand,5528.541306288956

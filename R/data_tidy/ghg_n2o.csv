@@ -1,8 +1,0 @@
-production_id,assump_id,cat,desc,unit,value
-cv_001,a_001,n2o,"direct, plant n",kg co2e/stand,200.0312540444677
-cv_001,a_001,n2o,"direct, fert n",kg co2e/stand,115.47330330564914
-cv_001,a_001,avoided n2o,"direct, fert n",kg co2e/stand,-446.1468536809171
-cv_001,a_001,avoided n2o,"indirect, volatilize",kg co2e/stand,-66.92202805213756
-cv_001,a_001,n2o,"indirect, volatilize",kg co2e/stand,9.23786426445193
-cv_001,a_001,avoided n2o,"indirect, leach",kg co2e/stand,-235.56553874352417
-cv_001,a_001,n2o,"indirect, leach",kg co2e/stand,166.58640628086164

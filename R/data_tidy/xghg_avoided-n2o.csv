@@ -1,4 +1,0 @@
-scenario_id,cat,desc,unit,value
-cv_001,n2o avoidance,direct,kg co2e,-446.1468536809171
-cv_001,n2o avoidance,"indirect, volatilize",kg co2e,-66.92202805213756
-cv_001,n2o avoidance,"indirect, leach",kg co2e,-235.56553874352417
