@@ -1,0 +1,58 @@
+see raw_scenario-dictionary for scenario descriptions,,,,,
+"make all units singular, use units source reports in",,,,,
+"unless otherwise noted, values are taken from enterprise budget",,,,,
+"must have field ops, pesticide app amounts, and field ops fuel usage added",,,,,
+,,,,,
+scenario_id,cat,desc,unit,value,notes
+scen_0000,yield,stand life,years,3,
+,,"hay, harvests",harvest/year,7,
+,,"haylage, harvests",harvest/year,2,
+,,hay production,ton/ac/yr at 10% moisture,10,
+,,haylage production,ton/ac/yr at 30% moisture,3,
+,irrigation,"sprinkler, est",ac-in/stand life,8,"for establishment, could require two of these"
+,,"surface, prod",ac-in/year,64,"flood irrigation, could change as part of sensitivity analysis"
+,,fraction from surface source,frac,0.5,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
+,,depth of well,feet,150,
+,,pump pressure,psi,25,
+,,surface irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
+,,sprinkler irr eff,frac,0.8,
+,,drip irr eff,frac,0.9,
+,seed,"round-up ready seed, non-dormant",lb/ac,25,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things"
+,fertility,11-52-0 MAP,lb/ac/pass,200,actual application based on soil tests
+,harvest ops,"haylage, cut",pass/harvest,1,
+,,"haylage, chop",pass/harvest,1,
+,,"hay, swath",pass/harvest,1,
+,,"hay, rake",pass/harvest,1,
+,,"hay, bale",pass/harvest,1,
+,,"hay, stack",pass/harvest,1,
+,n2o direct,fraction of dm not harvested,frac,0.1,defaults used in Burger et al. 2016; https://link.springer.com/article/10.1007/s10705-016-9808-8
+,,kg of n per kg dm,frac,0.027,
+,,kg roots per kg dm harvested,frac,0.4,
+,,kg n per kg root dm,frac,0.019,
+,,kg n-n2o emitted per kg applied/residue n,frac,0.005,Dry region Table 11.1 (updated 2019)
+,n2o indirect,"kg n volatized per kg synthetic n, urea",frac,0.15,Table 11.3 IPCC (updated 2019)
+,,"kg n volatized per kg synthetic n, ammonium",frac,0.08,
+,,"kg n volatized per kg synthetic n, nitrate",frac,0.01,
+,,"kg n volatized per kg synthetic n, ammonium-nitrate",frac,0.05,
+,,"kg n volatized per kg organic n, organic",frac,0.21,
+,,kg n-n2o per kg n volatalized,frac,0.005,
+,,kg n leached per kg n,frac,0.24,
+,,kg n-n2o per kg n leached,frac,0.011,is California an area where leaching occurs?
+,carbon credit,county,,tulare,
+,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
+,fertilizer avoidance,type of fertilizer avoided,,uan-32,to calculate volatilization avoided
+,,"avoided fertilizer, wheat",lb N/ac,80,"Ranged from 70-130 in this study, cites 40-80 from other studies From https://www.cdfa.ca.gov/is/ffldrs/frep/pdfs/completedprojects/12-0385-SA_Putnam.pdf"
+,,"avoided fertilizer, tomatoes",lb N/ac,170,Taken from https://www.alfalfa.org/pdf/USAFRI/Final%20Reports/2018/18Putnam.pdf
+,pesticide manufacture,flumioxazin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
+,,chlorantraniliprole,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
+,,paraquat,MJ/kg ai,459.4,listed in table 2
+,,pendimethalin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
+,,glyphosate,MJ/kg ai,454,listed in table 2
+,,lambda-cyhalothrin,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
+,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
+,energy source,irrigation,,diesel,"Options are diesel, gas, electricity"
+,,"fuel, field ops",,diesel,
+,,"fuel, harvest",,diesel,
+,data source,fuel energy content,,EPA,see data_refs/ref_fuel-energy.csv for options
+,,ghg from fuel,,EPA,"IPCC, EPA, etc. except IPCC doesn't have electricity"
+,gwp,timespan,years,100,defines how much forcing is assigned to ch4 and n2o relative to co2

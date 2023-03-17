@@ -1,0 +1,14 @@
+﻿keep track of what changes between variants,,,,
+note that changes to field ops and/or pests must be made in the scenbyhand-xx files,,,,
+this contains changes to the 'other' variables,,,,
+,,,,
+,,,,
+scenario_id,scen_desc,location,change location,notes
+scen_0000,base,tulare,,
+scen_0001,mix ground/surface irr,tulare,other,Water is 50/50 ground and surface
+scen_0002,all ground irr,tulare,other,100% of water is from 150 foot depth well
+scen_0003,all surface irr,tulare,other,100% of water is from surface sources
+scen_0004,defecit irr,tulare,other,"deficit irrigation scenario, no July/Aug hay harvests"
+,,tulare,other,lower yields due to no harvesting
+,,tulare,other,less water used
+scen_0005,change stand life from 3 to 4 years,tulare,"other, fieldops, pests","stand life value changed, more field ops and more pest applications, more yield is calculated"
