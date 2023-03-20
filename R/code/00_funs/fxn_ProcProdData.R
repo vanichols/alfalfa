@@ -7,7 +7,7 @@ library(tidyverse)
 library(readxl)
 
 
-ProcProdData <- function(f_scenario_id = "0000"){
+ProcProdData <- function(f_scenario_id = "0008"){
   
   
   source("R/code/00_funs/fxn_conversions.R")
@@ -18,7 +18,7 @@ ProcProdData <- function(f_scenario_id = "0000"){
      # data --------------------------------------------------------------------
   
   d <- 
-    read_csv(paste0("R/data_scens/scen_", f_scenario_id, ".csv")) %>% 
+    read_csv(paste0("R/data_scens-notouch/scen_", f_scenario_id, ".csv")) %>% 
     select(-change_ind) 
   
     #--stand life
@@ -140,7 +140,9 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     d %>% 
     filter(cat == "irrigation") %>%
     filter(grepl("est", desc)) |> 
-    mutate(value = as.numeric(value))
+    mutate(value = as.numeric(value)) |> 
+    mutate(unit = "ac-in/stand") |> #--why is it ac-in/stand life?
+    filter(value != 0)
   
   i_est1 <- 
     i_est %>% 
@@ -162,7 +164,8 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     left_join(sl) %>% 
     mutate(value = value * stand_life_yrs,
            unit = "ac-in/stand") %>% 
-    select(-stand_life_yrs)
+    select(-stand_life_yrs) |> 
+    filter(value != 0)
   
   i_prod1 <- 
     i_prod %>% 
@@ -185,13 +188,11 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
   
   # 5. pesticides (c) --------------------------------------------------------------
   
-  
+  #--make values numeric
   c1 <- 
     d %>% 
     filter(cat == "pesticide") %>% 
     mutate(value = as.numeric(value)) |> 
-    group_by(scenario_id, cat, desc, unit) %>% 
-    summarise(value = sum(value)) %>% 
     ungroup()
   
   

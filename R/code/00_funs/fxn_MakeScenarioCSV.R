@@ -10,32 +10,40 @@ library(tidyverse)
 #--this fxn translates that change into the file formats the other functions need
 
 
-MakeScenarioCSV <- function(f_scenario_id = "0001"){
+MakeScenarioCSV <- function(f_scenario_id = "0008"){
   
   
   source("R/code/00_funs/fxn_ProcDataIn.R")
   source("R/code/00_funs/fxn_conversions.R")
+  source("R/code/00_funs/fxn_ProcFops.R")
+  source("R/code/00_funs/fxn_ProcPest.R")
   
   #--first thing you do is piece together the entire 'base' file
   #--combine field ops, pesticide applications, and other
   #--if the values are NOT overwritten, it uses these base values
-  base_fops <- read_csv("R/data_in/scen_fieldops-base.csv")
-  base_pest <- read_csv("R/data_in/scen_pests-base.csv")
-  base_other <- read_csv("R/data_in/scen_other-base.csv", skip = 5) |> 
+  base_fops <- read_csv("R/data_in/base_fieldops.csv")
+  base_pest <- read_csv("R/data_in/base_pests.csv")
+  base_other <- read_csv("R/data_in/base_other.csv", skip = 5) |> 
     ProcDataIn()
   
+
+# other -------------------------------------------------------------------
+
   
   #--read in changes in other, if they exist
-  n_other <- 
-    read_csv("R/data_in/scenbyhand-other.csv", skip = 5) |> 
-    ProcDataIn() |> 
-    filter(scenario_id == paste0("scen_", f_scenario_id))
+  otherTF <- file.exists(paste0("R/data_in/byhand_other/other_scen-", f_scenario_id, ".csv"))
   
-  #--if there were no changes, just use base
-  #--if there were, overwrite the base w/those changes
-  if (nrow(n_other) < 1) {n_other_new <- base_other |> mutate(scenario_id = paste0("scen_", f_scenario_id))} else {
+  if (otherTF == 1) {
+    #--if there is a new file, use it
+    n_other <-
+      read_csv(paste0(
+        "R/data_in/byhand_other/other_scen-",
+        f_scenario_id,
+        ".csv"),
+        skip = 5
+      ) |> 
+      ProcDataIn()
     
-    #--separate variables that will and will not change
     n_other_sub <- 
       n_other |> 
       select(scenario_id, cat, desc, unit, value) |> 
@@ -57,38 +65,65 @@ MakeScenarioCSV <- function(f_scenario_id = "0001"){
       mutate(change_ind = "y") |> 
       bind_rows(n_other_stable) 
     
-    
-    
+  } else {
+    #--if there were no changes, just use base
+    n_other_new <-
+      base_other |> mutate(scenario_id = paste0("scen_", f_scenario_id),
+                           change_ind = "n")
   }
   
+
+
+# fieldops ----------------------------------------------------------------
+
+  #--read in changes in other, if they exist
+  fopsTF <- file.exists((paste0("R/data_in/byhand-fieldops/fops_scen-", f_scenario_id, ".csv")))
   
-  #--run the code that transforms the scenbyhand into clean files for this fxn
-  source("R/code/01_data-prep/01_field-ops.R")
-  n_fops <- read_csv("R/data_in/scen_fieldops.csv") |>
-    filter(scenario_id == paste0("scen_", f_scenario_id))
+  if (fopsTF == TRUE) {
   
-  if (nrow(n_fops)  < 1) {
+    #--run fxn that summarises data
+    n_fops_raw <- read_csv(paste0("R/data_in/byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5)
+    
+    n_fops <- ProcFops(f_scenario_id)
+    
+    n_fops_new <- n_fops |> mutate(change_ind = "y")
+    
+  } else {
+    
     n_fops_new <-
       base_fops |> mutate(scenario_id = paste0("scen_", f_scenario_id),
                           change_ind = "n")
-  }
-  else {
-    n_fops_new <- n_fops |> mutate(change_ind = "y")
+    
   }
   
-  source("R/code/01_data-prep/02_pest.R")
-  n_pest <- read_csv("R/data_in/scen_pests.csv") |>
-    filter(scenario_id == paste0("scen_", f_scenario_id))
+
+# pests -------------------------------------------------------------------
+
+  #--read in changes in other, if they exist
+  pestTF <- file.exists((paste0("R/data_in/byhand-pests/pest_scen-", f_scenario_id, ".csv")))
   
-  if (nrow(n_pest) < 1) {
+  if (pestTF == TRUE) {
+    
+    #--run fxn that summarises data
+    n_pest_raw <- read_csv(paste0("R/data_in/byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5)
+    
+    n_pest <- ProcPest(f_scenario_id)
+    
+    n_pest_new <- n_pest |> mutate(change_ind = "y")
+    
+  } else {
+    
     n_pest_new <-
       base_pest |> mutate(scenario_id = paste0("scen_", f_scenario_id),
                           change_ind = "n")
-  }
-  else {
-    n_pest_new <- n_pest |> mutate(change_ind = "y")
+    
   }
   
+  
+
+# combine fops, pest, other -----------------------------------------------
+
+
   s <- 
     n_fops_new |> 
     mutate(value = as.character(value)) |> 
@@ -105,7 +140,7 @@ MakeScenarioCSV <- function(f_scenario_id = "0001"){
   
   s |>  
     left_join(s_desc) |> 
-    write_csv(paste0("R/data_scens/scen_", f_scenario_id, ".csv"))
+    write_csv(paste0("R/data_scens-notouch/scen_", f_scenario_id, ".csv"))
   
   print(paste0("scen_", f_scenario_id, " was written"))
   

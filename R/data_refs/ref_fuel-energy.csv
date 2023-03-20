@@ -1,7 +1,9 @@
 fuel_type,source,unit,value
 diesel,epa,mj/l,38.46284525159602
 gasoline,epa,mj/l,34.8395337423877
+electricity,epa,mj/kwh,3.6
 diesel,grassini and cassman 2012,mj/l,43
 gasoline,grassini and cassman 2012,mj/l,39.6
 diesel,hoffman et al 1992,mj/l,39.02
 gasoline,hoffman et al 1992,mj/l,34.56
+electricity,hoffman et al 1992,mj/kwh,3.6

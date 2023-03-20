@@ -1,0 +1,9 @@
+﻿overwrites the 'other-base' file,,,,,
+the base-other.csv serves as a base for the changes,,,,,
+,,,,,
+,,,,,
+,,,,,
+scenario_id,cat,desc,unit,value,notes
+scen_0004,yield,"hay, harvests",harvest/year,5,"deficit irrigation scenario, no July/Aug hay harvests"
+,yield,hay production,ton/ac/yr at 10% moisture,7,lower yields due to no harvesting
+,irrigation,"surface, prod",ac-in/year,51,less water used

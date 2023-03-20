@@ -45,7 +45,7 @@ r_fertn <-
 # non production data (other) ---------------------------------------------
 
 d_o <- 
-  read_csv(paste0("R/data_scens/scen_", f_scenario_id, ".csv"))  |> 
+  read_csv(paste0("R/data_scens-notouch/scen_", f_scenario_id, ".csv"))  |> 
   ProcDataIn()
   
 #--what timespan for gwp

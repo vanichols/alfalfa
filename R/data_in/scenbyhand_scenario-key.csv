@@ -12,3 +12,9 @@ scen_0004,defecit irr,tulare,other,"deficit irrigation scenario, no July/Aug hay
 ,,tulare,other,lower yields due to no harvesting
 ,,tulare,other,less water used
 scen_0005,change stand life from 3 to 4 years,tulare,"other, fieldops, pests","stand life value changed, more field ops and more pest applications, more yield is calculated"
+scen_0006,double pump pressure,tulare,other,changed from 25 psi to 50 psi
+scen_0007,eliminate pesticides,tulare,"fieldops, pests",
+scen_0008,electrify irrigation,tulare,other,originally diesel
+scen_0009,electrify harvest equip,tulare,other,originally diesel
+scen_0010,electrify fieldops equip,tulare,other,originally diesel
+scen_0011,change prod irr from flood to drip,tulare,other,"not sure if code can handle this change right now, checking"

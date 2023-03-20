@@ -6,7 +6,7 @@ library(pals)
 
 #--the scenario you want to run
 
-RunScenario <- function(my_scenario_id = "0000") {
+RunScenario <- function(my_scenario_id = "0008") {
   
   # 1. process production data ----------------------------------------------
   

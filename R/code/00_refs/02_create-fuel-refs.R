@@ -28,16 +28,18 @@ ghg <- read_excel("R/data_refs/refbyhand_fuel.xlsx", skip = 5, sheet = "combusti
 e1 <- 
   e |>
   mutate_if(is.character, str_to_lower) |> 
-  filter(fuel_type != "electricity") |>
+  filter(!(fuel_type == "electricity" & source== "grassini and cassman 2012")) |>
   #--change all liquid values to mj/l
   mutate(
     value2 = case_when(
       unit == "mmbtu/gal" ~ value * btu_per_mmbtu * mj_per_btu * gal_per_l,
       unit == "mj/l" ~ value,
-      TRUE ~ 999
+      TRUE ~ value
     ),
-    unit2 = "mj/l"
-  ) |> 
+    unit2 = case_when(
+      fuel_type == "electricity" ~ "mj/kwh", 
+      TRUE ~ "mj/l")
+    ) |> 
   select(fuel_type, source, unit2, value2) |> 
   rename(value = value2,
          unit = unit2)

@@ -10,11 +10,15 @@ scen_0000,yield,stand life,years,3,
 ,,hay production,ton/ac/yr at 10% moisture,10,
 ,,haylage production,ton/ac/yr at 30% moisture,3,
 ,irrigation,"sprinkler, est",ac-in/stand life,8,"for establishment, could require two of these"
-,,"surface, prod",ac-in/year,64,"flood irrigation, could change as part of sensitivity analysis"
+,,"sprinkler, prod",ac-in/year,0,for production
+,,"flood, est",ac-in/stand life,0,
+,,"flood, prod",ac-in/year,64,"assuming it's flood irrigated, can change"
+,,"drip, est",ac-in/stand life,0,
+,,"drip, prod",ac-in/year,0,
 ,,fraction from surface source,frac,0.5,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
 ,,depth of well,feet,150,
 ,,pump pressure,psi,25,
-,,surface irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
+,,flood irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,
 ,seed,"round-up ready seed, non-dormant",lb/ac,25,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things"

@@ -1,0 +1,73 @@
+scenario_id,cat,desc,value,unit,change_ind,notes
+scen_0010,field ops,chisel,1,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,disk,2,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,disk border ridges,1,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,"fertilize, map",2,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,insect control,6,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,laser level,1,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,plant,1,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,roll,3,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,stand termination,1,pass/stand life,n,electrify fieldops equip
+scen_0010,field ops,weed control,9,pass/stand life,n,electrify fieldops equip
+scen_0010,pesticide,chateau,12,oz/ac,n,electrify fieldops equip
+scen_0010,pesticide,coragen,10.5,fl oz/ac,n,electrify fieldops equip
+scen_0010,pesticide,gramoxone,4.5,pint/ac,n,electrify fieldops equip
+scen_0010,pesticide,prowl h2o,3,gal/ac,n,electrify fieldops equip
+scen_0010,pesticide,roundup powermaxx,8,pint/ac,n,electrify fieldops equip
+scen_0010,pesticide,warrior ii,4.5,fl oz/ac,n,electrify fieldops equip
+scen_0010,energy source,"fuel, field ops",electricity,NA,y,electrify fieldops equip
+scen_0010,yield,stand life,3,years,n,electrify fieldops equip
+scen_0010,yield,"hay, harvests",7,harvest/year,n,electrify fieldops equip
+scen_0010,yield,"haylage, harvests",2,harvest/year,n,electrify fieldops equip
+scen_0010,yield,hay production,10,ton/ac/yr at 10% moisture,n,electrify fieldops equip
+scen_0010,yield,haylage production,3,ton/ac/yr at 30% moisture,n,electrify fieldops equip
+scen_0010,irrigation,"sprinkler, est",8,ac-in/stand life,n,electrify fieldops equip
+scen_0010,irrigation,"sprinkler, prod",0,ac-in/year,n,electrify fieldops equip
+scen_0010,irrigation,"flood, est",0,ac-in/stand life,n,electrify fieldops equip
+scen_0010,irrigation,"flood, prod",64,ac-in/year,n,electrify fieldops equip
+scen_0010,irrigation,"drip, est",0,ac-in/stand life,n,electrify fieldops equip
+scen_0010,irrigation,"drip, prod",0,ac-in/year,n,electrify fieldops equip
+scen_0010,irrigation,fraction from surface source,0.5,frac,n,electrify fieldops equip
+scen_0010,irrigation,depth of well,150,feet,n,electrify fieldops equip
+scen_0010,irrigation,pump pressure,25,psi,n,electrify fieldops equip
+scen_0010,irrigation,flood irr eff,0.7,frac,n,electrify fieldops equip
+scen_0010,irrigation,sprinkler irr eff,0.8,frac,n,electrify fieldops equip
+scen_0010,irrigation,drip irr eff,0.9,frac,n,electrify fieldops equip
+scen_0010,seed,"round-up ready seed, non-dormant",25,lb/ac,n,electrify fieldops equip
+scen_0010,fertility,11-52-0 map,200,lb/ac/pass,n,electrify fieldops equip
+scen_0010,harvest ops,"haylage, cut",1,pass/harvest,n,electrify fieldops equip
+scen_0010,harvest ops,"haylage, chop",1,pass/harvest,n,electrify fieldops equip
+scen_0010,harvest ops,"hay, swath",1,pass/harvest,n,electrify fieldops equip
+scen_0010,harvest ops,"hay, rake",1,pass/harvest,n,electrify fieldops equip
+scen_0010,harvest ops,"hay, bale",1,pass/harvest,n,electrify fieldops equip
+scen_0010,harvest ops,"hay, stack",1,pass/harvest,n,electrify fieldops equip
+scen_0010,n2o direct,fraction of dm not harvested,0.1,frac,n,electrify fieldops equip
+scen_0010,n2o direct,kg of n per kg dm,0.027,frac,n,electrify fieldops equip
+scen_0010,n2o direct,kg roots per kg dm harvested,0.4,frac,n,electrify fieldops equip
+scen_0010,n2o direct,kg n per kg root dm,0.019,frac,n,electrify fieldops equip
+scen_0010,n2o direct,kg n-n2o emitted per kg applied/residue n,0.005,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,"kg n volatized per kg synthetic n, urea",0.15,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,"kg n volatized per kg synthetic n, ammonium",0.08,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,"kg n volatized per kg synthetic n, nitrate",0.01,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,"kg n volatized per kg synthetic n, ammonium-nitrate",0.05,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,"kg n volatized per kg organic n, organic",0.21,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,kg n-n2o per kg n volatalized,0.005,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,kg n leached per kg n,0.24,frac,n,electrify fieldops equip
+scen_0010,n2o indirect,kg n-n2o per kg n leached,0.011,frac,n,electrify fieldops equip
+scen_0010,carbon credit,county,tulare,NA,n,electrify fieldops equip
+scen_0010,carbon credit,practice,conservation crop rotation (cps 328) - basic rotation,NA,n,electrify fieldops equip
+scen_0010,fertilizer avoidance,type of fertilizer avoided,uan-32,NA,n,electrify fieldops equip
+scen_0010,fertilizer avoidance,"avoided fertilizer, wheat",80,lb n/ac,n,electrify fieldops equip
+scen_0010,fertilizer avoidance,"avoided fertilizer, tomatoes",170,lb n/ac,n,electrify fieldops equip
+scen_0010,pesticide manufacture,flumioxazin,264.5,mj/kg ai,n,electrify fieldops equip
+scen_0010,pesticide manufacture,chlorantraniliprole,214,mj/kg ai,n,electrify fieldops equip
+scen_0010,pesticide manufacture,paraquat,459.4,mj/kg ai,n,electrify fieldops equip
+scen_0010,pesticide manufacture,pendimethalin,264.5,mj/kg ai,n,electrify fieldops equip
+scen_0010,pesticide manufacture,glyphosate,454,mj/kg ai,n,electrify fieldops equip
+scen_0010,pesticide manufacture,lambda-cyhalothrin,214,mj/kg ai,n,electrify fieldops equip
+scen_0010,seed manufacture,seed yield,500,lbs/ac,n,electrify fieldops equip
+scen_0010,energy source,irrigation,diesel,NA,n,electrify fieldops equip
+scen_0010,energy source,"fuel, harvest",diesel,NA,n,electrify fieldops equip
+scen_0010,data source,fuel energy content,epa,NA,n,electrify fieldops equip
+scen_0010,data source,ghg from fuel,epa,NA,n,electrify fieldops equip
+scen_0010,gwp,timespan,100,years,n,electrify fieldops equip

@@ -1,0 +1,12 @@
+﻿code will use this to overwrite base values,,,,,
+the base-other.csv serves as a base for the changes,,,,,
+,,,,,
+,,,,,
+,,,,,
+scenario_id,cat,desc,unit,value,notes
+scen_0011,irrigation,"sprinkler, est",ac-in/stand life,8,
+,,"sprinkler, prod",ac-in/year,0,
+,,"flood, est",ac-in/stand life,0,
+,,"flood, prod",ac-in/year,0,
+,,"drip, est",ac-in/stand life,0,
+,,"drip, prod",ac-in/year,64,"changed from flood, prod to drip, prod"

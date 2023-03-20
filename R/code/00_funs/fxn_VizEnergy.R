@@ -9,11 +9,11 @@ VizEnergy <- function(f_scenario_id = "0001"){
   
   # results -----------------------------------------------------------------
   
-  r <- read_csv(paste0("R/code_autofxns2/dataout/scen_", f_scenario_id, "-res.csv"))
+  r <- read_csv(paste0("R/data_out/scen_", f_scenario_id, "-res.csv"))
   
   
   #--get scenario description
-  s_log <- read_csv("R/code_autofxns2/datain/man_scenario_log.csv", skip = 5)
+  s_log <- read_csv("R/data_in/scenbyhand_scenario-key.csv", skip = 5)
   
   
   s_desc <- 
@@ -98,7 +98,29 @@ VizEnergy <- function(f_scenario_id = "0001"){
          fill = NULL) + 
     theme(legend.position = "bottom")
   
-  res <- list(e2, fig)
+
+# fig w/o color -----------------------------------------------------------
+
+  fig2 <- 
+    e2 |> 
+    filter(unit != "GJ_stand", 
+           unit != "MJ_kg") |> 
+    arrange(-cat_tot, -value) |> 
+    mutate(desc = fct_inorder(desc),
+           cat_short = fct_inorder(cat_short)) |> 
+    ggplot(aes(fct_rev(cat_short), value, group = desc)) + 
+    geom_col(fill = "white", color = "black") +
+    coord_flip() + 
+    facet_wrap(~unit, scales = "free") +
+    labs(x = NULL,
+         title = "Tulare County",
+         subtitle = paste(s_desc),
+         fill = NULL) + 
+    theme(legend.position = "bottom")
+  
+  
+  
+  res <- list(e2, fig, fig2)
   
   return(res)
   

@@ -4,29 +4,9 @@
 
 library(tidyverse)
 
+# use base scenario -------------------------------------------------------
 
-# read in manually created field ops info for each scenario ---------------
-
-
-d <- read_csv("R/data_in/scenbyhand-pests.csv", skip = 5)
-
-
-
-# summarise ---------------------------------------------------------------
-
-d1 <- 
-  d |> 
-  fill(scenario_id, cat) |> 
-  group_by(scenario_id, cat, desc, unit) |> 
-  summarise(value = sum(value)) |> 
-  mutate(desc = str_to_lower(desc))
-
-
-d1
-
-
-d1 |> 
-  write_csv("R/data_in/scen_pests.csv")
+d1 <- read_csv("R/data_in/base_pests.csv")
 
 
 # add ais -----------------------------------------------------------------

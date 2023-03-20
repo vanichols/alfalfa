@@ -2,9 +2,11 @@
 # created 3/14, combining code from 'code' folder
 # updtaed 3/16 to handle new single file 
 # 3/17 separated out fuel ops assumptions into its own reference file
+# 3/20 - need to figure out how different energy sources are used
+#    especially in irrigation
 
-
-CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
+CalcEnergyUse <- function(f_scenario_id = "0008", 
+                          f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
   source("R/code/00_funs/fxn_ProcDataIn.R")
@@ -42,7 +44,7 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
 # non production data (other) -----------------------------------------------------
 
   d_o <- 
-    read_csv(paste0("R/data_scens/scen_", f_scenario_id, ".csv"))  |> 
+    read_csv(paste0("R/data_scens-notouch/scen_", f_scenario_id, ".csv"))  |> 
     ProcDataIn()
   
   #--which data source to use for energy content (used in u, i, and ?)
@@ -290,7 +292,7 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
     left_join(r_efuel) |> 
     filter(source == d_o_fue) |> 
     mutate(energy_cont = value) |> 
-    select(scenario_id, fuel_type, energy_cont)
+    select(scenario_id, fuel_type, energy_cont, unit)
   
   #--data
   i <- 
@@ -301,6 +303,7 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
   #--need to know the type, the source, the amount
   #--the source is based on the assumption 
   
+  #--get the type
   i1 <- 
     i |> 
     separate(desc, into = c("type", "x"), sep = ",") |> 
@@ -308,7 +311,7 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
     mutate(water_applied_ac_in = value) |> 
     select(scenario_id, cat, type, water_applied_ac_in) 
   
-  
+  #--the amt coming from each source for each type
   i2 <- 
     i1 |> 
     mutate(surface = water_applied_ac_in * i_psurf, #--assumed amt from surface
@@ -342,13 +345,16 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
     unite(type, name, col = "desc", sep = ", ") |> 
     select(scenario_id, cat, desc, mj_per_ha) |> 
     rename(value =  mj_per_ha) |> 
-    mutate(unit = "mj/stand")
+    mutate(unit = "mj/stand") |> 
+    filter(value != 0)
   
   
   #--take into account type of fuel used
   
   i5 <- 
-    i4 |> 
+    i4 |>
+    rename(mj_stand = value) |> 
+    select(-unit) |> 
     left_join(i_fuen) |> 
     left_join(r_eff |> 
                 mutate(therm_eff = value/100) |> 
@@ -356,13 +362,13 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
   
   i6 <- 
     i5 |> 
-    mutate(energy_reqd = value/(therm_eff)) |> 
+    mutate(value = mj_stand/(therm_eff),
+           unit = "mj/stand") |> 
     select(scenario_id,
            cat,
            desc,
            fuel_type,
-           unit, energy_reqd) |> 
-    rename(value = energy_reqd) |> 
+           unit, value) |> 
     filter(value != 0)
   
   
@@ -416,13 +422,16 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
   
   # 6. pesticide manu (p) ---------------------------------------------------
   
-  #--assumptions
+  #--assumed energy used to manu a unit of ai
   
   p_eais <- 
     d_o |> 
     filter(cat == "pesticide manufacture") |>
-    mutate(value = as.numeric(value)) 
-  
+    mutate(value = as.numeric(value)) |> 
+    rename(mj_kgai = value) |> 
+    select(-cat, -unit, -change_ind, -scenario_id)
+
+    
   #--production data
   
   p <- 
@@ -436,9 +445,10 @@ CalcEnergyUse <- function(f_scenario_id = "0000", f_prod_data = my_prod_data){
   
   p2 <- 
     p1 %>%
-    mutate(value = value * value,
+    mutate(value2 = value * mj_kgai,
            unit = "mj/stand") %>% 
-    select(scenario_id, cat, desc, unit, value)
+    select(scenario_id, cat, desc, unit, value2) |> 
+    rename(value = value2)
   
   e6 <- p2
   

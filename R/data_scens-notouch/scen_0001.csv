@@ -1,20 +1,20 @@
 scenario_id,cat,desc,value,unit,change_ind,notes
-scen_0001,field ops,chisel,1,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,disk,2,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,disk border ridges,1,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,"fertilize, map",2,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,insect control,6,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,laser level,1,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,plant,1,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,roll,3,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,stand termination,1,pass/stand life,NA,mix ground/surface irr
-scen_0001,field ops,weed control,9,pass/stand life,NA,mix ground/surface irr
-scen_0001,pesticide,chateau,12,oz/ac,NA,mix ground/surface irr
-scen_0001,pesticide,coragen,10.5,fl oz/ac,NA,mix ground/surface irr
-scen_0001,pesticide,gramoxone,4.5,pint/ac,NA,mix ground/surface irr
-scen_0001,pesticide,prowl h2o,3,gal/ac,NA,mix ground/surface irr
-scen_0001,pesticide,roundup powermaxx,8,pint/ac,NA,mix ground/surface irr
-scen_0001,pesticide,warrior ii,4.5,fl oz/ac,NA,mix ground/surface irr
+scen_0001,field ops,chisel,1,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,disk,2,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,disk border ridges,1,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,"fertilize, map",2,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,insect control,6,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,laser level,1,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,plant,1,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,roll,3,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,stand termination,1,pass/stand life,n,mix ground/surface irr
+scen_0001,field ops,weed control,9,pass/stand life,n,mix ground/surface irr
+scen_0001,pesticide,chateau,12,oz/ac,n,mix ground/surface irr
+scen_0001,pesticide,coragen,10.5,fl oz/ac,n,mix ground/surface irr
+scen_0001,pesticide,gramoxone,4.5,pint/ac,n,mix ground/surface irr
+scen_0001,pesticide,prowl h2o,3,gal/ac,n,mix ground/surface irr
+scen_0001,pesticide,roundup powermaxx,8,pint/ac,n,mix ground/surface irr
+scen_0001,pesticide,warrior ii,4.5,fl oz/ac,n,mix ground/surface irr
 scen_0001,irrigation,fraction from surface source,0.5,frac,y,mix ground/surface irr
 scen_0001,yield,stand life,3,years,n,mix ground/surface irr
 scen_0001,yield,"hay, harvests",7,harvest/year,n,mix ground/surface irr
@@ -22,10 +22,10 @@ scen_0001,yield,"haylage, harvests",2,harvest/year,n,mix ground/surface irr
 scen_0001,yield,hay production,10,ton/ac/yr at 10% moisture,n,mix ground/surface irr
 scen_0001,yield,haylage production,3,ton/ac/yr at 30% moisture,n,mix ground/surface irr
 scen_0001,irrigation,"sprinkler, est",8,ac-in/stand life,n,mix ground/surface irr
-scen_0001,irrigation,"surface, prod",64,ac-in/year,n,mix ground/surface irr
+scen_0001,irrigation,"flood, prod",64,ac-in/year,n,mix ground/surface irr
 scen_0001,irrigation,depth of well,150,feet,n,mix ground/surface irr
 scen_0001,irrigation,pump pressure,25,psi,n,mix ground/surface irr
-scen_0001,irrigation,surface irr eff,0.7,frac,n,mix ground/surface irr
+scen_0001,irrigation,flood irr eff,0.7,frac,n,mix ground/surface irr
 scen_0001,irrigation,sprinkler irr eff,0.8,frac,n,mix ground/surface irr
 scen_0001,irrigation,drip irr eff,0.9,frac,n,mix ground/surface irr
 scen_0001,seed,"round-up ready seed, non-dormant",25,lb/ac,n,mix ground/surface irr
