@@ -4,8 +4,8 @@ this contains changes to the 'other' variables,,,,
 ,,,,
 ,,,,
 scenario_id,scen_desc,location,change location,notes
-scen_0000,base,tulare,,
-scen_0001,mix ground/surface irr,tulare,other,Water is 50/50 ground and surface
+scen_0000,do not use,tulare,,do not use!
+scen_0001,base,tulare,other,Water is 50/50 ground and surface
 scen_0002,all ground irr,tulare,other,100% of water is from 150 foot depth well
 scen_0003,all surface irr,tulare,other,100% of water is from surface sources
 scen_0004,defecit irr,tulare,other,"deficit irrigation scenario, no July/Aug hay harvests"
@@ -17,4 +17,6 @@ scen_0007,eliminate pesticides,tulare,"fieldops, pests",
 scen_0008,electrify irrigation,tulare,other,originally diesel
 scen_0009,electrify harvest equip,tulare,other,originally diesel
 scen_0010,electrify fieldops equip,tulare,other,originally diesel
-scen_0011,change prod irr from flood to drip,tulare,other,"not sure if code can handle this change right now, checking"
+scen_0011,change prod irr from flood to drip,tulare,other,seems to work
+scen_0012,eliminate insecticides,tulare,"pests, fieldops",
+scen_0013,eliminate herbicides,tulare,"pests, fieldops",

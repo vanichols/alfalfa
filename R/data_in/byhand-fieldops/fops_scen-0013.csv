@@ -1,0 +1,16 @@
+﻿field ops entry template,,,,,
+gets procesed and overwrites the 'base' fieldops,,,,,
+just enter everything from the visual,,,,,
+,,,,,
+,,,,,
+scenario_id,cat,desc,unit,value,timing
+scen_0013,field ops,chisel,pass,1,pass/stand life
+,field ops,disk,pass,2,pass/stand life
+,field ops,disk border ridges,pass,1,pass/stand life
+,field ops,"fertilize, map",pass,2,pass/stand life
+,field ops,insect control,pass,6,pass/stand life
+,field ops,laser level,pass,1,pass/stand life
+,field ops,plant,pass,1,pass/stand life
+,field ops,roll,pass,3,pass/stand life
+,field ops,stand termination,pass,1,pass/stand life
+,field ops,weed control,pass,0,pass/stand life

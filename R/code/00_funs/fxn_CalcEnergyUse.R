@@ -5,7 +5,7 @@
 # 3/20 - need to figure out how different energy sources are used
 #    especially in irrigation
 
-CalcEnergyUse <- function(f_scenario_id = "0008", 
+CalcEnergyUse <- function(f_scenario_id = "0009", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
@@ -191,7 +191,8 @@ CalcEnergyUse <- function(f_scenario_id = "0008",
   #--since we assume diesel, we will use that conversion factor to back-calculate the energy req'd
   
   
-  # (thermal efficiency diesel) x (energy req'd) = (diesel energy req'd)
+  #--the actual energy req'd is less than the diesel energy req'd
+  # (thermal efficiency diesel) x (diesel energy req'd) = (actual energy req'd)
   u4 <- 
     u3 %>% 
     mutate(value = diesel_energy * r_dieseff,
@@ -245,6 +246,14 @@ CalcEnergyUse <- function(f_scenario_id = "0008",
     rename(fuel_type = value) |> 
     select(scenario_id, fuel_type)
   
+  #--get thermal efficiency of assumed fuel
+  i_fueff <- 
+    i_fu |> 
+    left_join(r_eff) |> 
+    mutate(therm_eff = value/100) |> 
+    select(-value, -unit)
+  
+  
   #--the efficienvies of irrigation
   i_effs <- 
     d_o |> 
@@ -279,13 +288,7 @@ CalcEnergyUse <- function(f_scenario_id = "0008",
     filter(desc == "pump pressure") |>
     pull(value)
   
-  #--get thermal efficiency of assumed fuel
-  i_fueff <- 
-    i_fu |> 
-    left_join(r_eff) |> 
-    mutate(therm_eff = value/100) |> 
-    select(-value, -unit)
-  
+    
   #--energy content of fuels using assumed data source
   i_fuen <- 
     i_fu |> 
@@ -340,6 +343,7 @@ CalcEnergyUse <- function(f_scenario_id = "0008",
     ) 
   
   
+  #--energy req'd
   i4 <- 
     i3 |> 
     unite(type, name, col = "desc", sep = ", ") |> 
@@ -349,17 +353,17 @@ CalcEnergyUse <- function(f_scenario_id = "0008",
     filter(value != 0)
   
   
-  #--take into account type of fuel used
-  
+  #--take into account type of fuel used, add on thermal efficiency of that fuel
   i5 <- 
     i4 |>
     rename(mj_stand = value) |> 
     select(-unit) |> 
-    left_join(i_fuen) |> 
+    left_join(i_fuen |> select(-energy_cont, -unit)) |> #attaches scenario to fuel type
     left_join(r_eff |> 
                 mutate(therm_eff = value/100) |> 
                 select(-unit, -value))
   
+  #--calculate actual energy expended, given fuel's thermal efficiency
   i6 <- 
     i5 |> 
     mutate(value = mj_stand/(therm_eff),

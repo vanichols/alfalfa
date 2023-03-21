@@ -26,9 +26,9 @@ scen_0010,irrigation,"flood, surface",diesel,MJ_kgyield,0.04330083399702561
 scen_0010,irrigation,"flood, ground",diesel,GJ_stand,11.628067225625001
 scen_0010,irrigation,"flood, ground",diesel,GJ_hayr,3.876022408541667
 scen_0010,irrigation,"flood, ground",diesel,MJ_kgyield,0.15577053269059862
-scen_0010,fuel manufacture,field ops,electricity,GJ_stand,1.8936181334166247
-scen_0010,fuel manufacture,field ops,electricity,GJ_hayr,0.6312060444722082
-scen_0010,fuel manufacture,field ops,electricity,MJ_kgyield,0.025367062266793028
+scen_0010,fuel manufacture,field ops,electricity,GJ_stand,1.159378860268903
+scen_0010,fuel manufacture,field ops,electricity,GJ_hayr,0.38645962008963436
+scen_0010,fuel manufacture,field ops,electricity,MJ_kgyield,0.015531133347450968
 scen_0010,fuel manufacture,harvest,diesel,GJ_stand,4.487653880955314
 scen_0010,fuel manufacture,harvest,diesel,GJ_hayr,1.4958846269851047
 scen_0010,fuel manufacture,harvest,diesel,MJ_kgyield,0.060116975762484745
@@ -80,9 +80,9 @@ scen_0010,field passes,field ops,electricity,kgco2e_Mgyield,0.973699298946916
 scen_0010,field passes,harvest,diesel,kgco2e_stand,1343.6251473016769
 scen_0010,field passes,harvest,diesel,kgco2e_hayr,447.87504910055895
 scen_0010,field passes,harvest,diesel,kgco2e_Mgyield,17.999311568343348
-scen_0010,fuel manufacture,field ops,electricity,kgco2e_stand,127.31269978574858
-scen_0010,fuel manufacture,field ops,electricity,kgco2e_hayr,42.43756659524953
-scen_0010,fuel manufacture,field ops,electricity,kgco2e_Mgyield,1.7054912634320774
+scen_0010,fuel manufacture,field ops,electricity,kgco2e_stand,77.9479506298555
+scen_0010,fuel manufacture,field ops,electricity,kgco2e_hayr,25.98265020995183
+scen_0010,fuel manufacture,field ops,electricity,kgco2e_Mgyield,1.0441970755892707
 scen_0010,fuel manufacture,"flood, ground",diesel,kgco2e_stand,196.7489222463378
 scen_0010,fuel manufacture,"flood, ground",diesel,kgco2e_hayr,65.5829740821126
 scen_0010,fuel manufacture,"flood, ground",diesel,kgco2e_Mgyield,2.635664537359596

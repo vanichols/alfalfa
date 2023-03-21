@@ -29,9 +29,9 @@ scen_0009,irrigation,"flood, ground",diesel,MJ_kgyield,0.15577053269059862
 scen_0009,fuel manufacture,field ops,diesel,GJ_stand,0.768469013549564
 scen_0009,fuel manufacture,field ops,diesel,GJ_hayr,0.25615633784985464
 scen_0009,fuel manufacture,field ops,diesel,MJ_kgyield,0.010294473301034805
-scen_0009,fuel manufacture,harvest,electricity,GJ_stand,11.058224359916085
-scen_0009,fuel manufacture,harvest,electricity,GJ_hayr,3.686074786638695
-scen_0009,fuel manufacture,harvest,electricity,MJ_kgyield,0.14813687139340534
+scen_0009,fuel manufacture,harvest,electricity,GJ_stand,6.770463024593664
+scen_0009,fuel manufacture,harvest,electricity,GJ_hayr,2.256821008197888
+scen_0009,fuel manufacture,harvest,electricity,MJ_kgyield,0.09069767240241168
 scen_0009,fuel manufacture,"sprinkler, surface",diesel,GJ_stand,0.02801485187358743
 scen_0009,fuel manufacture,"sprinkler, surface",diesel,GJ_hayr,0.009338283957862476
 scen_0009,fuel manufacture,"sprinkler, surface",diesel,MJ_kgyield,3.752892303529293e-4
@@ -89,9 +89,9 @@ scen_0009,fuel manufacture,"flood, ground",diesel,kgco2e_Mgyield,2.6356645373595
 scen_0009,fuel manufacture,"flood, surface",diesel,kgco2e_stand,54.69193867497478
 scen_0009,fuel manufacture,"flood, surface",diesel,kgco2e_hayr,18.23064622499159
 scen_0009,fuel manufacture,"flood, surface",diesel,kgco2e_Mgyield,0.7326576511793825
-scen_0009,fuel manufacture,harvest,electricity,kgco2e_stand,743.4721780770459
-scen_0009,fuel manufacture,harvest,electricity,kgco2e_hayr,247.8240593590153
-scen_0009,fuel manufacture,harvest,electricity,kgco2e_Mgyield,9.959613663437196
+scen_0009,fuel manufacture,harvest,electricity,kgco2e_stand,455.19522191381486
+scen_0009,fuel manufacture,harvest,electricity,kgco2e_hayr,151.7317406379383
+scen_0009,fuel manufacture,harvest,electricity,kgco2e_Mgyield,6.097832152145906
 scen_0009,fuel manufacture,"sprinkler, ground",diesel,kgco2e_stand,7.173137790231065
 scen_0009,fuel manufacture,"sprinkler, ground",diesel,kgco2e_hayr,2.3910459300770217
 scen_0009,fuel manufacture,"sprinkler, ground",diesel,kgco2e_Mgyield,0.09609193625790194

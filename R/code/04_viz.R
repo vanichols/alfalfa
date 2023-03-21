@@ -23,13 +23,11 @@ s_desc <-
 
 d <- 
   d_raw |> 
-  left_join(s_desc)
+  left_join(s_desc) |> 
+  filter(scenario_id != "scen_0000")
 
-d_0001 <- 
-  d |> 
-  filter(scenario_id == "scen_0001") |> 
-  filter(unit == "GJ_hayr")
 
+# get total values --------------------------------------------------------
 
 d_tot <- 
   d |> 
@@ -40,7 +38,7 @@ d_tot <-
 d_tot |> 
   filter(!grepl("stand", unit)) |> 
   ggplot(aes(reorder_within(scen_desc, value, unit), value)) + 
-  geom_col() + 
+  geom_col(aes(fill = scen_desc == "base")) + 
   coord_flip() +
   scale_x_reordered() +
   facet_wrap(~unit, scales = "free") 
@@ -52,13 +50,12 @@ d_tot |>
 d_base <- 
   d_tot |> 
   ungroup() |> 
-  filter(scenario_id == "scen_0000") |> 
+  filter(scenario_id == "scen_0001") |> 
   rename(base_value = value) |> 
   select(base_value, unit)
 
 d_tot |> 
-  filter(scenario_id != "scen_0000",
-         scenario_id != "scen_0001") |> #--this is the same as the base
+#  filter(scenario_id != "scen_0001") |> #--this is the base
   left_join(d_base) |> 
   mutate(diff_base = value - base_value) |> 
   filter(grepl("hayr", unit)) |> 
@@ -66,70 +63,11 @@ d_tot |>
   geom_col(aes(fill = diff_base < 0), show.legend = F) + 
   scale_fill_manual(values = c("red", "blue")) +
   scale_x_reordered() +
+  coord_flip() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   facet_wrap(~unit, scales = "free")
 
 
-d_tot |> 
-  filter(scenario_id != "scen_0000",
-         scenario_id != "scen_0001") |> #--this is the same as the base
-  left_join(d_base) |> 
-  mutate(diff_base = value - base_value) |> 
-  filter(grepl("hayr", unit)) |> 
-  ggplot(aes(reorder_within(scen_desc, diff_base, unit), diff_base)) + 
-  geom_col(aes(fill = diff_base < 0)) + 
-  scale_fill_manual(values = c("red", "blue")) +
-  scale_x_reordered() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  facet_grid(unit~., scales = "free_y")
-
-
-# compare -----------------------------------------------------------------
-
-
-d_tot |> 
-  filter(grepl("hayr", unit)) |>
-  filter(scenario_id %in% c("scen_0001", "scen_0008", "scen_0009", "scen_0010")) |> 
-  ggplot(aes(reorder_within(scen_desc, value, unit), value)) + 
-  geom_col() + 
-  coord_flip() +
-  scale_x_reordered() +
-  facet_wrap( ~ unit, scales = "free") 
-
-d_sub <- 
-  d |> 
-  filter(grepl("hayr", unit)) |>
-  filter(scenario_id %in% c("scen_0001", "scen_0008", "scen_0009", "scen_0010")) |> 
-  group_by(scenario_id, cat, unit, scen_desc) |> 
-  summarise(value = sum(value))
-
-d_sub |> 
-  mutate(cat_short = case_when(
-    cat == "irrigation" ~ "irrig",
-    cat == "fuel manufacture" ~ "fuel manu",
-    cat == "fertilizer manufacture" ~ "fert manu",
-    cat == "pesticide manufacture" ~ "pest manu",
-    TRUE ~ cat
-  )) |>
-  filter(unit == "GJ_hayr") |> 
-  arrange(scenario_id, -value) |> 
-  mutate(cat_short = fct_inorder(cat_short)) |> 
-  ggplot(aes(reorder_within(cat_short, value, scenario_id), value)) + 
-  geom_col(fill = "white", color = "black") +
-  scale_x_reordered() +
-  coord_flip() + 
-  facet_wrap(~scenario_id, scales = "free") +
-  labs(x = NULL,
-       title = "Tulare County",
-       subtitle = paste(s_desc),
-       fill = NULL) + 
-  theme(legend.position = "bottom")
-
-
-#--irigation is completely missing in scen_0008?
-d_test <- d |> 
-  filter(scenario_id %in% c("scen_0008")) 
-  
 
 
 # energy ------------------------------------------------------------------
@@ -155,6 +93,13 @@ e3 <- VizEnergy(f_scenario_id = i_want_this_scenario_id)
 data_e3 <- e3[[1]]
 f_e3 <- e3[[2]]
 f2_e3 <- e3[[3]]
+
+
+i_want_this_scenario_id <- "0010"
+e4 <- VizEnergy(f_scenario_id = i_want_this_scenario_id)
+data_e4 <- e4[[1]]
+f_e4 <- e4[[2]]
+f2_e4 <- e4[[3]]
 
 
 
