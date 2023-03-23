@@ -1,0 +1,130 @@
+scenario_id,cat,desc,value,unit,notes,change_ind
+scen_1001,field ops,chisel,1,pass/stand life,est,n
+scen_1001,field ops,disk,1,pass/stand life,est,n
+scen_1001,field ops,disk,1,pass/stand life,est,n
+scen_1001,field ops,laser level,1,pass/stand life,est,n
+scen_1001,field ops,laser level,1,pass/stand life,est,n
+scen_1001,field ops,laser level,1,pass/stand life,est,n
+scen_1001,field ops,"fertilize, est siskiyou",1,pass/stand life,est,n
+scen_1001,field ops,disk,1,pass/stand life,est,n
+scen_1001,field ops,plant,1,pass/stand life,est,n
+scen_1001,field ops,weed control,1,pass/stand life,est,n
+scen_1001,field ops,weed control,1,pass/stand life,yr1,n
+scen_1001,field ops,rodent control,1,pass/stand life,yr1,n
+scen_1001,field ops,"fertilize, prod siskiyou",1,pass/stand life,yr1,n
+scen_1001,field ops,weed control,1,pass/stand life,yr1,n
+scen_1001,field ops,weed control,1,pass/stand life,yr2,n
+scen_1001,field ops,rodent control,1,pass/stand life,yr2,n
+scen_1001,field ops,"fertilize, prod siskiyou",1,pass/stand life,yr2,n
+scen_1001,field ops,weed control,1,pass/stand life,yr2,n
+scen_1001,field ops,weed control,1,pass/stand life,yr3,n
+scen_1001,field ops,rodent control,1,pass/stand life,yr3,n
+scen_1001,field ops,"fertilize, prod siskiyou",1,pass/stand life,yr3,n
+scen_1001,field ops,weed control,1,pass/stand life,yr3,n
+scen_1001,field ops,weed control,1,pass/stand life,yr4,n
+scen_1001,field ops,rodent control,1,pass/stand life,yr4,n
+scen_1001,field ops,"fertilize, prod siskiyou",1,pass/stand life,yr4,n
+scen_1001,field ops,weed control,1,pass/stand life,yr4,n
+scen_1001,field ops,weed control,1,pass/stand life,yr5,n
+scen_1001,field ops,rodent control,1,pass/stand life,yr5,n
+scen_1001,field ops,"fertilize, prod siskiyou",1,pass/stand life,yr5,n
+scen_1001,field ops,weed control,1,pass/stand life,yr5,n
+scen_1001,field ops,weed control,1,pass/stand life,yr6,n
+scen_1001,field ops,rodent control,1,pass/stand life,yr6,n
+scen_1001,field ops,"fertilize, prod siskiyou",1,pass/stand life,yr6,n
+scen_1001,field ops,weed control,1,pass/stand life,yr6,n
+scen_1001,field ops,stand termination,1,pass/stand life,yr6,n
+scen_1001,pesticide,raptor,5,oz/ac,est,n
+scen_1001,NA,herbimax,1,pt/ac,est,n
+scen_1001,NA,TriCor 75DF,0.6,lbs/ac,yr1,n
+scen_1001,NA,gramoxone,2,pt/ac,NA,n
+scen_1001,NA,activator 90,16,fl oz/ac,NA,n
+scen_1001,NA,steward,9,fl oz/ac,NA,n
+scen_1001,NA,zinc phosphide,2.5,lb/ac,NA,n
+scen_1001,NA,TriCor 75DF,0.6,lbs/ac,yr2,n
+scen_1001,NA,gramoxone,2,pt/ac,NA,n
+scen_1001,NA,activator 90,16,fl oz/ac,NA,n
+scen_1001,NA,steward,9,fl oz/ac,NA,n
+scen_1001,NA,zinc phosphide,2.5,lb/ac,NA,n
+scen_1001,NA,TriCor 75DF,0.6,lbs/ac,yr3,n
+scen_1001,NA,gramoxone,2,pt/ac,NA,n
+scen_1001,NA,activator 90,16,fl oz/ac,NA,n
+scen_1001,NA,steward,9,fl oz/ac,NA,n
+scen_1001,NA,zinc phosphide,2.5,lb/ac,NA,n
+scen_1001,NA,TriCor 75DF,0.6,lbs/ac,yr4,n
+scen_1001,NA,gramoxone,2,pt/ac,NA,n
+scen_1001,NA,activator 90,16,fl oz/ac,NA,n
+scen_1001,NA,steward,9,fl oz/ac,NA,n
+scen_1001,NA,zinc phosphide,2.5,lb/ac,NA,n
+scen_1001,NA,TriCor 75DF,0.6,lbs/ac,yr5,n
+scen_1001,NA,gramoxone,2,pt/ac,NA,n
+scen_1001,NA,activator 90,16,fl oz/ac,NA,n
+scen_1001,NA,steward,9,fl oz/ac,NA,n
+scen_1001,NA,zinc phosphide,2.5,lb/ac,NA,n
+scen_1001,NA,TriCor 75DF,0.6,lbs/ac,yr6,n
+scen_1001,NA,gramoxone,2,pt/ac,NA,n
+scen_1001,NA,activator 90,16,fl oz/ac,NA,n
+scen_1001,NA,steward,9,fl oz/ac,NA,n
+scen_1001,NA,zinc phosphide,2.5,lb/ac,NA,n
+scen_1001,yield,stand life,6,years,NA,n
+scen_1001,yield,"hay, harvests",3,harvest/year,NA,n
+scen_1001,yield,"haylage, harvests",0,harvest/year,NA,n
+scen_1001,yield,hay production,6,ton/ac/yr at 10% moisture,NA,n
+scen_1001,yield,haylage production,0,ton/ac/yr at 30% moisture,NA,n
+scen_1001,irrigation,"sprinkler, est",4.5,ac-in/stand life,NA,n
+scen_1001,irrigation,"sprinkler, prod",24,ac-in/year,NA,n
+scen_1001,irrigation,"flood, est",0,ac-in/stand life,NA,n
+scen_1001,irrigation,"flood, prod",0,ac-in/year,NA,n
+scen_1001,irrigation,"drip, est",0,ac-in/stand life,NA,n
+scen_1001,irrigation,"drip, prod",0,ac-in/year,NA,n
+scen_1001,irrigation,fraction from surface source,0.5,frac,NA,n
+scen_1001,irrigation,depth of well,150,feet,NA,n
+scen_1001,irrigation,pump pressure,25,psi,NA,n
+scen_1001,irrigation,flood irr eff,0.7,frac,NA,n
+scen_1001,irrigation,sprinkler irr eff,0.8,frac,NA,n
+scen_1001,irrigation,drip irr eff,0.9,frac,NA,n
+scen_1001,seed,"round-up ready seed, non-dormant",20,lb/ac,NA,n
+scen_1001,fertility,"est, 11-52-0 map",200,lb/ac/pass,NA,n
+scen_1001,fertility,"est, sulfur",50,lb/ac/pass,NA,n
+scen_1001,fertility,"est, potassium",250,lb/ac/pass,NA,n
+scen_1001,fertility,"est, sodium molybdate",1,lb/ac/pass,NA,n
+scen_1001,fertility,"prod, 11-52-0 map",75,lb/ac/pass,NA,n
+scen_1001,fertility,"prod, sulfur",25,lb/ac/pass,NA,n
+scen_1001,fertility,"prod, potassium",250,lb/ac/pass,NA,n
+scen_1001,harvest ops,"haylage, cut",1,pass/harvest,NA,n
+scen_1001,harvest ops,"haylage, chop",1,pass/harvest,NA,n
+scen_1001,harvest ops,"hay, swath",1,pass/harvest,NA,n
+scen_1001,harvest ops,"hay, rake",1,pass/harvest,NA,n
+scen_1001,harvest ops,"hay, bale",1,pass/harvest,NA,n
+scen_1001,harvest ops,"hay, stack",1,pass/harvest,NA,n
+scen_1001,n2o direct,fraction of dm not harvested,0.1,frac,NA,n
+scen_1001,n2o direct,kg of n per kg dm,0.027,frac,NA,n
+scen_1001,n2o direct,kg roots per kg dm harvested,0.4,frac,NA,n
+scen_1001,n2o direct,kg n per kg root dm,0.019,frac,NA,n
+scen_1001,n2o direct,kg n-n2o emitted per kg applied/residue n,0.005,frac,NA,n
+scen_1001,n2o indirect,"kg n volatized per kg synthetic n, urea",0.15,frac,NA,n
+scen_1001,n2o indirect,"kg n volatized per kg synthetic n, ammonium",0.08,frac,NA,n
+scen_1001,n2o indirect,"kg n volatized per kg synthetic n, nitrate",0.01,frac,NA,n
+scen_1001,n2o indirect,"kg n volatized per kg synthetic n, ammonium-nitrate",0.05,frac,NA,n
+scen_1001,n2o indirect,"kg n volatized per kg organic n, organic",0.21,frac,NA,n
+scen_1001,n2o indirect,kg n-n2o per kg n volatalized,0.005,frac,NA,n
+scen_1001,n2o indirect,kg n leached per kg n,0.24,frac,NA,n
+scen_1001,n2o indirect,kg n-n2o per kg n leached,0.011,frac,NA,n
+scen_1001,carbon credit,county,tulare,NA,NA,n
+scen_1001,carbon credit,practice,conservation crop rotation (cps 328) - basic rotation,NA,NA,n
+scen_1001,fertilizer avoidance,type of fertilizer avoided,uan-32,NA,NA,n
+scen_1001,fertilizer avoidance,"avoided fertilizer, wheat",80,lb n/ac,NA,n
+scen_1001,fertilizer avoidance,"avoided fertilizer, tomatoes",170,lb n/ac,NA,n
+scen_1001,pesticide manufacture,flumioxazin,264.5,mj/kg ai,NA,n
+scen_1001,pesticide manufacture,chlorantraniliprole,214,mj/kg ai,NA,n
+scen_1001,pesticide manufacture,paraquat,459.4,mj/kg ai,NA,n
+scen_1001,pesticide manufacture,pendimethalin,264.5,mj/kg ai,NA,n
+scen_1001,pesticide manufacture,glyphosate,454,mj/kg ai,NA,n
+scen_1001,pesticide manufacture,lambda-cyhalothrin,214,mj/kg ai,NA,n
+scen_1001,seed manufacture,seed yield,500,lbs/ac,NA,n
+scen_1001,energy source,irrigation,diesel,NA,NA,n
+scen_1001,energy source,"fuel, field ops",diesel,NA,NA,n
+scen_1001,energy source,"fuel, harvest",diesel,NA,NA,n
+scen_1001,data source,fuel energy content,epa,NA,NA,n
+scen_1001,data source,ghg from fuel,epa,NA,NA,n
+scen_1001,gwp,timespan,100,years,NA,n

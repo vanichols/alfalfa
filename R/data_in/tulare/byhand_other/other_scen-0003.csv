@@ -1,0 +1,2 @@
+﻿scenario_id,cat,desc,unit,value,notes
+scen_0003,irrigation,fraction from surface source,frac,1,100% of water is from surface sources

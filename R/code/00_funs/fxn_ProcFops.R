@@ -6,12 +6,12 @@ library(tidyverse)
 
 
 
-ProcFops <- function(f_scenario_id = "0007"){
+ProcFops <- function(f_scenario_id = "0007", f_county = "tulare"){
   # read in manually created field ops info for each scenario ---------------
   
   
   d <- 
-    read_csv(paste0("R/data_in/byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5) 
+    read_csv(paste0("R/data_in/", f_county, "byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5) 
   
   
   # summarise ---------------------------------------------------------------

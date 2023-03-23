@@ -6,7 +6,10 @@ library(tidyverse)
 
 # use base scenario -------------------------------------------------------
 
-d1 <- read_csv("R/data_in/base_pests.csv")
+d1 <- read_csv("R/data_in/tulare/base_pests.csv")
+d2 <- read_csv("R/data_in/siskiyou/base_pests.csv") |> 
+  group_by(scenario_id, cat, desc, unit) |> 
+  summarise(value = sum(value))
 
 
 # add ais -----------------------------------------------------------------
@@ -15,6 +18,8 @@ d1 <- read_csv("R/data_in/base_pests.csv")
 #--assign active ingredient to each product name
 ais <- 
   d1 %>% 
+  bind_rows(d2) |> 
+  mutate(desc = str_to_lower(desc)) |> 
   ungroup() |> 
   select(desc) |> 
   mutate(ai = case_when(
@@ -24,6 +29,12 @@ ais <-
     desc == "chateau" ~ "flumioxazin",
     desc == "prowl h2o" ~ "pendimethalin",
     desc == "gramoxone" ~ "paraquat",
+    desc == "herbimax" ~ "surfactant",
+    desc == "raptor" ~ "imazamox",
+    desc == "tricor 75df" ~ "metribuzin",
+    desc == "activator 90" ~ "surfactant",
+    desc == "steward" ~ "indoxacarb",
+    desc == "zinc phosphide" ~ "zinc phosphide",
     TRUE ~ "XXXXX"
   ))
 
@@ -57,17 +68,24 @@ ais_amts <-
   tribble(
     ~ai,                     ~value_ai,       ~unit_ai,
     "chlorantraniliprole",     1.67,         "lb AI/gal",
-    "flumioxazin",             0.414,         "g/g", #--for chateau ez, the liquid formulation
+    "flumioxazin",             0.414,         "g AI/g", #--for chateau ez, the liquid formulation
     "glyphosate",              5.88,         "lb AI/gal",
     "lambda-cyhalothrin",      2.08,         "lb AI/gal",
     "paraquat",                2.762,        "lb AI/gal",
-    "pendimethalin",           3.8,          "lb AI/gal"
+    "pendimethalin",           3.8,          "lb AI/gal",
+    "imazamox",                700,            "g AI/kg",
+    "metribuzin",              .75,            "g AI/g",
+    "surfactant",              .9,             "g AI/g",
+    "indoxacarb",              1.25,           "lb AI/gal",
+    "zinc phosphide",          1,              "g AI/g"
+    
   )
 
 ai_res <- 
   ais %>% 
   left_join(ais_amts) 
 
+ai_res
 
 ai_res |> 
   write_csv("R/data_refs/ref_pest-ais.csv")

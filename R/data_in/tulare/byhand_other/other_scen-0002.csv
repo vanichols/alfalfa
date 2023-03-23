@@ -1,0 +1,2 @@
+﻿scenario_id,cat,desc,unit,value,notes
+scen_0002,irrigation,fraction from surface source,frac,0,100% of water is from 150 foot depth well

@@ -1,0 +1,7 @@
+﻿scenario_id,location,cat,desc,unit,value,timing,notes
+scen_0012,tulare,pesticide,chateau,oz/ac,12,,
+,,,coragen,fl oz/ac,0,eliminate insecticide application,
+,,,gramoxone,pint/ac,4.5,,
+,,,prowl h2o,gal/ac,3,,
+,,,roundup powermaxx,pint/ac,8,,
+,,,warrior ii,fl oz/ac,0,eliminate insecticide application,

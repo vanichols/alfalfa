@@ -1,0 +1,38 @@
+pesticide applications,,,,,
+enterprise budget values,,,,,
+siskiyou,,,,,
+,,,,,
+,,,,,
+scenario_id,cat,desc,unit,value,notes
+scen_1000,pesticide,raptor,oz/ac,5,est
+,,herbimax,pt/ac,1,est
+,,TriCor 75DF,lbs/ac,0.6,yr1
+,,gramoxone,pt/ac,2,
+,,activator 90,fl oz/ac,16,
+,,steward,fl oz/ac,9,
+,,zinc phosphide,lb/ac,2.5,
+,,TriCor 75DF,lbs/ac,0.6,yr2
+,,gramoxone,pt/ac,2,
+,,activator 90,fl oz/ac,16,
+,,steward,fl oz/ac,9,
+,,zinc phosphide,lb/ac,2.5,
+,,TriCor 75DF,lbs/ac,0.6,yr3
+,,gramoxone,pt/ac,2,
+,,activator 90,fl oz/ac,16,
+,,steward,fl oz/ac,9,
+,,zinc phosphide,lb/ac,2.5,
+,,TriCor 75DF,lbs/ac,0.6,yr4
+,,gramoxone,pt/ac,2,
+,,activator 90,fl oz/ac,16,
+,,steward,fl oz/ac,9,
+,,zinc phosphide,lb/ac,2.5,
+,,TriCor 75DF,lbs/ac,0.6,yr5
+,,gramoxone,pt/ac,2,
+,,activator 90,fl oz/ac,16,
+,,steward,fl oz/ac,9,
+,,zinc phosphide,lb/ac,2.5,
+,,TriCor 75DF,lbs/ac,0.6,yr6
+,,gramoxone,pt/ac,2,
+,,activator 90,fl oz/ac,16,
+,,steward,fl oz/ac,9,
+,,zinc phosphide,lb/ac,2.5,

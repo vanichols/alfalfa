@@ -1,9 +1,4 @@
-﻿field ops entry template,,,,,
-gets procesed and overwrites the 'base' fieldops,,,,,
-just enter everything from the visual,,,,,
-,,,,,
-,,,,,
-scenario_id,cat,desc,unit,value,timing
+﻿scenario_id,cat,desc,unit,value,timing
 scen_0012,field ops,chisel,pass,1,pass/stand life
 ,field ops,disk,pass,2,pass/stand life
 ,field ops,disk border ridges,pass,1,pass/stand life

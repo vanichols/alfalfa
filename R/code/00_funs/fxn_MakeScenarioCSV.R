@@ -10,7 +10,7 @@ library(tidyverse)
 #--this fxn translates that change into the file formats the other functions need
 
 
-MakeScenarioCSV <- function(f_scenario_id = "0012"){
+MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
   
   
   source("R/code/00_funs/fxn_ProcDataIn.R")
@@ -21,9 +21,9 @@ MakeScenarioCSV <- function(f_scenario_id = "0012"){
   #--first thing you do is piece together the entire 'base' file
   #--combine field ops, pesticide applications, and other
   #--if the values are NOT overwritten, it uses these base values
-  base_fops <- read_csv("R/data_in/base_fieldops.csv")
-  base_pest <- read_csv("R/data_in/base_pests.csv")
-  base_other <- read_csv("R/data_in/base_other.csv", skip = 5) |> 
+  base_fops <- read_csv(paste0("R/data_in/", f_county, "/base_fieldops.csv"), skip = 5)
+  base_pest <- read_csv(paste0("R/data_in/", f_county, "/base_pests.csv"), skip = 5)
+  base_other <- read_csv(paste0("R/data_in/", f_county, "/base_other.csv"), skip = 5)|> 
     ProcDataIn()
   
 
@@ -31,17 +31,17 @@ MakeScenarioCSV <- function(f_scenario_id = "0012"){
 
   
   #--read in changes in other, if they exist
-  otherTF <- file.exists(paste0("R/data_in/byhand_other/other_scen-", f_scenario_id, ".csv"))
+  otherTF <- file.exists(paste0("R/data_in/", f_county, "/byhand_other/other_scen-", f_scenario_id, ".csv"))
   
   if (otherTF == 1) {
     #--if there is a new file, use it
     n_other <-
       read_csv(paste0(
-        "R/data_in/byhand_other/other_scen-",
+        "R/data_in/",
+        f_county, 
+        "/byhand_other/other_scen-",
         f_scenario_id,
-        ".csv"),
-        skip = 5
-      ) |> 
+        ".csv")) |> 
       ProcDataIn()
     
     n_other_sub <- 
@@ -77,12 +77,12 @@ MakeScenarioCSV <- function(f_scenario_id = "0012"){
 # fieldops ----------------------------------------------------------------
 
   #--read in changes in other, if they exist
-  fopsTF <- file.exists((paste0("R/data_in/byhand-fieldops/fops_scen-", f_scenario_id, ".csv")))
+  fopsTF <- file.exists((paste0("R/data_in/", f_county, "/byhand-fieldops/fops_scen-", f_scenario_id, ".csv")))
   
   if (fopsTF == TRUE) {
   
     #--run fxn that summarises data
-    n_fops_raw <- read_csv(paste0("R/data_in/byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5)
+    n_fops_raw <- read_csv(paste0("R/data_in/", f_county, "byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5)
     
     n_fops <- ProcFops(f_scenario_id)
     
@@ -100,12 +100,12 @@ MakeScenarioCSV <- function(f_scenario_id = "0012"){
 # pests -------------------------------------------------------------------
 
   #--read in changes in other, if they exist
-  pestTF <- file.exists((paste0("R/data_in/byhand-pests/pest_scen-", f_scenario_id, ".csv")))
+  pestTF <- file.exists((paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv")))
   
   if (pestTF == TRUE) {
     
     #--run fxn that summarises data
-    n_pest_raw <- read_csv(paste0("R/data_in/byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5)
+    n_pest_raw <- read_csv(paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5)
     
     n_pest <- ProcPest(f_scenario_id)
     
