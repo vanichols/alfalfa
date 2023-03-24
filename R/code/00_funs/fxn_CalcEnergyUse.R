@@ -4,8 +4,9 @@
 # 3/17 separated out fuel ops assumptions into its own reference file
 # 3/20 - need to figure out how different energy sources are used
 #    especially in irrigation
+# 3/24 - trying to run w/siskiyou data
 
-CalcEnergyUse <- function(f_scenario_id = "0009", 
+CalcEnergyUse <- function(f_scenario_id = "0001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
@@ -62,11 +63,19 @@ CalcEnergyUse <- function(f_scenario_id = "0009",
   
   # 1. fert avoidance (a) --------------------------------------------
   
-  #--assume tomato crop is following
+  #--what is the following crop
+  
+  a_crop <- 
+    d_o |> 
+    filter(cat == "fertilizer avoidance",
+           desc == "subsequent crop") |> 
+    pull(value)
+    
+  
   #--get assumed amoutn of n application avoided
   a_avoid <- 
     d_o %>% 
-    filter(grepl("tomatoes", desc)) %>% 
+    filter(grepl(a_crop, desc)) %>% 
     mutate(
       value = as.numeric(value),
       #--units are currently lb n/ac

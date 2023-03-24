@@ -1,7 +1,7 @@
 cat,desc,value,unit
 raw nutrient,nitrogen,58.039906613672564,mj/kg nutrient
 raw nutrient,p2o5,30.074192510993036,mj/kg nutrient
-raw nutrient,k2o,8.239201651373117,mj/kg nutrient
+raw nutrient,potassium,8.239201651373117,mj/kg nutrient
 raw nutrient,caco3,0.12573973588996912,mj/kg nutrient
 11-52-0 map,nitrogen,6.384389727503982,mj/kg prod
 11-52-0 map,p2o5,15.63858010571638,mj/kg prod

@@ -6,19 +6,21 @@ library(tidyverse)
 
 # use base scenario -------------------------------------------------------
 
-d1 <- read_csv("R/data_in/tulare/base_pests.csv")
-d2 <- read_csv("R/data_in/siskiyou/base_pests.csv") |> 
+d1 <- read_csv("R/data_in/tulare/base_pests.csv", skip = 5)
+d2 <- read_csv("R/data_in/siskiyou/base_pests.csv", skip = 5) |> 
   group_by(scenario_id, cat, desc, unit) |> 
   summarise(value = sum(value))
 
+d <- 
+  d1 %>% 
+  bind_rows(d2)
 
 # add ais -----------------------------------------------------------------
 
 
 #--assign active ingredient to each product name
 ais <- 
-  d1 %>% 
-  bind_rows(d2) |> 
+ d |> 
   mutate(desc = str_to_lower(desc)) |> 
   ungroup() |> 
   select(desc) |> 
@@ -36,7 +38,8 @@ ais <-
     desc == "steward" ~ "indoxacarb",
     desc == "zinc phosphide" ~ "zinc phosphide",
     TRUE ~ "XXXXX"
-  ))
+  )) |> 
+  distinct()
 
 
 

@@ -5,7 +5,7 @@ scen_0005,field ops,disk,pass,1,establishment
 ,,roll,pass,1,establishment
 ,,laser level,pass,1,establishment
 ,,disk border ridges,pass,1,establishment
-,,"fertilize, map",pass,1,establishment
+,,"fertilize, map1",pass,1,establishment
 ,,disk,pass,1,establishment
 ,,roll,pass,1,establishment
 ,,plant,pass,1,establishment
@@ -18,13 +18,13 @@ scen_0005,field ops,disk,pass,1,establishment
 ,,weed control,pass,1,year 2
 ,,insect control,pass,1,year 2
 ,,insect control,pass,1,year 2
-,,"fertilize, map",pass,1,year 2
+,,"fertilize, map1",pass,1,year 2
 ,,weed control,pass,1,year 2
 ,,weed control,pass,1,year 2
 ,,weed control,pass,1,year 3
 ,,insect control,pass,1,year 3
 ,,insect control,pass,1,year 3
-,,"fertilize, map",pass,1,year 3
+,,"fertilize, map1",pass,1,year 3
 ,,weed control,pass,1,year 3
 ,,weed control,pass,1,year 3
 ,,weed control,pass,1,year 4

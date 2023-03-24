@@ -36,7 +36,7 @@ fert_n <-
            fert_type == "11-52-0 map" ~ 0.11,
            fert_type == "uan-32" ~ 0.32,
            #fert_type == "composted poultry litter" ~ 0.03,
-           TRUE ~ 999
+           TRUE ~ 0 #--applies to sulfur, potassium, sodium molybdate
          ),
          unit = "kg n/kg fertilizer"
          )
@@ -166,7 +166,25 @@ greet3 <-
   select(cat, desc, value, unit) |> 
   bind_rows(greet2)
 
+#--rename k2o as potassium
+greet4 <- 
+  greet3 |> 
+  mutate(desc = ifelse(desc == "k2o", "potassium", desc))
+  
+#--i don't know what to do for sulfur or sodium molybdate
+#--use greet value for sulfuric acid (Ag_inputs tab, F101); 0.518 mmbtu/ton
+
+sulfur_value <- 
+  0.518 * # mmbtu/ton
+  (1/lbs_per_ton) *
+  (1/1000000) *
+  mj_per_btu
   
 
-greet3 %>% 
+greet4 |>
+  add_row(cat = "raw nutrient", 
+          desc = "sulfur",
+          value)
+
+greet4 %>% 
   write_csv("R/data_refs/ref_fert-energy.csv")

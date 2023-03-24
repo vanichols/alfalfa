@@ -1,21 +1,18 @@
 #--prep pesticide section
 #--each row must be unique in the final scenario file
 #--this code condenses the entered info into that form
+#--simplify to just read in the data you feed it 3/24/2023
+
 
 library(tidyverse)
 
 
-ProcPest <- function(f_scenario_id = "0007", f_county = "tulare"){
-  
-  # read in manually created field ops info for each scenario ---------------
-  d <- 
-    read_csv(paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5) 
-  
+ProcPest <- function(data = d){
   
   # summarise ---------------------------------------------------------------
   
   d1 <- 
-    d |> 
+    data |> 
     fill(scenario_id, cat) |> 
     group_by(scenario_id, cat, desc, unit) |> 
     summarise(value = sum(value, na.rm = T)) |> 

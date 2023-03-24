@@ -22,7 +22,7 @@ scen_0000,yield,stand life,years,3,
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,
 ,seed,"round-up ready seed, non-dormant",lb/ac,25,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things"
-,fertility,11-52-0 MAP,lb/ac/pass,200,actual application based on soil tests
+,fertility,"map1, 11-52-0 map",lb/ac/pass,200,actual application based on soil tests
 ,harvest ops,"haylage, cut",pass/harvest,1,
 ,,"haylage, chop",pass/harvest,1,
 ,,"hay, swath",pass/harvest,1,
@@ -45,6 +45,7 @@ scen_0000,yield,stand life,years,3,
 ,carbon credit,county,,tulare,
 ,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
 ,fertilizer avoidance,type of fertilizer avoided,,uan-32,to calculate volatilization avoided
+,,subsequent crop,,tomatoes,
 ,,"avoided fertilizer, wheat",lb N/ac,80,"Ranged from 70-130 in this study, cites 40-80 from other studies From https://www.cdfa.ca.gov/is/ffldrs/frep/pdfs/completedprojects/12-0385-SA_Putnam.pdf"
 ,,"avoided fertilizer, tomatoes",lb N/ac,170,Taken from https://www.alfalfa.org/pdf/USAFRI/Final%20Reports/2018/18Putnam.pdf
 ,pesticide manufacture,flumioxazin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"

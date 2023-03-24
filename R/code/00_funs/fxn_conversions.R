@@ -11,6 +11,7 @@ library(measurements)
 # density -----------------------------------------------------------------
 
 den_dies_kg_per_l <- 0.8375
+metribuzin_g_cm3 <- 1.31
 
 # weight -------------------------------------------------------------------
 
@@ -66,6 +67,9 @@ tj_per_mj <- 1/mj_per_tj
 cm3_per_m3 <- conv_unit(1, "m3", "cm3")
 cuft_per_m3 <- conv_unit(1, "m3", "ft3")
 m3_per_cuft <- 1/cuft_per_m3
+
+cm3_per_gal <- 3785.41
+gal_per_cm3 <- 1/cm3_per_gal
 
 pints_per_gal <- conv_unit(1, "us_gal", "us_pint")
 l_per_gal <- conv_unit(1, "us_gal", "l")

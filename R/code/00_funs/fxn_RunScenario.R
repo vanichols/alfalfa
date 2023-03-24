@@ -2,11 +2,10 @@
 
 library(tidyverse)
 library(readxl)
-library(pals)
 
 #--the scenario you want to run
 
-RunScenario <- function(my_scenario_id = "0012") {
+RunScenario <- function(my_scenario_id = "1001") {
   
   # 1. process production data ----------------------------------------------
   

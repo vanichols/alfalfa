@@ -13,4 +13,4 @@ source("R/code/00_funs/fxn_MakeScenarioCSV.R")
 
 #--note scen_0000 is NOT meant to be run - it only serves as a base of values
 
-MakeScenarioCSV(f_scenario_id = "0013")
+MakeScenarioCSV(f_scenario_id = "0001", f_county = "tulare")

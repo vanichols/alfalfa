@@ -22,13 +22,13 @@ scen_1000,yield,stand life,years,6,enterprise budget says 6-8 years
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,
 ,seed,"round-up ready seed, non-dormant",lb/ac,20,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things"
-,fertility,"est, 11-52-0 MAP",lb/ac/pass,200,applied at establishment
-,,"est, sulfur",lb/ac/pass,50,
-,,"est, potassium",lb/ac/pass,250,muriate of potash
-,,"est, sodium molybdate",lb/ac/pass,1,no idea what this is
-,,"prod, 11-52-0 map",lb/ac/pass,75,
-,,"prod, sulfur",lb/ac/pass,25,
-,,"prod, potassium",lb/ac/pass,250,muriate of potash
+,fertility,"est1, 11-52-0 MAP",lb/ac/pass,200,applied at establishment
+,,"est1, sulfur",lb/ac/pass,50,
+,,"est1, potassium",lb/ac/pass,250,muriate of potash
+,,"est1, sodium molybdate",lb/ac/pass,1,no idea what this is
+,,"prod1, 11-52-0 map",lb/ac/pass,75,
+,,"prod1, sulfur",lb/ac/pass,25,
+,,"prod1, potassium",lb/ac/pass,250,muriate of potash
 ,harvest ops,"haylage, cut",pass/harvest,1,
 ,,"haylage, chop",pass/harvest,1,
 ,,"hay, swath",pass/harvest,1,
@@ -51,6 +51,7 @@ scen_1000,yield,stand life,years,6,enterprise budget says 6-8 years
 ,carbon credit,county,,tulare,
 ,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
 ,fertilizer avoidance,type of fertilizer avoided,,uan-32,to calculate volatilization avoided
+,,subsequent crop,,wheat,
 ,,"avoided fertilizer, wheat",lb N/ac,80,"Ranged from 70-130 in this study, cites 40-80 from other studies From https://www.cdfa.ca.gov/is/ffldrs/frep/pdfs/completedprojects/12-0385-SA_Putnam.pdf"
 ,,"avoided fertilizer, tomatoes",lb N/ac,170,Taken from https://www.alfalfa.org/pdf/USAFRI/Final%20Reports/2018/18Putnam.pdf
 ,pesticide manufacture,flumioxazin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"

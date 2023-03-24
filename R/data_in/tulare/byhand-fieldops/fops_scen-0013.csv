@@ -2,7 +2,7 @@
 scen_0013,field ops,chisel,pass,1,pass/stand life
 ,field ops,disk,pass,2,pass/stand life
 ,field ops,disk border ridges,pass,1,pass/stand life
-,field ops,"fertilize, map",pass,2,pass/stand life
+,field ops,"fertilize, map1",pass,2,pass/stand life
 ,field ops,insect control,pass,6,pass/stand life
 ,field ops,laser level,pass,1,pass/stand life
 ,field ops,plant,pass,1,pass/stand life

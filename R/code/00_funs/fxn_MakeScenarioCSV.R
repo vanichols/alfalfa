@@ -21,8 +21,12 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
   #--first thing you do is piece together the entire 'base' file
   #--combine field ops, pesticide applications, and other
   #--if the values are NOT overwritten, it uses these base values
-  base_fops <- read_csv(paste0("R/data_in/", f_county, "/base_fieldops.csv"), skip = 5)
-  base_pest <- read_csv(paste0("R/data_in/", f_county, "/base_pests.csv"), skip = 5)
+  base_fops <- read_csv(paste0("R/data_in/", f_county, "/base_fieldops.csv"), skip = 5) |> 
+    ProcFops()
+  
+  base_pest <- read_csv(paste0("R/data_in/", f_county, "/base_pests.csv"), skip = 5) |> 
+    ProcPest()
+  
   base_other <- read_csv(paste0("R/data_in/", f_county, "/base_other.csv"), skip = 5)|> 
     ProcDataIn()
   
@@ -68,7 +72,8 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
   } else {
     #--if there were no changes, just use base
     n_other_new <-
-      base_other |> mutate(scenario_id = paste0("scen_", f_scenario_id),
+      base_other |> 
+      mutate(scenario_id = paste0("scen_", f_scenario_id),
                            change_ind = "n")
   }
   
@@ -82,16 +87,16 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
   if (fopsTF == TRUE) {
   
     #--run fxn that summarises data
-    n_fops_raw <- read_csv(paste0("R/data_in/", f_county, "byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5)
-    
-    n_fops <- ProcFops(f_scenario_id)
-    
-    n_fops_new <- n_fops |> mutate(change_ind = "y")
+    n_fops_new <- 
+      read_csv(paste0("R/data_in/", f_county, "byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5) |> 
+      ProcFops() |> 
+      mutate(change_ind = "y")
     
   } else {
     
     n_fops_new <-
-      base_fops |> mutate(scenario_id = paste0("scen_", f_scenario_id),
+      base_fops |> 
+      mutate(scenario_id = paste0("scen_", f_scenario_id),
                           change_ind = "n")
     
   }
@@ -105,16 +110,16 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
   if (pestTF == TRUE) {
     
     #--run fxn that summarises data
-    n_pest_raw <- read_csv(paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5)
-    
-    n_pest <- ProcPest(f_scenario_id)
-    
-    n_pest_new <- n_pest |> mutate(change_ind = "y")
+    n_pest_new <- 
+      read_csv(paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5) |> 
+      ProcPest() |> 
+      mutate(change_ind = "y")
     
   } else {
     
     n_pest_new <-
-      base_pest |> mutate(scenario_id = paste0("scen_", f_scenario_id),
+      base_pest |> 
+      mutate(scenario_id = paste0("scen_", f_scenario_id),
                           change_ind = "n")
     
   }
@@ -138,8 +143,11 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
     filter(!is.na(scenario_id)) |> 
     rename(notes = scen_desc)
   
-  s |>  
-    left_join(s_desc) |> 
+  s_write <- 
+    s |>  
+    left_join(s_desc) 
+  
+  s_write |> 
     write_csv(paste0("R/data_scens-notouch/scen_", f_scenario_id, ".csv"))
   
   print(paste0("scen_", f_scenario_id, " was written"))

@@ -7,8 +7,7 @@ library(tidyverse)
 library(readxl)
 
 
-ProcProdData <- function(f_scenario_id = "0012"){
-  
+ProcProdData <- function(f_scenario_id = "0001"){
   
   source("R/code/00_funs/fxn_conversions.R")
   source("R/code/00_funs/fxn_ProcDataIn.R")  
@@ -38,49 +37,44 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
   
   # 1. fertility ---------------------------------------------------------------
   
-  #--need to know how many assumed applications there are per stand life
+  #--need to know how many assumed applications there are per stand life of each type of fertilizer
   f_passes <- 
     d %>% 
     filter(cat == "field ops") %>% 
     filter(grepl("fertilize", desc)) %>% 
     mutate(value = as.numeric(value)) |> 
-    group_by(scenario_id, cat, desc) %>% 
-    summarise(value = sum(value))
-  
-  
-  #--separate passes by fertilizer type
-  f_pass_map <- 
-    f_passes %>% 
-    filter(grepl("map", desc)) %>% 
-    pull(value)
-  
-  #--now get amount per pass
-  f1 <- 
-    d %>% 
-    filter(cat == "fertility") |> 
-    mutate(value = as.numeric(value))
+    #--get type of fert pass it is
+    separate(desc, into = c("x", "fert_desc"), sep = ",") |> 
+    mutate(fert_desc = str_trim(fert_desc),
+           pass_per_sl = value) |> 
+    select(-x, -notes, -cat, -value, -unit)  
     
+  #--if it is every not lb/ac, this needs to be updated
+  f_amts <- 
+    d |> 
+    filter(cat == "fertility") |> 
+    separate(desc, into = c("fert_desc", "fert_type"), sep = ",") |> 
+    mutate_if(is.character, str_trim) |> 
+    left_join(f_passes) |> 
+    mutate(value = as.numeric(value) * pass_per_sl,
+           unit = case_when(
+             (unit == "lb/ac/pass") ~ "lb/ac/stand",
+             TRUE ~ "XXXX"
+           ))
   
-  #--do map 11-52-0 (need to amend when adding different fertilizers)
+  #--change to kg per ha per stand
   
-  f1_map <- 
-    f1 %>% 
-    filter(grepl("map", desc)) 
+  f1 <- 
+    f_amts %>% 
+    mutate(value = case_when(
+      unit == "lb/ac/stand" ~ value * kg_per_lb * ac_per_ha,
+      TRUE ~ 999),
+      unit = "kg/stand") |> 
+    group_by(scenario_id, cat, fert_type, unit) |> 
+    summarise(value = sum(value)) |> 
+    rename("desc" = fert_type)
   
-  #--get total kg applied per stand, per ha
-  f2_map <- 
-    f1_map %>% 
-    mutate(
-      value = value * f_pass_map * kg_per_lb * ac_per_ha,
-      unit = "kg/stand"
-    )
-  
-  #f2_map
-  
-  
-  #--combine all ferts
-  
-  p1 <- f2_map 
+  p1 <- f1
   
   
   # 2. field ops (op) -----------------------------------------------------
@@ -90,11 +84,12 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     filter(cat == 'field ops') |> 
     mutate(value = as.numeric(value))
   
+  #--simplify fertilizer passes to just be 'fertilize'
   op2 <- 
     op1 |> 
+    mutate(desc = ifelse(grepl("fertilize", desc), "fertilize", desc)) |> 
     group_by(scenario_id, cat, desc, unit) |> 
-    summarise(value = sum(value, na.rm = T)) |> 
-    mutate(unit = "pass/stand")
+    summarise(value = sum(value, na.rm = T)) 
   
   p2 <- op2
   
@@ -111,7 +106,7 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     select(-xx, -unit) %>% 
     left_join(sl) %>% 
     mutate(harv_per_standlife = value * stand_life_yrs) %>% 
-    select(-value, -stand_life_yrs, -cat)
+    select(-value, -stand_life_yrs, -cat) 
   
   
   #--number of passes per harvest
@@ -120,14 +115,15 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     filter(cat == "harvest ops") %>% 
     mutate(value = as.numeric(value)) |> 
     separate(desc, into = c("product", "op"), remove = F) %>% 
-    left_join(hn)
+    left_join(hn) 
   
   
   h2 <- 
     h1 %>% 
     mutate(unit = "pass/stand",
            value = value * harv_per_standlife) %>% 
-    select(-product, -op, -harv_per_standlife)
+    select(-product, -op, -harv_per_standlife) |> 
+    filter(value != 0)
   
   
   p3 <- h2
@@ -141,7 +137,7 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     filter(cat == "irrigation") %>%
     filter(grepl("est", desc)) |> 
     mutate(value = as.numeric(value)) |> 
-    mutate(unit = "ac-in/stand") |> #--why is it ac-in/stand life?
+    mutate(unit = "ac-in/stand") |> 
     filter(value != 0)
   
   i_est1 <- 
@@ -196,62 +192,74 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     ungroup()
   
   
-  #--change products to active ingredients
-  
-  c1_prods <- 
-    c1 %>% 
-    select(desc) %>% 
-    unique() %>% 
-    mutate_if(is.character, str_to_lower)
-  
-  c1_prods
-  
-  ai_res <- r_ais
-  
-  
-  #--combine with pesticide use
+  #--combine application w/ais
   
   c2 <- 
     c1 %>% 
-    left_join(ai_res) %>% 
+    left_join(r_ais) %>% 
     #--rearrange so it's easier to see
     select(scenario_id, cat, desc, value, unit, ai, value_ai, unit_ai, everything()) 
   
   
   #--deal with units
-  
-  c3 <- 
+  c3_liq <- 
     c2 %>% 
-    #--deal with applied units
+    #--just deal with liquids for now
+    filter(!grepl("lb", unit)) |> 
     mutate(
-      value_gal_ha = case_when(
+      value = case_when(
         unit == "gal/ac" ~ value * ac_per_ha,
         unit == "pint/ac" ~ value * gal_per_pint * ac_per_ha,
+        unit == "pt/ac" ~ value * gal_per_pint * ac_per_ha,
         unit == "oz/ac" ~ value * gal_per_oz * ac_per_ha,
         unit == "fl oz/ac" ~ value * gal_per_oz * ac_per_ha,
-        TRUE ~ 999)
+        TRUE ~ 999),
+      unit = "gal/ha"
     ) 
   
+  c3_sol <- 
+    c2 %>% 
+    #--just deal with liquids for now
+    filter(grepl("lb", unit)) |> 
+    mutate(
+      value_applie = case_when(
+        unit == "lbs/ac" | unit == "lb/ac" ~ value * kg_per_lb * ac_per_ha,
+        TRUE ~ 999),
+      unit = "kg/ha"
+    ) 
+  
+  c3 <- 
+    c3_liq |> 
+    bind_rows(c3_sol)
+  
+  
   #--make sure every unit got converted
-  if (nrow(c3 %>% 
-    select(value_gal_ha) |> 
-    filter(is.na(value_gal_ha))) > 0 ) {print("check pesticide conversions")}
+  if (nrow(c3 %>%
+           filter(value == 999)) > 0) {
+    print("check pesticide conversions")
+  } else {
+    "pesticide units ok"
+  }
   
-  #--deal with ai unit
-  
+  #--multiply appliation by ais contained in that application
   c4 <- 
     c3 %>% 
     mutate(
       value_kgai_ha = case_when(
-        unit_ai == "lb AI/gal" ~ value_gal_ha * value_ai * kg_per_lb,
-        unit_ai == "g/g" ~ value_gal_ha * g_per_gal_water * value_ai * (1/1000),
+        (unit == "gal/ha" & (unit_ai == "lb AI/gal" | unit_ai == "lb/gal")) ~ 
+          value * value_ai * kg_per_lb,
+        (unit == "gal/ha" & (unit_ai == "g AI/g" | unit_ai == "g/g")) ~ 
+          value * lb_per_gal_water * kg_per_lb * value_ai,
+        (unit == "gal/ha" & (unit_ai == "g AI/kg" | unit_ai == "g/kg")) ~ 
+          value * lb_per_gal_water * kg_per_lb * value_ai * kg_per_g,
+        (unit == "kg/ha" & (unit_ai == "g AI/g" | unit_ai == "g/g")) ~ 
+          value * value_ai,
         TRUE ~ 999)
     ) 
   
   #--everything got converted?
   if (nrow(c4 %>% 
-           select(value_kgai_ha) |> 
-           filter(is.na(value_kgai_ha))) > 0 ) {print("check pesticide conversions")}
+           filter(value_kgai_ha == 999)) > 0 ) {print("check pesticide conversions")} else {"pest conv ok"}
   
   
   
@@ -341,7 +349,8 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
   
   y4 <- 
     y3 |> 
-    bind_rows(sl1)
+    bind_rows(sl1) |> 
+    filter(value != 0)
   
   
   p7 <- y4

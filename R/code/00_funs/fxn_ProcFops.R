@@ -1,23 +1,21 @@
 #--prep field ops section
 #--each row must be unique in the final scenario file
 #--this code condenses the entered info into that form
+#--updated 3/24 to just take in whatever data you feed it
+
 
 library(tidyverse)
 
 
 
-ProcFops <- function(f_scenario_id = "0007", f_county = "tulare"){
+ProcFops <- function(data = d){
   # read in manually created field ops info for each scenario ---------------
-  
-  
-  d <- 
-    read_csv(paste0("R/data_in/", f_county, "byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5) 
   
   
   # summarise ---------------------------------------------------------------
   
   d1 <- 
-    d |> 
+    data |> 
     fill(scenario_id, cat) |> 
     group_by(scenario_id, cat, desc) |> 
     summarise(value = sum(value, na.rm = T)) |> 
