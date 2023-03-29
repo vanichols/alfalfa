@@ -34,12 +34,12 @@ scen_1001,irrigation,sprinkler irr eff,0.8,frac,n,base
 scen_1001,irrigation,drip irr eff,0.9,frac,n,base
 scen_1001,seed,"round-up ready seed, non-dormant",20,lb/ac,n,base
 scen_1001,fertility,"est1, 11-52-0 map",200,lb/ac/pass,n,base
-scen_1001,fertility,"est1, sulfur",50,lb/ac/pass,n,base
-scen_1001,fertility,"est1, potassium",250,lb/ac/pass,n,base
+scen_1001,fertility,"est1, sulfuric acid",50,lb/ac/pass,n,base
+scen_1001,fertility,"est1, potash",250,lb/ac/pass,n,base
 scen_1001,fertility,"est1, sodium molybdate",1,lb/ac/pass,n,base
 scen_1001,fertility,"prod1, 11-52-0 map",75,lb/ac/pass,n,base
-scen_1001,fertility,"prod1, sulfur",25,lb/ac/pass,n,base
-scen_1001,fertility,"prod1, potassium",250,lb/ac/pass,n,base
+scen_1001,fertility,"prod1, sulfuric acid",25,lb/ac/pass,n,base
+scen_1001,fertility,"prod1, potash",250,lb/ac/pass,n,base
 scen_1001,harvest ops,"haylage, cut",1,pass/harvest,n,base
 scen_1001,harvest ops,"haylage, chop",1,pass/harvest,n,base
 scen_1001,harvest ops,"hay, swath",1,pass/harvest,n,base
@@ -62,6 +62,7 @@ scen_1001,n2o indirect,kg n-n2o per kg n leached,0.011,frac,n,base
 scen_1001,carbon credit,county,tulare,NA,n,base
 scen_1001,carbon credit,practice,conservation crop rotation (cps 328) - basic rotation,NA,n,base
 scen_1001,fertilizer avoidance,type of fertilizer avoided,uan-32,NA,n,base
+scen_1001,fertilizer avoidance,subsequent crop,wheat,NA,n,base
 scen_1001,fertilizer avoidance,"avoided fertilizer, wheat",80,lb n/ac,n,base
 scen_1001,fertilizer avoidance,"avoided fertilizer, tomatoes",170,lb n/ac,n,base
 scen_1001,pesticide manufacture,flumioxazin,264.5,mj/kg ai,n,base
@@ -70,6 +71,11 @@ scen_1001,pesticide manufacture,paraquat,459.4,mj/kg ai,n,base
 scen_1001,pesticide manufacture,pendimethalin,264.5,mj/kg ai,n,base
 scen_1001,pesticide manufacture,glyphosate,454,mj/kg ai,n,base
 scen_1001,pesticide manufacture,lambda-cyhalothrin,214,mj/kg ai,n,base
+scen_1001,pesticide manufacture,surfactant,0,NA,n,base
+scen_1001,pesticide manufacture,imazamox,264.5,NA,n,base
+scen_1001,pesticide manufacture,indoxacarb,214,NA,n,base
+scen_1001,pesticide manufacture,metribuzin,264.5,NA,n,base
+scen_1001,pesticide manufacture,zinc phosphide,214,NA,n,base
 scen_1001,seed manufacture,seed yield,500,lbs/ac,n,base
 scen_1001,energy source,irrigation,diesel,NA,n,base
 scen_1001,energy source,"fuel, field ops",diesel,NA,n,base

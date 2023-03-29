@@ -1,5 +1,6 @@
 #--look at results
 #--created 3/16
+#--reran everything 3/29 (fixed fert energy calcs)
 
 rm(list = ls())
 library(tidyverse)

@@ -1,9 +1,4 @@
-﻿field ops entry template,,,,,,,
-"gets procesed, then overwrites the 'base' fieldops data",,,,,,,
-needed something separate bc it is complicated,,,,,,,
-"just enter everything from the visual, capitalization doesn't matter",,,,,,,
-,,,,,,,
-scenario_id,location,cat,desc,unit,value,timing,notes
+﻿scenario_id,location,cat,desc,unit,value,timing,notes
 scen_0005,tulare,pesticide,roundup powermaxx,pint/ac,2,"year 1, establishment",change stand life from 3 to 4 years
 ,,,roundup powermaxx,pint/ac,2,year 1,
 ,,,Warrior II,fl oz/ac,1.5,year 1,

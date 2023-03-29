@@ -6,7 +6,7 @@
 #    especially in irrigation
 # 3/24 - trying to run w/siskiyou data
 
-CalcEnergyUse <- function(f_scenario_id = "0001", 
+CalcEnergyUse <- function(f_scenario_id = "1001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
@@ -90,8 +90,7 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
   
   a2 <- 
     a_avoid %>% 
-    left_join(r_ferte |> 
-                filter(cat == "raw nutrient"),
+    left_join(r_ferte,
               by = c("desc")) |> 
     mutate(
       mj_avoided = -(value * kgn_ha_avoided) #--negative bc we avoided it
@@ -116,25 +115,23 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
   f <- 
     d_p |> 
     filter(cat == "fertility") |> 
+    #--remove sodium molybdate (siskiyou, only 1 pound/ac at est)
+    filter(desc != "sodium molybdate") |> 
     mutate(value = as.numeric(value))
   
   #--combine with fert energy
   
-  f1 <- 
-    f |> 
-    left_join(r_ferte |> 
-                mutate(mj_kgprod = value,
-                       component = desc,
-                       desc = cat) |> 
-                select(desc, component, mj_kgprod)
-    )
+  f1 <-
+    f |>
+    left_join(r_ferte |>
+                mutate(mj_kgprod = value) |>
+                select(desc, cat, component, mj_kgprod))
   
   #--calculate energy used to manufacture each component applied
   f2 <- 
     f1 %>% 
     mutate(mj_stand = value * mj_kgprod) |> 
-    #--clean up col names
-    unite(desc, component, col = "desc", sep = ", ") |> 
+    mutate(desc = ifelse(is.na(component), desc, paste0(desc, ", ", component))) |> 
     select(scenario_id, cat, desc, mj_stand) |> 
     mutate(unit = "mj/stand") |> 
     rename(value = mj_stand)
@@ -450,8 +447,12 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
   p <- 
     d_p |> 
     filter(cat == "pesticide") |> 
-    mutate(value = as.numeric(value))
+    mutate(value = as.numeric(value)) |> 
+    group_by(scenario_id, cat, desc, unit) |> 
+    summarise(value = sum(value))
   
+  #--note surfactants are not included right now
+  #--the zinc phosphide assumed value is definitely a problem
   p1 <-
     p %>% 
     left_join(p_eais) #--assumed energy to manu ais
@@ -467,6 +468,8 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
   
   
   # 7. seed energy (s) ------------------------------------------------------
+  
+  #---need to use tulare values!!!!!!!!!!!
   
   # no harvest ops energy in seed calcs
   # not sure what to do for irrigation, it's left the same for now

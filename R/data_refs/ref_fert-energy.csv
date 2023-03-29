@@ -1,8 +1,29 @@
-cat,desc,value,unit
-raw nutrient,nitrogen,58.039906613672564,mj/kg nutrient
-raw nutrient,p2o5,30.074192510993036,mj/kg nutrient
-raw nutrient,potassium,8.239201651373117,mj/kg nutrient
-raw nutrient,caco3,0.12573973588996912,mj/kg nutrient
-11-52-0 map,nitrogen,6.384389727503982,mj/kg prod
-11-52-0 map,p2o5,15.63858010571638,mj/kg prod
-uan-32,nitrogen,18.57277011637522,mj/kg prod
+desc,value,unit,cat,component
+nitrogen,58.039906613672564,mj/kg prod,fertility,NA
+p2o5,30.074192510993036,mj/kg prod,fertility,NA
+k2o,8.239201651373117,mj/kg prod,fertility,NA
+caco3,0.12573973588996912,mj/kg prod,fertility,NA
+ammonia,37.67086921127784,mj/kg prod,fertility,NA
+urea,28.600129189327657,mj/kg prod,fertility,NA
+ammonium nitrate,19.47323537237028,mj/kg prod,fertility,NA
+uan-32,64.50746711200877,mj/kg prod,fertility,NA
+sulfuric acid,0.602489487120538,mj/kg prod,fertility,NA
+phosphoric acid per ton of p2o5 product,22.108621223029612,mj/kg prod,fertility,NA
+potash,8.239200598036879,mj/kg prod,fertility,NA
+ca co3,0.1257397198148412,mj/kg prod,fertility,NA
+sodium nitrate na no3,8.342226833539486,mj/kg prod,fertility,NA
+ammonium chloride nh4cl,6.705107145649816,mj/kg prod,fertility,NA
+potassium nitrate kno3,10.018602135587436,mj/kg prod,fertility,NA
+calcium nitrate ca no3 2,9.514415259326872,mj/kg prod,fertility,NA
+calcium nitrate ca no3 2 4h2o,6.812702269062986,mj/kg prod,fertility,NA
+potassium phosphates k2hpo4,31.464107762516228,mj/kg prod,fertility,NA
+potassium phosphates k2hpo4 3h2o,24.17315245483242,mj/kg prod,fertility,NA
+potassium phosphates kh2po4,28.47649995310466,mj/kg prod,fertility,NA
+diammonium phosphate nh4 2hpo4,24.792396332963236,mj/kg prod,fertility,NA
+potassium sulfate k2so4,9.49060778674126,mj/kg prod,fertility,NA
+superphosphate ca h2po4 2 2ca so4,4.044679495422307,mj/kg prod,fertility,NA
+triple superphosphate ca h2po4 2,15.493282826346348,mj/kg prod,fertility,NA
+triple superphosphate ca h2po4 2 h2o,14.433277320929282,mj/kg prod,fertility,NA
+ammonium sulfate nh4 2so4,10.64864226254761,mj/kg prod,fertility,NA
+11-52-0 map,6.38,mj/kg prod,fertility,n_comp
+11-52-0 map,15.652000000000001,mj/kg prod,fertility,p_comp

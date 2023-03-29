@@ -88,7 +88,7 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
   
     #--run fxn that summarises data
     n_fops_new <- 
-      read_csv(paste0("R/data_in/", f_county, "byhand-fieldops/fops_scen-", f_scenario_id, ".csv"), skip = 5) |> 
+      read_csv(paste0("R/data_in/", f_county, "/byhand-fieldops/fops_scen-", f_scenario_id, ".csv")) |> 
       ProcFops() |> 
       mutate(change_ind = "y")
     
@@ -105,13 +105,13 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
 # pests -------------------------------------------------------------------
 
   #--read in changes in other, if they exist
-  pestTF <- file.exists((paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv")))
+  pestTF <- file.exists((paste0("R/data_in/", f_county, "/byhand-pests/pest_scen-", f_scenario_id, ".csv")))
   
   if (pestTF == TRUE) {
     
     #--run fxn that summarises data
     n_pest_new <- 
-      read_csv(paste0("R/data_in/", f_county, "byhand-pests/pest_scen-", f_scenario_id, ".csv"), skip = 5) |> 
+      read_csv(paste0("R/data_in/", f_county, "/byhand-pests/pest_scen-", f_scenario_id, ".csv")) |> 
       ProcPest() |> 
       mutate(change_ind = "y")
     
@@ -119,6 +119,7 @@ MakeScenarioCSV <- function(f_scenario_id = "1001", f_county = "siskiyou"){
     
     n_pest_new <-
       base_pest |> 
+      ProcPest() |> 
       mutate(scenario_id = paste0("scen_", f_scenario_id),
                           change_ind = "n")
     

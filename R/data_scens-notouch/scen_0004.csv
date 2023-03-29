@@ -2,7 +2,7 @@ scenario_id,cat,desc,value,unit,change_ind,notes
 scen_0004,field ops,chisel,1,pass/stand life,n,defecit irr
 scen_0004,field ops,disk,2,pass/stand life,n,defecit irr
 scen_0004,field ops,disk border ridges,1,pass/stand life,n,defecit irr
-scen_0004,field ops,"fertilize, map",2,pass/stand life,n,defecit irr
+scen_0004,field ops,"fertilize, map1",2,pass/stand life,n,defecit irr
 scen_0004,field ops,insect control,6,pass/stand life,n,defecit irr
 scen_0004,field ops,laser level,1,pass/stand life,n,defecit irr
 scen_0004,field ops,plant,1,pass/stand life,n,defecit irr
@@ -34,7 +34,7 @@ scen_0004,irrigation,flood irr eff,0.7,frac,n,defecit irr
 scen_0004,irrigation,sprinkler irr eff,0.8,frac,n,defecit irr
 scen_0004,irrigation,drip irr eff,0.9,frac,n,defecit irr
 scen_0004,seed,"round-up ready seed, non-dormant",25,lb/ac,n,defecit irr
-scen_0004,fertility,11-52-0 map,200,lb/ac/pass,n,defecit irr
+scen_0004,fertility,"map1, 11-52-0 map",200,lb/ac/pass,n,defecit irr
 scen_0004,harvest ops,"haylage, cut",1,pass/harvest,n,defecit irr
 scen_0004,harvest ops,"haylage, chop",1,pass/harvest,n,defecit irr
 scen_0004,harvest ops,"hay, swath",1,pass/harvest,n,defecit irr
@@ -57,6 +57,7 @@ scen_0004,n2o indirect,kg n-n2o per kg n leached,0.011,frac,n,defecit irr
 scen_0004,carbon credit,county,tulare,NA,n,defecit irr
 scen_0004,carbon credit,practice,conservation crop rotation (cps 328) - basic rotation,NA,n,defecit irr
 scen_0004,fertilizer avoidance,type of fertilizer avoided,uan-32,NA,n,defecit irr
+scen_0004,fertilizer avoidance,subsequent crop,tomatoes,NA,n,defecit irr
 scen_0004,fertilizer avoidance,"avoided fertilizer, wheat",80,lb n/ac,n,defecit irr
 scen_0004,fertilizer avoidance,"avoided fertilizer, tomatoes",170,lb n/ac,n,defecit irr
 scen_0004,pesticide manufacture,flumioxazin,264.5,mj/kg ai,n,defecit irr

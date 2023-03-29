@@ -23,12 +23,12 @@ scen_1000,yield,stand life,years,6,enterprise budget says 6-8 years
 ,,drip irr eff,frac,0.9,
 ,seed,"round-up ready seed, non-dormant",lb/ac,20,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things"
 ,fertility,"est1, 11-52-0 MAP",lb/ac/pass,200,applied at establishment
-,,"est1, sulfur",lb/ac/pass,50,
-,,"est1, potassium",lb/ac/pass,250,muriate of potash
-,,"est1, sodium molybdate",lb/ac/pass,1,no idea what this is
+,,"est1, sulfuric acid",lb/ac/pass,50,"sulfur is applied, greet only gives values for 'sulfuric acid' (which are quite low), so use term 'sulfuric acid'"
+,,"est1, potash",lb/ac/pass,250,muriate of potash
+,,"est1, sodium molybdate",lb/ac/pass,1,"no idea what this is, only applying 1 pound at establishment, ignore"
 ,,"prod1, 11-52-0 map",lb/ac/pass,75,
-,,"prod1, sulfur",lb/ac/pass,25,
-,,"prod1, potassium",lb/ac/pass,250,muriate of potash
+,,"prod1, sulfuric acid",lb/ac/pass,25,
+,,"prod1, potash",lb/ac/pass,250,muriate of potash
 ,harvest ops,"haylage, cut",pass/harvest,1,
 ,,"haylage, chop",pass/harvest,1,
 ,,"hay, swath",pass/harvest,1,
@@ -60,6 +60,11 @@ scen_1000,yield,stand life,years,6,enterprise budget says 6-8 years
 ,,pendimethalin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
 ,,glyphosate,MJ/kg ai,454,listed in table 2
 ,,lambda-cyhalothrin,MJ/kg ai,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
+,,surfactant,,0,surfactants aren't included in other enterprise budgets
+,,imazamox,,264.5,mean herbicides
+,,indoxacarb,,214,"mean insecticides value (bottom section) from Audsley et al. 2009, Table 2"
+,,metribuzin,,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"
+,,zinc phosphide,,214,"mean insecticide value, although it is a rodenticide XXXX problem XXXXX"
 ,seed manufacture,seed yield,lbs/ac,500,Taken from 'https://alfalfa.ucdavis.edu/IrrigatedAlfalfa/pdfs/UCAlfalfa8308SeedProd_free.pdf'
 ,energy source,irrigation,,diesel,"Options are diesel, gas, electricity"
 ,,"fuel, field ops",,diesel,
