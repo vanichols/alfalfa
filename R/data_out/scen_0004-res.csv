@@ -1,7 +1,7 @@
 scenario_id,cat,desc,fuel_type,unit,value
-scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,NA
-scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,NA
-scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,NA
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,-11.05919780752714
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,-3.6863992691757135
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,-0.19576952627627633
 scen_0004,fertility,"11-52-0 map, n_comp",NA,GJ_stand,2.860412516296126
 scen_0004,fertility,"11-52-0 map, n_comp",NA,GJ_hayr,0.9534708387653753
 scen_0004,fertility,"11-52-0 map, n_comp",NA,MJ_kgyield,0.050634920634920554
@@ -44,24 +44,27 @@ scen_0004,fuel manufacture,"flood, surface",diesel,MJ_kgyield,0.0136023198593224
 scen_0004,fuel manufacture,"flood, ground",diesel,GJ_stand,2.764270653144478
 scen_0004,fuel manufacture,"flood, ground",diesel,GJ_hayr,0.9214235510481593
 scen_0004,fuel manufacture,"flood, ground",diesel,MJ_kgyield,0.048933020792627624
-scen_0004,pesticide,flumioxazin,NA,GJ_stand,0.09550440119418814
-scen_0004,pesticide,flumioxazin,NA,GJ_hayr,0.03183480039806271
-scen_0004,pesticide,flumioxazin,NA,MJ_kgyield,0.0016906155133928566
 scen_0004,pesticide,chlorantraniliprole,NA,GJ_stand,0.03285924447515436
 scen_0004,pesticide,chlorantraniliprole,NA,GJ_hayr,0.010953081491718121
 scen_0004,pesticide,chlorantraniliprole,NA,MJ_kgyield,5.81673177083331e-4
-scen_0004,pesticide,paraquat,NA,GJ_stand,0.7999911665175099
-scen_0004,pesticide,paraquat,NA,GJ_hayr,0.2666637221725033
-scen_0004,pesticide,paraquat,NA,MJ_kgyield,0.01416141517857142
-scen_0004,pesticide,pendimethalin,NA,GJ_stand,3.37970292334942
-scen_0004,pesticide,pendimethalin,NA,GJ_hayr,1.1265676411164733
-scen_0004,pesticide,pendimethalin,NA,MJ_kgyield,0.05982738095238093
+scen_0004,pesticide,flumioxazin,NA,GJ_stand,0.09550440119418814
+scen_0004,pesticide,flumioxazin,NA,GJ_hayr,0.03183480039806271
+scen_0004,pesticide,flumioxazin,NA,MJ_kgyield,0.0016906155133928566
 scen_0004,pesticide,glyphosate,NA,GJ_stand,2.992134961012084
 scen_0004,pesticide,glyphosate,NA,GJ_hayr,0.9973783203373614
 scen_0004,pesticide,glyphosate,NA,MJ_kgyield,0.05296666666666661
 scen_0004,pesticide,lambda-cyhalothrin,NA,GJ_stand,0.017539921772879722
 scen_0004,pesticide,lambda-cyhalothrin,NA,GJ_hayr,0.005846640590959908
 scen_0004,pesticide,lambda-cyhalothrin,NA,MJ_kgyield,3.1049107142857126e-4
+scen_0004,pesticide,paraquat,NA,GJ_stand,0.7999911665175099
+scen_0004,pesticide,paraquat,NA,GJ_hayr,0.2666637221725033
+scen_0004,pesticide,paraquat,NA,MJ_kgyield,0.01416141517857142
+scen_0004,pesticide,pendimethalin,NA,GJ_stand,3.37970292334942
+scen_0004,pesticide,pendimethalin,NA,GJ_hayr,1.1265676411164733
+scen_0004,pesticide,pendimethalin,NA,MJ_kgyield,0.05982738095238093
+scen_0004,seed,"round-up ready seed, non-dormant",NA,GJ_stand,2.0072274050765206
+scen_0004,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.6690758016921735
+scen_0004,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.03553186813903776
 scen_0004,carbon credit,co2,NA,kgco2e_stand,-1927.4219754438898
 scen_0004,carbon credit,co2,NA,kgco2e_hayr,-642.4739918146299
 scen_0004,carbon credit,co2,NA,kgco2e_Mgyield,-34.119155261904744
@@ -71,6 +74,9 @@ scen_0004,fertility,"11-52-0 map, n_comp",diesel,kgco2e_Mgyield,3.60397635145344
 scen_0004,fertility,"11-52-0 map, p_comp",diesel,kgco2e_stand,499.47025434713265
 scen_0004,fertility,"11-52-0 map, p_comp",diesel,kgco2e_hayr,166.49008478237755
 scen_0004,fertility,"11-52-0 map, p_comp",diesel,kgco2e_Mgyield,8.84160467914566
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_stand,-787.1462394844957
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_hayr,-262.3820798281652
+scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_Mgyield,-13.934034737053771
 scen_0004,field passes,field ops,diesel,kgco2e_stand,223.4253694566111
 scen_0004,field passes,field ops,diesel,kgco2e_hayr,74.4751231522037
 scen_0004,field passes,field ops,diesel,kgco2e_Mgyield,3.9550679441552643
@@ -125,6 +131,9 @@ scen_0004,pesticide,paraquat,diesel,kgco2e_Mgyield,1.0079487588154161
 scen_0004,pesticide,pendimethalin,diesel,kgco2e_stand,240.55275011706354
 scen_0004,pesticide,pendimethalin,diesel,kgco2e_hayr,80.18425003902118
 scen_0004,pesticide,pendimethalin,diesel,kgco2e_Mgyield,4.258256227483382
+scen_0004,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,142.86583269365477
+scen_0004,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,47.62194423121826
+scen_0004,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,2.529005889420511
 scen_0004,n2o,"direct, fert n",NA,kgco2e_stand,115.47330330564901
 scen_0004,n2o,"direct, fert n",NA,kgco2e_hayr,38.491101101883004
 scen_0004,n2o,"direct, fert n",NA,kgco2e_Mgyield,2.044104308390019

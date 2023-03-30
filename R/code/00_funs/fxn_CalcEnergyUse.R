@@ -5,8 +5,9 @@
 # 3/20 - need to figure out how different energy sources are used
 #    especially in irrigation
 # 3/24 - trying to run w/siskiyou data
+# 3/30 - didn't include seed in final dataset, oops!
 
-CalcEnergyUse <- function(f_scenario_id = "1001", 
+CalcEnergyUse <- function(f_scenario_id = "0001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
@@ -469,58 +470,73 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
   
   # 7. seed energy (s) ------------------------------------------------------
   
-  #---need to use tulare values!!!!!!!!!!!
-  
-  # no harvest ops energy in seed calcs
-  # not sure what to do for irrigation, it's left the same for now
-  
-  #--assumptions
-  s_seedyld <- 
-    d_o |>
-    filter(cat == "seed manufacture",
-           desc == "seed yield") |>
-    mutate(seed_yld_kg_ha = as.numeric(value) * kg_per_lb * ac_per_ha) |> 
-    select(scenario_id, seed_yld_kg_ha)
+  #---uses values from tulare, scenario 0001
   
   
-  s <- 
-    e2 |> 
-    bind_rows(e3 |> filter(desc != "harvest")) |> 
-    bind_rows(e4) |> 
-    bind_rows(e5 |> filter(desc != "harvest")) |> 
-    bind_rows(e6) |> 
-    fill(scenario_id, .direction = "downup") |> 
-    group_by(scenario_id, unit) |> 
-    summarise(value = sum(value))
+  if (f_scenario_id == "0001") {
   
-  #--energy per unit seed produced
+    # no harvest ops energy in seed calcs
+    # not sure what to do for irrigation, it's left the same for now
+    
+    #--assumptions
+    s_seedyld <- 
+      d_o |>
+      filter(cat == "seed manufacture",
+             desc == "seed yield") |>
+      mutate(seed_yld_kg_ha = as.numeric(value) * kg_per_lb * ac_per_ha) |> 
+      select(scenario_id, seed_yld_kg_ha)
+    
+    
+    s <- 
+      e2 |> 
+      bind_rows(e3 |> filter(desc != "harvest")) |> 
+      bind_rows(e4) |> 
+      bind_rows(e5 |> filter(desc != "harvest")) |> 
+      bind_rows(e6) |> 
+      fill(scenario_id, .direction = "downup") |> 
+      group_by(scenario_id, unit) |> 
+      summarise(value = sum(value))
+    
+    #--energy per unit seed produced
+    
+    s1 <- 
+      s |> 
+      #--assume this is energy used to create the given seed yield
+      left_join(s_seedyld) |> 
+      #--get mj/kg seed produced
+      mutate(mj_kgseed = value/seed_yld_kg_ha) |>
+      select(scenario_id, mj_kgseed) 
+   
+    s1 |> write_csv("R/data_refs/ref_seed-energy-tulare.csv")
+     
+  } else {
+    
+    s1 <- read_csv("R/data_refs/ref_seed-energy-tulare.csv") |> 
+      mutate(scenario_id = paste0("scen_", f_scenario_id))
+  }
+    
   
-  s1 <- 
-    s |> 
-    #--assume this is energy used to create the given seed yield
-    left_join(s_seedyld) |> 
-    #--get mj/kg seed produced
-    mutate(mj_kgseed = value/seed_yld_kg_ha) |>
-    select(scenario_id, mj_kgseed) 
-  
-  #--ftm has a much lower value. But whatever. 
-  #--they don't include fuel manufacturing, irrigatigation fuel ineffic.
-  s1 |> 
-    mutate(btu_lbseed = mj_kgseed * kg_per_lb * btu_per_mj) |> 
-    mutate(ftm_value = 1973)
-  
-  
-  s2 <- 
+    
+    #--ftm has a much lower value. But whatever. 
+    #--they don't include fuel manufacturing, irrigatigation fuel ineffic.
     s1 |> 
-    left_join(d_p |> filter(cat == "seed")) |> 
-    #--multiply by amount of seed used to plant
-    mutate(value2 = as.numeric(value) * mj_kgseed,
-           unit = "mj/stand")  |> 
-    select(-value) |> 
-    rename(value = value2)
+      mutate(btu_lbseed = mj_kgseed * kg_per_lb * btu_per_mj) |> 
+      mutate(ftm_value = 1973)
+    
+    
+    s2 <- 
+      s1 |> 
+      left_join(d_p |> filter(cat == "seed")) |> 
+      #--multiply by amount of seed used to plant
+      mutate(value2 = as.numeric(value) * mj_kgseed,
+             unit = "mj/stand")  |> 
+      select(-value) |> 
+      rename(value = value2)
+    
+    
+    e7 <- s2
+    
   
-  
-  e7 <- s2
   
   
   # 8. all (e)---------------------------------------------------------------------
@@ -532,6 +548,7 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
     bind_rows(e4) |> 
     bind_rows(e5) |> 
     bind_rows(e6) |> 
+    bind_rows(e7) |> 
     fill(scenario_id, .direction = "downup") 
   
   

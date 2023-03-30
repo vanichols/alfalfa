@@ -1,7 +1,7 @@
 scenario_id,cat,desc,fuel_type,unit,value
-scen_0013,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,NA
-scen_0013,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,NA
-scen_0013,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,NA
+scen_0013,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,-11.05919780752714
+scen_0013,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,-3.6863992691757135
+scen_0013,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,-0.14814991177664172
 scen_0013,fertility,"11-52-0 map, n_comp",NA,GJ_stand,2.860412516296126
 scen_0013,fertility,"11-52-0 map, n_comp",NA,GJ_hayr,0.9534708387653753
 scen_0013,fertility,"11-52-0 map, n_comp",NA,MJ_kgyield,0.0383183183183183
@@ -44,24 +44,27 @@ scen_0013,fuel manufacture,"flood, surface",diesel,MJ_kgyield,0.0102936474611089
 scen_0013,fuel manufacture,"flood, ground",diesel,GJ_stand,2.764270653144478
 scen_0013,fuel manufacture,"flood, ground",diesel,GJ_hayr,0.9214235510481593
 scen_0013,fuel manufacture,"flood, ground",diesel,MJ_kgyield,0.037030394113339866
-scen_0013,pesticide,flumioxazin,NA,GJ_stand,0
-scen_0013,pesticide,flumioxazin,NA,GJ_hayr,0
-scen_0013,pesticide,flumioxazin,NA,MJ_kgyield,0
 scen_0013,pesticide,chlorantraniliprole,NA,GJ_stand,0.03285924447515436
 scen_0013,pesticide,chlorantraniliprole,NA,GJ_hayr,0.010953081491718121
 scen_0013,pesticide,chlorantraniliprole,NA,MJ_kgyield,4.401851069819807e-4
-scen_0013,pesticide,paraquat,NA,GJ_stand,0
-scen_0013,pesticide,paraquat,NA,GJ_hayr,0
-scen_0013,pesticide,paraquat,NA,MJ_kgyield,0
-scen_0013,pesticide,pendimethalin,NA,GJ_stand,0
-scen_0013,pesticide,pendimethalin,NA,GJ_hayr,0
-scen_0013,pesticide,pendimethalin,NA,MJ_kgyield,0
+scen_0013,pesticide,flumioxazin,NA,GJ_stand,0
+scen_0013,pesticide,flumioxazin,NA,GJ_hayr,0
+scen_0013,pesticide,flumioxazin,NA,MJ_kgyield,0
 scen_0013,pesticide,glyphosate,NA,GJ_stand,0
 scen_0013,pesticide,glyphosate,NA,GJ_hayr,0
 scen_0013,pesticide,glyphosate,NA,MJ_kgyield,0
 scen_0013,pesticide,lambda-cyhalothrin,NA,GJ_stand,0.017539921772879722
 scen_0013,pesticide,lambda-cyhalothrin,NA,GJ_hayr,0.005846640590959908
 scen_0013,pesticide,lambda-cyhalothrin,NA,MJ_kgyield,2.3496621621621637e-4
+scen_0013,pesticide,paraquat,NA,GJ_stand,0
+scen_0013,pesticide,paraquat,NA,GJ_hayr,0
+scen_0013,pesticide,paraquat,NA,MJ_kgyield,0
+scen_0013,pesticide,pendimethalin,NA,GJ_stand,0
+scen_0013,pesticide,pendimethalin,NA,GJ_hayr,0
+scen_0013,pesticide,pendimethalin,NA,MJ_kgyield,0
+scen_0013,seed,"round-up ready seed, non-dormant",NA,GJ_stand,2.0072274050765206
+scen_0013,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.6690758016921735
+scen_0013,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.026888981294406984
 scen_0013,carbon credit,co2,NA,kgco2e_stand,-1927.4219754438898
 scen_0013,carbon credit,co2,NA,kgco2e_hayr,-642.4739918146299
 scen_0013,carbon credit,co2,NA,kgco2e_Mgyield,-25.81990127927929
@@ -71,6 +74,9 @@ scen_0013,fertility,"11-52-0 map, n_comp",diesel,kgco2e_Mgyield,2.72733345515396
 scen_0013,fertility,"11-52-0 map, p_comp",diesel,kgco2e_stand,499.47025434713265
 scen_0013,fertility,"11-52-0 map, p_comp",diesel,kgco2e_hayr,166.49008478237755
 scen_0013,fertility,"11-52-0 map, p_comp",diesel,kgco2e_Mgyield,6.690944081515643
+scen_0013,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_stand,-787.1462394844957
+scen_0013,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_hayr,-262.3820798281652
+scen_0013,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_Mgyield,-10.54467493614881
 scen_0013,field passes,field ops,diesel,kgco2e_stand,193.4646044592889
 scen_0013,field passes,field ops,diesel,kgco2e_hayr,64.48820148642963
 scen_0013,field passes,field ops,diesel,kgco2e_Mgyield,2.59166754961546
@@ -113,6 +119,9 @@ scen_0013,pesticide,chlorantraniliprole,diesel,kgco2e_Mgyield,0.0313304868642567
 scen_0013,pesticide,lambda-cyhalothrin,diesel,kgco2e_stand,1.248416359365369
 scen_0013,pesticide,lambda-cyhalothrin,diesel,kgco2e_hayr,0.416138786455123
 scen_0013,pesticide,lambda-cyhalothrin,diesel,kgco2e_Mgyield,0.01672388691471027
+scen_0013,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,142.86583269365477
+scen_0013,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,47.62194423121826
+scen_0013,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,1.9138422946966052
 scen_0013,n2o,"direct, fert n",NA,kgco2e_stand,115.47330330564901
 scen_0013,n2o,"direct, fert n",NA,kgco2e_hayr,38.491101101883004
 scen_0013,n2o,"direct, fert n",NA,kgco2e_Mgyield,1.5468897468897458

@@ -1,5 +1,6 @@
 #--use monster functions to run different scenarios
 #--3/29 reran all scenarios bc I fixed the fertilizer energy calculation
+#--3/30 reran all scenarios bc I fixed the seed energy calculation
 
 rm(list = ls())
 library(tidyverse)
