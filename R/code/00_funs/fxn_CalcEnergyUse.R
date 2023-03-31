@@ -7,7 +7,7 @@
 # 3/24 - trying to run w/siskiyou data
 # 3/30 - didn't include seed in final dataset, oops!
 
-CalcEnergyUse <- function(f_scenario_id = "0001", 
+CalcEnergyUse <- function(f_scenario_id = "1001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")

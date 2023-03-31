@@ -7,10 +7,11 @@ library(tidyverse)
 library(pals)
 library(tidytext)
 library(patchwork)
-
+library(ggplotlyExtra)
+library(plotly)
+library(ggrepel)
 
 # monster file maker ------------------------------------------------------
-
 
 d_raw <- 
   list.files(path = "R/data_out/", pattern = ".csv", full.names = T) |> 
@@ -18,8 +19,8 @@ d_raw <-
 
 s_desc <- 
   read_csv("R/data_in/scenbyhand_scenario-key.csv", skip = 5) |> 
-  fill(scen_desc) |> 
-  select(scenario_id, scen_desc) |> 
+  fill(scenario_id, scen_desc) |> 
+  select(scenario_id, scen_desc, location) |> 
   distinct()
 
 d <- 
@@ -27,22 +28,33 @@ d <-
   left_join(s_desc) |> 
   filter(scenario_id != "scen_0000")
 
-
 # get total values --------------------------------------------------------
 
 d_tot <- 
   d |> 
-  group_by(scenario_id, scen_desc, unit) |> 
+  group_by(scenario_id, scen_desc, location, unit) |> 
   summarise(value = sum(value))
 
-
+#--points by location
 d_tot |> 
-  filter(!grepl("stand", unit)) |> 
-  ggplot(aes(reorder_within(scen_desc, value, unit), value)) + 
-  geom_col(aes(fill = scen_desc == "base")) + 
-  coord_flip() +
-  scale_x_reordered() +
-  facet_wrap(~unit, scales = "free") 
+  filter(unit %in% c("GJ_hayr", "kgco2e_hayr"))|> 
+  mutate(scen_desc = ifelse(grepl("base", scen_desc), "base", scen_desc)) |> 
+  ggplot(aes(location, value)) + 
+  geom_point(aes(color = scen_desc, size = scen_desc == "base")) +
+  scale_size_manual(values = c(2, 4)) +
+  facet_wrap(.~unit, scales = "free")
+
+ggplotly()
+
+#--labels
+d_tot |> 
+  filter(unit %in% c("GJ_hayr", "kgco2e_hayr"))|> 
+  mutate(scen_desc = ifelse(grepl("base", scen_desc), "base", scen_desc)) |> 
+  ggplot(aes(location, value)) + 
+  geom_point(aes(color = scen_desc == "base", size = scen_desc == "base")) +
+  geom_label_repel(aes(label = scen_desc)) +
+  scale_size_manual(values = c(2, 4)) +
+  facet_wrap(.~unit, scales = "free")
 
 
 
@@ -51,16 +63,31 @@ d_tot |>
 d_base <- 
   d_tot |> 
   ungroup() |> 
-  filter(scenario_id == "scen_0001") |> 
+  filter(scen_desc == "base") |> 
   rename(base_value = value) |> 
-  select(base_value, unit)
+  select(base_value, location, unit)
 
 d_tot |> 
 #  filter(scenario_id != "scen_0001") |> #--this is the base
   left_join(d_base) |> 
   mutate(diff_base = value - base_value) |> 
   filter(grepl("hayr", unit)) |> 
-  ggplot(aes(reorder_within(scen_desc, diff_base, unit), diff_base)) + 
+  ggplot(aes(reorder_within(x = scen_desc, by = diff_base, within = location), diff_base)) + 
+  geom_col(aes(fill = diff_base < 0), show.legend = F) + 
+  scale_fill_manual(values = c("red", "blue")) +
+  scale_x_reordered() +
+  coord_flip() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~location, scales = "free")
+
+#--think about ghg critically (i think something is wrong)
+d_tot |> 
+  filter(location == "tulare") |> #--this is the base
+  left_join(d_base) |> 
+  filter(unit %in% c("GJ_hayr", "kgco2e_hayr")) |> 
+  mutate(diff_base = value - base_value) |> 
+  filter(grepl("hayr", unit)) |> 
+  ggplot(aes(reorder_within(x = scen_desc, by = diff_base, within = unit), diff_base)) + 
   geom_col(aes(fill = diff_base < 0), show.legend = F) + 
   scale_fill_manual(values = c("red", "blue")) +
   scale_x_reordered() +

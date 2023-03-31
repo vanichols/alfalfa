@@ -2,7 +2,7 @@
 # created 3/16 to handle new single file 
 # 3/17 update file names
 
-CalcGHG <- function(f_scenario_id = "0008", 
+CalcGHG <- function(f_scenario_id = "1003", 
                     f_prod_data = my_prod_data, 
                     f_energy_data = my_energy_data){
   
@@ -133,7 +133,7 @@ g1 <- c3
 #--those are listed under the 'energy sources' category of the assumptions file
 
 
-#--what source to use for ghg emissions? 
+#--what source to use for ghg emissions? EPA
 e_dsghg <- 
   d_o |> 
   filter(cat == "data source",
@@ -167,12 +167,13 @@ e_fuelghg <-
   e_ghg |> 
   left_join(e_fuele) |> 
   mutate(value2 = case_when(
-    unit == "kg/l" ~ value * 1/energy_mj_per_l, #--diesel and gasoline
+    unit == "kg/l" ~ value * (1/energy_mj_per_l), #--diesel and gasoline
     unit == "kg/kwh" ~ value * kwh_per_btu * btu_per_mj), #--electicity
     unit2 = "kg co2e/mj") |> 
   select(fuel_type, unit2, value2)
 
 
+#--get the energy used per stand
 e1 <- d_e 
 
 #--deal with ones where we know the fuel type
@@ -192,7 +193,8 @@ e2 <-
 
 
 #--what if we don't know the fuel used?
-#--the values really aren't that different, just assume diesel
+#--the difference btwn electric and diesel is only 32 kg co2e/stand
+#--just assume diesel
 
 e3 <- 
   e1 |> 
@@ -207,6 +209,7 @@ e3 <-
          fuel_type, 
          unit4,
          value4)
+
 
 e4 <-
   e2 |> 
@@ -273,7 +276,12 @@ f_id <-
   unique()
 
 #--assumed crop following alfalfa
-f_crop <- "tomatoes"
+
+f_crop <- 
+  d_o |> 
+  filter(cat == "fertilizer avoidance",
+         desc == "subsequent crop") |> 
+  pull(value)
 
 #--assumed amount of fertilizer avoided
 f_amount <- 

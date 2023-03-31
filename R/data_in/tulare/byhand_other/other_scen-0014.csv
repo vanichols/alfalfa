@@ -1,0 +1,3 @@
+﻿scenario_id,cat,desc,unit,value,notes
+scen_0014,irrigation,pump pressure,psi,0,"gravity fed, no pump"
+,irrigation,fraction from surface source,frac,1,

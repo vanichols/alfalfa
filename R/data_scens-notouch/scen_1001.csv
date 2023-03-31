@@ -59,7 +59,7 @@ scen_1001,n2o indirect,"kg n volatized per kg organic n, organic",0.21,frac,n,ba
 scen_1001,n2o indirect,kg n-n2o per kg n volatalized,0.005,frac,n,base
 scen_1001,n2o indirect,kg n leached per kg n,0.24,frac,n,base
 scen_1001,n2o indirect,kg n-n2o per kg n leached,0.011,frac,n,base
-scen_1001,carbon credit,county,tulare,NA,n,base
+scen_1001,carbon credit,county,siskiyou,NA,n,base
 scen_1001,carbon credit,practice,conservation crop rotation (cps 328) - basic rotation,NA,n,base
 scen_1001,fertilizer avoidance,type of fertilizer avoided,uan-32,NA,n,base
 scen_1001,fertilizer avoidance,subsequent crop,wheat,NA,n,base
