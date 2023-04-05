@@ -11,11 +11,9 @@ library(ggplotlyExtra)
 library(plotly)
 library(ggrepel)
 
-# monster file maker ------------------------------------------------------
+# read in monster file ----------------------------------------------------
 
-d_raw <- 
-  list.files(path = "R/data_out/", pattern = ".csv", full.names = T) |> 
-  map_df(read_csv)
+d_raw <- read_csv("R/data_tidy/scen_all.csv")
 
 s_desc <- 
   read_csv("R/data_in/scenbyhand_scenario-key.csv", skip = 5) |> 
@@ -28,12 +26,24 @@ d <-
   left_join(s_desc) |> 
   filter(scenario_id != "scen_0000")
 
+
 # get total values --------------------------------------------------------
 
 d_tot <- 
   d |> 
   group_by(scenario_id, scen_desc, location, unit) |> 
   summarise(value = sum(value))
+
+
+# relative change w/each scenario -----------------------------------------
+
+d_tot
+
+
+
+
+# old ---------------------------------------------------------------------
+
 
 #--points by location
 d_tot |> 

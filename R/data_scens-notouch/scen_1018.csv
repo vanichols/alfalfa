@@ -1,0 +1,85 @@
+scenario_id,cat,desc,value,unit,change_ind,notes
+scen_1018,field ops,chisel,1,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,disk,3,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,"fertilize, est1",1,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,"fertilize, prod1",6,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,laser level,3,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,plant,1,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,rodent control,6,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,stand termination,1,pass/stand life,n,no fertilizer offset credit
+scen_1018,field ops,weed control,13,pass/stand life,n,no fertilizer offset credit
+scen_1018,pesticide,activator 90,96,fl oz/ac,n,no fertilizer offset credit
+scen_1018,pesticide,gramoxone,12,pt/ac,n,no fertilizer offset credit
+scen_1018,pesticide,herbimax,1,pt/ac,n,no fertilizer offset credit
+scen_1018,pesticide,raptor,5,oz/ac,n,no fertilizer offset credit
+scen_1018,pesticide,steward,54,fl oz/ac,n,no fertilizer offset credit
+scen_1018,pesticide,tricor 75df,3.6,lbs/ac,n,no fertilizer offset credit
+scen_1018,pesticide,zinc phosphide,15,lb/ac,n,no fertilizer offset credit
+scen_1018,fertilizer avoidance,type of fertilizer avoided,uan-32,NA,y,no fertilizer offset credit
+scen_1018,fertilizer avoidance,subsequent crop,wheat,NA,y,no fertilizer offset credit
+scen_1018,fertilizer avoidance,"avoided fertilizer, wheat",0,lb n/ac,y,no fertilizer offset credit
+scen_1018,fertilizer avoidance,"avoided fertilizer, tomatoes",0,lb n/ac,y,no fertilizer offset credit
+scen_1018,yield,stand life,6,years,n,no fertilizer offset credit
+scen_1018,yield,"hay, harvests",3,harvest/year,n,no fertilizer offset credit
+scen_1018,yield,"haylage, harvests",0,harvest/year,n,no fertilizer offset credit
+scen_1018,yield,hay production,6,ton/ac/yr at 10% moisture,n,no fertilizer offset credit
+scen_1018,yield,haylage production,0,ton/ac/yr at 30% moisture,n,no fertilizer offset credit
+scen_1018,irrigation,"sprinkler, est",4.5,ac-in/stand life,n,no fertilizer offset credit
+scen_1018,irrigation,"sprinkler, prod",24,ac-in/year,n,no fertilizer offset credit
+scen_1018,irrigation,"flood, est",0,ac-in/stand life,n,no fertilizer offset credit
+scen_1018,irrigation,"flood, prod",0,ac-in/year,n,no fertilizer offset credit
+scen_1018,irrigation,"drip, est",0,ac-in/stand life,n,no fertilizer offset credit
+scen_1018,irrigation,"drip, prod",0,ac-in/year,n,no fertilizer offset credit
+scen_1018,irrigation,fraction from surface source,0.5,frac,n,no fertilizer offset credit
+scen_1018,irrigation,depth of well,150,feet,n,no fertilizer offset credit
+scen_1018,irrigation,pump pressure,25,psi,n,no fertilizer offset credit
+scen_1018,irrigation,flood irr eff,0.7,frac,n,no fertilizer offset credit
+scen_1018,irrigation,sprinkler irr eff,0.8,frac,n,no fertilizer offset credit
+scen_1018,irrigation,drip irr eff,0.9,frac,n,no fertilizer offset credit
+scen_1018,seed,"round-up ready seed, non-dormant",20,lb/ac,n,no fertilizer offset credit
+scen_1018,fertility,"est1, 11-52-0 map",200,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,fertility,"est1, sulfuric acid",50,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,fertility,"est1, potash",250,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,fertility,"est1, sodium molybdate",1,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,fertility,"prod1, 11-52-0 map",75,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,fertility,"prod1, sulfuric acid",25,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,fertility,"prod1, potash",250,lb/ac/pass,n,no fertilizer offset credit
+scen_1018,harvest ops,"haylage, cut",1,pass/harvest,n,no fertilizer offset credit
+scen_1018,harvest ops,"haylage, chop",1,pass/harvest,n,no fertilizer offset credit
+scen_1018,harvest ops,"hay, swath",1,pass/harvest,n,no fertilizer offset credit
+scen_1018,harvest ops,"hay, rake",1,pass/harvest,n,no fertilizer offset credit
+scen_1018,harvest ops,"hay, bale",1,pass/harvest,n,no fertilizer offset credit
+scen_1018,harvest ops,"hay, stack",1,pass/harvest,n,no fertilizer offset credit
+scen_1018,n2o direct,fraction of dm not harvested,0.1,frac,n,no fertilizer offset credit
+scen_1018,n2o direct,kg of n per kg dm,0.027,frac,n,no fertilizer offset credit
+scen_1018,n2o direct,kg roots per kg dm harvested,0.4,frac,n,no fertilizer offset credit
+scen_1018,n2o direct,kg n per kg root dm,0.019,frac,n,no fertilizer offset credit
+scen_1018,n2o direct,kg n-n2o emitted per kg applied/residue n,0.005,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,"kg n volatized per kg synthetic n, urea",0.15,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,"kg n volatized per kg synthetic n, ammonium",0.08,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,"kg n volatized per kg synthetic n, nitrate",0.01,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,"kg n volatized per kg synthetic n, ammonium-nitrate",0.05,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,"kg n volatized per kg organic n, organic",0.21,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,kg n-n2o per kg n volatalized,0.005,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,kg n leached per kg n,0.24,frac,n,no fertilizer offset credit
+scen_1018,n2o indirect,kg n-n2o per kg n leached,0.011,frac,n,no fertilizer offset credit
+scen_1018,carbon credit,county,siskiyou,NA,n,no fertilizer offset credit
+scen_1018,carbon credit,practice,conservation crop rotation (cps 328) - basic rotation,NA,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,flumioxazin,264.5,mj/kg ai,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,chlorantraniliprole,214,mj/kg ai,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,paraquat,459.4,mj/kg ai,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,pendimethalin,264.5,mj/kg ai,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,glyphosate,454,mj/kg ai,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,lambda-cyhalothrin,214,mj/kg ai,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,surfactant,0,NA,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,imazamox,264.5,NA,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,indoxacarb,214,NA,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,metribuzin,264.5,NA,n,no fertilizer offset credit
+scen_1018,pesticide manufacture,zinc phosphide,214,NA,n,no fertilizer offset credit
+scen_1018,seed manufacture,seed yield,500,lbs/ac,n,no fertilizer offset credit
+scen_1018,energy source,irrigation,diesel,NA,n,no fertilizer offset credit
+scen_1018,energy source,"fuel, field ops",diesel,NA,n,no fertilizer offset credit
+scen_1018,energy source,"fuel, harvest",diesel,NA,n,no fertilizer offset credit
+scen_1018,data source,fuel energy content,epa,NA,n,no fertilizer offset credit
+scen_1018,data source,ghg from fuel,epa,NA,n,no fertilizer offset credit
+scen_1018,gwp,timespan,100,years,n,no fertilizer offset credit
