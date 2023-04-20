@@ -119,6 +119,12 @@ data_e1 <- e1[[1]]
 f_e1 <- e1[[2]]
 f2_e1 <- e1[[3]]
 
+i_want_this_scenario_id <- "1001"
+e1.1 <- VizEnergy(f_scenario_id = i_want_this_scenario_id)
+data_e1.1 <- e1.1[[1]]
+f_e1.1 <- e1.1[[2]]
+f2_e1.1 <- e1.1[[3]]
+
 
 i_want_this_scenario_id <- "0008"
 e2 <- VizEnergy(f_scenario_id = i_want_this_scenario_id)

@@ -1,0 +1,27 @@
+Isaiah Kasaka - average pressures for a sprinkler pivot
+LAWR - alfalfa model - 
+Assumptions for typical irrigation schemas
+
+Wheel lines - a pump that pressurizes a system
+
+
+
+Runs at 50 psi?
+Drop nozzles require a lower pressure, and is 15% more efficient
+Does Siskiyou land level? Not so much - you could eliminate that
+
+Wheel lines don't move, they are just there to relocate the pipes. 
+A little motor moves it whenever you are ready. 
+
+Defecit irrigation strategy --> rduction in the amount of water you apply, reduction in yield
+
+Solar electric irrigation pumps
+100 ac field, 1 acre for solar, you could take care of the 
+
+
+Make a table - 
+
+Location - ET demand, rainfall, number of cuts, water source 
+MTn region uses pumped water
+
+Farm advisor - Rob Wilson in intermountain region 

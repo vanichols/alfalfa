@@ -205,3 +205,36 @@ d_diff |>
                                   angle =0))
 
 ggsave("R/figs/sensitivity.png", width = 8, height = 6)
+
+#--scale_wrap?
+
+#--trying ggbreak
+d_diff |>
+  filter(grepl("hayr", unit)) |>
+  ggplot(aes(
+    reorder_within(x = scen_desc, by = diff_base_pct, within = location),
+    diff_base_pct
+  )) +
+  geom_arrowsegment(
+    aes(
+      x = reorder_within(x = scen_desc, by = diff_base_pct, within = location),
+      xend = reorder_within(x = scen_desc, by = diff_base_pct, within = location),
+      y = 0,
+      yend = diff_base_pct,
+      color = diff_base < 0), 
+    arrows = arrow(length = unit(0.2, "cm")),
+    size = 2,
+    show.legend = F) +
+  scale_color_manual(values = c("red", "blue")) +
+  tidytext::scale_x_reordered() +
+  scale_y_continuous(labels = label_percent()) +
+  labs(x = NULL,
+       y = "Change in GHG emissions per hectare\n(% change from base scenario)",
+       title = "Carbon offsets have largest impact on GHG balance",
+       subtitle = "Irrigation and electification are of next highest importance") +
+  coord_flip() +
+  ggbreak::scale_wrap(n = 4) +
+  facet_grid(location ~ ., scales = "free") + 
+  theme_bw() + 
+  theme(strip.text.y = element_text(size = rel(1.2),
+                                    angle =0))

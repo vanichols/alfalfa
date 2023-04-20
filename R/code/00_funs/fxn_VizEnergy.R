@@ -9,11 +9,14 @@ VizEnergy <- function(f_scenario_id = "0001"){
   
   # results -----------------------------------------------------------------
   
-  r <- read_csv(paste0("R/data_out/scen_", f_scenario_id, "-res.csv"))
-  
-  
   #--get scenario description
   s_log <- read_csv("R/data_in/scenbyhand_scenario-key.csv", skip = 5)
+  
+  #--add location to this
+  r <- 
+    read_csv(paste0("R/data_out/scen_", f_scenario_id, "-res.csv")) %>% 
+    left_join(s_log %>% select(scenario_id, location))
+  
   
   
   s_desc <- 
@@ -37,7 +40,7 @@ VizEnergy <- function(f_scenario_id = "0001"){
       grepl(", ground", desc) ~ "ground",
       TRUE ~ desc
     )) |> 
-    group_by(scenario_id, scenario_desc, cat, desc, fuel_type, unit) |> 
+    group_by(location, scenario_id, scenario_desc, cat, desc, fuel_type, unit) |> 
     summarise(value = sum(value)) |> 
     #--make short category labels for figs
     mutate(cat_short = case_when(
@@ -48,6 +51,7 @@ VizEnergy <- function(f_scenario_id = "0001"){
       TRUE ~ cat
     )) |> 
     select(scenario_id,
+           location, 
            scenario_desc,
            cat,
            cat_short,
@@ -58,7 +62,7 @@ VizEnergy <- function(f_scenario_id = "0001"){
   etot <- 
     e1 |> 
     select(-fuel_type) |> 
-    group_by(scenario_id, unit) |> 
+    group_by(location, scenario_id, unit) |> 
     mutate(value = sum(value),
            cat = "total",
            cat_short = "total",
@@ -70,7 +74,7 @@ VizEnergy <- function(f_scenario_id = "0001"){
     etot |> 
     bind_rows(e1) |> 
     mutate(desc = paste(cat_short, desc, sep = "_")) |> 
-    group_by(scenario_id, cat) |> 
+    group_by(location, scenario_id, cat) |> 
     mutate(cat_tot = sum(value)) |> 
     ungroup() 
   
@@ -80,6 +84,7 @@ VizEnergy <- function(f_scenario_id = "0001"){
              pull(cat_desc) |>
              unique())
   
+  #--need to fix the title
   fig <- 
     e2 |> 
     filter(unit != "GJ_stand", 
@@ -93,8 +98,8 @@ VizEnergy <- function(f_scenario_id = "0001"){
     coord_flip() + 
     facet_wrap(~unit, scales = "free") +
     labs(x = NULL,
-         title = "Tulare County",
-         subtitle = paste(s_desc),
+         title = "XX County",
+         subtitle = "XX",
          fill = NULL) + 
     theme(legend.position = "bottom")
   
