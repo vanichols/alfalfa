@@ -36,6 +36,7 @@ suppressMessages(RunScenario(my_scenario_id = "0015"))
 suppressMessages(RunScenario(my_scenario_id = "0016"))
 suppressMessages(RunScenario(my_scenario_id = "0017"))
 suppressMessages(RunScenario(my_scenario_id = "0018"))
+suppressMessages(RunScenario(my_scenario_id = "0019"))
 
 
 #--siskiyou
@@ -59,3 +60,4 @@ suppressMessages(RunScenario(my_scenario_id = "1015"))
 suppressMessages(RunScenario(my_scenario_id = "1016"))
 suppressMessages(RunScenario(my_scenario_id = "1017"))
 suppressMessages(RunScenario(my_scenario_id = "1018"))
+suppressMessages(RunScenario(my_scenario_id = "1019"))

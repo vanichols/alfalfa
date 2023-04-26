@@ -143,6 +143,15 @@ scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,no_c_credit,69.05074897197
 scen_0018,no fertilizer offsets,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,3227.126430837108
 scen_0018,no fertilizer offsets,tulare,kgco2e_stand,pasture_establishment_c_credit,-2851.6659532551616
 scen_0018,no fertilizer offsets,tulare,kgco2e_stand,no_c_credit,5154.548406280997
+scen_0019,double well depth,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,819.3131413812122
+scen_0019,double well depth,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1206.9509866495441
+scen_0019,double well depth,tulare,kgco2e_hayr,no_c_credit,1461.7871331958422
+scen_0019,double well depth,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,32.926756097206706
+scen_0019,double well depth,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-48.50524024513568
+scen_0019,double well depth,tulare,kgco2e_Mgyield,no_c_credit,58.746657376486
+scen_0019,double well depth,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2457.9394241436366
+scen_0019,double well depth,tulare,kgco2e_stand,pasture_establishment_c_credit,-3620.852959948633
+scen_0019,double well depth,tulare,kgco2e_stand,no_c_credit,4385.361399587527
 scen_1001,base,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,277.416792528719
 scen_1001,base,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2440.7424036101
 scen_1001,base,siskiyou,kgco2e_hayr,no_c_credit,821.0486317564828
@@ -242,6 +251,15 @@ scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,no_c_credit,77.776697686
 scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2387.2210657422315
 scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-13921.734111090685
 scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,no_c_credit,5649.012101108816
+scen_1019,double well depth,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,360.84163576277194
+scen_1019,double well depth,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2357.317560376047
+scen_1019,double well depth,siskiyou,kgco2e_hayr,no_c_credit,904.4734749905357
+scen_1019,double well depth,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,29.80882708157362
+scen_1019,double well depth,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-194.7360408813894
+scen_1019,double well depth,siskiyou,kgco2e_Mgyield,no_c_credit,74.71780067416623
+scen_1019,double well depth,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2165.0498145766314
+scen_1019,double well depth,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14143.905362256286
+scen_1019,double well depth,siskiyou,kgco2e_stand,no_c_credit,5426.840849943215
 scen_0001,base,tulare,GJ_hayr,energy,18.152603934377076
 scen_0001,base,tulare,GJ_Mgyield,energy,0.7295212685943314
 scen_0001,base,tulare,GJ_stand,energy,54.45781180313123
@@ -296,6 +314,9 @@ scen_0017,no carbon credit,tulare,GJ_stand,energy,54.45781180313123
 scen_0018,no fertilizer offsets,tulare,GJ_hayr,energy,21.83900320355279
 scen_0018,no fertilizer offsets,tulare,GJ_Mgyield,energy,0.8776711803709731
 scen_0018,no fertilizer offsets,tulare,GJ_stand,energy,65.51700961065836
+scen_0019,double well depth,tulare,GJ_hayr,energy,21.74275039180177
+scen_0019,double well depth,tulare,GJ_Mgyield,energy,0.8738029489267011
+scen_0019,double well depth,tulare,GJ_stand,energy,65.22825117540532
 scen_1001,base,siskiyou,GJ_hayr,energy,11.514985193684074
 scen_1001,base,siskiyou,GJ_Mgyield,energy,0.9512433390892583
 scen_1001,base,siskiyou,GJ_stand,energy,69.08991116210446
@@ -335,3 +356,6 @@ scen_1017,no carbon credit,siskiyou,GJ_stand,energy,69.08991116210446
 scen_1018,no fertilizer offsets,siskiyou,GJ_hayr,energy,12.382373257019536
 scen_1018,no fertilizer offsets,siskiyou,GJ_Mgyield,energy,1.0228975447851503
 scen_1018,no fertilizer offsets,siskiyou,GJ_stand,energy,74.29423954211723
+scen_1019,double well depth,siskiyou,GJ_hayr,energy,12.68708231758262
+scen_1019,double well depth,siskiyou,GJ_Mgyield,energy,1.0480693065673332
+scen_1019,double well depth,siskiyou,GJ_stand,energy,76.12249390549573

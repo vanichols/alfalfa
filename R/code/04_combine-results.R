@@ -11,7 +11,7 @@ d_raw0 <-
   list.files(path = "R/data_out/", pattern = ".csv", full.names = T) |> 
   map_df(read_csv) 
 
-draw <- 
+d_raw <- 
   d_raw0 |> 
   mutate(unit = ifelse(unit == "MJ_kgyield", "GJ_Mgyield", unit))
 

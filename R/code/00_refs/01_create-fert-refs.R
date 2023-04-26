@@ -5,12 +5,12 @@
 #--3/8 added raw nutrient energies from greet
 #--3/17 fixing file structure
 #--adding things from siskiyou, changed reference data, need to check w/tulare
+#--4/26 adding 10-34-0 from imperial
 
 rm(list = ls())
 library(tidyverse)
 library(readxl)
 source("R/code/00_funs/fxn_conversions.R")
-
 
 
 # amount of N in fertilizer (for N2O emissions) ---------------------------
@@ -30,6 +30,8 @@ fert_types <-
 
 # uan-32 is 32% nitrogen (25% nitrate, 25% ammonium nitrogen, 50% urea)
 
+# 10-34-0 is 10% nitrogen
+
 #--good resource for these numbers:
 # https://www.sciencedirect.com/science/article/pii/S0921344905000819?casa_token=TJjU5CHfvlgAAAAA:ht-E3CMC1ZvNxMsi_KdMph0QRvqnfnTTEfLppbulRdbCUfLYqprh5mm8yQiQtdo_Vx43ZtMiNWY
 
@@ -39,6 +41,7 @@ fert_n <-
   mutate(value = case_when(
            fert_type == "11-52-0 map" ~ 0.11,
            fert_type == "uan-32" ~ 0.32,
+           fert_type == "10-34-0" ~ 0.10,
            #fert_type == "composted poultry litter" ~ 0.03,
            TRUE ~ 0 #--applies to sulfur, potassium, sodium molybdate
          ),
@@ -144,11 +147,24 @@ greet_map <-
   pivot_longer(n_comp:p_comp) |> 
   rename("component" = name)
   
+#  calculate for 10-34-0
+greet_10340 <- 
+  tibble(desc = "10-34-0") %>% 
+  mutate(
+    unit = "mj/kg prod",
+    cat = "fertility",
+    n_comp = 0.10 * 58, #--value for nitrogen
+    p_comp = 0.34 * 30.1 #--value for p2o5
+  ) %>% 
+  pivot_longer(n_comp:p_comp) |> 
+  rename("component" = name)
+
 
 greet5 <- 
   greet4 |> 
   filter(desc != "11-52-0 map") |> 
-  bind_rows(greet_map)
+  bind_rows(greet_map) %>% 
+  bind_rows(greet_10340)
 
 
 greet5 %>% 

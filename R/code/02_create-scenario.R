@@ -35,6 +35,7 @@ MakeScenarioCSV(f_scenario_id = "0015", f_county = "tulare")
 MakeScenarioCSV(f_scenario_id = "0016", f_county = "tulare")
 MakeScenarioCSV(f_scenario_id = "0017", f_county = "tulare")
 MakeScenarioCSV(f_scenario_id = "0018", f_county = "tulare")
+MakeScenarioCSV(f_scenario_id = "0019", f_county = "tulare")
 
 
 #--siskiyou
@@ -58,3 +59,4 @@ MakeScenarioCSV(f_scenario_id = "1015", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1016", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1017", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1018", f_county = "siskiyou")
+MakeScenarioCSV(f_scenario_id = "1019", f_county = "siskiyou")
