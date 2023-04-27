@@ -159,21 +159,66 @@ f8 <-
 
 # 9. insect control ----------------------------------------------------------
 
-f9 <- 
+f9a <- 
   f8 %>% 
   mutate(desc = "insect control")
 
-# 10. fertilize map -----------------------------------------------------------
+f9b <- 
+  fuel %>% 
+  filter(grepl("aerial", name),
+         subcat == "agchem") %>% 
+  select(diesel_Lha) %>% 
+  mutate(desc = "insect control, aerial")
+
+f9 <- 
+  f9a %>% 
+  bind_rows(f9b)
+
+# 10. fertilizer -----------------------------------------------------------
+
+#--in the fops data, surface fertilization has different names to keep thigns straight
 
 #--assume map fertilizer is sprayed on
-f10 <- 
+f10a <- 
   f8 %>% 
-  mutate(desc = "fertilize, map")
+  mutate(desc = "fertilize, surface")
+
+f10b <- 
+  f8 %>% 
+  mutate(desc = "fertilize, map1")
 
 
-#--surface broadcast might be good for manure
-fuel %>% 
-  filter(grepl("fert applic.", name))
+f10c <- 
+  f8 %>% 
+  mutate(desc = "fertilize, est1")
+
+
+f10d <- 
+  f8 %>% 
+  mutate(desc = "fertilize, prod1")
+
+#--injected, assume a shank w/15 inch spacing
+f10e <- 
+  fuel %>% 
+  filter(grepl("fert applic.", name),
+         grepl("shank low disturb, 15", name)) %>% 
+  select(diesel_Lha) %>% 
+  mutate(desc = "fertilize, inject")
+
+#--general fertilize
+f10f <- 
+  f8 %>% 
+  mutate(desc = "fertilize")
+
+f10 <- 
+  f10a %>% 
+  bind_rows(f10b) %>%
+  bind_rows(f10c) %>% 
+  bind_rows(f10d) %>% 
+  bind_rows(f10e) %>% 
+  bind_rows(f10f)
+  
+
 
 # 11. haylage, cut -------------------------------------------------------
 
@@ -226,13 +271,35 @@ f16 <-
   f12 %>% 
   mutate(desc = "hay, stack")
 
+
+# 17. corrugate ---------------------------------------------------------------
+
+f17 <- 
+  fuel %>% 
+  filter(grepl("bed shaper, 8 inch beds", name)) %>% 
+  select(diesel_Lha) %>% 
+  mutate(desc = "corrugate")
+
+
+# 18. spike --------------------------------------------------------------
+
+#--assume it is harrowing
+
+f18 <- 
+  fuel %>% 
+  filter(grepl("harrow, coiled tine weeder", name)) %>% 
+  select(diesel_Lha) %>% 
+  mutate(desc = "spike")
+
+
+
 # put together ------------------------------------------------------------
 
 fuel_list <- NULL
 
 
 #--change this number if you add more operations
-for (i in 1:16){
+for (i in 1:18){
   fuel_list <- c(fuel_list, paste0("f", i))
   }
 

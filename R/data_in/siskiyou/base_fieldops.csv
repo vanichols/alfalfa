@@ -1,0 +1,41 @@
+field ops,,,,,
+"this is the 'base', what was presented in the enterprise budget",,,,,
+capitalization doesn't matter,,,,,
+siskiyou,,,,,
+,,,,,
+scenario_id,cat,desc,value,unit,notes
+scen_1000,field ops,chisel,1,pass/stand life,est
+scen_1000,field ops,disk,1,pass/stand life,est
+scen_1000,field ops,disk,1,pass/stand life,est
+scen_1000,field ops,laser level,1,pass/stand life,est
+scen_1000,field ops,laser level,1,pass/stand life,est
+scen_1000,field ops,laser level,1,pass/stand life,est
+scen_1000,field ops,"fertilize, est1",1,pass/stand life,est
+scen_1000,field ops,disk,1,pass/stand life,est
+scen_1000,field ops,plant,1,pass/stand life,est
+scen_1000,field ops,weed control,1,pass/stand life,est
+scen_1000,field ops,weed control,1,pass/stand life,yr1
+scen_1000,field ops,rodent control,1,pass/stand life,yr1
+scen_1000,field ops,"fertilize, prod1",1,pass/stand life,yr1
+scen_1000,field ops,weed control,1,pass/stand life,yr1
+scen_1000,field ops,weed control,1,pass/stand life,yr2
+scen_1000,field ops,rodent control,1,pass/stand life,yr2
+scen_1000,field ops,"fertilize, prod1",1,pass/stand life,yr2
+scen_1000,field ops,weed control,1,pass/stand life,yr2
+scen_1000,field ops,weed control,1,pass/stand life,yr3
+scen_1000,field ops,rodent control,1,pass/stand life,yr3
+scen_1000,field ops,"fertilize, prod1",1,pass/stand life,yr3
+scen_1000,field ops,weed control,1,pass/stand life,yr3
+scen_1000,field ops,weed control,1,pass/stand life,yr4
+scen_1000,field ops,rodent control,1,pass/stand life,yr4
+scen_1000,field ops,"fertilize, prod1",1,pass/stand life,yr4
+scen_1000,field ops,weed control,1,pass/stand life,yr4
+scen_1000,field ops,weed control,1,pass/stand life,yr5
+scen_1000,field ops,rodent control,1,pass/stand life,yr5
+scen_1000,field ops,"fertilize, prod1",1,pass/stand life,yr5
+scen_1000,field ops,weed control,1,pass/stand life,yr5
+scen_1000,field ops,weed control,1,pass/stand life,yr6
+scen_1000,field ops,rodent control,1,pass/stand life,yr6
+scen_1000,field ops,"fertilize, prod1",1,pass/stand life,yr6
+scen_1000,field ops,weed control,1,pass/stand life,yr6
+scen_1000,field ops,stand termination,1,pass/stand life,yr6

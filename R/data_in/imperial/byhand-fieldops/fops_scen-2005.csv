@@ -1,44 +1,32 @@
 scenario_id,cat,desc,value,unit,notes
-scen_1005,field ops,chisel,1,pass/stand life,est
-,field ops,disk,1,pass/stand life,est
-,field ops,disk,1,pass/stand life,est
-,field ops,laser level,1,pass/stand life,est
-,field ops,laser level,1,pass/stand life,est
-,field ops,laser level,1,pass/stand life,est
-,field ops,"fertilize, est1",1,pass/stand life,est
-,field ops,disk,1,pass/stand life,est
-,field ops,plant,1,pass/stand life,est
-,field ops,weed control,1,pass/stand life,est
-,field ops,weed control,1,pass/stand life,yr1
-,field ops,rodent control,1,pass/stand life,yr1
-,field ops,"fertilize, prod1",1,pass/stand life,yr1
-,field ops,weed control,1,pass/stand life,yr1
-,field ops,weed control,1,pass/stand life,yr2
-,field ops,rodent control,1,pass/stand life,yr2
-,field ops,"fertilize, prod1",1,pass/stand life,yr2
-,field ops,weed control,1,pass/stand life,yr2
-,field ops,weed control,1,pass/stand life,yr3
-,field ops,rodent control,1,pass/stand life,yr3
-,field ops,"fertilize, prod1",1,pass/stand life,yr3
-,field ops,weed control,1,pass/stand life,yr3
-,field ops,weed control,1,pass/stand life,yr4
-,field ops,rodent control,1,pass/stand life,yr4
-,field ops,"fertilize, prod1",1,pass/stand life,yr4
-,field ops,weed control,1,pass/stand life,yr4
-,field ops,weed control,1,pass/stand life,yr5
-,field ops,rodent control,1,pass/stand life,yr5
-,field ops,"fertilize, prod1",1,pass/stand life,yr5
-,field ops,weed control,1,pass/stand life,yr5
-,field ops,weed control,1,pass/stand life,yr6
-,field ops,rodent control,1,pass/stand life,yr6
-,field ops,"fertilize, prod1",1,pass/stand life,yr6
-,field ops,weed control,1,pass/stand life,yr6
-,field ops,weed control,1,pass/stand life,yr7
-,field ops,rodent control,1,pass/stand life,yr7
-,field ops,"fertilize, prod1",1,pass/stand life,yr7
-,field ops,weed control,1,pass/stand life,yr7
-,field ops,weed control,1,pass/stand life,yr8
-,field ops,rodent control,1,pass/stand life,yr8
-,field ops,"fertilize, prod1",1,pass/stand life,yr8
-,field ops,weed control,1,pass/stand life,yr8
-,field ops,stand termination,1,pass/stand life,yr8
+scen_2005,field ops,disk,1,pass/stand life,est
+scen_2005,field ops,chisel,1,pass/stand life,est
+scen_2005,field ops,disk,1,pass/stand life,est
+scen_2005,field ops,laser level,1,pass/stand life,est
+scen_2005,field ops,corrugate,1,pass/stand life,est
+scen_2005,field ops,disk,1,pass/stand life,est
+scen_2005,field ops,"fertilize, surface",1,pass/stand life,est
+scen_2005,field ops,disk,1,pass/stand life,est
+scen_2005,field ops,laser level,1,pass/stand life,est
+scen_2005,field ops,laser level,1,pass/stand life,est
+scen_2005,field ops,plant,1,pass/stand life,est
+scen_2005,field ops,weed control,1,pass/stand life,est
+scen_2005,field ops,"insect control, aerial",1,pass/stand life,est
+scen_2005,field ops,disk border ridges,1,pass/stand life,est
+scen_2005,field ops,spike,2,pass/stand life,yr1
+scen_2005,field ops,"fertilize, inject",1,pass/stand life,yr1
+scen_2005,field ops,weed control,2,pass/stand life,yr1
+scen_2005,field ops,"insect control, aerial",4,pass/stand life,yr1
+scen_2005,field ops,spike,2,pass/stand life,yr2
+scen_2005,field ops,"fertilize, inject",1,pass/stand life,yr2
+scen_2005,field ops,weed control,2,pass/stand life,yr2
+scen_2005,field ops,"insect control, aerial",4,pass/stand life,yr2
+scen_2005,field ops,spike,2,pass/stand life,yr3
+scen_2005,field ops,"fertilize, inject",1,pass/stand life,yr3
+scen_2005,field ops,weed control,2,pass/stand life,yr3
+scen_2005,field ops,"insect control, aerial",4,pass/stand life,yr3
+scen_2005,field ops,spike,2,pass/stand life,yr4
+scen_2005,field ops,"fertilize, inject",1,pass/stand life,yr4
+scen_2005,field ops,weed control,2,pass/stand life,yr4
+scen_2005,field ops,"insect control, aerial",4,pass/stand life,yr4
+scen_2005,field ops,stand termination,1,pass/stand life,yr4

@@ -10,9 +10,9 @@ scen_2000,yield,stand life,years,3,enterprise budget says 3-4 years
 ,,hay production,ton/ac/yr at 10% moisture,8,
 ,,haylage production,ton/ac/yr at 30% moisture,0,"Enterprise budgets only say '8 ton/year', but include 7 or 9 swathing activities and 12 raking"
 ,irrigation,"sprinkler, est",ac-in/stand life,0,
-,,"sprinkler, prod",ac-in/year,24,"for production, center pivot (not sure how to incorporate that)"
-,,"flood, est",ac-in/stand life,18,"confused, they list 6 inches for land prep and 12 inc for establishment"
-,,"flood, prod",ac-in/year,78,6.5 ac-ft per year
+,,"sprinkler, prod",ac-in/year,0,
+,,"flood, est",ac-in/stand life,18,
+,,"flood, prod",ac-in/year,84,
 ,,"drip, est",ac-in/stand life,0,
 ,,"drip, prod",ac-in/year,0,
 ,,fraction from surface source,frac,1,All water in Imperial Valley comes from surface
@@ -22,8 +22,8 @@ scen_2000,yield,stand life,years,3,enterprise budget says 3-4 years
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,
 ,seed,"round-up ready seed, non-dormant",lb/ac,20,"non-dormant seed is produced in different areas, not sure if round-up ready requires different things, 2020 enterprise says 15-30 lb/ac"
-,fertility,"est1, 11-52-0 MAP",lb/ac/pass,250,applied at establishment
-,,"prod1, potash",lb/ac/pass,100,"p205, what is that? Why isn't anyone else applying it?"
+,fertility,"surface, 11-52-0 MAP",lb/ac/pass,300,applied at establishment
+,,"inject, 10-34-0",gal/ac/pass,25,note different units!
 ,harvest ops,"haylage, cut",pass/harvest,1,
 ,,"haylage, chop",pass/harvest,1,
 ,,"hay, swath",pass/harvest,1,
@@ -46,7 +46,7 @@ scen_2000,yield,stand life,years,3,enterprise budget says 3-4 years
 ,carbon credit,county,,imperial,
 ,,practice,,Conservation Crop Rotation (CPS 328) - basic rotation,
 ,fertilizer avoidance,type of fertilizer avoided,,uan-32,to calculate volatilization avoided
-,,subsequent crop,,wheat,
+,,subsequent crop,,wheat,no idea
 ,,"avoided fertilizer, wheat",lb N/ac,80,"Ranged from 70-130 in this study, cites 40-80 from other studies From https://www.cdfa.ca.gov/is/ffldrs/frep/pdfs/completedprojects/12-0385-SA_Putnam.pdf"
 ,,"avoided fertilizer, tomatoes",lb N/ac,170,Taken from https://www.alfalfa.org/pdf/USAFRI/Final%20Reports/2018/18Putnam.pdf
 ,pesticide manufacture,flumioxazin,MJ/kg ai,264.5,"mean herbicides value (top section) from Audsley et al. 2009, Table 2"

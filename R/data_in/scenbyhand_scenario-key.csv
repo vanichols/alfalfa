@@ -5,7 +5,7 @@ this contains changes to the 'other' variables,,,,
 ,,,,
 scenario_id,scen_desc,location,change location,notes
 scen_0000,do not use,tulare,,do not use!
-scen_0001,base,tulare,other,Water is 50/50 ground and surface
+scen_0001,base,tulare,,Water is 50/50 ground and surface
 scen_0002,all ground irr,tulare,other,100% of water is from 150 foot depth well
 scen_0003,all surface irr,tulare,other,100% of water is from surface sources
 scen_0004,defecit irr,tulare,other,"deficit irrigation scenario, no July/Aug hay harvests"
@@ -26,7 +26,7 @@ scen_0016,pasture establishment c credit,tulare,other,
 scen_0017,no carbon credit,tulare,other,
 scen_0018,no fertilizer offsets,tulare,other,
 scen_0019,double well depth,tulare,other,Change 150 foot well to 300 foot
-scen_1001,base,siskiyou,other,
+scen_1001,base,siskiyou,,
 scen_1002,all ground irr,siskiyou,other,
 scen_1003,all surface irr,siskiyou,other,
 scen_1005,change stand life from 6 to 8 years,siskiyou,"other, fieldops, pests",
@@ -40,3 +40,13 @@ scen_1016,pasture establishment c credit,siskiyou,other,
 scen_1017,no carbon credit,siskiyou,other,
 scen_1018,no fertilizer offsets,siskiyou,other,
 scen_1019,double well depth,siskiyou,other,Change 150 foot well to 300 foot
+scen_2001,base,imperial,,
+scen_2002,all ground irr,imperial,other,100% of water is from 150 foot depth well
+scen_2005,change stand life from 3 to 4 years,imperial,"other, fieldops, pests",
+scen_2008,electrify irrigation,imperial,other,originally diesel
+scen_2009,electrify harvest equip,imperial,other,originally diesel
+scen_2010,electrify fieldops equip,imperial,other,originally diesel
+scen_2015,no leaching n2o,imperial,other,
+scen_2016,pasture establishment c credit,imperial,other,
+scen_2017,no carbon credit,imperial,other,
+scen_2018,no fertilizer offsets,imperial,other,

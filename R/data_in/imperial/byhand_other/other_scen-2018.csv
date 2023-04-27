@@ -1,5 +1,5 @@
 ﻿scenario_id,cat,desc,unit,value,notes
-scen_1018,fertilizer avoidance,type of fertilizer avoided,,uan-32,
+scen_2018,fertilizer avoidance,type of fertilizer avoided,,uan-32,
 ,,subsequent crop,,wheat,
 ,,"avoided fertilizer, wheat",lb N/ac,0,
 ,,"avoided fertilizer, tomatoes",lb N/ac,0,

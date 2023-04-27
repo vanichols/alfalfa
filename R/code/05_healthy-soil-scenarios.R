@@ -42,7 +42,11 @@ cc_scenMg <-
 
 cc_scenMg |> 
   ggplot(aes(location, value)) + 
-  geom_jitter(aes(color = name, pch = name), width = 0.1, size = 2) +
+  geom_jitter(aes(color = name, 
+                  pch = name,
+                  size = scen_desc == "base"),
+              width = 0.1) +
+  scale_size_manual(values = c(1,4)) +
   geom_hline(yintercept = 0) +
   facet_wrap(~unit, scales = "free") + 
   theme_bw() +
@@ -81,8 +85,8 @@ d_ener |>
   geom_hline(yintercept = 0) +
   facet_wrap(~unit, scales = "free") + 
   theme_bw() +
-  scale_fill_manual(values = c("darkblue", "gold")) +
-  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("darkblue", "gold", "lightblue")) +
+  scale_shape_manual(values = c(21, 22, 23)) +
   theme(strip.text = element_text(size = rel(1.2))) + 
   labs(x = NULL,
        y = NULL,

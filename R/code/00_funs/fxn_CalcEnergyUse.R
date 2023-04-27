@@ -6,8 +6,9 @@
 #    especially in irrigation
 # 3/24 - trying to run w/siskiyou data
 # 3/30 - didn't include seed in final dataset, oops!
+# 4/27 - fixing field ops fuel records to include diff types of fertilize (inject, surface, prod1, est1, etc)
 
-CalcEnergyUse <- function(f_scenario_id = "1003", 
+CalcEnergyUse <- function(f_scenario_id = "1001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")

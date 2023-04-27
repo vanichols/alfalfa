@@ -13,7 +13,7 @@ source("R/code/00_funs/fxn_MakeScenarioCSV.R")
 
 #--note scen_0000 is NOT meant to be run - it only serves as a base of values
 
-#--tulare
+# tulare ------------------------------------------------------------------
 
 MakeScenarioCSV(f_scenario_id = "0001", f_county = "tulare")
 MakeScenarioCSV(f_scenario_id = "0002", f_county = "tulare")
@@ -38,7 +38,8 @@ MakeScenarioCSV(f_scenario_id = "0018", f_county = "tulare")
 MakeScenarioCSV(f_scenario_id = "0019", f_county = "tulare")
 
 
-#--siskiyou
+# siskiyou ----------------------------------------------------------------
+
 MakeScenarioCSV(f_scenario_id = "1001", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1002", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1003", f_county = "siskiyou")
@@ -60,3 +61,18 @@ MakeScenarioCSV(f_scenario_id = "1016", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1017", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1018", f_county = "siskiyou")
 MakeScenarioCSV(f_scenario_id = "1019", f_county = "siskiyou")
+
+
+# imperial ----------------------------------------------------------------
+
+MakeScenarioCSV(f_scenario_id = "2001", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2002", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2005", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2008", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2009", f_county = "imperial")
+
+MakeScenarioCSV(f_scenario_id = "2010", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2015", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2016", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2017", f_county = "imperial")
+MakeScenarioCSV(f_scenario_id = "2018", f_county = "imperial")

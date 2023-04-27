@@ -8,10 +8,18 @@ roll,3.3830025666666668
 stand termination,7.0154433
 weed control,1.2160101
 insect control,1.2160101
-"fertilize, map",1.2160101
+"insect control, aerial",1.4966278
+"fertilize, surface",1.2160101
+"fertilize, map1",1.2160101
+"fertilize, est1",1.2160101
+"fertilize, prod1",1.2160101
+"fertilize, inject",8.418531
+fertilize,1.2160101
 "haylage, cut",3.2738733
 "haylage, chop",6.828365
 "hay, swath",6.828365
 "hay, rake",3.2738733
 "hay, bale",3.554491
 "hay, stack",6.828365
+corrugate,3.554491
+spike,4.1157265

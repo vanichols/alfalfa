@@ -1,38 +1,12 @@
-pesticide applications,,,,,
-enterprise budget values,,,,,
-siskiyou,,,,,
-,,,,,
-,,,,,
-scenario_id,cat,desc,unit,value,notes
-scen_1000,pesticide,raptor,oz/ac,5,est
-,,herbimax,pt/ac,1,est
-,,TriCor 75DF,lbs/ac,0.6,yr1
-,,gramoxone,pt/ac,2,
-,,activator 90,fl oz/ac,16,
-,,steward,fl oz/ac,9,
-,,zinc phosphide,lb/ac,2.5,
-,,TriCor 75DF,lbs/ac,0.6,yr2
-,,gramoxone,pt/ac,2,
-,,activator 90,fl oz/ac,16,
-,,steward,fl oz/ac,9,
-,,zinc phosphide,lb/ac,2.5,
-,,TriCor 75DF,lbs/ac,0.6,yr3
-,,gramoxone,pt/ac,2,
-,,activator 90,fl oz/ac,16,
-,,steward,fl oz/ac,9,
-,,zinc phosphide,lb/ac,2.5,
-,,TriCor 75DF,lbs/ac,0.6,yr4
-,,gramoxone,pt/ac,2,
-,,activator 90,fl oz/ac,16,
-,,steward,fl oz/ac,9,
-,,zinc phosphide,lb/ac,2.5,
-,,TriCor 75DF,lbs/ac,0.6,yr5
-,,gramoxone,pt/ac,2,
-,,activator 90,fl oz/ac,16,
-,,steward,fl oz/ac,9,
-,,zinc phosphide,lb/ac,2.5,
-,,TriCor 75DF,lbs/ac,0.6,yr6
-,,gramoxone,pt/ac,2,
-,,activator 90,fl oz/ac,16,
-,,steward,fl oz/ac,9,
-,,zinc phosphide,lb/ac,2.5,
+pesticide apps,,,,
+"this is the 'base', what was presented in the enterprise budget",,,,
+capitalization doesn't matter,,,,
+"imperial, copied from tulare for now (no idea what is applied)",,,,
+,,,,
+scenario_id,cat,desc,unit,value
+scen_2000,pesticide,chateau,oz/ac,12
+scen_2000,pesticide,coragen,fl oz/ac,10.5
+scen_2000,pesticide,gramoxone,pint/ac,4.5
+scen_2000,pesticide,prowl h2o,gal/ac,3
+scen_2000,pesticide,roundup powermaxx,pint/ac,8
+scen_2000,pesticide,warrior ii,fl oz/ac,4.5

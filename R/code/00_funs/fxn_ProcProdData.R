@@ -7,7 +7,7 @@ library(tidyverse)
 library(readxl)
 
 
-ProcProdData <- function(f_scenario_id = "1001"){
+ProcProdData <- function(f_scenario_id = "2001"){
   
   source("R/code/00_funs/fxn_conversions.R")
   source("R/code/00_funs/fxn_ProcDataIn.R")  
@@ -59,15 +59,18 @@ r_ais <- read_csv("R/data_refs/ref_pest-ais.csv")
     mutate(value = as.numeric(value) * pass_per_sl,
            unit = case_when(
              (unit == "lb/ac/pass") ~ "lb/ac/stand",
+             (unit == "gal/ac/pass") ~ "gal/ac/stand",
              TRUE ~ "XXXX"
            ))
   
   #--change to kg per ha per stand
-  
+  # 10-34-0 is 12 lbs/gal - 
+  # https://www.plantfoodco.com/media/2317/lf-10-34-0-ammonium-polyphosphate-17.pdf#:~:text=Ammonium%20Polyphosphate%2010-34-0%20is%20an%20ideal%20liquid%20fertilizer,development.%20Weight%20per%20gallon%3A%2012.0%20lbs.%20%285.4%20kg%29
   f1 <- 
     f_amts %>% 
     mutate(value = case_when(
       unit == "lb/ac/stand" ~ value * kg_per_lb * ac_per_ha,
+      unit == "gal/ac/stand" ~ value * 12 * kg_per_lb * ac_per_ha,
       TRUE ~ 999),
       unit = "kg/stand") |> 
     group_by(scenario_id, cat, fert_type, unit) |> 
