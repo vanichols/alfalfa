@@ -1,0 +1,631 @@
+program,year,state,ag_district,county,name,value
+census,2017,california,sierra mountains,amador,acres_harvested,781
+census,2017,california,sierra mountains,amador,irrigated_acres_harvested,760
+census,2017,california,sierra mountains,amador,nonirr_acres_harvested,21
+census,2012,california,sierra mountains,amador,acres_harvested,1546
+census,2012,california,sierra mountains,amador,irrigated_acres_harvested,1546
+census,2012,california,sierra mountains,amador,nonirr_acres_harvested,0
+census,2007,california,sierra mountains,amador,acres_harvested,1613
+census,2007,california,sierra mountains,amador,irrigated_acres_harvested,1613
+census,2007,california,sierra mountains,amador,nonirr_acres_harvested,0
+census,1997,california,sierra mountains,amador,acres_harvested,991
+census,1997,california,sierra mountains,amador,irrigated_acres_harvested,780
+census,1997,california,sierra mountains,amador,nonirr_acres_harvested,211
+census,2017,california,sacramento valley,butte,acres_harvested,1370
+census,2017,california,sacramento valley,butte,irrigated_acres_harvested,1370
+census,2017,california,sacramento valley,butte,nonirr_acres_harvested,0
+census,2012,california,sacramento valley,butte,acres_harvested,1688
+census,2012,california,sacramento valley,butte,irrigated_acres_harvested,1425
+census,2012,california,sacramento valley,butte,nonirr_acres_harvested,263
+census,2007,california,sacramento valley,butte,acres_harvested,1349
+census,2007,california,sacramento valley,butte,irrigated_acres_harvested,1156
+census,2007,california,sacramento valley,butte,nonirr_acres_harvested,193
+census,2002,california,sacramento valley,butte,acres_harvested,1465
+census,2002,california,sacramento valley,butte,irrigated_acres_harvested,1465
+census,2002,california,sacramento valley,butte,nonirr_acres_harvested,0
+census,1997,california,sacramento valley,butte,acres_harvested,2311
+census,1997,california,sacramento valley,butte,irrigated_acres_harvested,2301
+census,1997,california,sacramento valley,butte,nonirr_acres_harvested,10
+census,2012,california,sierra mountains,calaveras,acres_harvested,80
+census,2012,california,sierra mountains,calaveras,irrigated_acres_harvested,0
+census,2012,california,sierra mountains,calaveras,nonirr_acres_harvested,80
+census,2017,california,sacramento valley,colusa,acres_harvested,5877
+census,2017,california,sacramento valley,colusa,irrigated_acres_harvested,5228
+census,2017,california,sacramento valley,colusa,nonirr_acres_harvested,649
+census,2012,california,sacramento valley,colusa,acres_harvested,9234
+census,2012,california,sacramento valley,colusa,irrigated_acres_harvested,7801
+census,2012,california,sacramento valley,colusa,nonirr_acres_harvested,1433
+census,2007,california,sacramento valley,colusa,acres_harvested,14900
+census,2007,california,sacramento valley,colusa,irrigated_acres_harvested,14831
+census,2007,california,sacramento valley,colusa,nonirr_acres_harvested,69
+census,2002,california,sacramento valley,colusa,acres_harvested,13505
+census,2002,california,sacramento valley,colusa,irrigated_acres_harvested,13186
+census,2002,california,sacramento valley,colusa,nonirr_acres_harvested,319
+census,1997,california,sacramento valley,colusa,acres_harvested,7849
+census,1997,california,sacramento valley,colusa,irrigated_acres_harvested,7123
+census,1997,california,sacramento valley,colusa,nonirr_acres_harvested,726
+census,2017,california,central coast,contra costa,acres_harvested,2630
+census,2017,california,central coast,contra costa,irrigated_acres_harvested,2146
+census,2017,california,central coast,contra costa,nonirr_acres_harvested,484
+census,2012,california,central coast,contra costa,acres_harvested,4732
+census,2012,california,central coast,contra costa,irrigated_acres_harvested,4476
+census,2012,california,central coast,contra costa,nonirr_acres_harvested,256
+census,2007,california,central coast,contra costa,acres_harvested,3696
+census,2007,california,central coast,contra costa,irrigated_acres_harvested,3696
+census,2007,california,central coast,contra costa,nonirr_acres_harvested,0
+census,2002,california,central coast,contra costa,acres_harvested,4142
+census,2002,california,central coast,contra costa,irrigated_acres_harvested,3368
+census,2002,california,central coast,contra costa,nonirr_acres_harvested,774
+census,1997,california,central coast,contra costa,acres_harvested,3374
+census,1997,california,central coast,contra costa,irrigated_acres_harvested,3184
+census,1997,california,central coast,contra costa,nonirr_acres_harvested,190
+census,2017,california,san joaquin valley,fresno,acres_harvested,43701
+census,2017,california,san joaquin valley,fresno,irrigated_acres_harvested,41279
+census,2017,california,san joaquin valley,fresno,nonirr_acres_harvested,2422
+census,2012,california,san joaquin valley,fresno,acres_harvested,62231
+census,2012,california,san joaquin valley,fresno,irrigated_acres_harvested,61682
+census,2012,california,san joaquin valley,fresno,nonirr_acres_harvested,549
+census,2007,california,san joaquin valley,fresno,acres_harvested,69290
+census,2007,california,san joaquin valley,fresno,irrigated_acres_harvested,69162
+census,2007,california,san joaquin valley,fresno,nonirr_acres_harvested,128
+census,2002,california,san joaquin valley,fresno,acres_harvested,75799
+census,2002,california,san joaquin valley,fresno,irrigated_acres_harvested,72619
+census,2002,california,san joaquin valley,fresno,nonirr_acres_harvested,3180
+census,1997,california,san joaquin valley,fresno,acres_harvested,65261
+census,1997,california,san joaquin valley,fresno,irrigated_acres_harvested,65084
+census,1997,california,san joaquin valley,fresno,nonirr_acres_harvested,177
+census,2017,california,sacramento valley,glenn,acres_harvested,7076
+census,2017,california,sacramento valley,glenn,irrigated_acres_harvested,0
+census,2017,california,sacramento valley,glenn,nonirr_acres_harvested,7076
+census,2012,california,sacramento valley,glenn,acres_harvested,12189
+census,2012,california,sacramento valley,glenn,irrigated_acres_harvested,10654
+census,2012,california,sacramento valley,glenn,nonirr_acres_harvested,1535
+census,2007,california,sacramento valley,glenn,acres_harvested,13851
+census,2007,california,sacramento valley,glenn,irrigated_acres_harvested,13069
+census,2007,california,sacramento valley,glenn,nonirr_acres_harvested,782
+census,2002,california,sacramento valley,glenn,acres_harvested,20215
+census,2002,california,sacramento valley,glenn,irrigated_acres_harvested,19973
+census,2002,california,sacramento valley,glenn,nonirr_acres_harvested,242
+census,1997,california,sacramento valley,glenn,acres_harvested,14377
+census,1997,california,sacramento valley,glenn,irrigated_acres_harvested,14377
+census,1997,california,sacramento valley,glenn,nonirr_acres_harvested,0
+census,2017,california,northern coast,humboldt,acres_harvested,624
+census,2017,california,northern coast,humboldt,irrigated_acres_harvested,295
+census,2017,california,northern coast,humboldt,nonirr_acres_harvested,329
+census,2012,california,northern coast,humboldt,acres_harvested,392
+census,2012,california,northern coast,humboldt,irrigated_acres_harvested,93
+census,2012,california,northern coast,humboldt,nonirr_acres_harvested,299
+census,2007,california,northern coast,humboldt,acres_harvested,997
+census,2007,california,northern coast,humboldt,irrigated_acres_harvested,931
+census,2007,california,northern coast,humboldt,nonirr_acres_harvested,66
+census,2002,california,northern coast,humboldt,acres_harvested,939
+census,2002,california,northern coast,humboldt,irrigated_acres_harvested,754
+census,2002,california,northern coast,humboldt,nonirr_acres_harvested,185
+census,1997,california,northern coast,humboldt,acres_harvested,1104
+census,1997,california,northern coast,humboldt,irrigated_acres_harvested,1022
+census,1997,california,northern coast,humboldt,nonirr_acres_harvested,82
+census,2017,california,southern california,imperial,acres_harvested,164580
+census,2017,california,southern california,imperial,irrigated_acres_harvested,164580
+census,2017,california,southern california,imperial,nonirr_acres_harvested,0
+census,2012,california,southern california,imperial,acres_harvested,158235
+census,2012,california,southern california,imperial,irrigated_acres_harvested,155091
+census,2012,california,southern california,imperial,nonirr_acres_harvested,3144
+census,2007,california,southern california,imperial,acres_harvested,127406
+census,2007,california,southern california,imperial,irrigated_acres_harvested,127406
+census,2007,california,southern california,imperial,nonirr_acres_harvested,0
+census,2002,california,southern california,imperial,acres_harvested,202568
+census,2002,california,southern california,imperial,irrigated_acres_harvested,202568
+census,2002,california,southern california,imperial,nonirr_acres_harvested,0
+census,1997,california,southern california,imperial,acres_harvested,152062
+census,1997,california,southern california,imperial,irrigated_acres_harvested,150896
+census,1997,california,southern california,imperial,nonirr_acres_harvested,1166
+census,2017,california,sierra mountains,inyo,acres_harvested,1240
+census,2017,california,sierra mountains,inyo,irrigated_acres_harvested,0
+census,2017,california,sierra mountains,inyo,nonirr_acres_harvested,1240
+census,2012,california,sierra mountains,inyo,acres_harvested,3967
+census,2012,california,sierra mountains,inyo,irrigated_acres_harvested,3967
+census,2012,california,sierra mountains,inyo,nonirr_acres_harvested,0
+census,2007,california,sierra mountains,inyo,acres_harvested,3273
+census,2007,california,sierra mountains,inyo,irrigated_acres_harvested,3273
+census,2007,california,sierra mountains,inyo,nonirr_acres_harvested,0
+census,2002,california,sierra mountains,inyo,acres_harvested,2579
+census,2002,california,sierra mountains,inyo,irrigated_acres_harvested,2561
+census,2002,california,sierra mountains,inyo,nonirr_acres_harvested,18
+census,1997,california,sierra mountains,inyo,acres_harvested,2611
+census,1997,california,sierra mountains,inyo,irrigated_acres_harvested,2611
+census,1997,california,sierra mountains,inyo,nonirr_acres_harvested,0
+census,2017,california,san joaquin valley,kern,acres_harvested,51324
+census,2017,california,san joaquin valley,kern,irrigated_acres_harvested,42032
+census,2017,california,san joaquin valley,kern,nonirr_acres_harvested,9292
+census,2012,california,san joaquin valley,kern,acres_harvested,57360
+census,2012,california,san joaquin valley,kern,irrigated_acres_harvested,54945
+census,2012,california,san joaquin valley,kern,nonirr_acres_harvested,2415
+census,2007,california,san joaquin valley,kern,acres_harvested,85756
+census,2007,california,san joaquin valley,kern,irrigated_acres_harvested,85756
+census,2007,california,san joaquin valley,kern,nonirr_acres_harvested,0
+census,2002,california,san joaquin valley,kern,acres_harvested,100577
+census,2002,california,san joaquin valley,kern,irrigated_acres_harvested,97959
+census,2002,california,san joaquin valley,kern,nonirr_acres_harvested,2618
+census,1997,california,san joaquin valley,kern,acres_harvested,95600
+census,1997,california,san joaquin valley,kern,irrigated_acres_harvested,95192
+census,1997,california,san joaquin valley,kern,nonirr_acres_harvested,408
+census,2017,california,san joaquin valley,kings,acres_harvested,22717
+census,2017,california,san joaquin valley,kings,irrigated_acres_harvested,21359
+census,2017,california,san joaquin valley,kings,nonirr_acres_harvested,1358
+census,2012,california,san joaquin valley,kings,acres_harvested,46925
+census,2012,california,san joaquin valley,kings,irrigated_acres_harvested,46275
+census,2012,california,san joaquin valley,kings,nonirr_acres_harvested,650
+census,2007,california,san joaquin valley,kings,acres_harvested,63840
+census,2007,california,san joaquin valley,kings,irrigated_acres_harvested,63570
+census,2007,california,san joaquin valley,kings,nonirr_acres_harvested,270
+census,2002,california,san joaquin valley,kings,acres_harvested,67872
+census,2002,california,san joaquin valley,kings,irrigated_acres_harvested,67481
+census,2002,california,san joaquin valley,kings,nonirr_acres_harvested,391
+census,1997,california,san joaquin valley,kings,acres_harvested,29882
+census,1997,california,san joaquin valley,kings,irrigated_acres_harvested,29882
+census,1997,california,san joaquin valley,kings,nonirr_acres_harvested,0
+census,2017,california,central coast,lake,acres_harvested,35
+census,2017,california,central coast,lake,irrigated_acres_harvested,0
+census,2017,california,central coast,lake,nonirr_acres_harvested,35
+census,2012,california,central coast,lake,acres_harvested,164
+census,2012,california,central coast,lake,irrigated_acres_harvested,0
+census,2012,california,central coast,lake,nonirr_acres_harvested,164
+census,2007,california,central coast,lake,acres_harvested,58
+census,2007,california,central coast,lake,irrigated_acres_harvested,58
+census,2007,california,central coast,lake,nonirr_acres_harvested,0
+census,2002,california,central coast,lake,acres_harvested,395
+census,2002,california,central coast,lake,irrigated_acres_harvested,361
+census,2002,california,central coast,lake,nonirr_acres_harvested,34
+census,1997,california,central coast,lake,acres_harvested,625
+census,1997,california,central coast,lake,irrigated_acres_harvested,605
+census,1997,california,central coast,lake,nonirr_acres_harvested,20
+census,2017,california,northeast,lassen,acres_harvested,17078
+census,2017,california,northeast,lassen,irrigated_acres_harvested,0
+census,2017,california,northeast,lassen,nonirr_acres_harvested,17078
+census,2012,california,northeast,lassen,acres_harvested,14116
+census,2012,california,northeast,lassen,irrigated_acres_harvested,13458
+census,2012,california,northeast,lassen,nonirr_acres_harvested,658
+census,2007,california,northeast,lassen,acres_harvested,19752
+census,2007,california,northeast,lassen,irrigated_acres_harvested,16258
+census,2007,california,northeast,lassen,nonirr_acres_harvested,3494
+census,2002,california,northeast,lassen,acres_harvested,20809
+census,2002,california,northeast,lassen,irrigated_acres_harvested,19770
+census,2002,california,northeast,lassen,nonirr_acres_harvested,1039
+census,1997,california,northeast,lassen,acres_harvested,19714
+census,1997,california,northeast,lassen,irrigated_acres_harvested,17391
+census,1997,california,northeast,lassen,nonirr_acres_harvested,2323
+census,2017,california,southern california,los angeles,acres_harvested,3677
+census,2017,california,southern california,los angeles,irrigated_acres_harvested,2659
+census,2017,california,southern california,los angeles,nonirr_acres_harvested,1018
+census,2012,california,southern california,los angeles,acres_harvested,7466
+census,2012,california,southern california,los angeles,irrigated_acres_harvested,0
+census,2012,california,southern california,los angeles,nonirr_acres_harvested,7466
+census,2007,california,southern california,los angeles,acres_harvested,7693
+census,2007,california,southern california,los angeles,irrigated_acres_harvested,7603
+census,2007,california,southern california,los angeles,nonirr_acres_harvested,90
+census,2002,california,southern california,los angeles,acres_harvested,7150
+census,2002,california,southern california,los angeles,irrigated_acres_harvested,7150
+census,2002,california,southern california,los angeles,nonirr_acres_harvested,0
+census,1997,california,southern california,los angeles,acres_harvested,6418
+census,1997,california,southern california,los angeles,irrigated_acres_harvested,6228
+census,1997,california,southern california,los angeles,nonirr_acres_harvested,190
+census,2017,california,san joaquin valley,madera,acres_harvested,13997
+census,2017,california,san joaquin valley,madera,irrigated_acres_harvested,13255
+census,2017,california,san joaquin valley,madera,nonirr_acres_harvested,742
+census,2012,california,san joaquin valley,madera,acres_harvested,20342
+census,2012,california,san joaquin valley,madera,irrigated_acres_harvested,19705
+census,2012,california,san joaquin valley,madera,nonirr_acres_harvested,637
+census,2007,california,san joaquin valley,madera,acres_harvested,29759
+census,2007,california,san joaquin valley,madera,irrigated_acres_harvested,28944
+census,2007,california,san joaquin valley,madera,nonirr_acres_harvested,815
+census,2002,california,san joaquin valley,madera,acres_harvested,40783
+census,2002,california,san joaquin valley,madera,irrigated_acres_harvested,40679
+census,2002,california,san joaquin valley,madera,nonirr_acres_harvested,104
+census,1997,california,san joaquin valley,madera,acres_harvested,25360
+census,1997,california,san joaquin valley,madera,irrigated_acres_harvested,25140
+census,1997,california,san joaquin valley,madera,nonirr_acres_harvested,220
+census,2017,california,northern coast,mendocino,acres_harvested,507
+census,2017,california,northern coast,mendocino,irrigated_acres_harvested,0
+census,2017,california,northern coast,mendocino,nonirr_acres_harvested,507
+census,2012,california,northern coast,mendocino,acres_harvested,571
+census,2012,california,northern coast,mendocino,irrigated_acres_harvested,379
+census,2012,california,northern coast,mendocino,nonirr_acres_harvested,192
+census,2007,california,northern coast,mendocino,acres_harvested,1218
+census,2007,california,northern coast,mendocino,irrigated_acres_harvested,1127
+census,2007,california,northern coast,mendocino,nonirr_acres_harvested,91
+census,2002,california,northern coast,mendocino,acres_harvested,417
+census,2002,california,northern coast,mendocino,irrigated_acres_harvested,235
+census,2002,california,northern coast,mendocino,nonirr_acres_harvested,182
+census,1997,california,northern coast,mendocino,acres_harvested,355
+census,1997,california,northern coast,mendocino,irrigated_acres_harvested,270
+census,1997,california,northern coast,mendocino,nonirr_acres_harvested,85
+census,2017,california,san joaquin valley,merced,acres_harvested,62460
+census,2017,california,san joaquin valley,merced,irrigated_acres_harvested,55284
+census,2017,california,san joaquin valley,merced,nonirr_acres_harvested,7176
+census,2012,california,san joaquin valley,merced,acres_harvested,64547
+census,2012,california,san joaquin valley,merced,irrigated_acres_harvested,61716
+census,2012,california,san joaquin valley,merced,nonirr_acres_harvested,2831
+census,2007,california,san joaquin valley,merced,acres_harvested,82731
+census,2007,california,san joaquin valley,merced,irrigated_acres_harvested,82083
+census,2007,california,san joaquin valley,merced,nonirr_acres_harvested,648
+census,2002,california,san joaquin valley,merced,acres_harvested,89862
+census,2002,california,san joaquin valley,merced,irrigated_acres_harvested,88809
+census,2002,california,san joaquin valley,merced,nonirr_acres_harvested,1053
+census,1997,california,san joaquin valley,merced,acres_harvested,76934
+census,1997,california,san joaquin valley,merced,irrigated_acres_harvested,76312
+census,1997,california,san joaquin valley,merced,nonirr_acres_harvested,622
+census,2017,california,northeast,modoc,acres_harvested,50926
+census,2017,california,northeast,modoc,irrigated_acres_harvested,49894
+census,2017,california,northeast,modoc,nonirr_acres_harvested,1032
+census,2012,california,northeast,modoc,acres_harvested,51916
+census,2012,california,northeast,modoc,irrigated_acres_harvested,48591
+census,2012,california,northeast,modoc,nonirr_acres_harvested,3325
+census,2007,california,northeast,modoc,acres_harvested,45890
+census,2007,california,northeast,modoc,irrigated_acres_harvested,42532
+census,2007,california,northeast,modoc,nonirr_acres_harvested,3358
+census,2002,california,northeast,modoc,acres_harvested,44504
+census,2002,california,northeast,modoc,irrigated_acres_harvested,41953
+census,2002,california,northeast,modoc,nonirr_acres_harvested,2551
+census,1997,california,northeast,modoc,acres_harvested,45689
+census,1997,california,northeast,modoc,irrigated_acres_harvested,43490
+census,1997,california,northeast,modoc,nonirr_acres_harvested,2199
+census,2017,california,sierra mountains,mono,acres_harvested,6627
+census,2017,california,sierra mountains,mono,irrigated_acres_harvested,6627
+census,2017,california,sierra mountains,mono,nonirr_acres_harvested,0
+census,2012,california,sierra mountains,mono,acres_harvested,10253
+census,2012,california,sierra mountains,mono,irrigated_acres_harvested,10253
+census,2012,california,sierra mountains,mono,nonirr_acres_harvested,0
+census,2007,california,sierra mountains,mono,acres_harvested,7525
+census,2007,california,sierra mountains,mono,irrigated_acres_harvested,7525
+census,2007,california,sierra mountains,mono,nonirr_acres_harvested,0
+census,2002,california,sierra mountains,mono,acres_harvested,5830
+census,2002,california,sierra mountains,mono,irrigated_acres_harvested,5716
+census,2002,california,sierra mountains,mono,nonirr_acres_harvested,114
+census,1997,california,sierra mountains,mono,acres_harvested,6008
+census,1997,california,sierra mountains,mono,irrigated_acres_harvested,5963
+census,1997,california,sierra mountains,mono,nonirr_acres_harvested,45
+census,2017,california,central coast,monterey,acres_harvested,3206
+census,2017,california,central coast,monterey,irrigated_acres_harvested,2336
+census,2017,california,central coast,monterey,nonirr_acres_harvested,870
+census,2012,california,central coast,monterey,acres_harvested,898
+census,2012,california,central coast,monterey,irrigated_acres_harvested,0
+census,2012,california,central coast,monterey,nonirr_acres_harvested,898
+census,2007,california,central coast,monterey,acres_harvested,428
+census,2007,california,central coast,monterey,irrigated_acres_harvested,0
+census,2007,california,central coast,monterey,nonirr_acres_harvested,428
+census,2002,california,central coast,monterey,acres_harvested,1896
+census,2002,california,central coast,monterey,irrigated_acres_harvested,1884
+census,2002,california,central coast,monterey,nonirr_acres_harvested,12
+census,1997,california,central coast,monterey,acres_harvested,3220
+census,1997,california,central coast,monterey,irrigated_acres_harvested,2550
+census,1997,california,central coast,monterey,nonirr_acres_harvested,670
+census,2007,california,central coast,napa,acres_harvested,125
+census,2007,california,central coast,napa,irrigated_acres_harvested,0
+census,2007,california,central coast,napa,nonirr_acres_harvested,125
+census,2017,california,sierra mountains,placer,acres_harvested,426
+census,2017,california,sierra mountains,placer,irrigated_acres_harvested,0
+census,2017,california,sierra mountains,placer,nonirr_acres_harvested,426
+census,2007,california,sierra mountains,placer,acres_harvested,170
+census,2007,california,sierra mountains,placer,irrigated_acres_harvested,170
+census,2007,california,sierra mountains,placer,nonirr_acres_harvested,0
+census,1997,california,sierra mountains,placer,acres_harvested,396
+census,1997,california,sierra mountains,placer,irrigated_acres_harvested,393
+census,1997,california,sierra mountains,placer,nonirr_acres_harvested,3
+census,2017,california,northeast,plumas,acres_harvested,8014
+census,2017,california,northeast,plumas,irrigated_acres_harvested,0
+census,2017,california,northeast,plumas,nonirr_acres_harvested,8014
+census,2012,california,northeast,plumas,acres_harvested,7659
+census,2012,california,northeast,plumas,irrigated_acres_harvested,6782
+census,2012,california,northeast,plumas,nonirr_acres_harvested,877
+census,2007,california,northeast,plumas,acres_harvested,5118
+census,2007,california,northeast,plumas,irrigated_acres_harvested,4373
+census,2007,california,northeast,plumas,nonirr_acres_harvested,745
+census,2002,california,northeast,plumas,acres_harvested,5110
+census,2002,california,northeast,plumas,irrigated_acres_harvested,3487
+census,2002,california,northeast,plumas,nonirr_acres_harvested,1623
+census,1997,california,northeast,plumas,acres_harvested,6839
+census,1997,california,northeast,plumas,irrigated_acres_harvested,5762
+census,1997,california,northeast,plumas,nonirr_acres_harvested,1077
+census,2017,california,southern california,riverside,acres_harvested,41767
+census,2017,california,southern california,riverside,irrigated_acres_harvested,41767
+census,2017,california,southern california,riverside,nonirr_acres_harvested,0
+census,2012,california,southern california,riverside,acres_harvested,33775
+census,2012,california,southern california,riverside,irrigated_acres_harvested,26612
+census,2012,california,southern california,riverside,nonirr_acres_harvested,7163
+census,2007,california,southern california,riverside,acres_harvested,47418
+census,2007,california,southern california,riverside,irrigated_acres_harvested,47263
+census,2007,california,southern california,riverside,nonirr_acres_harvested,155
+census,2002,california,southern california,riverside,acres_harvested,50744
+census,2002,california,southern california,riverside,irrigated_acres_harvested,50683
+census,2002,california,southern california,riverside,nonirr_acres_harvested,61
+census,1997,california,southern california,riverside,acres_harvested,67547
+census,1997,california,southern california,riverside,irrigated_acres_harvested,67242
+census,1997,california,southern california,riverside,nonirr_acres_harvested,305
+census,2017,california,sacramento valley,sacramento,acres_harvested,8635
+census,2017,california,sacramento valley,sacramento,irrigated_acres_harvested,7751
+census,2017,california,sacramento valley,sacramento,nonirr_acres_harvested,884
+census,2012,california,sacramento valley,sacramento,acres_harvested,9083
+census,2012,california,sacramento valley,sacramento,irrigated_acres_harvested,8480
+census,2012,california,sacramento valley,sacramento,nonirr_acres_harvested,603
+census,2007,california,sacramento valley,sacramento,acres_harvested,9960
+census,2007,california,sacramento valley,sacramento,irrigated_acres_harvested,9771
+census,2007,california,sacramento valley,sacramento,nonirr_acres_harvested,189
+census,2002,california,sacramento valley,sacramento,acres_harvested,9216
+census,2002,california,sacramento valley,sacramento,irrigated_acres_harvested,8387
+census,2002,california,sacramento valley,sacramento,nonirr_acres_harvested,829
+census,1997,california,sacramento valley,sacramento,acres_harvested,6598
+census,1997,california,sacramento valley,sacramento,irrigated_acres_harvested,6423
+census,1997,california,sacramento valley,sacramento,nonirr_acres_harvested,175
+census,2017,california,central coast,san benito,acres_harvested,837
+census,2017,california,central coast,san benito,irrigated_acres_harvested,0
+census,2017,california,central coast,san benito,nonirr_acres_harvested,837
+census,2012,california,central coast,san benito,acres_harvested,423
+census,2012,california,central coast,san benito,irrigated_acres_harvested,0
+census,2012,california,central coast,san benito,nonirr_acres_harvested,423
+census,2007,california,central coast,san benito,acres_harvested,489
+census,2007,california,central coast,san benito,irrigated_acres_harvested,0
+census,2007,california,central coast,san benito,nonirr_acres_harvested,489
+census,2002,california,central coast,san benito,acres_harvested,1005
+census,2002,california,central coast,san benito,irrigated_acres_harvested,1005
+census,2002,california,central coast,san benito,nonirr_acres_harvested,0
+census,1997,california,central coast,san benito,acres_harvested,1286
+census,1997,california,central coast,san benito,irrigated_acres_harvested,1241
+census,1997,california,central coast,san benito,nonirr_acres_harvested,45
+census,2017,california,southern california,san bernardino,acres_harvested,7161
+census,2017,california,southern california,san bernardino,irrigated_acres_harvested,0
+census,2017,california,southern california,san bernardino,nonirr_acres_harvested,7161
+census,2012,california,southern california,san bernardino,acres_harvested,7182
+census,2012,california,southern california,san bernardino,irrigated_acres_harvested,0
+census,2012,california,southern california,san bernardino,nonirr_acres_harvested,7182
+census,2007,california,southern california,san bernardino,acres_harvested,9345
+census,2007,california,southern california,san bernardino,irrigated_acres_harvested,8925
+census,2007,california,southern california,san bernardino,nonirr_acres_harvested,420
+census,2002,california,southern california,san bernardino,acres_harvested,13156
+census,2002,california,southern california,san bernardino,irrigated_acres_harvested,13000
+census,2002,california,southern california,san bernardino,nonirr_acres_harvested,156
+census,1997,california,southern california,san bernardino,acres_harvested,14564
+census,1997,california,southern california,san bernardino,irrigated_acres_harvested,14478
+census,1997,california,southern california,san bernardino,nonirr_acres_harvested,86
+census,2017,california,southern california,san diego,acres_harvested,585
+census,2017,california,southern california,san diego,irrigated_acres_harvested,0
+census,2017,california,southern california,san diego,nonirr_acres_harvested,585
+census,2007,california,southern california,san diego,acres_harvested,183
+census,2007,california,southern california,san diego,irrigated_acres_harvested,0
+census,2007,california,southern california,san diego,nonirr_acres_harvested,183
+census,1997,california,southern california,san diego,acres_harvested,155
+census,1997,california,southern california,san diego,irrigated_acres_harvested,155
+census,1997,california,southern california,san diego,nonirr_acres_harvested,0
+census,2017,california,san joaquin valley,san joaquin,acres_harvested,47661
+census,2017,california,san joaquin valley,san joaquin,irrigated_acres_harvested,47232
+census,2017,california,san joaquin valley,san joaquin,nonirr_acres_harvested,429
+census,2012,california,san joaquin valley,san joaquin,acres_harvested,46785
+census,2012,california,san joaquin valley,san joaquin,irrigated_acres_harvested,44995
+census,2012,california,san joaquin valley,san joaquin,nonirr_acres_harvested,1790
+census,2007,california,san joaquin valley,san joaquin,acres_harvested,56969
+census,2007,california,san joaquin valley,san joaquin,irrigated_acres_harvested,54873
+census,2007,california,san joaquin valley,san joaquin,nonirr_acres_harvested,2096
+census,2002,california,san joaquin valley,san joaquin,acres_harvested,71288
+census,2002,california,san joaquin valley,san joaquin,irrigated_acres_harvested,70983
+census,2002,california,san joaquin valley,san joaquin,nonirr_acres_harvested,305
+census,1997,california,san joaquin valley,san joaquin,acres_harvested,51425
+census,1997,california,san joaquin valley,san joaquin,irrigated_acres_harvested,50369
+census,1997,california,san joaquin valley,san joaquin,nonirr_acres_harvested,1056
+census,2017,california,central coast,san luis obispo,acres_harvested,1712
+census,2017,california,central coast,san luis obispo,irrigated_acres_harvested,1370
+census,2017,california,central coast,san luis obispo,nonirr_acres_harvested,342
+census,2012,california,central coast,san luis obispo,acres_harvested,3797
+census,2012,california,central coast,san luis obispo,irrigated_acres_harvested,3607
+census,2012,california,central coast,san luis obispo,nonirr_acres_harvested,190
+census,2002,california,central coast,san luis obispo,acres_harvested,5228
+census,2002,california,central coast,san luis obispo,irrigated_acres_harvested,5020
+census,2002,california,central coast,san luis obispo,nonirr_acres_harvested,208
+census,1997,california,central coast,san luis obispo,acres_harvested,3398
+census,1997,california,central coast,san luis obispo,irrigated_acres_harvested,3288
+census,1997,california,central coast,san luis obispo,nonirr_acres_harvested,110
+census,2017,california,southern california,santa barbara,acres_harvested,1180
+census,2017,california,southern california,santa barbara,irrigated_acres_harvested,1020
+census,2017,california,southern california,santa barbara,nonirr_acres_harvested,160
+census,2012,california,southern california,santa barbara,acres_harvested,621
+census,2012,california,southern california,santa barbara,irrigated_acres_harvested,482
+census,2012,california,southern california,santa barbara,nonirr_acres_harvested,139
+census,2007,california,southern california,santa barbara,acres_harvested,841
+census,2007,california,southern california,santa barbara,irrigated_acres_harvested,0
+census,2007,california,southern california,santa barbara,nonirr_acres_harvested,841
+census,2002,california,southern california,santa barbara,acres_harvested,1576
+census,2002,california,southern california,santa barbara,irrigated_acres_harvested,1534
+census,2002,california,southern california,santa barbara,nonirr_acres_harvested,42
+census,1997,california,southern california,santa barbara,acres_harvested,2562
+census,1997,california,southern california,santa barbara,irrigated_acres_harvested,2522
+census,1997,california,southern california,santa barbara,nonirr_acres_harvested,40
+census,2017,california,central coast,santa clara,acres_harvested,620
+census,2017,california,central coast,santa clara,irrigated_acres_harvested,530
+census,2017,california,central coast,santa clara,nonirr_acres_harvested,90
+census,2007,california,central coast,santa clara,acres_harvested,1213
+census,2007,california,central coast,santa clara,irrigated_acres_harvested,893
+census,2007,california,central coast,santa clara,nonirr_acres_harvested,320
+census,1997,california,central coast,santa clara,acres_harvested,628
+census,1997,california,central coast,santa clara,irrigated_acres_harvested,528
+census,1997,california,central coast,santa clara,nonirr_acres_harvested,100
+census,2017,california,siskiyou-shasta,shasta,acres_harvested,3983
+census,2017,california,siskiyou-shasta,shasta,irrigated_acres_harvested,1567
+census,2017,california,siskiyou-shasta,shasta,nonirr_acres_harvested,2416
+census,2012,california,siskiyou-shasta,shasta,acres_harvested,2191
+census,2012,california,siskiyou-shasta,shasta,irrigated_acres_harvested,2099
+census,2012,california,siskiyou-shasta,shasta,nonirr_acres_harvested,92
+census,2007,california,siskiyou-shasta,shasta,acres_harvested,4894
+census,2007,california,siskiyou-shasta,shasta,irrigated_acres_harvested,4458
+census,2007,california,siskiyou-shasta,shasta,nonirr_acres_harvested,436
+census,2002,california,siskiyou-shasta,shasta,acres_harvested,6108
+census,2002,california,siskiyou-shasta,shasta,irrigated_acres_harvested,5546
+census,2002,california,siskiyou-shasta,shasta,nonirr_acres_harvested,562
+census,1997,california,siskiyou-shasta,shasta,acres_harvested,4799
+census,1997,california,siskiyou-shasta,shasta,irrigated_acres_harvested,4745
+census,1997,california,siskiyou-shasta,shasta,nonirr_acres_harvested,54
+census,2017,california,sierra mountains,sierra,acres_harvested,1077
+census,2017,california,sierra mountains,sierra,irrigated_acres_harvested,1050
+census,2017,california,sierra mountains,sierra,nonirr_acres_harvested,27
+census,2012,california,sierra mountains,sierra,acres_harvested,1158
+census,2012,california,sierra mountains,sierra,irrigated_acres_harvested,0
+census,2012,california,sierra mountains,sierra,nonirr_acres_harvested,1158
+census,2007,california,sierra mountains,sierra,acres_harvested,1064
+census,2007,california,sierra mountains,sierra,irrigated_acres_harvested,882
+census,2007,california,sierra mountains,sierra,nonirr_acres_harvested,182
+census,2002,california,sierra mountains,sierra,acres_harvested,1433
+census,2002,california,sierra mountains,sierra,irrigated_acres_harvested,1223
+census,2002,california,sierra mountains,sierra,nonirr_acres_harvested,210
+census,1997,california,sierra mountains,sierra,acres_harvested,2255
+census,1997,california,sierra mountains,sierra,irrigated_acres_harvested,960
+census,1997,california,sierra mountains,sierra,nonirr_acres_harvested,1295
+census,2017,california,siskiyou-shasta,siskiyou,acres_harvested,46690
+census,2017,california,siskiyou-shasta,siskiyou,irrigated_acres_harvested,41401
+census,2017,california,siskiyou-shasta,siskiyou,nonirr_acres_harvested,5289
+census,2012,california,siskiyou-shasta,siskiyou,acres_harvested,59364
+census,2012,california,siskiyou-shasta,siskiyou,irrigated_acres_harvested,54519
+census,2012,california,siskiyou-shasta,siskiyou,nonirr_acres_harvested,4845
+census,2007,california,siskiyou-shasta,siskiyou,acres_harvested,59216
+census,2007,california,siskiyou-shasta,siskiyou,irrigated_acres_harvested,53651
+census,2007,california,siskiyou-shasta,siskiyou,nonirr_acres_harvested,5565
+census,2002,california,siskiyou-shasta,siskiyou,acres_harvested,65308
+census,2002,california,siskiyou-shasta,siskiyou,irrigated_acres_harvested,59963
+census,2002,california,siskiyou-shasta,siskiyou,nonirr_acres_harvested,5345
+census,1997,california,siskiyou-shasta,siskiyou,acres_harvested,52158
+census,1997,california,siskiyou-shasta,siskiyou,irrigated_acres_harvested,46309
+census,1997,california,siskiyou-shasta,siskiyou,nonirr_acres_harvested,5849
+census,2017,california,sacramento valley,solano,acres_harvested,23103
+census,2017,california,sacramento valley,solano,irrigated_acres_harvested,23051
+census,2017,california,sacramento valley,solano,nonirr_acres_harvested,52
+census,2012,california,sacramento valley,solano,acres_harvested,31311
+census,2012,california,sacramento valley,solano,irrigated_acres_harvested,29781
+census,2012,california,sacramento valley,solano,nonirr_acres_harvested,1530
+census,2007,california,sacramento valley,solano,acres_harvested,28129
+census,2007,california,sacramento valley,solano,irrigated_acres_harvested,28045
+census,2007,california,sacramento valley,solano,nonirr_acres_harvested,84
+census,2002,california,sacramento valley,solano,acres_harvested,34598
+census,2002,california,sacramento valley,solano,irrigated_acres_harvested,33992
+census,2002,california,sacramento valley,solano,nonirr_acres_harvested,606
+census,1997,california,sacramento valley,solano,acres_harvested,21752
+census,1997,california,sacramento valley,solano,irrigated_acres_harvested,21714
+census,1997,california,sacramento valley,solano,nonirr_acres_harvested,38
+census,2017,california,central coast,sonoma,acres_harvested,1605
+census,2017,california,central coast,sonoma,irrigated_acres_harvested,0
+census,2017,california,central coast,sonoma,nonirr_acres_harvested,1605
+census,2012,california,central coast,sonoma,acres_harvested,1424
+census,2012,california,central coast,sonoma,irrigated_acres_harvested,0
+census,2012,california,central coast,sonoma,nonirr_acres_harvested,1424
+census,2007,california,central coast,sonoma,acres_harvested,925
+census,2007,california,central coast,sonoma,irrigated_acres_harvested,599
+census,2007,california,central coast,sonoma,nonirr_acres_harvested,326
+census,2002,california,central coast,sonoma,acres_harvested,429
+census,2002,california,central coast,sonoma,irrigated_acres_harvested,0
+census,2002,california,central coast,sonoma,nonirr_acres_harvested,429
+census,1997,california,central coast,sonoma,acres_harvested,65
+census,1997,california,central coast,sonoma,irrigated_acres_harvested,29
+census,1997,california,central coast,sonoma,nonirr_acres_harvested,36
+census,2017,california,san joaquin valley,stanislaus,acres_harvested,22976
+census,2017,california,san joaquin valley,stanislaus,irrigated_acres_harvested,0
+census,2017,california,san joaquin valley,stanislaus,nonirr_acres_harvested,22976
+census,2012,california,san joaquin valley,stanislaus,acres_harvested,22626
+census,2012,california,san joaquin valley,stanislaus,irrigated_acres_harvested,22538
+census,2012,california,san joaquin valley,stanislaus,nonirr_acres_harvested,88
+census,2007,california,san joaquin valley,stanislaus,acres_harvested,28836
+census,2007,california,san joaquin valley,stanislaus,irrigated_acres_harvested,28575
+census,2007,california,san joaquin valley,stanislaus,nonirr_acres_harvested,261
+census,2002,california,san joaquin valley,stanislaus,acres_harvested,36463
+census,2002,california,san joaquin valley,stanislaus,irrigated_acres_harvested,36167
+census,2002,california,san joaquin valley,stanislaus,nonirr_acres_harvested,296
+census,1997,california,san joaquin valley,stanislaus,acres_harvested,31801
+census,1997,california,san joaquin valley,stanislaus,irrigated_acres_harvested,31773
+census,1997,california,san joaquin valley,stanislaus,nonirr_acres_harvested,28
+census,2017,california,sacramento valley,sutter,acres_harvested,4472
+census,2017,california,sacramento valley,sutter,irrigated_acres_harvested,3974
+census,2017,california,sacramento valley,sutter,nonirr_acres_harvested,498
+census,2012,california,sacramento valley,sutter,acres_harvested,6196
+census,2012,california,sacramento valley,sutter,irrigated_acres_harvested,6196
+census,2012,california,sacramento valley,sutter,nonirr_acres_harvested,0
+census,2007,california,sacramento valley,sutter,acres_harvested,6388
+census,2007,california,sacramento valley,sutter,irrigated_acres_harvested,6388
+census,2007,california,sacramento valley,sutter,nonirr_acres_harvested,0
+census,2002,california,sacramento valley,sutter,acres_harvested,6729
+census,2002,california,sacramento valley,sutter,irrigated_acres_harvested,6573
+census,2002,california,sacramento valley,sutter,nonirr_acres_harvested,156
+census,1997,california,sacramento valley,sutter,acres_harvested,6583
+census,1997,california,sacramento valley,sutter,irrigated_acres_harvested,6470
+census,1997,california,sacramento valley,sutter,nonirr_acres_harvested,113
+census,2017,california,sacramento valley,tehama,acres_harvested,3509
+census,2017,california,sacramento valley,tehama,irrigated_acres_harvested,2521
+census,2017,california,sacramento valley,tehama,nonirr_acres_harvested,988
+census,2012,california,sacramento valley,tehama,acres_harvested,3731
+census,2012,california,sacramento valley,tehama,irrigated_acres_harvested,3486
+census,2012,california,sacramento valley,tehama,nonirr_acres_harvested,245
+census,2007,california,sacramento valley,tehama,acres_harvested,5289
+census,2007,california,sacramento valley,tehama,irrigated_acres_harvested,4319
+census,2007,california,sacramento valley,tehama,nonirr_acres_harvested,970
+census,2002,california,sacramento valley,tehama,acres_harvested,6163
+census,2002,california,sacramento valley,tehama,irrigated_acres_harvested,6163
+census,2002,california,sacramento valley,tehama,nonirr_acres_harvested,0
+census,1997,california,sacramento valley,tehama,acres_harvested,3650
+census,1997,california,sacramento valley,tehama,irrigated_acres_harvested,3630
+census,1997,california,sacramento valley,tehama,nonirr_acres_harvested,20
+census,2017,california,siskiyou-shasta,trinity,acres_harvested,154
+census,2017,california,siskiyou-shasta,trinity,irrigated_acres_harvested,154
+census,2017,california,siskiyou-shasta,trinity,nonirr_acres_harvested,0
+census,2012,california,siskiyou-shasta,trinity,acres_harvested,66
+census,2012,california,siskiyou-shasta,trinity,irrigated_acres_harvested,66
+census,2012,california,siskiyou-shasta,trinity,nonirr_acres_harvested,0
+census,2017,california,san joaquin valley,tulare,acres_harvested,52629
+census,2017,california,san joaquin valley,tulare,irrigated_acres_harvested,50592
+census,2017,california,san joaquin valley,tulare,nonirr_acres_harvested,2037
+census,2012,california,san joaquin valley,tulare,acres_harvested,69376
+census,2012,california,san joaquin valley,tulare,irrigated_acres_harvested,66194
+census,2012,california,san joaquin valley,tulare,nonirr_acres_harvested,3182
+census,2007,california,san joaquin valley,tulare,acres_harvested,76413
+census,2007,california,san joaquin valley,tulare,irrigated_acres_harvested,75405
+census,2007,california,san joaquin valley,tulare,nonirr_acres_harvested,1008
+census,2002,california,san joaquin valley,tulare,acres_harvested,94519
+census,2002,california,san joaquin valley,tulare,irrigated_acres_harvested,93950
+census,2002,california,san joaquin valley,tulare,nonirr_acres_harvested,569
+census,1997,california,san joaquin valley,tulare,acres_harvested,74251
+census,1997,california,san joaquin valley,tulare,irrigated_acres_harvested,72934
+census,1997,california,san joaquin valley,tulare,nonirr_acres_harvested,1317
+census,2017,california,southern california,ventura,acres_harvested,89
+census,2017,california,southern california,ventura,irrigated_acres_harvested,0
+census,2017,california,southern california,ventura,nonirr_acres_harvested,89
+census,2007,california,southern california,ventura,acres_harvested,1001
+census,2007,california,southern california,ventura,irrigated_acres_harvested,1001
+census,2007,california,southern california,ventura,nonirr_acres_harvested,0
+census,2002,california,southern california,ventura,acres_harvested,430
+census,2002,california,southern california,ventura,irrigated_acres_harvested,430
+census,2002,california,southern california,ventura,nonirr_acres_harvested,0
+census,1997,california,southern california,ventura,acres_harvested,2645
+census,1997,california,southern california,ventura,irrigated_acres_harvested,2625
+census,1997,california,southern california,ventura,nonirr_acres_harvested,20
+census,2017,california,sacramento valley,yolo,acres_harvested,27667
+census,2017,california,sacramento valley,yolo,irrigated_acres_harvested,27315
+census,2017,california,sacramento valley,yolo,nonirr_acres_harvested,352
+census,2012,california,sacramento valley,yolo,acres_harvested,34543
+census,2012,california,sacramento valley,yolo,irrigated_acres_harvested,33519
+census,2012,california,sacramento valley,yolo,nonirr_acres_harvested,1024
+census,2007,california,sacramento valley,yolo,acres_harvested,57001
+census,2007,california,sacramento valley,yolo,irrigated_acres_harvested,56251
+census,2007,california,sacramento valley,yolo,nonirr_acres_harvested,750
+census,2002,california,sacramento valley,yolo,acres_harvested,59729
+census,2002,california,sacramento valley,yolo,irrigated_acres_harvested,59399
+census,2002,california,sacramento valley,yolo,nonirr_acres_harvested,330
+census,1997,california,sacramento valley,yolo,acres_harvested,36593
+census,1997,california,sacramento valley,yolo,irrigated_acres_harvested,36505
+census,1997,california,sacramento valley,yolo,nonirr_acres_harvested,88
+census,2017,california,sacramento valley,yuba,acres_harvested,1269
+census,2017,california,sacramento valley,yuba,irrigated_acres_harvested,0
+census,2017,california,sacramento valley,yuba,nonirr_acres_harvested,1269
+census,2012,california,sacramento valley,yuba,acres_harvested,600
+census,2012,california,sacramento valley,yuba,irrigated_acres_harvested,0
+census,2012,california,sacramento valley,yuba,nonirr_acres_harvested,600
+census,2007,california,sacramento valley,yuba,acres_harvested,850
+census,2007,california,sacramento valley,yuba,irrigated_acres_harvested,806
+census,2007,california,sacramento valley,yuba,nonirr_acres_harvested,44
+census,2002,california,sacramento valley,yuba,acres_harvested,402
+census,2002,california,sacramento valley,yuba,irrigated_acres_harvested,288
+census,2002,california,sacramento valley,yuba,nonirr_acres_harvested,114
+census,1997,california,sacramento valley,yuba,acres_harvested,886
+census,1997,california,sacramento valley,yuba,irrigated_acres_harvested,806
+census,1997,california,sacramento valley,yuba,nonirr_acres_harvested,80

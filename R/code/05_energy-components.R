@@ -70,10 +70,11 @@ dat_all_sums2 <-
   mutate(value = ifelse(is.na(value), 0, value))
 
 dat_all_sums2 %>% 
-  filter(unit == "MJ_kgyield") %>% 
+  filter(unit == "GJ_hayr") %>% 
   ggplot(aes(reorder(cat_short, -value, sum), value, fill = location)) + 
   geom_col(position = position_dodge2(), color = "black") +
   geom_hline(yintercept = 0) +
+  scale_y_continuous(limits = c(-5, 12.5), breaks = seq(-5, 12.5, 2.5)) +
   scale_fill_manual(values = c(imperial = "darkred", siskiyou = "lightblue", tulare = "gold")) +
   facet_wrap(~unit, scales = "free", ncol = 1)
 

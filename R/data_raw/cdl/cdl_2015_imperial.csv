@@ -1,0 +1,52 @@
+Value, Category, Count,  Acreage
+1, Corn,18188,4044.9
+2, Cotton,5433,1208.3
+12, Sweet Corn,9286,2065.2
+22, Durum Wheat,317911,70701.7
+25, Other Small Grains,50,11.1
+28, Oats,3830,851.8
+36, Alfalfa,686943,152772.4
+37, Other Hay/Non Alfalfa,298312,66343
+41, Sugarbeets,114258,25410.4
+42, Dry Beans,4,0.9
+43, Potatoes,6398,1422.9
+44, Other Crops,2841,631.8
+47, Misc Vegs & Fruits,23762,5284.5
+48, Watermelons,2628,584.5
+49, Onions,61331,13639.7
+54, Tomatoes,74,16.5
+57, Herbs,4488,998.1
+59, Sod/Grass Seed,2288,508.8
+61, Fallow/Idle Cropland,514254,114367.3
+69, Grapes,653,145.2
+71, Other Tree Crops,2102,467.5
+72, Citrus,41631,9258.5
+74, Pecans,3,0.7
+75, Almonds,777,172.8
+92, Aquaculture,4356,968.8
+111, Open Water,854589,190056
+121, Developed/Open Space,79689,17722.4
+122, Developed/Low Intensity,214850,47781.5
+123, Developed/Medium Intensity,59124,13148.9
+124, Developed/High Intensity,8249,1834.5
+131, Barren,3375240,750635.3
+141, Deciduous Forest,644,143.2
+142, Evergreen Forest,411,91.4
+143, Mixed Forest,406,90.3
+152, Shrubland,5945279,1322198.2
+176, Grass/Pasture,5316,1182.2
+190, Woody Wetlands,60568,13470
+195, Herbaceous Wetlands,14662,3260.8
+206, Carrots,44985,10004.4
+208, Garlic,30,6.7
+209, Cantaloupes,11976,2663.4
+211, Olives,723,160.8
+213, Honeydew Melons,559,124.3
+214, Broccoli,10824,2407.2
+216, Peppers,7,1.6
+219, Greens,66187,14719.6
+222, Squash,2,0.4
+227, Lettuce,18486,4111.2
+243, Cabbage,412,91.6
+244, Cauliflower,1132,251.8
+246, Radishes,1083,240.9

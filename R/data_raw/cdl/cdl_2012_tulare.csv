@@ -1,0 +1,75 @@
+Value, Category, Count,  Acreage
+1, Corn,128601,28600.2
+2, Cotton,110566,24589.3
+3, Rice,14,3.1
+4, Sorghum,1636,363.8
+12, Sweet Corn,159,35.4
+21, Barley,9848,2190.1
+22, Durum Wheat,211,46.9
+24, Winter Wheat,225052,50050.4
+27, Rye,4,0.9
+28, Oats,65960,14669.2
+33, Safflower,494,109.9
+36, Alfalfa,394247,87678.4
+37, Other Hay/Non Alfalfa,2583,574.4
+38, Camelina,5,1.1
+42, Dry Beans,190,42.3
+43, Potatoes,1272,282.9
+44, Other Crops,2101,467.3
+47, Misc Vegs & Fruits,2165,481.5
+48, Watermelons,90,20
+49, Onions,777,172.8
+53, Peas,3996,888.7
+54, Tomatoes,1710,380.3
+57, Herbs,111,24.7
+58, Clover/Wildflowers,2,0.4
+59, Sod/Grass Seed,7,1.6
+61, Fallow/Idle Cropland,524700,116690.5
+66, Cherries,4993,1110.4
+67, Peaches,7657,1702.9
+68, Apples,1930,429.2
+69, Grapes,231186,51414.5
+71, Other Tree Crops,12722,2829.3
+72, Citrus,25120,5586.6
+74, Pecans,1388,308.7
+75, Almonds,288806,64228.9
+76, Walnuts,212898,47347.4
+77, Pears,2959,658.1
+111, Open Water,33760,7508
+112, Perennial Ice/Snow,1116,248.2
+121, Developed/Open Space,225819,50220.9
+122, Developed/Low Intensity,88134,19600.5
+123, Developed/Medium Intensity,106847,23762.2
+124, Developed/High Intensity,16591,3689.7
+131, Barren,688141,153038.9
+141, Deciduous Forest,114458,25454.8
+142, Evergreen Forest,4096330,911001.9
+143, Mixed Forest,2345,521.5
+152, Shrubland,2805115,623842.6
+176, Grass/Pasture,2332930,518831.1
+190, Woody Wetlands,7700,1712.4
+195, Herbaceous Wetlands,2583,574.4
+204, Pistachios,154715,34407.8
+205, Triticale,8527,1896.4
+206, Carrots,314,69.8
+208, Garlic,541,120.3
+209, Cantaloupes,23,5.1
+211, Olives,54754,12177
+212, Oranges,376918,83824.5
+214, Broccoli,1,0.2
+216, Peppers,16,3.6
+217, Pomegranates,20069,4463.2
+218, Nectarines,4944,1099.5
+220, Plums,25731,5722.4
+221, Strawberries,2,0.4
+225, Dbl Crop WinWht/Corn,430585,95759.8
+226, Dbl Crop Oats/Corn,5015,1115.3
+227, Lettuce,376,83.6
+229, Pumpkins,1,0.2
+235, Dbl Crop Barley/Sorghum,1132,251.8
+236, Dbl Crop WinWht/Sorghum,50344,11196.2
+237, Dbl Crop Barley/Corn,2036,452.8
+238, Dbl Crop WinWht/Cotton,7,1.6
+242, Blueberries,274,60.9
+243, Cabbage,50,11.1
+244, Cauliflower,1,0.2

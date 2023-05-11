@@ -1,0 +1,37 @@
+Value, Category, Count,  Acreage
+2, Cotton,6750,1501.2
+21, Barley,13,2.9
+22, Durum Wheat,380562,84635
+27, Rye,1162,258.4
+28, Oats,2846,632.9
+36, Alfalfa,796584,177156
+37, Other Hay/Non Alfalfa,418049,92971.9
+43, Potatoes,15435,3432.7
+47, Misc Vegs & Fruits,5,1.1
+49, Onions,4436,986.5
+54, Tomatoes,105,23.4
+59, Sod/Grass Seed,3,0.7
+61, Fallow/Idle Cropland,255107,56734.4
+72, Citrus,5,1.1
+75, Almonds,2,0.4
+111, Open Water,900103,200178.1
+121, Developed/Open Space,85787,19078.6
+122, Developed/Low Intensity,202858,45114.5
+123, Developed/Medium Intensity,49374,10980.5
+124, Developed/High Intensity,6162,1370.4
+131, Barren,3323192,739060.1
+141, Deciduous Forest,355,79
+142, Evergreen Forest,2969,660.3
+143, Mixed Forest,340,75.6
+152, Shrubland,6241176,1388004.1
+176, Grass/Pasture,2475,550.4
+190, Woody Wetlands,91004,20238.8
+195, Herbaceous Wetlands,3344,743.7
+206, Carrots,5648,1256.1
+209, Cantaloupes,18805,4182.1
+212, Oranges,4,0.9
+220, Plums,2,0.4
+227, Lettuce,64390,14320
+230, Dbl Crop Lettuce/Durum Wht,16971,3774.3
+232, Dbl Crop Lettuce/Cotton,27,6
+244, Cauliflower,1184,263.3

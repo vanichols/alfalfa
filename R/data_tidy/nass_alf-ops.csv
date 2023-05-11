@@ -1,0 +1,772 @@
+program,year,state,ag_district,county,name,value
+census,2017,california,central coast,alameda,operations,1
+census,2017,california,central coast,alameda,irrigated_operations,1
+census,2017,california,central coast,alameda,nonirr_operations,0
+census,2012,california,central coast,alameda,operations,5
+census,2012,california,central coast,alameda,irrigated_operations,5
+census,2012,california,central coast,alameda,nonirr_operations,0
+census,2007,california,central coast,alameda,operations,4
+census,2007,california,central coast,alameda,irrigated_operations,3
+census,2007,california,central coast,alameda,nonirr_operations,1
+census,2002,california,central coast,alameda,operations,4
+census,2002,california,central coast,alameda,irrigated_operations,3
+census,2002,california,central coast,alameda,nonirr_operations,1
+census,1997,california,central coast,alameda,operations,5
+census,1997,california,central coast,alameda,irrigated_operations,5
+census,1997,california,central coast,alameda,nonirr_operations,0
+census,2007,california,sierra mountains,alpine,operations,1
+census,2007,california,sierra mountains,alpine,irrigated_operations,1
+census,2007,california,sierra mountains,alpine,nonirr_operations,0
+census,2002,california,sierra mountains,alpine,operations,2
+census,2002,california,sierra mountains,alpine,irrigated_operations,2
+census,2002,california,sierra mountains,alpine,nonirr_operations,0
+census,2017,california,sierra mountains,amador,operations,7
+census,2017,california,sierra mountains,amador,irrigated_operations,4
+census,2017,california,sierra mountains,amador,nonirr_operations,3
+census,2012,california,sierra mountains,amador,operations,3
+census,2012,california,sierra mountains,amador,irrigated_operations,3
+census,2012,california,sierra mountains,amador,nonirr_operations,0
+census,2007,california,sierra mountains,amador,operations,4
+census,2007,california,sierra mountains,amador,irrigated_operations,4
+census,2007,california,sierra mountains,amador,nonirr_operations,0
+census,2002,california,sierra mountains,amador,operations,3
+census,2002,california,sierra mountains,amador,irrigated_operations,2
+census,2002,california,sierra mountains,amador,nonirr_operations,1
+census,1997,california,sierra mountains,amador,operations,8
+census,1997,california,sierra mountains,amador,irrigated_operations,7
+census,1997,california,sierra mountains,amador,nonirr_operations,1
+census,2017,california,sacramento valley,butte,operations,23
+census,2017,california,sacramento valley,butte,irrigated_operations,23
+census,2017,california,sacramento valley,butte,nonirr_operations,0
+census,2012,california,sacramento valley,butte,operations,24
+census,2012,california,sacramento valley,butte,irrigated_operations,24
+census,2012,california,sacramento valley,butte,nonirr_operations,0
+census,2007,california,sacramento valley,butte,operations,20
+census,2007,california,sacramento valley,butte,irrigated_operations,19
+census,2007,california,sacramento valley,butte,nonirr_operations,1
+census,2002,california,sacramento valley,butte,operations,21
+census,2002,california,sacramento valley,butte,irrigated_operations,21
+census,2002,california,sacramento valley,butte,nonirr_operations,0
+census,1997,california,sacramento valley,butte,operations,34
+census,1997,california,sacramento valley,butte,irrigated_operations,32
+census,1997,california,sacramento valley,butte,nonirr_operations,2
+census,2017,california,sierra mountains,calaveras,operations,3
+census,2017,california,sierra mountains,calaveras,irrigated_operations,3
+census,2017,california,sierra mountains,calaveras,nonirr_operations,0
+census,2012,california,sierra mountains,calaveras,operations,3
+census,2012,california,sierra mountains,calaveras,irrigated_operations,2
+census,2012,california,sierra mountains,calaveras,nonirr_operations,1
+census,2007,california,sierra mountains,calaveras,operations,1
+census,2007,california,sierra mountains,calaveras,irrigated_operations,1
+census,2007,california,sierra mountains,calaveras,nonirr_operations,0
+census,2002,california,sierra mountains,calaveras,operations,1
+census,2002,california,sierra mountains,calaveras,irrigated_operations,1
+census,2002,california,sierra mountains,calaveras,nonirr_operations,0
+census,2017,california,sacramento valley,colusa,operations,29
+census,2017,california,sacramento valley,colusa,irrigated_operations,26
+census,2017,california,sacramento valley,colusa,nonirr_operations,3
+census,2012,california,sacramento valley,colusa,operations,45
+census,2012,california,sacramento valley,colusa,irrigated_operations,35
+census,2012,california,sacramento valley,colusa,nonirr_operations,10
+census,2007,california,sacramento valley,colusa,operations,49
+census,2007,california,sacramento valley,colusa,irrigated_operations,49
+census,2007,california,sacramento valley,colusa,nonirr_operations,0
+census,2002,california,sacramento valley,colusa,operations,54
+census,2002,california,sacramento valley,colusa,irrigated_operations,54
+census,2002,california,sacramento valley,colusa,nonirr_operations,0
+census,1997,california,sacramento valley,colusa,operations,45
+census,1997,california,sacramento valley,colusa,irrigated_operations,45
+census,1997,california,sacramento valley,colusa,nonirr_operations,0
+census,2017,california,central coast,contra costa,operations,14
+census,2017,california,central coast,contra costa,irrigated_operations,7
+census,2017,california,central coast,contra costa,nonirr_operations,7
+census,2012,california,central coast,contra costa,operations,23
+census,2012,california,central coast,contra costa,irrigated_operations,18
+census,2012,california,central coast,contra costa,nonirr_operations,5
+census,2007,california,central coast,contra costa,operations,15
+census,2007,california,central coast,contra costa,irrigated_operations,15
+census,2007,california,central coast,contra costa,nonirr_operations,0
+census,2002,california,central coast,contra costa,operations,23
+census,2002,california,central coast,contra costa,irrigated_operations,20
+census,2002,california,central coast,contra costa,nonirr_operations,3
+census,1997,california,central coast,contra costa,operations,18
+census,1997,california,central coast,contra costa,irrigated_operations,17
+census,1997,california,central coast,contra costa,nonirr_operations,1
+census,2017,california,northern coast,del norte,operations,1
+census,2017,california,northern coast,del norte,irrigated_operations,1
+census,2017,california,northern coast,del norte,nonirr_operations,0
+census,2012,california,northern coast,del norte,operations,3
+census,2012,california,northern coast,del norte,irrigated_operations,3
+census,2012,california,northern coast,del norte,nonirr_operations,0
+census,2017,california,sierra mountains,el dorado,operations,4
+census,2017,california,sierra mountains,el dorado,irrigated_operations,4
+census,2017,california,sierra mountains,el dorado,nonirr_operations,0
+census,2012,california,sierra mountains,el dorado,operations,2
+census,2012,california,sierra mountains,el dorado,irrigated_operations,2
+census,2012,california,sierra mountains,el dorado,nonirr_operations,0
+census,2017,california,san joaquin valley,fresno,operations,209
+census,2017,california,san joaquin valley,fresno,irrigated_operations,195
+census,2017,california,san joaquin valley,fresno,nonirr_operations,14
+census,2012,california,san joaquin valley,fresno,operations,240
+census,2012,california,san joaquin valley,fresno,irrigated_operations,234
+census,2012,california,san joaquin valley,fresno,nonirr_operations,6
+census,2007,california,san joaquin valley,fresno,operations,250
+census,2007,california,san joaquin valley,fresno,irrigated_operations,248
+census,2007,california,san joaquin valley,fresno,nonirr_operations,2
+census,2002,california,san joaquin valley,fresno,operations,316
+census,2002,california,san joaquin valley,fresno,irrigated_operations,315
+census,2002,california,san joaquin valley,fresno,nonirr_operations,1
+census,1997,california,san joaquin valley,fresno,operations,317
+census,1997,california,san joaquin valley,fresno,irrigated_operations,312
+census,1997,california,san joaquin valley,fresno,nonirr_operations,5
+census,2017,california,sacramento valley,glenn,operations,57
+census,2017,california,sacramento valley,glenn,irrigated_operations,56
+census,2017,california,sacramento valley,glenn,nonirr_operations,1
+census,2012,california,sacramento valley,glenn,operations,65
+census,2012,california,sacramento valley,glenn,irrigated_operations,59
+census,2012,california,sacramento valley,glenn,nonirr_operations,6
+census,2007,california,sacramento valley,glenn,operations,109
+census,2007,california,sacramento valley,glenn,irrigated_operations,109
+census,2007,california,sacramento valley,glenn,nonirr_operations,0
+census,2002,california,sacramento valley,glenn,operations,127
+census,2002,california,sacramento valley,glenn,irrigated_operations,127
+census,2002,california,sacramento valley,glenn,nonirr_operations,0
+census,1997,california,sacramento valley,glenn,operations,91
+census,1997,california,sacramento valley,glenn,irrigated_operations,91
+census,1997,california,sacramento valley,glenn,nonirr_operations,0
+census,2017,california,northern coast,humboldt,operations,32
+census,2017,california,northern coast,humboldt,irrigated_operations,19
+census,2017,california,northern coast,humboldt,nonirr_operations,13
+census,2012,california,northern coast,humboldt,operations,13
+census,2012,california,northern coast,humboldt,irrigated_operations,4
+census,2012,california,northern coast,humboldt,nonirr_operations,9
+census,2007,california,northern coast,humboldt,operations,16
+census,2007,california,northern coast,humboldt,irrigated_operations,9
+census,2007,california,northern coast,humboldt,nonirr_operations,7
+census,2002,california,northern coast,humboldt,operations,21
+census,2002,california,northern coast,humboldt,irrigated_operations,14
+census,2002,california,northern coast,humboldt,nonirr_operations,7
+census,1997,california,northern coast,humboldt,operations,27
+census,1997,california,northern coast,humboldt,irrigated_operations,19
+census,1997,california,northern coast,humboldt,nonirr_operations,8
+census,2017,california,southern california,imperial,operations,223
+census,2017,california,southern california,imperial,irrigated_operations,223
+census,2017,california,southern california,imperial,nonirr_operations,0
+census,2012,california,southern california,imperial,operations,197
+census,2012,california,southern california,imperial,irrigated_operations,190
+census,2012,california,southern california,imperial,nonirr_operations,7
+census,2007,california,southern california,imperial,operations,199
+census,2007,california,southern california,imperial,irrigated_operations,199
+census,2007,california,southern california,imperial,nonirr_operations,0
+census,2002,california,southern california,imperial,operations,273
+census,2002,california,southern california,imperial,irrigated_operations,273
+census,2002,california,southern california,imperial,nonirr_operations,0
+census,1997,california,southern california,imperial,operations,284
+census,1997,california,southern california,imperial,irrigated_operations,282
+census,1997,california,southern california,imperial,nonirr_operations,2
+census,2017,california,sierra mountains,inyo,operations,7
+census,2017,california,sierra mountains,inyo,irrigated_operations,6
+census,2017,california,sierra mountains,inyo,nonirr_operations,1
+census,2012,california,sierra mountains,inyo,operations,10
+census,2012,california,sierra mountains,inyo,irrigated_operations,10
+census,2012,california,sierra mountains,inyo,nonirr_operations,0
+census,2007,california,sierra mountains,inyo,operations,12
+census,2007,california,sierra mountains,inyo,irrigated_operations,12
+census,2007,california,sierra mountains,inyo,nonirr_operations,0
+census,2002,california,sierra mountains,inyo,operations,11
+census,2002,california,sierra mountains,inyo,irrigated_operations,11
+census,2002,california,sierra mountains,inyo,nonirr_operations,0
+census,1997,california,sierra mountains,inyo,operations,14
+census,1997,california,sierra mountains,inyo,irrigated_operations,14
+census,1997,california,sierra mountains,inyo,nonirr_operations,0
+census,2017,california,san joaquin valley,kern,operations,175
+census,2017,california,san joaquin valley,kern,irrigated_operations,164
+census,2017,california,san joaquin valley,kern,nonirr_operations,11
+census,2012,california,san joaquin valley,kern,operations,220
+census,2012,california,san joaquin valley,kern,irrigated_operations,210
+census,2012,california,san joaquin valley,kern,nonirr_operations,10
+census,2007,california,san joaquin valley,kern,operations,274
+census,2007,california,san joaquin valley,kern,irrigated_operations,274
+census,2007,california,san joaquin valley,kern,nonirr_operations,0
+census,2002,california,san joaquin valley,kern,operations,341
+census,2002,california,san joaquin valley,kern,irrigated_operations,340
+census,2002,california,san joaquin valley,kern,nonirr_operations,1
+census,1997,california,san joaquin valley,kern,operations,345
+census,1997,california,san joaquin valley,kern,irrigated_operations,343
+census,1997,california,san joaquin valley,kern,nonirr_operations,2
+census,2017,california,san joaquin valley,kings,operations,153
+census,2017,california,san joaquin valley,kings,irrigated_operations,139
+census,2017,california,san joaquin valley,kings,nonirr_operations,14
+census,2012,california,san joaquin valley,kings,operations,211
+census,2012,california,san joaquin valley,kings,irrigated_operations,204
+census,2012,california,san joaquin valley,kings,nonirr_operations,7
+census,2007,california,san joaquin valley,kings,operations,243
+census,2007,california,san joaquin valley,kings,irrigated_operations,243
+census,2007,california,san joaquin valley,kings,nonirr_operations,0
+census,2002,california,san joaquin valley,kings,operations,238
+census,2002,california,san joaquin valley,kings,irrigated_operations,235
+census,2002,california,san joaquin valley,kings,nonirr_operations,3
+census,1997,california,san joaquin valley,kings,operations,200
+census,1997,california,san joaquin valley,kings,irrigated_operations,200
+census,1997,california,san joaquin valley,kings,nonirr_operations,0
+census,2017,california,central coast,lake,operations,4
+census,2017,california,central coast,lake,irrigated_operations,1
+census,2017,california,central coast,lake,nonirr_operations,3
+census,2012,california,central coast,lake,operations,10
+census,2012,california,central coast,lake,irrigated_operations,9
+census,2012,california,central coast,lake,nonirr_operations,1
+census,2007,california,central coast,lake,operations,8
+census,2007,california,central coast,lake,irrigated_operations,8
+census,2007,california,central coast,lake,nonirr_operations,0
+census,2002,california,central coast,lake,operations,13
+census,2002,california,central coast,lake,irrigated_operations,11
+census,2002,california,central coast,lake,nonirr_operations,2
+census,1997,california,central coast,lake,operations,11
+census,1997,california,central coast,lake,irrigated_operations,10
+census,1997,california,central coast,lake,nonirr_operations,1
+census,2017,california,northeast,lassen,operations,103
+census,2017,california,northeast,lassen,irrigated_operations,101
+census,2017,california,northeast,lassen,nonirr_operations,2
+census,2012,california,northeast,lassen,operations,101
+census,2012,california,northeast,lassen,irrigated_operations,97
+census,2012,california,northeast,lassen,nonirr_operations,4
+census,2007,california,northeast,lassen,operations,119
+census,2007,california,northeast,lassen,irrigated_operations,109
+census,2007,california,northeast,lassen,nonirr_operations,10
+census,2002,california,northeast,lassen,operations,125
+census,2002,california,northeast,lassen,irrigated_operations,119
+census,2002,california,northeast,lassen,nonirr_operations,6
+census,1997,california,northeast,lassen,operations,161
+census,1997,california,northeast,lassen,irrigated_operations,140
+census,1997,california,northeast,lassen,nonirr_operations,21
+census,2017,california,southern california,los angeles,operations,17
+census,2017,california,southern california,los angeles,irrigated_operations,10
+census,2017,california,southern california,los angeles,nonirr_operations,7
+census,2012,california,southern california,los angeles,operations,22
+census,2012,california,southern california,los angeles,irrigated_operations,21
+census,2012,california,southern california,los angeles,nonirr_operations,1
+census,2007,california,southern california,los angeles,operations,30
+census,2007,california,southern california,los angeles,irrigated_operations,26
+census,2007,california,southern california,los angeles,nonirr_operations,4
+census,2002,california,southern california,los angeles,operations,23
+census,2002,california,southern california,los angeles,irrigated_operations,23
+census,2002,california,southern california,los angeles,nonirr_operations,0
+census,1997,california,southern california,los angeles,operations,27
+census,1997,california,southern california,los angeles,irrigated_operations,26
+census,1997,california,southern california,los angeles,nonirr_operations,1
+census,2017,california,san joaquin valley,madera,operations,40
+census,2017,california,san joaquin valley,madera,irrigated_operations,36
+census,2017,california,san joaquin valley,madera,nonirr_operations,4
+census,2012,california,san joaquin valley,madera,operations,59
+census,2012,california,san joaquin valley,madera,irrigated_operations,56
+census,2012,california,san joaquin valley,madera,nonirr_operations,3
+census,2007,california,san joaquin valley,madera,operations,78
+census,2007,california,san joaquin valley,madera,irrigated_operations,78
+census,2007,california,san joaquin valley,madera,nonirr_operations,0
+census,2002,california,san joaquin valley,madera,operations,117
+census,2002,california,san joaquin valley,madera,irrigated_operations,117
+census,2002,california,san joaquin valley,madera,nonirr_operations,0
+census,1997,california,san joaquin valley,madera,operations,103
+census,1997,california,san joaquin valley,madera,irrigated_operations,102
+census,1997,california,san joaquin valley,madera,nonirr_operations,1
+census,2012,california,central coast,marin,operations,1
+census,2012,california,central coast,marin,irrigated_operations,0
+census,2012,california,central coast,marin,nonirr_operations,1
+census,2002,california,central coast,marin,operations,2
+census,2002,california,central coast,marin,irrigated_operations,0
+census,2002,california,central coast,marin,nonirr_operations,2
+census,2017,california,sierra mountains,mariposa,operations,1
+census,2017,california,sierra mountains,mariposa,irrigated_operations,1
+census,2017,california,sierra mountains,mariposa,nonirr_operations,0
+census,2012,california,sierra mountains,mariposa,operations,1
+census,2012,california,sierra mountains,mariposa,irrigated_operations,0
+census,2012,california,sierra mountains,mariposa,nonirr_operations,1
+census,2002,california,sierra mountains,mariposa,operations,4
+census,2002,california,sierra mountains,mariposa,irrigated_operations,2
+census,2002,california,sierra mountains,mariposa,nonirr_operations,2
+census,2017,california,northern coast,mendocino,operations,9
+census,2017,california,northern coast,mendocino,irrigated_operations,8
+census,2017,california,northern coast,mendocino,nonirr_operations,1
+census,2012,california,northern coast,mendocino,operations,10
+census,2012,california,northern coast,mendocino,irrigated_operations,7
+census,2012,california,northern coast,mendocino,nonirr_operations,3
+census,2007,california,northern coast,mendocino,operations,7
+census,2007,california,northern coast,mendocino,irrigated_operations,7
+census,2007,california,northern coast,mendocino,nonirr_operations,0
+census,2002,california,northern coast,mendocino,operations,10
+census,2002,california,northern coast,mendocino,irrigated_operations,5
+census,2002,california,northern coast,mendocino,nonirr_operations,5
+census,1997,california,northern coast,mendocino,operations,9
+census,1997,california,northern coast,mendocino,irrigated_operations,8
+census,1997,california,northern coast,mendocino,nonirr_operations,1
+census,2017,california,san joaquin valley,merced,operations,224
+census,2017,california,san joaquin valley,merced,irrigated_operations,211
+census,2017,california,san joaquin valley,merced,nonirr_operations,13
+census,2012,california,san joaquin valley,merced,operations,268
+census,2012,california,san joaquin valley,merced,irrigated_operations,251
+census,2012,california,san joaquin valley,merced,nonirr_operations,17
+census,2007,california,san joaquin valley,merced,operations,304
+census,2007,california,san joaquin valley,merced,irrigated_operations,303
+census,2007,california,san joaquin valley,merced,nonirr_operations,1
+census,2002,california,san joaquin valley,merced,operations,393
+census,2002,california,san joaquin valley,merced,irrigated_operations,393
+census,2002,california,san joaquin valley,merced,nonirr_operations,0
+census,1997,california,san joaquin valley,merced,operations,404
+census,1997,california,san joaquin valley,merced,irrigated_operations,396
+census,1997,california,san joaquin valley,merced,nonirr_operations,8
+census,2017,california,northeast,modoc,operations,162
+census,2017,california,northeast,modoc,irrigated_operations,154
+census,2017,california,northeast,modoc,nonirr_operations,8
+census,2012,california,northeast,modoc,operations,155
+census,2012,california,northeast,modoc,irrigated_operations,144
+census,2012,california,northeast,modoc,nonirr_operations,11
+census,2007,california,northeast,modoc,operations,159
+census,2007,california,northeast,modoc,irrigated_operations,144
+census,2007,california,northeast,modoc,nonirr_operations,15
+census,2002,california,northeast,modoc,operations,177
+census,2002,california,northeast,modoc,irrigated_operations,156
+census,2002,california,northeast,modoc,nonirr_operations,21
+census,1997,california,northeast,modoc,operations,236
+census,1997,california,northeast,modoc,irrigated_operations,209
+census,1997,california,northeast,modoc,nonirr_operations,27
+census,2017,california,sierra mountains,mono,operations,14
+census,2017,california,sierra mountains,mono,irrigated_operations,14
+census,2017,california,sierra mountains,mono,nonirr_operations,0
+census,2012,california,sierra mountains,mono,operations,22
+census,2012,california,sierra mountains,mono,irrigated_operations,22
+census,2012,california,sierra mountains,mono,nonirr_operations,0
+census,2007,california,sierra mountains,mono,operations,17
+census,2007,california,sierra mountains,mono,irrigated_operations,17
+census,2007,california,sierra mountains,mono,nonirr_operations,0
+census,2002,california,sierra mountains,mono,operations,21
+census,2002,california,sierra mountains,mono,irrigated_operations,20
+census,2002,california,sierra mountains,mono,nonirr_operations,1
+census,1997,california,sierra mountains,mono,operations,33
+census,1997,california,sierra mountains,mono,irrigated_operations,30
+census,1997,california,sierra mountains,mono,nonirr_operations,3
+census,2017,california,central coast,monterey,operations,24
+census,2017,california,central coast,monterey,irrigated_operations,20
+census,2017,california,central coast,monterey,nonirr_operations,4
+census,2012,california,central coast,monterey,operations,13
+census,2012,california,central coast,monterey,irrigated_operations,12
+census,2012,california,central coast,monterey,nonirr_operations,1
+census,2007,california,central coast,monterey,operations,12
+census,2007,california,central coast,monterey,irrigated_operations,11
+census,2007,california,central coast,monterey,nonirr_operations,1
+census,2002,california,central coast,monterey,operations,16
+census,2002,california,central coast,monterey,irrigated_operations,15
+census,2002,california,central coast,monterey,nonirr_operations,1
+census,1997,california,central coast,monterey,operations,22
+census,1997,california,central coast,monterey,irrigated_operations,19
+census,1997,california,central coast,monterey,nonirr_operations,3
+census,2017,california,central coast,napa,operations,2
+census,2017,california,central coast,napa,irrigated_operations,2
+census,2017,california,central coast,napa,nonirr_operations,0
+census,2012,california,central coast,napa,operations,2
+census,2012,california,central coast,napa,irrigated_operations,2
+census,2012,california,central coast,napa,nonirr_operations,0
+census,2007,california,central coast,napa,operations,6
+census,2007,california,central coast,napa,irrigated_operations,5
+census,2007,california,central coast,napa,nonirr_operations,1
+census,2002,california,central coast,napa,operations,4
+census,2002,california,central coast,napa,irrigated_operations,4
+census,2002,california,central coast,napa,nonirr_operations,0
+census,1997,california,central coast,napa,operations,3
+census,1997,california,central coast,napa,irrigated_operations,3
+census,1997,california,central coast,napa,nonirr_operations,0
+census,2017,california,sierra mountains,nevada,operations,1
+census,2017,california,sierra mountains,nevada,irrigated_operations,1
+census,2017,california,sierra mountains,nevada,nonirr_operations,0
+census,2007,california,sierra mountains,nevada,operations,3
+census,2007,california,sierra mountains,nevada,irrigated_operations,3
+census,2007,california,sierra mountains,nevada,nonirr_operations,0
+census,2002,california,sierra mountains,nevada,operations,1
+census,2002,california,sierra mountains,nevada,irrigated_operations,1
+census,2002,california,sierra mountains,nevada,nonirr_operations,0
+census,1997,california,sierra mountains,nevada,operations,4
+census,1997,california,sierra mountains,nevada,irrigated_operations,1
+census,1997,california,sierra mountains,nevada,nonirr_operations,3
+census,2017,california,southern california,orange,operations,1
+census,2017,california,southern california,orange,irrigated_operations,1
+census,2017,california,southern california,orange,nonirr_operations,0
+census,2012,california,southern california,orange,operations,1
+census,2012,california,southern california,orange,irrigated_operations,0
+census,2012,california,southern california,orange,nonirr_operations,1
+census,2007,california,southern california,orange,operations,1
+census,2007,california,southern california,orange,irrigated_operations,1
+census,2007,california,southern california,orange,nonirr_operations,0
+census,2002,california,southern california,orange,operations,5
+census,2002,california,southern california,orange,irrigated_operations,2
+census,2002,california,southern california,orange,nonirr_operations,3
+census,2017,california,sierra mountains,placer,operations,8
+census,2017,california,sierra mountains,placer,irrigated_operations,6
+census,2017,california,sierra mountains,placer,nonirr_operations,2
+census,2012,california,sierra mountains,placer,operations,4
+census,2012,california,sierra mountains,placer,irrigated_operations,4
+census,2012,california,sierra mountains,placer,nonirr_operations,0
+census,2007,california,sierra mountains,placer,operations,4
+census,2007,california,sierra mountains,placer,irrigated_operations,4
+census,2007,california,sierra mountains,placer,nonirr_operations,0
+census,2002,california,sierra mountains,placer,operations,1
+census,2002,california,sierra mountains,placer,irrigated_operations,1
+census,2002,california,sierra mountains,placer,nonirr_operations,0
+census,1997,california,sierra mountains,placer,operations,7
+census,1997,california,sierra mountains,placer,irrigated_operations,4
+census,1997,california,sierra mountains,placer,nonirr_operations,3
+census,2017,california,northeast,plumas,operations,9
+census,2017,california,northeast,plumas,irrigated_operations,8
+census,2017,california,northeast,plumas,nonirr_operations,1
+census,2012,california,northeast,plumas,operations,16
+census,2012,california,northeast,plumas,irrigated_operations,10
+census,2012,california,northeast,plumas,nonirr_operations,6
+census,2007,california,northeast,plumas,operations,10
+census,2007,california,northeast,plumas,irrigated_operations,9
+census,2007,california,northeast,plumas,nonirr_operations,1
+census,2002,california,northeast,plumas,operations,15
+census,2002,california,northeast,plumas,irrigated_operations,10
+census,2002,california,northeast,plumas,nonirr_operations,5
+census,1997,california,northeast,plumas,operations,24
+census,1997,california,northeast,plumas,irrigated_operations,16
+census,1997,california,northeast,plumas,nonirr_operations,8
+census,2017,california,southern california,riverside,operations,70
+census,2017,california,southern california,riverside,irrigated_operations,70
+census,2017,california,southern california,riverside,nonirr_operations,0
+census,2012,california,southern california,riverside,operations,82
+census,2012,california,southern california,riverside,irrigated_operations,82
+census,2012,california,southern california,riverside,nonirr_operations,0
+census,2007,california,southern california,riverside,operations,104
+census,2007,california,southern california,riverside,irrigated_operations,101
+census,2007,california,southern california,riverside,nonirr_operations,3
+census,2002,california,southern california,riverside,operations,103
+census,2002,california,southern california,riverside,irrigated_operations,103
+census,2002,california,southern california,riverside,nonirr_operations,0
+census,1997,california,southern california,riverside,operations,137
+census,1997,california,southern california,riverside,irrigated_operations,134
+census,1997,california,southern california,riverside,nonirr_operations,3
+census,2017,california,sacramento valley,sacramento,operations,58
+census,2017,california,sacramento valley,sacramento,irrigated_operations,52
+census,2017,california,sacramento valley,sacramento,nonirr_operations,6
+census,2012,california,sacramento valley,sacramento,operations,62
+census,2012,california,sacramento valley,sacramento,irrigated_operations,56
+census,2012,california,sacramento valley,sacramento,nonirr_operations,6
+census,2007,california,sacramento valley,sacramento,operations,65
+census,2007,california,sacramento valley,sacramento,irrigated_operations,65
+census,2007,california,sacramento valley,sacramento,nonirr_operations,0
+census,2002,california,sacramento valley,sacramento,operations,71
+census,2002,california,sacramento valley,sacramento,irrigated_operations,66
+census,2002,california,sacramento valley,sacramento,nonirr_operations,5
+census,1997,california,sacramento valley,sacramento,operations,66
+census,1997,california,sacramento valley,sacramento,irrigated_operations,65
+census,1997,california,sacramento valley,sacramento,nonirr_operations,1
+census,2017,california,central coast,san benito,operations,9
+census,2017,california,central coast,san benito,irrigated_operations,3
+census,2017,california,central coast,san benito,nonirr_operations,6
+census,2012,california,central coast,san benito,operations,4
+census,2012,california,central coast,san benito,irrigated_operations,3
+census,2012,california,central coast,san benito,nonirr_operations,1
+census,2007,california,central coast,san benito,operations,4
+census,2007,california,central coast,san benito,irrigated_operations,4
+census,2007,california,central coast,san benito,nonirr_operations,0
+census,2002,california,central coast,san benito,operations,7
+census,2002,california,central coast,san benito,irrigated_operations,7
+census,2002,california,central coast,san benito,nonirr_operations,0
+census,1997,california,central coast,san benito,operations,19
+census,1997,california,central coast,san benito,irrigated_operations,19
+census,1997,california,central coast,san benito,nonirr_operations,0
+census,2017,california,southern california,san bernardino,operations,34
+census,2017,california,southern california,san bernardino,irrigated_operations,32
+census,2017,california,southern california,san bernardino,nonirr_operations,2
+census,2012,california,southern california,san bernardino,operations,37
+census,2012,california,southern california,san bernardino,irrigated_operations,35
+census,2012,california,southern california,san bernardino,nonirr_operations,2
+census,2007,california,southern california,san bernardino,operations,43
+census,2007,california,southern california,san bernardino,irrigated_operations,43
+census,2007,california,southern california,san bernardino,nonirr_operations,0
+census,2002,california,southern california,san bernardino,operations,70
+census,2002,california,southern california,san bernardino,irrigated_operations,67
+census,2002,california,southern california,san bernardino,nonirr_operations,3
+census,1997,california,southern california,san bernardino,operations,86
+census,1997,california,southern california,san bernardino,irrigated_operations,80
+census,1997,california,southern california,san bernardino,nonirr_operations,6
+census,2017,california,southern california,san diego,operations,8
+census,2017,california,southern california,san diego,irrigated_operations,6
+census,2017,california,southern california,san diego,nonirr_operations,2
+census,2012,california,southern california,san diego,operations,8
+census,2012,california,southern california,san diego,irrigated_operations,5
+census,2012,california,southern california,san diego,nonirr_operations,3
+census,2007,california,southern california,san diego,operations,10
+census,2007,california,southern california,san diego,irrigated_operations,6
+census,2007,california,southern california,san diego,nonirr_operations,4
+census,2002,california,southern california,san diego,operations,8
+census,2002,california,southern california,san diego,irrigated_operations,8
+census,2002,california,southern california,san diego,nonirr_operations,0
+census,1997,california,southern california,san diego,operations,17
+census,1997,california,southern california,san diego,irrigated_operations,17
+census,1997,california,southern california,san diego,nonirr_operations,0
+census,2017,california,san joaquin valley,san joaquin,operations,204
+census,2017,california,san joaquin valley,san joaquin,irrigated_operations,196
+census,2017,california,san joaquin valley,san joaquin,nonirr_operations,8
+census,2012,california,san joaquin valley,san joaquin,operations,218
+census,2012,california,san joaquin valley,san joaquin,irrigated_operations,215
+census,2012,california,san joaquin valley,san joaquin,nonirr_operations,3
+census,2007,california,san joaquin valley,san joaquin,operations,225
+census,2007,california,san joaquin valley,san joaquin,irrigated_operations,223
+census,2007,california,san joaquin valley,san joaquin,nonirr_operations,2
+census,2002,california,san joaquin valley,san joaquin,operations,314
+census,2002,california,san joaquin valley,san joaquin,irrigated_operations,314
+census,2002,california,san joaquin valley,san joaquin,nonirr_operations,0
+census,1997,california,san joaquin valley,san joaquin,operations,291
+census,1997,california,san joaquin valley,san joaquin,irrigated_operations,287
+census,1997,california,san joaquin valley,san joaquin,nonirr_operations,4
+census,2017,california,central coast,san luis obispo,operations,25
+census,2017,california,central coast,san luis obispo,irrigated_operations,21
+census,2017,california,central coast,san luis obispo,nonirr_operations,4
+census,2012,california,central coast,san luis obispo,operations,24
+census,2012,california,central coast,san luis obispo,irrigated_operations,19
+census,2012,california,central coast,san luis obispo,nonirr_operations,5
+census,2007,california,central coast,san luis obispo,operations,20
+census,2007,california,central coast,san luis obispo,irrigated_operations,20
+census,2007,california,central coast,san luis obispo,nonirr_operations,0
+census,2002,california,central coast,san luis obispo,operations,26
+census,2002,california,central coast,san luis obispo,irrigated_operations,23
+census,2002,california,central coast,san luis obispo,nonirr_operations,3
+census,1997,california,central coast,san luis obispo,operations,32
+census,1997,california,central coast,san luis obispo,irrigated_operations,30
+census,1997,california,central coast,san luis obispo,nonirr_operations,2
+census,2017,california,central coast,san mateo,operations,1
+census,2017,california,central coast,san mateo,irrigated_operations,1
+census,2017,california,central coast,san mateo,nonirr_operations,0
+census,2007,california,central coast,san mateo,operations,1
+census,2007,california,central coast,san mateo,irrigated_operations,1
+census,2007,california,central coast,san mateo,nonirr_operations,0
+census,2017,california,southern california,santa barbara,operations,20
+census,2017,california,southern california,santa barbara,irrigated_operations,17
+census,2017,california,southern california,santa barbara,nonirr_operations,3
+census,2012,california,southern california,santa barbara,operations,11
+census,2012,california,southern california,santa barbara,irrigated_operations,7
+census,2012,california,southern california,santa barbara,nonirr_operations,4
+census,2007,california,southern california,santa barbara,operations,21
+census,2007,california,southern california,santa barbara,irrigated_operations,18
+census,2007,california,southern california,santa barbara,nonirr_operations,3
+census,2002,california,southern california,santa barbara,operations,19
+census,2002,california,southern california,santa barbara,irrigated_operations,18
+census,2002,california,southern california,santa barbara,nonirr_operations,1
+census,1997,california,southern california,santa barbara,operations,25
+census,1997,california,southern california,santa barbara,irrigated_operations,24
+census,1997,california,southern california,santa barbara,nonirr_operations,1
+census,2017,california,central coast,santa clara,operations,6
+census,2017,california,central coast,santa clara,irrigated_operations,3
+census,2017,california,central coast,santa clara,nonirr_operations,3
+census,2012,california,central coast,santa clara,operations,2
+census,2012,california,central coast,santa clara,irrigated_operations,2
+census,2012,california,central coast,santa clara,nonirr_operations,0
+census,2007,california,central coast,santa clara,operations,8
+census,2007,california,central coast,santa clara,irrigated_operations,8
+census,2007,california,central coast,santa clara,nonirr_operations,0
+census,2002,california,central coast,santa clara,operations,10
+census,2002,california,central coast,santa clara,irrigated_operations,10
+census,2002,california,central coast,santa clara,nonirr_operations,0
+census,1997,california,central coast,santa clara,operations,6
+census,1997,california,central coast,santa clara,irrigated_operations,5
+census,1997,california,central coast,santa clara,nonirr_operations,1
+census,2017,california,central coast,santa cruz,operations,2
+census,2017,california,central coast,santa cruz,irrigated_operations,0
+census,2017,california,central coast,santa cruz,nonirr_operations,2
+census,2017,california,siskiyou-shasta,shasta,operations,46
+census,2017,california,siskiyou-shasta,shasta,irrigated_operations,40
+census,2017,california,siskiyou-shasta,shasta,nonirr_operations,6
+census,2012,california,siskiyou-shasta,shasta,operations,34
+census,2012,california,siskiyou-shasta,shasta,irrigated_operations,31
+census,2012,california,siskiyou-shasta,shasta,nonirr_operations,3
+census,2007,california,siskiyou-shasta,shasta,operations,54
+census,2007,california,siskiyou-shasta,shasta,irrigated_operations,52
+census,2007,california,siskiyou-shasta,shasta,nonirr_operations,2
+census,2002,california,siskiyou-shasta,shasta,operations,50
+census,2002,california,siskiyou-shasta,shasta,irrigated_operations,50
+census,2002,california,siskiyou-shasta,shasta,nonirr_operations,0
+census,1997,california,siskiyou-shasta,shasta,operations,57
+census,1997,california,siskiyou-shasta,shasta,irrigated_operations,52
+census,1997,california,siskiyou-shasta,shasta,nonirr_operations,5
+census,2017,california,sierra mountains,sierra,operations,9
+census,2017,california,sierra mountains,sierra,irrigated_operations,9
+census,2017,california,sierra mountains,sierra,nonirr_operations,0
+census,2012,california,sierra mountains,sierra,operations,9
+census,2012,california,sierra mountains,sierra,irrigated_operations,7
+census,2012,california,sierra mountains,sierra,nonirr_operations,2
+census,2007,california,sierra mountains,sierra,operations,11
+census,2007,california,sierra mountains,sierra,irrigated_operations,8
+census,2007,california,sierra mountains,sierra,nonirr_operations,3
+census,2002,california,sierra mountains,sierra,operations,10
+census,2002,california,sierra mountains,sierra,irrigated_operations,9
+census,2002,california,sierra mountains,sierra,nonirr_operations,1
+census,1997,california,sierra mountains,sierra,operations,17
+census,1997,california,sierra mountains,sierra,irrigated_operations,10
+census,1997,california,sierra mountains,sierra,nonirr_operations,7
+census,2017,california,siskiyou-shasta,siskiyou,operations,188
+census,2017,california,siskiyou-shasta,siskiyou,irrigated_operations,172
+census,2017,california,siskiyou-shasta,siskiyou,nonirr_operations,16
+census,2012,california,siskiyou-shasta,siskiyou,operations,206
+census,2012,california,siskiyou-shasta,siskiyou,irrigated_operations,189
+census,2012,california,siskiyou-shasta,siskiyou,nonirr_operations,17
+census,2007,california,siskiyou-shasta,siskiyou,operations,194
+census,2007,california,siskiyou-shasta,siskiyou,irrigated_operations,169
+census,2007,california,siskiyou-shasta,siskiyou,nonirr_operations,25
+census,2002,california,siskiyou-shasta,siskiyou,operations,268
+census,2002,california,siskiyou-shasta,siskiyou,irrigated_operations,248
+census,2002,california,siskiyou-shasta,siskiyou,nonirr_operations,20
+census,1997,california,siskiyou-shasta,siskiyou,operations,276
+census,1997,california,siskiyou-shasta,siskiyou,irrigated_operations,240
+census,1997,california,siskiyou-shasta,siskiyou,nonirr_operations,36
+census,2017,california,sacramento valley,solano,operations,59
+census,2017,california,sacramento valley,solano,irrigated_operations,59
+census,2017,california,sacramento valley,solano,nonirr_operations,0
+census,2012,california,sacramento valley,solano,operations,68
+census,2012,california,sacramento valley,solano,irrigated_operations,54
+census,2012,california,sacramento valley,solano,nonirr_operations,14
+census,2007,california,sacramento valley,solano,operations,69
+census,2007,california,sacramento valley,solano,irrigated_operations,69
+census,2007,california,sacramento valley,solano,nonirr_operations,0
+census,2002,california,sacramento valley,solano,operations,81
+census,2002,california,sacramento valley,solano,irrigated_operations,81
+census,2002,california,sacramento valley,solano,nonirr_operations,0
+census,1997,california,sacramento valley,solano,operations,71
+census,1997,california,sacramento valley,solano,irrigated_operations,70
+census,1997,california,sacramento valley,solano,nonirr_operations,1
+census,2017,california,central coast,sonoma,operations,11
+census,2017,california,central coast,sonoma,irrigated_operations,10
+census,2017,california,central coast,sonoma,nonirr_operations,1
+census,2012,california,central coast,sonoma,operations,12
+census,2012,california,central coast,sonoma,irrigated_operations,11
+census,2012,california,central coast,sonoma,nonirr_operations,1
+census,2007,california,central coast,sonoma,operations,11
+census,2007,california,central coast,sonoma,irrigated_operations,8
+census,2007,california,central coast,sonoma,nonirr_operations,3
+census,2002,california,central coast,sonoma,operations,5
+census,2002,california,central coast,sonoma,irrigated_operations,4
+census,2002,california,central coast,sonoma,nonirr_operations,1
+census,1997,california,central coast,sonoma,operations,5
+census,1997,california,central coast,sonoma,irrigated_operations,4
+census,1997,california,central coast,sonoma,nonirr_operations,1
+census,2017,california,san joaquin valley,stanislaus,operations,204
+census,2017,california,san joaquin valley,stanislaus,irrigated_operations,202
+census,2017,california,san joaquin valley,stanislaus,nonirr_operations,2
+census,2012,california,san joaquin valley,stanislaus,operations,233
+census,2012,california,san joaquin valley,stanislaus,irrigated_operations,230
+census,2012,california,san joaquin valley,stanislaus,nonirr_operations,3
+census,2007,california,san joaquin valley,stanislaus,operations,259
+census,2007,california,san joaquin valley,stanislaus,irrigated_operations,259
+census,2007,california,san joaquin valley,stanislaus,nonirr_operations,0
+census,2002,california,san joaquin valley,stanislaus,operations,348
+census,2002,california,san joaquin valley,stanislaus,irrigated_operations,348
+census,2002,california,san joaquin valley,stanislaus,nonirr_operations,0
+census,1997,california,san joaquin valley,stanislaus,operations,313
+census,1997,california,san joaquin valley,stanislaus,irrigated_operations,311
+census,1997,california,san joaquin valley,stanislaus,nonirr_operations,2
+census,2017,california,sacramento valley,sutter,operations,34
+census,2017,california,sacramento valley,sutter,irrigated_operations,28
+census,2017,california,sacramento valley,sutter,nonirr_operations,6
+census,2012,california,sacramento valley,sutter,operations,35
+census,2012,california,sacramento valley,sutter,irrigated_operations,35
+census,2012,california,sacramento valley,sutter,nonirr_operations,0
+census,2007,california,sacramento valley,sutter,operations,39
+census,2007,california,sacramento valley,sutter,irrigated_operations,39
+census,2007,california,sacramento valley,sutter,nonirr_operations,0
+census,2002,california,sacramento valley,sutter,operations,58
+census,2002,california,sacramento valley,sutter,irrigated_operations,57
+census,2002,california,sacramento valley,sutter,nonirr_operations,1
+census,1997,california,sacramento valley,sutter,operations,55
+census,1997,california,sacramento valley,sutter,irrigated_operations,53
+census,1997,california,sacramento valley,sutter,nonirr_operations,2
+census,2017,california,sacramento valley,tehama,operations,27
+census,2017,california,sacramento valley,tehama,irrigated_operations,23
+census,2017,california,sacramento valley,tehama,nonirr_operations,4
+census,2012,california,sacramento valley,tehama,operations,40
+census,2012,california,sacramento valley,tehama,irrigated_operations,35
+census,2012,california,sacramento valley,tehama,nonirr_operations,5
+census,2007,california,sacramento valley,tehama,operations,44
+census,2007,california,sacramento valley,tehama,irrigated_operations,42
+census,2007,california,sacramento valley,tehama,nonirr_operations,2
+census,2002,california,sacramento valley,tehama,operations,44
+census,2002,california,sacramento valley,tehama,irrigated_operations,44
+census,2002,california,sacramento valley,tehama,nonirr_operations,0
+census,1997,california,sacramento valley,tehama,operations,44
+census,1997,california,sacramento valley,tehama,irrigated_operations,43
+census,1997,california,sacramento valley,tehama,nonirr_operations,1
+census,2017,california,siskiyou-shasta,trinity,operations,7
+census,2017,california,siskiyou-shasta,trinity,irrigated_operations,7
+census,2017,california,siskiyou-shasta,trinity,nonirr_operations,0
+census,2012,california,siskiyou-shasta,trinity,operations,3
+census,2012,california,siskiyou-shasta,trinity,irrigated_operations,3
+census,2012,california,siskiyou-shasta,trinity,nonirr_operations,0
+census,2007,california,siskiyou-shasta,trinity,operations,6
+census,2007,california,siskiyou-shasta,trinity,irrigated_operations,6
+census,2007,california,siskiyou-shasta,trinity,nonirr_operations,0
+census,2002,california,siskiyou-shasta,trinity,operations,1
+census,2002,california,siskiyou-shasta,trinity,irrigated_operations,1
+census,2002,california,siskiyou-shasta,trinity,nonirr_operations,0
+census,1997,california,siskiyou-shasta,trinity,operations,3
+census,1997,california,siskiyou-shasta,trinity,irrigated_operations,3
+census,1997,california,siskiyou-shasta,trinity,nonirr_operations,0
+census,2017,california,san joaquin valley,tulare,operations,245
+census,2017,california,san joaquin valley,tulare,irrigated_operations,226
+census,2017,california,san joaquin valley,tulare,nonirr_operations,19
+census,2012,california,san joaquin valley,tulare,operations,293
+census,2012,california,san joaquin valley,tulare,irrigated_operations,278
+census,2012,california,san joaquin valley,tulare,nonirr_operations,15
+census,2007,california,san joaquin valley,tulare,operations,306
+census,2007,california,san joaquin valley,tulare,irrigated_operations,300
+census,2007,california,san joaquin valley,tulare,nonirr_operations,6
+census,2002,california,san joaquin valley,tulare,operations,401
+census,2002,california,san joaquin valley,tulare,irrigated_operations,401
+census,2002,california,san joaquin valley,tulare,nonirr_operations,0
+census,1997,california,san joaquin valley,tulare,operations,373
+census,1997,california,san joaquin valley,tulare,irrigated_operations,367
+census,1997,california,san joaquin valley,tulare,nonirr_operations,6
+census,2002,california,sierra mountains,tuolumne,operations,1
+census,2002,california,sierra mountains,tuolumne,irrigated_operations,1
+census,2002,california,sierra mountains,tuolumne,nonirr_operations,0
+census,2017,california,southern california,ventura,operations,5
+census,2017,california,southern california,ventura,irrigated_operations,0
+census,2017,california,southern california,ventura,nonirr_operations,5
+census,2012,california,southern california,ventura,operations,8
+census,2012,california,southern california,ventura,irrigated_operations,7
+census,2012,california,southern california,ventura,nonirr_operations,1
+census,2007,california,southern california,ventura,operations,7
+census,2007,california,southern california,ventura,irrigated_operations,7
+census,2007,california,southern california,ventura,nonirr_operations,0
+census,2002,california,southern california,ventura,operations,4
+census,2002,california,southern california,ventura,irrigated_operations,4
+census,2002,california,southern california,ventura,nonirr_operations,0
+census,1997,california,southern california,ventura,operations,15
+census,1997,california,southern california,ventura,irrigated_operations,13
+census,1997,california,southern california,ventura,nonirr_operations,2
+census,2017,california,sacramento valley,yolo,operations,90
+census,2017,california,sacramento valley,yolo,irrigated_operations,86
+census,2017,california,sacramento valley,yolo,nonirr_operations,4
+census,2012,california,sacramento valley,yolo,operations,101
+census,2012,california,sacramento valley,yolo,irrigated_operations,90
+census,2012,california,sacramento valley,yolo,nonirr_operations,11
+census,2007,california,sacramento valley,yolo,operations,122
+census,2007,california,sacramento valley,yolo,irrigated_operations,122
+census,2007,california,sacramento valley,yolo,nonirr_operations,0
+census,2002,california,sacramento valley,yolo,operations,124
+census,2002,california,sacramento valley,yolo,irrigated_operations,124
+census,2002,california,sacramento valley,yolo,nonirr_operations,0
+census,1997,california,sacramento valley,yolo,operations,90
+census,1997,california,sacramento valley,yolo,irrigated_operations,87
+census,1997,california,sacramento valley,yolo,nonirr_operations,3
+census,2017,california,sacramento valley,yuba,operations,6
+census,2017,california,sacramento valley,yuba,irrigated_operations,5
+census,2017,california,sacramento valley,yuba,nonirr_operations,1
+census,2012,california,sacramento valley,yuba,operations,4
+census,2012,california,sacramento valley,yuba,irrigated_operations,3
+census,2012,california,sacramento valley,yuba,nonirr_operations,1
+census,2007,california,sacramento valley,yuba,operations,9
+census,2007,california,sacramento valley,yuba,irrigated_operations,7
+census,2007,california,sacramento valley,yuba,nonirr_operations,2
+census,2002,california,sacramento valley,yuba,operations,6
+census,2002,california,sacramento valley,yuba,irrigated_operations,6
+census,2002,california,sacramento valley,yuba,nonirr_operations,0
+census,1997,california,sacramento valley,yuba,operations,10
+census,1997,california,sacramento valley,yuba,irrigated_operations,10
+census,1997,california,sacramento valley,yuba,nonirr_operations,0

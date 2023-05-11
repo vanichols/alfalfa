@@ -1,0 +1,36 @@
+Value, Category, Count,  Acreage
+3, Rice,1,0.2
+14, Mint,6375,1417.8
+21, Barley,37303,8296
+23, Spring Wheat,35358,7863.4
+24, Winter Wheat,14089,3133.3
+27, Rye,32457,7218.3
+28, Oats,3950,878.5
+36, Alfalfa,386827,86028.3
+37, Other Hay/Non Alfalfa,51949,11553.2
+43, Potatoes,17166,3817.6
+44, Other Crops,112,24.9
+49, Onions,166,36.9
+53, Peas,65,14.5
+57, Herbs,2108,468.8
+61, Fallow/Idle Cropland,110523,24579.7
+69, Grapes,200,44.5
+76, Walnuts,1,0.2
+87, Wetlands,66,14.7
+111, Open Water,101298,22528.1
+112, Perennial Ice/Snow,7443,1655.3
+121, Developed/Open Space,353723,78666.1
+122, Developed/Low Intensity,66986,14897.3
+123, Developed/Medium Intensity,11715,2605.4
+124, Developed/High Intensity,1907,424.1
+131, Barren,292984,65158.1
+141, Deciduous Forest,30650,6816.4
+142, Evergreen Forest,11019965,2450781.2
+143, Mixed Forest,44515,9899.9
+152, Shrubland,3144297,699274.8
+176, Grass/Pasture,2378861,529046
+190, Woody Wetlands,575,127.9
+195, Herbaceous Wetlands,94011,20907.5
+205, Triticale,3786,842
+211, Olives,2,0.4
+221, Strawberries,15078,3353.3
