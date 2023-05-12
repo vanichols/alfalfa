@@ -1,0 +1,55 @@
+Value, Category, Count,  Acreage
+1, Corn,57612,44644.8
+2, Cotton,24764,19190.2
+3, Rice,4,3.1
+4, Sorghum,400,310
+21, Barley,804,623
+22, Durum Wheat,3525,2731.6
+24, Winter Wheat,107418,83240.5
+28, Oats,16186,12542.9
+33, Safflower,605,468.8
+36, Alfalfa,163853,126973.3
+37, Other Hay/Non Alfalfa,126,97.6
+42, Dry Beans,18,13.9
+43, Potatoes,23,17.8
+47, Misc Vegs & Fruits,80,62
+49, Onions,1,0.8
+53, Peas,81,62.8
+54, Tomatoes,45,34.9
+61, Fallow/Idle Cropland,51185,39664.4
+66, Cherries,199,154.2
+67, Peaches,1557,1206.6
+69, Grapes,92845,71947.6
+71, Other Tree Crops,96,74.4
+72, Citrus,156,120.9
+75, Almonds,152945,118520.4
+76, Walnuts,32359,25075.7
+111, Open Water,9128,7073.5
+112, Perennial Ice/Snow,66,51.1
+121, Developed/Open Space,76632,59383.8
+122, Developed/Low Intensity,25785,19981.4
+123, Developed/Medium Intensity,27203,21080.2
+124, Developed/High Intensity,4272,3310.5
+131, Barren,190423,147562.9
+141, Deciduous Forest,16344,12665.3
+142, Evergreen Forest,1213487,940357.5
+143, Mixed Forest,1050,813.7
+152, Shrubland,798355,618662.7
+176, Grass/Pasture,799148,619277.2
+190, Woody Wetlands,9129,7074.3
+195, Herbaceous Wetlands,901,698.2
+204, Pistachios,53948,41805.5
+205, Triticale,2262,1752.9
+206, Carrots,143,110.8
+208, Garlic,1,0.8
+210, Prunes,2334,1808.7
+211, Olives,8374,6489.2
+212, Oranges,18168,14078.8
+216, Peppers,4,3.1
+217, Pomegranates,7,5.4
+218, Nectarines,762,590.5
+219, Greens,1,0.8
+220, Plums,315,244.1
+223, Apricots,32,24.8
+225, Dbl Crop WinWht/Corn,30411,23566.1
+226, Dbl Crop Oats/Corn,580,449.5

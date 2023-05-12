@@ -7,13 +7,21 @@
 # 3/24 - trying to run w/siskiyou data
 # 3/30 - didn't include seed in final dataset, oops!
 # 4/27 - fixing field ops fuel records to include diff types of fertilize (inject, surface, prod1, est1, etc)
+# 5/12 - include % of water passing through pump as variable
 
-CalcEnergyUse <- function(f_scenario_id = "1001", 
+CalcEnergyUse <- function(f_scenario_id = "0001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
   source("R/code/00_funs/fxn_ProcDataIn.R")
   
+
+# get county --------------------------------------------------------------
+
+  r_county <- 
+    read_csv("R/data_in/scenbyhand_scenario-key.csv", skip = 5) %>% 
+    filter(scenario_id == paste0("scen_", f_scenario_id)) %>% 
+    pull(location)
   
   # references --------------------------------------------------------------
   
@@ -43,6 +51,13 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
   #--fuel use per type of pass
   r_fuelops <-  read_csv("R/data_refs/ref_ops-fuel-usage.csv")
   
+  #--pump pressure for each source/delivery situation
+  #--filter so it is specific to the county in the scenario
+  r_ipump <- 
+    read_excel("R/data_refs/refbyhand_irr-pump-pressures.xlsx", skip = 5) %>% 
+    fill(county, water_source) %>% 
+    filter(county == r_county) %>% 
+    select(-notes)
 
 # non production data (other) -----------------------------------------------------
 
@@ -261,6 +276,13 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
     mutate(therm_eff = value/100) |> 
     select(-value, -unit)
   
+  #--energy content of fuels using assumed data source
+  i_fuen <- 
+    i_fu |> 
+    left_join(r_efuel) |> 
+    filter(source == d_o_fue) |> 
+    mutate(energy_cont = value) |> 
+    select(scenario_id, fuel_type, energy_cont, unit)
   
   #--the efficienvies of irrigation
   i_effs <- 
@@ -288,22 +310,15 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
     filter(desc == "depth of well") |>
     pull(value)
   
+#--this will now be a lookup table thing  
+  # i_pump_pres_psi <-
+  #   d_o |> 
+  #   filter(cat == "irrigation") |> 
+  #   mutate(value = as.numeric(value)) |> 
+  #   filter(desc == "pump pressure") |>
+  #   pull(value)
   
-  i_pump_pres_psi <-
-    d_o |> 
-    filter(cat == "irrigation") |> 
-    mutate(value = as.numeric(value)) |> 
-    filter(desc == "pump pressure") |>
-    pull(value)
   
-    
-  #--energy content of fuels using assumed data source
-  i_fuen <- 
-    i_fu |> 
-    left_join(r_efuel) |> 
-    filter(source == d_o_fue) |> 
-    mutate(energy_cont = value) |> 
-    select(scenario_id, fuel_type, energy_cont, unit)
   
   #--data
   i <- 
@@ -328,15 +343,24 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
     mutate(surface = water_applied_ac_in * i_psurf, #--assumed amt from surface
            ground = water_applied_ac_in - surface) |>
     select(-water_applied_ac_in) |>
-    pivot_longer(surface:ground, values_to = "water_acin") |>
-    mutate(pump_press_psi = i_pump_pres_psi, #--assumed pump press
-           welldepth_ft = ifelse(name == "ground",
-                                 i_welldepth_ft, #--assumed pump depth
+    pivot_longer(surface:ground, values_to = "water_acin") 
+  
+  #--assign pump pressure depending on type/source combo
+  i3 <- 
+    i2 %>%
+    left_join(r_ipump %>%
+                select(
+                  name = water_source,
+                  type = irr_type,
+                  pump_press_psi = pump_psi
+                )) %>% 
+    mutate(welldepth_ft = ifelse(name == "ground",
+                                 i_welldepth_ft, #--assumed pumping depth
                                  0))
   
   #--do some goofy conversions
-  i3 <- 
-    i2 |> 
+  i4 <- 
+    i3 |> 
     left_join(i_effs) |> 
     mutate(
       pump_press_ft = pump_press_psi * fthead_per_psi,
@@ -352,8 +376,8 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
   
   
   #--energy req'd
-  i4 <- 
-    i3 |> 
+  i5 <- 
+    i4 |> 
     unite(type, name, col = "desc", sep = ", ") |> 
     select(scenario_id, cat, desc, mj_per_ha) |> 
     rename(value =  mj_per_ha) |> 
@@ -362,8 +386,8 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
   
   
   #--take into account type of fuel used, add on thermal efficiency of that fuel
-  i5 <- 
-    i4 |>
+  i6 <- 
+    i5 |>
     rename(mj_stand = value) |> 
     select(-unit) |> 
     left_join(i_fuen |> select(-energy_cont, -unit)) |> #attaches scenario to fuel type
@@ -372,8 +396,8 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
                 select(-unit, -value))
   
   #--calculate actual energy expended, given fuel's thermal efficiency
-  i6 <- 
-    i5 |> 
+  i7 <- 
+    i6 |> 
     mutate(value = mj_stand/(therm_eff),
            unit = "mj/stand") |> 
     select(scenario_id,
@@ -384,7 +408,7 @@ CalcEnergyUse <- function(f_scenario_id = "1001",
     filter(value != 0)
   
   
-  e4 <- i6 
+  e4 <- i7
   
   
   # 5. fuel manu (m) -------------------------------------------------------------

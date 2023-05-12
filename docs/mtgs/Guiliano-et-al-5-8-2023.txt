@@ -1,0 +1,103 @@
+5/8/23 - Giulliano Galdi
+
+River flows have a minimum level, if they aren't there irrigation is shut off. 
+Alfalfa is rotated with a small grain (oats, barley, wheat). But it's grown for forage. 
+Most producers do a top-dressing, maybe an at-planting application of N for their small grains.
+50-100 lb N/ac, the alfalfa reduction credit may not be appropriate here. 
+
+The source of water is definitely a mix of ground and surface. 
+Ground wells range from 10-100 feet, and vary across the season. 
+Historically this area was flood irrigated. Now he's unsure, maybe mostly wheel line, some center pivot. 
+Water application efficiency (how much goes to soil/plant) is typically low for wheel line (60-70%), 
+but could be higher with good management. 
+Several flavors of irrigation can help. 
+MESA (mid elevation sprinkler application) uses high pressure to get even coverage, 80-90%
+LESA uses less power
+LEPA - best! A hose dragging on the ground, very low pressure, 95-98% efficiency
+Remember these cause the 'irrigation dilemma', aquifer is not being recharged
+Center pivots are usually electric?
+
+Stand life could be longer than 6 years, but probably not shorter
+Some do put insecticides/fertilizer in their irrigation water. Saves wheel traffic/soil compaction. 
+He says if you have an electric center pivot and put the pesticides in the water, you save a lot of energy!
+
+Partial irrigation is possible after establishment, could shut off for 3rd cutting. 
+Need to look at book to figure out what that yield hit would look like (Intermountain alfalfa management)
+
+
+Ask irrigation company:
+Pump/pressure requirements for wheel lines/center pivots. 
+
+
+Diesel vs gasoline vs electric
+Look for company near Tulelake
+
+Called Tulelake irrigation district 530-667-2249, useless
+Called Alsco, Inc Red Bluff CA 530-527-4001,talked to Russ Harman (super nice guy!)
+Argi Valley Irrigation 559-486-1412, located in Fresno (Mike?)
+ap@agrivalley.com - they'll call me back?
+
+Called Landmark Irrigation 559-665-3700, said they'd call me back? 
+
+Russ Harman at Alsco, super nice guy, humble, farmer-------------
+
+50 psi is a good assumption for a pump
+That will get it out of the river, might be 70 psi if you are up on a hill
+The 50 psi will also get it into your wheel line/center pivot, although center pivot only needs like 40 psi
+Russ talked about pumping out of the shasta river
+
+Problem with electric is that you get charged for peak use between 4-9pm. 
+The premium is only 3-4 cents/kwh right now, so it's not worth the trouble of turning it off
+Most alfalfa folks need to irrigate 24/7
+In Siskiyou, folks are using 400-600 foot wells
+
+Converting from an orchard back to alfalfa (Russ is doing that will his walnuts AND almonds)
+has the advantage of the 'solid set irrigation', which is a sprinkler (?)
+It's already there so he can use it on his alfalfa. Advantage? Not sure. Should call back. 
+He said alfalfa prices are great. It costs him $0.65/lb to produce almonds, sold them for $0.09/lb
+A 'gun cart'? Uses 120-130 psi. 
+
+Mike at Agri Valley, super nice guy, snarky-------------
+
+He thinks hybrid tractors are the future. No one in their right mind would do 100% electric tractor. 
+In Tulare, everyone uses flood from the canal, no pumps involved
+Some switching to sub-surface, which uses plastic and a pump at 20 psi
+Switching to a variable frequency drive pump could increase the efficiency here
+The energy sources are a mix between electric and diesel
+SWEEP program has worked but only on fields close to a road (for access)
+PG&E/SoCal Edison are not well liked
+Propane is another option to get away from paying for diesel
+Wells are 300-1500 feet, gets deeper as you move West to I-5
+Folks pay ~$4/ac-ft from the canal. Pumping it might double that cost. Buying supplemental can be $1,800!!
+Imperial gets a lot of water alotment, usually 10 ac-ft. So they don't care. 
+He thinks if anything folks would replace some alfalfa with corn silage. 
+Dairies are a huge market that is not going away. Folks get $150-300/ton. 
+
+Russell Spain at Landmark Irrigation, Madera---------------------
+559-479-2648
+Total salesman for drip
+He says drip irrigation can extend the life of alfalfa fields to 7-8 years, whereas flood is 3-4
+He was real focused on the horsepower of the pump. 
+Drip uses 40-50 psi. Need 60 psi for the sprinklers, and he says they don't use a filter. 
+Electic won't work for 'travelling sprinklers'. 
+He says drip often uses electric pumps, says 80% of drip installations use electric (he's a drip salesman)
+Propane/NG is a thing, but isn't common. 
+Hard no to electric tractors. Not even hybrid. 'They drive 24/7 during the year, no time to re-charge!'
+
+RDO Water in Brawley CA (Imperial County, near Salton Sea!)------------------------
+760 344-8000
+Herarldo (Jerry for the gringos)
+Both sprinklers and drip need the water to go through a filter first. 
+Sprinlers use a 40-60 psi pump, go through a filter, then into a sprinkler w/pretty unregulated pressure
+The sprinklers need 35-60 psi to work properly. Putting in a check valve that activates sprinkler only
+when sufficient psi is available saves a lot of water. 
+He says flood vs sprinkler/drip is 50/50 where he is. 
+When you install drip, you get to automate a lot of things, and those use solar poewr. 
+Majority of irrigation is diesel powered. Booster pumps, those are all diesel. Not going to change to electric. 
+Booster pumps are used for sprinkler irrigation. 
+Suction hose -> fitler -> booster pump -> filter (?) -> field
+Sprinklers are a mix btwn mobile and permanent infrastructure. Permanent could possibly change to electic. 
+Plastic pipes are smoother compared to aluminum so require less pressure. But it's piddly. 
+When doing sprinkler/drip you can use fertigation. 
+He says they fly on fertilizer. I'm ont sure about that. 
+

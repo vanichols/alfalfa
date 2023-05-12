@@ -16,8 +16,8 @@ scen_0000,yield,stand life,years,3,
 ,,"drip, est",ac-in/stand life,0,
 ,,"drip, prod",ac-in/year,0,
 ,,fraction from surface source,frac,0.5,"Water may come from surface sources, or be ground water pumped from a well, often it is a mix of these"
-,,depth of well,feet,150,
-,,pump pressure,psi,25,
+,,depth of well,feet,500,Mike from irrigation company said 300-1500 feet
+,,pump pressure,psi,50,"Sisikiyou guy said it'll be a 50 psi pump in general, ELIMINATE BC NOW HAVE TABLE??"
 ,,flood irr eff,frac,0.7,from Table 19 of the FTM cited book that you can't get a digital copy of
 ,,sprinkler irr eff,frac,0.8,
 ,,drip irr eff,frac,0.9,

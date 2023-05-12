@@ -49,9 +49,10 @@ d2 <- d[[2]]
 d3 <- d[[3]]
 d4 <- d[[4]]
 
-#--calc irrigated vs non-irrigated
 
-ac_harv <- 
+# ac harv, irr & nonirr ---------------------------------------------------
+
+ah <- 
   d1 %>% 
   bind_rows(d3) %>% 
   mutate(data_item = str_remove_all(pattern = "hay, alfalfa - ", data_item),
@@ -63,9 +64,14 @@ ac_harv <-
   mutate(nonirr_acres_harvested = acres_harvested - irrigated_acres_harvested) %>% 
   pivot_longer(6:ncol(.))
 
-ac_harv %>% write_csv("R/data_tidy/nass_ac-harv.csv")
 
-alf_ops <- 
+ah %>% 
+  write_csv("R/data_tidy/nass_ac-harv.csv")
+
+
+# number of ops -----------------------------------------------------------
+
+ao <- 
   d2 %>% 
   bind_rows(d4) %>% 
   mutate(data_item = str_remove_all(pattern = "hay, alfalfa - ", data_item),
@@ -78,4 +84,8 @@ alf_ops <-
   pivot_longer(6:ncol(.)) %>% 
   mutate(name = str_remove_all(pattern = "_with_area_harvested", name))
 
-alf_ops %>% write_csv("R/data_tidy/nass_alf-ops.csv")
+
+
+ao %>% 
+  write_csv("R/data_tidy/nass_alf-ops.csv")
+

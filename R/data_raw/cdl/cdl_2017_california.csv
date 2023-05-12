@@ -1,0 +1,90 @@
+Value, Category, Count,  Acreage
+1, Corn,536269,119263.4
+2, Cotton,1211057,269332.6
+3, Rice,2044507,454687.4
+4, Sorghum,44334,9859.6
+6, Sunflowers,232194,51638.7
+13, Pop or Orn Corn,1270,282.4
+14, Mint,5441,1210
+21, Barley,553952,123196
+22, Durum Wheat,11329,2519.5
+23, Spring Wheat,44781,9959.1
+24, Winter Wheat,2364130,525769.9
+27, Rye,61576,13694.2
+28, Oats,524879,116730.3
+31, Canola,4223,939.2
+33, Safflower,313297,69675.6
+35, Mustard,29,6.4
+36, Alfalfa,5366900,1193569.8
+37, Other Hay/Non Alfalfa,1671323,371693.3
+41, Sugarbeets,42673,9490.2
+42, Dry Beans,116384,25883.2
+43, Potatoes,23697,5270.1
+44, Other Crops,36700,8161.9
+46, Sweet Potatoes,34497,7671.9
+47, Misc Vegs & Fruits,5147,1144.7
+48, Watermelons,60440,13441.5
+49, Onions,256085,56951.9
+50, Cucumbers,36930,8213
+53, Peas,8573,1906.6
+54, Tomatoes,654100,145468.3
+57, Herbs,31289,6958.5
+58, Clover/Wildflowers,180319,40102
+59, Sod/Grass Seed,82129,18265
+61, Fallow/Idle Cropland,7338402,1632021.3
+66, Cherries,130036,28919.3
+67, Peaches,37327,8301.3
+68, Apples,783,174.1
+69, Grapes,4213439,937046.3
+71, Other Tree Crops,73632,16375.4
+72, Citrus,136573,30373.1
+74, Pecans,4755,1057.5
+75, Almonds,6404793,1424391.7
+76, Walnuts,2689197,598063
+77, Pears,42803,9519.2
+92, Aquaculture,1560,346.9
+111, Open Water,5776979,1284769.2
+112, Perennial Ice/Snow,37561,8353.4
+121, Developed/Open Space,13501315,3002620.2
+122, Developed/Low Intensity,7059820,1570066.2
+123, Developed/Medium Intensity,8144525,1811298.8
+124, Developed/High Intensity,2016420,448441
+131, Barren,21066682,4685117.3
+141, Deciduous Forest,2147000,477481.3
+142, Evergreen Forest,94757913,21073652.6
+143, Mixed Forest,7897826,1756434.2
+152, Shrubland,196341650,43665331.9
+176, Grass/Pasture,49892175,11095752.6
+190, Woody Wetlands,651542,144899.5
+195, Herbaceous Wetlands,1978009,439898.6
+204, Pistachios,2088571,464487
+205, Triticale,214439,47690.1
+206, Carrots,155329,34544.3
+207, Asparagus,866,192.6
+208, Garlic,89637,19934.8
+209, Cantaloupes,148285,32977.8
+211, Olives,174555,38820.1
+212, Oranges,876415,194910
+213, Honeydew Melons,37950,8439.9
+214, Broccoli,31572,7021.4
+216, Peppers,18840,4189.9
+217, Pomegranates,176218,39189.9
+218, Nectarines,14168,3150.9
+219, Greens,119797,26642.2
+220, Plums,267283,59442.3
+221, Strawberries,64675,14383.4
+222, Squash,5587,1242.5
+224, Vetch,57494,12786.4
+225, Dbl Crop WinWht/Corn,1134648,252339.6
+226, Dbl Crop Oats/Corn,287418,63920.2
+227, Lettuce,64371,14315.8
+229, Pumpkins,6577,1462.7
+231, Dbl Crop Lettuce/Cantaloupe,1127,250.6
+232, Dbl Crop Lettuce/Cotton,408,90.7
+236, Dbl Crop WinWht/Sorghum,132003,29356.8
+237, Dbl Crop Barley/Corn,12785,2843.3
+238, Dbl Crop WinWht/Cotton,8866,1971.8
+242, Blueberries,454,101
+243, Cabbage,9689,2154.8
+244, Cauliflower,5386,1197.8
+245, Celery,78,17.3

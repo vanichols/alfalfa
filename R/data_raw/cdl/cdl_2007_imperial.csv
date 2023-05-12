@@ -1,0 +1,33 @@
+Value, Category, Count,  Acreage
+1, Corn,2050,1588.6
+2, Cotton,811,628.5
+4, Sorghum,266,206.1
+12, Sweet Corn,21,16.3
+21, Barley,458,354.9
+22, Durum Wheat,80747,62572.6
+28, Oats,2616,2027.2
+31, Canola,553,428.5
+36, Alfalfa,241154,186875.5
+37, Other Hay/Non Alfalfa,8210,6362.1
+41, Sugarbeets,654,506.8
+45, Sugarcane,140,108.5
+47, Misc Vegs & Fruits,1261,977.2
+48, Watermelons,477,369.6
+49, Onions,907,702.9
+57, Herbs,1393,1079.5
+59, Sod/Grass Seed,587,454.9
+61, Fallow/Idle Cropland,47696,36960.7
+111, Open Water,256706,198927.1
+121, Developed/Open Space,27536,21338.2
+122, Developed/Low Intensity,65378,50662.8
+123, Developed/Medium Intensity,13940,10802.4
+124, Developed/High Intensity,1504,1165.5
+131, Barren,917291,710828.8
+141, Deciduous Forest,43,33.3
+142, Evergreen Forest,90,69.7
+143, Mixed Forest,10,7.7
+152, Shrubland,1861630,1442617.7
+176, Grass/Pasture,139893,108406.1
+190, Woody Wetlands,25477,19742.7
+195, Herbaceous Wetlands,888,688.1
+206, Carrots,566,438.6

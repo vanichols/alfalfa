@@ -1,0 +1,1715 @@
+value,category,count,acreage,year,county
+1,corn,657316,509368.5,2007,all counties
+2,cotton,674576,522743.6,2007,all counties
+3,rice,818838,634535.4,2007,all counties
+4,sorghum,14818,11482.8,2007,all counties
+6,sunflowers,25183,19514.9,2007,all counties
+12,sweet corn,1295,1003.5,2007,all counties
+13,pop or orn corn,286,221.6,2007,all counties
+21,barley,97951,75904.4,2007,all counties
+22,durum wheat,103676,80340.8,2007,all counties
+23,spring wheat,32342,25062.5,2007,all counties
+24,winter wheat,859471,666022.8,2007,all counties
+27,rye,25183,19514.9,2007,all counties
+28,oats,294065,227877.4,2007,all counties
+31,canola,563,436.3,2007,all counties
+33,safflower,114013,88351.2,2007,all counties
+36,alfalfa,1940544,1503769.8,2007,all counties
+37,other hay/non alfalfa,20509,15892.9,2007,all counties
+41,sugarbeets,10926,8466.8,2007,all counties
+42,dry beans,42695,33085.3,2007,all counties
+43,potatoes,636,492.9,2007,all counties
+45,sugarcane,143,110.8,2007,all counties
+46,sweet potatoes,3811,2953.2,2007,all counties
+47,misc vegs & fruits,7785,6032.8,2007,all counties
+48,watermelons,1546,1198,2007,all counties
+49,onions,7905,6125.8,2007,all counties
+53,peas,4998,3873.1,2007,all counties
+54,tomatoes,140478,108859.5,2007,all counties
+57,herbs,24866,19269.2,2007,all counties
+58,clover/wildflowers,78418,60767.8,2007,all counties
+59,sod/grass seed,13349,10344.4,2007,all counties
+61,fallow/idle cropland,978720,758431.5,2007,all counties
+63,forest,518,401.4,2007,all counties
+66,cherries,16514,12797.1,2007,all counties
+67,peaches,7985,6187.8,2007,all counties
+68,apples,2289,1773.8,2007,all counties
+69,grapes,825688,639843.6,2007,all counties
+70,christmas trees,1533,1188,2007,all counties
+71,other tree crops,7375,5715,2007,all counties
+72,citrus,6334,4908.4,2007,all counties
+75,almonds,1317987,1021336.8,2007,all counties
+76,walnuts,424344,328833.4,2007,all counties
+87,wetlands,8853,6860.4,2007,all counties
+92,aquaculture,194,150.3,2007,all counties
+111,open water,1657954,1284784.7,2007,all counties
+112,perennial ice/snow,10997,8521.8,2007,all counties
+121,developed/open space,3917608,3035839.8,2007,all counties
+122,developed/low intensity,2019371,1564854.6,2007,all counties
+123,developed/medium intensity,2002183,1551535.2,2007,all counties
+124,developed/high intensity,489847,379593.1,2007,all counties
+131,barren,5701386,4418128.3,2007,all counties
+141,deciduous forest,657084,509188.7,2007,all counties
+142,evergreen forest,28478338,22068484.7,2007,all counties
+143,mixed forest,2376702,1841758.2,2007,all counties
+152,shrubland,52584939,40749215.1,2007,all counties
+176,grass/pasture,19659832,15234832.2,2007,all counties
+190,woody wetlands,266008,206135.4,2007,all counties
+195,herbaceous wetlands,574194,444955.4,2007,all counties
+204,pistachios,198790,154046.7,2007,all counties
+205,triticale,22358,17325.7,2007,all counties
+206,carrots,6180,4789,2007,all counties
+207,asparagus,20824,16137,2007,all counties
+208,garlic,1687,1307.3,2007,all counties
+209,cantaloupes,14734,11417.7,2007,all counties
+210,prunes,95085,73683.4,2007,all counties
+211,olives,60827,47136.2,2007,all counties
+212,oranges,66883,51829.1,2007,all counties
+213,honeydew melons,2707,2097.7,2007,all counties
+214,broccoli,2425,1879.2,2007,all counties
+216,peppers,4965,3847.5,2007,all counties
+217,pomegranates,8266,6405.5,2007,all counties
+218,nectarines,4033,3125.3,2007,all counties
+219,greens,972,753.2,2007,all counties
+220,plums,4283,3319,2007,all counties
+221,strawberries,11031,8548.2,2007,all counties
+222,squash,770,596.7,2007,all counties
+223,apricots,5050,3913.4,2007,all counties
+224,vetch,1434,1111.2,2007,all counties
+225,dbl crop winwht/corn,43295,33550.2,2007,all counties
+226,dbl crop oats/corn,15895,12317.4,2007,all counties
+1,corn,1799703,400244.3,2010,all counties
+2,cotton,1788099,397663.6,2010,all counties
+3,rice,2706692,601953.8,2010,all counties
+4,sorghum,24186,5378.8,2010,all counties
+5,soybeans,18,4,2010,all counties
+6,sunflowers,91003,20238.6,2010,all counties
+12,sweet corn,2867,637.6,2010,all counties
+14,mint,21919,4874.7,2010,all counties
+21,barley,428356,95264.1,2010,all counties
+22,durum wheat,461696,102678.7,2010,all counties
+23,spring wheat,63417,14103.6,2010,all counties
+24,winter wheat,3527057,784398.6,2010,all counties
+27,rye,72917,16216.4,2010,all counties
+28,oats,866368,192675.6,2010,all counties
+33,safflower,310291,69007.1,2010,all counties
+36,alfalfa,6921177,1539232.7,2010,all counties
+37,other hay/non alfalfa,1802797,400932.4,2010,all counties
+42,dry beans,113854,25320.5,2010,all counties
+43,potatoes,99818,22199,2010,all counties
+44,other crops,23466,5218.7,2010,all counties
+46,sweet potatoes,39082,8691.6,2010,all counties
+47,misc vegs & fruits,72323,16084.2,2010,all counties
+48,watermelons,9257,2058.7,2010,all counties
+49,onions,19223,4275.1,2010,all counties
+53,peas,29748,6615.8,2010,all counties
+54,tomatoes,603082,134122.2,2010,all counties
+57,herbs,8192,1821.9,2010,all counties
+58,clover/wildflowers,248413,55245.7,2010,all counties
+59,sod/grass seed,42549,9462.7,2010,all counties
+61,fallow/idle cropland,5137188,1142483.1,2010,all counties
+63,forest,6601,1468,2010,all counties
+66,cherries,107484,23903.9,2010,all counties
+67,peaches,72216,16060.5,2010,all counties
+68,apples,8077,1796.3,2010,all counties
+69,grapes,1748835,388931.5,2010,all counties
+71,other tree crops,111565,24811.5,2010,all counties
+72,citrus,70281,15630.1,2010,all counties
+74,pecans,4338,964.7,2010,all counties
+75,almonds,4170583,927515.3,2010,all counties
+76,walnuts,1659008,368954.5,2010,all counties
+87,wetlands,17102,3803.4,2010,all counties
+92,aquaculture,354,78.7,2010,all counties
+111,open water,5703550,1268439,2010,all counties
+112,perennial ice/snow,37811,8409,2010,all counties
+121,developed/open space,12607218,2803777.8,2010,all counties
+122,developed/low intensity,6833241,1519676.2,2010,all counties
+123,developed/medium intensity,6983341,1553057.7,2010,all counties
+124,developed/high intensity,1700766,378241.3,2010,all counties
+131,barren,20143571,4479822.4,2010,all counties
+141,deciduous forest,1699417,377941.2,2010,all counties
+142,evergreen forest,93338930,20758078.4,2010,all counties
+143,mixed forest,7142504,1588454.7,2010,all counties
+152,shrubland,171990939,38249864.1,2010,all counties
+176,grass/pasture,85628214,19043256.4,2010,all counties
+190,woody wetlands,736145,163714.7,2010,all counties
+195,herbaceous wetlands,1443982,321133.9,2010,all counties
+204,pistachios,783002,174135.5,2010,all counties
+205,triticale,129165,28725.6,2010,all counties
+206,carrots,25496,5670.2,2010,all counties
+207,asparagus,3047,677.6,2010,all counties
+208,garlic,28895,6426.1,2010,all counties
+209,cantaloupes,108983,24237.2,2010,all counties
+210,prunes,373683,83105.1,2010,all counties
+211,olives,388903,86489.9,2010,all counties
+212,oranges,833016,185258.3,2010,all counties
+214,broccoli,209,46.5,2010,all counties
+216,peppers,4834,1075.1,2010,all counties
+217,pomegranates,90658,20161.9,2010,all counties
+218,nectarines,9822,2184.4,2010,all counties
+220,plums,76382,16986.9,2010,all counties
+221,strawberries,157540,35036.1,2010,all counties
+222,squash,2764,614.7,2010,all counties
+223,apricots,14854,3303.5,2010,all counties
+224,vetch,15304,3403.5,2010,all counties
+225,dbl crop winwht/corn,207112,46060.6,2010,all counties
+226,dbl crop oats/corn,406467,90396.1,2010,all counties
+227,lettuce,115815,25756.6,2010,all counties
+229,pumpkins,924,205.5,2010,all counties
+230,dbl crop lettuce/durum wht,16987,3777.8,2010,all counties
+232,dbl crop lettuce/cotton,256,56.9,2010,all counties
+235,dbl crop barley/sorghum,859,191,2010,all counties
+236,dbl crop winwht/sorghum,8665,1927,2010,all counties
+237,dbl crop barley/corn,719,159.9,2010,all counties
+242,blueberries,2225,494.8,2010,all counties
+244,cauliflower,1184,263.3,2010,all counties
+250,cranberries,61,13.6,2010,all counties
+1,corn,1285904,285978.2,2012,all counties
+2,cotton,1817982,404309.5,2012,all counties
+3,rice,2623391,583428.1,2012,all counties
+4,sorghum,35689,7937,2012,all counties
+6,sunflowers,271351,60347,2012,all counties
+12,sweet corn,25570,5686.6,2012,all counties
+14,mint,8016,1782.7,2012,all counties
+21,barley,469351,104381.1,2012,all counties
+22,durum wheat,616223,137044.7,2012,all counties
+23,spring wheat,78728,17508.7,2012,all counties
+24,winter wheat,2417643,537670.9,2012,all counties
+25,other small grains,1546,343.8,2012,all counties
+27,rye,51509,11455.3,2012,all counties
+28,oats,752066,167255.5,2012,all counties
+31,canola,1955,434.8,2012,all counties
+33,safflower,235664,52410.4,2012,all counties
+36,alfalfa,5145473,1144325.7,2012,all counties
+37,other hay/non alfalfa,1662993,369840.7,2012,all counties
+38,camelina,12784,2843.1,2012,all counties
+41,sugarbeets,154248,34303.9,2012,all counties
+42,dry beans,118923,26447.8,2012,all counties
+43,potatoes,113465,25234,2012,all counties
+44,other crops,60199,13387.9,2012,all counties
+46,sweet potatoes,53532,11905.2,2012,all counties
+47,misc vegs & fruits,120995,26908.6,2012,all counties
+48,watermelons,40404,8985.6,2012,all counties
+49,onions,184078,40938,2012,all counties
+50,cucumbers,3356,746.4,2012,all counties
+52,lentils,428,95.2,2012,all counties
+53,peas,29095,6470.6,2012,all counties
+54,tomatoes,1526716,339533.5,2012,all counties
+55,caneberries,1360,302.5,2012,all counties
+57,herbs,14932,3320.8,2012,all counties
+58,clover/wildflowers,246182,54749.6,2012,all counties
+59,sod/grass seed,17871,3974.4,2012,all counties
+61,fallow/idle cropland,7148557,1589800.8,2012,all counties
+66,cherries,158863,35330.3,2012,all counties
+67,peaches,43042,9572.3,2012,all counties
+68,apples,14069,3128.9,2012,all counties
+69,grapes,4125411,917469.3,2012,all counties
+71,other tree crops,43029,9569.4,2012,all counties
+72,citrus,145171,32285.3,2012,all counties
+74,pecans,5799,1289.7,2012,all counties
+75,almonds,5191046,1154460.8,2012,all counties
+76,walnuts,1524824,339112.7,2012,all counties
+77,pears,43368,9644.8,2012,all counties
+92,aquaculture,3234,719.2,2012,all counties
+111,open water,6016268,1337985.8,2012,all counties
+112,perennial ice/snow,42290,9405.1,2012,all counties
+121,developed/open space,13610597,3026923.9,2012,all counties
+122,developed/low intensity,7132913,1586321.7,2012,all counties
+123,developed/medium intensity,7383210,1641986.4,2012,all counties
+124,developed/high intensity,1793570,398880.4,2012,all counties
+131,barren,20607299,4582953,2012,all counties
+141,deciduous forest,2546314,566286.6,2012,all counties
+142,evergreen forest,97658573,21718743.8,2012,all counties
+143,mixed forest,9222922,2051128.5,2012,all counties
+152,shrubland,183782142,40872164.5,2012,all counties
+176,grass/pasture,59725482,13282627.5,2012,all counties
+190,woody wetlands,841460,187136.2,2012,all counties
+195,herbaceous wetlands,1867041,415219.9,2012,all counties
+204,pistachios,899777,200105.6,2012,all counties
+205,triticale,141918,31561.8,2012,all counties
+206,carrots,102905,22885.5,2012,all counties
+207,asparagus,15995,3557.2,2012,all counties
+208,garlic,66863,14870,2012,all counties
+209,cantaloupes,60496,13454,2012,all counties
+211,olives,199497,44367.1,2012,all counties
+212,oranges,534392,118845.9,2012,all counties
+213,honeydew melons,20412,4539.5,2012,all counties
+214,broccoli,14039,3122.2,2012,all counties
+216,peppers,21467,4774.1,2012,all counties
+217,pomegranates,92862,20652,2012,all counties
+218,nectarines,7647,1700.7,2012,all counties
+219,greens,32098,7138.4,2012,all counties
+220,plums,233428,51913.1,2012,all counties
+221,strawberries,142751,31747.1,2012,all counties
+222,squash,9083,2020,2012,all counties
+223,apricots,13296,2957,2012,all counties
+224,vetch,8302,1846.3,2012,all counties
+225,dbl crop winwht/corn,926583,206067.1,2012,all counties
+226,dbl crop oats/corn,421940,93837.2,2012,all counties
+227,lettuce,92918,20664.5,2012,all counties
+229,pumpkins,2002,445.2,2012,all counties
+230,dbl crop lettuce/durum wht,19587,4356,2012,all counties
+231,dbl crop lettuce/cantaloupe,4154,923.8,2012,all counties
+232,dbl crop lettuce/cotton,1880,418.1,2012,all counties
+235,dbl crop barley/sorghum,6481,1441.3,2012,all counties
+236,dbl crop winwht/sorghum,115158,25610.5,2012,all counties
+237,dbl crop barley/corn,10402,2313.3,2012,all counties
+238,dbl crop winwht/cotton,580,129,2012,all counties
+242,blueberries,3544,788.2,2012,all counties
+243,cabbage,3532,785.5,2012,all counties
+244,cauliflower,5237,1164.7,2012,all counties
+245,celery,759,168.8,2012,all counties
+246,radishes,299,66.5,2012,all counties
+248,eggplants,262,58.3,2012,all counties
+1,corn,780595,173600.1,2015,all counties
+2,cotton,787648,175168.7,2015,all counties
+3,rice,1991318,442858.5,2015,all counties
+4,sorghum,74934,16664.9,2015,all counties
+6,sunflowers,148199,32958.7,2015,all counties
+12,sweet corn,22572,5019.9,2015,all counties
+14,mint,7814,1737.8,2015,all counties
+21,barley,385317,85692.4,2015,all counties
+22,durum wheat,454684,101119.3,2015,all counties
+23,spring wheat,75450,16779.7,2015,all counties
+24,winter wheat,1964090,436803.1,2015,all counties
+25,other small grains,50,11.1,2015,all counties
+27,rye,54788,12184.6,2015,all counties
+28,oats,554014,123209.7,2015,all counties
+29,millet,566,125.9,2015,all counties
+31,canola,5507,1224.7,2015,all counties
+33,safflower,309619,68857.6,2015,all counties
+36,alfalfa,5313453,1181683.5,2015,all counties
+37,other hay/non alfalfa,1464999,325807.9,2015,all counties
+41,sugarbeets,115364,25656.3,2015,all counties
+42,dry beans,103779,23079.9,2015,all counties
+43,potatoes,137293,30533.2,2015,all counties
+44,other crops,22265,4951.6,2015,all counties
+46,sweet potatoes,11609,2581.8,2015,all counties
+47,misc vegs & fruits,119561,26589.7,2015,all counties
+48,watermelons,33089,7358.8,2015,all counties
+49,onions,151634,33722.6,2015,all counties
+50,cucumbers,28079,6244.6,2015,all counties
+53,peas,23935,5323,2015,all counties
+54,tomatoes,1527209,339643.1,2015,all counties
+57,herbs,28028,6233.3,2015,all counties
+58,clover/wildflowers,172509,38365.1,2015,all counties
+59,sod/grass seed,15377,3419.8,2015,all counties
+61,fallow/idle cropland,10188553,2265879.6,2015,all counties
+66,cherries,85661,19050.5,2015,all counties
+67,peaches,18910,4205.5,2015,all counties
+68,apples,12548,2790.6,2015,all counties
+69,grapes,4329419,962839.6,2015,all counties
+70,christmas trees,138,30.7,2015,all counties
+71,other tree crops,37428,8323.8,2015,all counties
+72,citrus,157150,34949.3,2015,all counties
+74,pecans,7262,1615,2015,all counties
+75,almonds,6098708,1356320,2015,all counties
+76,walnuts,1894363,421296.2,2015,all counties
+77,pears,34060,7574.8,2015,all counties
+92,aquaculture,16779,3731.6,2015,all counties
+111,open water,5687109,1264782.6,2015,all counties
+112,perennial ice/snow,38054,8463,2015,all counties
+121,developed/open space,13486151,2999247.8,2015,all counties
+122,developed/low intensity,7024477,1562206.1,2015,all counties
+123,developed/medium intensity,8105827,1802692.5,2015,all counties
+124,developed/high intensity,2031012,451686.2,2015,all counties
+131,barren,20997672,4669769.8,2015,all counties
+141,deciduous forest,2440878,542838.2,2015,all counties
+142,evergreen forest,94929166,21111738.3,2015,all counties
+143,mixed forest,8020025,1783610.6,2015,all counties
+152,shrubland,195854709,43557038.8,2015,all counties
+176,grass/pasture,49959866,11110806.7,2015,all counties
+190,woody wetlands,648751,144278.7,2015,all counties
+195,herbaceous wetlands,1978375,439980,2015,all counties
+204,pistachios,1070958,238175.3,2015,all counties
+205,triticale,221473,49254.4,2015,all counties
+206,carrots,118681,26394,2015,all counties
+207,asparagus,2301,511.7,2015,all counties
+208,garlic,72344,16088.9,2015,all counties
+209,cantaloupes,49504,11009.4,2015,all counties
+211,olives,136512,30359.5,2015,all counties
+212,oranges,916288,203777.5,2015,all counties
+213,honeydew melons,17495,3890.8,2015,all counties
+214,broccoli,12591,2800.2,2015,all counties
+216,peppers,19655,4371.2,2015,all counties
+217,pomegranates,82528,18353.8,2015,all counties
+218,nectarines,7176,1595.9,2015,all counties
+219,greens,69197,15389,2015,all counties
+220,plums,107210,23842.9,2015,all counties
+221,strawberries,138863,30882.4,2015,all counties
+222,squash,5531,1230.1,2015,all counties
+224,vetch,2692,598.7,2015,all counties
+225,dbl crop winwht/corn,584792,130054.6,2015,all counties
+226,dbl crop oats/corn,339514,75506.1,2015,all counties
+227,lettuce,62800,13966.4,2015,all counties
+229,pumpkins,2836,630.7,2015,all counties
+236,dbl crop winwht/sorghum,90199,20059.8,2015,all counties
+237,dbl crop barley/corn,5014,1115.1,2015,all counties
+242,blueberries,513,114.1,2015,all counties
+243,cabbage,513,114.1,2015,all counties
+244,cauliflower,1132,251.8,2015,all counties
+246,radishes,1765,392.5,2015,all counties
+248,eggplants,186,41.4,2015,all counties
+1,corn,536269,119263.4,2017,all counties
+2,cotton,1211057,269332.6,2017,all counties
+3,rice,2044507,454687.4,2017,all counties
+4,sorghum,44334,9859.6,2017,all counties
+6,sunflowers,232194,51638.7,2017,all counties
+13,pop or orn corn,1270,282.4,2017,all counties
+14,mint,5441,1210,2017,all counties
+21,barley,553952,123196,2017,all counties
+22,durum wheat,11329,2519.5,2017,all counties
+23,spring wheat,44781,9959.1,2017,all counties
+24,winter wheat,2364130,525769.9,2017,all counties
+27,rye,61576,13694.2,2017,all counties
+28,oats,524879,116730.3,2017,all counties
+31,canola,4223,939.2,2017,all counties
+33,safflower,313297,69675.6,2017,all counties
+35,mustard,29,6.4,2017,all counties
+36,alfalfa,5366900,1193569.8,2017,all counties
+37,other hay/non alfalfa,1671323,371693.3,2017,all counties
+41,sugarbeets,42673,9490.2,2017,all counties
+42,dry beans,116384,25883.2,2017,all counties
+43,potatoes,23697,5270.1,2017,all counties
+44,other crops,36700,8161.9,2017,all counties
+46,sweet potatoes,34497,7671.9,2017,all counties
+47,misc vegs & fruits,5147,1144.7,2017,all counties
+48,watermelons,60440,13441.5,2017,all counties
+49,onions,256085,56951.9,2017,all counties
+50,cucumbers,36930,8213,2017,all counties
+53,peas,8573,1906.6,2017,all counties
+54,tomatoes,654100,145468.3,2017,all counties
+57,herbs,31289,6958.5,2017,all counties
+58,clover/wildflowers,180319,40102,2017,all counties
+59,sod/grass seed,82129,18265,2017,all counties
+61,fallow/idle cropland,7338402,1632021.3,2017,all counties
+66,cherries,130036,28919.3,2017,all counties
+67,peaches,37327,8301.3,2017,all counties
+68,apples,783,174.1,2017,all counties
+69,grapes,4213439,937046.3,2017,all counties
+71,other tree crops,73632,16375.4,2017,all counties
+72,citrus,136573,30373.1,2017,all counties
+74,pecans,4755,1057.5,2017,all counties
+75,almonds,6404793,1424391.7,2017,all counties
+76,walnuts,2689197,598063,2017,all counties
+77,pears,42803,9519.2,2017,all counties
+92,aquaculture,1560,346.9,2017,all counties
+111,open water,5776979,1284769.2,2017,all counties
+112,perennial ice/snow,37561,8353.4,2017,all counties
+121,developed/open space,13501315,3002620.2,2017,all counties
+122,developed/low intensity,7059820,1570066.2,2017,all counties
+123,developed/medium intensity,8144525,1811298.8,2017,all counties
+124,developed/high intensity,2016420,448441,2017,all counties
+131,barren,21066682,4685117.3,2017,all counties
+141,deciduous forest,2147000,477481.3,2017,all counties
+142,evergreen forest,94757913,21073652.6,2017,all counties
+143,mixed forest,7897826,1756434.2,2017,all counties
+152,shrubland,196341650,43665331.9,2017,all counties
+176,grass/pasture,49892175,11095752.6,2017,all counties
+190,woody wetlands,651542,144899.5,2017,all counties
+195,herbaceous wetlands,1978009,439898.6,2017,all counties
+204,pistachios,2088571,464487,2017,all counties
+205,triticale,214439,47690.1,2017,all counties
+206,carrots,155329,34544.3,2017,all counties
+207,asparagus,866,192.6,2017,all counties
+208,garlic,89637,19934.8,2017,all counties
+209,cantaloupes,148285,32977.8,2017,all counties
+211,olives,174555,38820.1,2017,all counties
+212,oranges,876415,194910,2017,all counties
+213,honeydew melons,37950,8439.9,2017,all counties
+214,broccoli,31572,7021.4,2017,all counties
+216,peppers,18840,4189.9,2017,all counties
+217,pomegranates,176218,39189.9,2017,all counties
+218,nectarines,14168,3150.9,2017,all counties
+219,greens,119797,26642.2,2017,all counties
+220,plums,267283,59442.3,2017,all counties
+221,strawberries,64675,14383.4,2017,all counties
+222,squash,5587,1242.5,2017,all counties
+224,vetch,57494,12786.4,2017,all counties
+225,dbl crop winwht/corn,1134648,252339.6,2017,all counties
+226,dbl crop oats/corn,287418,63920.2,2017,all counties
+227,lettuce,64371,14315.8,2017,all counties
+229,pumpkins,6577,1462.7,2017,all counties
+231,dbl crop lettuce/cantaloupe,1127,250.6,2017,all counties
+232,dbl crop lettuce/cotton,408,90.7,2017,all counties
+236,dbl crop winwht/sorghum,132003,29356.8,2017,all counties
+237,dbl crop barley/corn,12785,2843.3,2017,all counties
+238,dbl crop winwht/cotton,8866,1971.8,2017,all counties
+242,blueberries,454,101,2017,all counties
+243,cabbage,9689,2154.8,2017,all counties
+244,cauliflower,5386,1197.8,2017,all counties
+245,celery,78,17.3,2017,all counties
+1,corn,704446,156665,2022,all counties
+2,cotton,739718,164509.3,2022,all counties
+3,rice,1227977,273095.5,2022,all counties
+4,sorghum,33876,7533.8,2022,all counties
+6,sunflowers,178498,39697,2022,all counties
+12,sweet corn,37355,8307.6,2022,all counties
+13,pop or orn corn,370,82.3,2022,all counties
+14,mint,9003,2002.2,2022,all counties
+21,barley,373155,82987.7,2022,all counties
+22,durum wheat,194184,43185.5,2022,all counties
+23,spring wheat,60128,13372.1,2022,all counties
+24,winter wheat,2571969,571992.1,2022,all counties
+27,rye,152697,33959,2022,all counties
+28,oats,579855,128956.6,2022,all counties
+31,canola,686,152.6,2022,all counties
+32,flaxseed,211,46.9,2022,all counties
+33,safflower,377822,84025.6,2022,all counties
+35,mustard,267,59.4,2022,all counties
+36,alfalfa,4331477,963297.3,2022,all counties
+37,other hay/non alfalfa,1802711,400913.3,2022,all counties
+41,sugarbeets,154806,34428,2022,all counties
+42,dry beans,39915,8876.9,2022,all counties
+43,potatoes,71975,16006.9,2022,all counties
+44,other crops,65742,14620.7,2022,all counties
+46,sweet potatoes,28292,6292,2022,all counties
+47,misc vegs & fruits,194073,43160.8,2022,all counties
+48,watermelons,36014,8009.3,2022,all counties
+49,onions,166160,36953.1,2022,all counties
+50,cucumbers,24845,5525.4,2022,all counties
+51,chick peas,10433,2320.2,2022,all counties
+52,lentils,8,1.8,2022,all counties
+53,peas,7492,1666.2,2022,all counties
+54,tomatoes,1206486,268316,2022,all counties
+57,herbs,15334,3410.2,2022,all counties
+58,clover/wildflowers,224964,50030.8,2022,all counties
+59,sod/grass seed,39609,8808.8,2022,all counties
+61,fallow/idle cropland,5461203,1214542.3,2022,all counties
+66,cherries,325649,72422.6,2022,all counties
+67,peaches,220642,49069.6,2022,all counties
+68,apples,84220,18730.1,2022,all counties
+69,grapes,3993881,888217.8,2022,all counties
+70,christmas trees,5156,1146.7,2022,all counties
+71,other tree crops,87956,19560.9,2022,all counties
+72,citrus,1347502,299677.2,2022,all counties
+74,pecans,11827,2630.3,2022,all counties
+75,almonds,8354651,1858029.7,2022,all counties
+76,walnuts,2265739,503888.2,2022,all counties
+77,pears,45937,10216.1,2022,all counties
+92,aquaculture,1018,226.4,2022,all counties
+111,open water,5871680,1305830.2,2022,all counties
+112,perennial ice/snow,52474,11669.9,2022,all counties
+121,developed/open space,12140809,2700050.9,2022,all counties
+122,developed/low intensity,7178537,1596468.2,2022,all counties
+123,developed/medium intensity,9318756,2072441.4,2022,all counties
+124,developed/high intensity,3110967,691862.4,2022,all counties
+131,barren,22011609,4895264,2022,all counties
+141,deciduous forest,593273,131940.7,2022,all counties
+142,evergreen forest,92009524,20462425.6,2022,all counties
+143,mixed forest,6429285,1429838.6,2022,all counties
+152,shrubland,197967716,44026960.3,2022,all counties
+176,grass/pasture,49856180,11087747.5,2022,all counties
+190,woody wetlands,839894,186787.9,2022,all counties
+195,herbaceous wetlands,3245738,721834.8,2022,all counties
+204,pistachios,2945823,655135.3,2022,all counties
+205,triticale,497779,110703.4,2022,all counties
+206,carrots,111973,24902.2,2022,all counties
+208,garlic,138827,30874.4,2022,all counties
+209,cantaloupes,39598,8806.4,2022,all counties
+210,prunes,319730,71106.2,2022,all counties
+211,olives,316038,70285.2,2022,all counties
+212,oranges,57208,12722.8,2022,all counties
+213,honeydew melons,12989,2888.7,2022,all counties
+214,broccoli,25099,5581.9,2022,all counties
+215,avocados,204203,45413.7,2022,all counties
+216,peppers,18060,4016.4,2022,all counties
+217,pomegranates,148641,33057,2022,all counties
+218,nectarines,11326,2518.8,2022,all counties
+219,greens,71304,15857.6,2022,all counties
+220,plums,291046,64727.1,2022,all counties
+221,strawberries,26786,5957.1,2022,all counties
+222,squash,4771,1061,2022,all counties
+224,vetch,245,54.5,2022,all counties
+225,dbl crop winwht/corn,655743,145833.7,2022,all counties
+226,dbl crop oats/corn,198433,44130.4,2022,all counties
+227,lettuce,128318,28537.2,2022,all counties
+228,dbl crop triticale/corn,306636,68194.2,2022,all counties
+229,pumpkins,10638,2365.8,2022,all counties
+231,dbl crop lettuce/cantaloupe,163,36.3,2022,all counties
+236,dbl crop winwht/sorghum,44910,9987.7,2022,all counties
+237,dbl crop barley/corn,5442,1210.3,2022,all counties
+238,dbl crop winwht/cotton,2674,594.7,2022,all counties
+242,blueberries,3285,730.6,2022,all counties
+243,cabbage,7391,1643.7,2022,all counties
+244,cauliflower,7932,1764,2022,all counties
+245,celery,940,209.1,2022,all counties
+248,eggplants,335,74.5,2022,all counties
+1,corn,2050,1588.6,2007,imperial
+2,cotton,811,628.5,2007,imperial
+4,sorghum,266,206.1,2007,imperial
+12,sweet corn,21,16.3,2007,imperial
+21,barley,458,354.9,2007,imperial
+22,durum wheat,80747,62572.6,2007,imperial
+28,oats,2616,2027.2,2007,imperial
+31,canola,553,428.5,2007,imperial
+36,alfalfa,241154,186875.5,2007,imperial
+37,other hay/non alfalfa,8210,6362.1,2007,imperial
+41,sugarbeets,654,506.8,2007,imperial
+45,sugarcane,140,108.5,2007,imperial
+47,misc vegs & fruits,1261,977.2,2007,imperial
+48,watermelons,477,369.6,2007,imperial
+49,onions,907,702.9,2007,imperial
+57,herbs,1393,1079.5,2007,imperial
+59,sod/grass seed,587,454.9,2007,imperial
+61,fallow/idle cropland,47696,36960.7,2007,imperial
+111,open water,256706,198927.1,2007,imperial
+121,developed/open space,27536,21338.2,2007,imperial
+122,developed/low intensity,65378,50662.8,2007,imperial
+123,developed/medium intensity,13940,10802.4,2007,imperial
+124,developed/high intensity,1504,1165.5,2007,imperial
+131,barren,917291,710828.8,2007,imperial
+141,deciduous forest,43,33.3,2007,imperial
+142,evergreen forest,90,69.7,2007,imperial
+143,mixed forest,10,7.7,2007,imperial
+152,shrubland,1861630,1442617.7,2007,imperial
+176,grass/pasture,139893,108406.1,2007,imperial
+190,woody wetlands,25477,19742.7,2007,imperial
+195,herbaceous wetlands,888,688.1,2007,imperial
+206,carrots,566,438.6,2007,imperial
+2,cotton,6750,1501.2,2010,imperial
+21,barley,13,2.9,2010,imperial
+22,durum wheat,380562,84635,2010,imperial
+27,rye,1162,258.4,2010,imperial
+28,oats,2846,632.9,2010,imperial
+36,alfalfa,796584,177156,2010,imperial
+37,other hay/non alfalfa,418049,92971.9,2010,imperial
+43,potatoes,15435,3432.7,2010,imperial
+47,misc vegs & fruits,5,1.1,2010,imperial
+49,onions,4436,986.5,2010,imperial
+54,tomatoes,105,23.4,2010,imperial
+59,sod/grass seed,3,0.7,2010,imperial
+61,fallow/idle cropland,255107,56734.4,2010,imperial
+72,citrus,5,1.1,2010,imperial
+75,almonds,2,0.4,2010,imperial
+111,open water,900103,200178.1,2010,imperial
+121,developed/open space,85787,19078.6,2010,imperial
+122,developed/low intensity,202858,45114.5,2010,imperial
+123,developed/medium intensity,49374,10980.5,2010,imperial
+124,developed/high intensity,6162,1370.4,2010,imperial
+131,barren,3323192,739060.1,2010,imperial
+141,deciduous forest,355,79,2010,imperial
+142,evergreen forest,2969,660.3,2010,imperial
+143,mixed forest,340,75.6,2010,imperial
+152,shrubland,6241176,1388004.1,2010,imperial
+176,grass/pasture,2475,550.4,2010,imperial
+190,woody wetlands,91004,20238.8,2010,imperial
+195,herbaceous wetlands,3344,743.7,2010,imperial
+206,carrots,5648,1256.1,2010,imperial
+209,cantaloupes,18805,4182.1,2010,imperial
+212,oranges,4,0.9,2010,imperial
+220,plums,2,0.4,2010,imperial
+227,lettuce,64390,14320,2010,imperial
+230,dbl crop lettuce/durum wht,16971,3774.3,2010,imperial
+232,dbl crop lettuce/cotton,27,6,2010,imperial
+244,cauliflower,1184,263.3,2010,imperial
+1,corn,8701,1935.1,2012,imperial
+2,cotton,18231,4054.5,2012,imperial
+6,sunflowers,717,159.5,2012,imperial
+12,sweet corn,5486,1220.1,2012,imperial
+21,barley,256,56.9,2012,imperial
+22,durum wheat,475780,105810.9,2012,imperial
+24,winter wheat,457,101.6,2012,imperial
+25,other small grains,88,19.6,2012,imperial
+27,rye,3881,863.1,2012,imperial
+28,oats,6021,1339,2012,imperial
+31,canola,450,100.1,2012,imperial
+36,alfalfa,674278,149955.8,2012,imperial
+37,other hay/non alfalfa,289002,64272.5,2012,imperial
+41,sugarbeets,150998,33581.1,2012,imperial
+42,dry beans,641,142.6,2012,imperial
+43,potatoes,4662,1036.8,2012,imperial
+44,other crops,802,178.4,2012,imperial
+47,misc vegs & fruits,27193,6047.6,2012,imperial
+48,watermelons,4207,935.6,2012,imperial
+49,onions,41349,9195.8,2012,imperial
+50,cucumbers,418,93,2012,imperial
+54,tomatoes,3,0.7,2012,imperial
+57,herbs,614,136.6,2012,imperial
+59,sod/grass seed,3011,669.6,2012,imperial
+61,fallow/idle cropland,186372,41448.1,2012,imperial
+67,peaches,32,7.1,2012,imperial
+69,grapes,1616,359.4,2012,imperial
+71,other tree crops,1504,334.5,2012,imperial
+72,citrus,46491,10339.3,2012,imperial
+74,pecans,34,7.6,2012,imperial
+75,almonds,2681,596.2,2012,imperial
+92,aquaculture,653,145.2,2012,imperial
+111,open water,884979,196814.6,2012,imperial
+121,developed/open space,89568,19919.4,2012,imperial
+122,developed/low intensity,215715,47973.9,2012,imperial
+123,developed/medium intensity,55439,12329.3,2012,imperial
+124,developed/high intensity,5175,1150.9,2012,imperial
+131,barren,3364678,748286.4,2012,imperial
+141,deciduous forest,640,142.3,2012,imperial
+142,evergreen forest,467,103.9,2012,imperial
+143,mixed forest,156,34.7,2012,imperial
+152,shrubland,6043717,1344090.3,2012,imperial
+176,grass/pasture,8042,1788.5,2012,imperial
+190,woody wetlands,72871,16206.1,2012,imperial
+195,herbaceous wetlands,9272,2062,2012,imperial
+206,carrots,60118,13369.9,2012,imperial
+207,asparagus,169,37.6,2012,imperial
+209,cantaloupes,15295,3401.5,2012,imperial
+213,honeydew melons,85,18.9,2012,imperial
+214,broccoli,9908,2203.5,2012,imperial
+216,peppers,43,9.6,2012,imperial
+219,greens,29910,6651.8,2012,imperial
+222,squash,24,5.3,2012,imperial
+227,lettuce,45543,10128.5,2012,imperial
+230,dbl crop lettuce/durum wht,19515,4340,2012,imperial
+231,dbl crop lettuce/cantaloupe,997,221.7,2012,imperial
+243,cabbage,2395,532.6,2012,imperial
+244,cauliflower,5132,1141.3,2012,imperial
+245,celery,752,167.2,2012,imperial
+1,corn,18188,4044.9,2015,imperial
+2,cotton,5433,1208.3,2015,imperial
+12,sweet corn,9286,2065.2,2015,imperial
+22,durum wheat,317911,70701.7,2015,imperial
+25,other small grains,50,11.1,2015,imperial
+28,oats,3830,851.8,2015,imperial
+36,alfalfa,686943,152772.4,2015,imperial
+37,other hay/non alfalfa,298312,66343,2015,imperial
+41,sugarbeets,114258,25410.4,2015,imperial
+42,dry beans,4,0.9,2015,imperial
+43,potatoes,6398,1422.9,2015,imperial
+44,other crops,2841,631.8,2015,imperial
+47,misc vegs & fruits,23762,5284.5,2015,imperial
+48,watermelons,2628,584.5,2015,imperial
+49,onions,61331,13639.7,2015,imperial
+54,tomatoes,74,16.5,2015,imperial
+57,herbs,4488,998.1,2015,imperial
+59,sod/grass seed,2288,508.8,2015,imperial
+61,fallow/idle cropland,514254,114367.3,2015,imperial
+69,grapes,653,145.2,2015,imperial
+71,other tree crops,2102,467.5,2015,imperial
+72,citrus,41631,9258.5,2015,imperial
+74,pecans,3,0.7,2015,imperial
+75,almonds,777,172.8,2015,imperial
+92,aquaculture,4356,968.8,2015,imperial
+111,open water,854589,190056,2015,imperial
+121,developed/open space,79689,17722.4,2015,imperial
+122,developed/low intensity,214850,47781.5,2015,imperial
+123,developed/medium intensity,59124,13148.9,2015,imperial
+124,developed/high intensity,8249,1834.5,2015,imperial
+131,barren,3375240,750635.3,2015,imperial
+141,deciduous forest,644,143.2,2015,imperial
+142,evergreen forest,411,91.4,2015,imperial
+143,mixed forest,406,90.3,2015,imperial
+152,shrubland,5945279,1322198.2,2015,imperial
+176,grass/pasture,5316,1182.2,2015,imperial
+190,woody wetlands,60568,13470,2015,imperial
+195,herbaceous wetlands,14662,3260.8,2015,imperial
+206,carrots,44985,10004.4,2015,imperial
+208,garlic,30,6.7,2015,imperial
+209,cantaloupes,11976,2663.4,2015,imperial
+211,olives,723,160.8,2015,imperial
+213,honeydew melons,559,124.3,2015,imperial
+214,broccoli,10824,2407.2,2015,imperial
+216,peppers,7,1.6,2015,imperial
+219,greens,66187,14719.6,2015,imperial
+222,squash,2,0.4,2015,imperial
+227,lettuce,18486,4111.2,2015,imperial
+243,cabbage,412,91.6,2015,imperial
+244,cauliflower,1132,251.8,2015,imperial
+246,radishes,1083,240.9,2015,imperial
+1,corn,19181,4265.8,2017,imperial
+2,cotton,13802,3069.5,2017,imperial
+4,sorghum,73,16.2,2017,imperial
+6,sunflowers,2075,461.5,2017,imperial
+22,durum wheat,9230,2052.7,2017,imperial
+24,winter wheat,86686,19278.5,2017,imperial
+27,rye,4,0.9,2017,imperial
+28,oats,1355,301.3,2017,imperial
+35,mustard,29,6.4,2017,imperial
+36,alfalfa,819642,182284,2017,imperial
+37,other hay/non alfalfa,233860,52009.2,2017,imperial
+41,sugarbeets,42603,9474.7,2017,imperial
+44,other crops,1043,232,2017,imperial
+47,misc vegs & fruits,3560,791.7,2017,imperial
+48,watermelons,1035,230.2,2017,imperial
+49,onions,90753,20183,2017,imperial
+57,herbs,4517,1004.6,2017,imperial
+59,sod/grass seed,57673,12826.2,2017,imperial
+61,fallow/idle cropland,529100,117669,2017,imperial
+67,peaches,180,40,2017,imperial
+69,grapes,507,112.8,2017,imperial
+71,other tree crops,6420,1427.8,2017,imperial
+72,citrus,31999,7116.4,2017,imperial
+74,pecans,7,1.6,2017,imperial
+75,almonds,242,53.8,2017,imperial
+111,open water,853264,189761.3,2017,imperial
+121,developed/open space,96344,21426.4,2017,imperial
+122,developed/low intensity,209768,46651.3,2017,imperial
+123,developed/medium intensity,66632,14818.6,2017,imperial
+124,developed/high intensity,7274,1617.7,2017,imperial
+131,barren,3317254,737739.5,2017,imperial
+141,deciduous forest,2169,482.4,2017,imperial
+142,evergreen forest,1710,380.3,2017,imperial
+143,mixed forest,219,48.7,2017,imperial
+152,shrubland,6049819,1345447.4,2017,imperial
+176,grass/pasture,2395,532.6,2017,imperial
+190,woody wetlands,59449,13221.1,2017,imperial
+195,herbaceous wetlands,18986,4222.4,2017,imperial
+206,carrots,59729,13283.4,2017,imperial
+208,garlic,3,0.7,2017,imperial
+209,cantaloupes,18428,4098.3,2017,imperial
+211,olives,8498,1889.9,2017,imperial
+213,honeydew melons,718,159.7,2017,imperial
+214,broccoli,26184,5823.2,2017,imperial
+216,peppers,1,0.2,2017,imperial
+219,greens,86511,19239.6,2017,imperial
+227,lettuce,39734,8836.6,2017,imperial
+231,dbl crop lettuce/cantaloupe,1115,248,2017,imperial
+232,dbl crop lettuce/cotton,408,90.7,2017,imperial
+243,cabbage,9600,2135,2017,imperial
+244,cauliflower,5368,1193.8,2017,imperial
+245,celery,78,17.3,2017,imperial
+1,corn,23223,5164.7,2022,imperial
+2,cotton,18794,4179.7,2022,imperial
+12,sweet corn,18829,4187.5,2022,imperial
+22,durum wheat,167064,37154.1,2022,imperial
+24,winter wheat,24,5.3,2022,imperial
+28,oats,10004,2224.8,2022,imperial
+31,canola,683,151.9,2022,imperial
+32,flaxseed,211,46.9,2022,imperial
+35,mustard,2,0.4,2022,imperial
+36,alfalfa,827408,184011.1,2022,imperial
+37,other hay/non alfalfa,311971,69380.7,2022,imperial
+41,sugarbeets,153923,34231.7,2022,imperial
+43,potatoes,6316,1404.6,2022,imperial
+44,other crops,5369,1194,2022,imperial
+47,misc vegs & fruits,53624,11925.7,2022,imperial
+49,onions,75391,16766.6,2022,imperial
+52,lentils,8,1.8,2022,imperial
+54,tomatoes,184,40.9,2022,imperial
+57,herbs,2110,469.3,2022,imperial
+59,sod/grass seed,36546,8127.6,2022,imperial
+61,fallow/idle cropland,39871,8867.1,2022,imperial
+67,peaches,2,0.4,2022,imperial
+69,grapes,903,200.8,2022,imperial
+71,other tree crops,55,12.2,2022,imperial
+72,citrus,41104,9141.3,2022,imperial
+74,pecans,1,0.2,2022,imperial
+75,almonds,711,158.1,2022,imperial
+111,open water,823967,183245.8,2022,imperial
+121,developed/open space,159577,35489.1,2022,imperial
+122,developed/low intensity,175905,39120.3,2022,imperial
+123,developed/medium intensity,90948,20226.3,2022,imperial
+124,developed/high intensity,19038,4233.9,2022,imperial
+131,barren,4373939,972740.6,2022,imperial
+141,deciduous forest,1,0.2,2022,imperial
+142,evergreen forest,8,1.8,2022,imperial
+143,mixed forest,2,0.4,2022,imperial
+152,shrubland,4739225,1053978.3,2022,imperial
+176,grass/pasture,281004,62493.8,2022,imperial
+190,woody wetlands,89494,19903,2022,imperial
+195,herbaceous wetlands,55765,12401.8,2022,imperial
+205,triticale,3,0.7,2022,imperial
+206,carrots,73945,16445,2022,imperial
+208,garlic,2150,478.1,2022,imperial
+209,cantaloupes,6200,1378.8,2022,imperial
+211,olives,6226,1384.6,2022,imperial
+213,honeydew melons,3551,789.7,2022,imperial
+214,broccoli,23301,5182,2022,imperial
+215,avocados,271,60.3,2022,imperial
+216,peppers,132,29.4,2022,imperial
+219,greens,57331,12750.1,2022,imperial
+222,squash,559,124.3,2022,imperial
+227,lettuce,103993,23127.5,2022,imperial
+228,dbl crop triticale/corn,1,0.2,2022,imperial
+231,dbl crop lettuce/cantaloupe,160,35.6,2022,imperial
+243,cabbage,7377,1640.6,2022,imperial
+244,cauliflower,7895,1755.8,2022,imperial
+245,celery,935,207.9,2022,imperial
+1,corn,26918,20859.3,2007,yolo
+2,cotton,212,164.3,2007,yolo
+3,rice,62469,48408.6,2007,yolo
+4,sorghum,334,258.8,2007,yolo
+6,sunflowers,12527,9707.4,2007,yolo
+12,sweet corn,8,6.2,2007,yolo
+13,pop or orn corn,65,50.4,2007,yolo
+21,barley,489,378.9,2007,yolo
+22,durum wheat,16,12.4,2007,yolo
+23,spring wheat,2,1.5,2007,yolo
+24,winter wheat,63154,48939.4,2007,yolo
+27,rye,280,217,2007,yolo
+28,oats,5588,4330.3,2007,yolo
+33,safflower,27878,21603.3,2007,yolo
+36,alfalfa,87689,67952.1,2007,yolo
+37,other hay/non alfalfa,787,609.9,2007,yolo
+41,sugarbeets,1,0.8,2007,yolo
+42,dry beans,971,752.4,2007,yolo
+49,onions,9,7,2007,yolo
+53,peas,564,437.1,2007,yolo
+54,tomatoes,12123,9394.4,2007,yolo
+58,clover/wildflowers,9877,7653.9,2007,yolo
+59,sod/grass seed,734,568.8,2007,yolo
+61,fallow/idle cropland,28161,21822.6,2007,yolo
+63,forest,4,3.1,2007,yolo
+66,cherries,7,5.4,2007,yolo
+68,apples,209,162,2007,yolo
+69,grapes,12642,9796.6,2007,yolo
+71,other tree crops,519,402.2,2007,yolo
+75,almonds,13707,10621.9,2007,yolo
+76,walnuts,22127,17146.7,2007,yolo
+87,wetlands,174,134.8,2007,yolo
+92,aquaculture,1,0.8,2007,yolo
+111,open water,9489,7353.2,2007,yolo
+121,developed/open space,26680,20674.9,2007,yolo
+122,developed/low intensity,11252,8719.4,2007,yolo
+123,developed/medium intensity,13339,10336.7,2007,yolo
+124,developed/high intensity,4029,3122.2,2007,yolo
+131,barren,4089,3168.7,2007,yolo
+141,deciduous forest,1667,1291.8,2007,yolo
+142,evergreen forest,9792,7588,2007,yolo
+143,mixed forest,7757,6011.1,2007,yolo
+152,shrubland,97552,75595.2,2007,yolo
+176,grass/pasture,241906,187458.2,2007,yolo
+190,woody wetlands,2116,1639.7,2007,yolo
+195,herbaceous wetlands,17841,13825.4,2007,yolo
+204,pistachios,276,213.9,2007,yolo
+205,triticale,899,696.7,2007,yolo
+207,asparagus,1,0.8,2007,yolo
+208,garlic,4,3.1,2007,yolo
+210,prunes,3239,2510,2007,yolo
+211,olives,2771,2147.3,2007,yolo
+212,oranges,28,21.7,2007,yolo
+213,honeydew melons,65,50.4,2007,yolo
+222,squash,12,9.3,2007,yolo
+224,vetch,110,85.2,2007,yolo
+225,dbl crop winwht/corn,2,1.5,2007,yolo
+1,corn,136337,30320.6,2010,yolo
+2,cotton,946,210.4,2010,yolo
+3,rice,202102,44946.4,2010,yolo
+4,sorghum,5964,1326.4,2010,yolo
+6,sunflowers,30869,6865.1,2010,yolo
+12,sweet corn,7,1.6,2010,yolo
+21,barley,16355,3637.3,2010,yolo
+24,winter wheat,203814,45327.1,2010,yolo
+27,rye,86,19.1,2010,yolo
+28,oats,18308,4071.6,2010,yolo
+33,safflower,124758,27745.5,2010,yolo
+36,alfalfa,247630,55071.6,2010,yolo
+37,other hay/non alfalfa,59767,13291.9,2010,yolo
+42,dry beans,2670,593.8,2010,yolo
+43,potatoes,39,8.7,2010,yolo
+44,other crops,973,216.4,2010,yolo
+47,misc vegs & fruits,31,6.9,2010,yolo
+48,watermelons,97,21.6,2010,yolo
+49,onions,109,24.2,2010,yolo
+53,peas,3873,861.3,2010,yolo
+54,tomatoes,5006,1113.3,2010,yolo
+57,herbs,10,2.2,2010,yolo
+58,clover/wildflowers,32833,7301.9,2010,yolo
+59,sod/grass seed,5830,1296.6,2010,yolo
+61,fallow/idle cropland,259000,57600.2,2010,yolo
+66,cherries,62,13.8,2010,yolo
+67,peaches,50,11.1,2010,yolo
+68,apples,241,53.6,2010,yolo
+69,grapes,67463,15003.4,2010,yolo
+71,other tree crops,3535,786.2,2010,yolo
+74,pecans,42,9.3,2010,yolo
+75,almonds,51277,11403.7,2010,yolo
+76,walnuts,81444,18112.7,2010,yolo
+87,wetlands,1676,372.7,2010,yolo
+92,aquaculture,10,2.2,2010,yolo
+111,open water,26466,5885.9,2010,yolo
+121,developed/open space,84260,18739,2010,yolo
+122,developed/low intensity,38133,8480.6,2010,yolo
+123,developed/medium intensity,46188,10272,2010,yolo
+124,developed/high intensity,13686,3043.7,2010,yolo
+131,barren,3993,888,2010,yolo
+141,deciduous forest,1162,258.4,2010,yolo
+142,evergreen forest,18205,4048.7,2010,yolo
+143,mixed forest,39001,8673.6,2010,yolo
+152,shrubland,259487,57708.5,2010,yolo
+176,grass/pasture,788637,175388.6,2010,yolo
+190,woody wetlands,4442,987.9,2010,yolo
+195,herbaceous wetlands,30886,6868.9,2010,yolo
+204,pistachios,2,0.4,2010,yolo
+205,triticale,5727,1273.7,2010,yolo
+207,asparagus,37,8.2,2010,yolo
+209,cantaloupes,451,100.3,2010,yolo
+210,prunes,14604,3247.9,2010,yolo
+211,olives,3596,799.7,2010,yolo
+212,oranges,102,22.7,2010,yolo
+217,pomegranates,1,0.2,2010,yolo
+223,apricots,1,0.2,2010,yolo
+224,vetch,2559,569.1,2010,yolo
+225,dbl crop winwht/corn,2,0.4,2010,yolo
+226,dbl crop oats/corn,6,1.3,2010,yolo
+229,pumpkins,125,27.8,2010,yolo
+242,blueberries,22,4.9,2010,yolo
+1,corn,84627,18820.6,2012,yolo
+2,cotton,538,119.6,2012,yolo
+3,rice,182021,40480.5,2012,yolo
+4,sorghum,1278,284.2,2012,yolo
+6,sunflowers,104646,23272.7,2012,yolo
+12,sweet corn,832,185,2012,yolo
+21,barley,9463,2104.5,2012,yolo
+22,durum wheat,342,76.1,2012,yolo
+24,winter wheat,152463,33907,2012,yolo
+27,rye,1693,376.5,2012,yolo
+28,oats,29359,6529.3,2012,yolo
+31,canola,1452,322.9,2012,yolo
+33,safflower,33394,7426.6,2012,yolo
+36,alfalfa,217877,48454.7,2012,yolo
+37,other hay/non alfalfa,47656,10598.4,2012,yolo
+42,dry beans,4451,989.9,2012,yolo
+43,potatoes,1,0.2,2012,yolo
+44,other crops,10747,2390.1,2012,yolo
+47,misc vegs & fruits,36,8,2012,yolo
+48,watermelons,5953,1323.9,2012,yolo
+49,onions,477,106.1,2012,yolo
+50,cucumbers,276,61.4,2012,yolo
+52,lentils,418,93,2012,yolo
+53,peas,392,87.2,2012,yolo
+54,tomatoes,192780,42873.2,2012,yolo
+58,clover/wildflowers,25155,5594.3,2012,yolo
+59,sod/grass seed,1204,267.8,2012,yolo
+61,fallow/idle cropland,310580,69071.3,2012,yolo
+66,cherries,184,40.9,2012,yolo
+67,peaches,9,2,2012,yolo
+69,grapes,73630,16374.9,2012,yolo
+71,other tree crops,9,2,2012,yolo
+74,pecans,3,0.7,2012,yolo
+75,almonds,81557,18137.8,2012,yolo
+76,walnuts,59966,13336.1,2012,yolo
+77,pears,2442,543.1,2012,yolo
+92,aquaculture,8,1.8,2012,yolo
+111,open water,24499,5448.4,2012,yolo
+121,developed/open space,83145,18491,2012,yolo
+122,developed/low intensity,40553,9018.8,2012,yolo
+123,developed/medium intensity,54111,12034,2012,yolo
+124,developed/high intensity,16654,3703.8,2012,yolo
+131,barren,7690,1710.2,2012,yolo
+141,deciduous forest,462,102.7,2012,yolo
+142,evergreen forest,26650,5926.8,2012,yolo
+143,mixed forest,59987,13340.8,2012,yolo
+152,shrubland,358630,79757.4,2012,yolo
+176,grass/pasture,537099,119447.9,2012,yolo
+190,woody wetlands,4982,1108,2012,yolo
+195,herbaceous wetlands,44416,9877.9,2012,yolo
+204,pistachios,19,4.2,2012,yolo
+205,triticale,11307,2514.6,2012,yolo
+206,carrots,152,33.8,2012,yolo
+207,asparagus,1870,415.9,2012,yolo
+211,olives,13986,3110.4,2012,yolo
+212,oranges,325,72.3,2012,yolo
+213,honeydew melons,4879,1085.1,2012,yolo
+216,peppers,1880,418.1,2012,yolo
+217,pomegranates,238,52.9,2012,yolo
+220,plums,8681,1930.6,2012,yolo
+222,squash,2022,449.7,2012,yolo
+223,apricots,3,0.7,2012,yolo
+224,vetch,117,26,2012,yolo
+225,dbl crop winwht/corn,1367,304,2012,yolo
+226,dbl crop oats/corn,1298,288.7,2012,yolo
+229,pumpkins,52,11.6,2012,yolo
+242,blueberries,2,0.4,2012,yolo
+1,corn,28293,6292.2,2015,yolo
+2,cotton,769,171,2015,yolo
+3,rice,334338,74355,2015,yolo
+4,sorghum,3068,682.3,2015,yolo
+6,sunflowers,111501,24797.2,2015,yolo
+12,sweet corn,12,2.7,2015,yolo
+21,barley,4605,1024.1,2015,yolo
+22,durum wheat,1839,409,2015,yolo
+23,spring wheat,75,16.7,2015,yolo
+24,winter wheat,187790,41763.5,2015,yolo
+27,rye,3750,834,2015,yolo
+28,oats,37679,8379.6,2015,yolo
+29,millet,289,64.3,2015,yolo
+31,canola,2038,453.2,2015,yolo
+33,safflower,53473,11892.1,2015,yolo
+36,alfalfa,371670,82657.4,2015,yolo
+37,other hay/non alfalfa,159913,35563.8,2015,yolo
+42,dry beans,34034,7569,2015,yolo
+43,potatoes,138,30.7,2015,yolo
+44,other crops,4893,1088.2,2015,yolo
+47,misc vegs & fruits,453,100.7,2015,yolo
+48,watermelons,6787,1509.4,2015,yolo
+49,onions,1122,249.5,2015,yolo
+50,cucumbers,14678,3264.3,2015,yolo
+53,peas,1113,247.5,2015,yolo
+54,tomatoes,314193,69874.8,2015,yolo
+57,herbs,903,200.8,2015,yolo
+58,clover/wildflowers,120454,26788.3,2015,yolo
+59,sod/grass seed,3267,726.6,2015,yolo
+61,fallow/idle cropland,865777,192544.2,2015,yolo
+66,cherries,618,137.4,2015,yolo
+67,peaches,10,2.2,2015,yolo
+68,apples,93,20.7,2015,yolo
+69,grapes,103215,22954.5,2015,yolo
+71,other tree crops,670,149,2015,yolo
+75,almonds,231620,51511,2015,yolo
+76,walnuts,173500,38585.5,2015,yolo
+77,pears,8844,1966.9,2015,yolo
+92,aquaculture,197,43.8,2015,yolo
+111,open water,122700,27287.8,2015,yolo
+121,developed/open space,207350,46113.5,2015,yolo
+122,developed/low intensity,125027,27805.3,2015,yolo
+123,developed/medium intensity,181573,40380.9,2015,yolo
+124,developed/high intensity,48846,10863.1,2015,yolo
+131,barren,8386,1865,2015,yolo
+141,deciduous forest,22771,5064.1,2015,yolo
+142,evergreen forest,87274,19409.3,2015,yolo
+143,mixed forest,206615,45950.1,2015,yolo
+152,shrubland,982531,218509.6,2015,yolo
+176,grass/pasture,984318,218907.1,2015,yolo
+190,woody wetlands,9322,2073.2,2015,yolo
+195,herbaceous wetlands,58414,12991,2015,yolo
+204,pistachios,5696,1266.8,2015,yolo
+205,triticale,21055,4682.5,2015,yolo
+206,carrots,3,0.7,2015,yolo
+207,asparagus,1,0.2,2015,yolo
+208,garlic,2218,493.3,2015,yolo
+209,cantaloupes,885,196.8,2015,yolo
+211,olives,11347,2523.5,2015,yolo
+212,oranges,1,0.2,2015,yolo
+216,peppers,317,70.5,2015,yolo
+217,pomegranates,7,1.6,2015,yolo
+220,plums,6601,1468,2015,yolo
+222,squash,1717,381.9,2015,yolo
+224,vetch,2224,494.6,2015,yolo
+225,dbl crop winwht/corn,795,176.8,2015,yolo
+226,dbl crop oats/corn,523,116.3,2015,yolo
+229,pumpkins,229,50.9,2015,yolo
+1,corn,22292,4957.6,2017,yolo
+2,cotton,1080,240.2,2017,yolo
+3,rice,117452,26120.7,2017,yolo
+4,sorghum,5383,1197.2,2017,yolo
+6,sunflowers,86650,19270.5,2017,yolo
+13,pop or orn corn,223,49.6,2017,yolo
+21,barley,18108,4027.1,2017,yolo
+23,spring wheat,478,106.3,2017,yolo
+24,winter wheat,155477,34577.3,2017,yolo
+27,rye,286,63.6,2017,yolo
+28,oats,13383,2976.3,2017,yolo
+31,canola,635,141.2,2017,yolo
+33,safflower,42867,9533.4,2017,yolo
+36,alfalfa,190577,42383.3,2017,yolo
+37,other hay/non alfalfa,84850,18870.2,2017,yolo
+42,dry beans,6464,1437.6,2017,yolo
+44,other crops,14336,3188.2,2017,yolo
+47,misc vegs & fruits,3,0.7,2017,yolo
+48,watermelons,9691,2155.2,2017,yolo
+49,onions,17,3.8,2017,yolo
+50,cucumbers,7500,1668,2017,yolo
+53,peas,259,57.6,2017,yolo
+54,tomatoes,79577,17697.5,2017,yolo
+58,clover/wildflowers,22727,5054.4,2017,yolo
+59,sod/grass seed,1881,418.3,2017,yolo
+61,fallow/idle cropland,454145,100999.4,2017,yolo
+66,cherries,276,61.4,2017,yolo
+67,peaches,4,0.9,2017,yolo
+68,apples,118,26.2,2017,yolo
+69,grapes,84821,18863.7,2017,yolo
+71,other tree crops,37,8.2,2017,yolo
+72,citrus,3,0.7,2017,yolo
+74,pecans,59,13.1,2017,yolo
+75,almonds,196342,43665.4,2017,yolo
+76,walnuts,100945,22449.6,2017,yolo
+77,pears,2884,641.4,2017,yolo
+92,aquaculture,7,1.6,2017,yolo
+111,open water,22876,5087.5,2017,yolo
+121,developed/open space,80340,17867.2,2017,yolo
+122,developed/low intensity,40779,9069,2017,yolo
+123,developed/medium intensity,59406,13211.6,2017,yolo
+124,developed/high intensity,16855,3748.5,2017,yolo
+131,barren,4584,1019.5,2017,yolo
+141,deciduous forest,700,155.7,2017,yolo
+142,evergreen forest,22137,4923.2,2017,yolo
+143,mixed forest,51139,11373,2017,yolo
+152,shrubland,405180,90109.9,2017,yolo
+176,grass/pasture,440288,97917.7,2017,yolo
+190,woody wetlands,3193,710.1,2017,yolo
+195,herbaceous wetlands,19007,4227.1,2017,yolo
+204,pistachios,18723,4163.9,2017,yolo
+205,triticale,4435,986.3,2017,yolo
+206,carrots,128,28.5,2017,yolo
+207,asparagus,375,83.4,2017,yolo
+208,garlic,273,60.7,2017,yolo
+209,cantaloupes,1791,398.3,2017,yolo
+211,olives,16535,3677.3,2017,yolo
+212,oranges,585,130.1,2017,yolo
+213,honeydew melons,3143,699,2017,yolo
+216,peppers,5197,1155.8,2017,yolo
+217,pomegranates,156,34.7,2017,yolo
+220,plums,310,68.9,2017,yolo
+221,strawberries,3,0.7,2017,yolo
+222,squash,2210,491.5,2017,yolo
+224,vetch,1854,412.3,2017,yolo
+225,dbl crop winwht/corn,75,16.7,2017,yolo
+226,dbl crop oats/corn,629,139.9,2017,yolo
+229,pumpkins,6,1.3,2017,yolo
+236,dbl crop winwht/sorghum,246,54.7,2017,yolo
+1,corn,16758,3726.9,2022,yolo
+2,cotton,131,29.1,2022,yolo
+3,rice,65087,14475,2022,yolo
+4,sorghum,2220,493.7,2022,yolo
+6,sunflowers,51630,11482.2,2022,yolo
+12,sweet corn,107,23.8,2022,yolo
+13,pop or orn corn,19,4.2,2022,yolo
+21,barley,12696,2823.5,2022,yolo
+23,spring wheat,2585,574.9,2022,yolo
+24,winter wheat,158561,35263.1,2022,yolo
+27,rye,4909,1091.7,2022,yolo
+28,oats,32684,7268.7,2022,yolo
+33,safflower,38083,8469.5,2022,yolo
+36,alfalfa,118531,26360.7,2022,yolo
+37,other hay/non alfalfa,92316,20530.6,2022,yolo
+42,dry beans,757,168.4,2022,yolo
+43,potatoes,1,0.2,2022,yolo
+44,other crops,16668,3706.9,2022,yolo
+46,sweet potatoes,4,0.9,2022,yolo
+47,misc vegs & fruits,12,2.7,2022,yolo
+48,watermelons,4791,1065.5,2022,yolo
+49,onions,216,48,2022,yolo
+50,cucumbers,5758,1280.5,2022,yolo
+51,chick peas,31,6.9,2022,yolo
+53,peas,159,35.4,2022,yolo
+54,tomatoes,184515,41035.1,2022,yolo
+57,herbs,55,12.2,2022,yolo
+58,clover/wildflowers,36419,8099.4,2022,yolo
+59,sod/grass seed,262,58.3,2022,yolo
+61,fallow/idle cropland,310534,69061.1,2022,yolo
+66,cherries,1787,397.4,2022,yolo
+67,peaches,679,151,2022,yolo
+68,apples,1063,236.4,2022,yolo
+69,grapes,95742,21292.5,2022,yolo
+70,christmas trees,2,0.4,2022,yolo
+71,other tree crops,1148,255.3,2022,yolo
+72,citrus,611,135.9,2022,yolo
+74,pecans,1189,264.4,2022,yolo
+75,almonds,252520,56159.1,2022,yolo
+76,walnuts,110355,24542.4,2022,yolo
+77,pears,1708,379.9,2022,yolo
+92,aquaculture,198,44,2022,yolo
+111,open water,33950,7550.3,2022,yolo
+121,developed/open space,58746,13064.8,2022,yolo
+122,developed/low intensity,51554,11465.3,2022,yolo
+123,developed/medium intensity,66902,14878.6,2022,yolo
+124,developed/high intensity,26758,5950.8,2022,yolo
+131,barren,8825,1962.6,2022,yolo
+141,deciduous forest,740,164.6,2022,yolo
+142,evergreen forest,25756,5728,2022,yolo
+143,mixed forest,14036,3121.5,2022,yolo
+152,shrubland,491854,109385.7,2022,yolo
+176,grass/pasture,406229,90343.2,2022,yolo
+190,woody wetlands,5666,1260.1,2022,yolo
+195,herbaceous wetlands,34707,7718.7,2022,yolo
+204,pistachios,25127,5588.1,2022,yolo
+205,triticale,14903,3314.3,2022,yolo
+206,carrots,44,9.8,2022,yolo
+208,garlic,2222,494.2,2022,yolo
+209,cantaloupes,347,77.2,2022,yolo
+210,prunes,4141,920.9,2022,yolo
+211,olives,33431,7434.9,2022,yolo
+212,oranges,3,0.7,2022,yolo
+213,honeydew melons,28,6.2,2022,yolo
+216,peppers,43,9.6,2022,yolo
+217,pomegranates,107,23.8,2022,yolo
+220,plums,13890,3089.1,2022,yolo
+221,strawberries,8,1.8,2022,yolo
+222,squash,259,57.6,2022,yolo
+224,vetch,26,5.8,2022,yolo
+225,dbl crop winwht/corn,200,44.5,2022,yolo
+226,dbl crop oats/corn,490,109,2022,yolo
+227,lettuce,9,2,2022,yolo
+228,dbl crop triticale/corn,88,19.6,2022,yolo
+229,pumpkins,394,87.6,2022,yolo
+237,dbl crop barley/corn,5,1.1,2022,yolo
+242,blueberries,6,1.3,2022,yolo
+3,rice,36,27.9,2007,siskiyou
+21,barley,14276,11062.8,2007,siskiyou
+23,spring wheat,15731,12190.3,2007,siskiyou
+24,winter wheat,4234,3281,2007,siskiyou
+27,rye,3310,2565,2007,siskiyou
+28,oats,865,670.3,2007,siskiyou
+36,alfalfa,72693,56331.4,2007,siskiyou
+37,other hay/non alfalfa,174,134.8,2007,siskiyou
+47,misc vegs & fruits,2004,1552.9,2007,siskiyou
+49,onions,556,430.9,2007,siskiyou
+53,peas,2,1.5,2007,siskiyou
+57,herbs,2495,1933.4,2007,siskiyou
+61,fallow/idle cropland,10015,7760.8,2007,siskiyou
+87,wetlands,19,14.7,2007,siskiyou
+111,open water,33627,26058.3,2007,siskiyou
+112,perennial ice/snow,3311,2565.8,2007,siskiyou
+121,developed/open space,105430,81700,2007,siskiyou
+122,developed/low intensity,19526,15131.1,2007,siskiyou
+123,developed/medium intensity,3645,2824.6,2007,siskiyou
+124,developed/high intensity,234,181.3,2007,siskiyou
+131,barren,82037,63572.3,2007,siskiyou
+141,deciduous forest,15660,12135.3,2007,siskiyou
+142,evergreen forest,3297172,2555050.4,2007,siskiyou
+143,mixed forest,14831,11492.9,2007,siskiyou
+152,shrubland,982096,761047.6,2007,siskiyou
+176,grass/pasture,518174,401544.3,2007,siskiyou
+190,woody wetlands,166,128.6,2007,siskiyou
+195,herbaceous wetlands,35330,27378,2007,siskiyou
+205,triticale,2037,1578.5,2007,siskiyou
+206,carrots,2,1.5,2007,siskiyou
+211,olives,3,2.3,2007,siskiyou
+221,strawberries,2434,1886.2,2007,siskiyou
+3,rice,1,0.2,2010,siskiyou
+14,mint,6375,1417.8,2010,siskiyou
+21,barley,37303,8296,2010,siskiyou
+23,spring wheat,35358,7863.4,2010,siskiyou
+24,winter wheat,14089,3133.3,2010,siskiyou
+27,rye,32457,7218.3,2010,siskiyou
+28,oats,3950,878.5,2010,siskiyou
+36,alfalfa,386827,86028.3,2010,siskiyou
+37,other hay/non alfalfa,51949,11553.2,2010,siskiyou
+43,potatoes,17166,3817.6,2010,siskiyou
+44,other crops,112,24.9,2010,siskiyou
+49,onions,166,36.9,2010,siskiyou
+53,peas,65,14.5,2010,siskiyou
+57,herbs,2108,468.8,2010,siskiyou
+61,fallow/idle cropland,110523,24579.7,2010,siskiyou
+69,grapes,200,44.5,2010,siskiyou
+76,walnuts,1,0.2,2010,siskiyou
+87,wetlands,66,14.7,2010,siskiyou
+111,open water,101298,22528.1,2010,siskiyou
+112,perennial ice/snow,7443,1655.3,2010,siskiyou
+121,developed/open space,353723,78666.1,2010,siskiyou
+122,developed/low intensity,66986,14897.3,2010,siskiyou
+123,developed/medium intensity,11715,2605.4,2010,siskiyou
+124,developed/high intensity,1907,424.1,2010,siskiyou
+131,barren,292984,65158.1,2010,siskiyou
+141,deciduous forest,30650,6816.4,2010,siskiyou
+142,evergreen forest,11019965,2450781.2,2010,siskiyou
+143,mixed forest,44515,9899.9,2010,siskiyou
+152,shrubland,3144297,699274.8,2010,siskiyou
+176,grass/pasture,2378861,529046,2010,siskiyou
+190,woody wetlands,575,127.9,2010,siskiyou
+195,herbaceous wetlands,94011,20907.5,2010,siskiyou
+205,triticale,3786,842,2010,siskiyou
+211,olives,2,0.4,2010,siskiyou
+221,strawberries,15078,3353.3,2010,siskiyou
+14,mint,3923,872.5,2012,siskiyou
+21,barley,57888,12874,2012,siskiyou
+23,spring wheat,43005,9564.1,2012,siskiyou
+24,winter wheat,28064,6241.3,2012,siskiyou
+27,rye,15142,3367.5,2012,siskiyou
+28,oats,1682,374.1,2012,siskiyou
+36,alfalfa,457985,101853.4,2012,siskiyou
+37,other hay/non alfalfa,107447,23895.6,2012,siskiyou
+43,potatoes,13835,3076.8,2012,siskiyou
+44,other crops,157,34.9,2012,siskiyou
+49,onions,5289,1176.2,2012,siskiyou
+53,peas,178,39.6,2012,siskiyou
+57,herbs,2148,477.7,2012,siskiyou
+61,fallow/idle cropland,196271,43649.6,2012,siskiyou
+69,grapes,46,10.2,2012,siskiyou
+111,open water,171398,38118,2012,siskiyou
+112,perennial ice/snow,11407,2536.9,2012,siskiyou
+121,developed/open space,367381,81703.6,2012,siskiyou
+122,developed/low intensity,73794,16411.4,2012,siskiyou
+123,developed/medium intensity,7483,1664.2,2012,siskiyou
+124,developed/high intensity,1325,294.7,2012,siskiyou
+131,barren,298729,66435.7,2012,siskiyou
+141,deciduous forest,44477,9891.4,2012,siskiyou
+142,evergreen forest,11388520,2532745.9,2012,siskiyou
+143,mixed forest,61663,13713.5,2012,siskiyou
+152,shrubland,3622639,805655.5,2012,siskiyou
+176,grass/pasture,1198051,266440.1,2012,siskiyou
+190,woody wetlands,364,81,2012,siskiyou
+195,herbaceous wetlands,74363,16537.9,2012,siskiyou
+205,triticale,1846,410.5,2012,siskiyou
+208,garlic,3,0.7,2012,siskiyou
+221,strawberries,10009,2225.9,2012,siskiyou
+1,corn,2,0.4,2015,siskiyou
+3,rice,51,11.3,2015,siskiyou
+6,sunflowers,20,4.4,2015,siskiyou
+14,mint,4599,1022.8,2015,siskiyou
+21,barley,36565,8131.9,2015,siskiyou
+23,spring wheat,43013,9565.9,2015,siskiyou
+24,winter wheat,24130,5366.4,2015,siskiyou
+27,rye,17267,3840.1,2015,siskiyou
+28,oats,121,26.9,2015,siskiyou
+33,safflower,5,1.1,2015,siskiyou
+36,alfalfa,510141,113452.6,2015,siskiyou
+37,other hay/non alfalfa,110176,24502.6,2015,siskiyou
+43,potatoes,15348,3413.3,2015,siskiyou
+44,other crops,53,11.8,2015,siskiyou
+49,onions,6844,1522.1,2015,siskiyou
+57,herbs,4217,937.8,2015,siskiyou
+61,fallow/idle cropland,92255,20517,2015,siskiyou
+69,grapes,2,0.4,2015,siskiyou
+75,almonds,3,0.7,2015,siskiyou
+76,walnuts,1,0.2,2015,siskiyou
+92,aquaculture,3,0.7,2015,siskiyou
+111,open water,93326,20755.2,2015,siskiyou
+112,perennial ice/snow,16474,3663.7,2015,siskiyou
+121,developed/open space,382022,84959.6,2015,siskiyou
+122,developed/low intensity,74766,16627.6,2015,siskiyou
+123,developed/medium intensity,19903,4426.3,2015,siskiyou
+124,developed/high intensity,1981,440.6,2015,siskiyou
+131,barren,287563,63952.5,2015,siskiyou
+141,deciduous forest,23127,5143.3,2015,siskiyou
+142,evergreen forest,11184969,2487477.2,2015,siskiyou
+143,mixed forest,34403,7651,2015,siskiyou
+152,shrubland,4135918,919806,2015,siskiyou
+176,grass/pasture,1063070,236421.1,2015,siskiyou
+190,woody wetlands,2049,455.7,2015,siskiyou
+195,herbaceous wetlands,79677,17719.7,2015,siskiyou
+205,triticale,516,114.8,2015,siskiyou
+208,garlic,9,2,2015,siskiyou
+221,strawberries,1915,425.9,2015,siskiyou
+225,dbl crop winwht/corn,8,1.8,2015,siskiyou
+3,rice,1,0.2,2017,siskiyou
+4,sorghum,245,54.5,2017,siskiyou
+14,mint,4223,939.2,2017,siskiyou
+21,barley,78329,17420,2017,siskiyou
+23,spring wheat,18175,4042,2017,siskiyou
+24,winter wheat,12668,2817.3,2017,siskiyou
+27,rye,33968,7554.3,2017,siskiyou
+28,oats,4480,996.3,2017,siskiyou
+36,alfalfa,536721,119363.9,2017,siskiyou
+37,other hay/non alfalfa,115983,25794,2017,siskiyou
+43,potatoes,10580,2352.9,2017,siskiyou
+49,onions,12385,2754.4,2017,siskiyou
+53,peas,1848,411,2017,siskiyou
+57,herbs,8614,1915.7,2017,siskiyou
+59,sod/grass seed,589,131,2017,siskiyou
+61,fallow/idle cropland,17188,3822.5,2017,siskiyou
+69,grapes,2,0.4,2017,siskiyou
+76,walnuts,477,106.1,2017,siskiyou
+111,open water,97903,21773.1,2017,siskiyou
+112,perennial ice/snow,14010,3115.7,2017,siskiyou
+121,developed/open space,387437,86163.9,2017,siskiyou
+122,developed/low intensity,71956,16002.6,2017,siskiyou
+123,developed/medium intensity,16410,3649.5,2017,siskiyou
+124,developed/high intensity,3484,774.8,2017,siskiyou
+131,barren,282239,62768.4,2017,siskiyou
+141,deciduous forest,24561,5462.2,2017,siskiyou
+142,evergreen forest,11151466,2480026.3,2017,siskiyou
+143,mixed forest,35546,7905.2,2017,siskiyou
+152,shrubland,4199750,934001.9,2017,siskiyou
+176,grass/pasture,1026356,228256.1,2017,siskiyou
+190,woody wetlands,3287,731,2017,siskiyou
+195,herbaceous wetlands,86074,19142.4,2017,siskiyou
+205,triticale,4125,917.4,2017,siskiyou
+208,garlic,9,2,2017,siskiyou
+220,plums,2,0.4,2017,siskiyou
+226,dbl crop oats/corn,1,0.2,2017,siskiyou
+227,lettuce,5420,1205.4,2017,siskiyou
+4,sorghum,162,36,2022,siskiyou
+14,mint,1735,385.9,2022,siskiyou
+21,barley,5545,1233.2,2022,siskiyou
+23,spring wheat,20717,4607.3,2022,siskiyou
+24,winter wheat,38455,8552.2,2022,siskiyou
+27,rye,36505,8118.5,2022,siskiyou
+28,oats,9810,2181.7,2022,siskiyou
+36,alfalfa,447377,99494.2,2022,siskiyou
+37,other hay/non alfalfa,166390,37004.2,2022,siskiyou
+43,potatoes,9532,2119.9,2022,siskiyou
+44,other crops,309,68.7,2022,siskiyou
+47,misc vegs & fruits,31,6.9,2022,siskiyou
+49,onions,282,62.7,2022,siskiyou
+53,peas,1,0.2,2022,siskiyou
+57,herbs,665,147.9,2022,siskiyou
+58,clover/wildflowers,56,12.5,2022,siskiyou
+59,sod/grass seed,24,5.3,2022,siskiyou
+61,fallow/idle cropland,76994,17123.1,2022,siskiyou
+66,cherries,3,0.7,2022,siskiyou
+68,apples,17,3.8,2022,siskiyou
+69,grapes,640,142.3,2022,siskiyou
+70,christmas trees,18,4,2022,siskiyou
+71,other tree crops,18,4,2022,siskiyou
+75,almonds,32,7.1,2022,siskiyou
+76,walnuts,14,3.1,2022,siskiyou
+111,open water,91319,20308.9,2022,siskiyou
+112,perennial ice/snow,11163,2482.6,2022,siskiyou
+121,developed/open space,485348,107938.8,2022,siskiyou
+122,developed/low intensity,104221,23178.2,2022,siskiyou
+123,developed/medium intensity,62188,13830.3,2022,siskiyou
+124,developed/high intensity,11621,2584.4,2022,siskiyou
+131,barren,176101,39163.9,2022,siskiyou
+141,deciduous forest,7758,1725.3,2022,siskiyou
+142,evergreen forest,10386225,2309840.8,2022,siskiyou
+143,mixed forest,25440,5657.7,2022,siskiyou
+152,shrubland,4682409,1041342.7,2022,siskiyou
+176,grass/pasture,1260885,280414.1,2022,siskiyou
+190,woody wetlands,6801,1512.5,2022,siskiyou
+195,herbaceous wetlands,114192,25395.7,2022,siskiyou
+204,pistachios,19,4.2,2022,siskiyou
+205,triticale,25051,5571.2,2022,siskiyou
+208,garlic,56,12.5,2022,siskiyou
+210,prunes,373,83,2022,siskiyou
+218,nectarines,1,0.2,2022,siskiyou
+220,plums,9,2,2022,siskiyou
+1,corn,57612,44644.8,2007,tulare
+2,cotton,24764,19190.2,2007,tulare
+3,rice,4,3.1,2007,tulare
+4,sorghum,400,310,2007,tulare
+21,barley,804,623,2007,tulare
+22,durum wheat,3525,2731.6,2007,tulare
+24,winter wheat,107418,83240.5,2007,tulare
+28,oats,16186,12542.9,2007,tulare
+33,safflower,605,468.8,2007,tulare
+36,alfalfa,163853,126973.3,2007,tulare
+37,other hay/non alfalfa,126,97.6,2007,tulare
+42,dry beans,18,13.9,2007,tulare
+43,potatoes,23,17.8,2007,tulare
+47,misc vegs & fruits,80,62,2007,tulare
+49,onions,1,0.8,2007,tulare
+53,peas,81,62.8,2007,tulare
+54,tomatoes,45,34.9,2007,tulare
+61,fallow/idle cropland,51185,39664.4,2007,tulare
+66,cherries,199,154.2,2007,tulare
+67,peaches,1557,1206.6,2007,tulare
+69,grapes,92845,71947.6,2007,tulare
+71,other tree crops,96,74.4,2007,tulare
+72,citrus,156,120.9,2007,tulare
+75,almonds,152945,118520.4,2007,tulare
+76,walnuts,32359,25075.7,2007,tulare
+111,open water,9128,7073.5,2007,tulare
+112,perennial ice/snow,66,51.1,2007,tulare
+121,developed/open space,76632,59383.8,2007,tulare
+122,developed/low intensity,25785,19981.4,2007,tulare
+123,developed/medium intensity,27203,21080.2,2007,tulare
+124,developed/high intensity,4272,3310.5,2007,tulare
+131,barren,190423,147562.9,2007,tulare
+141,deciduous forest,16344,12665.3,2007,tulare
+142,evergreen forest,1213487,940357.5,2007,tulare
+143,mixed forest,1050,813.7,2007,tulare
+152,shrubland,798355,618662.7,2007,tulare
+176,grass/pasture,799148,619277.2,2007,tulare
+190,woody wetlands,9129,7074.3,2007,tulare
+195,herbaceous wetlands,901,698.2,2007,tulare
+204,pistachios,53948,41805.5,2007,tulare
+205,triticale,2262,1752.9,2007,tulare
+206,carrots,143,110.8,2007,tulare
+208,garlic,1,0.8,2007,tulare
+210,prunes,2334,1808.7,2007,tulare
+211,olives,8374,6489.2,2007,tulare
+212,oranges,18168,14078.8,2007,tulare
+216,peppers,4,3.1,2007,tulare
+217,pomegranates,7,5.4,2007,tulare
+218,nectarines,762,590.5,2007,tulare
+219,greens,1,0.8,2007,tulare
+220,plums,315,244.1,2007,tulare
+223,apricots,32,24.8,2007,tulare
+225,dbl crop winwht/corn,30411,23566.1,2007,tulare
+226,dbl crop oats/corn,580,449.5,2007,tulare
+1,corn,128601,28600.2,2012,tulare
+2,cotton,110566,24589.3,2012,tulare
+3,rice,14,3.1,2012,tulare
+4,sorghum,1636,363.8,2012,tulare
+12,sweet corn,159,35.4,2012,tulare
+21,barley,9848,2190.1,2012,tulare
+22,durum wheat,211,46.9,2012,tulare
+24,winter wheat,225052,50050.4,2012,tulare
+27,rye,4,0.9,2012,tulare
+28,oats,65960,14669.2,2012,tulare
+33,safflower,494,109.9,2012,tulare
+36,alfalfa,394247,87678.4,2012,tulare
+37,other hay/non alfalfa,2583,574.4,2012,tulare
+38,camelina,5,1.1,2012,tulare
+42,dry beans,190,42.3,2012,tulare
+43,potatoes,1272,282.9,2012,tulare
+44,other crops,2101,467.3,2012,tulare
+47,misc vegs & fruits,2165,481.5,2012,tulare
+48,watermelons,90,20,2012,tulare
+49,onions,777,172.8,2012,tulare
+53,peas,3996,888.7,2012,tulare
+54,tomatoes,1710,380.3,2012,tulare
+57,herbs,111,24.7,2012,tulare
+58,clover/wildflowers,2,0.4,2012,tulare
+59,sod/grass seed,7,1.6,2012,tulare
+61,fallow/idle cropland,524700,116690.5,2012,tulare
+66,cherries,4993,1110.4,2012,tulare
+67,peaches,7657,1702.9,2012,tulare
+68,apples,1930,429.2,2012,tulare
+69,grapes,231186,51414.5,2012,tulare
+71,other tree crops,12722,2829.3,2012,tulare
+72,citrus,25120,5586.6,2012,tulare
+74,pecans,1388,308.7,2012,tulare
+75,almonds,288806,64228.9,2012,tulare
+76,walnuts,212898,47347.4,2012,tulare
+77,pears,2959,658.1,2012,tulare
+111,open water,33760,7508,2012,tulare
+112,perennial ice/snow,1116,248.2,2012,tulare
+121,developed/open space,225819,50220.9,2012,tulare
+122,developed/low intensity,88134,19600.5,2012,tulare
+123,developed/medium intensity,106847,23762.2,2012,tulare
+124,developed/high intensity,16591,3689.7,2012,tulare
+131,barren,688141,153038.9,2012,tulare
+141,deciduous forest,114458,25454.8,2012,tulare
+142,evergreen forest,4096330,911001.9,2012,tulare
+143,mixed forest,2345,521.5,2012,tulare
+152,shrubland,2805115,623842.6,2012,tulare
+176,grass/pasture,2332930,518831.1,2012,tulare
+190,woody wetlands,7700,1712.4,2012,tulare
+195,herbaceous wetlands,2583,574.4,2012,tulare
+204,pistachios,154715,34407.8,2012,tulare
+205,triticale,8527,1896.4,2012,tulare
+206,carrots,314,69.8,2012,tulare
+208,garlic,541,120.3,2012,tulare
+209,cantaloupes,23,5.1,2012,tulare
+211,olives,54754,12177,2012,tulare
+212,oranges,376918,83824.5,2012,tulare
+214,broccoli,1,0.2,2012,tulare
+216,peppers,16,3.6,2012,tulare
+217,pomegranates,20069,4463.2,2012,tulare
+218,nectarines,4944,1099.5,2012,tulare
+220,plums,25731,5722.4,2012,tulare
+221,strawberries,2,0.4,2012,tulare
+225,dbl crop winwht/corn,430585,95759.8,2012,tulare
+226,dbl crop oats/corn,5015,1115.3,2012,tulare
+227,lettuce,376,83.6,2012,tulare
+229,pumpkins,1,0.2,2012,tulare
+235,dbl crop barley/sorghum,1132,251.8,2012,tulare
+236,dbl crop winwht/sorghum,50344,11196.2,2012,tulare
+237,dbl crop barley/corn,2036,452.8,2012,tulare
+238,dbl crop winwht/cotton,7,1.6,2012,tulare
+242,blueberries,274,60.9,2012,tulare
+243,cabbage,50,11.1,2012,tulare
+244,cauliflower,1,0.2,2012,tulare
+1,corn,38455,8552.2,2017,tulare
+2,cotton,80304,17859.2,2017,tulare
+3,rice,20,4.4,2017,tulare
+4,sorghum,1036,230.4,2017,tulare
+21,barley,90205,20061.1,2017,tulare
+23,spring wheat,101,22.5,2017,tulare
+24,winter wheat,157749,35082.5,2017,tulare
+27,rye,415,92.3,2017,tulare
+28,oats,55454,12332.7,2017,tulare
+33,safflower,2297,510.8,2017,tulare
+36,alfalfa,259285,57663.6,2017,tulare
+37,other hay/non alfalfa,9071,2017.3,2017,tulare
+42,dry beans,171,38,2017,tulare
+43,potatoes,6,1.3,2017,tulare
+44,other crops,31,6.9,2017,tulare
+48,watermelons,259,57.6,2017,tulare
+49,onions,1598,355.4,2017,tulare
+54,tomatoes,1501,333.8,2017,tulare
+57,herbs,2,0.4,2017,tulare
+59,sod/grass seed,491,109.2,2017,tulare
+61,fallow/idle cropland,310919,69146.7,2017,tulare
+66,cherries,8440,1877,2017,tulare
+67,peaches,3000,667.2,2017,tulare
+69,grapes,252146,56075.9,2017,tulare
+71,other tree crops,11970,2662.1,2017,tulare
+72,citrus,22848,5081.3,2017,tulare
+74,pecans,1502,334,2017,tulare
+75,almonds,459703,102235.5,2017,tulare
+76,walnuts,336846,74912.7,2017,tulare
+77,pears,567,126.1,2017,tulare
+111,open water,33057,7351.7,2017,tulare
+112,perennial ice/snow,89,19.8,2017,tulare
+121,developed/open space,241956,53809.7,2017,tulare
+122,developed/low intensity,96414,21442,2017,tulare
+123,developed/medium intensity,120278,26749.2,2017,tulare
+124,developed/high intensity,20022,4452.8,2017,tulare
+131,barren,723263,160849.8,2017,tulare
+141,deciduous forest,89916,19996.8,2017,tulare
+142,evergreen forest,3924072,872692.6,2017,tulare
+143,mixed forest,2842,632,2017,tulare
+152,shrubland,3197731,711158.3,2017,tulare
+176,grass/pasture,2031209,451730,2017,tulare
+190,woody wetlands,3574,794.8,2017,tulare
+195,herbaceous wetlands,4537,1009,2017,tulare
+204,pistachios,224706,49973.4,2017,tulare
+205,triticale,10816,2405.4,2017,tulare
+206,carrots,2853,634.5,2017,tulare
+208,garlic,834,185.5,2017,tulare
+209,cantaloupes,28,6.2,2017,tulare
+211,olives,26929,5988.9,2017,tulare
+212,oranges,505782,112483.2,2017,tulare
+213,honeydew melons,34,7.6,2017,tulare
+214,broccoli,14,3.1,2017,tulare
+216,peppers,8,1.8,2017,tulare
+217,pomegranates,28522,6343.1,2017,tulare
+218,nectarines,2237,497.5,2017,tulare
+220,plums,23890,5313,2017,tulare
+224,vetch,16,3.6,2017,tulare
+225,dbl crop winwht/corn,460996,102523,2017,tulare
+226,dbl crop oats/corn,3163,703.4,2017,tulare
+227,lettuce,795,176.8,2017,tulare
+229,pumpkins,31,6.9,2017,tulare
+236,dbl crop winwht/sorghum,33546,7460.5,2017,tulare
+237,dbl crop barley/corn,868,193,2017,tulare
+238,dbl crop winwht/cotton,2985,663.8,2017,tulare
+1,corn,83234,18510.8,2022,tulare
+2,cotton,26988,6002,2022,tulare
+3,rice,8,1.8,2022,tulare
+4,sorghum,4312,959,2022,tulare
+6,sunflowers,170,37.8,2022,tulare
+12,sweet corn,64,14.2,2022,tulare
+21,barley,8693,1933.3,2022,tulare
+22,durum wheat,38,8.5,2022,tulare
+23,spring wheat,14328,3186.5,2022,tulare
+24,winter wheat,222860,49562.9,2022,tulare
+27,rye,514,114.3,2022,tulare
+28,oats,58694,13053.2,2022,tulare
+33,safflower,4391,976.5,2022,tulare
+35,mustard,7,1.6,2022,tulare
+36,alfalfa,158932,35345.6,2022,tulare
+37,other hay/non alfalfa,6833,1519.6,2022,tulare
+41,sugarbeets,229,50.9,2022,tulare
+42,dry beans,242,53.8,2022,tulare
+43,potatoes,1461,324.9,2022,tulare
+44,other crops,302,67.2,2022,tulare
+46,sweet potatoes,5,1.1,2022,tulare
+47,misc vegs & fruits,139,30.9,2022,tulare
+49,onions,716,159.2,2022,tulare
+51,chick peas,17,3.8,2022,tulare
+53,peas,214,47.6,2022,tulare
+54,tomatoes,10070,2239.5,2022,tulare
+57,herbs,34,7.6,2022,tulare
+58,clover/wildflowers,30,6.7,2022,tulare
+61,fallow/idle cropland,149327,33209.5,2022,tulare
+66,cherries,24893,5536.1,2022,tulare
+67,peaches,58925,13104.6,2022,tulare
+68,apples,1608,357.6,2022,tulare
+69,grapes,254814,56669.3,2022,tulare
+71,other tree crops,26479,5888.8,2022,tulare
+72,citrus,528903,117625.2,2022,tulare
+74,pecans,237,52.7,2022,tulare
+75,almonds,512583,113995.7,2022,tulare
+76,walnuts,213578,47498.6,2022,tulare
+77,pears,908,201.9,2022,tulare
+111,open water,43017,9566.8,2022,tulare
+112,perennial ice/snow,2765,614.9,2022,tulare
+121,developed/open space,262539,58387.3,2022,tulare
+122,developed/low intensity,137338,30543.2,2022,tulare
+123,developed/medium intensity,149935,33344.7,2022,tulare
+124,developed/high intensity,37544,8349.6,2022,tulare
+131,barren,556393,123738.8,2022,tulare
+141,deciduous forest,22338,4967.9,2022,tulare
+142,evergreen forest,3385498,752916.6,2022,tulare
+143,mixed forest,10442,2322.2,2022,tulare
+152,shrubland,3943949,877113.1,2022,tulare
+176,grass/pasture,1925116,428135.5,2022,tulare
+190,woody wetlands,8466,1882.8,2022,tulare
+195,herbaceous wetlands,24568,5463.8,2022,tulare
+204,pistachios,437883,97382.8,2022,tulare
+205,triticale,62280,13850.7,2022,tulare
+206,carrots,236,52.5,2022,tulare
+208,garlic,833,185.3,2022,tulare
+209,cantaloupes,45,10,2022,tulare
+210,prunes,586,130.3,2022,tulare
+211,olives,47864,10644.7,2022,tulare
+212,oranges,30703,6828.2,2022,tulare
+213,honeydew melons,9,2,2022,tulare
+214,broccoli,793,176.4,2022,tulare
+215,avocados,780,173.5,2022,tulare
+216,peppers,2156,479.5,2022,tulare
+217,pomegranates,22916,5096.4,2022,tulare
+218,nectarines,3008,669,2022,tulare
+219,greens,229,50.9,2022,tulare
+220,plums,52897,11764,2022,tulare
+221,strawberries,2,0.4,2022,tulare
+225,dbl crop winwht/corn,206205,45858.9,2022,tulare
+226,dbl crop oats/corn,395,87.8,2022,tulare
+227,lettuce,173,38.5,2022,tulare
+228,dbl crop triticale/corn,150173,33397.7,2022,tulare
+236,dbl crop winwht/sorghum,17777,3953.5,2022,tulare
+237,dbl crop barley/corn,108,24,2022,tulare
+238,dbl crop winwht/cotton,47,10.5,2022,tulare
+242,blueberries,619,137.7,2022,tulare
