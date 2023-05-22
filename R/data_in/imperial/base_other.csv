@@ -4,14 +4,14 @@ scenario key has descriptions,,,,,
 "must have field ops, pesticide app amounts, and field ops fuel usage added",,,,,
 need to check pesticide manufacturing energies,,,,,
 scenario_id,cat,desc,unit,value,notes
-scen_2000,yield,stand life,years,3,enterprise budget says 3-4 years
+scen_2000,yield,stand life,years,3,enterprise budget says 3-5 years
 ,,"hay, harvests",harvest/year,9,
 ,,"haylage, harvests",harvest/year,3,"they call it green chop, and have 12 rakings and only 9 swathings, so I'm guessing 3 of the missing swathings are haylage/green shop"
 ,,hay production,ton/ac/yr at 10% moisture,8,
 ,,haylage production,ton/ac/yr at 30% moisture,0,"Enterprise budgets only say '8 ton/year', but include 7 or 9 swathing activities and 12 raking"
-,irrigation,"sprinkler, est",ac-in/stand life,0,
+,irrigation,"sprinkler, est",ac-in/stand life,18,
 ,,"sprinkler, prod",ac-in/year,0,
-,,"flood, est",ac-in/stand life,18,
+,,"flood, est",ac-in/stand life,0,
 ,,"flood, prod",ac-in/year,84,
 ,,"drip, est",ac-in/stand life,0,
 ,,"drip, prod",ac-in/year,0,

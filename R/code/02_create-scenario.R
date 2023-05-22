@@ -1,6 +1,7 @@
 #--create scen_000x files with different variations of a given production scenario
 #--5/12/23 - updated base files w/new pump/irrigation/well info
 #--tulare done
+#--note things will need to be rerun based on new irrigation pump table info (5/22)
 
 rm(list = ls())
 library(tidyverse)

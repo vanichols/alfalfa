@@ -16,6 +16,12 @@ library(ggbreak)
 
 d_raw <- read_csv("R/data_tidy/scen_all.csv")
 
+#--scenario key
+sk <-
+  read_csv("R/data_in/scenbyhand_scenario-key.csv", skip = 5) %>% 
+  select(scenario_id, location) %>% 
+  filter(!is.na(scenario_id))
+
 cc_scen <- 
   read_csv("R/data_tidy/scen_all-tot.csv") |> 
   filter(name != "energy")
@@ -59,18 +65,20 @@ cc_scenMg |>
 ggsave("R/figs/ghg.png")
 
 
-cc_scenMg <- 
-  cc_scen |> 
-  arrange(-value) |> 
-  mutate(name = fct_inorder(name),
-         unit = case_when(
-           (unit == "kgco2e_stand") ~ "Mgco2e_stand",
-           (unit == "kgco2e_hayr") ~ "Mgco2e_hayr",
-           TRUE ~ unit),
-         value = case_when(
-           (unit == "Mgco2e_stand"|unit == "Mgco2e_hayr") ~ value / 1000,
-           TRUE ~ value)) 
+# credit, then reductions -------------------------------------------------
 
+cr_credit <- 
+  cc_scenMg %>% 
+  filter(scen_desc == "base") %>% 
+  filter(grepl("conservation", name))
+
+#--I think the baseline carbon credit is the consrevation one?
+d_raw %>% 
+  left_join(sk) %>% 
+  filter(unit == "kgco2e_hayr") %>% 
+  group_by(location, scenario_id, cat, unit) %>%
+  summarise(value = sum(value, na.rm = T))
+  
 
 # energy ------------------------------------------------------------------
 

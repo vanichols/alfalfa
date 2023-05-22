@@ -2,7 +2,7 @@
 # created 3/16 to handle new single file 
 # 3/17 update file names
 
-CalcGHG <- function(f_scenario_id = "1003", 
+CalcGHG <- function(f_scenario_id = "2001", 
                     f_prod_data = my_prod_data, 
                     f_energy_data = my_energy_data){
   
@@ -87,7 +87,7 @@ p_sl <-
 # 1. carbon credits (c) ---------------------------------------------------
 
 #--using california healthy soils reference and assumptions, assign carbon credits
-#--note they already converted to co2e using their own conversions...
+#--note they already converted to co2e using their own conversions, so n2o is already in 'co2e'
 
 #--get assumed county and practice scenario
 c_scen <- 
@@ -106,10 +106,10 @@ c1 <-
 #--change units, do total years
 c2 <- 
   c1 %>% 
-  left_join(p_sl) %>% 
-  mutate(co2e_kghayr = 
-          value * ac_per_ha * 1000,
-         co2e_kghastand = co2e_kghayr * stand_life_yrs) 
+  left_join(p_sl) %>%
+  mutate(co2e_kghayr =
+           value * ac_per_ha * 1000,
+         co2e_kghastand = co2e_kghayr * stand_life_yrs)
 
 
 #--make values negative because it is a sequestering

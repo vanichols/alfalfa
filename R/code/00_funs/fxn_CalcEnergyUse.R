@@ -9,7 +9,7 @@
 # 4/27 - fixing field ops fuel records to include diff types of fertilize (inject, surface, prod1, est1, etc)
 # 5/12 - include % of water passing through pump as variable
 
-CalcEnergyUse <- function(f_scenario_id = "0001", 
+CalcEnergyUse <- function(f_scenario_id = "2001", 
                           f_prod_data = my_prod_data){
   
   source("R/code/00_funs/fxn_conversions.R")
@@ -318,8 +318,6 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
   #   filter(desc == "pump pressure") |>
   #   pull(value)
   
-  
-  
   #--data
   i <- 
     d_p |> 
@@ -356,7 +354,8 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
                 )) %>% 
     mutate(welldepth_ft = ifelse(name == "ground",
                                  i_welldepth_ft, #--assumed pumping depth
-                                 0))
+                                 0)) %>% 
+    filter(!is.na(pump_press_psi))
   
   #--do some goofy conversions
   i4 <- 
@@ -450,7 +449,7 @@ CalcEnergyUse <- function(f_scenario_id = "0001",
     m2 |> 
     mutate(unit = "mj/stand",
            value = manu_mj, 
-           cat = "fuel manufacture") |> 
+           desc = "fuel manufacture") |> 
     select(scenario_id, fuel_type, cat, desc, unit, value)
   
   e5 <- m3

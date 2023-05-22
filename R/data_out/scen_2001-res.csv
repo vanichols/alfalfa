@@ -20,12 +20,18 @@ scen_2001,field passes,field ops,diesel,MJ_kgyield,0.11531749854133816
 scen_2001,field passes,harvest,diesel,GJ_stand,24.770752780530614
 scen_2001,field passes,harvest,diesel,GJ_hayr,8.256917593510204
 scen_2001,field passes,harvest,diesel,MJ_kgyield,0.5115728155610372
-scen_2001,fuel manufacture,field ops,diesel,GJ_stand,1.3273944235063904
-scen_2001,fuel manufacture,field ops,diesel,GJ_hayr,0.4424648078354635
-scen_2001,fuel manufacture,field ops,diesel,MJ_kgyield,0.027413737023241076
-scen_2001,fuel manufacture,harvest,diesel,GJ_stand,5.888602433998859
-scen_2001,fuel manufacture,harvest,diesel,GJ_hayr,1.9628674779996198
-scen_2001,fuel manufacture,harvest,diesel,MJ_kgyield,0.12161313600643199
+scen_2001,irrigation,"sprinkler, surface",diesel,GJ_stand,1.0606151119040856
+scen_2001,irrigation,"sprinkler, surface",diesel,GJ_hayr,0.3535383706346952
+scen_2001,irrigation,"sprinkler, surface",diesel,MJ_kgyield,0.021904132822714115
+scen_2001,field passes,fuel manufacture,diesel,GJ_stand,1.3273944235063904
+scen_2001,field passes,fuel manufacture,diesel,GJ_hayr,0.4424648078354635
+scen_2001,field passes,fuel manufacture,diesel,MJ_kgyield,0.027413737023241076
+scen_2001,field passes,fuel manufacture,diesel,GJ_stand,5.888602433998859
+scen_2001,field passes,fuel manufacture,diesel,GJ_hayr,1.9628674779996198
+scen_2001,field passes,fuel manufacture,diesel,MJ_kgyield,0.12161313600643199
+scen_2001,irrigation,fuel manufacture,diesel,GJ_stand,0.25213366686228683
+scen_2001,irrigation,fuel manufacture,diesel,GJ_hayr,0.08404455562076228
+scen_2001,irrigation,fuel manufacture,diesel,MJ_kgyield,0.0052071380711468905
 scen_2001,pesticide,chlorantraniliprole,NA,GJ_stand,0.03285924447515436
 scen_2001,pesticide,chlorantraniliprole,NA,GJ_hayr,0.010953081491718121
 scen_2001,pesticide,chlorantraniliprole,NA,MJ_kgyield,6.786187065972198e-4
@@ -68,15 +74,18 @@ scen_2001,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_Mgyield,
 scen_2001,field passes,field ops,diesel,kgco2e_stand,397.4282721268
 scen_2001,field passes,field ops,diesel,kgco2e_hayr,132.47609070893333
 scen_2001,field passes,field ops,diesel,kgco2e_Mgyield,8.207804662087867
+scen_2001,field passes,fuel manufacture,diesel,kgco2e_stand,513.6036889268071
+scen_2001,field passes,fuel manufacture,diesel,kgco2e_hayr,171.20122964226903
+scen_2001,field passes,fuel manufacture,diesel,kgco2e_Mgyield,10.60709327466767
 scen_2001,field passes,harvest,diesel,kgco2e_stand,1763.075879438911
 scen_2001,field passes,harvest,diesel,kgco2e_hayr,587.6919598129704
 scen_2001,field passes,harvest,diesel,kgco2e_Mgyield,36.411557601157206
-scen_2001,fuel manufacture,field ops,diesel,kgco2e_stand,94.47823856307141
-scen_2001,fuel manufacture,field ops,diesel,kgco2e_hayr,31.49274618769047
-scen_2001,fuel manufacture,field ops,diesel,kgco2e_Mgyield,1.951192155490176
-scen_2001,fuel manufacture,harvest,diesel,kgco2e_stand,419.12545036373564
-scen_2001,fuel manufacture,harvest,diesel,kgco2e_hayr,139.70848345457856
-scen_2001,fuel manufacture,harvest,diesel,kgco2e_Mgyield,8.655901119177495
+scen_2001,irrigation,fuel manufacture,diesel,kgco2e_stand,17.945792377726097
+scen_2001,irrigation,fuel manufacture,diesel,kgco2e_hayr,5.9819307925753655
+scen_2001,irrigation,fuel manufacture,diesel,kgco2e_Mgyield,0.3706217415145702
+scen_2001,irrigation,"sprinkler, surface",diesel,kgco2e_stand,75.49003204441325
+scen_2001,irrigation,"sprinkler, surface",diesel,kgco2e_hayr,25.16334401480442
+scen_2001,irrigation,"sprinkler, surface",diesel,kgco2e_Mgyield,1.5590421729172075
 scen_2001,pesticide,chlorantraniliprole,diesel,kgco2e_stand,2.338780006567486
 scen_2001,pesticide,chlorantraniliprole,diesel,kgco2e_hayr,0.7795933355224953
 scen_2001,pesticide,chlorantraniliprole,diesel,kgco2e_Mgyield,0.04830116724906253
