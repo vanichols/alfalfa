@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,6 +21,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -35,6 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="alfalfa-notes_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="alfalfa-notes_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -70,9 +134,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="notes" class="level1">
 <h1>Notes</h1>
 <p>Comparison of soil C studies in irrigated vs rainfed systems?</p>
-</section>
-<section id="factoids" class="level1">
-<h1>Factoids</h1>
+<p>N2O emission methodology - need a good summary?</p>
+<ul>
+<li><p>Account for only N from synthetic fertilizer (what about manure?) - Hoben et al.&nbsp;2011</p></li>
+<li><p>Legumes do not emit N2O - Van Groenigen et al.&nbsp;2010</p></li>
+<li><p>Fertilizer and crop residue N - Camargo et al.&nbsp;20xx</p></li>
+<li><p>Fertilizer, crop residue N, root N, root turnover N - Little et al.&nbsp;2017</p>
+<h1 id="factoids">1Factoids</h1></li>
+</ul>
 <p>Ruminants = 1/3 of worldwide meet production, 99% of milk</p>
 <p>In the US, 16% of milk sales are plant-based</p>
 <p>1/5 global methane emissions are from ruminants</p>
@@ -91,6 +160,21 @@ ul.task-list li input[type="checkbox"] {
 <p>In the Imperial Valley, 1/3 of ag land is in alfalfa.</p>
 <p><img src="images/image-621938974.png" class="img-fluid"></p>
 <p>Alfalfa sells for $160-300/ton (premium). That is a large range in prices.</p>
+<p>Camargo says it takes ~50 MJ to make 1 kg of N fertilizer (?)</p>
+<p>A MJ is <strong>approximately the kinetic energy of a one megagram (tonne) vehicle moving at 161 km/h (100 mph)</strong>.</p>
+<p>Back of the envelope values:</p>
+<ul>
+<li><p>Alfalfa emits ~1.5 Mg CO2eq/ha/year, corn ~3 Mg CO2eq/ha/yr.</p></li>
+<li><p>Around half a fertilized crop’s GHGs come from N fertilizer.</p>
+<ul>
+<li><p>25% is from the N2O emissions from applying it</p></li>
+<li><p>25% is from the manufacturing of it.</p></li>
+</ul></li>
+<li><p>The world emits ~50 Gt CO2 each year</p>
+<ul>
+<li>Optimistically, we can sequester 150 Gt CO2 in the soil. Total.</li>
+</ul></li>
+</ul>
 </section>
 </section>
 <section id="lit-notes" class="level1">
@@ -134,8 +218,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><a href="https://www.mdpi.com/2073-4395/11/12/2580">Franco et al.&nbsp;2021</a> is mentioned in the <a href="https://alfalfa.org/events/World_Alfalfa_Congress_Agenda.php">alfalfa presentation by Valentin Picasso’s student</a>. Need to read</p>
 </section>
-<section id="eshel-et-al.-2014-pnas-lcas-on-animal-products" class="level2">
-<h2 class="anchored" data-anchor-id="eshel-et-al.-2014-pnas-lcas-on-animal-products"><a href="https://www.pnas.org/doi/10.1073/pnas.1402183111">Eshel et al.&nbsp;2014</a> (PNAS) LCAs on animal products</h2>
+<section id="eshel-2014-pnas-lcas-on-animal-products" class="level2">
+<h2 class="anchored" data-anchor-id="eshel-2014-pnas-lcas-on-animal-products"><a href="https://www.pnas.org/doi/10.1073/pnas.1402183111">Eshel 2014</a> (PNAS) LCAs on animal products</h2>
 <p>A very good paper.</p>
 <p>Good to cite for the LCAs of regions differing</p>
 <p>Multi-regional values, or range in values is important to establish</p>
@@ -145,13 +229,13 @@ ul.task-list li input[type="checkbox"] {
 <p>This is because of the feed conversion, mostly. Beef are 4x less efficient.</p>
 <p>14% of corn land is irrigated, 8% of soy</p>
 </section>
-<section id="veltman-et-al.-2018-dairy-lca-in-great-lakes-region" class="level2">
-<h2 class="anchored" data-anchor-id="veltman-et-al.-2018-dairy-lca-in-great-lakes-region"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0308521X21001232">Veltman et al.&nbsp;2018</a> Dairy LCA in Great Lakes Region</h2>
+<section id="veltman-2018-dairy-lca-in-great-lakes-region" class="level2">
+<h2 class="anchored" data-anchor-id="veltman-2018-dairy-lca-in-great-lakes-region"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0308521X21001232">Veltman 2018</a> Dairy LCA in Great Lakes Region</h2>
 <p>Ranking of potential levers are manure management &gt; diet &gt; field management</p>
 <p>Field management only made the values wiggle by 3%</p>
 </section>
-<section id="little-et-al.-2017-corn-silage-vs-alfalfa-canada" class="level2">
-<h2 class="anchored" data-anchor-id="little-et-al.-2017-corn-silage-vs-alfalfa-canada"><a href="https://www.mdpi.com/2225-1154/5/4/87">Little et al.&nbsp;2017</a> Corn silage vs alfalfa (Canada)</h2>
+<section id="little-2017-corn-silage-vs-alfalfa-canada" class="level2">
+<h2 class="anchored" data-anchor-id="little-2017-corn-silage-vs-alfalfa-canada"><a href="https://www.mdpi.com/2225-1154/5/4/87">Little 2017</a> Corn silage vs alfalfa (Canada)</h2>
 <p>Compared two dairy feed situations. They included C sequestration, which is rare.</p>
 <p>GHG/kg milk did not differ significantly. Their assumptions were as follows:</p>
 <p><img src="images/image-377622264.png" class="img-fluid">A couple of notes on this - no herbicide use in alfalfa. No lime application (all assigned to corn?). Zero percent moisture (for silage?).</p>
@@ -161,32 +245,247 @@ ul.task-list li input[type="checkbox"] {
 <p>Alfalfa had higher N2O emissions because of the assumption that all N inputs are the same, and alfalfa has a large root N contribution. Does the source of N impact N2O emissions?</p>
 <p>Breakdown of GHG, not super informative but shows % that can be affected by management:</p>
 <p><img src="images/image-1385988121.png" class="img-fluid"></p>
-<p>Both systems are emitting around 40,000 kg CO2eq/ha (per year?).</p>
+<p>Both systems are emitting around 40,000 kg CO2eq/ha (per year?). This includes the dairy production part, so I’m not sure how comparable this is to just the alfalfa/corn production piece - based on the above figure I’d guess the crop portion is ~15,000 CO2eq/ha.</p>
 <p>The carbon sequestration is around 3,000 kg CO2eq/ha per year.</p>
-<p>The carbon you sequester in 10 years is offset by one year of emissions.</p>
+<p>The carbon you sequester in 5 (crop) or 10 (dairy) years is offset by one year of emissions.</p>
 <p>“After a period of 30 years, the model predicted a gain of 87,449 kg soil carbon under the alfalfa system and a loss of 6384 kg carbon under the corn system (Figure 4). If over 30 years the dairy system completed five cycles, producing approximately 11,000,000 kg CO2e, the potential carbon gain from alfalfa and the potential carbon loss from corn represents less than 1% of emissions, implying little impact on soil carbon of switching from hay to an alfalfa silage or corn silage system.”</p>
 </section>
-<section id="other-alfalfa-lcas" class="level2">
-<h2 class="anchored" data-anchor-id="other-alfalfa-lcas">Other alfalfa LCAs</h2>
+<section id="camargo-2013-farm-energy-analysis-tool-feat-link-doesnt-work-sloppy-imo" class="level2">
+<h2 class="anchored" data-anchor-id="camargo-2013-farm-energy-analysis-tool-feat-link-doesnt-work-sloppy-imo"><a href="https://academic.oup.com/bioscience/article/63/4/263/253267">Camargo 2013</a> Farm Energy Analysis Tool (FEAT), link doesn’t work, sloppy IMO</h2>
+<p>They get ~<strong>1,500 kg CO2eq/ha/year for alfalfa</strong> (the other is red clover)<strong>:</strong></p>
+<p><img src="images/image-824619687.png" class="img-fluid"></p>
+<p>Advocate for using public datasets</p>
+<p>Website referenced in paper does not work, google takes me to sites that violate my privacy…</p>
+<p>Compare three different management types for corn</p>
+<p>Nice comparison of tools:</p>
+<p><img src="images/image-1766649875.png" class="img-fluid"></p>
+<p>FEAT actually used fairly complicated N2O calcs, and they weren’t cited - seemed arbitrary. I’m not sure where they got these values (from literature?), and what they mean by ‘nitrogen’ (urea, ammonium nitrate, ammonia, etc.)</p>
+<p><em>Need to compare these to FTM values</em></p>
+<p><img src="images/image-433973708.png" class="img-fluid"></p>
+<p>The FEAT database default value for irrigation is 0.014 MJ per cubic meter of water per meter depth of water pumped from a well (Batty and Keller 1980)</p>
+<p>Their values are a magnitude lower than Little et al.&nbsp;2017. They get <strong>1,500 kg CO2eq/ha/year for a perennial legume</strong>, compared to Little et al.’s 15,000 kg CO2eq/ha/yr. They had essentially 0 N2O emissions from alfalfa, which isn’t correct given the new IPCC report (which says you need to include all N, including that from above and below ground residues).</p>
+<p>“The legume crops did not emit N2O in Van Groenigen and colleagues (2010) and Hoben and colleagues (2011), because their methodology accounts for N from only fertilizer applications and excludes emissions from crop residues.”</p>
 </section>
-<section id="wang-et-al.-2021-regional-comparison-of-alfalfa-in-china" class="level2">
-<h2 class="anchored" data-anchor-id="wang-et-al.-2021-regional-comparison-of-alfalfa-in-china"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652621012440">Wang et al.&nbsp;2021 (Regional comparison of alfalfa in China)</a></h2>
-<p>Used a model, showed there’s really no good situation, it’s always a trade-off, higher yields require more environmental damage</p>
+<section id="ipcc-n2o-factors" class="level2">
+<h2 class="anchored" data-anchor-id="ipcc-n2o-factors"><a href="https://www.ipcc-nggip.iges.or.jp/public/2019rf/vol4.html">2019 IPCC N2O factors</a></h2>
+<p>NOTE: the new version accounts for below-ground N residues, whereas the 2006 version only included above-ground residues. This change was made specifically to account for alfalfa, where essentially all the above-ground residue is harvested. They provide generic values fro Alfalfa for N content of above and below ground N content, and a ratio and turnover estimates, etc.</p>
+<p>They allow for three separate emission factors:</p>
+<ol type="1">
+<li><p>Amount of N2O emitted from various synthetic and organic N applications</p></li>
+<li><p>Amount emitted from ‘drained managed organic soils’ (?)</p></li>
+<li><p>Amount from urine and dung deposition from grazing animals</p></li>
+</ol>
+<p>For #1 - they use a default of 1%, but also provide value disaggregated by climate zone and fertilizer type. For example in wet climates, the value is 0.6% of organic N inputs and 1.6% of synthetic N inputs. In dry climates, it is 0.5% for all N inputs. Note this is for direct emissions only.</p>
+<p><img src="images/image-879996553.png" class="img-fluid"></p>
+<p>Conversion of N2O-N emissions to N2O emissions:</p>
+<p><span class="math display">\[
+N2O = (N2O-N) \cdot \frac {44}{28}
+\]</span></p>
+<p>“Natural N2O emissions on managed land are assumed to be equal to emissions on unmanaged land. These latter emissions are very low. Therefore, nearly all emissions on managed land are considered anthropogenic. Estimates using the IPCC methodology are of the same magnitude as total measured emissions from managed land.” (p.11)</p>
 </section>
-<section id="ghaderpour-et-al.-2018-iran" class="level2">
-<h2 class="anchored" data-anchor-id="ghaderpour-et-al.-2018-iran"><a href="https://www.sciencedirect.com/science/article/abs/pii/S2213138817302102">Ghaderpour et al.&nbsp;2018 (Iran)</a></h2>
+<section id="kim-2014---meta-review-of-corn-lcas-funded-by-national-corn-growers" class="level2">
+<h2 class="anchored" data-anchor-id="kim-2014---meta-review-of-corn-lcas-funded-by-national-corn-growers"><a href="https://link.springer.com/article/10.1007/s12155-013-9399-z">Kim 2014</a> - Meta review of corn LCAs, funded by National Corn Growers</h2>
+<p>Says EcoInvent values are from Europe.</p>
+<p>USDA reports on ‘fuels purchased’</p>
+<p>Gives tables with ranges in assumptions by study</p>
+</section>
+<section id="costa-2020-meta-review-of-crop-rotations-in-lcas" class="level2">
+<h2 class="anchored" data-anchor-id="costa-2020-meta-review-of-crop-rotations-in-lcas"><a href="https://link.springer.com/article/10.1007/s11367-020-01812-x">Costa 2020</a> Meta review of crop rotations in LCAs</h2>
+<p>“However, changes to rotation sequences, nutrient cycling and yields of crops within rotations mean that <strong>simple attributional LCA of the individual legume crops introduced into rotations does not adequately represent consequences</strong> for the environmental efficiency of rotations and related food systems, nor of individual crops within modified rotations.”</p>
+</section>
+<section id="liu-2016" class="level2">
+<h2 class="anchored" data-anchor-id="liu-2016"><a href="https://link.springer.com/article/10.1007/s13593-016-0404-8">Liu 2016</a></h2>
+<p>Cameron cites this to say ‘reduced tillage and deep rooting systems can provide high carbon inputs throughout the year, increasing soil carbon stocks’. It’s not a great paper.</p>
+<p>They claim N2O emissions from summer fallow is a significant contributor to CO2 emissions from field crop production.</p>
+</section>
+</section>
+<section id="other-alfalfa-lcas" class="level1">
+<h1>Other alfalfa LCAs</h1>
+<section id="wang-2021-regional-comparison-of-alfalfa-in-china" class="level2">
+<h2 class="anchored" data-anchor-id="wang-2021-regional-comparison-of-alfalfa-in-china"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652621012440">Wang 2021 (Regional comparison of alfalfa in China)</a></h2>
+<p><strong>0.3 - 7.8 Mg CO2eq/ha</strong></p>
+<p>Used a model and surveys. Good paper. Showed there’s really no good situation, it’s always a trade-off, higher yields require more environmental damage.</p>
+<p>They did things on a per unit dry matter basis. I want to see on a per hectare basis.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">yield_Mgha =</span> <span class="fu">c</span>(<span class="fl">6.7</span>, <span class="fl">9.1</span>, <span class="fl">11.9</span>, <span class="fl">12.4</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">gCO2eq_kgDM =</span> <span class="fu">c</span>(<span class="dv">42</span>, <span class="dv">119</span>, <span class="dv">150</span>, <span class="dv">626</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>d <span class="sc">%&gt;%</span> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">MgCO2_MgDM =</span> gCO2eq_kgDM<span class="sc">/</span><span class="dv">1000</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">MgCO2_ha =</span> MgCO2_MgDM <span class="sc">*</span> yield_Mgha,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">MgCO2_ha =</span> <span class="fu">round</span>(MgCO2_ha, <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  yield_Mgha gCO2eq_kgDM MgCO2_MgDM MgCO2_ha
+       &lt;dbl&gt;       &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;
+1        6.7          42      0.042     0.28
+2        9.1         119      0.119     1.08
+3       11.9         150      0.15      1.78
+4       12.4         626      0.626     7.76</code></pre>
+</div>
+</div>
+</section>
+<section id="ghaderpour-2018-iran" class="level2">
+<h2 class="anchored" data-anchor-id="ghaderpour-2018-iran"><a href="https://www.sciencedirect.com/science/article/abs/pii/S2213138817302102">Ghaderpour 2018 (Iran)</a></h2>
 <p>Used surveys. Didn’t read, bad paper</p>
 </section>
-<section id="bacenetti-et-al.-2018-italy" class="level2">
-<h2 class="anchored" data-anchor-id="bacenetti-et-al.-2018-italy"><a href="https://pubmed.ncbi.nlm.nih.gov/29679827/">Bacenetti et al.&nbsp;2018 (Italy)</a></h2>
+<section id="bacenetti-2018-italy" class="level2">
+<h2 class="anchored" data-anchor-id="bacenetti-2018-italy"><a href="https://pubmed.ncbi.nlm.nih.gov/29679827/">Bacenetti 2018 (Italy)</a></h2>
 <p>Very good paper. Lists ISO standards I4040/44</p>
+<p>Found that increased energy needed for irrigation was offset by higher yields.</p>
+<p>85 kg Co2(eq?)/t of hay w/o irrigation, 80 with irrigation.</p>
 <p>They use three categories of ‘cultivation’:</p>
-<p>Soil tillage and sowing (seeding rates)</p>
-<p>Crop management (herbicides, fertilizer)</p>
-<p>Harvest and transport</p>
+<ul>
+<li><p>Soil tillage and sowing (seeding rates)</p></li>
+<li><p>Crop management (herbicides, fertilizer)</p></li>
+<li><p>Harvest and transport</p></li>
+</ul>
 <p>I would include irrigation managment, and cropping system impacts (reduced N requirements of following crop)</p>
 <p>They are very careful to define their goal and scope. Is it per ton of hay (at what moisture, they use 14%) or per acre?</p>
 <p>They use the Ecoinvent database.</p>
+</section>
+<section id="goglio-2018" class="level2">
+<h2 class="anchored" data-anchor-id="goglio-2018"><a href="https://www.sciencedirect.com/science/article/pii/S0959652617305772">Goglio 2018</a></h2>
+<p>Compares results when using models/Tier estimates.</p>
+<p><img src="images/image-178864675.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="section-1" class="level1">
+<h1><img src="images/image-870060884.png" class="img-fluid"></h1>
+</section>
+<section id="lcas" class="level1">
+<h1>LCAs</h1>
+<p>Attributional versus consequential LCAs (see Costa et al.&nbsp;for more).</p>
+<section id="notaricola-2017" class="level2">
+<h2 class="anchored" data-anchor-id="notaricola-2017">Notaricola 2017</h2>
+<p>Life cycle thinking is the umbrella term that includes life cycle analysis, life cycle costing, social life cycle assessment, etc.</p>
+<p>Criticism might be LCA is yet another field-based metric, when sustainabiltiy demands a consideration of landscape impacts.</p>
+<p>Problem: if alfalfa is not grown, where will it be grown? Or will it just not be grown? Hard question.</p>
+<p>“Yet, current data available in food LCA databases and life cycle impact assessment (LCIA) models, are mostly non-spatially and temporally resolved (Hauschild et al., 2012).”</p>
+<p>Food production in particular can require very specific spatial/temporal resolution. The source of energy production is a good example. In some areas it’s mostly electric, in others it’s mostly coal.</p>
+<p>It is important to distinguish between variability and uncertainty in LCAs.</p>
+</section>
+<section id="hauschild-2012" class="level2">
+<h2 class="anchored" data-anchor-id="hauschild-2012"><a href="https://link.springer.com/article/10.1007/s11367-012-0489-5">Hauschild 2012</a></h2>
+<p>Characterization factors - convert flow to impact</p>
+<p>Ex is ‘ozone depletion potential’ or ‘global warming potential’</p>
+<p>USEtox is a characterization model for determining human/eco toxicity.</p>
+<p>Climate change is just one indicator that can be assessed using life cycle analysis.</p>
+<p><img src="images/image-1353806009.png" class="img-fluid"></p>
+<p>Visualizing contributions to the GHG footprint of alfalfa. Sankey/Alluvial diagrams, with the color of the flow based on the uncertainty (or maybe in my case the variability; <a href="https://www.sciencedirect.com/science/article/pii/S1876610217359106">Paoli 2017</a>):</p>
+<p><img src="images/image-1956153384.png" class="img-fluid"></p>
+</section>
+<section id="fuel-emission-factors" class="level2">
+<h2 class="anchored" data-anchor-id="fuel-emission-factors">Fuel emission factors</h2>
+<p>Super confused. <a href="https://www.epa.gov/climateleadership/ghg-emission-factors-hub">EPA emission factors</a> (which is what FTM uses) have a table that says ‘mobile combustion CO2’:</p>
+<p><img src="images/image-1102276560.png" class="img-fluid"></p>
+<p>I do not understand if this is the CO2 released simply from combustion, or if it includes the manufacturing of the fuel as well.</p>
+<p>To answer this I tried to calculate things on a molar basis.</p>
+<p>The chemical formula for diesel is C<sub>12</sub>H<sub>23</sub> and the molecular weight of C is 12, H is 1.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Total molecular weight of diesel</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tot <span class="ot">&lt;-</span> (<span class="dv">12</span><span class="sc">*</span><span class="dv">12</span> <span class="sc">+</span> <span class="dv">23</span> <span class="sc">*</span> <span class="dv">1</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># fraction of diesel molecule that is carbon</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>frac_c <span class="ot">&lt;-</span> (<span class="dv">12</span> <span class="sc">*</span> <span class="dv">12</span>)<span class="sc">/</span> tot</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(frac_c, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.86</code></pre>
+</div>
+</div>
+<p>This means 1 kg of diesel has 0.86 kg of carbon.</p>
+<p>Using the same logic, CO2 is 27% carbon by weight. So 1 kg of diesel, with it’s 0.86 kg of carbon would release:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">0.86</span> <span class="sc">/</span> <span class="fl">0.27</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.19</code></pre>
+</div>
+</div>
+<p>kg of CO2 per kg diesel. A gallon of diesel weighs 3.23 kg. Therefore the kg of CO2 released per gallon of diesel is:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">3.19</span> <span class="sc">*</span> <span class="fl">3.22</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.27</code></pre>
+</div>
+</div>
+<p>This is exactly the value reported in the table. So those values do NOT include the manufacturing energy/GHG used to make the fuel.</p>
+</section>
+</section>
+<section id="carbon" class="level1">
+<h1>Carbon</h1>
+<section id="gamble-2021" class="level2">
+<h2 class="anchored" data-anchor-id="gamble-2021"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168192321001210">Gamble 2021</a></h2>
+<p><img src="images/image-958116090.png" class="img-fluid"></p>
+<p><img src="images/image-701451389.png" class="img-fluid"></p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/36644803/">Moinet 2023</a></p>
+<p>The amount of C that can be sequestered globally in soils is equivalent to about 3 years of our current CO2 emissions (40 Gt CO2 per year).</p>
+</section>
+</section>
+<section id="my-project" class="level1">
+<h1>My project</h1>
+<section id="email-from-cameron-to-dan" class="level2">
+<h2 class="anchored" data-anchor-id="email-from-cameron-to-dan"><strong>Email from Cameron to Dan</strong></h2>
+<p><em>Under the Healthy Soils program, CDFA has worked with expert modelers at Colorado State to adapt a widely used cropping system model (DAYCENT) for the California context. The GHG benefits for eligible healthy soils practices are estimated using this online calculator (<a href="http://comet-planner-cdfahsp.com/" class="uri">http://comet-planner-cdfahsp.com/</a>). You enter in a county and management practice, and you can see how much GHG mitigation is predicted (both changes in soil carbon and reduction in N2O or CH4 emissions) as well as the payment to the grower.</em></p>
+<p><em>I’m attaching the example for alfalfa for Yolo county. I think it is ‘safer’ to use this number in our LCA instead of soil sampling. The modeling methodology is already documented and applied in the real world. This calculator shows the benefit of perennial forages (CPS 512) for soil carbon is quite significant (estimated to be about 2 or 2.5 times higher than what the literature and COMET farm estimate for cover crops, and also double the benefit of no-till estimated by COMET farm).</em></p>
+<p><img src="images/image-716355406.png" class="img-fluid"></p>
+<p><em>Under this program, conversion of annual cropland to perennial forages would also generate a payment of around $130/acre for the three year cycle. But as we discussed, a grower could only apply for land that hasn’t been in alfalfa. And the payment actually goes up quite a bit for the different options to cover costs – for example, the highest input option “Pasture and Hay Planting (CPS 512) - Conversion of Annual Cropland to Irrigated Grass/Legume Forage/Biomass Crops-Nonnative High Seeding Rate with Lime” would generate a payment for $475/acre. Importantly, for the different scenarios, the GHG benefits stay the same.</em></p>
+<p><em>By including this number for soil carbon storage and the savings for N fertilizer on the subsequent crop, I’m guessing this would offset a big chunk of GHG emissions associated with alfalfa production.</em></p>
+<p><img src="images/image-1921258935.png" class="img-fluid"></p>
+<p>I went to the <a href="http://comet-planner-cdfahsp.com/">online calculator</a> and manually got values for given practices in Yolo county.</p>
+<p>The values seem fairly reasonable.</p>
+<ul>
+<li>Adding a perennial to row-crop systems sequesters ~ <strong>0.5 Mg CO2/ha/yr</strong>, or ~ <strong>0.2 Mg C/ha/yr</strong></li>
+</ul>
+<p>I need to read the citations Cameron provides to get some context.</p>
+<p><img src=".png" class="img-fluid"></p>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2"><img src="images/comet-yolo.png" class="img-fluid"></h2>
+<p><a href="http://bfuels.nrel.colostate.edu/health/COMET-Planner_Report_Final.pdf">COMET-Planner Report</a></p>
+<p>Spatial units are ‘county-rectified Major Land Resource Areas’, of which there are 227 in the conterminous US:</p>
+<p><img src="images/image-780049222.png" class="img-fluid" width="433"></p>
+<p>They sampled 100 points per ‘broad use category’ (what do they mean by that?). For each point, land use was determined using Cropland Data Layers. If a point was on cropland, the rotation history starting in 2009 was repeated backwards until 2000. Average fertilizer rates for each crop came from USDA-ERS 2014 data. “Typical” practices were applied.</p>
+<p>N2O emissions follow the US National Greenhouse Gas Inventory (EPA 2019) protocol. Direct emissions were calculated using DayCent. Leached and volatilized N also came from DayCent, then used emission factors to convert to indirect N2O emissions (<em>do these vary by region?)</em></p>
+<p>They calculated the difference between the baseline model run and the conservation model run, then averaged them over the ‘broad use category’ (<em>the same as Major Land Resource Area?</em>). This was translated into an emission reduction coefficient. It also gives minimum and maximum values “showing how emission estimates vary over a range of soil, weather, and agricultural management conditions”. <em>How did they get those? Is it just the minimum and maximum of their 100 samples?</em></p>
+<p>“The values should be interpreted as a average annual value over a 10 year duration”</p>
+</section>
+<section id="credit-for-reduced-n-fert-in-next-crop" class="level2">
+<h2 class="anchored" data-anchor-id="credit-for-reduced-n-fert-in-next-crop">Credit for reduced N fert in next crop</h2>
+<p>From 2019 IPCC section:</p>
+<p>There is 0.005 (0-0.011) kg N2O-N emitted per kg N applied. Also from that section, to get kg N2O from kg N2O-N you multiply by 44/28. Then, 1 kg of N2O is equivalent to 298 kg CO2.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--in kg of CO2</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">0.005</span> <span class="sc">*</span> (<span class="dv">44</span><span class="sc">/</span><span class="dv">28</span>) <span class="sc">*</span> <span class="dv">298</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.34</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--in Mg of CO2</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">0.005</span> <span class="sc">*</span> (<span class="dv">44</span><span class="sc">/</span><span class="dv">28</span>) <span class="sc">*</span> <span class="dv">298</span>, <span class="dv">2</span>)<span class="sc">/</span><span class="dv">1000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.00234</code></pre>
+</div>
+</div>
+<p>So each kg of N you avoid gives you a credit of 2.34 kg of CO2. Or 0.002 Mg CO2eq.</p>
+<p>The range presented from the IPCC values goes from 0-0.011. So best case offsets are:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--in kg of CO2</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">0.011</span> <span class="sc">*</span> (<span class="dv">44</span><span class="sc">/</span><span class="dv">28</span>) <span class="sc">*</span> <span class="dv">298</span>, <span class="dv">2</span>)<span class="sc">/</span><span class="dv">1000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.00515</code></pre>
+</div>
+</div>
+</section>
+<section id="irrigation-pump-energy" class="level2">
+<h2 class="anchored" data-anchor-id="irrigation-pump-energy">Irrigation pump energy</h2>
+<p>Martindill et al.&nbsp;2021 estimated how much ground water is being pumped in California by using the amount of energy being used. They present a equation:</p>
+<p><img src="images/image-1952351631.png" class="img-fluid"></p>
+<p>In our case we know the water amount, we can get the ‘overall pumping plant efficiency’ from somewhere, and we can get H from somewhere.</p>
+<p>Burt 2011 published regional averages of pump test report results.</p>
+<p><img src="images/image-281248307.png" class="img-fluid"></p>
+<p>It doesn’t have the exact</p>
+<p>Measured groundwater depths are now available statewide from the California Statewide Groundwater Elevation Monitoring program (CASGEM), established in 2009, and from groundwater contour maps available on DWR’s Groundwater Information Center Interactive Map Application (GICIMA), established in 2016</p>
 </section>
 </section>
 
