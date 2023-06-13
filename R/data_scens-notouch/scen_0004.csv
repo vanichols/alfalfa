@@ -2,7 +2,7 @@ scenario_id,cat,desc,value,unit,change_ind,notes
 scen_0004,field ops,chisel,1,pass/stand life,n,defecit irr
 scen_0004,field ops,disk,2,pass/stand life,n,defecit irr
 scen_0004,field ops,disk border ridges,1,pass/stand life,n,defecit irr
-scen_0004,field ops,"fertilize, map1",2,pass/stand life,n,defecit irr
+scen_0004,field ops,"fertilize, surface",2,pass/stand life,n,defecit irr
 scen_0004,field ops,insect control,6,pass/stand life,n,defecit irr
 scen_0004,field ops,laser level,1,pass/stand life,n,defecit irr
 scen_0004,field ops,plant,1,pass/stand life,n,defecit irr
@@ -28,8 +28,8 @@ scen_0004,irrigation,"flood, prod",64,ac-in/year,n,defecit irr
 scen_0004,irrigation,"drip, est",0,ac-in/stand life,n,defecit irr
 scen_0004,irrigation,"drip, prod",0,ac-in/year,n,defecit irr
 scen_0004,irrigation,fraction from surface source,0.5,frac,n,defecit irr
-scen_0004,irrigation,depth of well,150,feet,n,defecit irr
-scen_0004,irrigation,pump pressure,25,psi,n,defecit irr
+scen_0004,irrigation,depth of well,500,feet,n,defecit irr
+scen_0004,irrigation,pump pressure,50,psi,n,defecit irr
 scen_0004,irrigation,flood irr eff,0.7,frac,n,defecit irr
 scen_0004,irrigation,sprinkler irr eff,0.8,frac,n,defecit irr
 scen_0004,irrigation,drip irr eff,0.9,frac,n,defecit irr

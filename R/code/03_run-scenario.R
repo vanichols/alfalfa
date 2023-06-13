@@ -17,6 +17,9 @@ source("R/code/00_funs/fxn_ProcDataIn.R")
 source("R/code/00_funs/fxn_RunScenario.R")
  
 
+# must get seed energy written --------------------------------------------
+#--imperial valley produces a lot of the non dormant seed
+suppressMessages(RunScenario(my_scenario_id = "2001"))
 
 # tulare ------------------------------------------------------------------
 
@@ -72,7 +75,7 @@ suppressMessages(RunScenario(my_scenario_id = "1019"))
 
 # imperial ----------------------------------------------------------------
 
-suppressMessages(RunScenario(my_scenario_id = "2001"))
+#suppressMessages(RunScenario(my_scenario_id = "2001")) #--run first to get seed energy
 suppressMessages(RunScenario(my_scenario_id = "2002"))
 suppressMessages(RunScenario(my_scenario_id = "2005"))
 suppressMessages(RunScenario(my_scenario_id = "2008"))

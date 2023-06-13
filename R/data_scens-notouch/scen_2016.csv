@@ -23,9 +23,9 @@ scen_2016,yield,"hay, harvests",9,harvest/year,n,pasture establishment c credit
 scen_2016,yield,"haylage, harvests",3,harvest/year,n,pasture establishment c credit
 scen_2016,yield,hay production,8,ton/ac/yr at 10% moisture,n,pasture establishment c credit
 scen_2016,yield,haylage production,0,ton/ac/yr at 30% moisture,n,pasture establishment c credit
-scen_2016,irrigation,"sprinkler, est",0,ac-in/stand life,n,pasture establishment c credit
+scen_2016,irrigation,"sprinkler, est",18,ac-in/stand life,n,pasture establishment c credit
 scen_2016,irrigation,"sprinkler, prod",0,ac-in/year,n,pasture establishment c credit
-scen_2016,irrigation,"flood, est",18,ac-in/stand life,n,pasture establishment c credit
+scen_2016,irrigation,"flood, est",0,ac-in/stand life,n,pasture establishment c credit
 scen_2016,irrigation,"flood, prod",84,ac-in/year,n,pasture establishment c credit
 scen_2016,irrigation,"drip, est",0,ac-in/stand life,n,pasture establishment c credit
 scen_2016,irrigation,"drip, prod",0,ac-in/year,n,pasture establishment c credit

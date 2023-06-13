@@ -2,7 +2,7 @@ scenario_id,cat,desc,value,unit,change_ind,notes
 scen_0012,field ops,chisel,1,pass/stand life,y,eliminate insecticides
 scen_0012,field ops,disk,2,pass/stand life,y,eliminate insecticides
 scen_0012,field ops,disk border ridges,1,pass/stand life,y,eliminate insecticides
-scen_0012,field ops,"fertilize, map1",2,pass/stand life,y,eliminate insecticides
+scen_0012,field ops,"fertilize, surface",2,pass/stand life,y,eliminate insecticides
 scen_0012,field ops,insect control,0,pass/stand life,y,eliminate insecticides
 scen_0012,field ops,laser level,1,pass/stand life,y,eliminate insecticides
 scen_0012,field ops,plant,1,pass/stand life,y,eliminate insecticides
@@ -27,8 +27,8 @@ scen_0012,irrigation,"flood, prod",64,ac-in/year,n,eliminate insecticides
 scen_0012,irrigation,"drip, est",0,ac-in/stand life,n,eliminate insecticides
 scen_0012,irrigation,"drip, prod",0,ac-in/year,n,eliminate insecticides
 scen_0012,irrigation,fraction from surface source,0.5,frac,n,eliminate insecticides
-scen_0012,irrigation,depth of well,150,feet,n,eliminate insecticides
-scen_0012,irrigation,pump pressure,25,psi,n,eliminate insecticides
+scen_0012,irrigation,depth of well,500,feet,n,eliminate insecticides
+scen_0012,irrigation,pump pressure,50,psi,n,eliminate insecticides
 scen_0012,irrigation,flood irr eff,0.7,frac,n,eliminate insecticides
 scen_0012,irrigation,sprinkler irr eff,0.8,frac,n,eliminate insecticides
 scen_0012,irrigation,drip irr eff,0.9,frac,n,eliminate insecticides

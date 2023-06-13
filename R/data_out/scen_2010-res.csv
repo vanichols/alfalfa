@@ -20,12 +20,18 @@ scen_2010,field passes,field ops,electricity,MJ_kgyield,0.03856644818766608
 scen_2010,field passes,harvest,diesel,GJ_stand,24.770752780530614
 scen_2010,field passes,harvest,diesel,GJ_hayr,8.256917593510204
 scen_2010,field passes,harvest,diesel,MJ_kgyield,0.5115728155610372
-scen_2010,fuel manufacture,field ops,electricity,GJ_stand,2.002622105403706
-scen_2010,fuel manufacture,field ops,electricity,GJ_hayr,0.6675407018012353
-scen_2010,fuel manufacture,field ops,electricity,MJ_kgyield,0.041358736169349486
-scen_2010,fuel manufacture,harvest,diesel,GJ_stand,5.888602433998859
-scen_2010,fuel manufacture,harvest,diesel,GJ_hayr,1.9628674779996198
-scen_2010,fuel manufacture,harvest,diesel,MJ_kgyield,0.12161313600643199
+scen_2010,irrigation,"sprinkler, surface",diesel,GJ_stand,1.0606151119040856
+scen_2010,irrigation,"sprinkler, surface",diesel,GJ_hayr,0.3535383706346952
+scen_2010,irrigation,"sprinkler, surface",diesel,MJ_kgyield,0.021904132822714115
+scen_2010,field passes,fuel manufacture,electricity,GJ_stand,2.002622105403706
+scen_2010,field passes,fuel manufacture,electricity,GJ_hayr,0.6675407018012353
+scen_2010,field passes,fuel manufacture,electricity,MJ_kgyield,0.041358736169349486
+scen_2010,field passes,fuel manufacture,diesel,GJ_stand,5.888602433998859
+scen_2010,field passes,fuel manufacture,diesel,GJ_hayr,1.9628674779996198
+scen_2010,field passes,fuel manufacture,diesel,MJ_kgyield,0.12161313600643199
+scen_2010,irrigation,fuel manufacture,diesel,GJ_stand,0.25213366686228683
+scen_2010,irrigation,fuel manufacture,diesel,GJ_hayr,0.08404455562076228
+scen_2010,irrigation,fuel manufacture,diesel,MJ_kgyield,0.0052071380711468905
 scen_2010,pesticide,chlorantraniliprole,NA,GJ_stand,0.03285924447515436
 scen_2010,pesticide,chlorantraniliprole,NA,GJ_hayr,0.010953081491718121
 scen_2010,pesticide,chlorantraniliprole,NA,MJ_kgyield,6.786187065972198e-4
@@ -44,9 +50,9 @@ scen_2010,pesticide,paraquat,NA,MJ_kgyield,0.016521651041666665
 scen_2010,pesticide,pendimethalin,NA,GJ_stand,3.37970292334942
 scen_2010,pesticide,pendimethalin,NA,GJ_hayr,1.1265676411164733
 scen_2010,pesticide,pendimethalin,NA,MJ_kgyield,0.06979861111111113
-scen_2010,seed,"round-up ready seed, non-dormant",NA,GJ_stand,1.6104131118230363
-scen_2010,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.5368043706076787
-scen_2010,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.033258721570999204
+scen_2010,seed,"round-up ready seed, non-dormant",NA,GJ_stand,1.8005270619103608
+scen_2010,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.6001756873034536
+scen_2010,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.037185010351372706
 scen_2010,carbon credit,co2,NA,kgco2e_stand,-1927.4219754438898
 scen_2010,carbon credit,co2,NA,kgco2e_hayr,-642.4739918146299
 scen_2010,carbon credit,co2,NA,kgco2e_Mgyield,-39.805681138888886
@@ -68,15 +74,21 @@ scen_2010,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_Mgyield,
 scen_2010,field passes,field ops,electricity,kgco2e_stand,125.551155634577
 scen_2010,field passes,field ops,electricity,kgco2e_hayr,41.85038521152567
 scen_2010,field passes,field ops,electricity,kgco2e_Mgyield,2.5929191072224933
+scen_2010,field passes,fuel manufacture,diesel,kgco2e_stand,419.12545036373564
+scen_2010,field passes,fuel manufacture,diesel,kgco2e_hayr,139.70848345457856
+scen_2010,field passes,fuel manufacture,diesel,kgco2e_Mgyield,8.655901119177495
+scen_2010,field passes,fuel manufacture,electricity,kgco2e_stand,134.6413104048317
+scen_2010,field passes,fuel manufacture,electricity,kgco2e_hayr,44.880436801610564
+scen_2010,field passes,fuel manufacture,electricity,kgco2e_Mgyield,2.7806516364236176
 scen_2010,field passes,harvest,diesel,kgco2e_stand,1763.075879438911
 scen_2010,field passes,harvest,diesel,kgco2e_hayr,587.6919598129704
 scen_2010,field passes,harvest,diesel,kgco2e_Mgyield,36.411557601157206
-scen_2010,fuel manufacture,field ops,electricity,kgco2e_stand,134.6413104048317
-scen_2010,fuel manufacture,field ops,electricity,kgco2e_hayr,44.880436801610564
-scen_2010,fuel manufacture,field ops,electricity,kgco2e_Mgyield,2.7806516364236176
-scen_2010,fuel manufacture,harvest,diesel,kgco2e_stand,419.12545036373564
-scen_2010,fuel manufacture,harvest,diesel,kgco2e_hayr,139.70848345457856
-scen_2010,fuel manufacture,harvest,diesel,kgco2e_Mgyield,8.655901119177495
+scen_2010,irrigation,fuel manufacture,diesel,kgco2e_stand,17.945792377726097
+scen_2010,irrigation,fuel manufacture,diesel,kgco2e_hayr,5.9819307925753655
+scen_2010,irrigation,fuel manufacture,diesel,kgco2e_Mgyield,0.3706217415145702
+scen_2010,irrigation,"sprinkler, surface",diesel,kgco2e_stand,75.49003204441325
+scen_2010,irrigation,"sprinkler, surface",diesel,kgco2e_hayr,25.16334401480442
+scen_2010,irrigation,"sprinkler, surface",diesel,kgco2e_Mgyield,1.5590421729172075
 scen_2010,pesticide,chlorantraniliprole,diesel,kgco2e_stand,2.338780006567486
 scen_2010,pesticide,chlorantraniliprole,diesel,kgco2e_hayr,0.7795933355224953
 scen_2010,pesticide,chlorantraniliprole,diesel,kgco2e_Mgyield,0.04830116724906253
@@ -95,9 +107,9 @@ scen_2010,pesticide,paraquat,diesel,kgco2e_Mgyield,1.1759402186179861
 scen_2010,pesticide,pendimethalin,diesel,kgco2e_stand,240.55275011706354
 scen_2010,pesticide,pendimethalin,diesel,kgco2e_hayr,80.18425003902118
 scen_2010,pesticide,pendimethalin,diesel,kgco2e_Mgyield,4.967965598730615
-scen_2010,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,114.62229422510642
-scen_2010,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,38.207431408368805
-scen_2010,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,2.367213071897092
+scen_2010,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,128.15378931988872
+scen_2010,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,42.71792977329624
+scen_2010,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,2.646669457648476
 scen_2010,n2o,"direct, fert n",NA,kgco2e_stand,322.8003706044282
 scen_2010,n2o,"direct, fert n",NA,kgco2e_hayr,107.60012353480941
 scen_2010,n2o,"direct, fert n",NA,kgco2e_Mgyield,6.666567460317459

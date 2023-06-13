@@ -50,9 +50,9 @@ scen_2001,pesticide,paraquat,NA,MJ_kgyield,0.016521651041666665
 scen_2001,pesticide,pendimethalin,NA,GJ_stand,3.37970292334942
 scen_2001,pesticide,pendimethalin,NA,GJ_hayr,1.1265676411164733
 scen_2001,pesticide,pendimethalin,NA,MJ_kgyield,0.06979861111111113
-scen_2001,seed,"round-up ready seed, non-dormant",NA,GJ_stand,1.6104131118230363
-scen_2001,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.5368043706076787
-scen_2001,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.033258721570999204
+scen_2001,seed,"round-up ready seed, non-dormant",NA,GJ_stand,1.8005270619103608
+scen_2001,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.6001756873034536
+scen_2001,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.037185010351372706
 scen_2001,carbon credit,co2,NA,kgco2e_stand,-1927.4219754438898
 scen_2001,carbon credit,co2,NA,kgco2e_hayr,-642.4739918146299
 scen_2001,carbon credit,co2,NA,kgco2e_Mgyield,-39.805681138888886
@@ -104,9 +104,9 @@ scen_2001,pesticide,paraquat,diesel,kgco2e_Mgyield,1.1759402186179861
 scen_2001,pesticide,pendimethalin,diesel,kgco2e_stand,240.55275011706354
 scen_2001,pesticide,pendimethalin,diesel,kgco2e_hayr,80.18425003902118
 scen_2001,pesticide,pendimethalin,diesel,kgco2e_Mgyield,4.967965598730615
-scen_2001,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,114.62229422510642
-scen_2001,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,38.207431408368805
-scen_2001,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,2.367213071897092
+scen_2001,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,128.15378931988872
+scen_2001,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,42.71792977329624
+scen_2001,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,2.646669457648476
 scen_2001,n2o,"direct, fert n",NA,kgco2e_stand,322.8003706044282
 scen_2001,n2o,"direct, fert n",NA,kgco2e_hayr,107.60012353480941
 scen_2001,n2o,"direct, fert n",NA,kgco2e_Mgyield,6.666567460317459

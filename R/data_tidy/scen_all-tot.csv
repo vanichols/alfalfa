@@ -1,463 +1,463 @@
 scenario_id,scen_desc,location,unit,name,value
-scen_0001,base,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,590.0687587093872
-scen_0001,base,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1436.195369321369
-scen_0001,base,tulare,kgco2e_hayr,no_c_credit,1232.5427505240173
-scen_0001,base,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,23.713827006181887
-scen_0001,base,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-57.7181693361605
-scen_0001,base,tulare,kgco2e_Mgyield,no_c_credit,49.53372828546117
-scen_0001,base,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1770.2062761281618
-scen_0001,base,tulare,kgco2e_stand,pasture_establishment_c_credit,-4308.586107964107
-scen_0001,base,tulare,kgco2e_stand,no_c_credit,3697.6282515720513
-scen_0002,all ground irr,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,845.5999764652552
-scen_0002,all ground irr,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1180.664151565501
-scen_0002,all ground irr,tulare,kgco2e_hayr,no_c_credit,1488.0739682798853
-scen_0002,all ground irr,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,33.983177828610444
-scen_0002,all ground irr,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-47.44881851373194
-scen_0002,all ground irr,tulare,kgco2e_Mgyield,no_c_credit,59.80307910788973
-scen_0002,all ground irr,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2536.7999293957655
-scen_0002,all ground irr,tulare,kgco2e_stand,pasture_establishment_c_credit,-3541.992454696503
-scen_0002,all ground irr,tulare,kgco2e_stand,no_c_credit,4464.221904839655
-scen_0003,all surface irr,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,334.53754095351934
-scen_0003,all surface irr,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1691.726587077237
-scen_0003,all surface irr,tulare,kgco2e_hayr,no_c_credit,977.0115327681494
-scen_0003,all surface irr,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,13.444476183753327
-scen_0003,all surface irr,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-67.98752015858906
-scen_0003,all surface irr,tulare,kgco2e_Mgyield,no_c_credit,39.264377463032616
-scen_0003,all surface irr,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1003.6126228605581
-scen_0003,all surface irr,tulare,kgco2e_stand,pasture_establishment_c_credit,-5075.1797612317105
-scen_0003,all surface irr,tulare,kgco2e_stand,no_c_credit,2931.0345983044476
-scen_0004,defecit irr,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,426.46237135249527
-scen_0004,defecit irr,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1599.801756678261
-scen_0004,defecit irr,tulare,kgco2e_hayr,no_c_credit,1068.9363631671254
-scen_0004,defecit irr,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,22.64766519254535
-scen_0004,defecit irr,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-58.78433114979704
-scen_0004,defecit irr,tulare,kgco2e_Mgyield,no_c_credit,48.46756647182464
-scen_0004,defecit irr,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1279.3871140574859
-scen_0004,defecit irr,tulare,kgco2e_stand,pasture_establishment_c_credit,-4799.405270034783
-scen_0004,defecit irr,tulare,kgco2e_stand,no_c_credit,3206.8090895013756
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,675.5279610432394
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1350.7361669875168
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_hayr,no_c_credit,1318.0019528578696
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,27.14828224604887
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-54.28371409629352
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_Mgyield,no_c_credit,52.96818352532816
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2702.1118441729577
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_stand,pasture_establishment_c_credit,-3376.680539919311
-scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_stand,no_c_credit,4629.533819616847
-scen_0006,double pump pressure,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,786.8277963814057
-scen_0006,double pump pressure,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1239.4363316493504
-scen_0006,double pump pressure,tulare,kgco2e_hayr,no_c_credit,1429.3017881960359
-scen_0006,double pump pressure,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,31.621227139451882
-scen_0006,double pump pressure,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-49.810769202890505
-scen_0006,double pump pressure,tulare,kgco2e_Mgyield,no_c_credit,57.44112841873117
-scen_0006,double pump pressure,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2360.483389144217
-scen_0006,double pump pressure,tulare,kgco2e_stand,pasture_establishment_c_credit,-3718.3089949480513
-scen_0006,double pump pressure,tulare,kgco2e_stand,no_c_credit,4287.905364588107
-scen_0007,eliminate pesticides,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,395.8520697284668
-scen_0007,eliminate pesticides,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1630.4120583022893
-scen_0007,eliminate pesticides,tulare,kgco2e_hayr,no_c_credit,1038.3260615430968
-scen_0007,eliminate pesticides,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,15.908599401384599
-scen_0007,eliminate pesticides,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-65.52339694095778
-scen_0007,eliminate pesticides,tulare,kgco2e_Mgyield,no_c_credit,41.728500680663885
-scen_0007,eliminate pesticides,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1187.5562091854003
-scen_0007,eliminate pesticides,tulare,kgco2e_stand,pasture_establishment_c_credit,-4891.236174906868
-scen_0007,eliminate pesticides,tulare,kgco2e_stand,no_c_credit,3114.97818462929
-scen_0008,electrify irrigation,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,377.01607051827654
-scen_0008,electrify irrigation,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1649.2480575124796
-scen_0008,electrify irrigation,tulare,kgco2e_hayr,no_c_credit,1019.4900623329065
-scen_0008,electrify irrigation,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,15.151613676981894
-scen_0008,electrify irrigation,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-66.28038266536049
-scen_0008,electrify irrigation,tulare,kgco2e_Mgyield,no_c_credit,40.97151495626118
-scen_0008,electrify irrigation,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1131.0482115548295
-scen_0008,electrify irrigation,tulare,kgco2e_stand,pasture_establishment_c_credit,-4947.744172537439
-scen_0008,electrify irrigation,tulare,kgco2e_stand,no_c_credit,3058.4701869987193
-scen_0009,electrify harvest equip,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,328.94254700393435
-scen_0009,electrify harvest equip,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1697.3215810268218
-scen_0009,electrify harvest equip,tulare,kgco2e_hayr,no_c_credit,971.4165388185644
-scen_0009,electrify harvest equip,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,13.21962320405772
-scen_0009,electrify harvest equip,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-68.21237313828466
-scen_0009,electrify harvest equip,tulare,kgco2e_Mgyield,no_c_credit,39.039524483337004
-scen_0009,electrify harvest equip,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,986.827641011803
-scen_0009,electrify harvest equip,tulare,kgco2e_stand,pasture_establishment_c_credit,-5091.964743080465
-scen_0009,electrify harvest equip,tulare,kgco2e_stand,no_c_credit,2914.2496164556924
-scen_0010,electrify fieldops equip,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,545.3533221707505
-scen_0010,electrify fieldops equip,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1480.9108058600057
-scen_0010,electrify fieldops equip,tulare,kgco2e_hayr,no_c_credit,1187.8273139853804
-scen_0010,electrify fieldops equip,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,21.91679215061283
-scen_0010,electrify fieldops equip,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-59.51520419172955
-scen_0010,electrify fieldops equip,tulare,kgco2e_Mgyield,no_c_credit,47.736693429892114
-scen_0010,electrify fieldops equip,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1636.0599665122518
-scen_0010,electrify fieldops equip,tulare,kgco2e_stand,pasture_establishment_c_credit,-4442.732417580017
-scen_0010,electrify fieldops equip,tulare,kgco2e_stand,no_c_credit,3563.4819419561413
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,493.0953036092709
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1533.1688244214852
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_hayr,no_c_credit,1135.569295423901
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,19.81663417145925
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-61.61536217088314
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_Mgyield,no_c_credit,45.636535450738535
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1479.2859108278128
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_stand,pasture_establishment_c_credit,-4599.506473264456
-scen_0011,change prod irr from flood to drip,tulare,kgco2e_stand,no_c_credit,3406.7078862717026
-scen_0012,eliminate insecticides,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,580.6323248328439
-scen_0012,eliminate insecticides,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1445.6318031979122
-scen_0012,eliminate insecticides,tulare,kgco2e_hayr,no_c_credit,1223.106316647474
-scen_0012,eliminate insecticides,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,23.334593302989287
-scen_0012,eliminate insecticides,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-58.0974030393531
-scen_0012,eliminate insecticides,tulare,kgco2e_Mgyield,no_c_credit,49.15449458226857
-scen_0012,eliminate insecticides,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1741.8969744985318
-scen_0012,eliminate insecticides,tulare,kgco2e_stand,pasture_establishment_c_credit,-4336.895409593737
-scen_0012,eliminate insecticides,tulare,kgco2e_stand,no_c_credit,3669.3189499424216
-scen_0013,eliminate herbicides,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,405.2885036050101
-scen_0013,eliminate herbicides,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1620.975624425746
-scen_0013,eliminate herbicides,tulare,kgco2e_hayr,no_c_credit,1047.7624954196401
-scen_0013,eliminate herbicides,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,16.2878331045772
-scen_0013,eliminate herbicides,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-65.14416323776518
-scen_0013,eliminate herbicides,tulare,kgco2e_Mgyield,no_c_credit,42.10773438385648
-scen_0013,eliminate herbicides,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1215.8655108150303
-scen_0013,eliminate herbicides,tulare,kgco2e_stand,pasture_establishment_c_credit,-4862.926873277238
-scen_0013,eliminate herbicides,tulare,kgco2e_stand,no_c_credit,3143.2874862589197
-scen_0014,gravity fed (no pump),tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,137.77850328150097
-scen_0014,gravity fed (no pump),tulare,kgco2e_hayr,pasture_establishment_c_credit,-1888.4856247492553
-scen_0014,gravity fed (no pump),tulare,kgco2e_hayr,no_c_credit,780.252495096131
-scen_0014,gravity fed (no pump),tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,5.537076050483336
-scen_0014,gravity fed (no pump),tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-75.89492029185905
-scen_0014,gravity fed (no pump),tulare,kgco2e_Mgyield,no_c_credit,31.35697732976262
-scen_0014,gravity fed (no pump),tulare,kgco2e_stand,conservation_crop_rotation_c_credit,413.335509844503
-scen_0014,gravity fed (no pump),tulare,kgco2e_stand,pasture_establishment_c_credit,-5665.456874247766
-scen_0014,gravity fed (no pump),tulare,kgco2e_stand,no_c_credit,2340.7574852883927
-scen_0015,no leaching n2o,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,608.8872679895585
-scen_0015,no leaching n2o,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1417.3768600411977
-scen_0015,no leaching n2o,tulare,kgco2e_hayr,no_c_credit,1251.3612598041886
-scen_0015,no leaching n2o,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,24.470109841016722
-scen_0015,no leaching n2o,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-56.961886501325665
-scen_0015,no leaching n2o,tulare,kgco2e_Mgyield,no_c_credit,50.29001112029601
-scen_0015,no leaching n2o,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1826.6618039686755
-scen_0015,no leaching n2o,tulare,kgco2e_stand,pasture_establishment_c_credit,-4252.130580123593
-scen_0015,no leaching n2o,tulare,kgco2e_stand,no_c_credit,3754.083779412565
-scen_0018,no fertilizer offsets,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,1101.9956453630787
-scen_0018,no fertilizer offsets,tulare,kgco2e_hayr,pasture_establishment_c_credit,-924.2684826676775
-scen_0018,no fertilizer offsets,tulare,kgco2e_hayr,no_c_credit,1744.4696371777086
-scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,44.28726942409818
-scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-37.14472691824421
-scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,no_c_credit,70.10717070337746
-scen_0018,no fertilizer offsets,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,3305.986936089236
-scen_0018,no fertilizer offsets,tulare,kgco2e_stand,pasture_establishment_c_credit,-2772.8054480030323
-scen_0018,no fertilizer offsets,tulare,kgco2e_stand,no_c_credit,5233.408911533126
-scen_0019,double well depth,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,845.599976465255
-scen_0019,double well depth,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1180.664151565501
-scen_0019,double well depth,tulare,kgco2e_hayr,no_c_credit,1488.073968279885
-scen_0019,double well depth,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,33.98317782861044
-scen_0019,double well depth,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-47.44881851373195
-scen_0019,double well depth,tulare,kgco2e_Mgyield,no_c_credit,59.80307910788972
-scen_0019,double well depth,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2536.799929395765
-scen_0019,double well depth,tulare,kgco2e_stand,pasture_establishment_c_credit,-3541.9924546965035
-scen_0019,double well depth,tulare,kgco2e_stand,no_c_credit,4464.221904839655
-scen_1001,base,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,298.79148893662057
-scen_1001,base,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2419.3677072021987
-scen_1001,base,siskiyou,kgco2e_hayr,no_c_credit,842.4233281643844
-scen_1001,base,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,24.682916117288418
-scen_1001,base,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-199.86195184567458
-scen_1001,base,siskiyou,kgco2e_Mgyield,no_c_credit,69.59188970988103
-scen_1001,base,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1792.7489336197234
-scen_1001,base,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14516.206243213193
-scen_1001,base,siskiyou,kgco2e_stand,no_c_credit,5054.539968986307
-scen_1002,all ground irr,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,382.2163321706735
-scen_1002,all ground irr,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2335.942863968146
-scen_1002,all ground irr,siskiyou,kgco2e_hayr,no_c_credit,925.8481713984374
-scen_1002,all ground irr,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,31.574572954544767
-scen_1002,all ground irr,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-192.97029500841822
-scen_1002,all ground irr,siskiyou,kgco2e_Mgyield,no_c_credit,76.48354654713738
-scen_1002,all ground irr,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2293.2979930240413
-scen_1002,all ground irr,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14015.657183808875
-scen_1002,all ground irr,siskiyou,kgco2e_stand,no_c_credit,5555.089028390625
-scen_1003,all surface irr,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,215.36664570256758
-scen_1003,all surface irr,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2502.792550436252
-scen_1003,all surface irr,siskiyou,kgco2e_hayr,no_c_credit,758.9984849303314
-scen_1003,all surface irr,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,17.791259280032072
-scen_1003,all surface irr,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-206.75360868293092
-scen_1003,all surface irr,siskiyou,kgco2e_Mgyield,no_c_credit,62.70023287262469
-scen_1003,all surface irr,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1292.1998742154055
-scen_1003,all surface irr,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-15016.755302617512
-scen_1003,all surface irr,siskiyou,kgco2e_stand,no_c_credit,4553.990909581989
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,280.61448685655984
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2437.5447092822596
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_hayr,no_c_credit,824.2463260843238
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,23.181329110233182
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-201.36353885272982
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_Mgyield,no_c_credit,68.0903027028258
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2244.9158948524787
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14064.039281980438
-scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_stand,no_c_credit,5506.706930219063
-scen_1006,double pump pressure,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,363.0286182268414
-scen_1006,double pump pressure,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2355.130577911978
-scen_1006,double pump pressure,siskiyou,kgco2e_hayr,no_c_credit,906.6604574546052
-scen_1006,double pump pressure,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,29.989491881975816
-scen_1006,double pump pressure,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-194.55537608098717
-scen_1006,double pump pressure,siskiyou,kgco2e_Mgyield,no_c_credit,74.89846547456844
-scen_1006,double pump pressure,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2178.1717093610487
-scen_1006,double pump pressure,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14130.783467471869
-scen_1006,double pump pressure,siskiyou,kgco2e_stand,no_c_credit,5439.9627447276325
-scen_1007,eliminate pesticides,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,215.70806890646026
-scen_1007,eliminate pesticides,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2502.4511272323593
-scen_1007,eliminate pesticides,siskiyou,kgco2e_hayr,no_c_credit,759.3399081342241
-scen_1007,eliminate pesticides,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,17.81946396662529
-scen_1007,eliminate pesticides,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-206.72540399633772
-scen_1007,eliminate pesticides,siskiyou,kgco2e_Mgyield,no_c_credit,62.72843755921791
-scen_1007,eliminate pesticides,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1294.2484134387616
-scen_1007,eliminate pesticides,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-15014.706763394155
-scen_1007,eliminate pesticides,siskiyou,kgco2e_stand,no_c_credit,4556.039448805345
-scen_1008,electrify irrigation,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,229.23487167070988
-scen_1008,electrify irrigation,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2488.9243244681097
-scen_1008,electrify irrigation,siskiyou,kgco2e_hayr,no_c_credit,772.8667108984737
-scen_1008,electrify irrigation,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,18.936901880112515
-scen_1008,electrify irrigation,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-205.60796608285048
-scen_1008,electrify irrigation,siskiyou,kgco2e_Mgyield,no_c_credit,63.84587547270513
-scen_1008,electrify irrigation,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1375.4092300242594
-scen_1008,electrify irrigation,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14933.545946808657
-scen_1008,electrify irrigation,siskiyou,kgco2e_stand,no_c_credit,4637.200265390843
-scen_1009,electrify harvest equip,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,200.7011967360035
-scen_1009,electrify harvest equip,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2517.457999402816
-scen_1009,electrify harvest equip,siskiyou,kgco2e_hayr,no_c_credit,744.3330359637673
-scen_1009,electrify harvest equip,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,16.579758751846477
-scen_1009,electrify harvest equip,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-207.96510921111653
-scen_1009,electrify harvest equip,siskiyou,kgco2e_Mgyield,no_c_credit,61.48873234443909
-scen_1009,electrify harvest equip,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1204.207180416021
-scen_1009,electrify harvest equip,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-15104.747996416896
-scen_1009,electrify harvest equip,siskiyou,kgco2e_stand,no_c_credit,4465.998215782605
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,273.6841574233818
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2444.4750387154377
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_hayr,no_c_credit,817.3159966511457
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,22.608820366181934
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-201.93604759678107
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_Mgyield,no_c_credit,67.51779395877455
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1642.1049445402907
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14666.850232292625
-scen_1010,electrify fieldops equip,siskiyou,kgco2e_stand,no_c_credit,4903.895979906874
-scen_1015,no leaching n2o,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,285.20888914742847
-scen_1015,no leaching n2o,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2432.950306991391
-scen_1015,no leaching n2o,siskiyou,kgco2e_hayr,no_c_credit,828.8407283751924
-scen_1015,no leaching n2o,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,23.56086885802916
-scen_1015,no leaching n2o,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-200.98399910493384
-scen_1015,no leaching n2o,siskiyou,kgco2e_Mgyield,no_c_credit,68.46984245062177
-scen_1015,no leaching n2o,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1711.2533348845707
-scen_1015,no leaching n2o,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14597.701841948347
-scen_1015,no leaching n2o,siskiyou,kgco2e_stand,no_c_credit,4973.044370251155
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,419.24487403160686
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2298.9143221072127
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_hayr,no_c_credit,962.8767132593707
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,34.63346996647669
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-189.9113979964863
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,no_c_credit,79.54244355906931
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2515.469244189641
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-13793.485932643276
-scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,no_c_credit,5777.260279556225
-scen_1019,double well depth,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,382.21633217067347
-scen_1019,double well depth,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2335.942863968146
-scen_1019,double well depth,siskiyou,kgco2e_hayr,no_c_credit,925.8481713984373
-scen_1019,double well depth,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,31.574572954544763
-scen_1019,double well depth,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-192.97029500841825
-scen_1019,double well depth,siskiyou,kgco2e_Mgyield,no_c_credit,76.48354654713738
-scen_1019,double well depth,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2293.297993024041
-scen_1019,double well depth,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14015.657183808875
-scen_1019,double well depth,siskiyou,kgco2e_stand,no_c_credit,5555.089028390625
-scen_2001,base,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1114.9947486384838
-scen_2001,base,imperial,kgco2e_hayr,pasture_establishment_c_credit,-299.9406623850218
-scen_2001,base,imperial,kgco2e_hayr,no_c_credit,1726.323465645734
-scen_2001,base,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,69.08159085238849
-scen_2001,base,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-18.583386284265487
-scen_2001,base,imperial,kgco2e_Mgyield,no_c_credit,106.9576080768456
-scen_2001,base,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3344.9842459154515
-scen_2001,base,imperial,kgco2e_stand,pasture_establishment_c_credit,-899.8219871550655
-scen_2001,base,imperial,kgco2e_stand,no_c_credit,5178.970396937202
-scen_2002,all ground irr,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1083.849473831104
-scen_2002,all ground irr,imperial,kgco2e_hayr,pasture_establishment_c_credit,-331.0859371924016
-scen_2002,all ground irr,imperial,kgco2e_hayr,no_c_credit,1695.178190838354
-scen_2002,all ground irr,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,67.15192693795672
-scen_2002,all ground irr,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-20.513050198697258
-scen_2002,all ground irr,imperial,kgco2e_Mgyield,no_c_credit,105.02794416241383
-scen_2002,all ground irr,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3251.548421493312
-scen_2002,all ground irr,imperial,kgco2e_stand,pasture_establishment_c_credit,-993.2578115772048
-scen_2002,all ground irr,imperial,kgco2e_stand,no_c_credit,5085.534572515063
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1015.3825837418148
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_hayr,pasture_establishment_c_credit,-399.55282728169084
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_hayr,no_c_credit,1626.7113007490648
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,62.909932351112936
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-24.75504478554104
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_Mgyield,no_c_credit,100.78594957557004
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,4061.530334967259
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_stand,pasture_establishment_c_credit,-183.275898103258
-scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_stand,no_c_credit,5895.51648598901
-scen_2008,electrify irrigation,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1083.849473831104
-scen_2008,electrify irrigation,imperial,kgco2e_hayr,pasture_establishment_c_credit,-331.0859371924016
-scen_2008,electrify irrigation,imperial,kgco2e_hayr,no_c_credit,1695.178190838354
-scen_2008,electrify irrigation,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,67.15192693795672
-scen_2008,electrify irrigation,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-20.513050198697258
-scen_2008,electrify irrigation,imperial,kgco2e_Mgyield,no_c_credit,105.02794416241383
-scen_2008,electrify irrigation,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3251.548421493312
-scen_2008,electrify irrigation,imperial,kgco2e_stand,pasture_establishment_c_credit,-993.2578115772048
-scen_2008,electrify irrigation,imperial,kgco2e_stand,no_c_credit,5085.534572515063
-scen_2009,electrify harvest equip,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,741.2053023732333
-scen_2009,electrify harvest equip,imperial,kgco2e_hayr,pasture_establishment_c_credit,-673.7301086502723
-scen_2009,electrify harvest equip,imperial,kgco2e_hayr,no_c_credit,1352.5340193804834
-scen_2009,electrify harvest equip,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,45.922764657585326
-scen_2009,electrify harvest equip,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-41.74221247906865
-scen_2009,electrify harvest equip,imperial,kgco2e_Mgyield,no_c_credit,83.79878188204245
-scen_2009,electrify harvest equip,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,2223.6159071197003
-scen_2009,electrify harvest equip,imperial,kgco2e_stand,pasture_establishment_c_credit,-2021.1903259508167
-scen_2009,electrify harvest equip,imperial,kgco2e_stand,no_c_credit,4057.602058141451
-scen_2010,electrify fieldops equip,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1006.6114589476165
-scen_2010,electrify fieldops equip,imperial,kgco2e_hayr,pasture_establishment_c_credit,-408.3239520758891
-scen_2010,electrify fieldops equip,imperial,kgco2e_hayr,no_c_credit,1617.9401759548666
-scen_2010,electrify fieldops equip,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,62.36650086402478
-scen_2010,electrify fieldops equip,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-25.298476272629195
-scen_2010,electrify fieldops equip,imperial,kgco2e_Mgyield,no_c_credit,100.24251808848189
-scen_2010,electrify fieldops equip,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3019.8343768428495
-scen_2010,electrify fieldops equip,imperial,kgco2e_stand,pasture_establishment_c_credit,-1224.9718562276676
-scen_2010,electrify fieldops equip,imperial,kgco2e_stand,no_c_credit,4853.8205278646
-scen_2015,no leaching n2o,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,977.6207532366446
-scen_2015,no leaching n2o,imperial,kgco2e_hayr,pasture_establishment_c_credit,-437.31465778686095
-scen_2015,no leaching n2o,imperial,kgco2e_hayr,no_c_credit,1588.9494702438947
-scen_2015,no leaching n2o,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,60.570327318909094
-scen_2015,no leaching n2o,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-27.09464981774488
-scen_2015,no leaching n2o,imperial,kgco2e_Mgyield,no_c_credit,98.44634454336621
-scen_2015,no leaching n2o,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,2932.862259709934
-scen_2015,no leaching n2o,imperial,kgco2e_stand,pasture_establishment_c_credit,-1311.9439733605832
-scen_2015,no leaching n2o,imperial,kgco2e_stand,no_c_credit,4766.8484107316845
-scen_2018,no fertilizer offsets,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1324.7562440210766
-scen_2018,no fertilizer offsets,imperial,kgco2e_hayr,pasture_establishment_c_credit,-90.17916700242904
-scen_2018,no fertilizer offsets,imperial,kgco2e_hayr,no_c_credit,1936.0849610283267
-scen_2018,no fertilizer offsets,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,82.07775771173911
-scen_2018,no fertilizer offsets,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-5.5872194249148635
-scen_2018,no fertilizer offsets,imperial,kgco2e_Mgyield,no_c_credit,119.95377493619623
-scen_2018,no fertilizer offsets,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3974.26873206323
-scen_2018,no fertilizer offsets,imperial,kgco2e_stand,pasture_establishment_c_credit,-270.5375010072871
-scen_2018,no fertilizer offsets,imperial,kgco2e_stand,no_c_credit,5808.254883084981
-scen_0001,base,tulare,GJ_hayr,energy,18.193126827293
-scen_0001,base,tulare,GJ_Mgyield,energy,0.7311498124855553
-scen_0001,base,tulare,GJ_stand,energy,54.579380481879
-scen_0002,all ground irr,tulare,GJ_hayr,energy,21.783273284717694
-scen_0002,all ground irr,tulare,GJ_Mgyield,energy,0.8754314928179251
-scen_0002,all ground irr,tulare,GJ_stand,energy,65.34981985415308
-scen_0003,all surface irr,tulare,GJ_hayr,energy,14.602980369868302
-scen_0003,all surface irr,tulare,GJ_Mgyield,energy,0.5868681321531857
-scen_0003,all surface irr,tulare,GJ_stand,energy,43.80894110960491
-scen_0004,defecit irr,tulare,GJ_hayr,energy,16.24268418660511
-scen_0004,defecit irr,tulare,GJ_Mgyield,energy,0.8625822534350335
-scen_0004,defecit irr,tulare,GJ_stand,energy,48.72805255981533
-scen_0005,change stand life from 3 to 4 years,tulare,GJ_hayr,energy,18.993745436170727
-scen_0005,change stand life from 3 to 4 years,tulare,GJ_Mgyield,energy,0.763325268156827
-scen_0005,change stand life from 3 to 4 years,tulare,GJ_stand,energy,75.9749817446829
-scen_0006,double pump pressure,tulare,GJ_hayr,energy,20.957539599510017
-scen_0006,double pump pressure,tulare,GJ_Mgyield,energy,0.84224670634148
-scen_0006,double pump pressure,tulare,GJ_stand,energy,62.872618798530056
-scen_0007,eliminate pesticides,tulare,GJ_hayr,energy,15.464433386072178
-scen_0007,eliminate pesticides,tulare,GJ_Mgyield,energy,0.6214884158043549
-scen_0007,eliminate pesticides,tulare,GJ_stand,energy,46.39330015821654
-scen_0008,electrify irrigation,tulare,GJ_hayr,energy,15.396928988749119
-scen_0008,electrify irrigation,tulare,GJ_Mgyield,energy,0.6187755326417606
-scen_0008,electrify irrigation,tulare,GJ_stand,energy,46.19078696624736
-scen_0009,electrify harvest equip,tulare,GJ_hayr,energy,14.765990774904976
-scen_0009,electrify harvest equip,tulare,GJ_Mgyield,energy,0.5934192340174875
-scen_0009,electrify harvest equip,tulare,GJ_stand,energy,44.297972324714934
-scen_0010,electrify fieldops equip,tulare,GJ_hayr,energy,17.6062616341783
-scen_0010,electrify fieldops equip,tulare,GJ_Mgyield,energy,0.7075647311538293
-scen_0010,electrify fieldops equip,tulare,GJ_stand,energy,52.8187849025349
-scen_0011,change prod irr from flood to drip,tulare,GJ_hayr,energy,16.83067526716881
-scen_0011,change prod irr from flood to drip,tulare,GJ_Mgyield,energy,0.6763952773162057
-scen_0011,change prod irr from flood to drip,tulare,GJ_stand,energy,50.492025801506436
-scen_0012,eliminate insecticides,tulare,GJ_hayr,energy,18.060547411164823
-scen_0012,eliminate insecticides,tulare,GJ_Mgyield,energy,0.7258216786160031
-scen_0012,eliminate insecticides,tulare,GJ_stand,energy,54.18164223349447
-scen_0013,eliminate herbicides,tulare,GJ_hayr,energy,15.597012802200354
-scen_0013,eliminate herbicides,tulare,GJ_Mgyield,energy,0.6268165496739072
-scen_0013,eliminate herbicides,tulare,GJ_stand,energy,46.79103840660106
-scen_0014,gravity fed (no pump),tulare,GJ_hayr,energy,11.838567597651284
-scen_0014,gravity fed (no pump),tulare,GJ_Mgyield,energy,0.4757712382972609
-scen_0014,gravity fed (no pump),tulare,GJ_stand,energy,35.51570279295385
-scen_0015,no leaching n2o,tulare,GJ_hayr,energy,18.193126827293
-scen_0015,no leaching n2o,tulare,GJ_Mgyield,energy,0.7311498124855553
-scen_0015,no leaching n2o,tulare,GJ_stand,energy,54.579380481879
-scen_0016,pasture establishment c credit,tulare,GJ_hayr,energy,18.193126827293
-scen_0016,pasture establishment c credit,tulare,GJ_Mgyield,energy,0.7311498124855553
-scen_0016,pasture establishment c credit,tulare,GJ_stand,energy,54.579380481879
-scen_0017,no carbon credit,tulare,GJ_hayr,energy,18.193126827293
-scen_0017,no carbon credit,tulare,GJ_Mgyield,energy,0.7311498124855553
-scen_0017,no carbon credit,tulare,GJ_stand,energy,54.579380481879
-scen_0018,no fertilizer offsets,tulare,GJ_hayr,energy,21.879526096468712
-scen_0018,no fertilizer offsets,tulare,GJ_Mgyield,energy,0.879299724262197
-scen_0018,no fertilizer offsets,tulare,GJ_stand,energy,65.63857828940614
-scen_0019,double well depth,tulare,GJ_hayr,energy,21.783273284717694
-scen_0019,double well depth,tulare,GJ_Mgyield,energy,0.875431492817925
-scen_0019,double well depth,tulare,GJ_stand,energy,65.34981985415308
-scen_1001,base,siskiyou,GJ_hayr,energy,11.583295213170917
-scen_1001,base,siskiyou,GJ_Mgyield,energy,0.9568863729218643
-scen_1001,base,siskiyou,GJ_stand,energy,69.49977127902551
-scen_1002,all ground irr,siskiyou,GJ_hayr,energy,12.755392337069463
-scen_1002,all ground irr,siskiyou,GJ_Mgyield,energy,1.0537123403999393
-scen_1002,all ground irr,siskiyou,GJ_stand,energy,76.53235402241678
-scen_1003,all surface irr,siskiyou,GJ_hayr,energy,10.41119808927237
-scen_1003,all surface irr,siskiyou,GJ_Mgyield,energy,0.8600604054437894
-scen_1003,all surface irr,siskiyou,GJ_stand,energy,62.46718853563423
-scen_1005,change stand life from 6 to 8 years,siskiyou,GJ_hayr,energy,11.26733229483086
-scen_1005,change stand life from 6 to 8 years,siskiyou,GJ_Mgyield,energy,0.930784939319063
-scen_1005,change stand life from 6 to 8 years,siskiyou,GJ_stand,energy,90.13865835864688
-scen_1006,double pump pressure,siskiyou,GJ_hayr,energy,12.4858099985728
-scen_1006,double pump pressure,siskiyou,GJ_Mgyield,energy,1.0314423678799822
-scen_1006,double pump pressure,siskiyou,GJ_stand,energy,74.9148599914368
-scen_1007,eliminate pesticides,siskiyou,GJ_hayr,energy,10.415994995563127
-scen_1007,eliminate pesticides,siskiyou,GJ_Mgyield,energy,0.8604566738784045
-scen_1007,eliminate pesticides,siskiyou,GJ_stand,energy,62.49596997337877
-scen_1008,electrify irrigation,siskiyou,GJ_hayr,energy,10.670403362302084
-scen_1008,electrify irrigation,siskiyou,GJ_Mgyield,energy,0.8814731372258128
-scen_1008,electrify irrigation,siskiyou,GJ_stand,energy,64.02242017381252
+scen_0001,base,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,886.1384068061011
+scen_0001,base,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1140.125721224655
+scen_0001,base,tulare,kgco2e_hayr,no_c_credit,1528.612398620731
+scen_0001,base,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,35.61234614165179
+scen_0001,base,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-45.819650200690596
+scen_0001,base,tulare,kgco2e_Mgyield,no_c_credit,61.432247420931084
+scen_0001,base,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2658.4152204183038
+scen_0001,base,tulare,kgco2e_stand,pasture_establishment_c_credit,-3420.3771636739657
+scen_0001,base,tulare,kgco2e_stand,no_c_credit,4585.837195862193
+scen_0002,all ground irr,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,1934.6681703310126
+scen_0002,all ground irr,tulare,kgco2e_hayr,pasture_establishment_c_credit,-91.59595769974362
+scen_0002,all ground irr,tulare,kgco2e_hayr,no_c_credit,2577.1421621456425
+scen_0002,all ground irr,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,77.75091568301698
+scen_0002,all ground irr,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-3.681080659325403
+scen_0002,all ground irr,tulare,kgco2e_Mgyield,no_c_credit,103.57081696229628
+scen_0002,all ground irr,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,5804.004510993038
+scen_0002,all ground irr,tulare,kgco2e_stand,pasture_establishment_c_credit,-274.78787309923155
+scen_0002,all ground irr,tulare,kgco2e_stand,no_c_credit,7731.426486436927
+scen_0003,all surface irr,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,-162.39135671881024
+scen_0003,all surface irr,tulare,kgco2e_hayr,pasture_establishment_c_credit,-2188.6554847495663
+scen_0003,all surface irr,tulare,kgco2e_hayr,no_c_credit,480.0826350958197
+scen_0003,all surface irr,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,-6.526223399713391
+scen_0003,all surface irr,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-87.95821974205577
+scen_0003,all surface irr,tulare,kgco2e_Mgyield,no_c_credit,19.2936778795659
+scen_0003,all surface irr,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,-487.1740701564306
+scen_0003,all surface irr,tulare,kgco2e_stand,pasture_establishment_c_credit,-6565.9664542487
+scen_0003,all surface irr,tulare,kgco2e_stand,no_c_credit,1440.2479052874585
+scen_0004,defecit irr,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,722.5320194492092
+scen_0004,defecit irr,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1303.732108581547
+scen_0004,defecit irr,tulare,kgco2e_hayr,no_c_credit,1365.0060112638391
+scen_0004,defecit irr,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,38.37070833584486
+scen_0004,defecit irr,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-43.06128800649753
+scen_0004,defecit irr,tulare,kgco2e_Mgyield,no_c_credit,64.19060961512415
+scen_0004,defecit irr,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2167.5960583476276
+scen_0004,defecit irr,tulare,kgco2e_stand,pasture_establishment_c_credit,-3911.196325744642
+scen_0004,defecit irr,tulare,kgco2e_stand,no_c_credit,4095.0180337915167
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,921.5278891396565
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1104.7362388910997
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_hayr,no_c_credit,1564.0018809542864
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,37.034587277976
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-44.397409064366386
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_Mgyield,no_c_credit,62.854488557255294
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,3686.111556558626
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_stand,pasture_establishment_c_credit,-2392.6808275336434
+scen_0005,change stand life from 3 to 4 years,tulare,kgco2e_stand,no_c_credit,5613.533532002515
+scen_0006,double pump pressure,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,886.1384068061011
+scen_0006,double pump pressure,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1140.125721224655
+scen_0006,double pump pressure,tulare,kgco2e_hayr,no_c_credit,1528.612398620731
+scen_0006,double pump pressure,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,35.61234614165179
+scen_0006,double pump pressure,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-45.819650200690596
+scen_0006,double pump pressure,tulare,kgco2e_Mgyield,no_c_credit,61.432247420931084
+scen_0006,double pump pressure,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2658.4152204183038
+scen_0006,double pump pressure,tulare,kgco2e_stand,pasture_establishment_c_credit,-3420.3771636739657
+scen_0006,double pump pressure,tulare,kgco2e_stand,no_c_credit,4585.837195862193
+scen_0007,eliminate pesticides,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,691.9217178251807
+scen_0007,eliminate pesticides,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1334.3424102055756
+scen_0007,eliminate pesticides,tulare,kgco2e_hayr,no_c_credit,1334.3957096398108
+scen_0007,eliminate pesticides,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,27.807118536854507
+scen_0007,eliminate pesticides,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-53.624877805487884
+scen_0007,eliminate pesticides,tulare,kgco2e_Mgyield,no_c_credit,53.627019816133796
+scen_0007,eliminate pesticides,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2075.7651534755423
+scen_0007,eliminate pesticides,tulare,kgco2e_stand,pasture_establishment_c_credit,-4003.027230616727
+scen_0007,eliminate pesticides,tulare,kgco2e_stand,no_c_credit,4003.1871289194314
+scen_0008,electrify irrigation,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,385.7048230010283
+scen_0008,electrify irrigation,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1640.559305029728
+scen_0008,electrify irrigation,tulare,kgco2e_hayr,no_c_credit,1028.1788148156581
+scen_0008,electrify irrigation,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,15.50079937819775
+scen_0008,electrify irrigation,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-65.93119696414463
+scen_0008,electrify irrigation,tulare,kgco2e_Mgyield,no_c_credit,41.32070065747704
+scen_0008,electrify irrigation,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1157.1144690030849
+scen_0008,electrify irrigation,tulare,kgco2e_stand,pasture_establishment_c_credit,-4921.677915089184
+scen_0008,electrify irrigation,tulare,kgco2e_stand,no_c_credit,3084.536444446974
+scen_0009,electrify harvest equip,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,625.0121951006482
+scen_0009,electrify harvest equip,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1401.251932930108
+scen_0009,electrify harvest equip,tulare,kgco2e_hayr,no_c_credit,1267.4861869152783
+scen_0009,electrify harvest equip,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,25.11814233952763
+scen_0009,electrify harvest equip,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-56.31385400281476
+scen_0009,electrify harvest equip,tulare,kgco2e_Mgyield,no_c_credit,50.93804361880692
+scen_0009,electrify harvest equip,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1875.0365853019448
+scen_0009,electrify harvest equip,tulare,kgco2e_stand,pasture_establishment_c_credit,-4203.755798790325
+scen_0009,electrify harvest equip,tulare,kgco2e_stand,no_c_credit,3802.458560745834
+scen_0010,electrify fieldops equip,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,841.4229702674644
+scen_0010,electrify fieldops equip,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1184.841157763292
+scen_0010,electrify fieldops equip,tulare,kgco2e_hayr,no_c_credit,1483.8969620820944
+scen_0010,electrify fieldops equip,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,33.81531128608274
+scen_0010,electrify fieldops equip,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-47.61668505625965
+scen_0010,electrify fieldops equip,tulare,kgco2e_Mgyield,no_c_credit,59.63521256536203
+scen_0010,electrify fieldops equip,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2524.2689108023933
+scen_0010,electrify fieldops equip,tulare,kgco2e_stand,pasture_establishment_c_credit,-3554.523473289876
+scen_0010,electrify fieldops equip,tulare,kgco2e_stand,no_c_credit,4451.690886246282
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,838.5100130394148
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1187.7541149913413
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_hayr,no_c_credit,1480.9840048540448
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,33.698244651452804
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-47.733751690889584
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_Mgyield,no_c_credit,59.518145930732096
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2515.530039118245
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_stand,pasture_establishment_c_credit,-3563.2623449740245
+scen_0011,change prod irr from flood to drip,tulare,kgco2e_stand,no_c_credit,4442.952014562134
+scen_0012,eliminate insecticides,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,876.7019729295579
+scen_0012,eliminate insecticides,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1149.5621551011982
+scen_0012,eliminate insecticides,tulare,kgco2e_hayr,no_c_credit,1519.1759647441877
+scen_0012,eliminate insecticides,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,35.233112438459194
+scen_0012,eliminate insecticides,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-46.19888390388319
+scen_0012,eliminate insecticides,tulare,kgco2e_Mgyield,no_c_credit,61.05301371773849
+scen_0012,eliminate insecticides,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2630.1059187886735
+scen_0012,eliminate insecticides,tulare,kgco2e_stand,pasture_establishment_c_credit,-3448.686465303596
+scen_0012,eliminate insecticides,tulare,kgco2e_stand,no_c_credit,4557.527894232562
+scen_0013,eliminate herbicides,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,701.358151701724
+scen_0013,eliminate herbicides,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1324.9059763290322
+scen_0013,eliminate herbicides,tulare,kgco2e_hayr,no_c_credit,1343.8321435163539
+scen_0013,eliminate herbicides,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,28.186352240047107
+scen_0013,eliminate herbicides,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-53.24564410229528
+scen_0013,eliminate herbicides,tulare,kgco2e_Mgyield,no_c_credit,54.0062535193264
+scen_0013,eliminate herbicides,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2104.074455105172
+scen_0013,eliminate herbicides,tulare,kgco2e_stand,pasture_establishment_c_credit,-3974.7179289870974
+scen_0013,eliminate herbicides,tulare,kgco2e_stand,no_c_credit,4031.496430549061
+scen_0014,gravity fed (no pump),tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,-162.39135671881024
+scen_0014,gravity fed (no pump),tulare,kgco2e_hayr,pasture_establishment_c_credit,-2188.6554847495663
+scen_0014,gravity fed (no pump),tulare,kgco2e_hayr,no_c_credit,480.0826350958197
+scen_0014,gravity fed (no pump),tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,-6.526223399713391
+scen_0014,gravity fed (no pump),tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-87.95821974205577
+scen_0014,gravity fed (no pump),tulare,kgco2e_Mgyield,no_c_credit,19.2936778795659
+scen_0014,gravity fed (no pump),tulare,kgco2e_stand,conservation_crop_rotation_c_credit,-487.1740701564306
+scen_0014,gravity fed (no pump),tulare,kgco2e_stand,pasture_establishment_c_credit,-6565.9664542487
+scen_0014,gravity fed (no pump),tulare,kgco2e_stand,no_c_credit,1440.2479052874585
+scen_0015,no leaching n2o,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,951.7620950261621
+scen_0015,no leaching n2o,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1074.502033004594
+scen_0015,no leaching n2o,tulare,kgco2e_hayr,no_c_credit,1594.236086840792
+scen_0015,no leaching n2o,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,38.24964690870456
+scen_0015,no leaching n2o,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-43.182349433637825
+scen_0015,no leaching n2o,tulare,kgco2e_Mgyield,no_c_credit,64.06954818798386
+scen_0015,no leaching n2o,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,2855.2862850784863
+scen_0015,no leaching n2o,tulare,kgco2e_stand,pasture_establishment_c_credit,-3223.506099013783
+scen_0015,no leaching n2o,tulare,kgco2e_stand,no_c_credit,4782.708260522375
+scen_0018,no fertilizer offsets,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,1398.0652934597927
+scen_0018,no fertilizer offsets,tulare,kgco2e_hayr,pasture_establishment_c_credit,-628.1988345709635
+scen_0018,no fertilizer offsets,tulare,kgco2e_hayr,no_c_credit,2040.5392852744226
+scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,56.18578855956809
+scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-25.2462077827743
+scen_0018,no fertilizer offsets,tulare,kgco2e_Mgyield,no_c_credit,82.00568983884739
+scen_0018,no fertilizer offsets,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,4194.195880379378
+scen_0018,no fertilizer offsets,tulare,kgco2e_stand,pasture_establishment_c_credit,-1884.5965037128917
+scen_0018,no fertilizer offsets,tulare,kgco2e_stand,no_c_credit,6121.617855823267
+scen_0019,double well depth,tulare,kgco2e_hayr,conservation_crop_rotation_c_credit,545.4301164649439
+scen_0019,double well depth,tulare,kgco2e_hayr,pasture_establishment_c_credit,-1480.8340115658123
+scen_0019,double well depth,tulare,kgco2e_hayr,no_c_credit,1187.9041082795738
+scen_0019,double well depth,tulare,kgco2e_Mgyield,conservation_crop_rotation_c_credit,21.919878378413717
+scen_0019,double well depth,tulare,kgco2e_Mgyield,pasture_establishment_c_credit,-59.512117963928674
+scen_0019,double well depth,tulare,kgco2e_Mgyield,no_c_credit,47.739779657693006
+scen_0019,double well depth,tulare,kgco2e_stand,conservation_crop_rotation_c_credit,1636.2903493948318
+scen_0019,double well depth,tulare,kgco2e_stand,pasture_establishment_c_credit,-4442.502034697438
+scen_0019,double well depth,tulare,kgco2e_stand,no_c_credit,3563.7123248387206
+scen_1001,base,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,365.2838674093051
+scen_1001,base,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2352.875328729514
+scen_1001,base,siskiyou,kgco2e_hayr,no_c_credit,908.915706637069
+scen_1001,base,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,30.175796139143404
+scen_1001,base,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-194.3690718238196
+scen_1001,base,siskiyou,kgco2e_Mgyield,no_c_credit,75.084769731736
+scen_1001,base,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2191.703204455831
+scen_1001,base,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14117.251972377086
+scen_1001,base,siskiyou,kgco2e_stand,no_c_credit,5453.494239822414
+scen_1002,all ground irr,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,365.2838674093051
+scen_1002,all ground irr,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2352.875328729514
+scen_1002,all ground irr,siskiyou,kgco2e_hayr,no_c_credit,908.915706637069
+scen_1002,all ground irr,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,30.175796139143404
+scen_1002,all ground irr,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-194.3690718238196
+scen_1002,all ground irr,siskiyou,kgco2e_Mgyield,no_c_credit,75.084769731736
+scen_1002,all ground irr,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2191.703204455831
+scen_1002,all ground irr,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14117.251972377086
+scen_1002,all ground irr,siskiyou,kgco2e_stand,no_c_credit,5453.494239822414
+scen_1003,all surface irr,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,281.8590241752521
+scen_1003,all surface irr,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2436.3001719635668
+scen_1003,all surface irr,siskiyou,kgco2e_hayr,no_c_credit,825.490863403016
+scen_1003,all surface irr,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,23.28413930188705
+scen_1003,all surface irr,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-201.26072866107597
+scen_1003,all surface irr,siskiyou,kgco2e_Mgyield,no_c_credit,68.19311289447965
+scen_1003,all surface irr,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1691.1541450515126
+scen_1003,all surface irr,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14617.801031781404
+scen_1003,all surface irr,siskiyou,kgco2e_stand,no_c_credit,4952.945180418095
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,346.0564081147631
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2372.102788024056
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_hayr,no_c_credit,889.6882473425269
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,28.5874317362456
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-195.95743622671742
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_Mgyield,no_c_credit,73.4964053288382
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2768.4512649181047
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-13540.503911914811
+scen_1005,change stand life from 6 to 8 years,siskiyou,kgco2e_stand,no_c_credit,6030.242300284688
+scen_1006,double pump pressure,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,365.2838674093051
+scen_1006,double pump pressure,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2352.875328729514
+scen_1006,double pump pressure,siskiyou,kgco2e_hayr,no_c_credit,908.915706637069
+scen_1006,double pump pressure,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,30.175796139143404
+scen_1006,double pump pressure,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-194.3690718238196
+scen_1006,double pump pressure,siskiyou,kgco2e_Mgyield,no_c_credit,75.084769731736
+scen_1006,double pump pressure,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2191.703204455831
+scen_1006,double pump pressure,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14117.251972377086
+scen_1006,double pump pressure,siskiyou,kgco2e_stand,no_c_credit,5453.494239822414
+scen_1007,eliminate pesticides,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,282.2004473791448
+scen_1007,eliminate pesticides,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2435.958748759674
+scen_1007,eliminate pesticides,siskiyou,kgco2e_hayr,no_c_credit,825.8322866069086
+scen_1007,eliminate pesticides,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,23.312343988480276
+scen_1007,eliminate pesticides,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-201.23252397448275
+scen_1007,eliminate pesticides,siskiyou,kgco2e_Mgyield,no_c_credit,68.22131758107288
+scen_1007,eliminate pesticides,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1693.202684274869
+scen_1007,eliminate pesticides,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14615.752492558047
+scen_1007,eliminate pesticides,siskiyou,kgco2e_stand,no_c_credit,4954.993719641452
+scen_1008,electrify irrigation,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,265.4681567565293
+scen_1008,electrify irrigation,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2452.6910393822895
+scen_1008,electrify irrigation,siskiyou,kgco2e_hayr,no_c_credit,809.0999959842932
+scen_1008,electrify irrigation,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,21.930103392009617
+scen_1008,electrify irrigation,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-202.6147645709534
+scen_1008,electrify irrigation,siskiyou,kgco2e_Mgyield,no_c_credit,66.83907698460222
+scen_1008,electrify irrigation,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1592.808940539176
+scen_1008,electrify irrigation,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14716.14623629374
+scen_1008,electrify irrigation,siskiyou,kgco2e_stand,no_c_credit,4854.5999759057595
+scen_1009,electrify harvest equip,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,256.95640352594364
+scen_1009,electrify harvest equip,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2461.2027926128753
+scen_1009,electrify harvest equip,siskiyou,kgco2e_hayr,no_c_credit,800.5882427537075
+scen_1009,electrify harvest equip,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,21.226954544800755
+scen_1009,electrify harvest equip,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-203.31791341816228
+scen_1009,electrify harvest equip,siskiyou,kgco2e_Mgyield,no_c_credit,66.13592813739336
+scen_1009,electrify harvest equip,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,1541.7384211556619
+scen_1009,electrify harvest equip,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14767.216755677255
+scen_1009,electrify harvest equip,siskiyou,kgco2e_stand,no_c_credit,4803.529456522245
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,340.17653589606635
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2377.9826602427524
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_hayr,no_c_credit,883.8083751238303
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,28.10170038803692
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-196.4431675749261
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_Mgyield,no_c_credit,73.01067398062952
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2041.0592153763982
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14267.895961456517
+scen_1010,electrify fieldops equip,siskiyou,kgco2e_stand,no_c_credit,5302.850250742981
+scen_1015,no leaching n2o,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,351.701267620113
+scen_1015,no leaching n2o,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2366.457928518706
+scen_1015,no leaching n2o,siskiyou,kgco2e_hayr,no_c_credit,895.3331068478769
+scen_1015,no leaching n2o,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,29.053748879884147
+scen_1015,no leaching n2o,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-195.49111908307887
+scen_1015,no leaching n2o,siskiyou,kgco2e_Mgyield,no_c_credit,73.96272247247674
+scen_1015,no leaching n2o,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2110.207605720678
+scen_1015,no leaching n2o,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-14198.747571112239
+scen_1015,no leaching n2o,siskiyou,kgco2e_stand,no_c_credit,5371.998641087261
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,485.7372525042914
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2232.4219436345275
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_hayr,no_c_credit,1029.3690917320553
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,40.126349988331675
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-184.41851797463136
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_Mgyield,no_c_credit,85.03532358092428
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2914.423515025748
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-13394.531661807168
+scen_1018,no fertilizer offsets,siskiyou,kgco2e_stand,no_c_credit,6176.214550392331
+scen_1019,double well depth,siskiyou,kgco2e_hayr,conservation_crop_rotation_c_credit,448.7087106433581
+scen_1019,double well depth,siskiyou,kgco2e_hayr,pasture_establishment_c_credit,-2269.4504854954607
+scen_1019,double well depth,siskiyou,kgco2e_hayr,no_c_credit,992.340549871122
+scen_1019,double well depth,siskiyou,kgco2e_Mgyield,conservation_crop_rotation_c_credit,37.06745297639975
+scen_1019,double well depth,siskiyou,kgco2e_Mgyield,pasture_establishment_c_credit,-187.47741498656328
+scen_1019,double well depth,siskiyou,kgco2e_Mgyield,no_c_credit,81.97642656899235
+scen_1019,double well depth,siskiyou,kgco2e_stand,conservation_crop_rotation_c_credit,2692.2522638601486
+scen_1019,double well depth,siskiyou,kgco2e_stand,pasture_establishment_c_credit,-13616.702912972767
+scen_1019,double well depth,siskiyou,kgco2e_stand,no_c_credit,5954.0432992267315
+scen_2001,base,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1119.5052470034113
+scen_2001,base,imperial,kgco2e_hayr,pasture_establishment_c_credit,-264.2848892127147
+scen_2001,base,imperial,kgco2e_hayr,no_c_credit,1761.9792388180413
+scen_2001,base,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,69.36104723813988
+scen_2001,base,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-16.374265984082328
+scen_2001,base,imperial,kgco2e_Mgyield,no_c_credit,109.16672837702876
+scen_2001,base,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3358.515741010234
+scen_2001,base,imperial,kgco2e_stand,pasture_establishment_c_credit,-792.8546676381438
+scen_2001,base,imperial,kgco2e_stand,no_c_credit,5285.937716454124
+scen_2002,all ground irr,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1088.3599721960315
+scen_2002,all ground irr,imperial,kgco2e_hayr,pasture_establishment_c_credit,-295.4301640200945
+scen_2002,all ground irr,imperial,kgco2e_hayr,no_c_credit,1730.8339640106615
+scen_2002,all ground irr,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,67.43138332370809
+scen_2002,all ground irr,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-18.303929898514113
+scen_2002,all ground irr,imperial,kgco2e_Mgyield,no_c_credit,107.23706446259698
+scen_2002,all ground irr,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3265.0799165880944
+scen_2002,all ground irr,imperial,kgco2e_stand,pasture_establishment_c_credit,-886.2904920602832
+scen_2002,all ground irr,imperial,kgco2e_stand,no_c_credit,5192.501892031984
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1042.124413621045
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_hayr,pasture_establishment_c_credit,-341.665722595081
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_hayr,no_c_credit,1684.598405435675
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,64.56677257625032
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-21.168540645971888
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_Mgyield,no_c_credit,104.3724537151392
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,4168.497654484181
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_stand,pasture_establishment_c_credit,17.12724583580348
+scen_2005,change stand life from 3 to 4 years,imperial,kgco2e_stand,no_c_credit,6095.919629928071
+scen_2008,electrify irrigation,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1104.834171421901
+scen_2008,electrify irrigation,imperial,kgco2e_hayr,pasture_establishment_c_credit,-278.9559647942251
+scen_2008,electrify irrigation,imperial,kgco2e_hayr,no_c_credit,1747.3081632365308
+scen_2008,electrify irrigation,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,68.45207323451882
+scen_2008,electrify irrigation,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-17.283239987703382
+scen_2008,electrify irrigation,imperial,kgco2e_Mgyield,no_c_credit,108.2577543734077
+scen_2008,electrify irrigation,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3314.5025142657028
+scen_2008,electrify irrigation,imperial,kgco2e_stand,pasture_establishment_c_credit,-836.8678943826749
+scen_2008,electrify irrigation,imperial,kgco2e_stand,no_c_credit,5241.924489709592
+scen_2009,electrify harvest equip,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,745.36832935785
+scen_2009,electrify harvest equip,imperial,kgco2e_hayr,pasture_establishment_c_credit,-638.421806858276
+scen_2009,electrify harvest equip,imperial,kgco2e_hayr,no_c_credit,1387.8423211724798
+scen_2009,electrify harvest equip,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,46.180692802278315
+scen_2009,electrify harvest equip,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-39.55462041994389
+scen_2009,electrify harvest equip,imperial,kgco2e_Mgyield,no_c_credit,85.9863739411672
+scen_2009,electrify harvest equip,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,2236.1049880735504
+scen_2009,electrify harvest equip,imperial,kgco2e_stand,pasture_establishment_c_credit,-1915.2654205748272
+scen_2009,electrify harvest equip,imperial,kgco2e_stand,no_c_credit,4163.526963517441
+scen_2010,electrify fieldops equip,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1042.2672321199236
+scen_2010,electrify fieldops equip,imperial,kgco2e_hayr,pasture_establishment_c_credit,-341.5229040962024
+scen_2010,electrify fieldops equip,imperial,kgco2e_hayr,no_c_credit,1684.7412239345535
+scen_2010,electrify fieldops equip,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,64.57562116420794
+scen_2010,electrify fieldops equip,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-21.159692058014258
+scen_2010,electrify fieldops equip,imperial,kgco2e_Mgyield,no_c_credit,104.38130230309683
+scen_2010,electrify fieldops equip,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3126.801696359771
+scen_2010,electrify fieldops equip,imperial,kgco2e_stand,pasture_establishment_c_credit,-1024.5687122886065
+scen_2010,electrify fieldops equip,imperial,kgco2e_stand,no_c_credit,5054.223671803661
+scen_2015,no leaching n2o,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1013.2765264089518
+scen_2015,no leaching n2o,imperial,kgco2e_hayr,pasture_establishment_c_credit,-370.51360980717425
+scen_2015,no leaching n2o,imperial,kgco2e_hayr,no_c_credit,1655.7505182235818
+scen_2015,no leaching n2o,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,62.77944761909225
+scen_2015,no leaching n2o,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-22.95586560312995
+scen_2015,no leaching n2o,imperial,kgco2e_Mgyield,no_c_credit,102.58512875798114
+scen_2015,no leaching n2o,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,3039.8295792268555
+scen_2015,no leaching n2o,imperial,kgco2e_stand,pasture_establishment_c_credit,-1111.5408294215222
+scen_2015,no leaching n2o,imperial,kgco2e_stand,no_c_credit,4967.2515546707455
+scen_2018,no fertilizer offsets,imperial,kgco2e_hayr,conservation_crop_rotation_c_credit,1360.4120171933837
+scen_2018,no fertilizer offsets,imperial,kgco2e_hayr,pasture_establishment_c_credit,-23.37811902274234
+scen_2018,no fertilizer offsets,imperial,kgco2e_hayr,no_c_credit,2002.8860090080136
+scen_2018,no fertilizer offsets,imperial,kgco2e_Mgyield,conservation_crop_rotation_c_credit,84.28687801192228
+scen_2018,no fertilizer offsets,imperial,kgco2e_Mgyield,pasture_establishment_c_credit,-1.4484352102999196
+scen_2018,no fertilizer offsets,imperial,kgco2e_Mgyield,no_c_credit,124.09255915081117
+scen_2018,no fertilizer offsets,imperial,kgco2e_stand,conservation_crop_rotation_c_credit,4081.2360515801515
+scen_2018,no fertilizer offsets,imperial,kgco2e_stand,pasture_establishment_c_credit,-70.13435706822611
+scen_2018,no fertilizer offsets,imperial,kgco2e_stand,no_c_credit,6008.658027024041
+scen_0001,base,tulare,GJ_hayr,energy,NA
+scen_0001,base,tulare,GJ_Mgyield,energy,NA
+scen_0001,base,tulare,GJ_stand,energy,NA
+scen_0002,all ground irr,tulare,GJ_hayr,energy,NA
+scen_0002,all ground irr,tulare,GJ_Mgyield,energy,NA
+scen_0002,all ground irr,tulare,GJ_stand,energy,NA
+scen_0003,all surface irr,tulare,GJ_hayr,energy,NA
+scen_0003,all surface irr,tulare,GJ_Mgyield,energy,NA
+scen_0003,all surface irr,tulare,GJ_stand,energy,NA
+scen_0004,defecit irr,tulare,GJ_hayr,energy,NA
+scen_0004,defecit irr,tulare,GJ_Mgyield,energy,NA
+scen_0004,defecit irr,tulare,GJ_stand,energy,NA
+scen_0005,change stand life from 3 to 4 years,tulare,GJ_hayr,energy,NA
+scen_0005,change stand life from 3 to 4 years,tulare,GJ_Mgyield,energy,NA
+scen_0005,change stand life from 3 to 4 years,tulare,GJ_stand,energy,NA
+scen_0006,double pump pressure,tulare,GJ_hayr,energy,NA
+scen_0006,double pump pressure,tulare,GJ_Mgyield,energy,NA
+scen_0006,double pump pressure,tulare,GJ_stand,energy,NA
+scen_0007,eliminate pesticides,tulare,GJ_hayr,energy,NA
+scen_0007,eliminate pesticides,tulare,GJ_Mgyield,energy,NA
+scen_0007,eliminate pesticides,tulare,GJ_stand,energy,NA
+scen_0008,electrify irrigation,tulare,GJ_hayr,energy,NA
+scen_0008,electrify irrigation,tulare,GJ_Mgyield,energy,NA
+scen_0008,electrify irrigation,tulare,GJ_stand,energy,NA
+scen_0009,electrify harvest equip,tulare,GJ_hayr,energy,NA
+scen_0009,electrify harvest equip,tulare,GJ_Mgyield,energy,NA
+scen_0009,electrify harvest equip,tulare,GJ_stand,energy,NA
+scen_0010,electrify fieldops equip,tulare,GJ_hayr,energy,NA
+scen_0010,electrify fieldops equip,tulare,GJ_Mgyield,energy,NA
+scen_0010,electrify fieldops equip,tulare,GJ_stand,energy,NA
+scen_0011,change prod irr from flood to drip,tulare,GJ_hayr,energy,NA
+scen_0011,change prod irr from flood to drip,tulare,GJ_Mgyield,energy,NA
+scen_0011,change prod irr from flood to drip,tulare,GJ_stand,energy,NA
+scen_0012,eliminate insecticides,tulare,GJ_hayr,energy,NA
+scen_0012,eliminate insecticides,tulare,GJ_Mgyield,energy,NA
+scen_0012,eliminate insecticides,tulare,GJ_stand,energy,NA
+scen_0013,eliminate herbicides,tulare,GJ_hayr,energy,NA
+scen_0013,eliminate herbicides,tulare,GJ_Mgyield,energy,NA
+scen_0013,eliminate herbicides,tulare,GJ_stand,energy,NA
+scen_0014,gravity fed (no pump),tulare,GJ_hayr,energy,NA
+scen_0014,gravity fed (no pump),tulare,GJ_Mgyield,energy,NA
+scen_0014,gravity fed (no pump),tulare,GJ_stand,energy,NA
+scen_0015,no leaching n2o,tulare,GJ_hayr,energy,NA
+scen_0015,no leaching n2o,tulare,GJ_Mgyield,energy,NA
+scen_0015,no leaching n2o,tulare,GJ_stand,energy,NA
+scen_0016,pasture establishment c credit,tulare,GJ_hayr,energy,NA
+scen_0016,pasture establishment c credit,tulare,GJ_Mgyield,energy,NA
+scen_0016,pasture establishment c credit,tulare,GJ_stand,energy,NA
+scen_0017,no carbon credit,tulare,GJ_hayr,energy,NA
+scen_0017,no carbon credit,tulare,GJ_Mgyield,energy,NA
+scen_0017,no carbon credit,tulare,GJ_stand,energy,NA
+scen_0018,no fertilizer offsets,tulare,GJ_hayr,energy,NA
+scen_0018,no fertilizer offsets,tulare,GJ_Mgyield,energy,NA
+scen_0018,no fertilizer offsets,tulare,GJ_stand,energy,NA
+scen_0019,double well depth,tulare,GJ_hayr,energy,NA
+scen_0019,double well depth,tulare,GJ_Mgyield,energy,NA
+scen_0019,double well depth,tulare,GJ_stand,energy,NA
+scen_1001,base,siskiyou,GJ_hayr,energy,12.517495656920685
+scen_1001,base,siskiyou,GJ_Mgyield,energy,1.0340598937335646
+scen_1001,base,siskiyou,GJ_stand,energy,75.10497394152412
+scen_1002,all ground irr,siskiyou,GJ_hayr,energy,12.517495656920685
+scen_1002,all ground irr,siskiyou,GJ_Mgyield,energy,1.0340598937335646
+scen_1002,all ground irr,siskiyou,GJ_stand,energy,75.10497394152412
+scen_1003,all surface irr,siskiyou,GJ_hayr,energy,11.34539853302214
+scen_1003,all surface irr,siskiyou,GJ_Mgyield,energy,0.9372339262554894
+scen_1003,all surface irr,siskiyou,GJ_stand,energy,68.07239119813285
+scen_1005,change stand life from 6 to 8 years,siskiyou,GJ_hayr,energy,12.186774090770914
+scen_1005,change stand life from 6 to 8 years,siskiyou,GJ_Mgyield,energy,1.0067392605237455
+scen_1005,change stand life from 6 to 8 years,siskiyou,GJ_stand,energy,97.49419272616731
+scen_1006,double pump pressure,siskiyou,GJ_hayr,energy,12.517495656920685
+scen_1006,double pump pressure,siskiyou,GJ_Mgyield,energy,1.0340598937335646
+scen_1006,double pump pressure,siskiyou,GJ_stand,energy,75.10497394152412
+scen_1007,eliminate pesticides,siskiyou,GJ_hayr,energy,11.350195439312897
+scen_1007,eliminate pesticides,siskiyou,GJ_Mgyield,energy,0.9376301946901047
+scen_1007,eliminate pesticides,siskiyou,GJ_stand,energy,68.10117263587739
+scen_1008,electrify irrigation,siskiyou,GJ_hayr,energy,11.207470063018519
+scen_1008,electrify irrigation,siskiyou,GJ_Mgyield,energy,0.9258397701923379
+scen_1008,electrify irrigation,siskiyou,GJ_stand,energy,67.24482037811113
 scen_1009,electrify harvest equip,siskiyou,GJ_hayr,energy,NA
 scen_1009,electrify harvest equip,siskiyou,GJ_Mgyield,energy,NA
 scen_1009,electrify harvest equip,siskiyou,GJ_stand,energy,NA
-scen_1010,electrify fieldops equip,siskiyou,GJ_hayr,energy,11.253775474626487
-scen_1010,electrify fieldops equip,siskiyou,GJ_Mgyield,energy,0.9296650216898409
-scen_1010,electrify fieldops equip,siskiyou,GJ_stand,energy,67.52265284775892
-scen_1015,no leaching n2o,siskiyou,GJ_hayr,energy,11.583295213170917
-scen_1015,no leaching n2o,siskiyou,GJ_Mgyield,energy,0.9568863729218643
-scen_1015,no leaching n2o,siskiyou,GJ_stand,energy,69.49977127902551
-scen_1016,pasture establishment c credit,siskiyou,GJ_hayr,energy,11.583295213170917
-scen_1016,pasture establishment c credit,siskiyou,GJ_Mgyield,energy,0.9568863729218643
-scen_1016,pasture establishment c credit,siskiyou,GJ_stand,energy,69.49977127902551
-scen_1017,no carbon credit,siskiyou,GJ_hayr,energy,11.583295213170917
-scen_1017,no carbon credit,siskiyou,GJ_Mgyield,energy,0.9568863729218643
-scen_1017,no carbon credit,siskiyou,GJ_stand,energy,69.49977127902551
-scen_1018,no fertilizer offsets,siskiyou,GJ_hayr,energy,12.450683276506378
-scen_1018,no fertilizer offsets,siskiyou,GJ_Mgyield,energy,1.0285405786177564
-scen_1018,no fertilizer offsets,siskiyou,GJ_stand,energy,74.70409965903828
-scen_1019,double well depth,siskiyou,GJ_hayr,energy,12.755392337069463
-scen_1019,double well depth,siskiyou,GJ_Mgyield,energy,1.0537123403999393
-scen_1019,double well depth,siskiyou,GJ_stand,energy,76.53235402241678
-scen_2001,base,imperial,GJ_hayr,energy,22.06333802003328
-scen_2001,base,imperial,GJ_Mgyield,energy,1.3669754873725148
-scen_2001,base,imperial,GJ_stand,energy,66.19001406009984
-scen_2002,all ground irr,imperial,GJ_hayr,energy,21.625755093777823
-scen_2002,all ground irr,imperial,GJ_Mgyield,energy,1.3398642164786538
-scen_2002,all ground irr,imperial,GJ_stand,energy,64.87726528133348
-scen_2005,change stand life from 3 to 4 years,imperial,GJ_hayr,energy,20.88225108554749
-scen_2005,change stand life from 3 to 4 years,imperial,GJ_Mgyield,energy,1.2937990311884127
-scen_2005,change stand life from 3 to 4 years,imperial,GJ_stand,energy,83.52900434218996
-scen_2008,electrify irrigation,imperial,GJ_hayr,energy,21.625755093777823
-scen_2008,electrify irrigation,imperial,GJ_Mgyield,energy,1.3398642164786538
-scen_2008,electrify irrigation,imperial,GJ_stand,energy,64.87726528133348
+scen_1010,electrify fieldops equip,siskiyou,GJ_hayr,energy,12.187975918376255
+scen_1010,electrify fieldops equip,siskiyou,GJ_Mgyield,energy,1.0068385425015411
+scen_1010,electrify fieldops equip,siskiyou,GJ_stand,energy,73.12785551025755
+scen_1015,no leaching n2o,siskiyou,GJ_hayr,energy,12.517495656920685
+scen_1015,no leaching n2o,siskiyou,GJ_Mgyield,energy,1.0340598937335646
+scen_1015,no leaching n2o,siskiyou,GJ_stand,energy,75.10497394152412
+scen_1016,pasture establishment c credit,siskiyou,GJ_hayr,energy,12.517495656920685
+scen_1016,pasture establishment c credit,siskiyou,GJ_Mgyield,energy,1.0340598937335646
+scen_1016,pasture establishment c credit,siskiyou,GJ_stand,energy,75.10497394152412
+scen_1017,no carbon credit,siskiyou,GJ_hayr,energy,12.517495656920685
+scen_1017,no carbon credit,siskiyou,GJ_Mgyield,energy,1.0340598937335646
+scen_1017,no carbon credit,siskiyou,GJ_stand,energy,75.10497394152412
+scen_1018,no fertilizer offsets,siskiyou,GJ_hayr,energy,13.384883720256148
+scen_1018,no fertilizer offsets,siskiyou,GJ_Mgyield,energy,1.1057140994294565
+scen_1018,no fertilizer offsets,siskiyou,GJ_stand,energy,80.3093023215369
+scen_1019,double well depth,siskiyou,GJ_hayr,energy,13.68959278081923
+scen_1019,double well depth,siskiyou,GJ_Mgyield,energy,1.1308858612116395
+scen_1019,double well depth,siskiyou,GJ_stand,energy,82.1375566849154
+scen_2001,base,imperial,GJ_hayr,energy,22.126709336729057
+scen_2001,base,imperial,GJ_Mgyield,energy,1.3709017761528883
+scen_2001,base,imperial,GJ_stand,energy,66.38012801018716
+scen_2002,all ground irr,imperial,GJ_hayr,energy,21.689126410473598
+scen_2002,all ground irr,imperial,GJ_Mgyield,energy,1.3437905052590273
+scen_2002,all ground irr,imperial,GJ_stand,energy,65.0673792314208
+scen_2005,change stand life from 3 to 4 years,imperial,GJ_hayr,energy,21.257966767760916
+scen_2005,change stand life from 3 to 4 years,imperial,GJ_Mgyield,energy,1.3170772009440885
+scen_2005,change stand life from 3 to 4 years,imperial,GJ_stand,energy,85.03186707104366
+scen_2008,electrify irrigation,imperial,GJ_hayr,energy,21.934159643137136
+scen_2008,electrify irrigation,imperial,GJ_Mgyield,energy,1.358971998754643
+scen_2008,electrify irrigation,imperial,GJ_stand,energy,65.80247892941141
 scen_2009,electrify harvest equip,imperial,GJ_hayr,energy,NA
 scen_2009,electrify harvest equip,imperial,GJ_Mgyield,energy,NA
 scen_2009,electrify harvest equip,imperial,GJ_stand,energy,NA
-scen_2010,electrify fieldops equip,imperial,GJ_hayr,energy,20.61204917856826
-scen_2010,electrify fieldops equip,imperial,GJ_Mgyield,energy,1.2770581652710902
-scen_2010,electrify fieldops equip,imperial,GJ_stand,energy,61.836147535704775
-scen_2015,no leaching n2o,imperial,GJ_hayr,energy,21.625755093777823
-scen_2015,no leaching n2o,imperial,GJ_Mgyield,energy,1.3398642164786538
-scen_2015,no leaching n2o,imperial,GJ_stand,energy,64.87726528133348
-scen_2016,pasture establishment c credit,imperial,GJ_hayr,energy,21.625755093777823
-scen_2016,pasture establishment c credit,imperial,GJ_Mgyield,energy,1.3398642164786538
-scen_2016,pasture establishment c credit,imperial,GJ_stand,energy,64.87726528133348
-scen_2017,no carbon credit,imperial,GJ_hayr,energy,21.625755093777823
-scen_2017,no carbon credit,imperial,GJ_Mgyield,energy,1.3398642164786538
-scen_2017,no carbon credit,imperial,GJ_stand,energy,64.87726528133348
-scen_2018,no fertilizer offsets,imperial,GJ_hayr,energy,23.36053122044875
-scen_2018,no fertilizer offsets,imperial,GJ_Mgyield,energy,1.447345525022492
-scen_2018,no fertilizer offsets,imperial,GJ_stand,energy,70.08159366134625
+scen_2010,electrify fieldops equip,imperial,GJ_hayr,energy,21.11300342151949
+scen_2010,electrify fieldops equip,imperial,GJ_Mgyield,energy,1.3080957249453247
+scen_2010,electrify fieldops equip,imperial,GJ_stand,energy,63.339010264558475
+scen_2015,no leaching n2o,imperial,GJ_hayr,energy,22.126709336729057
+scen_2015,no leaching n2o,imperial,GJ_Mgyield,energy,1.3709017761528883
+scen_2015,no leaching n2o,imperial,GJ_stand,energy,66.38012801018716
+scen_2016,pasture establishment c credit,imperial,GJ_hayr,energy,22.126709336729057
+scen_2016,pasture establishment c credit,imperial,GJ_Mgyield,energy,1.3709017761528883
+scen_2016,pasture establishment c credit,imperial,GJ_stand,energy,66.38012801018716
+scen_2017,no carbon credit,imperial,GJ_hayr,energy,22.126709336729057
+scen_2017,no carbon credit,imperial,GJ_Mgyield,energy,1.3709017761528883
+scen_2017,no carbon credit,imperial,GJ_stand,energy,66.38012801018716
+scen_2018,no fertilizer offsets,imperial,GJ_hayr,energy,23.86148546339998
+scen_2018,no fertilizer offsets,imperial,GJ_Mgyield,energy,1.4783830846967265
+scen_2018,no fertilizer offsets,imperial,GJ_stand,energy,71.58445639019995

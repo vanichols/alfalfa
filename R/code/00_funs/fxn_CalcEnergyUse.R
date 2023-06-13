@@ -494,10 +494,10 @@ CalcEnergyUse <- function(f_scenario_id = "2001",
   
   # 7. seed energy (s) ------------------------------------------------------
   
-  #---uses values from tulare, scenario 0001
+  #---uses values from imperial, scenario 2001
   
   
-  if (f_scenario_id == "0001") {
+  if (f_scenario_id == "2001") {
   
     # no harvest ops energy in seed calcs
     # not sure what to do for irrigation, it's left the same for now
@@ -531,11 +531,11 @@ CalcEnergyUse <- function(f_scenario_id = "2001",
       mutate(mj_kgseed = value/seed_yld_kg_ha) |>
       select(scenario_id, mj_kgseed) 
    
-    s1 |> write_csv("R/data_refs/ref_seed-energy-tulare.csv")
+    s1 |> write_csv("R/data_refs/ref_seed-energy-imperial.csv")
      
   } else {
     
-    s1 <- read_csv("R/data_refs/ref_seed-energy-tulare.csv") |> 
+    s1 <- read_csv("R/data_refs/ref_seed-energy-imperial.csv") |> 
       mutate(scenario_id = paste0("scen_", f_scenario_id))
   }
     
@@ -543,9 +543,9 @@ CalcEnergyUse <- function(f_scenario_id = "2001",
     
     #--ftm has a much lower value. But whatever. 
     #--they don't include fuel manufacturing, irrigatigation fuel ineffic.
-    s1 |> 
-      mutate(btu_lbseed = mj_kgseed * kg_per_lb * btu_per_mj) |> 
-      mutate(ftm_value = 1973)
+    # s1 |> 
+    #   mutate(btu_lbseed = mj_kgseed * kg_per_lb * btu_per_mj) |> 
+    #   mutate(ftm_value = 1973)
     
     
     s2 <- 

@@ -2,7 +2,7 @@ scenario_id,cat,desc,value,unit,change_ind,notes
 scen_0005,field ops,chisel,1,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,disk,2,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,disk border ridges,1,pass/stand life,y,change stand life from 3 to 4 years
-scen_0005,field ops,"fertilize, map1",3,pass/stand life,y,change stand life from 3 to 4 years
+scen_0005,field ops,"fertilize, surface",3,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,insect control,8,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,laser level,1,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,plant,1,pass/stand life,y,change stand life from 3 to 4 years
@@ -27,8 +27,8 @@ scen_0005,irrigation,"flood, prod",64,ac-in/year,n,change stand life from 3 to 4
 scen_0005,irrigation,"drip, est",0,ac-in/stand life,n,change stand life from 3 to 4 years
 scen_0005,irrigation,"drip, prod",0,ac-in/year,n,change stand life from 3 to 4 years
 scen_0005,irrigation,fraction from surface source,0.5,frac,n,change stand life from 3 to 4 years
-scen_0005,irrigation,depth of well,150,feet,n,change stand life from 3 to 4 years
-scen_0005,irrigation,pump pressure,25,psi,n,change stand life from 3 to 4 years
+scen_0005,irrigation,depth of well,500,feet,n,change stand life from 3 to 4 years
+scen_0005,irrigation,pump pressure,50,psi,n,change stand life from 3 to 4 years
 scen_0005,irrigation,flood irr eff,0.7,frac,n,change stand life from 3 to 4 years
 scen_0005,irrigation,sprinkler irr eff,0.8,frac,n,change stand life from 3 to 4 years
 scen_0005,irrigation,drip irr eff,0.9,frac,n,change stand life from 3 to 4 years

@@ -23,9 +23,9 @@ scen_2015,yield,"hay, harvests",9,harvest/year,n,no leaching n2o
 scen_2015,yield,"haylage, harvests",3,harvest/year,n,no leaching n2o
 scen_2015,yield,hay production,8,ton/ac/yr at 10% moisture,n,no leaching n2o
 scen_2015,yield,haylage production,0,ton/ac/yr at 30% moisture,n,no leaching n2o
-scen_2015,irrigation,"sprinkler, est",0,ac-in/stand life,n,no leaching n2o
+scen_2015,irrigation,"sprinkler, est",18,ac-in/stand life,n,no leaching n2o
 scen_2015,irrigation,"sprinkler, prod",0,ac-in/year,n,no leaching n2o
-scen_2015,irrigation,"flood, est",18,ac-in/stand life,n,no leaching n2o
+scen_2015,irrigation,"flood, est",0,ac-in/stand life,n,no leaching n2o
 scen_2015,irrigation,"flood, prod",84,ac-in/year,n,no leaching n2o
 scen_2015,irrigation,"drip, est",0,ac-in/stand life,n,no leaching n2o
 scen_2015,irrigation,"drip, prod",0,ac-in/year,n,no leaching n2o

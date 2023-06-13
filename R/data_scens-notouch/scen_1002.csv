@@ -15,7 +15,6 @@ scen_1002,pesticide,raptor,5,oz/ac,n,all ground irr
 scen_1002,pesticide,steward,54,fl oz/ac,n,all ground irr
 scen_1002,pesticide,tricor 75df,3.6,lbs/ac,n,all ground irr
 scen_1002,pesticide,zinc phosphide,15,lb/ac,n,all ground irr
-scen_1002,irrigation,fraction from surface source,0,frac,y,all ground irr
 scen_1002,yield,stand life,6,years,n,all ground irr
 scen_1002,yield,"hay, harvests",3,harvest/year,n,all ground irr
 scen_1002,yield,"haylage, harvests",0,harvest/year,n,all ground irr
@@ -27,6 +26,7 @@ scen_1002,irrigation,"flood, est",0,ac-in/stand life,n,all ground irr
 scen_1002,irrigation,"flood, prod",0,ac-in/year,n,all ground irr
 scen_1002,irrigation,"drip, est",0,ac-in/stand life,n,all ground irr
 scen_1002,irrigation,"drip, prod",0,ac-in/year,n,all ground irr
+scen_1002,irrigation,fraction from surface source,0.5,frac,n,all ground irr
 scen_1002,irrigation,depth of well,150,feet,n,all ground irr
 scen_1002,irrigation,pump pressure,25,psi,n,all ground irr
 scen_1002,irrigation,flood irr eff,0.7,frac,n,all ground irr

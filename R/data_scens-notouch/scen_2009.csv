@@ -24,9 +24,9 @@ scen_2009,yield,"hay, harvests",9,harvest/year,n,electrify harvest equip
 scen_2009,yield,"haylage, harvests",3,harvest/year,n,electrify harvest equip
 scen_2009,yield,hay production,8,ton/ac/yr at 10% moisture,n,electrify harvest equip
 scen_2009,yield,haylage production,0,ton/ac/yr at 30% moisture,n,electrify harvest equip
-scen_2009,irrigation,"sprinkler, est",0,ac-in/stand life,n,electrify harvest equip
+scen_2009,irrigation,"sprinkler, est",18,ac-in/stand life,n,electrify harvest equip
 scen_2009,irrigation,"sprinkler, prod",0,ac-in/year,n,electrify harvest equip
-scen_2009,irrigation,"flood, est",18,ac-in/stand life,n,electrify harvest equip
+scen_2009,irrigation,"flood, est",0,ac-in/stand life,n,electrify harvest equip
 scen_2009,irrigation,"flood, prod",84,ac-in/year,n,electrify harvest equip
 scen_2009,irrigation,"drip, est",0,ac-in/stand life,n,electrify harvest equip
 scen_2009,irrigation,"drip, prod",0,ac-in/year,n,electrify harvest equip
