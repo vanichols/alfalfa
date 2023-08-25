@@ -9,6 +9,8 @@
 # 4/27 - fixing field ops fuel records to include diff types of fertilize (inject, surface, prod1, est1, etc)
 # 5/12 - include % of water passing through pump as variable
 
+
+
 CalcEnergyUse <- function(f_scenario_id = "2001", 
                           f_prod_data = my_prod_data){
   
