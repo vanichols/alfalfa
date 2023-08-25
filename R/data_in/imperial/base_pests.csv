@@ -1,7 +1,7 @@
 pesticide apps,,,,
 "this is the 'base', what was presented in the enterprise budget",,,,
-capitalization doesn't matter,,,,
-"imperial, copied from tulare for now (no idea what is applied)",,,,
+"capitalization doesn't matter, the code sums all like descriptions into one value to represent all pesticides applied for the crop's life, but they can be entered in this sheet separately by year if that is easier",,,,
+"these base values come from tulare, imperial county doesn't have specific values so I need to email someone",,,,
 ,,,,
 scenario_id,cat,desc,unit,value
 scen_2000,pesticide,chateau,oz/ac,12

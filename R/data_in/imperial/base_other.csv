@@ -1,8 +1,8 @@
 scenario key has descriptions,,,,,
 "make all units singular, use units source reports in",,,,,
 "unless otherwise noted, values are taken from enterprise budget",,,,,
-"must have field ops, pesticide app amounts, and field ops fuel usage added",,,,,
-need to check pesticide manufacturing energies,,,,,
+"must have field ops, pesticide app amounts, and field ops fuel usage added in separate files",,,,,
+,,,,,
 scenario_id,cat,desc,unit,value,notes
 scen_2000,yield,stand life,years,3,enterprise budget says 3-5 years
 ,,"hay, harvests",harvest/year,9,
