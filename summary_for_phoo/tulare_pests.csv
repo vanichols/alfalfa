@@ -1,0 +1,12 @@
+pesticide apps,,,,
+"this is the 'base', what was presented in the enterprise budget",,,,
+capitalization doesn't matter,,,,
+tulare,,,,
+,,,,
+scenario_id,cat,desc,unit,value
+scen_0000,pesticide,chateau,oz/ac,12
+scen_0000,pesticide,coragen,fl oz/ac,10.5
+scen_0000,pesticide,gramoxone,pint/ac,4.5
+scen_0000,pesticide,prowl h2o,gal/ac,3
+scen_0000,pesticide,roundup powermaxx,pint/ac,8
+scen_0000,pesticide,warrior ii,fl oz/ac,4.5

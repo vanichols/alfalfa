@@ -10,7 +10,7 @@ library(tidyverse)
 #--this fxn translates that change into the file formats the other functions need
 
 
-MakeScenarioCSV <- function(f_scenario_id = "2001", f_county = "imperial"){
+MakeScenarioCSV <- function(f_scenario_id = "2002", f_county = "imperial"){
   
   
   source("R/code/00_funs/fxn_ProcDataIn.R")

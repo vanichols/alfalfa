@@ -1,0 +1,61 @@
+scenario_id,cat,desc,fuel_type,unit,value
+scen_0000,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,-11.05919780752714
+scen_0000,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,-3.6863992691757135
+scen_0000,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,-0.14814991177664172
+scen_0000,fertility,"11-52-0 map, n_comp",NA,GJ_stand,NA
+scen_0000,fertility,"11-52-0 map, n_comp",NA,GJ_hayr,NA
+scen_0000,fertility,"11-52-0 map, n_comp",NA,MJ_kgyield,NA
+scen_0000,fertility,"11-52-0 map, p_comp",NA,GJ_stand,NA
+scen_0000,fertility,"11-52-0 map, p_comp",NA,GJ_hayr,NA
+scen_0000,fertility,"11-52-0 map, p_comp",NA,MJ_kgyield,NA
+scen_0000,field passes,field ops,diesel,GJ_stand,3.2326101426425766
+scen_0000,field passes,field ops,diesel,GJ_hayr,1.0775367142141923
+scen_0000,field passes,field ops,diesel,MJ_kgyield,0.04330430794128823
+scen_0000,field passes,harvest,diesel,GJ_stand,18.877580223096167
+scen_0000,field passes,harvest,diesel,GJ_hayr,6.292526741032056
+scen_0000,field passes,harvest,diesel,MJ_kgyield,0.2528855974259424
+scen_0000,irrigation,"sprinkler, surface",diesel,GJ_stand,0.2356922470897968
+scen_0000,irrigation,"sprinkler, surface",diesel,GJ_hayr,0.07856408236326559
+scen_0000,irrigation,"sprinkler, surface",diesel,MJ_kgyield,0.0031573524789497843
+scen_0000,irrigation,"sprinkler, ground",diesel,GJ_stand,1.4916972521440817
+scen_0000,irrigation,"sprinkler, ground",diesel,GJ_hayr,0.49723241738136054
+scen_0000,irrigation,"sprinkler, ground",diesel,MJ_kgyield,0.01998289750746573
+scen_0000,irrigation,"flood, ground",diesel,GJ_stand,34.45042299577467
+scen_0000,irrigation,"flood, ground",diesel,GJ_hayr,11.48347433192489
+scen_0000,irrigation,"flood, ground",diesel,MJ_kgyield,0.46150066363929454
+scen_0000,field passes,fuel manufacture,diesel,GJ_stand,0.768469013549564
+scen_0000,field passes,fuel manufacture,diesel,GJ_hayr,0.25615633784985464
+scen_0000,field passes,fuel manufacture,diesel,MJ_kgyield,0.010294473301034805
+scen_0000,field passes,fuel manufacture,diesel,GJ_stand,4.487653880955314
+scen_0000,field passes,fuel manufacture,diesel,GJ_hayr,1.4958846269851047
+scen_0000,field passes,fuel manufacture,diesel,MJ_kgyield,0.060116975762484745
+scen_0000,irrigation,fuel manufacture,diesel,GJ_stand,0.05602970374717486
+scen_0000,irrigation,fuel manufacture,diesel,GJ_hayr,0.018676567915724952
+scen_0000,irrigation,fuel manufacture,diesel,MJ_kgyield,7.505784607058586e-4
+scen_0000,irrigation,fuel manufacture,diesel,GJ_stand,0.3546122375686997
+scen_0000,irrigation,fuel manufacture,diesel,GJ_hayr,0.11820407918956657
+scen_0000,irrigation,fuel manufacture,diesel,MJ_kgyield,0.004750414327064784
+scen_0000,irrigation,fuel manufacture,diesel,GJ_stand,8.189692356247539
+scen_0000,irrigation,fuel manufacture,diesel,GJ_hayr,2.7298974520825126
+scen_0000,irrigation,fuel manufacture,diesel,MJ_kgyield,0.10970978376298766
+scen_0000,pesticide,chlorantraniliprole,NA,GJ_stand,0.03285924447515436
+scen_0000,pesticide,chlorantraniliprole,NA,GJ_hayr,0.010953081491718121
+scen_0000,pesticide,chlorantraniliprole,NA,MJ_kgyield,4.401851069819807e-4
+scen_0000,pesticide,flumioxazin,NA,GJ_stand,0.09550440119418814
+scen_0000,pesticide,flumioxazin,NA,GJ_hayr,0.03183480039806271
+scen_0000,pesticide,flumioxazin,NA,MJ_kgyield,0.0012793847128378388
+scen_0000,pesticide,glyphosate,NA,GJ_stand,2.992134961012084
+scen_0000,pesticide,glyphosate,NA,GJ_hayr,0.9973783203373614
+scen_0000,pesticide,glyphosate,NA,MJ_kgyield,0.040082882882882885
+scen_0000,pesticide,lambda-cyhalothrin,NA,GJ_stand,0.017539921772879722
+scen_0000,pesticide,lambda-cyhalothrin,NA,GJ_hayr,0.005846640590959908
+scen_0000,pesticide,lambda-cyhalothrin,NA,MJ_kgyield,2.3496621621621637e-4
+scen_0000,pesticide,paraquat,NA,GJ_stand,0.7999911665175099
+scen_0000,pesticide,paraquat,NA,GJ_hayr,0.2666637221725033
+scen_0000,pesticide,paraquat,NA,MJ_kgyield,0.010716746621621627
+scen_0000,pesticide,pendimethalin,NA,GJ_stand,3.37970292334942
+scen_0000,pesticide,pendimethalin,NA,GJ_hayr,1.1265676411164733
+scen_0000,pesticide,pendimethalin,NA,MJ_kgyield,0.04527477477477481
+scen_0000,seed,"round-up ready seed, non-dormant",NA,GJ_stand,2.250658827387951
+scen_0000,seed,"round-up ready seed, non-dormant",NA,GJ_hayr,0.7502196091293171
+scen_0000,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.030150008393004916

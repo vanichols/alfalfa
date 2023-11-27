@@ -1,0 +1,16 @@
+field ops entry template,,,,
+just enter everything from the visual,,,,
+tulare,,,,
+,,,,
+,,,,
+scenario_id,cat,desc,value,unit
+scen_0000,field ops,chisel,1,pass/stand life
+scen_0000,field ops,disk,2,pass/stand life
+scen_0000,field ops,disk border ridges,1,pass/stand life
+scen_0000,field ops,"fertilize, surface",2,pass/stand life
+scen_0000,field ops,insect control,6,pass/stand life
+scen_0000,field ops,laser level,1,pass/stand life
+scen_0000,field ops,plant,1,pass/stand life
+scen_0000,field ops,roll,3,pass/stand life
+scen_0000,field ops,stand termination,1,pass/stand life
+scen_0000,field ops,weed control,9,pass/stand life

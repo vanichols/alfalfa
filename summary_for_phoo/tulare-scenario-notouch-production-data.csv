@@ -1,0 +1,32 @@
+scenario_id,cat,desc,unit,value
+scen_0000,fertility,11-52-0 map,kg/stand,NA
+scen_0000,field ops,chisel,pass/stand life,1
+scen_0000,field ops,disk,pass/stand life,2
+scen_0000,field ops,disk border ridges,pass/stand life,1
+scen_0000,field ops,fertilize,pass/stand life,2
+scen_0000,field ops,insect control,pass/stand life,6
+scen_0000,field ops,laser level,pass/stand life,1
+scen_0000,field ops,plant,pass/stand life,1
+scen_0000,field ops,roll,pass/stand life,3
+scen_0000,field ops,stand termination,pass/stand life,1
+scen_0000,field ops,weed control,pass/stand life,9
+scen_0000,harvest ops,"haylage, cut",pass/stand,6
+scen_0000,harvest ops,"haylage, chop",pass/stand,6
+scen_0000,harvest ops,"hay, swath",pass/stand,21
+scen_0000,harvest ops,"hay, rake",pass/stand,21
+scen_0000,harvest ops,"hay, bale",pass/stand,21
+scen_0000,harvest ops,"hay, stack",pass/stand,21
+scen_0000,irrigation,"sprinkler, est",l/stand,822321.22503168
+scen_0000,irrigation,"flood, prod",l/stand,19735709.4007603
+scen_0000,irrigation,"sprinkler, est",ac-in/stand,8
+scen_0000,irrigation,"flood, prod",ac-in/stand,192
+scen_0000,pesticide,flumioxazin,kg/stand,0.361075240809785
+scen_0000,pesticide,chlorantraniliprole,kg/stand,0.153547871379226
+scen_0000,pesticide,paraquat,kg/stand,1.74138260016872
+scen_0000,pesticide,pendimethalin,kg/stand,12.7777048141755
+scen_0000,pesticide,glyphosate,kg/stand,6.59060564099578
+scen_0000,pesticide,lambda-cyhalothrin,kg/stand,0.0819622512751389
+scen_0000,seed,"round-up ready seed, non-dormant",kg/stand,28.021282487227
+scen_0000,yield,hay production,kg/stand,60525.9701724102
+scen_0000,yield,haylage production,kg/stand,14122.7263735624
+scen_0000,yield,stand life,years,3
