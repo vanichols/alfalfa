@@ -7,7 +7,7 @@ library(tidyverse)
 library(readxl)
 
 
-ProcProdData <- function(f_scenario_id = "2001"){
+ProcProdData <- function(f_scenario_id = "0001"){
   
   source("R/code/00_funs/fxn_conversions.R")
   source("R/code/00_funs/fxn_ProcDataIn.R")  

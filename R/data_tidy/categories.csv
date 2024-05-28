@@ -14,18 +14,9 @@ fertilizer avoidance,avoided uan-32 manu energy
 field passes,field ops
 field passes,fuel manufacture
 field passes,harvest
-fuel manufacture,"drip, ground"
-fuel manufacture,"drip, surface"
-fuel manufacture,field ops
-fuel manufacture,"flood, ground"
-fuel manufacture,"flood, surface"
-fuel manufacture,harvest
-fuel manufacture,"sprinkler, ground"
-fuel manufacture,"sprinkler, surface"
 irrigation,"drip, ground"
 irrigation,"drip, surface"
 irrigation,"flood, ground"
-irrigation,"flood, surface"
 irrigation,fuel manufacture
 irrigation,"sprinkler, ground"
 irrigation,"sprinkler, surface"

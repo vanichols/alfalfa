@@ -9,12 +9,12 @@ scen_0005,field ops,plant,1,pass/stand life,y,change stand life from 3 to 4 year
 scen_0005,field ops,roll,3,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,stand termination,1,pass/stand life,y,change stand life from 3 to 4 years
 scen_0005,field ops,weed control,12,pass/stand life,y,change stand life from 3 to 4 years
-scen_0005,pesticide,chateau,16,oz/ac,y,change stand life from 3 to 4 years
 scen_0005,pesticide,coragen,14,fl oz/ac,y,change stand life from 3 to 4 years
+scen_0005,pesticide,warrior ii,6,fl oz/ac,y,change stand life from 3 to 4 years
+scen_0005,pesticide,chateau,16,oz/ac,y,change stand life from 3 to 4 years
 scen_0005,pesticide,gramoxone,6,pint/ac,y,change stand life from 3 to 4 years
 scen_0005,pesticide,prowl h2o,4,gal/ac,y,change stand life from 3 to 4 years
 scen_0005,pesticide,roundup powermaxx,10,pint/ac,y,change stand life from 3 to 4 years
-scen_0005,pesticide,warrior ii,6,fl oz/ac,y,change stand life from 3 to 4 years
 scen_0005,yield,stand life,4,years,y,change stand life from 3 to 4 years
 scen_0005,yield,"hay, harvests",7,harvest/year,n,change stand life from 3 to 4 years
 scen_0005,yield,"haylage, harvests",2,harvest/year,n,change stand life from 3 to 4 years

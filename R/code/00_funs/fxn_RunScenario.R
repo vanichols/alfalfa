@@ -5,7 +5,7 @@ library(readxl)
 
 #--the scenario you want to run
 
-RunScenario <- function(my_scenario_id = "2001") {
+RunScenario <- function(my_scenario_id = "0001") {
   
   # 1. process production data ----------------------------------------------
   

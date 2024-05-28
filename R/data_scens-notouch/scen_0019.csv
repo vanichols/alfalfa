@@ -2,7 +2,7 @@ scenario_id,cat,desc,value,unit,change_ind,notes
 scen_0019,field ops,chisel,1,pass/stand life,n,double well depth
 scen_0019,field ops,disk,2,pass/stand life,n,double well depth
 scen_0019,field ops,disk border ridges,1,pass/stand life,n,double well depth
-scen_0019,field ops,"fertilize, surface",2,pass/stand life,n,double well depth
+scen_0019,field ops,"fertilize, map1",2,pass/stand life,n,double well depth
 scen_0019,field ops,insect control,6,pass/stand life,n,double well depth
 scen_0019,field ops,laser level,1,pass/stand life,n,double well depth
 scen_0019,field ops,plant,1,pass/stand life,n,double well depth
@@ -15,7 +15,7 @@ scen_0019,pesticide,gramoxone,4.5,pint/ac,n,double well depth
 scen_0019,pesticide,prowl h2o,3,gal/ac,n,double well depth
 scen_0019,pesticide,roundup powermaxx,8,pint/ac,n,double well depth
 scen_0019,pesticide,warrior ii,4.5,fl oz/ac,n,double well depth
-scen_0019,irrigation,depth of well,300,feet,y,double well depth
+scen_0019,irrigation,depth of well,1000,feet,y,double well depth
 scen_0019,yield,stand life,3,years,n,double well depth
 scen_0019,yield,"hay, harvests",7,harvest/year,n,double well depth
 scen_0019,yield,"haylage, harvests",2,harvest/year,n,double well depth

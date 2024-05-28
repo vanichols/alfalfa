@@ -2,12 +2,12 @@ scenario_id,cat,desc,fuel_type,unit,value
 scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_stand,-11.05919780752714
 scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,GJ_hayr,-3.6863992691757135
 scen_0004,fertilizer avoidance,avoided uan-32 manu energy,NA,MJ_kgyield,-0.19576952627627633
-scen_0004,fertility,"11-52-0 map, n_comp",NA,GJ_stand,NA
-scen_0004,fertility,"11-52-0 map, n_comp",NA,GJ_hayr,NA
-scen_0004,fertility,"11-52-0 map, n_comp",NA,MJ_kgyield,NA
-scen_0004,fertility,"11-52-0 map, p_comp",NA,GJ_stand,NA
-scen_0004,fertility,"11-52-0 map, p_comp",NA,GJ_hayr,NA
-scen_0004,fertility,"11-52-0 map, p_comp",NA,MJ_kgyield,NA
+scen_0004,fertility,"11-52-0 map, n_comp",NA,GJ_stand,2.860412516296126
+scen_0004,fertility,"11-52-0 map, n_comp",NA,GJ_hayr,0.9534708387653753
+scen_0004,fertility,"11-52-0 map, n_comp",NA,MJ_kgyield,0.050634920634920554
+scen_0004,fertility,"11-52-0 map, p_comp",NA,GJ_stand,7.017425815841216
+scen_0004,fertility,"11-52-0 map, p_comp",NA,GJ_hayr,2.3391419386137384
+scen_0004,fertility,"11-52-0 map, p_comp",NA,MJ_kgyield,0.124222222222222
 scen_0004,field passes,field ops,diesel,GJ_stand,3.2326101426425766
 scen_0004,field passes,field ops,diesel,GJ_hayr,1.0775367142141923
 scen_0004,field passes,field ops,diesel,MJ_kgyield,0.05722354977955938
@@ -62,6 +62,12 @@ scen_0004,seed,"round-up ready seed, non-dormant",NA,MJ_kgyield,0.03984108251932
 scen_0004,carbon credit,co2,NA,kgco2e_stand,-1927.4219754438898
 scen_0004,carbon credit,co2,NA,kgco2e_hayr,-642.4739918146299
 scen_0004,carbon credit,co2,NA,kgco2e_Mgyield,-34.119155261904744
+scen_0004,fertility,"11-52-0 map, n_comp",diesel,kgco2e_stand,203.5918874734671
+scen_0004,fertility,"11-52-0 map, n_comp",diesel,kgco2e_hayr,67.8639624911557
+scen_0004,fertility,"11-52-0 map, n_comp",diesel,kgco2e_Mgyield,3.6039763514534457
+scen_0004,fertility,"11-52-0 map, p_comp",diesel,kgco2e_stand,499.47025434713265
+scen_0004,fertility,"11-52-0 map, p_comp",diesel,kgco2e_hayr,166.49008478237755
+scen_0004,fertility,"11-52-0 map, p_comp",diesel,kgco2e_Mgyield,8.84160467914566
 scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_stand,-787.1462394844957
 scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_hayr,-262.3820798281652
 scen_0004,fertilizer avoidance,avoided uan-32 manu energy,diesel,kgco2e_Mgyield,-13.934034737053771
@@ -107,6 +113,9 @@ scen_0004,pesticide,pendimethalin,diesel,kgco2e_Mgyield,4.258256227483382
 scen_0004,seed,"round-up ready seed, non-dormant",diesel,kgco2e_stand,160.19223664986092
 scen_0004,seed,"round-up ready seed, non-dormant",diesel,kgco2e_hayr,53.3974122166203
 scen_0004,seed,"round-up ready seed, non-dormant",diesel,kgco2e_Mgyield,2.8357172760519376
+scen_0004,n2o,"direct, fert n",NA,kgco2e_stand,115.47330330564901
+scen_0004,n2o,"direct, fert n",NA,kgco2e_hayr,38.491101101883004
+scen_0004,n2o,"direct, fert n",NA,kgco2e_Mgyield,2.044104308390019
 scen_0004,n2o,"direct, plant n",NA,kgco2e_stand,151.37500306067832
 scen_0004,n2o,"direct, plant n",NA,kgco2e_hayr,50.458334353559444
 scen_0004,n2o,"direct, plant n",NA,kgco2e_Mgyield,2.6796349206349204
@@ -116,9 +125,12 @@ scen_0004,avoided n2o,"direct, fert n",NA,kgco2e_Mgyield,-7.897675736961445
 scen_0004,avoided n2o,"indirect, volatilize",NA,kgco2e_stand,-66.92202805213756
 scen_0004,avoided n2o,"indirect, volatilize",NA,kgco2e_hayr,-22.307342684045853
 scen_0004,avoided n2o,"indirect, volatilize",NA,kgco2e_Mgyield,-1.1846513605442168
+scen_0004,n2o,"indirect, volatilize",NA,kgco2e_stand,18.47572852890384
+scen_0004,n2o,"indirect, volatilize",NA,kgco2e_hayr,6.15857617630128
+scen_0004,n2o,"indirect, volatilize",NA,kgco2e_Mgyield,0.327056689342403
 scen_0004,avoided n2o,"indirect, leach",NA,kgco2e_stand,-235.56553874352417
 scen_0004,avoided n2o,"indirect, leach",NA,kgco2e_hayr,-78.5218462478414
 scen_0004,avoided n2o,"indirect, leach",NA,kgco2e_Mgyield,-4.169972789115643
-scen_0004,n2o,"indirect, leach",NA,kgco2e_stand,79.92600161603816
-scen_0004,n2o,"indirect, leach",NA,kgco2e_hayr,26.642000538679387
-scen_0004,n2o,"indirect, leach",NA,kgco2e_Mgyield,1.4148472380952382
+scen_0004,n2o,"indirect, leach",NA,kgco2e_stand,201.86580990680352
+scen_0004,n2o,"indirect, leach",NA,kgco2e_hayr,67.28860330226784
+scen_0004,n2o,"indirect, leach",NA,kgco2e_Mgyield,3.5734213877550984

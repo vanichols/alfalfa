@@ -3,6 +3,7 @@
 #--3/30 reran all scenarios bc I fixed the seed energy calculation
 #--4/27 reran all sceanrios bc I fixed the fertilizer application fuel use
 #--4/27 ran imperial, pesticides are not correct
+#--5/28/24 ran tulare, issues with matching field fertility desc and fert amounts, (map1, fixed?)
 
 rm(list = ls())
 library(tidyverse)

@@ -2,7 +2,7 @@ scenario_id,cat,desc,value,unit,change_ind,notes
 scen_0011,field ops,chisel,1,pass/stand life,n,change prod irr from flood to drip
 scen_0011,field ops,disk,2,pass/stand life,n,change prod irr from flood to drip
 scen_0011,field ops,disk border ridges,1,pass/stand life,n,change prod irr from flood to drip
-scen_0011,field ops,"fertilize, surface",2,pass/stand life,n,change prod irr from flood to drip
+scen_0011,field ops,"fertilize, map1",2,pass/stand life,n,change prod irr from flood to drip
 scen_0011,field ops,insect control,6,pass/stand life,n,change prod irr from flood to drip
 scen_0011,field ops,laser level,1,pass/stand life,n,change prod irr from flood to drip
 scen_0011,field ops,plant,1,pass/stand life,n,change prod irr from flood to drip
