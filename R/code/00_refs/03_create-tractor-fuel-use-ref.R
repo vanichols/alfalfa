@@ -42,6 +42,11 @@ fuel %>%
   geom_point() +
   coord_flip()
 
+fuel %>% 
+  filter(grepl("chisel", subsubcat)) %>% 
+  filter(grepl("chisel", name)) %>%
+  summary(diesel_Lha)
+  
 f1 <- 
   fuel %>% 
   filter(grepl("chisel", subsubcat)) %>% 
