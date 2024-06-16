@@ -1,0 +1,31 @@
+desc,value,unit,component
+uan-32,64.51,mj/kg prod,NA
+nitrogen,58.04,mj/kg prod,NA
+ammonia,37.67,mj/kg prod,NA
+potassium phosphates k2hpo4,31.46,mj/kg prod,NA
+p2o5,30.07,mj/kg prod,NA
+urea,28.60,mj/kg prod,NA
+potassium phosphates kh2po4,28.48,mj/kg prod,NA
+diammonium phosphate nh4 2hpo4,24.79,mj/kg prod,NA
+potassium phosphates k2hpo4 3h2o,24.17,mj/kg prod,NA
+phosphoric acid per ton of p2o5 product,22.11,mj/kg prod,NA
+ammonium nitrate,19.47,mj/kg prod,NA
+11-52-0 map,15.65,mj/kg prod,p_comp
+11-52-0 map,6.38,mj/kg prod,n_comp
+triple superphosphate ca h2po4 2,15.49,mj/kg prod,NA
+triple superphosphate ca h2po4 2 h2o,14.43,mj/kg prod,NA
+ammonium sulfate nh4 2so4,10.65,mj/kg prod,NA
+10-34-0,10.23,mj/kg prod,p_comp
+10-34-0,5.80,mj/kg prod,n_comp
+potassium nitrate kno3,10.02,mj/kg prod,NA
+calcium nitrate ca no3 2,9.51,mj/kg prod,NA
+potassium sulfate k2so4,9.49,mj/kg prod,NA
+sodium nitrate na no3,8.34,mj/kg prod,NA
+k2o,8.24,mj/kg prod,NA
+potash,8.24,mj/kg prod,NA
+calcium nitrate ca no3 2 4h2o,6.81,mj/kg prod,NA
+ammonium chloride nh4cl,6.71,mj/kg prod,NA
+superphosphate ca h2po4 2 2ca so4,4.04,mj/kg prod,NA
+sulfuric acid,0.60,mj/kg prod,NA
+caco3,0.13,mj/kg prod,NA
+,,,
