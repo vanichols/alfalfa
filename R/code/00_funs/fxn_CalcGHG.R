@@ -2,7 +2,7 @@
 # created 3/16 to handle new single file 
 # 3/17 update file names
 
-CalcGHG <- function(f_scenario_id = "2001", 
+CalcGHG <- function(f_scenario_id = "0001", 
                     f_prod_data = my_prod_data, 
                     f_energy_data = my_energy_data){
   
