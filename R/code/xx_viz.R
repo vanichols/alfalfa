@@ -37,7 +37,12 @@ d_tot <-
 
 # relative change w/each scenario -----------------------------------------
 
-d_tot
+d_tot %>% 
+  filter(unit == "kgco2e_Mgyield") %>% 
+  ggplot(aes(location, value)) + 
+  geom_jitter(size = 4, width = 0.2) + 
+  geom_hline(yintercept = 0) +
+  facet_grid(.~unit)
 
 
 

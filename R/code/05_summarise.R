@@ -191,3 +191,4 @@ d_raw %>%
   labs(x= NULL,
        y = "kgCO2e per ha per year",
        title = "Tulare")
+
